@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tests": {
+    "modern_period_count_41": true,
+    "historical_year_count_15": true,
+    "no_observations_2008_2015": true,
+    "modern_accounting_closure_max_abs_lt_1e_3_million_pesos": true,
+    "historical_accounting_closure_max_abs_lt_1e_5": true,
+    "normalized_shares_sum_100": true,
+    "pendulum_equals_share_difference": true,
+    "all_values_finite": true,
+    "mandates_computed_for_two_universes": true
+  },
+  "max_errors": {
+    "modern_closure": 0.000637393444776535,
+    "historical_closure": 5.820766091346741e-11,
+    "share_sum": 2.842170943040401e-14,
+    "pendulum_identity": 1.0658141036401503e-14
+  }
+}

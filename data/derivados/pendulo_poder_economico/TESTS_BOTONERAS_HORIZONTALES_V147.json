@@ -1,0 +1,16 @@
+{
+  "controls_removed_from_hero": true,
+  "controls_live_inside_main_chart_card": true,
+  "controls_exist_once": true,
+  "average_toggle_joined_to_toolbar": true,
+  "controls_link_to_chart": true,
+  "horizontal_nowrap_enabled": true,
+  "horizontal_scroll_enabled": true,
+  "mobile_groups_get_own_rows": true,
+  "layer_nav_stays_horizontal": true,
+  "cft_preserved": true,
+  "roa_preserved": true,
+  "six_layers_preserved": true,
+  "tab_count_preserved": true,
+  "html_ids_unique": true
+}

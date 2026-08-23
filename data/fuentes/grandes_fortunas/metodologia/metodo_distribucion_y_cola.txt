@@ -1,0 +1,1 @@
+Los tramos cerrados se desagregan en nueve nodos monótonos dentro de cada intervalo. El exponente se calibra para reproducir la media oficial. El tramo abierto >$5.000 M se modela con Pareto calibrada por mínimo y media, preservando casos y patrimonio. No se usan rankings de personas ni se infiere evasión en el escenario base.

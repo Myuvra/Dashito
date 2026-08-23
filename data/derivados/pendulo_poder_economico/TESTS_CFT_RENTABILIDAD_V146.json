@@ -1,0 +1,20 @@
+{
+  "cft_eeff_is_321": true,
+  "cft_pnfc_is_588": true,
+  "cft_gap_is_267pp": true,
+  "cft_ratio_is_1_83x": true,
+  "roa_system_3m_matches_workbook": true,
+  "roa_system_12m_matches_workbook": true,
+  "roa_interannual_delta_matches": true,
+  "efnb_caveat_visible": true,
+  "cft_not_labeled_2026": true,
+  "fintech_profitability_gap_visible": true,
+  "observed_finance_preserved": true,
+  "assets_preserved": true,
+  "housing_preserved": true,
+  "fiscal_preserved": true,
+  "six_layers_preserved": true,
+  "tab_count_preserved": true,
+  "finance_metric_ids_unique": true,
+  "html_ids_unique": true
+}

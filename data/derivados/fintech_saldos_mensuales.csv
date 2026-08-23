@@ -1,0 +1,2 @@
+﻿fecha,saldo_fintech_nominal,fuente,hoja_fila,clasificacion,nota_metodologica
+2026-02,3699559000000.0,BCRA series PNFC junio 2026.xlsx,Hoja 3; fila Fintech; columna feb-2026,stock/proxy,Stock total del grupo Fintech; sólo feb-2026 porque la serie histórica está publicada a pesos constantes de ese mes; no es flujo ni cartera exclusivamente personal

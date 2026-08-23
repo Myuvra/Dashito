@@ -1,0 +1,403 @@
+[
+  {
+    "id": "production_cgi_pendulum",
+    "layer": "Producción",
+    "title": "Péndulo CGI",
+    "measure_type": "RATIO",
+    "unit": "puntos del índice",
+    "frequency": "anual histórica / trimestral moderna",
+    "period": "1993–2007 y 2016–2026-T1",
+    "source_grade": "A",
+    "transformation": "derivado",
+    "actors": "trabajo asalariado + ingreso mixto ↔ excedente bruto",
+    "economic_flow_id": "cgi_primary_income_distribution",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "financial_bank_window_delta",
+      "financial_fintech_window_delta",
+      "financial_pf_window_delta"
+    ],
+    "note": "Cuenta primaria; no incorpora intereses, alquileres, impuestos ni activos."
+  },
+  {
+    "id": "financial_bank_window_delta",
+    "layer": "Finanzas",
+    "title": "Crédito bancario · diferencial post-shock vs espejo",
+    "measure_type": "CONTRAFACTUAL",
+    "unit": "pesos constantes de julio de 2026",
+    "frequency": "acumulado de dos ventanas de 32 meses",
+    "period": "abr-2021–nov-2023 / dic-2023–jul-2026",
+    "source_grade": "B",
+    "transformation": "derivado sólido",
+    "actors": "hogares deudores ↔ bancos",
+    "economic_flow_id": "household_bank_credit_rate_gap",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "bank_financial_margin",
+      "bank_profitability"
+    ],
+    "note": "Impacto estimado contra una norma histórica; no son intereses efectivamente cobrados ni ganancia bancaria."
+  },
+  {
+    "id": "financial_fintech_window_delta",
+    "layer": "Finanzas",
+    "title": "Fintech · diferencial post-shock vs espejo",
+    "measure_type": "CONTRAFACTUAL",
+    "unit": "pesos constantes de julio de 2026",
+    "frequency": "acumulado de dos ventanas de 32 meses",
+    "period": "abr-2021–nov-2023 / dic-2023–jul-2026",
+    "source_grade": "B",
+    "transformation": "reconstrucción",
+    "actors": "hogares deudores ↔ PNFC/fintech",
+    "economic_flow_id": "household_fintech_credit_rate_gap",
+    "status": "disponible con estimación",
+    "do_not_sum_with": [
+      "fintech_interest_income",
+      "fintech_profitability"
+    ],
+    "note": "Cinco meses prolongan último stock y TNA oficiales; no es CFT ni ganancia de las fintech."
+  },
+  {
+    "id": "financial_pf_window_delta",
+    "layer": "Finanzas",
+    "title": "Plazo fijo · diferencial post-shock vs espejo",
+    "measure_type": "CONTRAFACTUAL",
+    "unit": "pesos constantes de julio de 2026",
+    "frequency": "acumulado de dos ventanas de 32 meses",
+    "period": "abr-2021–nov-2023 / dic-2023–jul-2026",
+    "source_grade": "B",
+    "transformation": "derivado sólido",
+    "actors": "bancos ↔ hogares ahorristas",
+    "economic_flow_id": "household_deposit_rate_gap",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "bank_funding_cost",
+      "bank_financial_margin"
+    ],
+    "note": "Rendimiento estimado contra la norma histórica; no representa a un hogar promedio."
+  },
+  {
+    "id": "financial_expanded_balance_delta",
+    "layer": "Finanzas",
+    "title": "Balance ampliado · banco + fintech + plazo fijo",
+    "measure_type": "CONTRAFACTUAL",
+    "unit": "pesos constantes de julio de 2026",
+    "frequency": "diferencial entre ventanas",
+    "period": "32 meses por ventana",
+    "source_grade": "B",
+    "transformation": "agregado derivado",
+    "actors": "universos distintos de deudores y ahorristas",
+    "economic_flow_id": "retail_credit_saving_balance",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "financial_bank_window_delta",
+      "financial_fintech_window_delta",
+      "financial_pf_window_delta"
+    ],
+    "note": "Ya contiene sus tres componentes. No es el impacto de un hogar promedio."
+  },
+  {
+    "id": "housing_tenure_status",
+    "layer": "Vivienda",
+    "title": "Condición de tenencia",
+    "measure_type": "RATIO",
+    "unit": "% de hogares",
+    "frequency": "onda EPH",
+    "period": "según último dato del tab Vivienda",
+    "source_grade": "A",
+    "transformation": "observado",
+    "actors": "hogares propietarios / inquilinos / otras tenencias",
+    "economic_flow_id": "housing_tenure_structure",
+    "status": "disponible en tab vinculado",
+    "do_not_sum_with": [],
+    "note": "Describe tenencia; no mide cuánto se paga de alquiler."
+  },
+  {
+    "id": "housing_rent_income_burden",
+    "layer": "Vivienda",
+    "title": "Alquiler / ingreso familiar",
+    "measure_type": "RATIO",
+    "unit": "% del ingreso familiar",
+    "frequency": "pendiente",
+    "period": "sin serie contemporánea homogénea",
+    "source_grade": "C",
+    "transformation": "pendiente",
+    "actors": "hogar inquilino ↔ propietario",
+    "economic_flow_id": "household_rent_payment",
+    "status": "no calculado",
+    "do_not_sum_with": [
+      "landlord_rent_income",
+      "engho_housing_spend"
+    ],
+    "note": "Se deja el hueco visible antes que fabricar una serie."
+  },
+  {
+    "id": "fiscal_tax_structure",
+    "layer": "Fiscal",
+    "title": "Resultado financiero del SPN",
+    "measure_type": "FLUJO",
+    "unit": "% del PIB y ARS nominales",
+    "frequency": "anual",
+    "period": "2002–2026 parcial",
+    "source_grade": "A",
+    "transformation": "observado agregado",
+    "actors": "hogares, empresas y Estado sin incidencia individual",
+    "economic_flow_id": "general_government_revenue_spending",
+    "status": "integrado en la capa Fiscal",
+    "do_not_sum_with": [
+      "fiscal_net_household_position"
+    ],
+    "note": "Resultado agregado del Estado; no informa incidencia distributiva por hogar."
+  },
+  {
+    "id": "fiscal_tax_expenditure",
+    "layer": "Fiscal",
+    "title": "Gasto tributario / beneficios fiscales",
+    "measure_type": "CONTRAFACTUAL",
+    "unit": "pesos o % del PIB estimado",
+    "frequency": "anual",
+    "period": "recorte prudente 2026",
+    "source_grade": "B",
+    "transformation": "contrafactual",
+    "actors": "Estado ↔ beneficiarios de tratamientos tributarios",
+    "economic_flow_id": "tax_expenditure_counterfactual",
+    "status": "integrado como contrafactual separado",
+    "do_not_sum_with": [
+      "foregone_revenue_scenario",
+      "fiscal_net_household_position"
+    ],
+    "note": "No equivale a caja cobrada ni se suma a créditos presupuestarios o beneficios de otros períodos."
+  },
+  {
+    "id": "asset_cash_real",
+    "layer": "Activos",
+    "title": "Efectivo sin remunerar",
+    "measure_type": "RENDIMIENTO HIPOTÉTICO",
+    "unit": "índice real rebaseable; 100 en la fecha de entrada elegida",
+    "frequency": "mensual",
+    "period": "dic-2023–jul-2026",
+    "source_grade": "A",
+    "transformation": "escenario",
+    "actors": "persona con pesos líquidos",
+    "economic_flow_id": "conditional_asset_return_cash",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "household_net_worth_change"
+    ],
+    "note": "Mide poder de compra de pesos no invertidos; no riqueza observada. La interfaz permite cambiar la fecha de entrada sin alterar la serie fuente."
+  },
+  {
+    "id": "asset_pf_real",
+    "layer": "Activos",
+    "title": "Plazo fijo renovado",
+    "measure_type": "RENDIMIENTO HIPOTÉTICO",
+    "unit": "índice real rebaseable; 100 en la fecha de entrada elegida",
+    "frequency": "mensual",
+    "period": "dic-2023–jul-2026",
+    "source_grade": "B",
+    "transformation": "escenario compuesto",
+    "actors": "persona con capacidad de constituir y renovar depósitos",
+    "economic_flow_id": "conditional_asset_return_pf",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "financial_pf_window_delta",
+      "household_net_worth_change"
+    ],
+    "note": "Supone renovación mensual al promedio publicado; no es una cuenta observada ni incluye decisiones individuales. La interfaz permite cambiar la fecha de entrada sin alterar la serie fuente."
+  },
+  {
+    "id": "asset_usd_a3500_real",
+    "layer": "Activos",
+    "title": "Dólar mayorista A3500",
+    "measure_type": "RENDIMIENTO HIPOTÉTICO",
+    "unit": "índice real rebaseable; 100 en la fecha de entrada elegida",
+    "frequency": "mensual",
+    "period": "dic-2023–jul-2026",
+    "source_grade": "A",
+    "transformation": "escenario",
+    "actors": "persona hipotética expuesta al tipo de cambio de referencia",
+    "economic_flow_id": "conditional_asset_return_a3500",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "household_net_worth_change"
+    ],
+    "note": "Referencia mayorista; no implica acceso minorista a ese precio. La interfaz permite cambiar la fecha de entrada sin alterar la serie fuente."
+  },
+  {
+    "id": "income_real_salary_reference",
+    "layer": "Activos",
+    "title": "Salario real · línea de referencia",
+    "measure_type": "RATIO",
+    "unit": "índice real rebaseable; 100 en la fecha de entrada elegida",
+    "frequency": "mensual",
+    "period": "dic-2023–jun-2026",
+    "source_grade": "A",
+    "transformation": "derivado",
+    "actors": "personas asalariadas",
+    "economic_flow_id": "real_salary_reference",
+    "status": "disponible",
+    "do_not_sum_with": [
+      "asset_cash_real",
+      "asset_pf_real",
+      "asset_usd_a3500_real",
+      "asset_cer_reference"
+    ],
+    "note": "Es ingreso, no activo invertible; aparece sólo como referencia separada. La interfaz permite cambiar la fecha de entrada sin alterar la serie fuente."
+  },
+  {
+    "id": "fiscal_meli_documented_benefit",
+    "layer": "Fiscal",
+    "title": "Mercado Libre · beneficios documentados",
+    "measure_type": "BENEFICIO OBSERVADO + CONVERSIÓN",
+    "unit": "pesos constantes de junio de 2026",
+    "frequency": "acumulado documental",
+    "period": "2024–1T26",
+    "source_grade": "B/C",
+    "transformation": "USD documentados × A3500 por período + IPC",
+    "actors": "empresa beneficiaria ↔ régimen tributario",
+    "economic_flow_id": "meli_tax_benefit_documented",
+    "status": "integrado como piso documentado",
+    "do_not_sum_with": [
+      "fiscal_tax_expenditure",
+      "foregone_revenue_scenario"
+    ],
+    "note": "Régimen previo al mandato; no implica recaudación recuperable uno-a-uno."
+  },
+  {
+    "id": "fiscal_side_extra_credit",
+    "layer": "Fiscal",
+    "title": "SIDE · refuerzo de crédito presupuestario",
+    "measure_type": "CRÉDITO PRESUPUESTARIO",
+    "unit": "pesos nominales autorizados",
+    "frequency": "DNU puntual",
+    "period": "julio de 2026",
+    "source_grade": "A/B",
+    "transformation": "observado presupuestario",
+    "actors": "PEN / SIDE ↔ presupuesto",
+    "economic_flow_id": "side_budget_credit_authorization",
+    "status": "autorizado; ejecución no demostrada",
+    "do_not_sum_with": [
+      "fiscal_tax_structure",
+      "side_executed_spending"
+    ],
+    "note": "Crédito vigente no equivale a gasto devengado o pagado."
+  },
+  {
+    "id": "fiscal_pen_salary_catchup",
+    "layer": "Fiscal",
+    "title": "Cúpula PEN · extra nominal anualizado",
+    "measure_type": "ESCENARIO SALARIAL",
+    "unit": "pesos nominales anualizados",
+    "frequency": "escenario",
+    "period": "2026 vs escala dic-2023 congelada",
+    "source_grade": "C",
+    "transformation": "diferencia salarial anualizada",
+    "actors": "autoridades superiores del PEN",
+    "economic_flow_id": "pen_salary_scale_counterfactual",
+    "status": "escenario; no ejecución fiscal observada",
+    "do_not_sum_with": [
+      "fiscal_tax_structure",
+      "public_wage_bill"
+    ],
+    "note": "El salario real permanece bajo dic-2023; no prueba enriquecimiento real."
+  },
+  {
+    "id": "fiscal_senate_allowance_floor",
+    "layer": "Fiscal",
+    "title": "Senado · piso del salto de dietas",
+    "measure_type": "PISO DERIVADO",
+    "unit": "pesos netos anualizados",
+    "frequency": "anualización",
+    "period": "salto aprobado en 2024",
+    "source_grade": "C",
+    "transformation": "72 bancas × diferencia de dietas",
+    "actors": "Senado · Poder Legislativo",
+    "economic_flow_id": "senate_allowance_floor",
+    "status": "piso neto; no costo fiscal bruto",
+    "do_not_sum_with": [
+      "fiscal_tax_structure",
+      "senate_gross_payroll"
+    ],
+    "note": "No se atribuye al Poder Ejecutivo."
+  },
+  {
+    "id": "asset_cer_reference",
+    "layer": "Activos",
+    "title": "Capital indexado por CER · referencia",
+    "measure_type": "RENDIMIENTO HIPOTÉTICO",
+    "unit": "índice real rebaseable; 100 en la fecha de entrada elegida",
+    "frequency": "mensual desde serie diaria",
+    "period": "dic-2023–jul-2026",
+    "source_grade": "B",
+    "transformation": "CER fin de mes deflactado por IPC mensual",
+    "actors": "persona con acceso a un contrato o instrumento ajustable por CER",
+    "economic_flow_id": "conditional_cer_linked_principal_return",
+    "status": "integrado como referencia, no como activo autónomo",
+    "do_not_sum_with": [
+      "cer_linked_bond_total_return",
+      "household_net_worth_change"
+    ],
+    "note": "El CER no se compra por sí solo. No incorpora cupón, precio de mercado, comisiones ni plazo de un instrumento concreto; el rezago del CER vuelve sensible el resultado a la fecha de entrada."
+  },
+  {
+    "id": "financial_consumer_cft",
+    "layer": "Finanzas",
+    "title": "Costo Financiero Total máximo ofrecido · snapshot",
+    "measure_type": "RATIO · SNAPSHOT",
+    "unit": "% efectivo anual máximo ofrecido",
+    "frequency": "snapshot oficial",
+    "period": "jun-2023",
+    "source_grade": "A",
+    "transformation": "promedio publicado de máximos ofrecidos; muestra de 15 proveedores por grupo",
+    "actors": "deudores ↔ entidades financieras / PNFC",
+    "economic_flow_id": "consumer_credit_total_cost_offer",
+    "status": "integrado como snapshot; no es una serie ni un dato 2026",
+    "do_not_sum_with": [
+      "financial_bank_real_monthly",
+      "financial_fintech_real_monthly",
+      "financial_bank_window_delta",
+      "financial_fintech_window_delta"
+    ],
+    "note": "Máximo ofrecido promedio, no costo promedio pagado ni ingreso del proveedor. Muestra de 15 EEFF y 15 PNFC con más deudores."
+  },
+  {
+    "id": "bank_profitability",
+    "layer": "Finanzas",
+    "title": "Rentabilidad contable del sistema financiero",
+    "measure_type": "RATIO / FLUJO CONTABLE",
+    "unit": "ROA anualizado, % del activo",
+    "frequency": "acumulado 3 y 12 meses",
+    "period": "may-2025 / may-2026",
+    "source_grade": "A",
+    "transformation": "observado en moneda homogénea",
+    "actors": "bancos / EFNB / accionistas",
+    "economic_flow_id": "bank_accounting_profitability",
+    "status": "integrado",
+    "do_not_sum_with": [
+      "financial_bank_pf_real_gap",
+      "financial_bank_window_delta",
+      "financial_consumer_cft"
+    ],
+    "note": "Resultado contable oficial; no se deriva del spread ni del contrafactual del hogar. EFNB no equivale a fintech/PNFC."
+  },
+  {
+    "id": "fintech_profitability",
+    "layer": "Finanzas",
+    "title": "Rentabilidad contable PNFC/fintech",
+    "measure_type": "RATIO / FLUJO CONTABLE",
+    "unit": "serie comparable no disponible",
+    "frequency": "pendiente",
+    "period": "sin serie integrada",
+    "source_grade": "—",
+    "transformation": "sin fabricar",
+    "actors": "PNFC / fintech / accionistas",
+    "economic_flow_id": "fintech_accounting_profitability",
+    "status": "no integrado: falta serie observada comparable",
+    "do_not_sum_with": [
+      "financial_fintech_real_monthly",
+      "financial_fintech_window_delta",
+      "financial_consumer_cft"
+    ],
+    "note": "No se sustituye con TNA, CFT, exposición contrafactual ni con la categoría EFNB del sistema financiero."
+  }
+]

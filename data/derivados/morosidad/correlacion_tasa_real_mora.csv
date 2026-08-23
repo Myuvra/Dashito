@@ -1,0 +1,8 @@
+﻿lag_months,correlation,observations,interpretation
+0,0.40163048012569075,89,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"
+1,0.41115739324299816,88,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"
+2,0.4226540362448898,87,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"
+3,0.44410300772950295,86,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"
+4,0.4569308319954041,85,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"
+5,0.46692185524186025,84,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"
+6,0.4876634088726069,83,"corr(real personal-loan rate[t-k], bank personal+cards delinquency[t])"

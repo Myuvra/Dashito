@@ -1,0 +1,3298 @@
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('./fonts/inter-variable-latin.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('./fonts/inter-variable-latin-italic.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('./fonts/plus-jakarta-sans-variable-latin.woff2') format('woff2-variations');
+}
+
+html[data-dashito-theme='blue-dark'] {
+  color-scheme: dark;
+  --da-bg: #07111e;
+  --da-surface: #0c1827;
+  --da-surface-2: #12233a;
+  --da-elevated: #152a44;
+  --da-field: rgba(255, 255, 255, .045);
+  --da-text: #f2f7ff;
+  --da-muted: #a6b5c9;
+  --da-faint: #64748b;
+  --da-primary: #61d7ff;
+  --da-primary-rgb: 97, 215, 255;
+  --da-secondary: #818cf8;
+  --da-on-primary: #04131c;
+  --da-mint: #34d399;
+  --da-amber: #fbbf24;
+  --da-bad: #fb7185;
+  --da-info: #38bdf8;
+  --da-accent: #818cf8;
+  --da-border: rgba(148, 163, 184, .14);
+  --da-border-strong: rgba(97, 215, 255, .3);
+  --da-plot: #0d1928;
+  --da-shadow: 0 18px 50px rgba(0, 0, 0, .2);
+  --da-glow: rgba(37, 99, 235, .16);
+}
+
+html[data-dashito-theme='rose-dark'] {
+  color-scheme: dark;
+  --da-bg: #160b12;
+  --da-surface: #21101a;
+  --da-surface-2: #301522;
+  --da-elevated: #3a1927;
+  --da-field: rgba(255, 255, 255, .045);
+  --da-text: #fff5f8;
+  --da-muted: #d3b6c1;
+  --da-faint: #8d6978;
+  --da-primary: #fb7185;
+  --da-primary-rgb: 251, 113, 133;
+  --da-secondary: #fdba74;
+  --da-on-primary: #2a0812;
+  --da-mint: #5eead4;
+  --da-amber: #facc15;
+  --da-bad: #f43f5e;
+  --da-info: #c4b5fd;
+  --da-accent: #fdba74;
+  --da-border: rgba(251, 113, 133, .16);
+  --da-border-strong: rgba(251, 113, 133, .34);
+  --da-plot: #1d1019;
+  --da-shadow: 0 18px 50px rgba(5, 0, 3, .25);
+  --da-glow: rgba(190, 24, 93, .17);
+}
+
+html[data-dashito-theme='rose-light'] {
+  color-scheme: light;
+  --da-bg: #faf8f6;
+  --da-surface: #ffffff;
+  --da-surface-2: #fff6f6;
+  --da-elevated: #f8e9ec;
+  --da-field: rgba(136, 19, 55, .045);
+  --da-text: #29161e;
+  --da-muted: #725b64;
+  --da-faint: #a1848f;
+  --da-primary: #be123c;
+  --da-primary-rgb: 190, 18, 60;
+  --da-secondary: #7c3aed;
+  --da-on-primary: #ffffff;
+  --da-mint: #0f766e;
+  --da-amber: #b45309;
+  --da-bad: #be123c;
+  --da-info: #2563eb;
+  --da-accent: #7c3aed;
+  --da-border: rgba(136, 19, 55, .11);
+  --da-border-strong: rgba(190, 18, 60, .27);
+  --da-plot: #fffaf7;
+  --da-shadow: 0 18px 46px rgba(92, 36, 54, .1);
+  --da-glow: rgba(244, 63, 94, .045);
+}
+
+html[data-dashito-theme] {
+  --da-font-sans: 'Inter Variable', Inter, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  --da-font-display: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif;
+  --da-font-mono: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
+  background: var(--da-bg) !important;
+  scrollbar-color: var(--da-border-strong) transparent;
+}
+
+html[data-dashito-theme] body {
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  background:
+    radial-gradient(circle at 82% -10%, var(--da-glow), transparent 34%),
+    linear-gradient(180deg, color-mix(in srgb, var(--da-bg) 98%, var(--da-primary) 2%), var(--da-bg)) !important;
+  color: var(--da-text) !important;
+  font: 14px/1.55 var(--da-font-sans) !important;
+  font-optical-sizing: auto !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[data-dashito-theme] .hero,
+html[data-dashito-theme] .tabs {
+  display: none !important;
+}
+
+html[data-dashito-theme] body::after {
+  content: none !important;
+  display: none !important;
+}
+
+html[data-dashito-theme] .wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 22px 24px 86px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+html[data-dashito-theme] .tab-panel {
+  margin: 0 !important;
+  color: var(--da-text) !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+html[data-dashito-theme] h1,
+html[data-dashito-theme] h2,
+html[data-dashito-theme] h3,
+html[data-dashito-theme] h4,
+html[data-dashito-theme] .card-title,
+html[data-dashito-theme] .title,
+html[data-dashito-theme] strong,
+html[data-dashito-theme] b {
+  color: var(--da-text);
+}
+
+html[data-dashito-theme] h1,
+html[data-dashito-theme] h2,
+html[data-dashito-theme] h3,
+html[data-dashito-theme] .card-title {
+  font-family: var(--da-font-display) !important;
+  font-weight: 740 !important;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+
+html[data-dashito-theme] h1 { font-size: clamp(24px, 3vw, 38px) !important; }
+html[data-dashito-theme] h2 { font-size: clamp(20px, 2.3vw, 30px) !important; }
+html[data-dashito-theme] h3 { font-size: clamp(17px, 1.8vw, 23px) !important; }
+
+html[data-dashito-theme] :where(.gini-thesis, .family-thesis, .structure-thesis) {
+  font-family: var(--da-font-display) !important;
+  font-weight: 720 !important;
+  letter-spacing: -.025em !important;
+}
+
+html[data-dashito-theme] p,
+html[data-dashito-theme] .small,
+html[data-dashito-theme] small,
+html[data-dashito-theme] .mini,
+html[data-dashito-theme] .caption,
+html[data-dashito-theme] figcaption,
+html[data-dashito-theme] .subtitle,
+html[data-dashito-theme] .description,
+html[data-dashito-theme] .lede,
+html[data-dashito-theme] .intro,
+html[data-dashito-theme] .hint,
+html[data-dashito-theme] .period,
+html[data-dashito-theme] .years,
+html[data-dashito-theme] .detail,
+html[data-dashito-theme] .sources-note,
+html[data-dashito-theme] .formula-caveat,
+html[data-dashito-theme] .context,
+html[data-dashito-theme] .copy,
+html[data-dashito-theme] .caveat,
+html[data-dashito-theme] .footnotes {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] :where(
+  .card-head, .widget-head, .section-head, .rates-public-head,
+  .family-head, .structure-head, .gini-head
+) :where(h2, h3, h4, .card-title, .title) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(
+  p, .note, .small, .mini, .caption, figcaption, .subtitle, .description,
+  .lede, .intro, .hint, .period, .years, .detail, .context, .copy, .caveat,
+  .footnotes, .sources-note, .formula-caveat, [class$='-note'], [class*='-note ']
+) :where(strong, b) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :where(
+  .card, .sources-box, .formulas-box, .method-shield, .household-sign-key,
+  .rates-public-reading, .rates-usury-callout, .power-followup-card,
+  .wealth-card, .wealth-hero, .milei-shock-bridge, .program-card,
+  .scenario-card, .fiscal-card, .debt-card, .summary-card, .metric,
+  .metric-card, .stat-card, .pres-card, .mandate-card, .formula-card,
+  [class$='-card'], [class*='-card '], [class$='-apb'], [class*='-apb '],
+  [class$='-editorial'], [class*='-editorial '], [class$='-recent'], [class$='-watch']
+) {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 96%, var(--da-primary) 4%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] .card { overflow: clip; }
+
+html[data-dashito-theme] :where(
+  [class$='-kpi'], [class*='-kpi '], [class$='-stat'], [class*='-stat '],
+  [class$='-snap'], [class*='-snap '], [class$='-piece'], [class*='-piece '],
+  .metric, .metric-card, .stat-card, .summary-card
+) {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 10px !important;
+  background: linear-gradient(150deg, var(--da-surface-2), color-mix(in srgb, var(--da-surface-2) 91%, var(--da-primary) 9%)) !important;
+  color: var(--da-text) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .08) !important;
+}
+
+html[data-dashito-theme] :where(
+  [class$='-kpi'], [class*='-kpi '], [class$='-stat'], [class*='-stat '],
+  [class$='-snap'], [class*='-snap '], [class$='-piece'], [class*='-piece '],
+  .metric, .metric-card, .stat-card, .summary-card
+) :where(.value, .amount, .big, strong) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(
+  [class$='-kpi-grid'], [class$='-stat-grid'], [class$='-stats'], [class$='-snapshot-grid'],
+  [class$='-piece-grid'], [class$='-summary-grid'], [class$='-mandate-grid'], .grid
+) {
+  gap: 14px !important;
+}
+
+html[data-dashito-theme] :where(.card-head, .widget-head, .section-head, .rates-public-head, .family-head) {
+  min-height: 58px !important;
+  padding: 14px 17px !important;
+  border-color: var(--da-border) !important;
+  background: linear-gradient(90deg, rgba(var(--da-primary-rgb), .11), transparent 58%) !important;
+}
+
+html[data-dashito-theme] .card-head::before,
+html[data-dashito-theme] .section-head::before {
+  content: '';
+  width: 4px;
+  align-self: stretch;
+  flex: 0 0 auto;
+  border-radius: 99px;
+  background: linear-gradient(var(--da-primary), var(--da-secondary));
+  box-shadow: 0 0 14px rgba(var(--da-primary-rgb), .24);
+}
+
+html[data-dashito-theme] .card-title { font-size: clamp(17px, 1.8vw, 23px) !important; line-height: 1.12 !important; }
+
+html[data-dashito-theme] .card-title > span {
+  display: inline-block !important;
+  margin-left: 8px !important;
+}
+
+html[data-dashito-theme] :where(
+  .card-title, .kicker, .label, .eyebrow, .rates-public-kicker,
+  .formula-title, .audit-tag, .metric-tag
+) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(.label, .eyebrow, .kicker, .audit-tag, .metric-tag) {
+  width: fit-content !important;
+  max-width: 100% !important;
+  padding: 6px 10px !important;
+  border: 1px solid var(--da-border-strong) !important;
+  border-radius: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-primary) !important;
+  font-size: 10px !important;
+  font-weight: 760 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+
+html[data-dashito-theme] .method-shield {
+  padding: 16px 18px !important;
+  display: block !important;
+  gap: 12px !important;
+  border-radius: 8px !important;
+  border-color: var(--da-border-strong) !important;
+  background: linear-gradient(100deg, rgba(var(--da-primary-rgb), .13), var(--da-surface) 52%) !important;
+  line-height: 1.65 !important;
+}
+
+/* Conserva el ritmo vertical que cada tab ya declara en Legacy, pero evita
+   que las etiquetas metodológicas se conviertan en cápsulas exageradas. */
+html[data-dashito-theme] .method-shield .label {
+  display: flex !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 0 10px !important;
+  border-radius: 4px !important;
+  white-space: normal !important;
+}
+
+html[data-dashito-theme] .structure-head {
+  padding: 26px 24px 20px !important;
+  border: 1px solid var(--da-border-strong) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  isolation: isolate !important;
+  background:
+    radial-gradient(circle at 75% -40%, rgba(var(--da-primary-rgb), .18), transparent 45%),
+    linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 94%, var(--da-primary) 6%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] .structure-head > * { position: relative !important; z-index: 1 !important; }
+html[data-dashito-theme] .structure-head h2 { margin-top: 0 !important; color: var(--da-text) !important; }
+html[data-dashito-theme] .structure-thesis { color: var(--da-text) !important; }
+html[data-dashito-theme] .structure-thesis .warn {
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--da-bad) !important;
+}
+html[data-dashito-theme] .structure-thesis .good {
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--da-mint) !important;
+}
+html[data-dashito-theme] .structure-head .small { color: var(--da-muted) !important; }
+
+html[data-dashito-theme] .gini-head {
+  margin: 16px 0 20px !important;
+  padding: 26px 24px 22px !important;
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  border: 1px solid var(--da-border-strong) !important;
+  border-radius: 14px !important;
+  background:
+    radial-gradient(circle at 78% -45%, rgba(var(--da-primary-rgb), .18), transparent 46%),
+    linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 94%, var(--da-primary) 6%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] .gini-head > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+html[data-dashito-theme] .gini-head > h2 {
+  margin: 0 0 10px !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] .gini-head > .gini-thesis {
+  margin: 10px 0 18px !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .gini-head > .gini-thesis b {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] .gini-head > .method-shield {
+  padding: 15px 17px !important;
+  border-radius: var(--da-block-radius) !important;
+  background: linear-gradient(105deg, rgba(var(--da-primary-rgb), .12), var(--da-surface-2) 42%, var(--da-surface)) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .gini-head > .method-shield strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-risk #riskHistoricalAverage {
+  margin: 0 var(--da-card-gutter) 14px !important;
+  text-align: left !important;
+  color: var(--da-primary) !important;
+  font-size: clamp(16px, 1.35vw, 21px) !important;
+  font-weight: 750 !important;
+  line-height: 1.4 !important;
+}
+
+html[data-dashito-theme] #tab-risk #riskHistoricalAverage b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-risk #riskHistoricalAverage span {
+  color: var(--da-muted) !important;
+  font-size: .78em !important;
+  font-weight: 600 !important;
+}
+
+html[data-dashito-theme] #tab-family .family-head {
+  min-height: 0 !important;
+  margin: 16px 0 20px !important;
+  padding: 24px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 96%, var(--da-primary) 4%), var(--da-surface)) !important;
+}
+
+html[data-dashito-theme] #tab-family .family-head h2 {
+  margin: 0 0 12px !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-family .family-thesis {
+  margin: 12px 0 18px !important;
+}
+
+html[data-dashito-theme] #tab-family .method-shield {
+  display: block !important;
+  min-height: 0 !important;
+  padding: 16px 18px !important;
+  border-left: 4px solid var(--da-primary) !important;
+  border-radius: 8px !important;
+  line-height: 1.65 !important;
+}
+
+html[data-dashito-theme] #tab-family .method-shield .label {
+  margin: 0 9px 3px 0 !important;
+  padding: 5px 9px !important;
+  border-radius: 4px !important;
+  vertical-align: middle !important;
+}
+
+html[data-dashito-theme] #tab-family .method-shield strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-family .family-stat-grid {
+  gap: 12px !important;
+  margin-top: 16px !important;
+}
+
+/* Las grillas-resumen y la explicación que les sigue son dos bloques distintos. */
+html[data-dashito-theme] :where(.gini-stat-grid, .family-stat-grid) + .method-shield {
+  margin-top: 14px !important;
+}
+
+html[data-dashito-theme] #tab-family .family-stat {
+  padding: 16px 14px !important;
+  border-radius: 12px !important;
+}
+
+html[data-dashito-theme] #tab-family .family-ladder {
+  gap: 10px !important;
+}
+
+html[data-dashito-theme] #tab-family .family-ladder .step {
+  padding: 12px 10px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card {
+  padding: 18px !important;
+  border-radius: 16px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .card-head {
+  margin: 0 0 14px !important;
+  padding: 14px 16px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 12px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .method-shield {
+  margin: 0 0 14px !important;
+  padding: 14px 16px !important;
+  border-radius: 8px !important;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .method-shield .label {
+  display: flex !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 0 10px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .method-shield > strong {
+  display: inline !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .js-plotly-plot {
+  border-radius: 12px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .family-mini-note {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 11px 14px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .js-plotly-plot + .family-mini-note {
+  margin-top: 14px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .family-mini-note + .family-mini-note {
+  margin-top: 10px !important;
+}
+
+html[data-dashito-theme] #tab-family .table-card > .note {
+  margin: 12px 0 0 !important;
+  padding: 14px 16px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-family > .sources-box,
+html[data-dashito-theme] #tab-family > .formulas-box {
+  padding: 20px !important;
+  border-radius: 16px !important;
+}
+
+html[data-dashito-theme] #tab-family > .sources-box {
+  margin-top: 18px !important;
+}
+
+html[data-dashito-theme] #tab-family > .formulas-box {
+  margin-top: 14px !important;
+}
+
+html[data-dashito-theme] #tab-family :where(.sources-box, .formulas-box) h3 {
+  margin: 0 0 14px !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-family .source-links {
+  gap: 10px !important;
+}
+
+html[data-dashito-theme] #tab-family :where(.source-link, .download-link) {
+  padding: 9px 12px !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] #tab-family .sources-note {
+  margin: 12px 0 0 !important;
+  padding: 11px 13px !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] #tab-family .formula-grid {
+  gap: 12px !important;
+}
+
+html[data-dashito-theme] #tab-family .formula-card {
+  padding: 15px !important;
+  border-radius: 12px !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] #tab-family .formula-card.critical {
+  border-left: 4px solid var(--da-bad) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] #tab-family .formula-card.favorable {
+  border-left: 4px solid var(--da-mint) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] #tab-family .formula-card .formula {
+  margin-top: 9px !important;
+  padding: 11px 13px !important;
+  border: 1px dashed var(--da-border-strong) !important;
+  border-left: 3px solid var(--da-secondary) !important;
+  border-radius: 9px !important;
+  background: var(--da-bg) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-family .formula-result {
+  margin-top: 10px !important;
+}
+
+html[data-dashito-theme] .dashboard-credit {
+  border: 1px solid var(--da-border-strong) !important;
+  border-radius: 12px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .dashboard-credit .naira {
+  color: var(--da-secondary) !important;
+}
+
+html[data-dashito-theme] #tab-consumption > .method-shield {
+  margin: 16px 0 !important;
+  padding: 16px 18px !important;
+  gap: 10px 14px !important;
+  border-radius: 8px !important;
+}
+
+html[data-dashito-theme] #tab-consumption > .method-shield .label {
+  border-radius: 4px !important;
+}
+
+html[data-dashito-theme] #tab-consumption > .method-shield .method-badge {
+  padding: 8px 10px !important;
+  border-radius: 9px !important;
+}
+
+/* Las explicaciones de Big Mac son párrafos extensos: no deben repartirse
+   como columnas flex entre la etiqueta, los destacados y el texto. */
+html[data-dashito-theme] #tab-bigmac .method-shield {
+  display: block !important;
+  line-height: 1.65 !important;
+}
+
+html[data-dashito-theme] #tab-bigmac .method-shield .label {
+  display: flex !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 0 10px !important;
+  white-space: normal !important;
+}
+
+html[data-dashito-theme] #tab-consumption .co-controls {
+  margin: 14px 0 16px !important;
+  gap: 10px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .co-controls .subbtn {
+  padding: 10px 15px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .card {
+  border-radius: 16px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .card > .card-head {
+  margin: 18px 18px 14px !important;
+  padding: 14px 16px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 12px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .card > .js-plotly-plot {
+  width: auto !important;
+  margin: 0 18px 14px !important;
+  border-radius: 12px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .card > .family-mini-note {
+  margin: 0 18px 14px !important;
+  padding: 12px 14px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .card > :where(.co-kpi-grid, .co-mandate-grid, .co-recent-grid, .co-apb, .co-method-strip) {
+  margin-left: 18px !important;
+  margin-right: 18px !important;
+}
+
+html[data-dashito-theme] #tab-consumption .co-kpi-grid {
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+  gap: 12px !important;
+}
+
+html[data-dashito-theme] #tab-consumption :where(.co-kpi, .co-mandate-card, .co-recent) {
+  padding: 15px !important;
+  border-radius: 12px !important;
+}
+
+html[data-dashito-theme] #tab-consumption :where(.co-kpi, .co-recent, .co-cat-kpi) > .tag {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+  padding: 6px 10px !important;
+  border-radius: 4px !important;
+  line-height: 1.25 !important;
+}
+
+html[data-dashito-theme] #tab-consumption .co-apb > div {
+  padding: 13px 14px !important;
+  border-radius: 10px !important;
+}
+
+@media (max-width: 760px) {
+  html[data-dashito-theme] #tab-consumption .card > .card-head {
+    margin: 12px 12px 10px !important;
+  }
+
+  html[data-dashito-theme] #tab-consumption .card > .js-plotly-plot,
+  html[data-dashito-theme] #tab-consumption .card > .family-mini-note,
+  html[data-dashito-theme] #tab-consumption .card > :where(.co-kpi-grid, .co-mandate-grid, .co-recent-grid, .co-apb, .co-method-strip) {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+  }
+}
+
+html[data-dashito-theme] .power-info-grid > .card {
+  padding-bottom: 12px !important;
+}
+
+html[data-dashito-theme] .power-info-grid > .card > .card-head + .note {
+  margin-top: 12px !important;
+}
+
+html[data-dashito-theme] .power-info-grid > .card > .note {
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+}
+
+html[data-dashito-theme] :where(
+  .note, .method-badge, .power-method-pill, .power-pension-pill,
+  .sources-note, .formulas-intro, .household-sign-key-grid > div,
+  .rates-public-step, .rates-usury-stat, .wealth-note, .callout,
+  .methodology-note, .chart-note, .family-mini-note, .casta-note,
+  .metric-note, .confidence-chip, .pill, .status
+) {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 12px !important;
+  background: var(--da-field) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+/* Tasas: los resúmenes públicos heredaban tarjetas blancas dentro del tema oscuro. */
+html[data-dashito-theme] #tab-rates > .grid > .side > .note {
+  box-sizing: border-box !important;
+  padding: 14px 15px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-rates > .grid > .side > .note > b {
+  display: block !important;
+  margin: 0 !important;
+  line-height: 1.35 !important;
+}
+
+html[data-dashito-theme] #tab-rates > .grid > .side > .note > .metric {
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--da-text) !important;
+  line-height: 1.05 !important;
+}
+
+html[data-dashito-theme] #tab-rates > .grid > .side > .note > .metric small {
+  margin-top: 6px !important;
+  display: block !important;
+  color: var(--da-muted) !important;
+  font-size: 12px !important;
+  line-height: 1.3 !important;
+}
+
+html[data-dashito-theme] #tab-rates :where(
+  .rates-public-who,
+  .rates-public-conclusion,
+  .rates-who-chip
+) {
+  border: 1px solid var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-step.before .rates-public-who {
+  border-color: color-mix(in srgb, var(--da-mint) 38%, transparent) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 94%, var(--da-mint) 6%) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-step.after .rates-public-who {
+  border-color: color-mix(in srgb, var(--da-bad) 38%, transparent) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 94%, var(--da-bad) 6%) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-step.effect .rates-public-who {
+  border-color: color-mix(in srgb, var(--da-secondary) 42%, transparent) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 93%, var(--da-secondary) 7%) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-conclusion {
+  border-left: 4px solid var(--da-secondary) !important;
+  background: linear-gradient(90deg, rgba(var(--da-primary-rgb), .09), var(--da-surface-2) 34%) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-who-chip {
+  border-top: 2px solid color-mix(in srgb, var(--da-secondary) 55%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] #tab-rates :where(.rates-public-who .question, .rates-who-chip b) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-who .winner {
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-who .loser {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-rates :where(.rates-public-who .nuance, .rates-public-conclusion b) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-who-method {
+  border: 1px solid var(--da-border) !important;
+  border-left: 4px solid var(--da-secondary) !important;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--da-surface-2) 91%, var(--da-secondary) 9%), var(--da-surface-2)) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-who-method b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-money-normalized > div {
+  border: 1px dashed var(--da-border-strong) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-money-normalized > .full {
+  border: 1px solid color-mix(in srgb, var(--da-mint) 40%, transparent) !important;
+  border-left: 4px solid var(--da-mint) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 94%, var(--da-mint) 6%) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-money-normalized > div b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-fintech-panel {
+  border: 1px solid color-mix(in srgb, var(--da-bad) 34%, var(--da-border)) !important;
+  background: linear-gradient(110deg, color-mix(in srgb, var(--da-surface) 95%, var(--da-bad) 5%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-fintech-metric {
+  border: 1px solid var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-fintech-metric.exposure {
+  border-color: color-mix(in srgb, var(--da-bad) 42%, transparent) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 93%, var(--da-bad) 7%) !important;
+}
+
+/* Calculation-audit content inherits the active skin instead of its source whites. */
+html[data-dashito-theme] #tab-milei-cost .milei-cost-formula > div.inputs,
+html[data-dashito-theme] #tab-milei-cost .milei-input-grid > div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-input-grid span {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-input-grid b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-input-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-rates :where(.rates-fintech-panel .tag, .rates-fintech-metric .metric-tag) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-rates :where(.rates-fintech-panel .big, .rates-fintech-metric .metric-value) {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-rates :where(.rates-fintech-panel .mini, .rates-fintech-metric .metric-note) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] :where(.method-badge, .pill, .confidence-chip, .status) {
+  padding: 6px 10px !important;
+  font-size: 10px !important;
+  font-weight: 750 !important;
+}
+
+html[data-dashito-theme] :where(
+  [class$='-control'], [class*='-control '], [class$='-note'], [class*='-note '],
+  [class$='-warning'], [class*='-warning '], [class$='-caveat'], [class*='-caveat '],
+  [class$='-disclaimer'], [class*='-disclaimer '], [class$='-legend'], [class*='-legend '],
+  [class$='-summary'], [class*='-summary '], [class$='-status'], [class*='-status '],
+  [class$='-formula'], [class*='-formula '], [class$='-quality'], [class$='-change'],
+  [class$='-service'], [class$='-table-wrap'], [class$='-audit'], [class*='-audit '],
+  .rates-timeline-toggle, .power-aggregate-loss, .take, .step, .recon, .structure-def
+) {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 14px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] :where(
+  [class$='-apb'], [class*='-apb '], .co-category-explain,
+  .power-aggregate-breakdown, .rates-sign-audit-grid, .wealth-audit-grid
+) > div {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 12px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] :where(.tag, .rates-timeline-status) {
+  box-sizing: border-box !important;
+  padding: 6px 10px !important;
+  border: 1px solid var(--da-border-strong) !important;
+  border-radius: 4px !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-primary) !important;
+  line-height: 1.25 !important;
+}
+
+html[data-dashito-theme] label { color: var(--da-muted) !important; }
+
+html[data-dashito-theme] :where(.note.good, .positive, .favorable, .success, .surplus, .up) {
+  border-color: color-mix(in srgb, var(--da-mint) 38%, transparent) !important;
+  background: color-mix(in srgb, var(--da-mint) 10%, var(--da-surface)) !important;
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] :where(.note.good, .positive, .favorable, .success, .surplus, .up, .winner) :where(strong, b, .big, .value, .amount) {
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] :where(.note.warn, .warning, .caution, .watch) {
+  border-color: color-mix(in srgb, var(--da-amber) 38%, transparent) !important;
+  background: color-mix(in srgb, var(--da-amber) 9%, var(--da-surface)) !important;
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] :where(.note.warn, .warning, .caution, .watch) :where(strong, b, .big, .value, .amount) {
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] :where(.negative, .critical, .danger, .bad, .deficit, .down, .desfavorable) {
+  border-color: color-mix(in srgb, var(--da-bad) 38%, transparent) !important;
+  background: color-mix(in srgb, var(--da-bad) 9%, var(--da-surface)) !important;
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] :where(.negative, .critical, .danger, .bad, .deficit, .down, .desfavorable, .loser) :where(strong, b, .big, .value, .amount) {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] table {
+  width: 100%;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  background: var(--da-surface) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] th {
+  padding: 11px 12px !important;
+  border-color: var(--da-border) !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-primary) !important;
+  font-size: 10px !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+}
+
+html[data-dashito-theme] td {
+  padding: 10px 12px !important;
+  border-color: var(--da-border) !important;
+  background: transparent !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] tr:hover td { background: rgba(var(--da-primary-rgb), .045) !important; }
+html[data-dashito-theme] tr { background: transparent !important; color: var(--da-muted) !important; }
+
+html[data-dashito-theme] :is(
+  #tab-power, #tab-rates, #tab-family, #tab-consumption, #tab-housing, #tab-debt-spiral,
+  #tab-poverty, #tab-social, #tab-gini, #tab-structure, #tab-health-education, #tab-work,
+  #tab-pres, #tab-risk, #tab-bigmac, #tab-wholesale, #tab-investment, #tab-growth,
+  #tab-debt-public, #tab-fiscal, #tab-trade, #tab-bcra, #tab-program,
+  #tab-wealth-contribution, #tab-milei-cost, #tab-meli-benefits, #tab-casta
+) table {
+  background: var(--da-surface) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :is(
+  #tab-power, #tab-rates, #tab-family, #tab-consumption, #tab-housing, #tab-debt-spiral,
+  #tab-poverty, #tab-social, #tab-gini, #tab-structure, #tab-health-education, #tab-work,
+  #tab-pres, #tab-risk, #tab-bigmac, #tab-wholesale, #tab-investment, #tab-growth,
+  #tab-debt-public, #tab-fiscal, #tab-trade, #tab-bcra, #tab-program,
+  #tab-wealth-contribution, #tab-milei-cost, #tab-meli-benefits, #tab-casta
+) :where(thead, tbody, tr) {
+  background: transparent !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-power .card.side table tbody tr {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] :where(button, select, input, textarea, .subbtn, .download-link) {
+  min-height: 36px;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 11px !important;
+  background: var(--da-field) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+  font-size: 11px !important;
+  transition: background .15s ease, border-color .15s ease, color .15s ease, transform .15s ease !important;
+}
+
+html[data-dashito-theme] :where(button, .subbtn, .download-link):hover {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(button.active, .subbtn.active, button[aria-pressed='true']) {
+  border-color: var(--da-primary) !important;
+  background: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+  box-shadow: 0 8px 22px rgba(var(--da-primary-rgb), .2) !important;
+}
+
+html[data-dashito-theme] :where(.controls, [class$='-controls'], [class$='-control']) {
+  gap: 9px !important;
+}
+
+html[data-dashito-theme] input[type='range'],
+html[data-dashito-theme] input[type='checkbox'],
+html[data-dashito-theme] input[type='radio'] { accent-color: var(--da-primary) !important; }
+
+html[data-dashito-theme] :where(a, .source-link, .download-link) { color: var(--da-primary) !important; }
+html[data-dashito-theme] :where(.source-link, .download-link) { border-color: var(--da-border) !important; background: var(--da-field) !important; }
+
+html[data-dashito-theme] :where(code, pre, .formula) {
+  font-family: var(--da-font-mono) !important;
+}
+
+html[data-dashito-theme] :where(.amount, .value, .audit-amount, [class$='-value'], [class*='-value ']) {
+  font-family: var(--da-font-display) !important;
+  font-variant-numeric: tabular-nums !important;
+  font-weight: 760 !important;
+}
+
+html[data-dashito-theme] .formula {
+  padding: 10px 12px !important;
+  border: 1px solid var(--da-border) !important;
+  border-left: 3px solid var(--da-secondary) !important;
+  border-radius: 10px !important;
+  background: color-mix(in srgb, var(--da-bg) 72%, var(--da-surface-2) 28%) !important;
+  color: color-mix(in srgb, var(--da-text) 84%, var(--da-secondary) 16%) !important;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .025) !important;
+}
+
+html[data-dashito-theme] #tab-rates .formulas-box {
+  padding: 20px 18px 18px !important;
+}
+
+html[data-dashito-theme] #tab-rates .formulas-box h3 {
+  margin-bottom: 10px !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-rates .formulas-intro {
+  margin-bottom: 14px !important;
+  padding: 11px 13px !important;
+}
+
+html[data-dashito-theme] #tab-rates .formula-grid {
+  gap: 12px !important;
+}
+
+html[data-dashito-theme] #tab-rates .formula-card {
+  padding: 16px !important;
+}
+
+html[data-dashito-theme] #tab-rates .formula-card .formula {
+  margin-top: 8px !important;
+  padding: 12px 14px !important;
+  border: 1px dashed var(--da-border-strong) !important;
+  border-left: 3px solid var(--da-secondary) !important;
+  background: color-mix(in srgb, var(--da-bg) 70%, var(--da-surface-2) 30%) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-rates .formula-result {
+  margin-top: 10px !important;
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] footer {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 14px !important;
+  background: var(--da-field) !important;
+  color: var(--da-muted) !important;
+}
+
+/* Plotly needs full-height intermediate containers. Clipping them makes the SVG exist but remain invisible. */
+html[data-dashito-theme] .js-plotly-plot {
+  min-height: 320px;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  background: var(--da-plot) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.025) !important;
+}
+
+html[data-dashito-theme] .plot-container,
+html[data-dashito-theme] .svg-container {
+  height: 100% !important;
+  min-height: inherit !important;
+  overflow: visible !important;
+  border-radius: inherit !important;
+  background: transparent !important;
+}
+
+html[data-dashito-theme] .main-svg {
+  background: transparent !important;
+}
+
+html[data-dashito-theme] .main-svg .bg {
+  fill: var(--da-plot) !important;
+}
+
+html[data-dashito-theme] .main-svg :where(
+  .xtick text, .ytick text, .gtitle, .legendtext, .annotation-text, .xtitle, .ytitle
+) { fill: var(--da-muted) !important; }
+
+html[data-dashito-theme] .main-svg .gridlayer path { stroke: var(--da-border) !important; }
+html[data-dashito-theme] .main-svg :where(.xlines-above, .ylines-above, .zeroline) { stroke: var(--da-border-strong) !important; }
+
+html[data-dashito-theme] .modebar {
+  border: 1px solid var(--da-border) !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,.16) !important;
+}
+html[data-dashito-theme] .modebar-btn path { fill: var(--da-muted) !important; }
+html[data-dashito-theme] .hoverlayer .hovertext path { fill: var(--da-surface-2) !important; stroke: var(--da-border-strong) !important; }
+html[data-dashito-theme] .hoverlayer .hovertext text { fill: var(--da-text) !important; }
+
+@media (max-width: 760px) {
+  html[data-dashito-theme] body { font-size: 13px !important; }
+  html[data-dashito-theme] .wrap { padding: 14px 11px 82px !important; }
+  html[data-dashito-theme] :where(.card, .sources-box, .formulas-box, .method-shield, .household-sign-key) { border-radius: 12px !important; }
+  html[data-dashito-theme] :where(.grid, .power-info-grid, .formula-grid, .household-sign-key-grid) { gap: 11px !important; }
+  html[data-dashito-theme] .method-shield { align-items: flex-start !important; flex-direction: column !important; }
+  html[data-dashito-theme] .power-info-grid > .card { padding-bottom: 10px !important; }
+  html[data-dashito-theme] .power-info-grid > .card > .card-head + .note { margin-top: 10px !important; }
+  html[data-dashito-theme] .power-info-grid > .card > .note { margin-left: 10px !important; margin-right: 10px !important; }
+  html[data-dashito-theme] .card-head::before, html[data-dashito-theme] .section-head::before { display: none; }
+  html[data-dashito-theme] .js-plotly-plot { min-height: 280px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-dashito-theme] *,
+  html[data-dashito-theme] *::before,
+  html[data-dashito-theme] *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* Sistema transversal: una sola escala de gutters, radios y superficies para todos los tabs. */
+html[data-dashito-theme] {
+  --da-card-gutter: 18px;
+  --da-card-radius: 14px;
+  --da-block-radius: 10px;
+  --da-note-radius: 8px;
+}
+
+html[data-dashito-theme] .tab-panel .card {
+  border-radius: var(--da-card-radius) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card > .card-head {
+  margin: var(--da-card-gutter) var(--da-card-gutter) 14px !important;
+  padding: 14px 16px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: var(--da-block-radius) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card > .js-plotly-plot {
+  width: auto !important;
+  margin: 0 var(--da-card-gutter) 14px !important;
+  border-radius: var(--da-block-radius) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card > :where(
+  .family-mini-note,
+  .note,
+  .method-shield,
+  .method-legend,
+  [class$='-grid'],
+  [class*='-grid '],
+  [class$='-apb'],
+  [class*='-apb '],
+  [class$='-warning'],
+  [class*='-warning '],
+  [class$='-status'],
+  [class*='-status '],
+  [class$='-audit'],
+  [class*='-audit '],
+  [class$='-panel'],
+  [class*='-panel '],
+  [class$='-table-wrap'],
+  [class*='-table-wrap ']
+) {
+  margin-left: var(--da-card-gutter) !important;
+  margin-right: var(--da-card-gutter) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card > :where(
+  .family-mini-note,
+  .note,
+  [class$='-warning'],
+  [class*='-warning '],
+  [class$='-status'],
+  [class*='-status '],
+  [class$='-audit'],
+  [class*='-audit ']
+) {
+  padding: 12px 14px !important;
+  border-radius: var(--da-note-radius) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card > :where(
+  .family-mini-note,
+  .note,
+  .method-shield,
+  .method-legend,
+  [class$='-grid'],
+  [class*='-grid '],
+  [class$='-apb'],
+  [class*='-apb '],
+  [class$='-warning'],
+  [class*='-warning '],
+  [class$='-status'],
+  [class*='-status '],
+  [class$='-audit'],
+  [class*='-audit '],
+  [class$='-panel'],
+  [class*='-panel '],
+  [class$='-table-wrap'],
+  [class*='-table-wrap '],
+  .js-plotly-plot
+):last-child {
+  margin-bottom: var(--da-card-gutter) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card > :where([class$='-grid'], [class*='-grid ']) > :where(div, section, article) {
+  border-radius: var(--da-block-radius) !important;
+}
+
+/* Las table-card ya traen padding propio: el gutter no debe sumarse dos veces. */
+html[data-dashito-theme] .tab-panel .card.table-card {
+  padding: var(--da-card-gutter) !important;
+}
+
+html[data-dashito-theme] .tab-panel .card.table-card > .card-head {
+  margin: 0 0 14px !important;
+}
+
+html[data-dashito-theme] .tab-panel .card.table-card > .js-plotly-plot {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[data-dashito-theme] .tab-panel .card.table-card > :where(
+  .family-mini-note,
+  .note,
+  .method-shield,
+  .method-legend,
+  [class$='-grid'],
+  [class*='-grid '],
+  [class$='-apb'],
+  [class*='-apb '],
+  [class$='-warning'],
+  [class*='-warning '],
+  [class$='-status'],
+  [class*='-status '],
+  [class$='-audit'],
+  [class*='-audit '],
+  [class$='-panel'],
+  [class*='-panel '],
+  [class$='-table-wrap'],
+  [class*='-table-wrap ']
+) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[data-dashito-theme] .tab-panel > .method-shield {
+  margin: 16px 0 !important;
+  padding: 16px 18px !important;
+  border-radius: 8px !important;
+}
+
+html[data-dashito-theme] .tab-panel > :where(.sources-box, .formulas-box) {
+  margin-top: 16px !important;
+  padding: 20px !important;
+  border-radius: var(--da-card-radius) !important;
+}
+
+html[data-dashito-theme] .tab-panel > :where(.sources-box, .formulas-box) h3 {
+  margin: 0 0 14px !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .tab-panel .formula-grid {
+  gap: 12px !important;
+}
+
+html[data-dashito-theme] .tab-panel .formula-card {
+  padding: 15px !important;
+  border-radius: var(--da-block-radius) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tab-panel .formula {
+  margin-top: 8px !important;
+  padding: 11px 13px !important;
+  border: 1px dashed var(--da-border-strong) !important;
+  border-left: 3px solid var(--da-secondary) !important;
+  border-radius: 9px !important;
+  background: var(--da-bg) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .tab-panel .formula-caveat {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin-top: 10px !important;
+  padding: 11px 14px !important;
+  border-radius: var(--da-note-radius) !important;
+  line-height: 1.55 !important;
+  overflow-wrap: anywhere !important;
+}
+
+html[data-dashito-theme] .tab-panel :where(.source-link, .download-link) {
+  padding: 9px 12px !important;
+  border-radius: var(--da-note-radius) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tab-panel .sources-note {
+  margin-top: 12px !important;
+  padding: 11px 13px !important;
+  border-radius: var(--da-note-radius) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tab-panel :where(
+  .rates-public-formula,
+  .rates-timeline-status,
+  .confidence-chip,
+  .co-method-strip span,
+  .trade-error-btn,
+  .wealth-preset
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-program .program-note-box {
+  margin-left: var(--da-card-gutter) !important;
+  margin-right: var(--da-card-gutter) !important;
+  padding: 14px 16px !important;
+  border: 1px solid var(--da-border) !important;
+  border-left: 4px solid var(--da-secondary) !important;
+  border-radius: var(--da-note-radius) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-program .program-note-box b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-program .scenario-card > .tag {
+  margin: 0 12px 10px 0 !important;
+  vertical-align: middle !important;
+}
+
+html[data-dashito-theme] #tab-pres table tbody td:first-child > .heart {
+  display: inline-block !important;
+  margin-right: 12px !important;
+  vertical-align: -0.04em !important;
+}
+
+/* Poder adquisitivo · columna editorial "Cómo leerlo". */
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side {
+  padding: 22px 18px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  background:
+    radial-gradient(circle at 50% 0, rgba(var(--da-primary-rgb), .08), transparent 30%),
+    var(--da-surface) !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > h2 {
+  margin: 0 auto 2px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 11px !important;
+  color: var(--da-text) !important;
+  font-size: clamp(21px, 2vw, 27px) !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > h2::before {
+  content: '♡' !important;
+  margin: 0 !important;
+  color: var(--da-bad) !important;
+  font-family: var(--da-font-sans) !important;
+  font-size: .9em !important;
+  font-weight: 650 !important;
+  line-height: 1 !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > :where(.note, .small, table) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > .note {
+  padding: 13px 14px !important;
+  border-radius: var(--da-note-radius) !important;
+  line-height: 1.55 !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table tbody {
+  gap: 10px !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table tbody tr {
+  border-color: var(--da-border) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(145deg, var(--da-surface-2), color-mix(in srgb, var(--da-surface-2) 94%, var(--da-primary) 6%)) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .07) !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table tbody tr:hover {
+  border-color: var(--da-border-strong) !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table td:first-child {
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 6px 8px !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+  font-weight: 720 !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table :where(td:nth-child(2), td:nth-child(3)) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table :where(td:nth-child(2), td:nth-child(3))::before {
+  color: var(--da-faint) !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side :where(.power-method-pill, .power-pension-pill) {
+  margin: 0 !important;
+  padding: 4px 7px !important;
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .08) !important;
+  color: var(--da-primary) !important;
+  font-size: 8px !important;
+  line-height: 1.2 !important;
+}
+
+html[data-dashito-theme] #tab-power .power-aggregate-breakdown > div {
+  padding: 12px !important;
+  border-radius: 10px !important;
+}
+
+html[data-dashito-theme] #tab-power .power-aggregate-breakdown .tag {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 23px !important;
+  padding: 5px 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  border-radius: 6px !important;
+  font-size: 9px !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+}
+
+html[data-dashito-theme] #tab-power .power-aggregate-breakdown .val {
+  margin-top: 8px !important;
+  line-height: 1.15 !important;
+}
+
+html[data-dashito-theme] #tab-power > .method-shield {
+  border-radius: 8px !important;
+}
+
+html[data-dashito-theme] #tab-power > .method-shield > .label {
+  box-sizing: border-box !important;
+  flex: 0 0 128px !important;
+  width: 128px !important;
+  min-height: 48px !important;
+  padding: 9px 10px !important;
+  justify-content: flex-start !important;
+  border-radius: 4px !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+}
+
+@container powerSide (min-width: 361px) and (max-width: 560px) {
+  html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table td:nth-child(3) {
+    border-left: 1px solid var(--da-border) !important;
+  }
+}
+
+@container powerSide (max-width: 360px) {
+  html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table :where(td:nth-child(2), td:nth-child(3)) {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table td:nth-child(3) {
+    border-top: 1px solid var(--da-border) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  html[data-dashito-theme] #tab-power > .method-shield > .label {
+    flex-basis: auto !important;
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+}
+
+html[data-dashito-theme] .tab-panel :where(
+  [class$='-kpi'],
+  [class*='-kpi '],
+  [class$='-stat'],
+  [class*='-stat '],
+  [class$='-snap'],
+  [class*='-snap '],
+  [class$='-piece'],
+  [class*='-piece '],
+  [class$='-chip'],
+  [class*='-chip ']
+):not(.card) {
+  border-radius: var(--da-block-radius) !important;
+}
+
+@media (max-width: 760px) {
+  html[data-dashito-theme] {
+    --da-card-gutter: 12px;
+    --da-card-radius: 12px;
+    --da-block-radius: 8px;
+    --da-note-radius: 7px;
+  }
+
+  html[data-dashito-theme] .tab-panel .card > .card-head {
+    margin-bottom: 10px !important;
+    padding: 13px 14px !important;
+  }
+
+  html[data-dashito-theme] .tab-panel > :where(.sources-box, .formulas-box) {
+    padding: 15px !important;
+  }
+
+  html[data-dashito-theme] .gini-head {
+    padding: 18px 15px 16px !important;
+    border-radius: 12px !important;
+  }
+
+  html[data-dashito-theme] #tab-power > .power-hero-grid > .side {
+    padding: 18px 14px 16px !important;
+  }
+}
+
+/* DASH-0 · cierre de auditoría visual y responsive. */
+
+/* DASH-1 · superficies claras heredadas que no estaban conectadas al tema. */
+html[data-dashito-theme] :where(
+  .social-compare-head,
+  .social-caution,
+  .social-current-supplement,
+  .crianza-box,
+  .wealth-history-grid > div,
+  .wealth-history-callout,
+  .wealth-audit-grid > div,
+  .milei-wealth-compensation,
+  .milei-wealth-grid > div,
+  .rates-usury-callout,
+  .rates-usury-stat,
+  .pend-everyday,
+  .pend-political,
+  .pend-verdict > div,
+  .pend-contrast,
+  .pend-component,
+  .pend-plain-card,
+  .pend-gov-number
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] :where(.social-compare-head, .milei-wealth-compensation, .rates-usury-callout, .pend-everyday, .pend-political) {
+  background: linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 95%, var(--da-primary) 5%), var(--da-surface)) !important;
+}
+
+html[data-dashito-theme] :where(.social-compare-head, .wealth-history-callout, .milei-wealth-compensation) :where(h2, h3, strong, b) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-social .social-compare-head .method-shield {
+  display: block !important;
+  min-height: 0 !important;
+  margin-top: 14px !important;
+  line-height: 1.65 !important;
+  background: linear-gradient(105deg, color-mix(in srgb, var(--da-surface-2) 88%, var(--da-primary) 12%), var(--da-surface-2) 52%) !important;
+}
+
+html[data-dashito-theme] #tab-social .social-compare-head .method-shield .label {
+  margin: 0 8px 4px 0 !important;
+  vertical-align: middle !important;
+}
+
+/* Cobertura preventiva del inventario completo de fondos claros heredados. */
+html[data-dashito-theme] :where(
+  .mobile-scroll-hint,
+  .power-rescue-box,
+  .power-meli-loss,
+  .bcra-mandate,
+  .bcra-debt-snapshot,
+  .co-history-panel,
+  .meli-fx-table,
+  .power-meli-breakdown > div,
+  .wealth-feasibility,
+  .milei-wealth-track,
+  #tab-emae .emae-reading,
+  .mor-reading,
+  .mor-universe,
+  .mor-plain > div,
+  .mor-methods > div,
+  .mor-milei-info,
+  .ho-history-notes > div,
+  .rates-money-anchor,
+  .rates-money-formulas > div,
+  .rates-sign-method,
+  .milei-return-sign-rule,
+  .milei-return-other,
+  .milei-return-total,
+  .pend-quote,
+  .pend-reading,
+  .pend-gov-metric,
+  .pend-conclusion,
+  .pend-method details,
+  .pend-source-box
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] :where(
+  .gr-year-chip,
+  .dp-year-chip,
+  .co-partial-badge,
+  #tab-emae .emae-badge,
+  .mor-badge,
+  .milei-return-eyebrow,
+  .pend-kicker,
+  .pend-sticker,
+  .pend-chart-sticker,
+  .rates-public-step-no
+) {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(
+  .tab-btn,
+  #tab-emae .emae-btn,
+  .mor-btn,
+  .pend-btn,
+  .pend-link
+) {
+  border-color: var(--da-border-strong) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(
+  .tab-btn,
+  #tab-emae .emae-btn,
+  .mor-btn,
+  .pend-btn,
+  .pend-link
+):hover {
+  background: rgba(var(--da-primary-rgb), .13) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :where(.mor-caution, .mor-rates-jump) {
+  border-color: color-mix(in srgb, var(--da-amber) 38%, transparent) !important;
+  background: color-mix(in srgb, var(--da-amber) 9%, var(--da-surface)) !important;
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] :where(
+  .desktop-zoom-scroll.is-scrollable,
+  .sov-chart-scroll
+)::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* DASH-2 · se restauran los topes que Legacy ya usaba para hacer ceder el kicker. */
+@media (max-width: 980px) {
+  html[data-dashito-theme] .kicker {
+    max-width: 160px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 720px) {
+  html[data-dashito-theme] .kicker {
+    flex: 0 1 118px !important;
+    max-width: 118px !important;
+    padding: 6px 8px !important;
+    font-size: 11px !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+@media (max-width: 420px) {
+  html[data-dashito-theme] .kicker {
+    flex-basis: 104px !important;
+    max-width: 104px !important;
+    font-size: 10px !important;
+  }
+}
+
+/* Las tarjetas que deliberadamente apilan el encabezado pueden usar todo el ancho. */
+@media (max-width: 720px) {
+  html[data-dashito-theme] :where(
+    #tab-fiscal, #tab-trade, #tab-debt-spiral, #tab-growth, #tab-debt-public,
+    #tab-work, #tab-investment, #tab-housing, #tab-health-education, #tab-consumption
+  ) .card-head .kicker {
+    flex-basis: auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+}
+
+/* DASH-3 · checkbox propio, legible y consistente entre plataformas. */
+html[data-dashito-theme] input[type='checkbox'] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  box-sizing: border-box !important;
+  width: 19px !important;
+  height: 19px !important;
+  min-width: 19px !important;
+  min-height: 19px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-grid !important;
+  place-content: center !important;
+  border: 2px solid var(--da-border-strong) !important;
+  border-radius: 5px !important;
+  background: var(--da-surface) !important;
+  color: var(--da-on-primary) !important;
+  cursor: pointer !important;
+}
+
+html[data-dashito-theme] input[type='checkbox']::after {
+  content: '✓' !important;
+  opacity: 0 !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  transform: scale(.7) !important;
+  transition: opacity .12s ease, transform .12s ease !important;
+}
+
+html[data-dashito-theme] input[type='checkbox']:checked {
+  border-color: var(--da-primary) !important;
+  background: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] input[type='checkbox']:checked::after {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+html[data-dashito-theme] input[type='checkbox']:focus-visible {
+  outline: 3px solid rgba(var(--da-primary-rgb), .28) !important;
+  outline-offset: 3px !important;
+}
+
+/* DASH-6 · blindajes preventivos para los reportes dependientes de dispositivo/datos. */
+html[data-dashito-theme] #tab-wholesale .card-head {
+  flex-wrap: wrap !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .card-head .card-title {
+  min-width: min(100%, 250px) !important;
+  flex: 1 1 280px !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .card-head .kicker {
+  flex-shrink: 1 !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .gini-head > .method-legend {
+  margin: 16px auto 20px !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .gini-head > .gini-stat-grid {
+  margin-top: 20px !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .gini-head > .gini-stat-grid + .method-shield {
+  margin-top: 20px !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .method-shield {
+  display: block !important;
+  line-height: 1.65 !important;
+}
+
+html[data-dashito-theme] #tab-wholesale .method-shield .label {
+  display: flex !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 0 10px !important;
+  white-space: normal !important;
+}
+
+html[data-dashito-theme] #tab-wholesale #wholesalePlainConclusion {
+  margin-top: 20px !important;
+  padding: 18px !important;
+}
+
+html[data-dashito-theme] #tab-health-education > .method-shield > .label {
+  border-radius: 4px !important;
+}
+
+html[data-dashito-theme] #tab-poverty :where(.mandate-change, .poverty-stat) {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+}
+
+html[data-dashito-theme] #tab-poverty .mandate-change .pct {
+  margin-top: 5px !important;
+  line-height: 1.35 !important;
+}
+
+/* En pobreza importa el resultado social, no la dirección matemática:
+   bajar es favorable; subir es desfavorable. */
+html[data-dashito-theme] #tab-poverty .mandate-change.down {
+  border-color: color-mix(in srgb, var(--da-mint) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-mint) 12%) !important;
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] #tab-poverty .mandate-change.down :where(.pct, strong, b) {
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] #tab-poverty .mandate-change.up {
+  border-color: color-mix(in srgb, var(--da-bad) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-bad) 12%) !important;
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-poverty .mandate-change.up :where(.pct, strong, b) {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-poverty .mandate-cards > .mandate-card:first-child .mandate-change {
+  border-color: color-mix(in srgb, var(--da-amber) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 90%, var(--da-amber) 10%) !important;
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] #tab-poverty .mandate-cards > .mandate-card:first-child .mandate-change :where(.pct, strong, b) {
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] #povertyChart .legend {
+  translate: 0 6px !important;
+}
+
+/* DASH-8 · la información técnica sigue completa, pero arranca plegada. */
+html[data-dashito-theme] .legacy-disclosure__heading {
+  margin: 0 !important;
+}
+
+html[data-dashito-theme] .legacy-disclosure__trigger {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 44px !important;
+  padding: 8px 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  border: 0 !important;
+  border-radius: 9px !important;
+  background: transparent !important;
+  color: var(--da-text) !important;
+  font: inherit !important;
+  text-align: left !important;
+}
+
+html[data-dashito-theme] .legacy-disclosure__trigger:hover {
+  background: rgba(var(--da-primary-rgb), .07) !important;
+}
+
+html[data-dashito-theme] .legacy-disclosure__chevron {
+  color: var(--da-primary) !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  transform: rotate(0deg) !important;
+  transition: transform .16s ease !important;
+}
+
+html[data-dashito-theme] [data-disclosure='open'] .legacy-disclosure__chevron {
+  transform: rotate(180deg) !important;
+}
+
+html[data-dashito-theme] .legacy-disclosure__content[hidden] {
+  display: none !important;
+}
+
+html[data-dashito-theme] .legacy-disclosure__content {
+  padding-top: 12px !important;
+}
+
+/* DASH-4 y DASH-7 · controles React complementarios de los gráficos heredados. */
+html[data-dashito-theme] .legacy-chart-tools-host:empty {
+  display: none !important;
+}
+
+html[data-dashito-theme] .legacy-chart-tools {
+  margin: 0 var(--da-card-gutter) 14px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 9px !important;
+}
+
+html[data-dashito-theme] .legacy-chart-tools-host--before .legacy-chart-tools {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+html[data-dashito-theme] .legacy-chart-tools-host--after .legacy-chart-tools {
+  margin-top: 10px !important;
+}
+
+html[data-dashito-theme] .legacy-scale-control {
+  width: fit-content !important;
+  padding: 5px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  font-size: 10px !important;
+  font-weight: 750 !important;
+}
+
+html[data-dashito-theme] .legacy-scale-control > div {
+  display: inline-flex !important;
+  gap: 3px !important;
+}
+
+html[data-dashito-theme] .legacy-scale-control button {
+  min-height: 28px !important;
+  padding: 4px 8px !important;
+  border-radius: 7px !important;
+  font-size: 10px !important;
+}
+
+html[data-dashito-theme] .legacy-scale-control button[aria-pressed='true'] {
+  border-color: var(--da-primary) !important;
+  background: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+}
+
+html[data-dashito-theme] .legacy-scale-control button:disabled {
+  cursor: wait !important;
+  opacity: .68 !important;
+}
+
+html[data-dashito-theme] .legacy-external-legend {
+  margin: 10px var(--da-card-gutter) 4px !important;
+  padding: 10px !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 5px 8px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+  overflow: visible !important;
+}
+
+html[data-dashito-theme] .legacy-external-legend button {
+  min-width: 0 !important;
+  padding: 6px 7px !important;
+  display: grid !important;
+  grid-template-columns: 25px minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 7px !important;
+  border: 0 !important;
+  border-radius: 7px !important;
+  background: transparent !important;
+  color: var(--da-muted) !important;
+  font: inherit !important;
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+
+html[data-dashito-theme] .legacy-external-legend button:hover {
+  background: rgba(var(--da-primary-rgb), .07) !important;
+}
+
+html[data-dashito-theme] .legacy-external-legend button.is-hidden {
+  opacity: .42 !important;
+}
+
+html[data-dashito-theme] .legacy-external-legend i {
+  width: 25px !important;
+  height: 0 !important;
+  display: block !important;
+  border-top-width: 3px !important;
+}
+
+html[data-dashito-theme] .legacy-external-legend span {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+}
+
+html[data-dashito-theme] .legacy-scale-help {
+  color: var(--da-primary) !important;
+  cursor: help !important;
+}
+
+html[data-dashito-theme] .legacy-mobile-annotations {
+  display: none !important;
+}
+
+@media (max-width: 720px) {
+  html[data-dashito-theme] #powerChart .legend {
+    display: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  html[data-dashito-theme] .legacy-external-legend {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  html[data-dashito-theme] .js-plotly-plot[data-mobile-annotation-reflow='true'] .annotation {
+    display: none !important;
+  }
+
+  html[data-dashito-theme] .legacy-mobile-annotations {
+    width: 100% !important;
+    padding: 10px 12px !important;
+    display: block !important;
+    border: 1px solid var(--da-border) !important;
+    border-radius: 10px !important;
+    background: var(--da-surface-2) !important;
+    color: var(--da-muted) !important;
+    font-size: 10px !important;
+  }
+
+  html[data-dashito-theme] .legacy-mobile-annotations summary {
+    color: var(--da-primary) !important;
+    font-weight: 780 !important;
+    cursor: pointer !important;
+  }
+
+  html[data-dashito-theme] .legacy-mobile-annotations ul {
+    margin: 9px 0 0 !important;
+    padding-left: 18px !important;
+  }
+
+  html[data-dashito-theme] .legacy-mobile-annotations li + li {
+    margin-top: 6px !important;
+  }
+
+  html[data-dashito-theme] .legacy-mobile-annotations li span {
+    margin-right: 6px !important;
+    color: var(--da-faint) !important;
+    font-variant-numeric: tabular-nums !important;
+  }
+}
+
+/* DASH-9 · exclusión tonal acotada para pobreza, asistencia y desigualdad. */
+html[data-dashito-theme] :where(#tab-poverty, #tab-social, #tab-gini) :where(.side h2, .card-title, h2)::before {
+  content: none !important;
+}
+
+/* DASH-4 · contrato responsive auditado. No cambia el orden del Legacy: sólo
+   permite que sus mismas piezas respiren y se apilen cuando ya no entran. */
+@media (max-width: 1180px) {
+  html[data-dashito-theme] .tab-panel :where(
+    .wealth-chart-grid, .family-chart-grid, .ho-chart-grid,
+    .debt-summary-grid, .sov-summary-grid, .he-summary-grid
+  ) {
+    grid-template-columns: 1fr !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(
+    [class$='-kpi-grid'], [class$='-stat-grid'], [class$='-snapshot-grid'],
+    [class$='-recent-grid'], [class$='-year-grid'], [class$='-mandate-grid']
+  ) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  html[data-dashito-theme] .tab-panel :where(
+    [class$='-control-grid'], [class$='-controls-grid'], [class$='-scenario-grid'],
+    [class$='-projection-grid'], .formula-grid, .grid.power-hero-grid,
+    .grid.power-info-grid, .emae-grid-3, .mor-grid-3
+  ) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  html[data-dashito-theme] .method-shield {
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html[data-dashito-theme] .wrap {
+    padding-right: max(12px, env(safe-area-inset-right)) !important;
+    padding-left: max(12px, env(safe-area-inset-left)) !important;
+  }
+
+  html[data-dashito-theme] :where(button, select, input, summary) {
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  html[data-dashito-theme] .tab-panel :where(
+    [class$='-grid'], .grid, .emae-grid-2, .emae-grid-3, .mor-grid-2, .mor-grid-3
+  ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(
+    .table-wrap, [class$='-table-wrap'], .table-card
+  ) {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overscroll-behavior-x: contain !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(table, .data-table) {
+    min-width: 560px;
+  }
+
+  html[data-dashito-theme] .legacy-chart-tools {
+    align-items: stretch !important;
+  }
+
+  html[data-dashito-theme] .legacy-scale-control {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+}
+
+@media (max-width: 380px) {
+  html[data-dashito-theme] .legacy-scale-help {
+    display: none !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(.card, .side, .sources-box, .formulas-box) {
+    border-radius: 12px !important;
+  }
+}
+
+@media (max-height: 800px) and (min-width: 769px) {
+  html[data-dashito-theme] .wrap {
+    padding-top: 14px !important;
+    padding-bottom: 18px !important;
+  }
+
+  html[data-dashito-theme] .card + .card {
+    margin-top: 14px !important;
+  }
+}
+
+@media (max-height: 560px) and (min-width: 769px) {
+  html[data-dashito-theme] .card-head {
+    min-height: 54px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  html[data-dashito-theme] .controls {
+    gap: 8px !important;
+  }
+}
+
+/* Contrato responsive por proporciones de viewport.
+   Mantiene el orden Legacy y sólo cambia cuánto ocupa/apila cada pieza. */
+html[data-dashito-theme] #tab-morosidad :where(.mor-hero, .mor-panel) {
+  border-color: var(--da-border) !important;
+  background:
+    radial-gradient(circle at 82% -20%, rgba(var(--da-primary-rgb), .12), transparent 38%),
+    linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 96%, var(--da-primary) 4%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] #tab-morosidad :where(.mor-kpi, .mor-stat, .mor-plain > div, .mor-methods > div) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-morosidad :where(.mor-sub, .mor-note, .mor-kpi span, .mor-stat span) {
+  color: var(--da-muted) !important;
+}
+
+@media (max-width: 900px) {
+  html[data-dashito-theme] #tab-power > :where(.power-hero-grid, .power-info-grid),
+  html[data-dashito-theme] #tab-rates > .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(
+    .card-head, .widget-head, .section-head, .rates-public-head, .family-head,
+    .structure-head, .gini-head, .method-shield
+  ) {
+    min-width: 0 !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (max-width: 620px) {
+  html[data-dashito-theme] {
+    --da-card-gutter: 12px;
+    --da-card-radius: 12px;
+    --da-block-radius: 8px;
+    --da-note-radius: 7px;
+  }
+
+  html[data-dashito-theme] .wrap {
+    padding: 12px 10px 82px !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(
+    [class$='-grid'], [class*='-grid '], .grid,
+    .emae-grid-2, .emae-grid-3, .mor-grid-2, .mor-grid-3
+  ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(
+    .card, .side, .sources-box, .formulas-box, .structure-head,
+    [class$='-card'], [class*='-card '], [class$='-panel'], [class*='-panel ']
+  ) {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(
+    .card-head, .widget-head, .section-head, .rates-public-head, .family-head
+  ) {
+    width: auto !important;
+    min-height: 0 !important;
+    align-items: stretch !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(.card-title, .title) {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(.kicker, .label, .eyebrow, .audit-tag, .metric-tag) {
+    box-sizing: border-box !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    flex: 0 1 auto !important;
+    align-self: flex-start !important;
+    border-radius: 8px !important;
+    line-height: 1.3 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-dashito-theme] .tab-panel :where(.structure-head, .gini-head, .method-shield) {
+    overflow: hidden !important;
+  }
+
+  html[data-dashito-theme] :where(.rates-timeline-toggle, .controls, .legacy-chart-tools) {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  html[data-dashito-theme] .legacy-chart-tools {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+  }
+
+  html[data-dashito-theme] #tab-power > .power-hero-grid > .side {
+    padding: 17px 13px 15px !important;
+  }
+
+  html[data-dashito-theme] #tab-morosidad .mor-head {
+    align-items: stretch !important;
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 520px) {
+  html[data-dashito-theme] .wrap {
+    padding-right: max(8px, env(safe-area-inset-right)) !important;
+    padding-left: max(8px, env(safe-area-inset-left)) !important;
+  }
+
+  html[data-dashito-theme] .tab-panel .card > .card-head {
+    margin: 10px 10px 9px !important;
+    padding: 11px 12px !important;
+  }
+
+  html[data-dashito-theme] .tab-panel .card > :where(
+    .family-mini-note, .note, .method-shield, .method-legend,
+    [class$='-grid'], [class*='-grid '], [class$='-panel'], [class*='-panel '],
+    [class$='-table-wrap'], [class*='-table-wrap ']
+  ) {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  html[data-dashito-theme] .wrap {
+    padding-top: 9px !important;
+    padding-bottom: 18px !important;
+  }
+
+  html[data-dashito-theme] .tab-panel .card > .card-head {
+    min-height: 48px !important;
+  }
+
+  html[data-dashito-theme] .tab-panel > :where(.sources-box, .formulas-box) {
+    margin-top: 12px !important;
+  }
+}
+
+/* Cobertura final de superficies y tinta heredadas.
+   El Legacy conserva su estructura y semántica; estas reglas sólo traducen
+   colores fijos del laboratorio original a los tokens de la skin activa. */
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table tbody > tr {
+  border-color: var(--da-border) !important;
+  background-color: var(--da-surface-2) !important;
+  background-image:
+    linear-gradient(145deg, var(--da-surface-2), color-mix(in srgb, var(--da-surface-2) 94%, var(--da-primary) 6%)) !important;
+}
+
+html[data-dashito-theme] #tab-power > .power-hero-grid > .side > table tbody > tr > td {
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-power :where(.power-aggregate-loss .headline, .power-rescue-box .headline) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-power :where(.power-aggregate-breakdown .val, .power-rescue-summary .val) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-poverty :where(.mandate-name, .poverty-summary .big-sequence > span) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-social .social-compare-thesis {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-baseline-card .big {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-step.effect :where(.rates-public-step-amount, .rates-public-delta) {
+  color: var(--da-secondary) !important;
+}
+
+html[data-dashito-theme] #tab-wealth-contribution :where(
+  .wealth-controls, .wealth-card, .wealth-history, .wealth-audit
+) {
+  border-color: var(--da-border) !important;
+  background:
+    radial-gradient(circle at 84% -20%, rgba(var(--da-primary-rgb), .1), transparent 38%),
+    var(--da-surface) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] #tab-wealth-contribution :where(
+  .wealth-control, .wealth-kpi, .wealth-history-grid > div, .wealth-history-callout,
+  .wealth-audit-grid > div, .wealth-table-wrap
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-wealth-contribution :where(
+  .wealth-card h2, .wealth-history h2, .wealth-audit h2, .wealth-control output,
+  .wealth-kpi .val, .wealth-history-grid b
+) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-wealth-contribution :where(
+  .wealth-card p, .wealth-note, .wealth-kpi small, .wealth-history-grid span,
+  .wealth-history-callout, .wealth-audit-grid p
+) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-wealth-contribution :where(.good .val, .good b) {
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] #tab-wealth-contribution :where(.hot .val, .hot b) {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .mor-inline-kpis span, .milei-cost-kpi, .milei-cost-formula > div,
+  .milei-input-grid > div, .milei-cost-table-wrap, .milei-shock-formula,
+  .milei-unified-components > div, .milei-financial-item
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(.milei-cost-hero, .milei-return-scenario) {
+  border-color: var(--da-border-strong) !important;
+  background:
+    radial-gradient(circle at 86% -12%, rgba(var(--da-primary-rgb), .13), transparent 42%),
+    linear-gradient(145deg, var(--da-surface-2), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .milei-return-sign-rule, .milei-return-other, .milei-return-total
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .milei-cost-eyebrow, .milei-return-eyebrow
+) {
+  border-color: color-mix(in srgb, var(--da-primary) 42%, var(--da-border)) !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .milei-cost-sub, .milei-return-scenario .lead, .milei-return-caveat
+) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-cost-amount {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-return-total .amount {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-shock-track {
+  background: var(--da-elevated) !important;
+  box-shadow: inset 0 0 0 1px var(--da-border) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-scale-track {
+  background: var(--da-elevated) !important;
+  box-shadow: inset 0 0 0 1px var(--da-border) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-scale-fill {
+  background: linear-gradient(90deg, var(--da-primary), var(--da-secondary)) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost .milei-shock-scenario {
+  border-color: color-mix(in srgb, var(--da-mint) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 92%, var(--da-mint) 8%) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(.milei-cost-title, .milei-cost-kpi .val) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .milei-shock-bridge h2, .milei-cost-card h3, .milei-return-scenario h2,
+  .milei-return-others-title
+) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .milei-scale-head, .milei-scale-head span, .milei-return-card .after,
+  .milei-return-other .after, .milei-return-other .actor,
+  .milei-unified-components span
+) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(.milei-cost-formula .step, .milei-input-grid span) {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-milei-cost :where(
+  .household-plus, .milei-unified-components .household-plus,
+  .milei-financial-item .household-plus
+) {
+  color: var(--da-mint) !important;
+}
+
+/* Legacy v147+: Péndulo del poder económico */
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-power-hero, .pend-finance-observed, .pend-housing-observed,
+  .pend-fiscal-observed, .pend-disabled-lab, .pend-asset-controls,
+  .pend-controls.pend-controls-near-chart
+) {
+  border-color: var(--da-border) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 94%, var(--da-primary) 6%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-circuit-step, .pend-power-metric, .pend-actor, .pend-risk-table,
+  .pend-evidence, .pend-lab-status > div, .pend-finance-term,
+  .pend-fiscal-component, .pend-fiscal-type, .pend-asset-pending > div
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-contract, .pend-housing-plain, .pend-power-metric.good,
+  .pend-lab-status .ready
+) {
+  border-color: color-mix(in srgb, var(--da-mint) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-mint) 9%) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-finance-plain, .pend-power-metric.bad, .pend-fiscal-component.counter,
+  .pend-lab-status .blocked
+) {
+  border-color: color-mix(in srgb, var(--da-bad) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-bad) 9%) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-gate, .pend-fiscal-plain, .pend-finance-term.missing,
+  .pend-fiscal-component.budget
+) {
+  border-color: color-mix(in srgb, var(--da-amber) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-amber) 9%) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-layer-question, .pend-asset-plain, .pend-power-metric.neutral,
+  .pend-finance-term.separate, .pend-fiscal-component.observed,
+  .pend-fin-separation
+) {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .08) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-layer-nav-wrap {
+  border-color: var(--da-border) !important;
+  background: color-mix(in srgb, var(--da-surface) 92%, transparent) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-layer-btn {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-layer-btn.active {
+  border-color: var(--da-primary) !important;
+  background: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-meta {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .08) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-power-title, .pend-layer-question, .pend-actor h4, .pend-gate h4,
+  .pend-evidence b, .pend-disabled-lab h4, .pend-fiscal-type b
+) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(
+  .pend-power-lede, .pend-circuit-step span, .pend-actor p, .pend-gate p,
+  .pend-evidence span, .pend-disabled-lab p, .pend-fiscal-type span,
+  .pend-asset-controls p, .pend-asset-plain, .pend-finance-plain,
+  .pend-housing-plain, .pend-fiscal-plain, .pend-controls-context
+) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo :where(.pend-risk-table, .pend-risk-table th) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-risk-table td {
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-asset-controls select {
+  border-color: var(--da-border) !important;
+  background: var(--da-elevated) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-pendulo .pend-controls-context::before {
+  background: rgba(var(--da-primary-rgb), .12) !important;
+  color: var(--da-primary) !important;
+}
+
+@media (max-width: 760px) {
+  html[data-dashito-theme] #tab-pendulo .pend-controls-near-chart .pend-control > span {
+    background: var(--da-surface) !important;
+  }
+}
+
+/* Legacy v147+: Rutas y Turismo */
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(.road-shell, .tour-shell) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-hero, .road-bice, .road-final, .tour-hero, .tour-final
+) {
+  border-color: var(--da-border-strong) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 94%, var(--da-primary) 6%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-roads :where(
+  .road-kicker, .road-pill, .road-question, .road-plain, .road-mini,
+  .road-legal, .road-type, .road-flow-model, .road-step, .road-logistics,
+  .road-bice-grid > div, .road-bar-track, .road-field, .road-result,
+  .road-sim-verdict, .road-def, .road-time, .road-link, .road-source
+),
+html[data-dashito-theme] #tab-tourism :where(
+  .tour-kicker, .tour-pill, .tour-question, .tour-plain, .tour-mini,
+  .tour-link, .tour-check, .tour-callout, .tour-step, .tour-source-tag,
+  .tour-region, .tour-bar-track, .tour-sticker, .tour-source
+) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-head h2, .road-head h3, .road-head h4, .road-mini h4,
+  .road-type b, .road-flow-model h4, .road-def b, .road-time b,
+  .road-final h3, .tour-head h2, .tour-head h3, .tour-head h4,
+  .tour-mini h4, .tour-region strong, .tour-final h3
+) {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-sub, .road-plain, .road-mini, .road-type span, .road-logistics,
+  .road-field output, .road-sim-verdict, .road-def span, .road-time span,
+  .road-source, .tour-sub, .tour-plain, .tour-mini, .tour-callout,
+  .tour-source, .tour-final > p
+) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-kicker, .road-pill, .road-question, .road-link,
+  .tour-kicker, .tour-pill, .tour-question, .tour-link, .tour-check,
+  .tour-sticker
+) {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .08) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-legal, .road-pill.good, .road-sim-verdict.good,
+  .tour-pill.good, .tour-callout.green
+) {
+  border-color: color-mix(in srgb, var(--da-mint) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-mint) 9%) !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-pill.bad, .road-sim-verdict.bad, .tour-pill.bad, .tour-callout
+) {
+  border-color: color-mix(in srgb, var(--da-bad) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-bad) 9%) !important;
+}
+
+html[data-dashito-theme] :where(#tab-roads, #tab-tourism) :where(
+  .road-pill.warn, .road-logistics, .tour-pill.warn, .tour-callout.gold,
+  .tour-source-tag
+) {
+  border-color: color-mix(in srgb, var(--da-amber) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-amber) 9%) !important;
+}
+
+html[data-dashito-theme] #tab-roads .road-field input {
+  border-color: var(--da-border) !important;
+  background: var(--da-elevated) !important;
+  color: var(--da-text) !important;
+}
+
+/* Encabezados de las tarjetas físicas de Consumo: rectángulo corto, no píldora. */
+html[data-dashito-theme] #tab-consumption .co-cat-kpi-grid > .co-cat-kpi > .tag {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 24px !important;
+  padding: 6px 10px !important;
+  border-radius: 4px !important;
+  line-height: 1.2 !important;
+}
+
+/* Inversión: jerarquía rectangular y aire real dentro de encabezados breves. */
+html[data-dashito-theme] #tab-investment .card > .card-head {
+  border-radius: 8px !important;
+}
+
+html[data-dashito-theme] #tab-investment .card-head .kicker {
+  padding: 6px 10px !important;
+  border-radius: 4px !important;
+  line-height: 1.25 !important;
+}
+
+html[data-dashito-theme] #tab-investment .inv-kpi {
+  border-radius: 8px !important;
+}
+
+html[data-dashito-theme] #tab-investment .inv-kpi > .tag {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 24px !important;
+  padding: 6px 10px !important;
+  border-radius: 4px !important;
+  line-height: 1.2 !important;
+}
+
+/* Storytelling v170–v174: la narración conserva su contenido, con la piel del rediseño. */
+html[data-dashito-theme] #tab-story {
+  min-width: 0 !important;
+  padding: 0 !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-shell {
+  width: min(100%, 1180px) !important;
+  min-width: 0 !important;
+  gap: 16px !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-hero {
+  gap: 24px !important;
+  padding: clamp(22px, 3vw, 34px) !important;
+  border: 1px solid var(--da-border-strong) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--da-surface) 93%, var(--da-primary) 7%), color-mix(in srgb, var(--da-surface) 94%, var(--da-secondary) 6%)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-hero::before {
+  background: rgba(var(--da-primary-rgb), .1) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-hero::after {
+  background: color-mix(in srgb, var(--da-mint) 10%, transparent) !important;
+}
+
+html[data-dashito-theme] #tab-story :where(.story-eyebrow, .story-author-card, .story-opening, .story-nav, .story-stat, .story-chapter, .story-turn > div, .story-quote, .story-principle, .story-link) {
+  box-sizing: border-box !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-eyebrow {
+  border-radius: 6px !important;
+  background: rgba(var(--da-primary-rgb), .08) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-hero h1,
+html[data-dashito-theme] #tab-story .story-author-card strong,
+html[data-dashito-theme] #tab-story .story-chapter h2,
+html[data-dashito-theme] #tab-story .story-turn b,
+html[data-dashito-theme] #tab-story .story-principle b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story :where(.story-deck, .story-author-card p, .story-stat span, .story-chapter p, .story-turn p) {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-author-card {
+  padding: 20px !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-story .story-opening {
+  padding: 18px 22px !important;
+  border-left-color: var(--da-primary) !important;
+  border-radius: 8px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-nav {
+  top: 8px !important;
+  gap: 7px !important;
+  padding: 9px !important;
+  border-radius: 10px !important;
+  background: color-mix(in srgb, var(--da-surface) 94%, transparent) !important;
+  box-shadow: var(--da-shadow) !important;
+  scrollbar-color: var(--da-border-strong) transparent !important;
+}
+
+html[data-dashito-theme] #tab-story .story-nav a {
+  padding: 7px 10px !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 6px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-nav a:hover,
+html[data-dashito-theme] #tab-story .story-nav a:focus-visible {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .12) !important;
+  color: var(--da-primary) !important;
+  outline: 2px solid rgba(var(--da-primary-rgb), .18) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat {
+  min-width: 0 !important;
+  padding: 15px !important;
+  border-radius: 10px !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat b {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat.good {
+  border-color: color-mix(in srgb, var(--da-mint) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-mint) 9%) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat.good b {
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat.warn {
+  border-color: color-mix(in srgb, var(--da-bad) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-bad) 9%) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-stat.warn b {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-timeline::before {
+  background: linear-gradient(var(--da-primary), var(--da-secondary), var(--da-mint), var(--da-amber)) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-chapter {
+  padding: 24px 26px !important;
+  border-radius: 12px !important;
+  background: var(--da-surface) !important;
+  box-shadow: var(--da-shadow) !important;
+  scroll-margin-top: 76px !important;
+}
+
+html[data-dashito-theme] #tab-story .story-chapter::before {
+  border-color: var(--da-surface) !important;
+  background: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+  box-shadow: 0 0 0 1px var(--da-border-strong) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-chapter:nth-child(3n+2)::before {
+  background: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-chapter:nth-child(3n)::before {
+  background: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-chapter .story-question {
+  padding: 13px 15px !important;
+  border-left-color: var(--da-primary) !important;
+  border-radius: 8px !important;
+  background: rgba(var(--da-primary-rgb), .09) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-turn > div,
+html[data-dashito-theme] #tab-story .story-principle {
+  padding: 16px !important;
+  border-radius: 8px !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-turn .answer {
+  border-color: color-mix(in srgb, var(--da-mint) 42%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-mint) 9%) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-turn small {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-quote {
+  padding: 19px 22px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(90deg, rgba(var(--da-primary-rgb), .11), color-mix(in srgb, var(--da-surface-2) 93%, var(--da-secondary) 7%)) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-quote.final {
+  background: linear-gradient(120deg, rgba(var(--da-primary-rgb), .13), color-mix(in srgb, var(--da-surface-2) 90%, var(--da-mint) 10%)) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-link {
+  padding: 8px 11px !important;
+  border-radius: 6px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] #tab-story .story-link:hover,
+html[data-dashito-theme] #tab-story .story-link:focus-visible {
+  border-color: var(--da-border-strong) !important;
+  background: rgba(var(--da-primary-rgb), .12) !important;
+  outline: 2px solid rgba(var(--da-primary-rgb), .18) !important;
+}
+
+/* Registro transversal de fuentes: sin superficies blancas heredadas en skins oscuras. */
+html[data-dashito-theme] .source-register {
+  border-color: var(--da-border) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--da-surface) 96%, var(--da-primary) 4%), var(--da-surface)) !important;
+  color: var(--da-text) !important;
+  box-shadow: var(--da-shadow) !important;
+}
+
+html[data-dashito-theme] .source-register-standard {
+  gap: 16px !important;
+  margin: -2px -2px 14px !important;
+  padding: 13px 14px !important;
+  border-color: var(--da-border) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(90deg, rgba(var(--da-primary-rgb), .09), color-mix(in srgb, var(--da-surface-2) 95%, var(--da-mint) 5%)) !important;
+}
+
+html[data-dashito-theme] .source-register-kicker {
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] .source-register-copy strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .source-register-copy small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] :where(.source-register-status span, .source-register-status a, .source-register-legend span) {
+  padding: 6px 9px !important;
+  border-color: var(--da-border) !important;
+  border-radius: 6px !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .source-register-status a {
+  border-color: var(--da-border-strong) !important;
+  color: var(--da-primary) !important;
+}
+
+html[data-dashito-theme] .source-register-status a:hover,
+html[data-dashito-theme] .source-register-status a:focus-visible {
+  border-color: var(--da-primary) !important;
+  background: rgba(var(--da-primary-rgb), .12) !important;
+  outline: 2px solid rgba(var(--da-primary-rgb), .18) !important;
+}
+
+html[data-dashito-theme] .source-register-status .ok {
+  border-color: color-mix(in srgb, var(--da-mint) 45%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-mint) 12%) !important;
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] .source-register-status .warn,
+html[data-dashito-theme] .source-register-missing {
+  border-color: color-mix(in srgb, var(--da-amber) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface) 91%, var(--da-amber) 9%) !important;
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] .source-register-missing .source-register-standard {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .source-register-legend {
+  gap: 7px !important;
+  margin-bottom: 14px !important;
+}
+
+html[data-dashito-theme] .source-register-legend .primary::before,
+html[data-dashito-theme] .source-register-link.source-kind-primary::before {
+  background: var(--da-secondary) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--da-secondary) 18%, transparent) !important;
+}
+
+html[data-dashito-theme] .source-register-legend .data::before,
+html[data-dashito-theme] .source-register-link.source-kind-data::before {
+  background: var(--da-info) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--da-info) 18%, transparent) !important;
+}
+
+html[data-dashito-theme] .source-register-legend .audit::before,
+html[data-dashito-theme] .source-register-link.source-kind-audit::before {
+  background: var(--da-mint) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--da-mint) 18%, transparent) !important;
+}
+
+html[data-dashito-theme] .source-register .source-link,
+html[data-dashito-theme] .source-register a.source-register-link {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-primary) !important;
+}
+
+/* Controles y contexto de gráficos: eliminamos los restos blancos del Legacy. */
+html[data-dashito-theme] :where(.chart-context-strip, .chart-scale-control) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .chart-context-strip strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :where(.chart-scale-buttons, .chart-scale-help, .chart-scale-tooltip) {
+  border-color: var(--da-border) !important;
+  background: var(--da-field) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .chart-scale-btn {
+  border-color: transparent !important;
+  background: transparent !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .chart-scale-btn.active {
+  border-color: color-mix(in srgb, var(--da-primary) 52%, var(--da-border)) !important;
+  background: var(--da-primary) !important;
+  color: var(--da-primary-ink) !important;
+}
+
+html[data-dashito-theme] .chart-scale-control.filtered-log {
+  border-color: color-mix(in srgb, var(--da-primary) 44%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-primary) 9%) !important;
+}
+
+@media (max-width: 720px) {
+  html[data-dashito-theme] #tab-story .story-shell {
+    gap: 12px !important;
+  }
+
+  html[data-dashito-theme] #tab-story .story-hero {
+    gap: 15px !important;
+    padding: 18px 16px !important;
+    border-radius: 10px !important;
+  }
+
+  html[data-dashito-theme] #tab-story .story-nav {
+    margin-inline: 0 !important;
+    padding: 7px !important;
+    border-radius: 8px !important;
+  }
+
+  html[data-dashito-theme] #tab-story .story-chapter {
+    padding: 18px 15px !important;
+    border-radius: 10px !important;
+  }
+
+  html[data-dashito-theme] #tab-story .story-opening,
+  html[data-dashito-theme] #tab-story .story-quote.final {
+    padding: 16px !important;
+  }
+
+  html[data-dashito-theme] .source-register-standard {
+    gap: 10px !important;
+    margin: 0 0 12px !important;
+    padding: 12px !important;
+  }
+
+  html[data-dashito-theme] .source-register-legend span {
+    min-height: 32px !important;
+    border-radius: 6px !important;
+  }
+
+  /* La tabla presidencial ya se transforma en tarjetas: no debe conservar el
+     ancho mínimo de las tablas con scroll horizontal. */
+  html[data-dashito-theme] #tab-pres :where(.table-card, table, tbody, tr, td) {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  html[data-dashito-theme] #tab-pres .table-card {
+    overflow: hidden !important;
+  }
+
+  html[data-dashito-theme] #tab-pres table {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  html[data-dashito-theme] #tab-pres td {
+    grid-template-columns: minmax(94px, 36%) minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-dashito-theme] #tab-pres td > :where(small, .method-badge-row) {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Los gráficos de tasas viven dentro de su tarjeta, con un pequeño colchón
+     lateral para que ni el canvas ni sus etiquetas toquen el borde. */
+  html[data-dashito-theme] #tab-rates .card > :where(#nominalChart, #realChart) {
+    box-sizing: border-box !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-dashito-theme] #tab-rates .card > :where(#nominalChart, #realChart) :where(.plot-container, .svg-container, .main-svg) {
+    max-width: 100% !important;
+  }
+
+  html[data-dashito-theme] :where(.chart-context-strip, .chart-scale-control, .source-register, .source-register-standard) {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+}

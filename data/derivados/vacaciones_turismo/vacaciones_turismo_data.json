@@ -1,0 +1,668 @@
+{
+  "cutoff": "2026-08-21",
+  "flow_coverage": "INDEC · registros migratorios · total de vías · turistas (sin excursionistas)",
+  "monthly": [
+    {
+      "date": "2022-01-01",
+      "receptivo": 170.894,
+      "emisivo": 417.974,
+      "saldo": -247.07999999999998,
+      "ratio": 2.4458085128793288
+    },
+    {
+      "date": "2022-02-01",
+      "receptivo": 143.657,
+      "emisivo": 468.235,
+      "saldo": -324.578,
+      "ratio": 3.2593956437904175
+    },
+    {
+      "date": "2022-03-01",
+      "receptivo": 200.86,
+      "emisivo": 381.952,
+      "saldo": -181.09199999999998,
+      "ratio": 1.901583192273225
+    },
+    {
+      "date": "2022-04-01",
+      "receptivo": 287.459,
+      "emisivo": 371.446,
+      "saldo": -83.98700000000002,
+      "ratio": 1.2921703616863622
+    },
+    {
+      "date": "2022-05-01",
+      "receptivo": 264.623,
+      "emisivo": 362.647,
+      "saldo": -98.024,
+      "ratio": 1.370428874285304
+    },
+    {
+      "date": "2022-06-01",
+      "receptivo": 238.15,
+      "emisivo": 360.22,
+      "saldo": -122.07000000000002,
+      "ratio": 1.5125761074952762
+    },
+    {
+      "date": "2022-07-01",
+      "receptivo": 373.088,
+      "emisivo": 469.07,
+      "saldo": -95.98199999999997,
+      "ratio": 1.257263701861223
+    },
+    {
+      "date": "2022-08-01",
+      "receptivo": 339.137,
+      "emisivo": 424.819,
+      "saldo": -85.68200000000002,
+      "ratio": 1.2526471602921534
+    },
+    {
+      "date": "2022-09-01",
+      "receptivo": 363.987,
+      "emisivo": 441.002,
+      "saldo": -77.01499999999999,
+      "ratio": 1.2115872270163495
+    },
+    {
+      "date": "2022-10-01",
+      "receptivo": 394.256,
+      "emisivo": 536.811,
+      "saldo": -142.55500000000006,
+      "ratio": 1.361579785722982
+    },
+    {
+      "date": "2022-11-01",
+      "receptivo": 438.028,
+      "emisivo": 450.308,
+      "saldo": -12.279999999999973,
+      "ratio": 1.028034737505365
+    },
+    {
+      "date": "2022-12-01",
+      "receptivo": 431.1049999999999,
+      "emisivo": 457.8,
+      "saldo": -26.695000000000107,
+      "ratio": 1.0619222695167074
+    },
+    {
+      "date": "2023-01-01",
+      "receptivo": 646.2140000000003,
+      "emisivo": 1288.31,
+      "saldo": -642.0959999999997,
+      "ratio": 1.9936274980114936
+    },
+    {
+      "date": "2023-02-01",
+      "receptivo": 611.167,
+      "emisivo": 1151.5449999999994,
+      "saldo": -540.3779999999994,
+      "ratio": 1.8841740473553044
+    },
+    {
+      "date": "2023-03-01",
+      "receptivo": 498.3190000000003,
+      "emisivo": 677.833,
+      "saldo": -179.51399999999967,
+      "ratio": 1.3602391239346674
+    },
+    {
+      "date": "2023-04-01",
+      "receptivo": 574.7930000000005,
+      "emisivo": 531.7610000000001,
+      "saldo": 43.03200000000038,
+      "ratio": 0.9251347876539896
+    },
+    {
+      "date": "2023-05-01",
+      "receptivo": 483.57499999999993,
+      "emisivo": 490.526,
+      "saldo": -6.951000000000079,
+      "ratio": 1.014374192214238
+    },
+    {
+      "date": "2023-06-01",
+      "receptivo": 419.4340000000002,
+      "emisivo": 411.6789999999999,
+      "saldo": 7.75500000000028,
+      "ratio": 0.9815107978847679
+    },
+    {
+      "date": "2023-07-01",
+      "receptivo": 618.344,
+      "emisivo": 535.849,
+      "saldo": 82.495,
+      "ratio": 0.8665872071209554
+    },
+    {
+      "date": "2023-08-01",
+      "receptivo": 507.318,
+      "emisivo": 457.579,
+      "saldo": 49.738999999999976,
+      "ratio": 0.9019569579632499
+    },
+    {
+      "date": "2023-09-01",
+      "receptivo": 548.9819999999999,
+      "emisivo": 444.7750000000001,
+      "saldo": 104.20699999999977,
+      "ratio": 0.8101813902823776
+    },
+    {
+      "date": "2023-10-01",
+      "receptivo": 593.6680000000001,
+      "emisivo": 524.4329999999998,
+      "saldo": 69.23500000000035,
+      "ratio": 0.8833775780402509
+    },
+    {
+      "date": "2023-11-01",
+      "receptivo": 624.907,
+      "emisivo": 462.393,
+      "saldo": 162.51400000000007,
+      "ratio": 0.7399389029087527
+    },
+    {
+      "date": "2023-12-01",
+      "receptivo": 643.169,
+      "emisivo": 460.547,
+      "saldo": 182.62199999999996,
+      "ratio": 0.7160590762303533
+    },
+    {
+      "date": "2024-01-01",
+      "receptivo": 841.9259999999999,
+      "emisivo": 1112.608,
+      "saldo": -270.682,
+      "ratio": 1.3215033150181845
+    },
+    {
+      "date": "2024-02-01",
+      "receptivo": 713.3879999999998,
+      "emisivo": 1047.11,
+      "saldo": -333.7220000000001,
+      "ratio": 1.4677987294431645
+    },
+    {
+      "date": "2024-03-01",
+      "receptivo": 631.142,
+      "emisivo": 666.8150000000003,
+      "saldo": -35.67300000000023,
+      "ratio": 1.0565213533562974
+    },
+    {
+      "date": "2024-04-01",
+      "receptivo": 440.07399999999996,
+      "emisivo": 710.5560000000002,
+      "saldo": -270.4820000000002,
+      "ratio": 1.6146284488517846
+    },
+    {
+      "date": "2024-05-01",
+      "receptivo": 350.67600000000004,
+      "emisivo": 505.65699999999987,
+      "saldo": -154.98099999999982,
+      "ratio": 1.4419492637078095
+    },
+    {
+      "date": "2024-06-01",
+      "receptivo": 333.154,
+      "emisivo": 500.7210000000003,
+      "saldo": -167.5670000000003,
+      "ratio": 1.5029715987201122
+    },
+    {
+      "date": "2024-07-01",
+      "receptivo": 508.75099999999986,
+      "emisivo": 666.6179999999997,
+      "saldo": -157.86699999999985,
+      "ratio": 1.31030307557135
+    },
+    {
+      "date": "2024-08-01",
+      "receptivo": 418.4500000000004,
+      "emisivo": 513.6910000000001,
+      "saldo": -95.24099999999976,
+      "ratio": 1.227604253793762
+    },
+    {
+      "date": "2024-09-01",
+      "receptivo": 461.87099999999987,
+      "emisivo": 579.9720000000002,
+      "saldo": -118.10100000000034,
+      "ratio": 1.2557012672369565
+    },
+    {
+      "date": "2024-10-01",
+      "receptivo": 414.0650000000001,
+      "emisivo": 654.1089999999999,
+      "saldo": -240.0439999999998,
+      "ratio": 1.5797254054315137
+    },
+    {
+      "date": "2024-11-01",
+      "receptivo": 505.10599999999977,
+      "emisivo": 662.3190000000002,
+      "saldo": -157.21300000000042,
+      "ratio": 1.3112475401202925
+    },
+    {
+      "date": "2024-12-01",
+      "receptivo": 581.6069999999999,
+      "emisivo": 693.6400000000001,
+      "saldo": -112.03300000000024,
+      "ratio": 1.1926266361993585
+    },
+    {
+      "date": "2025-01-01",
+      "receptivo": 672.4319999999994,
+      "emisivo": 1927.26,
+      "saldo": -1254.8280000000004,
+      "ratio": 2.8661039331858116
+    },
+    {
+      "date": "2025-02-01",
+      "receptivo": 494.44100000000014,
+      "emisivo": 1823.802,
+      "saldo": -1329.3609999999999,
+      "ratio": 3.6886140105695104
+    },
+    {
+      "date": "2025-03-01",
+      "receptivo": 479.6060000000002,
+      "emisivo": 1325.61,
+      "saldo": -846.0039999999997,
+      "ratio": 2.7639562474197557
+    },
+    {
+      "date": "2025-04-01",
+      "receptivo": 418.77100000000024,
+      "emisivo": 881.161,
+      "saldo": -462.3899999999997,
+      "ratio": 2.10415955259557
+    },
+    {
+      "date": "2025-05-01",
+      "receptivo": 315.3899999999999,
+      "emisivo": 752.8340000000003,
+      "saldo": -437.4440000000004,
+      "ratio": 2.3869938805922843
+    },
+    {
+      "date": "2025-06-01",
+      "receptivo": 318.75299999999976,
+      "emisivo": 643.7679999999998,
+      "saldo": -325.01500000000004,
+      "ratio": 2.0196453052990884
+    },
+    {
+      "date": "2025-07-01",
+      "receptivo": 427.202,
+      "emisivo": 843.066,
+      "saldo": -415.86400000000003,
+      "ratio": 1.9734598620792974
+    },
+    {
+      "date": "2025-08-01",
+      "receptivo": 397.5279999999999,
+      "emisivo": 798.4290000000002,
+      "saldo": -400.9010000000003,
+      "ratio": 2.008484936910105
+    },
+    {
+      "date": "2025-09-01",
+      "receptivo": 374.76800000000014,
+      "emisivo": 706.4399999999997,
+      "saldo": -331.67199999999957,
+      "ratio": 1.885006190496519
+    },
+    {
+      "date": "2025-10-01",
+      "receptivo": 389.7650000000001,
+      "emisivo": 724.953,
+      "saldo": -335.1879999999999,
+      "ratio": 1.8599746000795345
+    },
+    {
+      "date": "2025-11-01",
+      "receptivo": 491.37099999999975,
+      "emisivo": 763.7890000000002,
+      "saldo": -272.41800000000046,
+      "ratio": 1.5544039025502128
+    },
+    {
+      "date": "2025-12-01",
+      "receptivo": 535.8450000000003,
+      "emisivo": 705.1410000000002,
+      "saldo": -169.29599999999994,
+      "ratio": 1.3159421101251292
+    },
+    {
+      "date": "2026-01-01",
+      "receptivo": 681.9560000000001,
+      "emisivo": 1764.091000000001,
+      "saldo": -1082.135000000001,
+      "ratio": 2.5868105860202135
+    },
+    {
+      "date": "2026-02-01",
+      "receptivo": 534.223,
+      "emisivo": 1629.1799999999996,
+      "saldo": -1094.9569999999997,
+      "ratio": 3.0496253437235006
+    },
+    {
+      "date": "2026-03-01",
+      "receptivo": 509.6250000000001,
+      "emisivo": 1061.777,
+      "saldo": -552.1519999999999,
+      "ratio": 2.0834476330635265
+    },
+    {
+      "date": "2026-04-01",
+      "receptivo": 463.0719999999999,
+      "emisivo": 764.7570000000003,
+      "saldo": -301.6850000000004,
+      "ratio": 1.6514861619791317
+    },
+    {
+      "date": "2026-05-01",
+      "receptivo": 379.8600000000003,
+      "emisivo": 661.8529999999997,
+      "saldo": -281.9929999999994,
+      "ratio": 1.7423603432843657
+    },
+    {
+      "date": "2026-06-01",
+      "receptivo": 329.1769999999999,
+      "emisivo": 501.9180000000002,
+      "saldo": -172.74100000000027,
+      "ratio": 1.5247663111335248
+    }
+  ],
+  "annual": [
+    {
+      "year": 2022,
+      "label": "2022",
+      "receptivo": 3645.244,
+      "emisivo": 5142.284,
+      "saldo": -1497.0399999999995,
+      "ratio": 1.410683070872622,
+      "partial": false
+    },
+    {
+      "year": 2023,
+      "label": "2023",
+      "receptivo": 6769.890000000002,
+      "emisivo": 7437.23,
+      "saldo": -667.3399999999974,
+      "ratio": 1.0985747183484513,
+      "partial": false
+    },
+    {
+      "year": 2024,
+      "label": "2024",
+      "receptivo": 6200.21,
+      "emisivo": 8313.816,
+      "saldo": -2113.6060000000007,
+      "ratio": 1.340892647184531,
+      "partial": false
+    },
+    {
+      "year": 2025,
+      "label": "2025",
+      "receptivo": 5315.871999999999,
+      "emisivo": 11896.253,
+      "saldo": -6580.381000000001,
+      "ratio": 2.2378742377544083,
+      "partial": false
+    },
+    {
+      "year": 2026,
+      "label": "2026 · 6m",
+      "receptivo": 2897.9130000000005,
+      "emisivo": 6383.576000000001,
+      "saldo": -3485.6630000000005,
+      "ratio": 2.2028183730843542,
+      "partial": true
+    }
+  ],
+  "spending": [
+    {
+      "year": 2024,
+      "receptivo_usd_m": 3020.5,
+      "emisivo_usd_m": 5146.3,
+      "coverage": "ETI · pasos relevados",
+      "saldo_usd_m": -2125.8
+    },
+    {
+      "year": 2025,
+      "receptivo_usd_m": 3110.0,
+      "emisivo_usd_m": 7164.2,
+      "coverage": "ETI · pasos relevados",
+      "saldo_usd_m": -4054.2
+    }
+  ],
+  "itcrm": [
+    {
+      "date": "2024-12-01",
+      "value": 79.79
+    },
+    {
+      "date": "2025-01-01",
+      "value": 79.7
+    },
+    {
+      "date": "2025-02-01",
+      "value": 81.21
+    },
+    {
+      "date": "2025-03-01",
+      "value": 80.52
+    },
+    {
+      "date": "2025-04-01",
+      "value": 82.62
+    },
+    {
+      "date": "2025-05-01",
+      "value": 83.9
+    },
+    {
+      "date": "2025-06-01",
+      "value": 86.12
+    },
+    {
+      "date": "2025-07-01",
+      "value": 91.77
+    },
+    {
+      "date": "2025-08-01",
+      "value": 95.1
+    },
+    {
+      "date": "2025-09-01",
+      "value": 99.1
+    },
+    {
+      "date": "2025-10-01",
+      "value": 98.89
+    },
+    {
+      "date": "2025-11-01",
+      "value": 96.02
+    },
+    {
+      "date": "2025-12-01",
+      "value": 94.7
+    },
+    {
+      "date": "2026-01-01",
+      "value": 93.5
+    },
+    {
+      "date": "2026-02-01",
+      "value": 90.1
+    },
+    {
+      "date": "2026-03-01",
+      "value": 86.2
+    },
+    {
+      "date": "2026-04-01",
+      "value": 84.7
+    },
+    {
+      "date": "2026-05-01",
+      "value": 84.3
+    },
+    {
+      "date": "2026-06-01",
+      "value": 85.0
+    }
+  ],
+  "eoh": {
+    "last_period": "noviembre de 2025",
+    "total_nights_m": 4.0,
+    "total_nights_yoy": 5.3,
+    "resident_nights_yoy": 4.8,
+    "nonresident_nights_yoy": 6.8,
+    "regions": [
+      "Total país",
+      "Buenos Aires",
+      "CABA",
+      "Córdoba",
+      "Cuyo",
+      "Litoral",
+      "Norte",
+      "Patagonia"
+    ]
+  },
+  "summer": [
+    {
+      "year": 2023,
+      "tourists_m": 33.8,
+      "stay_nights": 4.15,
+      "real_spend_yoy": null,
+      "daily_real_yoy": null,
+      "tourists_vs_2023": 0.0,
+      "tourists_yoy_derived": null
+    },
+    {
+      "year": 2024,
+      "tourists_m": 29.2,
+      "stay_nights": 3.9,
+      "real_spend_yoy": 3.5,
+      "daily_real_yoy": null,
+      "tourists_vs_2023": -13.609467455621294,
+      "tourists_yoy_derived": -13.609467455621294
+    },
+    {
+      "year": 2025,
+      "tourists_m": 28.1,
+      "stay_nights": null,
+      "real_spend_yoy": -19.4,
+      "daily_real_yoy": 1.9,
+      "tourists_vs_2023": -16.863905325443774,
+      "tourists_yoy_derived": -3.7671232876712257
+    },
+    {
+      "year": 2026,
+      "tourists_m": 30.7,
+      "stay_nights": 3.65,
+      "real_spend_yoy": 4.5,
+      "daily_real_yoy": -3.3,
+      "tourists_vs_2023": -9.171597633136086,
+      "tourists_yoy_derived": 9.2526690391459
+    }
+  ],
+  "winter_2026": {
+    "tourists_m": 4.6,
+    "domestic_m": 4.2,
+    "foreign_m": 0.4,
+    "tourists_yoy": 5.9,
+    "real_spend_yoy": 2.5,
+    "stay_nights": 4.0,
+    "vs_2023": null
+  },
+  "origins_june_2026": [
+    {
+      "market": "Bolivia",
+      "receptivo_k": 11.2,
+      "emisivo_k": 19.9,
+      "bordering": true
+    },
+    {
+      "market": "Brasil",
+      "receptivo_k": 101.4,
+      "emisivo_k": 84.4,
+      "bordering": true
+    },
+    {
+      "market": "Chile",
+      "receptivo_k": 42.3,
+      "emisivo_k": 69.3,
+      "bordering": true
+    },
+    {
+      "market": "Paraguay",
+      "receptivo_k": 26.2,
+      "emisivo_k": 60.2,
+      "bordering": true
+    },
+    {
+      "market": "Uruguay",
+      "receptivo_k": 46.9,
+      "emisivo_k": 43.5,
+      "bordering": true
+    },
+    {
+      "market": "EE.UU. + Canadá",
+      "receptivo_k": 25.2,
+      "emisivo_k": 44.2,
+      "bordering": false
+    },
+    {
+      "market": "Resto de América",
+      "receptivo_k": 38.2,
+      "emisivo_k": 85.2,
+      "bordering": false
+    },
+    {
+      "market": "Europa",
+      "receptivo_k": 28.7,
+      "emisivo_k": 87.2,
+      "bordering": false
+    },
+    {
+      "market": "Resto del mundo",
+      "receptivo_k": 9.2,
+      "emisivo_k": 8.1,
+      "bordering": false
+    }
+  ],
+  "bcra": {
+    "period": "marzo de 2026",
+    "travel_net_usd_m": -393,
+    "travel_outflows_usd_m": 780,
+    "travel_inflows_usd_m": 387,
+    "own_fx_settlement_share": 70,
+    "warning": "La cuenta Viajes y Pasajes incluye consumos con tarjeta que no son necesariamente turismo presencial."
+  },
+  "sources": {
+    "indec_page": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-13-55",
+    "indec_jun_2026": "https://www.indec.gob.ar/uploads/informesdeprensa/eti_07_2611F2D28020.pdf",
+    "indec_annual_2025": "https://www.indec.gob.ar/uploads/informesdeprensa/eti_01_26212234D387.pdf",
+    "eoh_page": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-13-56",
+    "eoh_method": "https://www.indec.gob.ar/uploads/informesdeprensa/eoh_12_25ED486DC3BD.pdf",
+    "bcra_itcrm": "https://www.bcra.gob.ar/indices-de-tipo-de-cambio-multilateral/",
+    "bcra_fx": "https://www.bcra.gob.ar/informe-de-la-evolucion-del-mercado-de-cambios-y-balance-cambiario/",
+    "bcra_mar_2026": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/informe-mercado-cambios-balance-cambiario-2026-03.pdf",
+    "bcra_jun_2026": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/informe-monetario-mensual-jun-26.pdf",
+    "came_summer_2026": "https://www.redcame.org.ar/prensa/14480/temporada-2026",
+    "came_summer_2025": "https://www.redcame.org.ar/novedades/14132/temporada-2025-viajaron-281-millones-de-turistas-y-gastaron-87-billones-de-pesos",
+    "came_summer_2024": "https://www.redcame.org.ar/novedades/13608/temporada-2024-viajaron-292-millones-de-turistas-y-gastaron-casi-5-billones-de-pesos",
+    "came_winter_2026": "https://www.argentina.gob.ar/noticias/vacaciones-de-invierno-212-billones-de-impacto-economico-un-25-mas-que-en-2025"
+  }
+}

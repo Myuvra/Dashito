@@ -1,0 +1,20 @@
+{
+  "cer_months_complete": true,
+  "cer_base_is_100": true,
+  "cer_last_is_finite": true,
+  "cer_is_labeled_reference": true,
+  "entry_date_selector_present": true,
+  "active_layer_tab_scrolls_into_mobile_view": true,
+  "five_asset_traces_present": true,
+  "access_layer_present": true,
+  "assets_not_called_observed_wealth": true,
+  "market_assets_keep_visible_gaps": true,
+  "salary_bug_stays_fixed": true,
+  "finance_preserved": true,
+  "housing_preserved": true,
+  "fiscal_preserved": true,
+  "six_layers_preserved": true,
+  "tab_count_preserved": true,
+  "metric_ids_unique": true,
+  "html_ids_unique": true
+}

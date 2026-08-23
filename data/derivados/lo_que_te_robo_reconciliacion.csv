@@ -1,0 +1,9 @@
+﻿componente,naturaleza,monto,periodo,incluido_total_robo,incluido_compensacion,riesgo_doble_conteo,calidad
+Agujero salarial bruto,pérdida,18430000000000.0,dic-2023–jun-2026,sí,no,Base madre; incluye sólo caídas mensuales,medio
+Recuperación salarial observada,contrafactual observado,-6080000000000.0,dic-2023–jun-2026,sí,no,Se descuenta del agujero bruto,medio
+Brecha salarial neta,subtotal,12350000000000.0,dic-2023–jun-2026,no,no,No sumar: ya surge de las dos filas anteriores,alto
+Pinza financiera,compensación hipotética,5850000000000.0,32 meses post-shock,no,sí,No es pérdida salarial ni obligación judicial,alto
+Privilegios fiscales prudentes,reasignación hipotética,1230000000000.0,anual,no,sí,Período distinto; mostrar separado,alto
+Mercado Libre,beneficio documentado,223080000000.0,2024–1T2026 reexpresado,no,sí,Régimen previo; no sumar como daño salarial,alto
+SIDE,crédito presupuestario,49300000000.0,2026,no,sí,Crédito no equivale a ejecución,alto
+Aporte grandes fortunas,compensación hipotética,4980000000000.0,una vez; pesos jun-2026,no,sí,"Recaudación objetivo, no daño ni ingreso observado",alto

@@ -1,0 +1,26 @@
+year,date,financial_ars_m,financial_pct_gdp,gdp_approx,partial,source,transition_year
+2002,2002-12-31,-4553.8,,False,,ONP,False
+2003,2003-12-31,1794.1,,False,,ONP,True
+2004,2004-12-31,11657.8,2.4030993312,False,,serie oficial,False
+2005,2005-12-31,9418.1,1.6167352523,False,,serie oficial,False
+2006,2006-12-31,11441.3,1.5981605994,False,,serie oficial,False
+2007,2007-12-31,9296.1,1.0363774216,False,,serie oficial,True
+2008,2008-12-31,14654.8,1.2747227273,False,,serie oficial,False
+2009,2009-12-31,-7131.1,-0.57143463,False,,serie oficial,False
+2010,2010-12-31,3067.9,0.1846218551,False,,serie oficial,False
+2011,2011-12-31,-30662.9,-1.4071849847,False,,serie oficial,False
+2012,2012-12-31,-55563.4,-2.1063386902,False,,serie oficial,False
+2013,2013-12-31,-64477.4,-1.9256708343,False,,serie oficial,False
+2014,2014-12-31,-109719.9,-2.3961089573,False,,serie oficial,False
+2015,2015-12-31,-303760.8,-5.1013560193,False,,serie oficial,True
+2016,2016-12-31,-474785.5,-5.7702514972,False,,serie oficial,False
+2017,2017-12-31,-629049.5,-5.90090072,False,,serie oficial,False
+2018,2018-12-31,-727927.3,-4.9368372096,False,,serie oficial,False
+2019,2019-12-31,-819406.9,-3.8008628746,False,,serie oficial,True
+2020,2020-12-31,-2292830.52,-8.4264835766,False,,serie oficial,False
+2021,2021-12-31,-1664481.68,-3.6012866409,False,,serie oficial,False
+2022,2022-12-31,-2278398.0,-2.7565882018,False,,serie oficial,False
+2023,2023-12-31,-8418468.2,-4.3982489198,False,,serie oficial,True
+2024,2024-12-31,1764785.6,0.3022360912,False,,serie oficial,False
+2025,2025-12-31,1453819.1,0.2,True,,serie oficial,False
+2026,2026-07-31,1701091.1,0.1,True,ene–jul,serie oficial,False

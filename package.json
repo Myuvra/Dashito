@@ -1,0 +1,33 @@
+{
+  "name": "dashito-argento",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview",
+    "data:extract": "node scripts/extract-legacy-data.mjs",
+    "data:extract:new-tabs": "node scripts/import-new-legacy-features.mjs",
+    "data:parity": "node scripts/import-legacy-parity.mjs",
+    "test:parity": "node scripts/check-legacy-parity.mjs",
+    "test:theme-audit": "node scripts/audit-legacy-theme-coverage.mjs",
+    "test:epic": "node scripts/check-audit-epic.mjs",
+    "test:routing": "node scripts/check-root-route.mjs",
+    "test:responsive": "node scripts/check-responsive-contract.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "lucide-react": "^0.575.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-router-dom": "^7.13.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@openai/sites-vite-plugin": "0.1.0",
+    "@vitejs/plugin-react": "6.0.2",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  }
+}

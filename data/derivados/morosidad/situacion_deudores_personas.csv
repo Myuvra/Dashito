@@ -1,0 +1,5 @@
+﻿date,provider,regular_pct,outside_regular_pct,unit_type,value_type
+2024-12-01,PNFC Fintech,86.0,14.0,% de personas,derived from 2025 change
+2024-12-01,PNFC tradicionales,85.0,15.0,% de personas,derived from 2025 change
+2025-12-01,PNFC Fintech,79.0,21.0,% de personas,official snapshot
+2025-12-01,PNFC tradicionales,71.0,29.0,% de personas,official snapshot

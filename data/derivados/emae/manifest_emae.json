@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-08-21",
+  "input_html": "data/dashboard_kawaii_133_aporte_grandes_fortunas.html",
+  "output_html": "data/dashboard_kawaii_134_emae_actividad_real.html",
+  "sources": {
+    "data/fuentes/emae/indec/datos_argentina_emae_mensual.csv": "328397c472aa5445ed133672f53aaf767fe06a74564c660a9cc78779619261fb",
+    "data/fuentes/emae/poblacion/proyecciones_nacionales_2022_2040_base.csv": "043bcb5943c160e6d5be1864ac3e30d0fa90eb0a80a4ef65a18bf6446592aa7c",
+    "data/fuentes/emae/poblacion/world_bank_SP_POP_TOTL_ARG.json": "52afe66cab503055f41bb6006d7be5d376b286b33e944e05ecd29dc68987aecc",
+    "data/fuentes/emae/indec/sh_emae_mensual_base2004.xls": "ffc72691105c3cab337a9d08a887da96097aae482f33373e2fa29bc86364da53",
+    "data/fuentes/emae/indec/emae_08_26.pdf": "e1c1d3b7438f8ecd8e07f2dd2f3fe182fea2ef086da6748d50861907d2b3b077",
+    "data/fuentes/emae/metodologia/metodologia_emae_ago_16.pdf": "cc03efbed59bdeabab1c8f497510b4c0e75b8f33bb725350b6b22118c171e268"
+  },
+  "outputs": {
+    "data/derivados/emae/emae_mensual_limpio.csv": "a3924ecb4346e4ab7fc742a65296ee99aa7239bae85d6774537423b2cc9f2edf",
+    "data/derivados/emae/emae_per_capita.csv": "aa1d22d2c804910c49d03f27c0a394237d12edabf8c5d6609eb41b8355bfdf45",
+    "data/derivados/emae/emae_mandatos.csv": "3677b25a2b946188a4f5f8fd6acb154a7bea055abd2e2183a6a5899e707295f6",
+    "data/derivados/emae/emae_ventana_espejo.csv": "7f455b7dbcfd2cb944e3fa771547f881da1f849c10c5c69f9bea732fc13b76a2",
+    "data/derivados/emae/emae_drawdowns.csv": "4f7b0cbb127e713b5a75a97d3a9387898ec8c3c6a2c0dd73b13f84e21eddf376",
+    "data/dashboard_kawaii_134_emae_actividad_real.html": "499cd61a6a4c075412ed3054f392ca0d65a006abb5bbe18f6c7b3dbb1cc37c6e"
+  },
+  "kpis": {
+    "latest_date": "2026-06",
+    "latest_sa": 154.1172638221334,
+    "current_vs_nov2023_pct": 5.300224873093096,
+    "current_pc_vs_nov2023_pct": 4.809870475405598,
+    "complete_post_months": 31,
+    "floor_date": "2024-04",
+    "recovery_from_floor_pct": 9.206144682395735,
+    "current_vs_prior_peak_pct": -0.13179898715846017,
+    "loss_months_base": 0.16874899135870636,
+    "recovery_months_base": 0.941579539404529,
+    "net_months_base": 0.7728305480458226,
+    "mirror_differential_months_base": -0.48179189177319737,
+    "months_below_nov2023": 7,
+    "underwater_nov2023_months_base": 0.16874899135870636
+  },
+  "mirror": {
+    "n_months": 31,
+    "mirror": {
+      "start": "2021-05",
+      "end": "2023-11",
+      "initial": 138.92350185503292,
+      "final": 146.35986201157135,
+      "final_index": 105.352845312162,
+      "minimum_index": 100.0,
+      "maximum_index": 111.08318954262901,
+      "max_drawdown_pct": -5.635907487693082,
+      "floor_to_final_pct": 5.352845312162002,
+      "saldo_months_base": 2.03736773324993
+    },
+    "post": {
+      "start": "2023-12",
+      "end": "2026-06",
+      "initial": 142.8408797734873,
+      "final": 154.1172638221334,
+      "final_index": 107.8943675413704,
+      "minimum_index": 98.79880647298705,
+      "maximum_index": 109.54134446579897,
+      "max_drawdown_pct": -2.7200596432332413,
+      "floor_to_final_pct": 9.206144682395735,
+      "saldo_months_base": 1.5555758414767324
+    },
+    "mirror_pc": {
+      "start": "2021-05",
+      "end": "2023-11",
+      "initial": 3.0188952288211176e-06,
+      "final": 3.1649622340794968e-06,
+      "final_index": 104.83842578781439,
+      "minimum_index": 100.0,
+      "maximum_index": 110.81925423292812,
+      "max_drawdown_pct": -5.78640626328033,
+      "floor_to_final_pct": 4.838425787814393,
+      "saldo_months_base": 1.951560023874135
+    },
+    "post_pc": {
+      "start": "2023-12",
+      "end": "2026-06",
+      "initial": 3.0883881296058123e-06,
+      "final": 3.3171928181342236e-06,
+      "final_index": 107.40854707784462,
+      "minimum_index": 98.73669720473191,
+      "maximum_index": 109.09521434731668,
+      "max_drawdown_pct": -2.7337996647661345,
+      "floor_to_final_pct": 8.782803272355277,
+      "saldo_months_base": 1.4795378085214204
+    },
+    "differential_months_base": -0.48179189177319737
+  },
+  "rebound": {
+    "total": {
+      "peak_date": "2022-06",
+      "peak_value": 154.32065688488396,
+      "first_recovery": "2025-12",
+      "months_from_shock_to_recovery": 24,
+      "current_vs_peak_pct": -0.13179898715846017,
+      "currently_above": false,
+      "ever_recovered": true
+    },
+    "per_capita": {
+      "peak_date": "2011-09",
+      "peak_value": 3.4901472101357106e-06,
+      "first_recovery": null,
+      "months_from_shock_to_recovery": null,
+      "current_vs_peak_pct": -4.955504211948747,
+      "currently_above": false,
+      "ever_recovered": false
+    }
+  },
+  "tests": [
+    "PASS · nov-2023 produce exactamente 100 en las cuatro series reescaladas",
+    "PASS · EMAE per cápita = EMAE / población mensual",
+    "PASS · resúmenes por mandato concilian con la serie mensual",
+    "PASS · drawdown usa el máximo acumulado correcto mes a mes",
+    "PASS · ventana espejo y post-shock tienen exactamente 31 meses",
+    "PASS · todos los KPIs se recalculan exactamente desde la serie mensual",
+    "PASS · KPIs concilian también al releer los CSV derivados escritos",
+    "PASS · títulos, selector, ejes y notas declaran bases consistentes",
+    "PASS · los cinco CSV y sus controles de descarga quedaron embebidos"
+  ]
+}

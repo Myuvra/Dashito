@@ -1,0 +1,19 @@
+{
+  "fiscal_coverage_2002_2026": true,
+  "fiscal_2023_value": true,
+  "fiscal_2024_value": true,
+  "fiscal_2025_is_approx": true,
+  "fiscal_2026_is_partial": true,
+  "component_measure_types_distinct": true,
+  "components_not_summed": true,
+  "household_incidence_not_inferred": true,
+  "fiscal_renderer_connected": true,
+  "salary_bug_stays_fixed": true,
+  "finance_preserved": true,
+  "housing_preserved": true,
+  "assets_preserved": true,
+  "six_layers_preserved": true,
+  "tab_count_preserved": true,
+  "metric_ids_unique": true,
+  "html_ids_unique": true
+}

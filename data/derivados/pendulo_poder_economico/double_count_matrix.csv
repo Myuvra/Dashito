@@ -1,0 +1,24 @@
+﻿metric_a,metric_b,risk,relationship,rule
+financial_bank_window_delta,bank_financial_margin,alto,mismo circuito visto desde deudor e intermediario,no sumar; además las cifras no son contablemente idénticas
+financial_pf_window_delta,bank_funding_cost,alto,interés recibido por ahorrista / costo de fondeo,"mostrar como contrapartes, no como beneficios independientes"
+housing_rent_income_burden,landlord_rent_income,alto,pago del inquilino / ingreso del propietario,un mismo flujo cambia de perspectiva
+engho_consumption_with_tax,household_indirect_taxes,alto,IVA y otros impuestos ya incluidos en el precio de consumo,no volver a restarlos en el waterfall salvo apertura neta compatible
+fiscal_tax_expenditure,foregone_revenue_scenario,alto,dos nombres para el mismo contrafactual tributario,usar una sola medición por escenario
+asset_pf_real,financial_pf_window_delta,medio,rendimiento acumulado vs desviación contra norma histórica,"pueden convivir como preguntas distintas, nunca sumarse"
+asset_usd_a3500_real,household_net_worth_change,alto,retorno del activo vs patrimonio efectivamente poseído,no inferir riqueza sin cantidades y propiedad
+financial_bank_real_monthly,financial_bank_window_delta,alto,la tasa real es insumo del impacto contrafactual,mostrar nivel e impacto por separado; nunca sumarlos
+financial_fintech_real_monthly,financial_fintech_window_delta,alto,la tasa real es insumo de la exposición contrafactual,no sumar precio del crédito e impacto monetario
+financial_bank_pf_real_gap,bank_profitability,alto,brecha de precios vs resultado contable del intermediario,"la brecha no aproxima ROA, ROE ni ganancia"
+financial_pf_real_monthly,asset_pf_real,medio,tasa de un mes vs cartera real acumulada,pueden explicar el mismo escenario; no se agregan
+financial_consumer_cft,financial_bank_real_monthly,alto,máximo ofrecido del costo total vs TNA promedio transformada a tasa real,mostrar como preguntas distintas; no sustituir ni sumar
+fiscal_tax_structure,fiscal_side_extra_credit,alto,resultado ejecutado neto vs autorización presupuestaria,no restar un crédito autorizado del resultado sin verificar ejecución y base contable
+fiscal_tax_expenditure,fiscal_meli_documented_benefit,alto,contrafactual tributario anual vs beneficio empresarial documentado en otro período,"no sumar sin demostrar alcance no solapado, período común y misma moneda real"
+fiscal_tax_structure,fiscal_pen_salary_catchup,alto,saldo fiscal agregado vs escenario salarial parcial,el escenario no se agrega al resultado observado
+fiscal_pen_salary_catchup,fiscal_senate_allowance_floor,medio,actores y poderes distintos; bases nominales/netas diferentes,mostrar por separado y no presentarlos como una única masa salarial pública
+asset_cer_reference,cer_linked_bond_total_return,alto,coeficiente de ajuste vs retorno total de un título con precio y cupón,no presentar CER como si fuera la cotización o el retorno de un bono
+asset_cer_reference,household_net_worth_change,alto,rendimiento condicional vs patrimonio efectivamente poseído,"no inferir riqueza sin cantidades, deuda, propiedad y acceso"
+asset_usd_a3500_real,retail_dollar_total_return,alto,referencia mayorista A3500 vs precio y costos de acceso minorista,no tratar A3500 como una operación minorista efectivamente realizable
+financial_consumer_cft,financial_fintech_real_monthly,alto,máximo ofrecido del costo total vs TNA PNFC promedio,el snapshot CFT no completa ni reemplaza la serie TNA
+bank_profitability,financial_bank_window_delta,alto,resultado contable del sistema vs impacto contrafactual sobre deudores,no convertir perjuicio estimado del hogar en ganancia bancaria
+fintech_profitability,financial_fintech_real_monthly,alto,rentabilidad contable faltante vs precio promedio del crédito,no inferir beneficio empresario desde TNA
+fintech_profitability,financial_fintech_window_delta,alto,rentabilidad contable faltante vs exposición contrafactual del hogar,no inferir beneficio empresario desde el diferencial monetario

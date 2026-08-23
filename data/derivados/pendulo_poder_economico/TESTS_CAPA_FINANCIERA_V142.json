@@ -1,0 +1,15 @@
+{
+  "coverage_2019_2026": true,
+  "fintech_observed_ends_feb_2026": true,
+  "fintech_extension_is_visible": true,
+  "gap_formula_exact": true,
+  "cft_missing_declared": true,
+  "profitability_separate": true,
+  "finance_renderer_connected": true,
+  "six_layers_preserved": true,
+  "asset_module_preserved": true,
+  "original_cgi_formula_preserved": true,
+  "tab_count_preserved": true,
+  "html_ids_unique": true,
+  "metric_ids_unique": true
+}

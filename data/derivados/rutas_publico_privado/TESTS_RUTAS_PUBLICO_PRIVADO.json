@@ -1,0 +1,12 @@
+{
+  "stage3_total_km": 3920.21,
+  "stage3_total_expected": 3920.21,
+  "stage3_total_ok": true,
+  "stage3_corridors": 8,
+  "stage3_status_is_not_awarded": true,
+  "new_road_km_is_missing_not_zero": true,
+  "investment_index_2024": 24.900000000000013,
+  "investment_index_2025": 18.17700000000001,
+  "bice_cuyo_max_share_ok": true,
+  "all_passed": true
+}

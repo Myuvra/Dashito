@@ -1,0 +1,52 @@
+{
+  "referencia": "2026-07",
+  "baselines": {
+    "bancoReal": 1.0691512244672379,
+    "pfReal": -0.5287032561799792,
+    "fintechReal": 6.986490767857142,
+    "bankMonths": 263,
+    "pfMonths": 263,
+    "fintechMonths": 56
+  },
+  "post": {
+    "inicio": "2023-12",
+    "fin": "2026-07",
+    "meses": 32,
+    "banco_costo_bruto": 937164266651.3646,
+    "banco_alivio": 184212699713.0646,
+    "banco_neto": 752951566938.3,
+    "banco_pp_mes": 26.045174817048387,
+    "pf_rendimiento_perdido": 12962964006705.9,
+    "pf_rendimiento_adicional": 9207744923599.762,
+    "pf_neto": -3755219083106.138,
+    "pf_pp_mes": -17.601017802240666,
+    "pinza_neta_hogar": 4508170650044.438,
+    "monto_personales_constante": 51768593067619.17,
+    "monto_pf_constante": 1525409378222860.8,
+    "banco_por_millon": 14544.563070408514,
+    "pf_perdida_neta_por_millon": 2461.7778917034457
+  },
+  "mirror": {
+    "inicio": "2021-04",
+    "fin": "2023-11",
+    "meses": 32,
+    "banco_costo_bruto": 49258684690.935,
+    "banco_alivio": 337324362667.56323,
+    "banco_neto": -288065677976.62823,
+    "banco_pp_mes": -28.834542182951612,
+    "pf_rendimiento_perdido": 15700450264490.947,
+    "pf_rendimiento_adicional": 6985564132622.845,
+    "pf_neto": -8714886131868.104,
+    "pf_pp_mes": -13.883382802240668,
+    "pinza_neta_hogar": 8426820453891.476,
+    "monto_personales_constante": 29744776505339.625,
+    "monto_pf_constante": 2083138186065517.5
+  },
+  "diferencial_pinza": -3918649803847.037,
+  "fintech": {
+    "fecha": "2026-02",
+    "saldo_nominal": 3699559000000.0,
+    "brecha_pp": 1.8805882321428582,
+    "exposicion_constante": 78415865232.86581
+  }
+}

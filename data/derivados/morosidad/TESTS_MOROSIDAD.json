@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": {
+    "all_rates_between_0_and_100": true,
+    "bank_mirror_equal_observations": true,
+    "pnfc_mirror_equal_observations": true,
+    "bank_differential_identity": true,
+    "pnfc_differential_identity": true,
+    "bank_post_balance_is_monthly_sum": true,
+    "latest_kpi_matches_csv": true,
+    "official_may26_control_12_8": true,
+    "persons_and_balances_have_distinct_units": true,
+    "no_interpolation": true,
+    "definitions_separate_bank_pnfc": true
+  },
+  "generated_at": "2026-08-21T13:32:31"
+}

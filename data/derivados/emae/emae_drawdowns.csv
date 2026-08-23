@@ -1,0 +1,5 @@
+episode,method,peak_date,peak_sa,trough_date,trough_sa,max_drawdown_pct,recovery_date,months_peak_to_recovery,months_peak_to_trough
+Crisis global 2008–2009,pico local previo definido; caída respecto de ese pico,2008-04,135.77171533194928,2009-05,121.10714093030056,-10.800905303284413,2010-04,24,13
+Recesión 2018–2019,pico local previo definido; caída respecto de ese pico,2017-11,152.6108173740612,2019-12,140.07998791005343,-8.210970676668172,2022-06,55,25
+Pandemia 2020,pico local previo definido; caída respecto de ese pico,2019-07,145.82192292861072,2020-04,106.05639981841499,-27.269920949858495,2021-12,29,9
+Shock 2023–2024,pico local previo definido; caída respecto de ese pico,2022-06,154.32065688488396,2024-04,141.12508437171982,-8.550749316086325,2025-12,42,22

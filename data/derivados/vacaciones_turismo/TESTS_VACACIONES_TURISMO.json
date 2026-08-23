@@ -1,0 +1,13 @@
+{
+  "monthly_rows": 54,
+  "annual_rows": 5,
+  "h1_2026_receptivo_k": 2897.9130000000005,
+  "h1_2026_emisivo_k": 6383.576000000001,
+  "h1_2026_ratio": 2.2028183730843542,
+  "h1_receptivo_yoy_pct": 7.354245936030845,
+  "h1_emisivo_yoy_pct": -13.201000484741499,
+  "spending_2025_balance_usd_m": -4054.2,
+  "summer_2026_vs_2023_pct": -9.171597633136086,
+  "months_complete_through_june_2026": true,
+  "all_passed": true
+}

@@ -1,0 +1,24 @@
+ÍNDICE DE SALARIOS (IS)
+
+Referencias:
+
+IS_sector_privado_registrado: Índice de salarios del sector privado registrado. Números índice, Año base: octubre 2016=100, por sector. Años 2015-2026
+IS_sector_publico: Índice de salarios del sector público. Números índice, Año base: octubre 2016=100, por sector. Años 2015-2026
+IS_total_registrado: Índice de salarios del total del sector registrado. Números índice, Año base: octubre 2016=100, por sector. Años 2015-2026
+IS_sector_no_registrado: Índice de salarios del sector privado no registrado. Números índice, Año base: octubre 2016=100, por sector. Años 2015-2026
+IS_indice_total: Índice total de salarios. Números índice, Año base: octubre 2016=100, por sector. Años 2015-2026
+IS_subsector_publico_nacional: Índice de salarios del sector público nacional. Números índice, Año base: octubre 2016=100, por sector. Años 2022-2026
+IS_subsector_publico_provincial: Índice de salarios del sector público provincial. Números índice, Año base: octubre 2016=100, por sector. Años 2022-2026
+
+v_m: variaciones porcentuales del sector, respecto del período anterior, Año base: octubre 2016=100, por sector. Años 2015-2026	
+v_i_a: variaciones porcentuales del sector, respecto al mismo mes del año anterior. Año base:octubre 2016=100, por sector. Años 2015-2026	
+v_acum: variaciones porcentuales del sector, respecto a diciembre del año anterior. Año base:octubre 2016=100, por sector. Años 2015-2026									
+
+Notas:
+NA: para el período de referencia "No aplica" el cálculo de la variación correspondiente
+
+
+Fuente:
+INDEC, Dirección Nacional de Estadísticas de Precios. Dirección de Índices de Precios de la Producción.
+
+Actualizado al: 20/08/2026
