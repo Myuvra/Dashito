@@ -3,3 +3,7 @@ dist/
 .wrangler/
 .env*
 *.tgz
+
+# BCRA source files demasiado grandes para GitHub
+/data/fuentes/tasas/bcra/tas1_ser.txt
+/data/fuentes/tasas/bcra/tas2_ser.txt
