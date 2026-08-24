@@ -1920,6 +1920,38 @@ html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-change .pct {
   line-height: 1.35 !important;
 }
 
+/* En pobreza importa el resultado social, no la dirección matemática:
+   bajar es favorable; subir es desfavorable. */
+html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-change.down {
+  border-color: color-mix(in srgb, var(--da-mint) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-mint) 12%) !important;
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-change.down :where(.pct, strong, b) {
+  color: var(--da-mint) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-change.up {
+  border-color: color-mix(in srgb, var(--da-bad) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-bad) 12%) !important;
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-change.up :where(.pct, strong, b) {
+  color: var(--da-bad) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-cards > .mandate-card:first-child .mandate-change {
+  border-color: color-mix(in srgb, var(--da-amber) 48%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 90%, var(--da-amber) 10%) !important;
+  color: var(--da-amber) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope #tab-poverty .mandate-cards > .mandate-card:first-child .mandate-change :where(.pct, strong, b) {
+  color: var(--da-amber) !important;
+}
+
 html[data-dashito-theme] .legacy-theme-scope #povertyChart .legend {
   translate: 0 6px !important;
 }
@@ -3140,6 +3172,41 @@ html[data-dashito-theme] .legacy-theme-scope .source-register a.source-register-
   color: var(--da-primary) !important;
 }
 
+/* Controles y contexto de gráficos: eliminamos los restos blancos del Legacy. */
+html[data-dashito-theme] .legacy-theme-scope :where(.chart-context-strip, .chart-scale-control) {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .chart-context-strip strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope :where(.chart-scale-buttons, .chart-scale-help, .chart-scale-tooltip) {
+  border-color: var(--da-border) !important;
+  background: var(--da-field) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .chart-scale-btn {
+  border-color: transparent !important;
+  background: transparent !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .chart-scale-btn.active {
+  border-color: color-mix(in srgb, var(--da-primary) 52%, var(--da-border)) !important;
+  background: var(--da-primary) !important;
+  color: var(--da-primary-ink) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .chart-scale-control.filtered-log {
+  border-color: color-mix(in srgb, var(--da-primary) 44%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-surface-2) 91%, var(--da-primary) 9%) !important;
+}
+
 @media (max-width: 720px) {
   html[data-dashito-theme] .legacy-theme-scope #tab-story .story-shell {
     gap: 12px !important;
@@ -3176,5 +3243,56 @@ html[data-dashito-theme] .legacy-theme-scope .source-register a.source-register-
   html[data-dashito-theme] .legacy-theme-scope .source-register-legend span {
     min-height: 32px !important;
     border-radius: 6px !important;
+  }
+
+  /* La tabla presidencial ya se transforma en tarjetas: no debe conservar el
+     ancho mínimo de las tablas con scroll horizontal. */
+  html[data-dashito-theme] .legacy-theme-scope #tab-pres :where(.table-card, table, tbody, tr, td) {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  html[data-dashito-theme] .legacy-theme-scope #tab-pres .table-card {
+    overflow: hidden !important;
+  }
+
+  html[data-dashito-theme] .legacy-theme-scope #tab-pres table {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  html[data-dashito-theme] .legacy-theme-scope #tab-pres td {
+    grid-template-columns: minmax(94px, 36%) minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-dashito-theme] .legacy-theme-scope #tab-pres td > :where(small, .method-badge-row) {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Los gráficos de tasas viven dentro de su tarjeta, con un pequeño colchón
+     lateral para que ni el canvas ni sus etiquetas toquen el borde. */
+  html[data-dashito-theme] .legacy-theme-scope #tab-rates .card > :where(#nominalChart, #realChart) {
+    box-sizing: border-box !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-dashito-theme] .legacy-theme-scope #tab-rates .card > :where(#nominalChart, #realChart) :where(.plot-container, .svg-container, .main-svg) {
+    max-width: 100% !important;
+  }
+
+  html[data-dashito-theme] .legacy-theme-scope :where(.chart-context-strip, .chart-scale-control, .source-register, .source-register-standard) {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
   }
 }
