@@ -3292,6 +3292,67 @@ img, svg { max-width: 100%; }
 }
 
 
+/* Vivienda · crédito hipotecario + alquileres post DNU */
+.ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:14px 20px 0
+}
+.ho-credit-kpi,.ho-rent-kpi,.ho-program,.ho-phase{
+  min-width:0;padding:13px 14px;border:1px solid #ead8f1;border-radius:18px;
+  background:linear-gradient(180deg,#fff,#fff9fc);overflow-wrap:anywhere
+}
+.ho-credit-kpi .tag,.ho-rent-kpi .tag,.ho-program .tag,.ho-phase .tag{
+  font-size:10.5px;color:#92759e;font-weight:850;text-transform:uppercase;letter-spacing:.02em
+}
+.ho-credit-kpi .big,.ho-rent-kpi .big,.ho-program .big,.ho-phase .big{
+  font-size:23px;line-height:1.1;font-weight:900;color:#684a79;margin:6px 0
+}
+.ho-credit-kpi .mini,.ho-rent-kpi .mini,.ho-program .mini,.ho-phase .mini{
+  font-size:11px;line-height:1.5;color:#806c89
+}
+.ho-credit-grid,.ho-rent-grid{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:14px;margin:16px 20px 0;min-width:0
+}
+#housingMortgageRealChart,#housingRentReformChart{min-height:430px}
+.ho-audit-stack,.ho-method-stack{display:grid;gap:10px;align-content:start}
+.ho-audit,.ho-method-box{
+  padding:12px 14px;border-radius:16px;background:#fbf7ff;border:1px solid #e9dcf2;
+  font-size:12px;line-height:1.55;color:#67566f;min-width:0
+}
+.ho-audit strong,.ho-method-box strong{color:#684879}
+.ho-audit.ok{background:#f6fff9;border-color:#caead7}
+.ho-audit.warn{background:#fffaf1;border-color:#ecd9a8}
+.ho-audit.badge{background:#fff7fb;border-color:#efc9d8}
+.ho-formulas{
+  margin:14px 20px 0;padding:13px 15px;border-radius:18px;border:1px dashed #d9c0e4;
+  background:#fcf8ff;color:#6f5b79;font-size:11.5px;line-height:1.65
+}
+.ho-formulas code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#5b416a}
+.ho-section-lead{margin:0 20px 4px;color:#6f5d77;font-size:12.5px;line-height:1.6}
+.ho-faq{margin:14px 20px 0;display:grid;gap:9px}
+.ho-faq details{border:1px solid #e8daf0;border-radius:15px;background:#fff;padding:10px 13px}
+.ho-faq summary{cursor:pointer;font-weight:850;color:#684879}
+.ho-faq p{font-size:12px;line-height:1.6;color:#695870;margin:9px 0 2px}
+.ho-separator-note{margin:12px 20px 0;font-size:11px;line-height:1.55;color:#846f8d}
+.ho-chip{display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #e2d3e9;border-radius:999px;background:#fff;font-size:10px;font-weight:800;color:#765f82}
+@media(max-width:1100px){
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid{grid-template-columns:1fr 1fr}
+  .ho-credit-grid,.ho-rent-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid,.ho-credit-grid,.ho-rent-grid,.ho-formulas,.ho-faq,.ho-section-lead,.ho-separator-note{
+    margin-left:14px!important;margin-right:14px!important
+  }
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid{grid-template-columns:1fr}
+  .ho-credit-kpi,.ho-rent-kpi,.ho-program,.ho-phase,.ho-audit,.ho-method-box{padding:11px 12px}
+  #housingMortgageRealChart,#housingRentReformChart{min-height:390px}
+}
+@media(max-width:390px){
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid,.ho-credit-grid,.ho-rent-grid,.ho-formulas,.ho-faq,.ho-section-lead,.ho-separator-note{
+    margin-left:12px!important;margin-right:12px!important
+  }
+}
+
+
 /* v80 · horizonte largo del simulador soberano */
 .sov-chart-scroll{
   width:100%;
@@ -4731,4 +4792,41 @@ html,body{overflow-x:clip}
     box-sizing:border-box;
   }
 }
+
+
+
+/* Bancos y ajuste · contrafactual distributivo 2024 */
+.bank-adjust-jump{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 16px;padding:12px 14px;border:1px solid #cbb7da;border-radius:16px;background:linear-gradient(135deg,#fff9fd,#f8f4ff);color:#654d70;font-size:10.5px;line-height:1.45}
+.bank-adjust-jump b{color:#5a3769}.bank-adjust-jump button{flex:0 0 auto}
+.bank-adjust-section{margin:20px 0;padding:22px;border:2px solid #cbb6dc;border-radius:26px;background:linear-gradient(145deg,rgba(255,251,254,.98),rgba(247,250,255,.98));box-shadow:0 14px 34px rgba(91,61,108,.10);color:#624f69;box-sizing:border-box}
+.bank-adjust-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start}
+.bank-adjust-eyebrow{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid #e5bfd0;border-radius:999px;background:#fff4f8;color:#9a4266;font-size:8.8px;font-weight:950;letter-spacing:.045em;text-transform:uppercase}
+.bank-adjust-title{margin:10px 0 6px;font-size:27px;line-height:1.12;color:#583767}.bank-adjust-lead{max-width:1000px;margin:0;font-size:11.5px;line-height:1.6;color:#726078}
+.bank-adjust-denom{min-width:210px;padding:12px 14px;border:1px solid #c9d8f5;border-radius:16px;background:#f7faff;text-align:right}.bank-adjust-denom small{display:block;font-size:8.5px;font-weight:900;text-transform:uppercase;color:#7180a0}.bank-adjust-denom strong{display:block;margin-top:3px;font-size:24px;color:#4f68a5}.bank-adjust-denom span{display:block;font-size:9px;line-height:1.35;color:#73809a}
+.bank-adjust-bridge{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 14px}
+.bank-adjust-bridge article{position:relative;padding:13px;border:1px solid #ded3e4;border-radius:16px;background:#fff;min-width:0}.bank-adjust-bridge article:nth-child(1){border-color:#e6bbcd;background:#fff7fb}.bank-adjust-bridge article:nth-child(2){border-color:#c8d5f2;background:#f8faff}.bank-adjust-bridge article:nth-child(3){border-color:#b9dccb;background:#f6fff9}
+.bank-adjust-bridge .tag{font-size:8.4px;font-weight:950;letter-spacing:.035em;text-transform:uppercase;color:#846e8b}.bank-adjust-bridge b{display:block;margin:5px 0 4px;font-size:17px;line-height:1.15;color:#5d3f6b}.bank-adjust-bridge p{margin:0;font-size:9.5px;line-height:1.45;color:#796a7e}
+.bank-adjust-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0}
+.bank-adjust-kpi{padding:14px;border:1px solid #ded3e4;border-radius:17px;background:#fff;min-width:0}.bank-adjust-kpi .tag{font-size:8.5px;font-weight:950;line-height:1.35;text-transform:uppercase;color:#826d89}.bank-adjust-kpi .val{margin:5px 0 3px;font-size:25px;font-weight:950;line-height:1;color:#5d3e6c}.bank-adjust-kpi .subval{font-size:10px;font-weight:900;color:#7b6385}.bank-adjust-kpi p{margin:6px 0 0;font-size:9.2px;line-height:1.45;color:#77677d}
+.bank-adjust-kpi.household{border-color:#e7bfd0;background:#fff8fb}.bank-adjust-kpi.household .val{color:#a34369}.bank-adjust-kpi.conservative{border-color:#c9d6f2;background:#f8faff}.bank-adjust-kpi.conservative .val{color:#526ea9}.bank-adjust-kpi.central{border:2px solid #84c2a5;background:#f4fff8;box-shadow:0 7px 18px rgba(58,133,97,.10)}.bank-adjust-kpi.central .val{color:#2f8264}.bank-adjust-kpi.aggressive{border-color:#e5c998;background:#fffdf5}.bank-adjust-kpi.aggressive .val{color:#9b7330}
+.bank-adjust-reading{margin:13px 0;padding:13px 15px;border-left:5px solid #4e9f7b;border-radius:13px;background:#fff;color:#5e4b66;font-size:10.5px;line-height:1.55}.bank-adjust-reading strong{color:#2f7f62}.bank-adjust-reading .range{font-size:18px;font-weight:950;color:#2f7f62}
+.bank-adjust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.bank-adjust-chart-card{min-width:0;padding:12px;border:1px solid #ddd1e5;border-radius:18px;background:rgba(255,255,255,.92)}.bank-adjust-chart-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:4px}.bank-adjust-chart-head h3{margin:0;color:#5e416b;font-size:14px;line-height:1.25}.bank-adjust-chart-head span{font-size:8.5px;line-height:1.35;color:#8a748f;text-align:right}.bank-adjust-chart{height:330px;width:100%;min-width:0}
+.bank-adjust-table-wrap{overflow-x:auto;margin-top:13px;border:1px solid #e1d5e7;border-radius:15px;background:#fff}.bank-adjust-table{width:100%;border-collapse:collapse;min-width:720px;font-size:9.2px}.bank-adjust-table th{padding:9px;background:#f8f3fb;color:#81698d;text-align:right;text-transform:uppercase;font-size:8px;letter-spacing:.025em}.bank-adjust-table th:first-child,.bank-adjust-table td:first-child{text-align:left}.bank-adjust-table td{padding:9px;border-top:1px solid #eee6f1;text-align:right;color:#66556d}.bank-adjust-table td strong{color:#5a3d67}.bank-adjust-table .up{color:#2e8063;font-weight:900}.bank-adjust-table .down{color:#a14367;font-weight:900}
+.bank-adjust-notes{display:grid;grid-template-columns:1.2fr 1fr;gap:11px;margin-top:12px}.bank-adjust-note{padding:13px;border:1px solid #ded3e4;border-radius:15px;background:#fff;font-size:9.7px;line-height:1.55;color:#716178}.bank-adjust-note h3{margin:0 0 6px;color:#5c3e69;font-size:13px}.bank-adjust-note code{font-size:9px}.bank-adjust-note.warn{border-color:#ead19f;background:#fffdf6}.bank-adjust-note.fintech{border-color:#e5bfd0;background:#fff8fb}
+.bank-adjust-formulas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:10px}.bank-adjust-formula{padding:10px;border:1px dashed #d7c8df;border-radius:12px;background:#fdfbff;font-size:9px;line-height:1.45}.bank-adjust-formula b{display:block;margin-bottom:4px;color:#684974}.bank-adjust-formula code{white-space:normal;overflow-wrap:anywhere;color:#5a465f}
+.bank-adjust-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.bank-adjust-actions a,.bank-adjust-actions button{font-size:9px}
+.bank-adjust-source-note{margin-top:9px;font-size:8.8px;line-height:1.45;color:#88788d}
+.bank-adjust-badge{display:inline-block;padding:3px 7px;border-radius:999px;font-size:7.8px;font-weight:950;text-transform:uppercase;letter-spacing:.035em}.bank-adjust-badge.central{background:#eaf8f0;color:#2e7e60;border:1px solid #aad6c0}.bank-adjust-badge.aggressive{background:#fff5dd;color:#8c682e;border:1px solid #ead29e}
+@media(max-width:1050px){.bank-adjust-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.bank-adjust-head{grid-template-columns:1fr}.bank-adjust-denom{text-align:left;min-width:0}.bank-adjust-bridge{grid-template-columns:1fr}.bank-adjust-grid{grid-template-columns:1fr}.bank-adjust-notes{grid-template-columns:1fr}}
+@media(max-width:720px){.bank-adjust-jump{margin-left:14px;margin-right:14px;align-items:flex-start;flex-direction:column}.bank-adjust-section{padding:16px 13px;border-radius:20px}.bank-adjust-title{font-size:22px}.bank-adjust-kpis{grid-template-columns:1fr}.bank-adjust-kpi .val{font-size:23px}.bank-adjust-formulas{grid-template-columns:1fr}.bank-adjust-chart{height:310px}.bank-adjust-chart-head{display:block}.bank-adjust-chart-head span{display:block;text-align:left;margin-top:3px}.bank-adjust-actions{gap:6px}}
+
+
+
+#tab-milei-cost .milei-cost-kpi .mini b{color:#5d3f6b}
+#tab-milei-cost .milei-return-card .return-amount{overflow-wrap:anywhere}
+#tab-milei-cost .milei-shock-scenario+ .milei-shock-scenario{margin-top:8px}
+#tab-milei-cost .milei-return-card.bank .return-amount{color:#2f8264}
+#tab-milei-cost .milei-return-card.fintech .return-amount{color:#9a5674}
+#tab-milei-cost .milei-return-total .amount{white-space:normal}
+@media(max-width:720px){#tab-milei-cost .milei-cost-kpis{grid-template-columns:1fr}#tab-milei-cost .milei-bridge-grid{grid-template-columns:1fr}}
 

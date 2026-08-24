@@ -8,10 +8,12 @@
       "Todo empezó con una discusión",
       "El primer gráfico y la primera corrección",
       "Después aparecieron las tasas",
+      "Cuando el número dejó de ser el argumento",
       "El dato que contradijo mis expectativas",
       "El péndulo hacia los hogares",
       "¿Cuánto costó el shock?",
       "Y el dashboard empezó a crecer",
+      "La casa que desapareció del gráfico",
       "La pregunta por “la casta” y por las alternativas",
       "Ordenar las cuentas y decidir quién paga son preguntas distintas",
       "Fuentes, metodología y código de este relato"
@@ -38,13 +40,22 @@
     "label": "Tasas e inflación",
     "order": 2,
     "headings": [
-      "Antes de mirar los números: todos los $ están puestos del lado del hogar",
+      "Cómo leer los montos: todos los $ están puestos del lado del hogar",
       "¿El balance ampliado de crédito y ahorro mejoró o empeoró?",
       "Cómo leer el signo en este gráfico técnico",
       "Pinza financiera actual",
       "Desviación técnica ≠ impacto hogar",
       "Dos preguntas, dos lecturas del signo",
       "Alcance del indicador",
+      "¿Quién podía pagar el ajuste?",
+      "¿Qué parte del giro fiscal representa cada escenario?",
+      "Ahorro bruto de sociedades de depósito",
+      "Rentabilidad contable del sistema financiero",
+      "El sistema ya entró muy capitalizado",
+      "Qué demuestra y qué no",
+      "Fintech: costo conocido, capacidad todavía no estimable",
+      "La baja de impuestos corrientes no prueba una rebaja discrecional",
+      "El colchón de solvencia ya existía al comenzar el ajuste",
       "Fuentes y descargas",
       "Cálculos clave del tab"
     ],
@@ -53,9 +64,13 @@
       "realChart",
       "ratesAccumChart",
       "ratesMoneyChart",
-      "ratesFintechChart"
+      "ratesFintechChart",
+      "bankAdjustScenarioChart",
+      "bankAdjustSavingChart",
+      "bankAdjustProfitChart",
+      "bankAdjustCapitalChart"
     ],
-    "noteCount": 34
+    "noteCount": 40
   },
   {
     "id": "tab-pres",
@@ -233,7 +248,7 @@
       "healthEducationExecutionChart",
       "healthEducationBridgeChart"
     ],
-    "noteCount": 11
+    "noteCount": 12
   },
   {
     "id": "tab-consumption",
@@ -293,9 +308,11 @@
     "chartIds": [
       "housingTenureChart",
       "housingHistoryChart",
+      "housingMortgageRealChart",
+      "housingRentReformChart",
       "housingBuildChart"
     ],
-    "noteCount": 8
+    "noteCount": 20
   },
   {
     "id": "tab-growth",
@@ -614,7 +631,7 @@
       "wealthFinanceChart",
       "wealthParticipationChart"
     ],
-    "noteCount": 12
+    "noteCount": 13
   },
   {
     "id": "tab-milei-cost",
@@ -622,7 +639,7 @@
     "order": 30,
     "headings": [
       "Estrés financiero · morosidad",
-      "Pinza financiera · cuánto descontaría si se soluciona",
+      "Pinza financiera · costo para hogares vs capacidad de absorción",
       "Cómo se arma la cuenta madre de $18,43 billones",
       "Cómo entra cada componente en la cuenta madre",
       "Todo medido contra el agujero bruto de $18,43 billones",

@@ -33,6 +33,11 @@ const eventMap = {
 
 const booleanAttributes = new Set(['disabled', 'required', 'multiple', 'open', 'hidden', 'controls', 'autoplay', 'loop', 'muted'])
 
+// El HTML no permite nodos de texto en blanco como hijos directos de estos
+// contenedores; React (createElement) los rechaza con un warning de hidratación.
+// El Legacy los deja por indentación, así que los descartamos al reconstruir.
+const whitespaceIntolerantParents = new Set(['table', 'thead', 'tbody', 'tfoot', 'tr', 'colgroup'])
+
 function camelCase(property) {
   if (property.startsWith('--')) return property
   return property.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())
@@ -94,7 +99,11 @@ function toReact(node, key, context = { sensitive: false }) {
       document.getElementById(storyAnchor.slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }
-  const children = [...node.childNodes].map((child, index) => toReact(child, `${key}-${index}`, nextContext)).filter((child) => child !== null)
+  const dropWhitespace = whitespaceIntolerantParents.has(node.tagName.toLowerCase())
+  const children = [...node.childNodes]
+    .filter((child) => !(dropWhitespace && child.nodeType === Node.TEXT_NODE && !child.textContent.trim()))
+    .map((child, index) => toReact(child, `${key}-${index}`, nextContext))
+    .filter((child) => child !== null)
   const classNames = node.getAttribute('class')?.split(/\s+/) || []
   if (classNames.includes('sources-box') || classNames.includes('formulas-box')) {
     return createElement(LegacyDisclosure, { ...props, as: node.tagName.toLowerCase() }, ...children)

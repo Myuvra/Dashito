@@ -104,6 +104,7 @@ const scriptNames = [
   'runtime-roads.js',
   'runtime-tourism.js',
   'runtime-pendulo-cft.js',
+  'runtime-bank-adjustment.js',
   'runtime-source-register.js',
 ]
 if (scripts.length !== scriptNames.length) throw new Error(`Se esperaban ${scriptNames.length} scripts Legacy y se encontraron ${scripts.length}`)

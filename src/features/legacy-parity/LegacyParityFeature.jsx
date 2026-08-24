@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import LegacyMarkup from './LegacyMarkup'
 import LegacyChartEnhancements from './LegacyChartEnhancements'
 
-const legacyRuntimeVersion = '2026-08-22-v185-storytelling'
+const legacyRuntimeVersion = '2026-08-23-v193-bank-adjustment'
 
 const runtimeScripts = [
   '/legacy/plotly.js',
@@ -17,6 +17,7 @@ const runtimeScripts = [
   '/legacy/runtime-roads.js',
   '/legacy/runtime-tourism.js',
   '/legacy/runtime-pendulo-cft.js',
+  '/legacy/runtime-bank-adjustment.js',
   '/legacy/runtime-source-register.js',
 ].map((source) => `${source}?v=${legacyRuntimeVersion}`)
 

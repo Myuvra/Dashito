@@ -7178,6 +7178,67 @@ img, svg { max-width: 100%; }
 }
 
 
+/* Vivienda · crédito hipotecario + alquileres post DNU */
+.ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:14px 20px 0
+}
+.ho-credit-kpi,.ho-rent-kpi,.ho-program,.ho-phase{
+  min-width:0;padding:13px 14px;border:1px solid #ead8f1;border-radius:18px;
+  background:linear-gradient(180deg,#fff,#fff9fc);overflow-wrap:anywhere
+}
+.ho-credit-kpi .tag,.ho-rent-kpi .tag,.ho-program .tag,.ho-phase .tag{
+  font-size:10.5px;color:#92759e;font-weight:850;text-transform:uppercase;letter-spacing:.02em
+}
+.ho-credit-kpi .big,.ho-rent-kpi .big,.ho-program .big,.ho-phase .big{
+  font-size:23px;line-height:1.1;font-weight:900;color:#684a79;margin:6px 0
+}
+.ho-credit-kpi .mini,.ho-rent-kpi .mini,.ho-program .mini,.ho-phase .mini{
+  font-size:11px;line-height:1.5;color:#806c89
+}
+.ho-credit-grid,.ho-rent-grid{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:14px;margin:16px 20px 0;min-width:0
+}
+#housingMortgageRealChart,#housingRentReformChart{min-height:430px}
+.ho-audit-stack,.ho-method-stack{display:grid;gap:10px;align-content:start}
+.ho-audit,.ho-method-box{
+  padding:12px 14px;border-radius:16px;background:#fbf7ff;border:1px solid #e9dcf2;
+  font-size:12px;line-height:1.55;color:#67566f;min-width:0
+}
+.ho-audit strong,.ho-method-box strong{color:#684879}
+.ho-audit.ok{background:#f6fff9;border-color:#caead7}
+.ho-audit.warn{background:#fffaf1;border-color:#ecd9a8}
+.ho-audit.badge{background:#fff7fb;border-color:#efc9d8}
+.ho-formulas{
+  margin:14px 20px 0;padding:13px 15px;border-radius:18px;border:1px dashed #d9c0e4;
+  background:#fcf8ff;color:#6f5b79;font-size:11.5px;line-height:1.65
+}
+.ho-formulas code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#5b416a}
+.ho-section-lead{margin:0 20px 4px;color:#6f5d77;font-size:12.5px;line-height:1.6}
+.ho-faq{margin:14px 20px 0;display:grid;gap:9px}
+.ho-faq details{border:1px solid #e8daf0;border-radius:15px;background:#fff;padding:10px 13px}
+.ho-faq summary{cursor:pointer;font-weight:850;color:#684879}
+.ho-faq p{font-size:12px;line-height:1.6;color:#695870;margin:9px 0 2px}
+.ho-separator-note{margin:12px 20px 0;font-size:11px;line-height:1.55;color:#846f8d}
+.ho-chip{display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #e2d3e9;border-radius:999px;background:#fff;font-size:10px;font-weight:800;color:#765f82}
+@media(max-width:1100px){
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid{grid-template-columns:1fr 1fr}
+  .ho-credit-grid,.ho-rent-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid,.ho-credit-grid,.ho-rent-grid,.ho-formulas,.ho-faq,.ho-section-lead,.ho-separator-note{
+    margin-left:14px!important;margin-right:14px!important
+  }
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid{grid-template-columns:1fr}
+  .ho-credit-kpi,.ho-rent-kpi,.ho-program,.ho-phase,.ho-audit,.ho-method-box{padding:11px 12px}
+  #housingMortgageRealChart,#housingRentReformChart{min-height:390px}
+}
+@media(max-width:390px){
+  .ho-credit-hero,.ho-rent-kpis,.ho-program-grid,.ho-phase-grid,.ho-credit-grid,.ho-rent-grid,.ho-formulas,.ho-faq,.ho-section-lead,.ho-separator-note{
+    margin-left:12px!important;margin-right:12px!important
+  }
+}
+
+
 /* v80 · horizonte largo del simulador soberano */
 .sov-chart-scroll{
   width:100%;
@@ -8630,6 +8691,44 @@ html,body{overflow-x:clip}
 }
 </style>
 
+
+<style id="bank-adjustment-2024-style-v150">
+/* Bancos y ajuste · contrafactual distributivo 2024 */
+.bank-adjust-jump{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 16px;padding:12px 14px;border:1px solid #cbb7da;border-radius:16px;background:linear-gradient(135deg,#fff9fd,#f8f4ff);color:#654d70;font-size:10.5px;line-height:1.45}
+.bank-adjust-jump b{color:#5a3769}.bank-adjust-jump button{flex:0 0 auto}
+.bank-adjust-section{margin:20px 0;padding:22px;border:2px solid #cbb6dc;border-radius:26px;background:linear-gradient(145deg,rgba(255,251,254,.98),rgba(247,250,255,.98));box-shadow:0 14px 34px rgba(91,61,108,.10);color:#624f69;box-sizing:border-box}
+.bank-adjust-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start}
+.bank-adjust-eyebrow{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid #e5bfd0;border-radius:999px;background:#fff4f8;color:#9a4266;font-size:8.8px;font-weight:950;letter-spacing:.045em;text-transform:uppercase}
+.bank-adjust-title{margin:10px 0 6px;font-size:27px;line-height:1.12;color:#583767}.bank-adjust-lead{max-width:1000px;margin:0;font-size:11.5px;line-height:1.6;color:#726078}
+.bank-adjust-denom{min-width:210px;padding:12px 14px;border:1px solid #c9d8f5;border-radius:16px;background:#f7faff;text-align:right}.bank-adjust-denom small{display:block;font-size:8.5px;font-weight:900;text-transform:uppercase;color:#7180a0}.bank-adjust-denom strong{display:block;margin-top:3px;font-size:24px;color:#4f68a5}.bank-adjust-denom span{display:block;font-size:9px;line-height:1.35;color:#73809a}
+.bank-adjust-bridge{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 14px}
+.bank-adjust-bridge article{position:relative;padding:13px;border:1px solid #ded3e4;border-radius:16px;background:#fff;min-width:0}.bank-adjust-bridge article:nth-child(1){border-color:#e6bbcd;background:#fff7fb}.bank-adjust-bridge article:nth-child(2){border-color:#c8d5f2;background:#f8faff}.bank-adjust-bridge article:nth-child(3){border-color:#b9dccb;background:#f6fff9}
+.bank-adjust-bridge .tag{font-size:8.4px;font-weight:950;letter-spacing:.035em;text-transform:uppercase;color:#846e8b}.bank-adjust-bridge b{display:block;margin:5px 0 4px;font-size:17px;line-height:1.15;color:#5d3f6b}.bank-adjust-bridge p{margin:0;font-size:9.5px;line-height:1.45;color:#796a7e}
+.bank-adjust-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0}
+.bank-adjust-kpi{padding:14px;border:1px solid #ded3e4;border-radius:17px;background:#fff;min-width:0}.bank-adjust-kpi .tag{font-size:8.5px;font-weight:950;line-height:1.35;text-transform:uppercase;color:#826d89}.bank-adjust-kpi .val{margin:5px 0 3px;font-size:25px;font-weight:950;line-height:1;color:#5d3e6c}.bank-adjust-kpi .subval{font-size:10px;font-weight:900;color:#7b6385}.bank-adjust-kpi p{margin:6px 0 0;font-size:9.2px;line-height:1.45;color:#77677d}
+.bank-adjust-kpi.household{border-color:#e7bfd0;background:#fff8fb}.bank-adjust-kpi.household .val{color:#a34369}.bank-adjust-kpi.conservative{border-color:#c9d6f2;background:#f8faff}.bank-adjust-kpi.conservative .val{color:#526ea9}.bank-adjust-kpi.central{border:2px solid #84c2a5;background:#f4fff8;box-shadow:0 7px 18px rgba(58,133,97,.10)}.bank-adjust-kpi.central .val{color:#2f8264}.bank-adjust-kpi.aggressive{border-color:#e5c998;background:#fffdf5}.bank-adjust-kpi.aggressive .val{color:#9b7330}
+.bank-adjust-reading{margin:13px 0;padding:13px 15px;border-left:5px solid #4e9f7b;border-radius:13px;background:#fff;color:#5e4b66;font-size:10.5px;line-height:1.55}.bank-adjust-reading strong{color:#2f7f62}.bank-adjust-reading .range{font-size:18px;font-weight:950;color:#2f7f62}
+.bank-adjust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.bank-adjust-chart-card{min-width:0;padding:12px;border:1px solid #ddd1e5;border-radius:18px;background:rgba(255,255,255,.92)}.bank-adjust-chart-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:4px}.bank-adjust-chart-head h3{margin:0;color:#5e416b;font-size:14px;line-height:1.25}.bank-adjust-chart-head span{font-size:8.5px;line-height:1.35;color:#8a748f;text-align:right}.bank-adjust-chart{height:330px;width:100%;min-width:0}
+.bank-adjust-table-wrap{overflow-x:auto;margin-top:13px;border:1px solid #e1d5e7;border-radius:15px;background:#fff}.bank-adjust-table{width:100%;border-collapse:collapse;min-width:720px;font-size:9.2px}.bank-adjust-table th{padding:9px;background:#f8f3fb;color:#81698d;text-align:right;text-transform:uppercase;font-size:8px;letter-spacing:.025em}.bank-adjust-table th:first-child,.bank-adjust-table td:first-child{text-align:left}.bank-adjust-table td{padding:9px;border-top:1px solid #eee6f1;text-align:right;color:#66556d}.bank-adjust-table td strong{color:#5a3d67}.bank-adjust-table .up{color:#2e8063;font-weight:900}.bank-adjust-table .down{color:#a14367;font-weight:900}
+.bank-adjust-notes{display:grid;grid-template-columns:1.2fr 1fr;gap:11px;margin-top:12px}.bank-adjust-note{padding:13px;border:1px solid #ded3e4;border-radius:15px;background:#fff;font-size:9.7px;line-height:1.55;color:#716178}.bank-adjust-note h3{margin:0 0 6px;color:#5c3e69;font-size:13px}.bank-adjust-note code{font-size:9px}.bank-adjust-note.warn{border-color:#ead19f;background:#fffdf6}.bank-adjust-note.fintech{border-color:#e5bfd0;background:#fff8fb}
+.bank-adjust-formulas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:10px}.bank-adjust-formula{padding:10px;border:1px dashed #d7c8df;border-radius:12px;background:#fdfbff;font-size:9px;line-height:1.45}.bank-adjust-formula b{display:block;margin-bottom:4px;color:#684974}.bank-adjust-formula code{white-space:normal;overflow-wrap:anywhere;color:#5a465f}
+.bank-adjust-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.bank-adjust-actions a,.bank-adjust-actions button{font-size:9px}
+.bank-adjust-source-note{margin-top:9px;font-size:8.8px;line-height:1.45;color:#88788d}
+.bank-adjust-badge{display:inline-block;padding:3px 7px;border-radius:999px;font-size:7.8px;font-weight:950;text-transform:uppercase;letter-spacing:.035em}.bank-adjust-badge.central{background:#eaf8f0;color:#2e7e60;border:1px solid #aad6c0}.bank-adjust-badge.aggressive{background:#fff5dd;color:#8c682e;border:1px solid #ead29e}
+@media(max-width:1050px){.bank-adjust-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.bank-adjust-head{grid-template-columns:1fr}.bank-adjust-denom{text-align:left;min-width:0}.bank-adjust-bridge{grid-template-columns:1fr}.bank-adjust-grid{grid-template-columns:1fr}.bank-adjust-notes{grid-template-columns:1fr}}
+@media(max-width:720px){.bank-adjust-jump{margin-left:14px;margin-right:14px;align-items:flex-start;flex-direction:column}.bank-adjust-section{padding:16px 13px;border-radius:20px}.bank-adjust-title{font-size:22px}.bank-adjust-kpis{grid-template-columns:1fr}.bank-adjust-kpi .val{font-size:23px}.bank-adjust-formulas{grid-template-columns:1fr}.bank-adjust-chart{height:310px}.bank-adjust-chart-head{display:block}.bank-adjust-chart-head span{display:block;text-align:left;margin-top:3px}.bank-adjust-actions{gap:6px}}
+</style>
+
+
+<style id="milei-cost-new-logic-v151">
+#tab-milei-cost .milei-cost-kpi .mini b{color:#5d3f6b}
+#tab-milei-cost .milei-return-card .return-amount{overflow-wrap:anywhere}
+#tab-milei-cost .milei-shock-scenario+ .milei-shock-scenario{margin-top:8px}
+#tab-milei-cost .milei-return-card.bank .return-amount{color:#2f8264}
+#tab-milei-cost .milei-return-card.fintech .return-amount{color:#9a5674}
+#tab-milei-cost .milei-return-total .amount{white-space:normal}
+@media(max-width:720px){#tab-milei-cost .milei-cost-kpis{grid-template-columns:1fr}#tab-milei-cost .milei-bridge-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -8715,10 +8814,12 @@ html,body{overflow-x:clip}
         <a href="#story-origin">El origen</a>
         <a href="#story-first-chart">El primer gráfico</a>
         <a href="#story-rates">Las tasas</a>
+        <a href="#story-correction">La corrección</a>
         <a href="#story-poverty">La contradicción</a>
         <a href="#story-pendulum">El péndulo</a>
         <a href="#story-shock">El costo</a>
         <a href="#story-growth">Cómo creció</a>
+        <a href="#story-housing">La vivienda</a>
         <a href="#story-alternatives">Las alternativas</a>
         <a href="#story-conclusion">La conclusión</a>
       </nav>
@@ -8728,7 +8829,7 @@ html,body{overflow-x:clip}
         <article class="story-stat good"><small>Recuperado después</small><b>$6,08 B</b><span>Meses posteriores por encima de la referencia.</span></article>
         <article class="story-stat warn"><small>Saldo acumulado</small><b>$12,35 B</b><span>Ingreso contrafactual todavía no recuperado.</span></article>
         <article class="story-stat"><small>Entorno financiero</small><b>$3,92 B</b><span>Diferencial estimado post-shock contra espejo.</span></article>
-        <article class="story-stat"><small>Resto del ejercicio</small><b>$4,98 B</b><span>Brecha aproximada luego de los rubros auditados.</span></article>
+        <article class="story-stat"><small>Sensibilidad extrema</small><b>$4,98 B</b><span>Resto sólo si se reembolsa íntegramente la pinza y además se reasigna la envolvente auditada; no es el saldo central.</span></article>
       </section>
 
       <div class="story-timeline">
@@ -8760,7 +8861,30 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-rates')">Ver Tasas e inflación →</button><button class="story-link" type="button" onclick="activateTab('tab-morosidad')">Ver Morosidad →</button></div>
         </article>
 
-        <article id="story-poverty" class="story-chapter" data-step="04">
+        <article id="story-correction" class="story-chapter" data-step="04">
+          <h2>Cuando el número dejó de ser el argumento</h2>
+          <p>Había una afirmación que me gustaba porque era simple. La cuenta mostraba que la pinza financiera de bancos y fintech equivalía a aproximadamente un tercio del agujero salarial acumulado. Era tentador resumirlo así: mientras la gente pagaba el ajuste, el sistema financiero había sido beneficiado en una magnitud cercana al 30%.</p>
+          <p>Pero había un problema. <b>Ese número no medía cuánto habían ganado los bancos.</b> Medía cuánto más caro había sido el entorno financiero para los hogares. No era lo mismo.</p>
+          <p>Para convertirlo en una afirmación sobre ganancias habría que conocer fondeo, mora, previsiones, encajes, impuestos, costos operativos y balances completos. Y cuando fui a buscar esos datos apareció, además, algo que iba en contra de la historia fácil: <b>la rentabilidad contable de los bancos no había explotado durante el período.</b></p>
+          <p>Podía haber descartado la hipótesis ahí. En cambio, cambié la pregunta.</p>
+          <div class="story-question">La cuestión ya no era “¿cuánto del ajuste se quedaron los bancos?”, sino: <b>¿cuánto del ajuste podían haber absorbido sin quedar peor que antes?</b></div>
+          <p>Y esa pregunta llevó a otro conjunto de datos. Las cuentas sectoriales de INDEC mostraban que el ahorro bruto de las sociedades de depósito había pasado de aproximadamente <b>2,2% del PBI en 2023 a 4,0% en 2024</b>. El sistema bancario había terminado el año con una capacidad de ahorro macroeconómica extraordinariamente alta.</p>
+          <div class="story-turn">
+            <div><small>Escenario conservador · pesos de jul-2026</small><b>≈ $11,2 billones</b><p>Equivale a alrededor del <b>21%</b> del giro fiscal: mantener en 2024 la misma carga tributaria bancaria relativa al PBI observada en 2023.</p></div>
+            <div class="answer"><small>Escenario central · pesos de jul-2026</small><b>≈ $20,1 billones</b><p>Equivale a alrededor del <b>38%</b> del esfuerzo fiscal: dejar al sector con la misma capacidad de ahorro/PBI que tenía en 2023.</p></div>
+          </div>
+          <p>En dinero de hoy —usando el último IPC oficial disponible, julio de 2026— el rango bancario conservador queda entonces en aproximadamente <b>$11,2–20,1 billones</b>. El escenario histórico más exigente ronda <b>$31,7 billones</b>. No significaba que el Gobierno les hubiera regalado esa plata ni que los bancos la hubieran ganado: era capacidad contrafactual para repartir el ajuste de otra manera.</p>
+          <p><b>Fintech queda en otra columna:</b> la estimación de costo al usuario ronda <b>$1,34 billones</b>, pero todavía no tenemos datos suficientes para decir que ésa sea su capacidad de pago. Sólo puede mostrarse como sensibilidad: qué ocurriría si se compensara íntegramente ese costo.</p>
+          <div class="story-quote"><b>El ajuste no tenía una única distribución posible.</b></div>
+          <p>Al mismo tiempo, la vieja cuenta tampoco desaparecía. Los <b>$5,85 billones</b> de pinza financiera seguían diciendo algo real dentro del contrafactual: equivalían aproximadamente al <b>31,8% del agujero salarial bruto</b> y a casi <b>47,4% del saldo salarial que todavía no se había recuperado</b>.</p>
+          <p>Pero ahora cada número tenía su lugar. Uno describía lo que había sufrido el hogar. El otro intentaba medir cuánto margen económico tenía otro sector para absorber una porción mayor del esfuerzo. <b>Y no eran la misma cosa.</b></p>
+          <p>Ese fue uno de los momentos más importantes de este dashboard. Porque la investigación no confirmó exactamente la frase con la que había empezado. <b>La corrigió.</b> Y al corregirla apareció una conclusión que me pareció todavía más fuerte.</p>
+          <p>No hacía falta demostrar que alguien se había “quedado con el ajuste”. Alcanzaba con demostrar que <b>la gente común no era la única que podía pagarlo.</b></p>
+          <div class="story-quote">Un dato que no confirma tu argumento no necesariamente lo destruye. A veces te obliga a hacer una pregunta mejor.</div>
+          <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-rates')">Ver Tasas e inflación →</button><button class="story-link" type="button" onclick="activateTab('tab-milei-cost')">Ver Lo que te robó Milei →</button></div>
+        </article>
+
+        <article id="story-poverty" class="story-chapter" data-step="05">
           <h2>El dato que contradijo mis expectativas</h2>
           <p>La caída inicial del poder adquisitivo era difícil de reconciliar con el hecho de que el impacto social no hubiera producido el desenlace que muchas personas pronosticaron. Empecé a agregar gráficos y apareció un dato que realmente contradecía mis expectativas: <b>la pobreza había bajado con mucha fuerza después del pico inicial.</b></p>
           <p>Había que reconocerlo. Fue uno de esos momentos en los que pensé: “bueno, quizá estoy entendiendo esto completamente al revés”. Pero seguí agregando información.</p>
@@ -8768,7 +8892,7 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-poverty')">Ver Pobreza →</button><button class="story-link" type="button" onclick="activateTab('tab-social')">Ver Asistencia social →</button></div>
         </article>
 
-        <article id="story-pendulum" class="story-chapter" data-step="05">
+        <article id="story-pendulum" class="story-chapter" data-step="06">
           <h2>El péndulo hacia los hogares</h2>
           <p>Al observar cómo había cambiado la distribución primaria y secundaria del ingreso encontré una posible explicación. Mientras una parte importante de los ingresos laborales absorbía el shock, <b>otras transferencias y mecanismos redistributivos desplazaban recursos hacia los hogares</b>, especialmente hacia los sectores más vulnerables.</p>
           <p>Eso ayudaba a reconciliar dos historias que, vistas por separado, parecían incompatibles: podía existir una gran pérdida acumulada de poder adquisitivo y, al mismo tiempo, una reducción importante de la pobreza.</p>
@@ -8777,7 +8901,7 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-pendulo')">Ver Péndulo del poder económico →</button><button class="story-link" type="button" onclick="activateTab('tab-gini')">Ver Gini →</button></div>
         </article>
 
-        <article id="story-shock" class="story-chapter" data-step="06">
+        <article id="story-shock" class="story-chapter" data-step="07">
           <h2>¿Cuánto costó el shock?</h2>
           <p>Después intenté responder una pregunta distinta. En lugar de preguntar cuánto habían caído los salarios en un mes, pregunté qué ocurría al acumular esa pérdida a través del tiempo.</p>
           <p>El cálculo actual estima un deterioro salarial bruto acumulado equivalente a <b>$18,43 billones</b>, expresado en pesos constantes. Con la recuperación posterior, aproximadamente <b>$6,08 billones</b> fueron recuperados. Queda un saldo acumulado estimado de <b>$12,35 billones</b>.</p>
@@ -8786,7 +8910,7 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-milei-cost')">Abrir la auditoría “Lo que te robó Milei” →</button></div>
         </article>
 
-        <article id="story-growth" class="story-chapter" data-step="07">
+        <article id="story-growth" class="story-chapter" data-step="08">
           <h2>Y el dashboard empezó a crecer</h2>
           <p>A partir de ahí la investigación se volvió difícil de detener. Aparecieron educación y salud, obra pública, rutas presupuestadas pero no ejecutadas, reservas y deuda, actividad económica, inversión, empleo, consumo, morosidad, distribución del ingreso, gasto público, privilegios empresariales y salarios de la alta administración del Estado.</p>
           <p>Cada gráfico agregaba una pieza y, en algunos casos, obligaba a corregir conclusiones anteriores. El pequeño gráfico con el que había empezado terminó convirtiéndose en este dashboard.</p>
@@ -8797,16 +8921,30 @@ html,body{overflow-x:clip}
           </div>
         </article>
 
-        <article id="story-alternatives" class="story-chapter" data-step="08">
+        <article id="story-housing" class="story-chapter" data-step="09">
+          <h2>La casa que desapareció del gráfico</h2>
+          <p>Después apareció otro gráfico que parecía contar una historia completa con apenas dos números: el crédito hipotecario argentino en 2000 contra el de 2023. La conclusión era tentadora: entre un punto y el otro, “el kirchnerismo había destruido el acceso a la vivienda”.</p>
+          <p>Pero entre esos dos puntos estaba <b>2001–2002</b>. Cuando reconstruí la serie oficial del BCRA apareció el quiebre que el recorte escondía: crisis bancaria, devaluación, pesificación, congelamiento de líneas largas y una caída brutal del crédito antes de que Néstor Kirchner asumiera.</p>
+          <p>También apareció otra corrección. La pareja viral de <b>$31 billones contra $0,3 billones</b> no se podía reproducir exactamente sin conocer su universo y deflactor. Usando una definición constante —hipotecarios de personas humanas destinados a vivienda— la cuenta da aproximadamente <b>$25,0 billones en 2000 y $0,77 billones en 2023</b>, a pesos de julio de 2026. Si amplio a todos los hipotecarios de personas humanas, 2000 ronda $33,4 billones, pero 2023 sigue cerca de $0,94 billones.</p>
+          <p>La película resultó mucho más rara que el slogan: recuperación parcial con Néstor; pérdida de profundidad bancaria durante Cristina mientras PROCREAR abría un canal estatal paralelo; boom UVA con Macri y choque posterior a 2018; un nuevo piso con Alberto; y una recuperación muy rápida desde 2024. A junio de 2026 el stock real de hipotecas para vivienda era unas <b>7,5 veces</b> el de diciembre de 2023, pero todavía estaba aproximadamente <b>77% debajo del nivel de 2000</b>.</p>
+          <p>La misma regla sirvió para otra imagen viral sobre alquileres después del DNU 70/23. El salto de oferta publicada en CABA sí aparece con mucha claridad: Zonaprop registra cerca de <b>+195%</b> durante 2024. Los precios pedidos también corrigieron fuerte en términos reales, pero con una serie reproducible la baja es de aproximadamente <b>−24,5% en 2024</b> y <b>−21,7% entre diciembre de 2023 y julio de 2025</b>, no −36%. Y el “−25% de demanda” no tenía una definición pública suficiente como para incorporarlo.</p>
+          <p>Otra vez, el trabajo no consistía en elegir entre “el gráfico era verdad” o “el gráfico era mentira”. Consistía en averiguar <b>qué medía, qué había quedado afuera y qué parte de la conclusión sobrevivía cuando aparecía el camino entero</b>.</p>
+          <div class="story-quote">Dos puntos hacen una línea. No necesariamente hacen una historia.</div>
+          <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-housing')">Ver Vivienda y crédito →</button></div>
+        </article>
+
+        <article id="story-alternatives" class="story-chapter" data-step="10">
           <h2>La pregunta por “la casta” y por las alternativas</h2>
           <p>Si el argumento era que el ajuste resultaba inevitable porque el Estado necesitaba cerrar sus cuentas, ¿qué ocurría si buscábamos recursos en otros lugares? Calculé incrementos destinados a capas mejor remuneradas del Estado, beneficios y tratamientos favorables a grandes empresas —incluido Mercado Libre— y otros rubros donde era razonable preguntar: <b>¿era necesario gastar esto acá?</b></p>
-          <p>Después hice un ejercicio deliberadamente contrafactual: partí de los <b>$18,43 billones</b> de pérdida salarial bruta e imaginé distintas formas de compensarla con recursos provenientes de sectores relativamente favorecidos. Después de los rubros analizados todavía quedaba una diferencia aproximada de <b>$4,98 billones</b>.</p>
-          <p>Según las estimaciones usadas en el dashboard, alrededor de <b>45.000 argentinos</b> concentran fortunas por aproximadamente <b>$158,27 billones</b>. Los $4,98 billones restantes equivaldrían a poco más del <b>3% de ese patrimonio agregado</b>.</p>
-          <p>Eso no vuelve sencillo ni gratuito un impuesto, ni permite tratar un stock patrimonial como si fuera un flujo fiscal permanente. Pero sí permite poner las magnitudes en perspectiva y discutir la idea de que “no había alternativa”.</p>
+          <p>La primera versión de este ejercicio trataba la pinza financiera de <b>$5,85 billones</b> como si pudiera restarse automáticamente del agujero salarial. La investigación posterior obligó a separar magnitudes: ese monto mide <b>costo financiero diferencial del lado de los hogares</b>, no ganancia neta demostrada de bancos y Fintech.</p>
+          <p>Con la nueva lógica, el saldo observado sigue siendo <b>$12,35 billones</b> después de la recuperación salarial. La envolvente de otras partidas auditadas ronda <b>$1,52 billones</b>; si se reasignara uno-a-uno como sensibilidad, el saldo bajaría a aproximadamente <b>$10,83 billones</b>. El viejo resultado de <b>$4,98 billones</b> queda sólo como una sensibilidad extrema: además de esa reasignación, habría que reembolsar íntegramente los $5,85 billones de la pinza.</p>
+          <p>Para bancos ahora usamos otra pregunta y otro denominador: las cuentas de INDEC permiten estimar que, bajo contrafactuales conservadores, el sector podía absorber aproximadamente <b>$11,2–20,1 billones en pesos de jul-2026</b>, equivalentes a alrededor de <b>21–38% del giro fiscal primario de 2024</b>, sin terminar con una capacidad de ahorro inferior a la de 2023. El escenario histórico agresivo ronda <b>$31,7 billones</b>. Fintech queda fuera de esa capacidad: sus <b>~$1,34 billones</b> son costo estimado al usuario / sensibilidad de compensación integral, no capacidad de pago demostrada.</p>
+          <p>Según las estimaciones patrimoniales usadas en el dashboard, alrededor de <b>45.000 argentinos</b> concentran fortunas por aproximadamente <b>$158,27 billones</b>. El simulador de grandes fortunas conserva la meta de $4,98 billones como <b>escenario de sensibilidad</b>, no como “lo que todavía falta” en la cuenta central.</p>
+          <p>Eso no vuelve sencillo ni gratuito un impuesto, ni permite tratar un stock patrimonial como si fuera un flujo fiscal permanente. Pero sí permite poner las magnitudes en perspectiva y discutir la idea de que el reparto concreto del ajuste fuera la única alternativa posible.</p>
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-casta')">Ver La casta →</button><button class="story-link" type="button" onclick="activateTab('tab-meli-benefits')">Ver Privilegios fiscales →</button><button class="story-link" type="button" onclick="activateTab('tab-wealth-contribution')">Ver Grandes fortunas →</button></div>
         </article>
 
-        <article id="story-conclusion" class="story-chapter" data-step="09">
+        <article id="story-conclusion" class="story-chapter" data-step="11">
           <h2>Ordenar las cuentas y decidir quién paga son preguntas distintas</h2>
           <p>Los datos no demuestran que ordenar las cuentas públicas fuera innecesario. Tampoco demuestran que cualquier alternativa hubiera sido gratuita, sencilla o políticamente viable.</p>
           <p>Pero sí muestran algo más interesante: la política fiscal no consiste solamente en decidir cuánto recaudar y cuánto gastar. También consiste en decidir <b>de quién obtener los recursos, qué gastos preservar, cuáles reducir y sobre qué sectores distribuir el costo de una crisis.</b></p>
@@ -8913,7 +9051,7 @@ html,body{overflow-x:clip}
         <div class="note" style="margin-top:8px"><b>RIPTE:</b> es un indicador de naturaleza previsional. Resume remuneraciones imponibles de trabajadores estables con continuidad declarativa; no equivale al salario promedio de toda la economía.</div>
       </section>
       <section class="card">
-        <div class="card-head" style="padding-top:0"><div class="card-title">Jubilación mínima: ahora mostramos las dos películas <span>♡</span></div></div>
+        <div class="card-head" style="padding-top:0"><div class="card-title">Jubilación mínima: dos películas distintas <span>♡</span></div></div>
         <div class="note warn"><b>Línea 1 · mínima base:</b> mide el haber mínimo legal sin refuerzos. En julio de 2026 da <b>109,85</b>: ≈9,85% arriba de nov-2023 en términos reales.</div>
         <div class="note" style="margin-top:8px"><b>Línea 2 · mínima + bono máximo:</b> reconstruye desde <b>noviembre de 2023</b> el ingreso de una persona que cobra exactamente la mínima y accede al refuerzo máximo mensual. En julio de 2026 da <b>90,31</b>: ≈9,69% debajo de nov-2023. El bono fue $37.000 en nov-2023, $55.000 en dic-2023–feb-2024 y $70.000 desde mar-2024 en el período reconstruido.</div>
         <div class="note" style="margin-top:8px"><b>No son series rivales:</b> responden preguntas distintas. La base muestra la fórmula/haber legal; base+bono aproxima el ingreso efectivo del jubilado mínimo elegible al bono máximo. No extrapolamos esta segunda línea hacia atrás porque exigiría reconstruir refuerzos y elegibilidad mes por mes.</div>
@@ -9023,7 +9161,7 @@ html,body{overflow-x:clip}
 
   <section id="tab-rates" class="tab-panel">
     <div class="household-sign-key" id="ratesHouseholdSignKey">
-      <h2>Antes de mirar los números: todos los $ están puestos del lado del hogar</h2>
+      <h2>Cómo leer los montos: todos los $ están puestos del lado del hogar</h2>
       <p>Esta regla vale para los montos monetarios del tab. Las tasas y los puntos porcentuales técnicos se explican aparte.</p>
       <div class="household-sign-key-grid">
         <div class="positive"><b>+$ = favorable para el hogar</b>Más ingreso, mejor rendimiento o una mejora frente al período comparable.</div>
@@ -9033,6 +9171,11 @@ html,body{overflow-x:clip}
     </div>
 
     <div class="mor-rates-jump"><span><b>¿El crédito caro terminó en mora?</b> Mirá la evolución bancaria, PNFC/Fintech y la correlación exploratoria con rezagos.</span><button class="mor-btn" type="button" onclick="activateTabAndScroll('tab-morosidad')">Ver Morosidad →</button></div>
+
+    <div class="bank-adjust-jump" id="ratesBankAdjustJump">
+      <span><b>Pregunta distributiva:</b> además del costo financiero soportado por los hogares, ¿cuánto del ajuste fiscal podía absorber el sector bancario sin quedar por debajo de su posición previa?</span>
+      <button class="mor-btn" type="button" onclick="document.getElementById('ratesBankCapacitySection')?.scrollIntoView({behavior:'smooth',block:'start'})">Ver bancos vs ajuste →</button>
+    </div>
 
     <div class="grid">
       <main class="two">
@@ -9249,6 +9392,128 @@ html,body{overflow-x:clip}
   <div class="rates-files-audit"><b>Archivos y columnas usados:</b> <code>tas2_ser.txt</code> · 1936 + 1938 · abr-2021→jul-2026; <code>tas1_ser.txt</code> · 1307/1309/1311/1313/1315/1317/1319/1321 · suma diaria→mensual; <code>serie_ipc_divisiones.csv</code> · Código 0 / Nacional / Indice_IPC; <code>series-informe-proveedores-no-financieros-credito-junio-2026.xlsx</code> · hoja 3 / stock real Fintech por cortes; hoja 5 / TNA Fintech mensual ponderada por saldos. Interpolación entre cortes y prolongación feb→jul-2026 identificada. Descarga: 20/08/2026. Hashes SHA-256: <code>/data/fuentes/FUENTES.csv</code>.</div>
 </section>
 
+
+
+    <section class="bank-adjust-section" id="ratesBankCapacitySection" aria-labelledby="ratesBankCapacityTitle">
+      <div class="bank-adjust-head">
+        <div>
+          <span class="bank-adjust-eyebrow">♡ distribución del ajuste · bancos · 2024</span>
+          <h2 class="bank-adjust-title" id="ratesBankCapacityTitle">¿Quién podía pagar el ajuste?</h2>
+          <p class="bank-adjust-lead">Este bloque separa tres cosas distintas: <b>la carga financiera que enfrentaron los hogares</b>, <b>la rentabilidad contable de las entidades</b> y <b>la capacidad macroeconómica contrafactual del sector bancario para absorber una parte mayor de la consolidación fiscal</b>. Ninguna de las tres se interpreta como una transferencia directa entre sí.</p>
+        </div>
+        <div class="bank-adjust-denom">
+          <small>Denominador principal · SPN</small>
+          <strong id="bankAdjustFiscalSwing">4,7 pp PBI</strong>
+          <span>resultado primario 2023 −2,9% → 2024 +1,8%<br>Espejo FMI: ~5 pp de consolidación.</span>
+        </div>
+      </div>
+
+      <div class="bank-adjust-bridge">
+        <article><div class="tag">1 · Lo que soportó el hogar</div><b>Pinza financiera pos-shock</b><p>Crédito bancario + plazo fijo + Fintech contra las normas históricas usadas por este dashboard. Es costo estimado del lado hogar, no ganancia neta del prestamista.</p></article>
+        <article><div class="tag">2 · Lo que muestran los balances</div><b>Rentabilidad contable ≠ boom</b><p>El ROA/ROE bancario cayó después de 2023. Esto impide llamar “ganancia” a toda la pinza sin descontar fondeo, mora, previsiones, impuestos y otros costos.</p></article>
+        <article><div class="tag">3 · La pregunta contrafactual</div><b>Capacidad para absorber ajuste</b><p>INDEC permite preguntar cuánto podía aportar el sector manteniendo la carga tributaria o la capacidad de ahorro relativas que tenía antes del shock.</p></article>
+      </div>
+
+      <div class="bank-adjust-kpis">
+        <article class="bank-adjust-kpi household">
+          <div class="tag">Pinza pos-shock contra normas</div>
+          <div class="val" id="bankAdjustPinchMoney">—</div>
+          <div class="subval"><span id="bankAdjustPinchGross">—</span> del agujero bruto · <span id="bankAdjustPinchRemaining">—</span> del saldo no recuperado</div>
+          <p>No se usa como denominador fiscal ni se presenta como ganancia bancaria.</p>
+        </article>
+        <article class="bank-adjust-kpi conservative">
+          <div class="tag">Escenario tributario conservador</div>
+          <div class="val" id="bankAdjustTaxMoney">—</div>
+          <div class="subval"><span id="bankAdjustTaxPct">—</span> del giro fiscal · <span id="bankAdjustTaxImf">—</span></div>
+          <p>Mantener en 2024 la misma carga de impuestos corrientes sobre el PBI observada en 2023. Monto expresado en pesos de jul-2026, último IPC oficial disponible.</p>
+        </article>
+        <article class="bank-adjust-kpi central">
+          <div class="tag">Escenario central · ahorro 2023 <span class="bank-adjust-badge central">central</span></div>
+          <div class="val" id="bankAdjustSavingMoney">—</div>
+          <div class="subval"><span id="bankAdjustSavingPct">—</span> del giro fiscal · <span id="bankAdjustSavingImf">—</span></div>
+          <p>Dejar al sector con el mismo ahorro bruto/PBI de 2023: 2,2%, en vez del 4,0% observado en 2024. Monto en pesos de jul-2026.</p>
+        </article>
+        <article class="bank-adjust-kpi aggressive">
+          <div class="tag">Escenario histórico <span class="bank-adjust-badge aggressive">agresivo</span></div>
+          <div class="val" id="bankAdjustHistoricalMoney">—</div>
+          <div class="subval"><span id="bankAdjustHistoricalPct">—</span> del giro fiscal · <span id="bankAdjustHistoricalImf">—</span></div>
+          <p>Convergencia al promedio de ahorro bancario/PBI de 2016–2022. Monto en pesos de jul-2026; sensibilidad agresiva, no headline.</p>
+        </article>
+      </div>
+
+      <div class="bank-adjust-reading" id="bankAdjustReading">Calculando el rango contrafactual…</div>
+
+      <div class="bank-adjust-grid">
+        <article class="bank-adjust-chart-card">
+          <div class="bank-adjust-chart-head"><h3>¿Qué parte del giro fiscal representa cada escenario?</h3><span>escenarios alternativos · no se suman</span></div>
+          <div id="bankAdjustScenarioChart" class="bank-adjust-chart"></div>
+        </article>
+        <article class="bank-adjust-chart-card">
+          <div class="bank-adjust-chart-head"><h3>Ahorro bruto de sociedades de depósito</h3><span>INDEC · % del PBI · 2016–2024</span></div>
+          <div id="bankAdjustSavingChart" class="bank-adjust-chart"></div>
+        </article>
+        <article class="bank-adjust-chart-card">
+          <div class="bank-adjust-chart-head"><h3>Rentabilidad contable del sistema financiero</h3><span>BCRA · ROA / ROE · no equivale a ahorro de Cuentas Nacionales</span></div>
+          <div id="bankAdjustProfitChart" class="bank-adjust-chart"></div>
+        </article>
+        <article class="bank-adjust-chart-card">
+          <div class="bank-adjust-chart-head"><h3>El sistema ya entró muy capitalizado</h3><span>BCRA · exceso de capital regulatorio</span></div>
+          <div id="bankAdjustCapitalChart" class="bank-adjust-chart"></div>
+        </article>
+      </div>
+
+      <div class="bank-adjust-table-wrap">
+        <table class="bank-adjust-table">
+          <thead><tr><th>Cuenta · sociedades de depósito excepto BCRA</th><th>2023</th><th>2024</th><th>Cambio</th><th>Lectura</th></tr></thead>
+          <tbody id="bankAdjustTableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="bank-adjust-notes">
+        <article class="bank-adjust-note">
+          <h3>Qué demuestra y qué no</h3>
+          <p><b>Demuestra una capacidad contrafactual:</b> bajo ciertos repartos, una fracción importante de la consolidación podía recaer sobre un sector con ahorro macroeconómico elevado. <b>No demuestra</b> que el Gobierno haya entregado deliberadamente ese porcentaje a los bancos, ni que ese porcentaje sea utilidad neta bancaria.</p>
+          <div class="bank-adjust-formulas">
+            <div class="bank-adjust-formula"><b>Tributario</b><code>(1,6 − 0,6) / 4,7 × 100</code></div>
+            <div class="bank-adjust-formula"><b>Ahorro 2023</b><code>(4,0 − 2,2) / 4,7 × 100</code></div>
+            <div class="bank-adjust-formula"><b>Histórico</b><code>(4,0 − promedio 2016–22) / 4,7 × 100</code></div>
+            <div class="bank-adjust-formula"><b>Pasaje a pesos 2024</b><code>monto = PBI 2024 × puntos del PBI / 100</code></div>
+            <div class="bank-adjust-formula"><b>Pesos de jul-2026</b><code>monto 2024 × IPC jul-2026 / IPC promedio 2024 = × 1,9115</code></div>
+            <div class="bank-adjust-formula"><b>Pinza / agujero bruto</b><code>5,85 / 18,43 × 100 ≈ 31,8%</code></div>
+            <div class="bank-adjust-formula"><b>Pinza / saldo no recuperado</b><code>5,85 / (18,43 − 6,08) × 100 ≈ 47,4%</code></div>
+          </div>
+        </article>
+        <article class="bank-adjust-note fintech">
+          <h3>Fintech: costo conocido, capacidad todavía no estimable</h3>
+          <p>La pata Fintech forma parte de la pinza calculada para el hogar. Su costo diferencial estimado es de <b id="bankAdjustFintechPinch">—</b> en pesos de jul-2026. Ese monto puede usarse como <b>sensibilidad de compensación integral al usuario</b>, pero <b>no como capacidad de pago</b>: falta un estado de resultados consolidado comparable que permita descontar fondeo, mora, previsiones, gastos e impuestos.</p>
+        </article>
+        <article class="bank-adjust-note warn">
+          <h3>La baja de impuestos corrientes no prueba una rebaja discrecional</h3>
+          <p>INDEC registra una caída de 1,6% a 0,6% del PBI en impuestos corrientes sobre ingreso y riqueza del sector. El escenario pregunta qué pasaba si ese peso relativo se mantenía; <b>no atribuye por sí solo la diferencia a una decisión tributaria específica</b>. Pueden intervenir bases imponibles, resultados, inflación, imputación temporal y composición.</p>
+        </article>
+        <article class="bank-adjust-note">
+          <h3>El colchón de solvencia ya existía al comenzar el ajuste</h3>
+          <p>El exceso de capital ya era extraordinariamente alto en diciembre de 2023. Los datos sirven para discutir margen de absorción, <b>no para decir que Milei creó ese colchón</b>. Tampoco se supone que todo el excedente regulatorio pudiera retirarse sin consecuencias: eso requeriría un stress test específico.</p>
+        </article>
+      </div>
+
+      <div class="bank-adjust-actions">
+        <button class="download-link" type="button" onclick="downloadBankAdjustmentCsv()">⬇ CSV · bancos vs ajuste</button>
+        <a class="source-link" href="https://www.indec.gob.ar/uploads/informesdeprensa/cuentas_sociedades_financieras_12_254091CDBBA3.pdf" target="_blank" rel="noopener">📊 INDEC · sociedades financieras 2024</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-diciembre-de-2023/" target="_blank" rel="noopener">🏦 BCRA · bancos dic-2023</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/InfBanc1224.pdf" target="_blank" rel="noopener">🏦 BCRA · bancos dic-2024</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-diciembre-de-2025/" target="_blank" rel="noopener">🏦 BCRA · bancos dic-2025</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-junio-de-2026/" target="_blank" rel="noopener">🏦 BCRA · bancos jun-2026</a>
+        <a class="source-link" href="https://www.indec.gob.ar/ftp/cuadros/publicaciones/indecinforma/indec_informa_05_26.pdf" target="_blank" rel="noopener">📊 INDEC · PIB nominal 2024 · $583,91 B</a>
+        <a class="source-link" href="https://www.indec.gob.ar/ftp/cuadros/economia/sh_ipc_08_26.xls" target="_blank" rel="noopener">📈 INDEC · IPC nacional dic-2016→jul-2026</a>
+        <a class="source-link" href="https://www.argentina.gob.ar/node/414285" target="_blank" rel="noopener">🏛️ MECON · cierre fiscal 2023</a>
+        <a class="source-link" href="https://www.argentina.gob.ar/node/455054" target="_blank" rel="noopener">🏛️ MECON · cierre fiscal 2024</a>
+        <a class="source-link" href="https://www.imf.org/-/media/Files/Publications/CR/2024/English/1ARGEA2024002.ashx" target="_blank" rel="noopener">🌐 FMI · consolidación ~5 pp</a>
+      </div>
+      <div class="bank-adjust-source-note"><b>Regla editorial:</b> “bancos” resume aquí el subsector INDEC <i>sociedades de depósito excepto el banco central</i>. Los escenarios nacen en puntos del PBI. Para hacerlos legibles en dinero, se convierten con el PIB nominal 2024 y luego se actualizan por IPC desde el promedio de 2024 hasta julio de 2026. <b>Julio de 2026 es el último IPC oficial disponible al 23/08/2026; no se inventa inflación de agosto.</b></div>
+    </section>
+
+
     <div class="sources-box">
       <h3>Fuentes y descargas</h3>
       <div class="source-links">
@@ -9260,6 +9525,7 @@ html,body{overflow-x:clip}
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/BoletinEstadistico/boldat202608.pdf">📄 BCRA · Boletín ago-2026</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/publicaciones/informe-de-proveedores-no-financieros-de-credito-junio-de-2026/">📱 BCRA · PNFC / Fintech</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31">📊 INDEC · IPC</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/ftp/cuadros/publicaciones/indecinforma/indec_informa_05_26.pdf">📊 INDEC · PIB nominal 2024</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://biblioteca.indec.gob.ar/bases/minde/ipc_10_04.pdf">📄 INDEC · IPC-GBA histórico 2002–2004</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://argendata.fund.ar/topico/inflacion/">📚 Argendata · Inflación histórica</a>
       </div>
@@ -10042,7 +10308,7 @@ html,body{overflow-x:clip}
     <div class="structure-head">
       <h2>Más allá de la pobreza: vulnerabilidad y estructura social ♡</h2>
       <div class="structure-thesis"><span class="warn">no pobre</span> ≠ <span class="good">clase media</span></div>
-      <p class="small" style="text-align:center;max-width:980px;margin:8px auto 0">Ahora mostramos tres niveles sin mezclarlos: <b>CABA</b> para la estratificación fina de ingresos; <b>INDEC</b> para la pobreza e indigencia por las seis regiones estadísticas; y <b>UCA</b> para fragilidad, estrés y movilidad en Argentina urbana. Sigue sin existir una serie oficial nacional equivalente a la clasificación porteña “vulnerable → medio frágil → clase media → acomodados”.</p>
+      <p class="small" style="text-align:center;max-width:980px;margin:8px auto 0">La lectura combina tres niveles sin mezclarlos: <b>CABA</b> para la estratificación fina de ingresos; <b>INDEC</b> para la pobreza e indigencia por las seis regiones estadísticas; y <b>UCA</b> para fragilidad, estrés y movilidad en Argentina urbana. Sigue sin existir una serie oficial nacional equivalente a la clasificación porteña “vulnerable → medio frágil → clase media → acomodados”.</p>
       <div class="structure-kpi-grid">
         <div class="structure-kpi"><b>78,9%</b><span>personas no pobres · CABA · 1T2026</span></div>
         <div class="structure-kpi"><b>20,1%</b><span>vulnerables + medio frágil · CABA · 1T2026</span></div>
@@ -10113,7 +10379,7 @@ html,body{overflow-x:clip}
         <div class="card-title">Argentina urbana: estar arriba de la línea no siempre alcanza <span>♡</span></div>
         <div class="kicker structure-panel-kicker">UCA · 2025 · pobreza monetaria vs. estrés económico por NSE del hogar</div>
       </div>
-      <div class="method-shield" style="margin:0 14px 10px">
+      <div class="method-shield" style="margin:10px 14px 10px">
         <span class="label">Qué compara</span>
         <strong>Pobreza</strong> = ingreso bajo la línea monetaria. <strong>Estrés económico</strong> = el hogar declara que sus ingresos no alcanzan para cubrir necesidades básicas.
         <br><br><strong>¿Qué significa “medio alto / medio bajo / bajo / muy bajo”?</strong> Son <b>niveles socioeconómicos del hogar (NSE UCA)</b>, construidos con un índice que combina educación, inserción ocupacional, tasa de actividad, bienes durables y condición residencial.
@@ -10770,6 +11036,19 @@ html,body{overflow-x:clip}
       <div class="family-mini-note" style="padding-top:12px"><b>Real per cápita:</b> lo dejamos fuera por ahora. Para sumarlo bien hay que cerrar una cadena homogénea de deflactor + población y rotularla como cálculo derivado; no iba a meter una transformación silenciosa sólo para completar un selector ♡.</div>
     </section>
 
+
+    <section class="card" style="margin-top:16px">
+      <div class="card-head"><div class="card-title">Preguntas que este tab puede contestar</div><div class="kicker">sin convertir un gráfico en un slogan</div></div>
+      <div class="ho-faq">
+        <details><summary>¿El kirchnerismo destruyó el crédito hipotecario?</summary><p>La comparación 2000→2023 no permite atribuir toda la caída al kirchnerismo: el gran colapso ya ocurre durante 2001–2003. Después, la recuperación bajo Néstor fue parcial y el mortgage bancario volvió a perder profundidad durante los años de Cristina. Desde 2012 PROCREAR agregó un canal público distinto, que no aparece como equivalente al stock hipotecario bancario.</p></details>
+        <details><summary>¿Macri recuperó el crédito hipotecario?</summary><p>Sí, en el sentido de que UVA produjo una recuperación extraordinaria del mortgage: el BCRA informó +148% real sólo en 2017 y 58.500 nuevos deudores ese año. El stock real del gráfico alcanzó un pico en 2018; la crisis 2018–19 revirtió una parte importante del avance y dejó visible el riesgo de indexar la deuda del hogar.</p></details>
+        <details><summary>¿Milei está recuperando el crédito hipotecario?</summary><p>Los datos muestran una reactivación genuina y muy rápida desde mediados de 2024. A junio de 2026 el stock real para vivienda es unas 7,5 veces el de diciembre de 2023. Pero el nivel sigue aproximadamente 77% debajo de 2000, y a fines de 2025 el hipotecario total equivalía apenas a ~0,7% del PBI. Velocidad de crecimiento y profundidad histórica son dos preguntas distintas.</p></details>
+        <details><summary>¿La derogación de la Ley de Alquileres bajó los precios?</summary><p>En CABA, los datos de publicaciones muestran un salto muy fuerte de oferta y una caída real de los precios pedidos durante 2024. Con la serie que podemos reproducir, la corrección real de 2024 ronda 24,5%, no 36%; entre enero y julio de 2025 el precio pedido volvió a subir algo por encima del IPC. La evidencia respalda un cambio importante del mercado, pero no permite convertir toda la variación en un efecto causal puro del DNU.</p></details>
+        <details><summary>¿Más hipotecas significa que comprar una casa es fácil?</summary><p>No necesariamente. Falta cruzar monto prestable con precio de vivienda, ahorro inicial/LTV, salario, tasa, plazo e indexación. El stock de crédito mide profundidad financiera; la accesibilidad de una familia requiere otra cuenta.</p></details>
+      </div>
+      <div class="family-mini-note"><b>Regla del capítulo:</b> dos puntos hacen una comparación. Para explicar una historia hay que reconstruir lo que pasó entre ellos.</div>
+    </section>
+
     <section class="sources-box" style="margin-top:16px">
       <h3>Fuentes y descarga</h3>
       <div class="source-links">
@@ -11337,12 +11616,13 @@ html,body{overflow-x:clip}
 
   <section id="tab-housing" class="tab-panel">
     <div class="method-shield">
-      <span class="label">Vivienda · EPH / INDEC / BCRA / Escribanos CABA</span>
-      <strong>Alquilar, comprar y construir son problemas distintos. Separamos tenencia, crédito, compraventa, costo de construcción y calidad habitacional.</strong>
+      <span class="label">Vivienda · EPH / INDEC / BCRA / CABA / mercado inmobiliario</span>
+      <strong>Alquilar, comprar, financiar y construir son problemas distintos. Separamos tenencia, crédito hipotecario, compraventa, alquileres, costo de construcción y calidad habitacional.</strong>
       <span class="method-badge reconstructed">2001–2002 · Censo / EPH puntual</span>
+      <span class="method-badge official">BCRA hipotecas · 2000 → jun-2026</span>
       <span class="method-badge official">EPH semestral · 2S-2016 → 2S-2025</span>
-      <span class="method-badge official">IPC / ICC · jul–jun 2026</span>
-      <span class="method-badge official">CABA / BCRA · 2026</span>
+      <span class="method-badge official">Alquileres CABA · 2023–2025</span>
+      <span class="method-badge official">IPC / ICC · 2026</span>
     </div>
 
     <div class="grid">
@@ -11371,7 +11651,7 @@ html,body{overflow-x:clip}
     <section class="card" style="margin-top:16px">
       <div class="card-head">
         <div class="card-title">La historia larga: propiedad y alquiler desde Duhalde <span>♡</span></div>
-        <div class="kicker">hitos de fuentes distintas · no se empalman como una sola serie</div>
+        <div class="kicker">hitos de fuentes distintas · franjas por presidencia · no se empalman como una sola serie</div>
       </div>
       <div class="ho-history-grid">
         <div id="housingHistoryChart"></div>
@@ -11384,6 +11664,90 @@ html,body{overflow-x:clip}
       </div>
       <div class="family-mini-note">
         Los puntos de Censo, EPH puntual y EPH continua tienen <b>universos y diseños distintos</b>. Por eso este bloque muestra hitos y no dibuja una línea falsa 2001→2025. La continuidad comparable del tab comienza en 2S-2016.
+      </div>
+    </section>
+
+
+    <section class="card" style="margin-top:16px" id="housing-mortgage-history">
+      <div class="card-head">
+        <div class="card-title">Crédito hipotecario: la película completa 2000–2026 <span>♡</span></div>
+        <div class="kicker">personas humanas · destino vivienda · BCRA · pesos de jul-2026</div>
+      </div>
+      <p class="ho-section-lead">
+        Para comparar 26 años usamos una sola definición reproducible: <b>préstamos hipotecarios a personas humanas destinados a vivienda</b>, moneda local + extranjera, saldo a fin de mes. Los pesos corrientes de cada época se llevan a <b>pesos de julio de 2026</b>. El gráfico muestra cierres de diciembre y junio de 2026.
+      </p>
+      <div class="ho-credit-hero">
+        <article class="ho-credit-kpi"><div class="tag">Dic-2000 · vivienda</div><div class="big">≈ $25,0 B</div><div class="mini">Stock real a pesos de jul-2026. Es la referencia anterior a la crisis 2001–02.</div></article>
+        <article class="ho-credit-kpi"><div class="tag">Dic-2023 · piso reciente</div><div class="big">≈ $0,77 B</div><div class="mini">≈96,9% debajo de dic-2000 con la misma definición y deflactor.</div></article>
+        <article class="ho-credit-kpi"><div class="tag">Jun-2026 · recuperación</div><div class="big">≈ $5,77 B</div><div class="mini">≈7,46 veces dic-2023, pero todavía ≈76,9% debajo de dic-2000.</div></article>
+        <article class="ho-credit-kpi"><div class="tag">Profundidad · dic-2025</div><div class="big">≈ 0,7% PBI</div><div class="mini">BCRA: el crédito hipotecario volvió a crecer, aunque seguía debajo de máximos históricos y regionales.</div></article>
+      </div>
+      <div class="ho-credit-grid">
+        <div id="housingMortgageRealChart"></div>
+        <div class="ho-audit-stack">
+          <div class="ho-audit warn"><strong>Auditoría del “$31 B → $0,3 B”.</strong><br>Con la serie oficial no reproducimos exactamente esa pareja. Con <b>destino vivienda</b> obtenemos ≈$25,0 B en 2000 y ≈$0,77 B en 2023. Si ampliamos a <b>todos los hipotecarios de personas humanas</b>, 2000 da ≈$33,4 B y 2023 ≈$0,94 B. Sin fuente, universo y deflactor, el “31 / 0,3” no es auditable.</div>
+          <div class="ho-audit"><strong>El elefante entre los dos puntos.</strong><br>El colapso comienza antes del kirchnerismo. El informe 2002 del BCRA describe caída del crédito, congelamiento de líneas largas, pesificación/CER-CVS y casi ausencia de nueva intermediación. La serie vivienda pasa de ≈$19,6 B reales en 2001 a ≈$8,74 B en 2003.</div>
+          <div class="ho-audit ok"><strong>Recuperar desde casi cero no es volver al año 2000.</strong><br>La expansión desde 2024 es real y muy rápida. A junio de 2026 el stock vivienda es ≈646% mayor que en dic-2023; aun así, permanece ≈77% por debajo de 2000 en términos reales.</div>
+          <div class="ho-audit badge"><strong>Variación no es causalidad.</strong><br>Las tarjetas por período comparan cierres. Crisis, inflación, fondeo de largo plazo, regulación, salario, precio de la vivienda, UVA y programas públicos también importan.</div>
+        </div>
+      </div>
+      <div class="ho-phase-grid">
+        <article class="ho-phase"><div class="tag">Crisis · 2001→2003</div><div class="big">−55%</div><div class="mini">El gran quiebre está en la crisis bancaria, devaluación, pesificación y congelamiento del crédito largo.</div></article>
+        <article class="ho-phase"><div class="tag">Néstor · 2003→2007</div><div class="big">+9%</div><div class="mini">Recuperación real muy parcial desde el subsuelo; el hipotecario quedó rezagado frente a otras líneas.</div></article>
+        <article class="ho-phase"><div class="tag">Cristina · 2007→2015</div><div class="big">−58%</div><div class="mini">El mortgage bancario perdió profundidad; desde 2012 apareció PROCREAR como canal público paralelo.</div></article>
+        <article class="ho-phase"><div class="tag">Macri · 2015→2019</div><div class="big">+86%</div><div class="mini">Boom UVA: el stock tocó un pico en 2018 (+171% vs 2015) y retrocedió con la crisis de 2018–19.</div></article>
+        <article class="ho-phase"><div class="tag">Alberto · 2019→2023</div><div class="big">−90%</div><div class="mini">El crédito hipotecario bancario volvió a un mínimo histórico en términos reales.</div></article>
+        <article class="ho-phase"><div class="tag">Milei · dic-2023→jun-2026</div><div class="big">+646%</div><div class="mini">Reactivación intensa desde el piso; el BCRA informa que la enorme mayoría de las nuevas altas son UVA.</div></article>
+        <article class="ho-phase"><div class="tag">2017 · altas</div><div class="big">58.500</div><div class="mini">Nuevos deudores hipotecarios en 2017 según BCRA; 210 mil deudores al cierre del año.</div></article>
+        <article class="ho-phase"><div class="tag">2025 · profundidad</div><div class="big">0,7% PBI</div><div class="mini">Hipotecarios totales; UVA ≈0,6% del PBI. BCRA todavía los describe debajo de máximos históricos.</div></article>
+      </div>
+      <div class="ho-formulas">
+        <b>Fórmula real:</b> <code>stock real_t = stock nominal_t × IPC(jul-2026) / IPC(t)</code>.<br>
+        <b>Universo central:</b> BCRA · personas humanas · hipotecarios · destino vivienda · moneda nacional + extranjera · saldo fin de mes.<br>
+        Para 2000–2016 el deflactor usa el mismo empalme histórico de IPC documentado por el dashboard; 2017+ usa IPC nacional. Por eso los valores “reales” son una <b>serie derivada</b>, no un dato publicado literalmente por el BCRA.
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px" id="housing-public-policy">
+      <div class="card-head"><div class="card-title">Crédito bancario ≠ acceso total a vivienda</div><div class="kicker">programas públicos y mortgage miden universos distintos</div></div>
+      <p class="ho-section-lead">Un gráfico de hipotecas bancarias puede describir muy bien al sistema financiero y, aun así, dejar afuera una parte de la política habitacional. No sumamos estos números al stock bancario: los mostramos como <b>canales paralelos</b>.</p>
+      <div class="ho-program-grid">
+        <article class="ho-program"><div class="tag">PROCREAR · 2012–2015</div><div class="big">196.000</div><div class="mini">Créditos para construcción + desarrollos urbanísticos reportados por el Gobierno. Es un conteo administrativo, no saldo BCRA.</div></article>
+        <article class="ho-program"><div class="tag">PROCREAR · líneas comparables</div><div class="big">110.751</div><div class="mini">Construcción en lote propio + ampliación/refacción entre jun-2012 y dic-2015; fuente administrativa oficial.</div></article>
+        <article class="ho-program"><div class="tag">Casa Propia · 2019–sep-2023</div><div class="big">&gt;70.000</div><div class="mini">Familias que construyeron con créditos Casa Propia según el Ministerio; además reportó &gt;125 mil llaves entregadas.</div></article>
+        <article class="ho-program"><div class="tag">Regla de lectura</div><div class="big">No sumar</div><div class="mini">Crédito BCRA, viviendas entregadas, subsidios y créditos públicos no son categorías homogéneas ni mutuamente excluyentes.</div></article>
+      </div>
+      <div class="family-mini-note"><b>La pregunta correcta cambia según el indicador.</b> “¿Había mortgage bancario?” y “¿había alguna vía para acceder a vivienda?” no son equivalentes. También falta otra dimensión: cuánto costaba la casa respecto del salario y qué ahorro inicial exigía cada mecanismo.</div>
+    </section>
+
+    <section class="card" style="margin-top:16px" id="housing-rent-reform">
+      <div class="card-head">
+        <div class="card-title">Alquileres después del DNU 70/23: qué sí podemos auditar <span>♡</span></div>
+        <div class="kicker">CABA · avisos / precios de oferta · dic-2023 → jul-2025</div>
+      </div>
+      <p class="ho-section-lead">
+        El DNU 70/2023 derogó la Ley 27.551. Para evaluar la imagen viral separamos <b>oferta publicada</b>, <b>precio pedido de nuevos alquileres</b>, <b>IPC</b> y <b>demanda</b>. Son universos distintos y CABA no representa automáticamente a todo el país.
+      </p>
+      <div class="ho-rent-kpis">
+        <article class="ho-rent-kpi"><div class="tag">Oferta publicada · 2024</div><div class="big">+195,4%</div><div class="mini">Índice Zonaprop de cantidad de avisos en CABA. Ene-2024 saltó +62,1% mensual. Oferta de avisos ≠ stock físico de viviendas.</div></article>
+        <article class="ho-rent-kpi"><div class="tag">Precio real · 2024</div><div class="big">≈ −24,5%</div><div class="mini">Precio de oferta +64,4% vs IPC nacional +117,8%. Es una corrección real importante de nuevos avisos/contratos.</div></article>
+        <article class="ho-rent-kpi"><div class="tag">Precio real · ene–jul 2025</div><div class="big">≈ +3,6%</div><div class="mini">Zonaprop +21,5% vs IPC oficial acumulado ≈17,2%. La baja real no continuó linealmente durante 2025.</div></article>
+        <article class="ho-rent-kpi"><div class="tag">“Demanda −25%”</div><div class="big">N/D</div><div class="mini">No encontramos una serie pública y reproducible que defina demanda de alquiler con ese resultado. No se incorpora como dato central.</div></article>
+      </div>
+      <div class="ho-rent-grid">
+        <div id="housingRentReformChart"></div>
+        <div class="ho-method-stack">
+          <div class="ho-method-box"><strong>La imagen dice “precios −36% real”.</strong><br>Con una cadena reproducible y consistente —Zonaprop para precios de oferta + IPC INDEC— obtenemos ≈<b>−24,5%</b> en 2024 y ≈<b>−21,7%</b> entre dic-2023 y jul-2025. Puede existir otra metodología que arroje −36%, pero sin fuente/base exactas no la presentamos como verificada.</div>
+          <div class="ho-method-box"><strong>Oferta +195% sí aparece en la fuente.</strong><br>Zonaprop informa +195,4% anual en 2024 y un salto de +62,1% en enero de 2024. Es <b>cantidad de avisos de alquiler tradicional en CABA</b>, no “oferta nacional de viviendas”.</div>
+          <div class="ho-method-box"><strong>No confundir dos precios.</strong><br>El IPC “Alquiler de vivienda” mide servicios efectivamente pagados por hogares relevados. Zonaprop mide <b>precio pedido en publicaciones</b>. Uno incorpora contratos vigentes; el otro reacciona más rápido a nuevos contratos.</div>
+          <div class="ho-method-box"><strong>Causalidad:</strong><br>la desregulación coincide temporalmente con el salto de publicaciones, pero el precio también depende de inflación, salarios, tipo de cambio, alquiler temporario, expectativas y ciclo inmobiliario. El dashboard muestra el antes/después y evita atribuir todo el cambio a una sola causa.</div>
+        </div>
+      </div>
+      <div class="ho-formulas">
+        <b>Precio real 2024:</b> <code>(1 + 0,644) / (1 + 1,178) − 1 ≈ −24,5%</code>.<br>
+        <b>Ene–jul 2025:</b> <code>(1 + 0,215) / (1 + 0,172) − 1 ≈ +3,6%</code>.<br>
+        <b>Dic-2023→jul-2025:</b> <code>(1,644 × 1,215) / (2,178 × 1,172) − 1 ≈ −21,7%</code>.<br>
+        <b>Oferta:</b> una variación de +195,4% lleva un índice 100 a <code>295,4</code>; no significa que existan 195% más viviendas físicas.
       </div>
     </section>
 
@@ -11427,8 +11791,10 @@ html,body{overflow-x:clip}
       <div class="card-head"><div class="card-title">Qué significa —y qué no— para un elector</div><div class="kicker">lectura APB</div></div>
       <div class="ho-apb">
         <div><b>“Hay más propietarios” no responde si una persona joven puede comprar hoy.</b> Para eso hacen falta ingreso, precio, ahorro inicial, tasa y plazo.</div>
-        <div><b>“Bajaron los alquileres” puede significar precio, participación de inquilinos u oferta.</b> Son conceptos distintos.</div>
-        <div><b>Escrituras de CABA no representan todo el país.</b> Se muestran como indicador administrativo rápido del mercado porteño.</div>
+        <div><b>“Bajaron los alquileres” puede significar precio real de nuevos avisos, precio de contratos vigentes, participación de inquilinos u oferta.</b> Son conceptos distintos.</div>
+        <div><b>“El crédito creció 600%” puede ser cierto y seguir describiendo una recuperación desde un piso microscópico.</b> El nivel de junio de 2026 todavía está muy lejos del stock real de 2000.</div>
+        <div><b>Escrituras de CABA no representan todo el país.</b> Tampoco los avisos de un portal: se usan como termómetro del mercado porteño, no como censo nacional.</div>
+        <div><b>Crédito bancario no agota la política de vivienda.</b> PROCREAR, Casa Propia, vivienda pública, autoconstrucción y compra al contado son canales diferentes.</div>
         <div><b>Vivienda también es calidad y servicios.</b> Propiedad, alquiler o crédito no dicen por sí solos si hay hacinamiento, agua, cloacas o materiales adecuados.</div>
       </div>
     </section>
@@ -11447,8 +11813,19 @@ html,body{overflow-x:clip}
         <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/uploads/informesdeprensa/icc_07_266A21F0AB6D.pdf">🏗️ INDEC · ICC junio 2026</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.colegio-escribanos.org.ar/2026/07/23/cantidad-de-escrituras-de-compraventa-realizadas-en-junio-2026/">✍️ Escribanos CABA · junio 2026</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-abril-de-2026/">🏦 BCRA · Informe sobre Bancos abril 2026</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/prestamos-y-otros-activos-de-las-entidades-financieras/">🏦 BCRA · series de préstamos / hipotecarios por destino</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/Pdfs/PublicacionesEstadisticas/perser_dest.xls">⬇ BCRA · XLS · hipotecarios y prendarios por destino</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/inf2002.pdf">📕 BCRA · Informe al Congreso 2002 · crisis crediticia</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-diciembre-de-2017/">🏦 BCRA · boom hipotecario 2017</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/informe-politica-monetaria-2025-T4.pdf">📊 BCRA · IPOM dic-2025 · hipotecarios / PBI</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.argentina.gob.ar/normativa/nacional/decreto-70-2023-395521/texto">⚖️ DNU 70/2023 · art. 249 · derogación Ley 27.551</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2025/01/INDEX_CABA_REPORTE_2025-01.pdf">🏙️ Zonaprop Index · CABA · oferta 2024 / ene-2025</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2025/07/INDEX_CABA_REPORTE_2025-07.pdf">🏙️ Zonaprop Index · CABA · julio 2025</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/uploads/informesdeprensa/ipc_08_25B0A3ACE622.pdf">📄 INDEC · IPC julio 2025</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.argentina.gob.ar/noticias/se-entregaron-nuevas-llaves-de-vivienda-en-el-marco-del-procrear">🏠 PROCREAR · cifras administrativas 2012–2015</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.argentina.gob.ar/noticias/el-gobierno-nacional-actualizara-el-monto-de-los-creditos-para-construccion-de-viviendas">🏠 Casa Propia · cifras administrativas a sep-2023</a>
       </div>
-      <div class="sources-note"><b>Metodología:</b> la serie semestral de tenencia usa EPH para 31 aglomerados desde 2S-2016. Los hitos 2001/2010/2022 son censales y nacionales; octubre de 2002 es una elaboración histórica basada en EPH puntual y sólo permite recuperar “propietarios / no propietarios”. No se empalman esos universos como si fueran homogéneos. Escrituras sólo refieren a CABA; altas hipotecarias son BCRA; ICC cubre CABA y 24 partidos del conurbano.</div>
+      <div class="sources-note"><b>Metodología:</b> la serie semestral de tenencia usa EPH para 31 aglomerados desde 2S-2016. Los hitos 2001/2010/2022 son censales y nacionales; octubre de 2002 es una elaboración histórica basada en EPH puntual y sólo permite recuperar “propietarios / no propietarios”. No se empalman esos universos como si fueran homogéneos. La serie hipotecaria usa BCRA <i>perser_dest</i>, personas humanas, destino vivienda, saldos de fin de mes; los cierres se deflactan a pesos de jul-2026 con el mismo empalme de IPC del dashboard. Escrituras y avisos de alquiler sólo refieren a CABA. La oferta de alquiler es cantidad de publicaciones, no stock físico. PROCREAR/Casa Propia son cifras administrativas y se muestran como canales paralelos, no se suman al stock bancario.</div>
     </section>
   </section>
 
@@ -11812,7 +12189,7 @@ html,body{overflow-x:clip}
           </section>
 
           <section class="pend-card">
-            <div class="pend-head"><div><h3>La misma tasa no afecta igual a todos</h3><p class="pend-note">Ahora hay tres carriles visibles: costo del deudor, rendimiento del ahorrista y resultado contable del intermediario. Se relacionan, pero no son sumables ni equivalentes.</p></div></div>
+            <div class="pend-head"><div><h3>La misma tasa no afecta igual a todos</h3><p class="pend-note">El gráfico separa tres carriles: costo del deudor, rendimiento del ahorrista y resultado contable del intermediario. Se relacionan, pero no son sumables ni equivalentes.</p></div></div>
             <div class="pend-actor-grid"><article class="pend-actor"><span class="emoji">🧾</span><h4>Deudor</h4><p>Necesita liquidez y <b>paga CFT</b>: interés más comisiones, seguros y cargos. El snapshot muestra ofertas máximas, no su contrato individual.</p></article><article class="pend-actor"><span class="emoji">🐷</span><h4>Ahorrista</h4><p>Puede inmovilizar pesos y <b>cobra</b> rendimiento. La tasa promedio de plazo fijo no representa todas las alternativas ni a todos los hogares.</p></article><article class="pend-actor"><span class="emoji">🏦</span><h4>Intermediario</h4><p>Su resultado se observa con contabilidad —acá ROA— después de riesgo, incobrabilidad, fondeo, encajes, costos, impuestos y otros negocios.</p></article></div>
             <div class="pend-gate"><span class="icon">🚧</span><div><h4>Rentabilidad fintech: hueco todavía visible</h4><p>No encontramos una serie oficial integrada y comparable de rentabilidad para PNFC/fintech. Por eso no usamos EFNB como sustituto ni convertimos el CFT de 2023 o la TNA fintech en “ganancia”.</p></div></div>
           </section>
@@ -11834,7 +12211,7 @@ html,body{overflow-x:clip}
           </section>
           <section class="pend-card">
             <div class="pend-head"><div><h3>Lo que la tenencia no responde</h3><p class="pend-note">El nivel observado y la carga mensual son preguntas distintas.</p></div></div>
-            <div class="pend-power-grid"><article class="pend-power-metric"><small>RATIO · faltante visible</small><strong>Alquiler / ingreso</strong><p>No hay todavía una serie contemporánea homogénea incorporada.</p><span class="perspective">No se infiere desde avisos ni desde un precio promedio.</span></article><article class="pend-power-metric"><small>STOCK · faltante</small><strong>Deuda hipotecaria</strong><p>Ser propietario no revela si la vivienda está pagada.</p><span class="perspective">Requiere cantidades y saldos compatibles.</span></article><article class="pend-power-metric"><small>SNAPSHOT · oficial</small><strong>ENGHo 2017–18</strong><p>Puede describir estructura histórica del presupuesto por quintil.</p><span class="perspective">No se presentará como presupuesto 2026.</span></article><article class="pend-power-metric"><small>ESCENARIO · pendiente</small><strong>Hogar tipo</strong><p>Calculadora futura separada de los datos observados.</p><span class="perspective">No duplicará IVA contenido en consumo.</span></article></div>
+            <div class="pend-power-grid"><article class="pend-power-metric"><small>RATIO · faltante visible</small><strong>Alquiler / ingreso</strong><p>No hay todavía una serie contemporánea homogénea incorporada.</p><span class="perspective">No se infiere desde avisos ni desde un precio promedio.</span></article><article class="pend-power-metric"><small>STOCK · integrado</small><strong>Crédito hipotecario</strong><p>BCRA 2000–jun-2026: personas humanas, destino vivienda; la serie real está auditada en Vivienda.</p><span class="perspective">Deuda y tenencia son dimensiones distintas: no se suman.</span></article><article class="pend-power-metric"><small>SNAPSHOT · oficial</small><strong>ENGHo 2017–18</strong><p>Puede describir estructura histórica del presupuesto por quintil.</p><span class="perspective">No se presentará como presupuesto 2026.</span></article><article class="pend-power-metric"><small>ESCENARIO · pendiente</small><strong>Hogar tipo</strong><p>Calculadora futura separada de los datos observados.</p><span class="perspective">No duplicará IVA contenido en consumo.</span></article></div>
             <div class="pend-gate"><span class="icon">🧮</span><div><h4>Waterfall de $100 todavía deshabilitado</h4><p>Se habilitará sólo con alquiler/ingreso o una radiografía ENGHo explícitamente fechada. Alquiler pagado y renta recibida representan el mismo flujo desde dos actores: nunca se suman como dos fenómenos.</p></div></div>
           </section>
         </div>
@@ -12325,7 +12702,7 @@ html,body{overflow-x:clip}
     <section class="card" style="margin-top:16px">
       <div class="card-head">
         <div class="card-title">Simulador del país <span>♡</span></div>
-        <div class="kicker">ahora vive en su propio tab</div>
+        <div class="kicker">deuda, resultado fiscal, refinanciación y reservas en un escenario editable</div>
       </div>
       <div class="program-note-box">
         <div class="program-jump">
@@ -12566,17 +12943,18 @@ html,body{overflow-x:clip}
   <section id="tab-wealth-contribution" class="tab-panel">
     <div class="method-shield">
       <span class="label">Grandes fortunas · simulador patrimonial auditable</span>
-      <strong>¿Cuánto tendría que aportar voluntariamente la parte más rica para reunir $4,98 billones sin perder una porción material de su patrimonio?</strong>
+      <strong>¿Cuánto tendría que aportar voluntariamente la parte más rica para reunir $4,98 billones en la sensibilidad de compensación integral, sin perder una porción material de su patrimonio?</strong>
       <span class="method-badge official">ARCA · Bienes Personales 2022</span>
       <span class="method-badge official">INDEC · IPC nacional</span>
       <span class="method-badge derived">estimación por tramos</span>
     </div>
 
     <section class="wealth-hero" id="wealthHero">
-      <div class="wealth-eyebrow">Una compensación hipotética · no agranda la cuenta del daño</div>
+      <div class="wealth-eyebrow">Sensibilidad patrimonial separada · no es el saldo central del daño</div>
       <h1>Grandes fortunas y aporte voluntario progresivo</h1>
       <p class="lead">La base son 895.111 declaraciones con bienes de ARCA. El aporte se calcula sólo sobre el excedente del umbral elegido, aumenta con el patrimonio y nunca supera el tope individual. Patrimonio no es ingreso: acá medimos stock de riqueza declarada.</p>
-      <div class="wealth-target"><strong>$ 4,98 billones</strong><span>meta única, expresada en pesos de junio de 2026</span></div>
+      <div class="wealth-target"><strong>$ 4,98 billones</strong><span>meta de la sensibilidad de compensación integral · pesos de junio de 2026</span></div>
+      <div class="family-mini-note"><b>Importante:</b> la meta de $4,98 billones corresponde exclusivamente a una <b>sensibilidad extrema</b>: supone reasignar las otras partidas auditadas y, además, compensar íntegramente la pinza financiera estimada. Se usa para explorar la escala patrimonial necesaria bajo ese supuesto; <b>no representa el saldo central del ajuste</b>.</div>
     </section>
 
     <section class="wealth-controls" id="wealthControls">
@@ -12646,7 +13024,7 @@ html,body{overflow-x:clip}
 
 
     <section class="milei-cost-audit milei-financial-audit" id="mileiFinancialAuditCard">
-      <h3>Pinza financiera · cuánto descontaría si se soluciona</h3>
+      <h3>Pinza financiera · costo para hogares vs capacidad de absorción</h3>
       <div id="mileiFinancialAuditContent"></div>
       <div class="jump"><button class="subbtn" type="button" onclick="activateTabAndScroll('tab-rates','ratesMoneySection')">Ver tasas, flujos y fuentes →</button></div>
     </section>
@@ -12682,6 +13060,15 @@ html,body{overflow-x:clip}
         <a class="source-link" href="https://www.indec.gob.ar/uploads/informesdeprensa/eph_total_urbano_ingresos_02_24918E35EE9D.pdf" target="_blank" rel="noopener">👥 Escala urbana · EPH 3T-2023</a>
         <a class="source-link" href="https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31" target="_blank" rel="noopener">📈 Deflactor · IPC INDEC</a>
         <a class="source-link" href="https://www.bcra.gob.ar/tasas-de-interes/" target="_blank" rel="noopener">🏦 Pinza financiera · BCRA</a>
+        <a class="source-link" href="https://www.indec.gob.ar/uploads/informesdeprensa/cuentas_sociedades_financieras_12_254091CDBBA3.pdf" target="_blank" rel="noopener">📊 Capacidad bancaria · INDEC sociedades financieras 2024</a>
+        <a class="source-link" href="https://www.indec.gob.ar/ftp/cuadros/publicaciones/indecinforma/indec_informa_05_26.pdf" target="_blank" rel="noopener">📊 Conversión a pesos · PIB nominal 2024</a>
+        <a class="source-link" href="https://www.indec.gob.ar/ftp/cuadros/economia/sh_ipc_08_26.xls" target="_blank" rel="noopener">📈 Actualización a jul-2026 · IPC nacional</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-diciembre-de-2023/" target="_blank" rel="noopener">🏦 Solvencia/rentabilidad · BCRA dic-2023</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/InfBanc1224.pdf" target="_blank" rel="noopener">🏦 Solvencia/rentabilidad · BCRA dic-2024</a>
+        <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-junio-de-2026/" target="_blank" rel="noopener">🏦 Solvencia/rentabilidad · BCRA jun-2026</a>
+        <a class="source-link" href="https://www.argentina.gob.ar/node/414285" target="_blank" rel="noopener">🏛️ Giro fiscal · MECON 2023</a>
+        <a class="source-link" href="https://www.argentina.gob.ar/node/455054" target="_blank" rel="noopener">🏛️ Giro fiscal · MECON 2024</a>
+        <a class="source-link" href="https://www.imf.org/-/media/Files/Publications/CR/2024/English/1ARGEA2024002.ashx" target="_blank" rel="noopener">🌐 Denominador alternativo · FMI ~5 pp</a>
         <a class="source-link" href="https://www.sec.gov/Archives/edgar/data/1099590/000109959026000006/meli-20251231.htm" target="_blank" rel="noopener">📄 Mercado Libre · SEC 10-K 2025</a>
         <a class="source-link" href="https://www.boletinoficial.gob.ar/detalleAviso/primera/344407/20260716?anexos=1" target="_blank" rel="noopener">📘 SIDE · DNU 594/2026</a>
         <a class="source-link" href="https://www.senado.gob.ar/bundles/senadoportal/webNueva/pdf/dietas/DR8_24.pdf" target="_blank" rel="noopener">🏛️ Senado · DR 8/24</a>
@@ -12689,11 +13076,11 @@ html,body{overflow-x:clip}
         <a class="source-link" href="#" data-source-path="data/derivados/AUDITORIA_PINZA_FINANCIERA.md">🧮 Auditoría · pinza financiera</a>
         <a class="source-link" href="#" data-source-path="data/fuentes/FUENTES.csv">🗂️ Manifiesto general · archivos y hashes</a>
       </div>
-      <div class="sources-note"><b>Trazabilidad:</b> la cuenta salarial central usa INDEC salarios + IPC + EPH. Los demás importes no se presentan como una sola contabilidad: cada tarjeta conserva su fuente, actor, período y estatus, y remite al tab especializado cuando necesita el cálculo completo.</div>
+      <div class="sources-note"><b>Trazabilidad:</b> la cuenta salarial central usa INDEC salarios + IPC + EPH. La pinza usa tasas y stocks del BCRA y se presenta como costo del lado hogar. La capacidad bancaria usa Cuentas Nacionales de INDEC + resultado fiscal MECON/FMI; para expresarla en pesos se usa el <b>PIB nominal 2024 de $583,91 billones</b> y se actualiza con <b>IPC promedio 2024 → IPC jul-2026 (factor ≈1,9115)</b>. <b>No se suman automáticamente porque tienen denominadores y ventanas distintas.</b></div>
     </section>
 
     <footer>
-      <b>Regla editorial:</b> el tab busca que una frase fuerte pueda ser auditada de punta a punta. Cuando la atribución pertenece al Senado, a un régimen previo o a un crédito todavía no ejecutado, se dice explícitamente. Los botones llevan al panel original con fuentes, fórmulas y caveats.
+      <b>Regla editorial:</b> el tab busca que una frase fuerte pueda ser auditada de punta a punta. <b>Costo para hogares, ganancia contable y capacidad de absorción son categorías distintas.</b> Cuando la atribución pertenece al Senado, a un régimen previo o a un crédito todavía no ejecutado, se dice explícitamente. Los botones llevan al panel original con fuentes, fórmulas y caveats.
     </footer>
   </section>
 
@@ -13594,7 +13981,7 @@ function renderWealthTable(s){const y=s.horizonYears||1;document.getElementById(
 function renderWealthHistory(s){const d=wealthContributionData;document.getElementById('wealthHistoryContent').innerHTML=`<div class="wealth-history-grid"><div><span>Recaudación 2021</span><b>$ 248.006 M</b></div><div><span>A pesos jun-2026</span><b>${gfMoney(d.historicalReal)}</b></div><div><span>Aportantes</span><b>≈ ${gfCount(d.historicalContributors)}</b></div><div><span>Pago medio real</span><b>${gfMoney(d.historicalReal/d.historicalContributors)}</b></div></div><div class="wealth-history-callout"><b>La escala histórica casi coincide con la meta:</b> equivale a ${gfPct(d.historicalReal/d.target,1)} de los ${gfMoney(d.target)}. Pero el Aporte Solidario fue obligatorio, extraordinario y por única vez; tuvo mínimo legal de $200 M de dic-2020 (≈ ${gfMoney(d.historicalThresholdReal)} de jun-2026) y alícuotas nominales de 2%–3,5%, con incremento para bienes del exterior. La tasa efectiva promedio observada no está publicada en los agregados oficiales revisados, así que no la inventamos.</div>`}
 function renderWealthCompensationInMilei(){
   const box=document.getElementById('mileiWealthCompensation');if(!box)return;const fallbackYears=wealthScenarioState.horizonYears||1;const s=wealthScenarioState.result||gfSolve(wealthScenarioState.threshold,wealthScenarioState.participation,wealthScenarioState.cap,wealthScenarioState.underdeclared,wealthContributionData.target/fallbackYears);const years=s.horizonYears||fallbackYears,totalContribution=s.revenue*years,coverage=Math.min(1,totalContribution/wealthContributionData.target),remaining=Math.max(0,wealthContributionData.target-totalContribution),surplus=Math.max(0,totalContribution-wealthContributionData.target);
-  box.innerHTML=`<div class="eyebrow">Compensación hipotética separada · no se suma al daño</div><h2>Si las grandes fortunas aportaran voluntariamente</h2><p>Este bloque responde otra pregunta: cuánto de la meta específica de ${gfMoney(wealthContributionData.target)} podría financiarse. No agranda los $18,43 billones ni duplica salarios, bancos, Fintech, SIDE o Mercado Libre.</p><div class="milei-wealth-grid"><div><span>Costo / meta a compensar</span><b>${gfMoney(wealthContributionData.target)}</b></div><div><span>Aporte del escenario</span><b>+ ${gfMoney(totalContribution)}</b></div><div><span>Cobertura</span><b>${gfPct(coverage,1)}</b></div><div><span>Resta por cubrir</span><b>${gfMoney(remaining)}</b></div></div><div class="milei-wealth-track" aria-label="Cobertura de la meta"><span style="width:${coverage*100}%"></span></div>${surplus>0?`<p><b>Excedente separado:</b> ${gfMoney(surplus)}. No se muestra como cobertura superior al 100%.</p>`:''}<p><b>Escenario:</b> umbral ${gfMoney(s.threshold)}, participación ${gfPct(s.participation,0)}, tope ${gfPct(s.cap,0)} ${years===1?'una vez':'por año durante 3 años'}${s.underdeclared?' y sensibilidad patrimonial +20%':''}. ${s.feasible?'La meta es contablemente alcanzable.':'Con estos límites no alcanza.'}</p><div class="wealth-jump"><button class="subbtn" type="button" onclick="activateTabAndScroll('tab-wealth-contribution','wealthControls')">Abrir simulador y auditoría →</button></div>`;
+  box.innerHTML=`<div class="eyebrow">Sensibilidad patrimonial separada · no se suma al daño</div><h2>Si las grandes fortunas aportaran voluntariamente</h2><p>La meta de ${gfMoney(wealthContributionData.target)} corresponde a una <b>sensibilidad de compensación integral</b>: reasignación de partidas auditadas más compensación total de la pinza financiera estimada. <b>No representa el saldo central del daño ni una deuda que deba cubrirse necesariamente.</b></p><div class="milei-wealth-grid"><div><span>Meta de sensibilidad</span><b>${gfMoney(wealthContributionData.target)}</b></div><div><span>Aporte del escenario</span><b>+ ${gfMoney(totalContribution)}</b></div><div><span>Cobertura de esa meta</span><b>${gfPct(coverage,1)}</b></div><div><span>Resta de esa meta</span><b>${gfMoney(remaining)}</b></div></div><div class="milei-wealth-track" aria-label="Cobertura de la meta de sensibilidad"><span style="width:${coverage*100}%"></span></div>${surplus>0?`<p><b>Excedente separado:</b> ${gfMoney(surplus)}. No se muestra como cobertura superior al 100%.</p>`:''}<p><b>Escenario:</b> umbral ${gfMoney(s.threshold)}, participación ${gfPct(s.participation,0)}, tope ${gfPct(s.cap,0)} ${years===1?'una vez':'por año durante 3 años'}${s.underdeclared?' y sensibilidad patrimonial +20%':''}. ${s.feasible?'La meta de sensibilidad es contablemente alcanzable.':'Con estos límites no alcanza esa meta.'}</p><div class="wealth-jump"><button class="subbtn" type="button" onclick="activateTabAndScroll('tab-wealth-contribution','wealthControls')">Abrir simulador y auditoría →</button></div>`;
 }
 
 function mileiCostPct(v,total){return total>0?v/total*100:0}
@@ -13613,164 +14000,184 @@ function renderMileiCost(){
   const p=powerRescueParams;
   const meli=meliRecentConversion();
   if(!loss||!gap||!meli)return;
+
   const penRealText=castaPct(castaSummary().realPct);
   const meliArs=meli.jun26Bn*1e9;
   const months=gap.mirrorMonths;
-  const perMonth=loss.perWorkerCurrent/months;
   const lostMonths=Math.abs(gap.net);
   const massJun26=loss.baseMonthlyMass*powerAggregateLossParams.cpiJun2026VsNov2023;
-  const broad=p.taxPrivilegesAnnual+p.sideExtraCredit+p.penCatchupAnnualized+p.senateNetAnnualFloor+meliArs;
+  const auditedEnvelope=p.taxPrivilegesAnnual+p.sideExtraCredit+p.penCatchupAnnualized+p.senateNetAnnualFloor+meliArs;
   const grossShock=loss.grossCurrent;
   const salaryRecovered=loss.recoveredCurrent;
   const salaryRemaining=loss.netCurrent;
-  const bankCreditReturn=Math.max(0,-ratesMoneySummary.post.impacto_hogar_banco);
-  const bankPfReturn=Math.max(0,-ratesMoneySummary.post.impacto_hogar_pf);
-  const bankReturn=bankCreditReturn+bankPfReturn;
-  const fintechReturn=Math.max(0,-ratesMoneySummary.post.impacto_hogar_fintech);
-  const financialRelief=bankReturn+fintechReturn;
+
+  // La pinza se conserva como costo medido del lado hogar. NO se resta automáticamente de la cuenta central.
+  const bankCreditHouseholdCost=Math.max(0,-ratesMoneySummary.post.impacto_hogar_banco);
+  const bankPfHouseholdCost=Math.max(0,-ratesMoneySummary.post.impacto_hogar_pf);
+  const bankHouseholdCost=bankCreditHouseholdCost+bankPfHouseholdCost;
+  const fintechHouseholdCost=Math.max(0,-ratesMoneySummary.post.impacto_hogar_fintech);
+  const financialHouseholdCost=bankHouseholdCost+fintechHouseholdCost;
+  const financialGrossPct=mileiCostPct(financialHouseholdCost,grossShock);
+  const financialRemainingPct=mileiCostPct(financialHouseholdCost,salaryRemaining);
   const fintechWindowChange=Math.abs(ratesMoneySummary.diferencial.impacto_hogar_fintech);
-  const remainingAfterBank=Math.max(0,salaryRemaining-bankReturn);
-  const remainingAfterFintech=Math.max(0,remainingAfterBank-fintechReturn);
-  const remainingAfterPinza=remainingAfterFintech;
-  const remainingAfterTax=Math.max(0,remainingAfterFintech-p.taxPrivilegesAnnual);
-  const remainingAfterMeli=Math.max(0,remainingAfterTax-meliArs);
-  const remainingAfterSide=Math.max(0,remainingAfterMeli-p.sideExtraCredit);
-  const remainingAfterPen=Math.max(0,remainingAfterSide-p.penCatchupAnnualized);
-  const finalRemaining=Math.max(0,remainingAfterPen-p.senateNetAnnualFloor);
+
+  // Escenarios que sí pertenecen a la cuenta salarial en pesos, siempre rotulados como sensibilidades.
+  const remainingAfterEnvelope=Math.max(0,salaryRemaining-auditedEnvelope);
+  const fullCompensationRemaining=Math.max(0,remainingAfterEnvelope-financialHouseholdCost);
+
+  // Capacidad bancaria: otro denominador (giro fiscal en puntos del PBI), jamás se resta de $18,43 B.
+  const bankModel=typeof bankAdjustModel==='function'?bankAdjustModel():null;
+  const bankTaxPct=bankModel?.taxPct;
+  const bankSavingPct=bankModel?.savingPct;
+  const bankHistoricalPct=bankModel?.historicalPct;
+  const bankRange=Number.isFinite(bankTaxPct)&&Number.isFinite(bankSavingPct)
+    ?`≈ ${bankTaxPct.toLocaleString('es-AR',{maximumFractionDigits:0})}–${bankSavingPct.toLocaleString('es-AR',{maximumFractionDigits:0})}%`
+    :'≈ 21–38%';
+  const bankHistorical=Number.isFinite(bankHistoricalPct)
+    ?`≈ ${bankHistoricalPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%`
+    :'≈ 60,5%';
+  const bankTaxMoney=bankModel?.taxMoneyCurrent;
+  const bankSavingMoney=bankModel?.savingMoneyCurrent;
+  const bankHistoricalMoney=bankModel?.historicalMoneyCurrent;
+  const bankMoneyRange=Number.isFinite(bankTaxMoney)&&Number.isFinite(bankSavingMoney)
+    ?`≈ ${powerMoneyBillions(bankTaxMoney)}–${powerMoneyBillions(bankSavingMoney).replace(/^\$\s*/, '')}`
+    :'≈ $11,2–20,1 billones';
+  const bankHistoricalMoneyLabel=Number.isFinite(bankHistoricalMoney)?powerMoneyBillions(bankHistoricalMoney):'$31,7 billones';
+
   const salaryRecoveredPct=mileiCostPct(salaryRecovered,grossShock);
-  const financialReliefPct=mileiCostPct(financialRelief,grossShock);
-  const editorialPct=mileiCostPct(broad,grossShock);
-  const finalRemainingPct=mileiCostPct(finalRemaining,grossShock);
+  const salaryRemainingPct=mileiCostPct(salaryRemaining,grossShock);
+  const envelopePct=mileiCostPct(auditedEnvelope,grossShock);
+  const envelopeRemainingPct=mileiCostPct(remainingAfterEnvelope,grossShock);
+
   const wealthScenarioForTable=wealthScenarioState.result||gfSolve(wealthScenarioState.threshold,wealthScenarioState.participation,wealthScenarioState.cap,wealthScenarioState.underdeclared,wealthContributionData.target/(wealthScenarioState.horizonYears||1));
   const wealthScenarioYears=wealthScenarioForTable.horizonYears||wealthScenarioState.horizonYears||1;
   const wealthScenarioTotal=wealthScenarioForTable.revenue*wealthScenarioYears;
   const wealthScenarioCoverage=Math.min(1,wealthScenarioTotal/wealthContributionData.target);
   const wealthScenarioRemaining=Math.max(0,wealthContributionData.target-wealthScenarioTotal);
   renderWealthCompensationInMilei();
-  const latestRealLevel=powerTotalAllOfficial.yNov.at(-1);
-  const monthlyBaseSurplus=Math.max(0,latestRealLevel/100-1);
-  const monthsAtJuneLevel=monthlyBaseSurplus>0?lostMonths/monthlyBaseSurplus:null;
 
   hero.innerHTML=`
-    <div class="milei-cost-eyebrow">Cuenta unificada · asalariados urbanos · dic-2023 → ${powerAccumShortDate(loss.latestDate)}</div>
-    <div class="milei-cost-title">Agujero bruto generado: la cuenta madre desde la que descontamos cada recuperación o solución</div>
+    <div class="milei-cost-eyebrow">Cuenta salarial + alternativas · asalariados urbanos · dic-2023 → ${powerAccumShortDate(loss.latestDate)}</div>
+    <div class="milei-cost-title">Daño salarial, costo financiero y capacidad para absorber el ajuste son tres cuentas distintas.</div>
     <div class="milei-cost-amount">${powerMoneyBillions(grossShock)}</div>
     <div class="milei-cost-sub">
-      Este es el total de las caídas salariales mensuales antes de restar la recuperación posterior. Desde acá descontamos siempre contra la misma base: recuperación salarial observada, pinza financiera si se corrigiera y envolvente de recursos ya auditada.
+      El agujero bruto salarial es la cuenta central. La recuperación observada se descuenta de ese agujero. La pinza financiera de ${powerMoneyBillions(financialHouseholdCost)} se presenta como <b>costo equivalente soportado por hogares</b>, no como ganancia del sistema financiero ni como una devolución exigible. La capacidad bancaria se calcula por separado contra el giro fiscal de 2024.
     </div>
     <div class="milei-cost-kpis">
-      <div class="milei-cost-kpi"><div class="tag">Ya volvió por salarios</div><div class="val household-relief">+ ${powerMoneyBillions(salaryRecovered)}</div><div class="mini">A favor de los hogares · recuperación observada.</div></div>
-      <div class="milei-cost-kpi"><div class="tag">Saldo salarial</div><div class="val">${powerMoneyBillions(salaryRemaining)}</div><div class="mini">Lo que queda después de la recuperación.</div></div>
-      <div class="milei-cost-kpi"><div class="tag">Si bancos + Fintech devolvieran / compensaran</div><div class="val household-relief">+ ${powerMoneyBillions(financialRelief)}</div><div class="mini">Volvería al hogar; por eso baja el agujero.</div></div>
-      <div class="milei-cost-kpi"><div class="tag">Si se recuperara la envolvente</div><div class="val household-relief">+ ${powerMoneyBillions(broad)}</div><div class="mini">Volvería o se reasignaría a favor del hogar.</div></div>
+      <div class="milei-cost-kpi"><div class="tag">Recuperación observada</div><div class="val household-relief">+ ${powerMoneyBillions(salaryRecovered)}</div><div class="mini">Volvió vía salarios; éste sí es un descuento observado.</div></div>
+      <div class="milei-cost-kpi"><div class="tag">Saldo salarial observado</div><div class="val">${powerMoneyBillions(salaryRemaining)}</div><div class="mini">Lo que sigue sin recuperarse en el contrafactual salarial.</div></div>
+      <div class="milei-cost-kpi"><div class="tag">Pinza financiera · costo hogar</div><div class="val">${powerMoneyBillions(financialHouseholdCost)}</div><div class="mini">${financialGrossPct.toLocaleString('es-AR',{maximumFractionDigits:1})}% del agujero bruto · ${financialRemainingPct.toLocaleString('es-AR',{maximumFractionDigits:1})}% del saldo. No se resta automáticamente.</div></div>
+      <div class="milei-cost-kpi"><div class="tag">Capacidad bancaria · pesos de jul-2026</div><div class="val">${bankMoneyRange}</div><div class="mini">${bankRange} del giro fiscal primario de 2024. Rango conservador/central; no es ganancia observada.</div></div>
     </div>`;
 
   bridge.innerHTML=`
-    <div class="eyebrow">Cuenta unificada · todo parte de ${powerMoneyBillions(grossShock)}</div>
-    <h2>¿Cuánto quedaría si bancos, Fintech y partidas auditadas devolvieran “lo robado” o compensaran estos montos?</h2>
-    <p class="lead">Cada monto verde es positivo para el hogar. En la fórmula se resta del agujero porque representa dinero que volvería, una compensación o recursos que se reasignarían.</p>
+    <div class="eyebrow">Tres magnitudes separadas · observado ≠ costo equivalente ≠ capacidad de pago</div>
+    <h2>Los $5,85 billones miden costo para los hogares, no ganancia ni capacidad de pago bancaria.</h2>
+    <p class="lead">El tab responde tres preguntas distintas: cuánto ingreso salarial quedó sin recuperar; cuánto costó el entorno financiero a los hogares; y cuánto del ajuste fiscal podía absorber el sector bancario. Sólo el saldo salarial forma parte de la cuenta salarial central.</p>
     <div class="milei-bridge-grid">
-      <div class="milei-bridge-card"><div class="tag">1 · Agujero bruto</div><div class="val">${powerMoneyBillions(grossShock)}</div></div>
-      <div class="milei-bridge-card recovered"><div class="tag">2 · Volvió por salarios</div><div class="val household-relief">+ ${powerMoneyBillions(salaryRecovered)}</div></div>
-      <div class="milei-bridge-card financial"><div class="tag">3 · Devolverían bancos + Fintech</div><div class="val household-relief">+ ${powerMoneyBillions(financialRelief)}</div></div>
-      <div class="milei-bridge-card editorial"><div class="tag">4 · Volvería por otras partidas</div><div class="val household-relief">+ ${powerMoneyBillions(broad)}</div></div>
-      <div class="milei-bridge-card remaining"><div class="tag">5 · Todavía falta</div><div class="val">${powerMoneyBillions(finalRemaining)}</div></div>
+      <div class="milei-bridge-card"><div class="tag">1 · Agujero salarial bruto</div><div class="val">${powerMoneyBillions(grossShock)}</div></div>
+      <div class="milei-bridge-card recovered"><div class="tag">2 · Recuperación salarial observada</div><div class="val household-relief">+ ${powerMoneyBillions(salaryRecovered)}</div></div>
+      <div class="milei-bridge-card remaining"><div class="tag">3 · Saldo observado</div><div class="val">${powerMoneyBillions(salaryRemaining)}</div></div>
+      <div class="milei-bridge-card editorial"><div class="tag">4 · Envolvente auditada · sensibilidad</div><div class="val">${powerMoneyBillions(auditedEnvelope)}</div></div>
+      <div class="milei-bridge-card financial"><div class="tag">5 · Pinza · métrica separada</div><div class="val">${powerMoneyBillions(financialHouseholdCost)}</div></div>
     </div>
-    <div class="milei-shock-track" aria-label="Cuenta unificada para amortiguar el shock">
+    <div class="milei-shock-track" aria-label="Cuenta salarial observada">
       <span class="salary" style="width:${salaryRecoveredPct}%"></span>
-      <span class="financial" style="width:${financialReliefPct}%"></span>
-      <span class="editorial" style="width:${editorialPct}%"></span>
-      <span class="remaining" style="width:${finalRemainingPct}%"></span>
+      <span class="remaining" style="width:${salaryRemainingPct}%"></span>
     </div>
     <div class="milei-shock-legend">
-      <span><i style="background:#69b498"></i>Recuperación salarial: ${salaryRecoveredPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%</span>
-      <span><i style="background:#6670bb"></i>Pinza si se soluciona: ${financialReliefPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%</span>
-      <span><i style="background:#dba348"></i>Envolvente auditada: ${editorialPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%</span>
-      <span><i style="background:#c45579"></i>Remanente: ${finalRemainingPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%</span>
+      <span><i style="background:#69b498"></i>Recuperación salarial observada: ${salaryRecoveredPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%</span>
+      <span><i style="background:#c45579"></i>Saldo todavía no recuperado: ${salaryRemainingPct.toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}%</span>
     </div>
-    <div class="milei-shock-formula">${powerMoneyBillions(grossShock)} − ${powerMoneyBillions(salaryRecovered)} − ${powerMoneyBillions(financialRelief)} − ${powerMoneyBillions(broad)} = <strong>${powerMoneyBillions(finalRemaining)}</strong> todavía por amortiguar</div>
+    <div class="milei-shock-formula">Cuenta observada: ${powerMoneyBillions(grossShock)} − ${powerMoneyBillions(salaryRecovered)} = <strong>${powerMoneyBillions(salaryRemaining)}</strong> todavía sin recuperar</div>
+    <div class="milei-shock-scenario"><b>Sensibilidad de reasignación:</b> si la envolvente auditada de ${powerMoneyBillions(auditedEnvelope)} pudiera redirigirse uno-a-uno a esta cuenta, el saldo sería <b>${powerMoneyBillions(remainingAfterEnvelope)}</b>. Es una simulación de uso alternativo de recursos, no dinero que efectivamente volvió al hogar.</div>
+    <div class="milei-shock-scenario"><b>Sensibilidad extrema:</b> si además se compensara íntegramente la pinza de ${powerMoneyBillions(financialHouseholdCost)}, el saldo hipotético bajaría a <b>${powerMoneyBillions(fullCompensationRemaining)}</b>. Este resultado existe únicamente bajo ese supuesto combinado y <b>no es la estimación central</b>.</div>
     <div class="milei-unified-components" aria-label="Desglose de la envolvente auditada">
-      <div><span>Privilegios fiscales</span><b class="household-plus">+ ${powerMoneyBillions(p.taxPrivilegesAnnual)} al hogar</b></div>
-      <div><span>Mercado Libre</span><b class="household-plus">+ ${mileiCostMoney(meliArs)} al hogar</b></div>
-      <div><span>SIDE</span><b class="household-plus">+ ${mileiCostMoney(p.sideExtraCredit)} al hogar</b></div>
-      <div><span>Cúpula PEN</span><b class="household-plus">+ ${mileiCostMoney(p.penCatchupAnnualized)} al hogar</b></div>
-      <div><span>Dietas del Senado</span><b class="household-plus">+ ${mileiCostMoney(p.senateNetAnnualFloor)} al hogar</b></div>
-    </div>
-    <div class="milei-shock-scenario"><b>Lectura corta:</b> después de la recuperación salarial quedaban <b>${powerMoneyBillions(salaryRemaining)}</b>. Si bancos y Fintech compensaran el saldo negativo pos-shock, volverían <b class="household-plus">+${powerMoneyBillions(financialRelief)} al hogar</b> y el agujero bajaría a <b>${powerMoneyBillions(remainingAfterPinza)}</b>. La cuenta incluye banco <b>${powerMoneyBillions(bankReturn)}</b> y Fintech <b>${powerMoneyBillions(fintechReturn)}</b>, sin doble conteo.</div>`;
-
+      <div><span>Privilegios fiscales</span><b>${powerMoneyBillions(p.taxPrivilegesAnnual)}</b></div>
+      <div><span>Mercado Libre</span><b>${mileiCostMoney(meliArs)}</b></div>
+      <div><span>SIDE</span><b>${mileiCostMoney(p.sideExtraCredit)}</b></div>
+      <div><span>Cúpula PEN</span><b>${mileiCostMoney(p.penCatchupAnnualized)}</b></div>
+      <div><span>Dietas del Senado</span><b>${mileiCostMoney(p.senateNetAnnualFloor)}</b></div>
+    </div>`;
 
   returns.innerHTML=`
-    <div class="milei-return-eyebrow">“Si devolvieran lo robado” · ejercicio contrafactual por actor</div>
-    <h2>“Si devolvieran lo cobrado o reasignaran estos recursos”, ¿cuánto del agujero se amortiguaría?</h2>
-    <p class="lead">Partimos del saldo salarial que todavía falta recuperar. Después aplicamos cada devolución o compensación una sola vez y mostramos, paso a paso, cuánto agujero queda.</p>
-    <div class="milei-return-sign-rule"><span class="plus">+$</span><span><b>En este bloque, verde siempre significa dinero o alivio a favor del hogar.</b> La cuenta resta ese alivio del agujero: no es un “menos para la gente”, sino un “menos deuda por amortiguar”.</span></div>
+    <div class="milei-return-eyebrow">Finanzas · tres magnitudes que no deben mezclarse</div>
+    <h2>Lo que pagó el hogar no es lo mismo que lo que ganó el banco, ni que lo que el banco podía absorber.</h2>
+    <p class="lead">La pinza financiera mide una carga extraordinaria estimada del lado del hogar. La capacidad de absorción bancaria responde otra pregunta: se calcula con cuentas macroeconómicas y tiene como denominador el ajuste fiscal de 2024.</p>
     <div class="milei-return-main">
       <article class="milei-return-card start">
-        <div class="step">Punto de partida</div><h3>Saldo después de la recuperación salarial</h3>
-        <div class="return-amount">${powerMoneyBillions(salaryRemaining)}</div>
-        <div class="breakdown">Este es el agujero que todavía queda; no es dinero a favor del hogar.</div>
+        <div class="step">Costo del lado hogar</div><h3>Pinza bancaria + Fintech</h3>
+        <div class="return-amount">${powerMoneyBillions(financialHouseholdCost)}</div>
+        <div class="breakdown">Banco + PF: ${powerMoneyBillions(bankHouseholdCost)} · Fintech: ${powerMoneyBillions(fintechHouseholdCost)}.</div>
+        <div class="after">Equivale a <b>${financialGrossPct.toLocaleString('es-AR',{maximumFractionDigits:1})}%</b> del agujero bruto y <b>${financialRemainingPct.toLocaleString('es-AR',{maximumFractionDigits:1})}%</b> del saldo salarial.</div>
       </article>
       <article class="milei-return-card bank">
-        <div class="step">Si los bancos devolvieran “lo robado” / compensaran</div><h3>Crédito bancario + plazo fijo</h3>
-        <div class="return-amount">+ ${powerMoneyBillions(bankReturn)}</div>
-        <div class="breakdown">Crédito: ${powerMoneyBillions(bankCreditReturn)} · ahorro en PF: ${powerMoneyBillions(bankPfReturn)}.</div>
-        <div class="after">El agujero bajaría a <b>${powerMoneyBillions(remainingAfterBank)}</b>.</div>
+        <div class="step">Capacidad contrafactual · bancos</div><h3>¿Cuánto en plata de hoy?</h3>
+        <div class="return-amount">${bankMoneyRange}</div>
+        <div class="breakdown">Pesos de jul-2026: escenario tributario ≈ <b>${Number.isFinite(bankTaxMoney)?powerMoneyBillions(bankTaxMoney):'$11,2 billones'}</b>; escenario ahorro 2023 ≈ <b>${Number.isFinite(bankSavingMoney)?powerMoneyBillions(bankSavingMoney):'$20,1 billones'}</b>. Equivalen a ${bankRange} del giro fiscal.</div>
+        <div class="after">Escenario histórico agresivo: <b>${bankHistoricalMoneyLabel}</b> (${bankHistorical}). No se resta automáticamente de los $18,43 B.</div>
       </article>
       <article class="milei-return-card fintech">
-        <div class="step">Si las Fintech devolvieran “lo robado” / compensaran</div><h3>Pata Fintech separada</h3>
-        <div class="return-amount">+ ${powerMoneyBillions(fintechReturn)}</div>
-        <div class="breakdown">Saldo pos-shock contra su norma histórica. No está duplicado dentro de bancos.</div>
-        <div class="after">El agujero bajaría a <b>${powerMoneyBillions(remainingAfterFintech)}</b>.</div>
+        <div class="step">Capacidad contrafactual · Fintech</div><h3>Capacidad no estimada</h3>
+        <div class="return-amount">N/D</div>
+        <div class="breakdown">Lo que sí medimos es <b>${powerMoneyBillions(fintechHouseholdCost)}</b> de costo diferencial para usuarios, en pesos de jul-2026. Reembolsar el 100% de ese costo es una <b>sensibilidad</b>, no una estimación de capacidad financiera de Fintech.</div>
+        <div class="after">Por eso Fintech <b>no entra</b> en el ${bankMoneyRange} de capacidad bancaria.</div>
       </article>
       <article class="milei-return-card end">
-        <div class="step">Después de toda la pinza</div><h3>Lo que todavía faltaría amortiguar</h3>
-        <div class="return-amount">${powerMoneyBillions(remainingAfterFintech)}</div>
-        <div class="breakdown">Bancos + Fintech devolverían/compensarían ${powerMoneyBillions(financialRelief)} en este contrafactual.</div>
+        <div class="step">Sólo como sensibilidad extrema</div><h3>Reembolso integral de la pinza</h3>
+        <div class="return-amount">${powerMoneyBillions(fullCompensationRemaining)}</div>
+        <div class="breakdown">Saldo que quedaría si se reasignara toda la envolvente auditada y además se reembolsara el 100% del costo financiero estimado.</div>
+        <div class="after">Este escenario sirve únicamente como sensibilidad extrema y <b>no forma parte de la estimación central</b>.</div>
       </article>
     </div>
-    <div class="milei-return-others-title">Y si también volvieran o se reasignaran las otras partidas auditadas:</div>
+    <div class="milei-return-others-title">Otras partidas auditadas: escenarios de reasignación, no “devoluciones” automáticas</div>
     <div class="milei-return-others">
-      <article class="milei-return-other"><div class="actor">Privilegios fiscales prudentes</div><div class="amount">+ ${powerMoneyBillions(p.taxPrivilegesAnnual)}</div><div class="action">Si se recuperaran o reasignaran.</div><div class="after">Quedaría ${powerMoneyBillions(remainingAfterTax)}.</div></article>
-      <article class="milei-return-other"><div class="actor">Mercado Libre</div><div class="amount">+ ${mileiCostMoney(meliArs)}</div><div class="action">Si no hubiera recibido esos beneficios/subsidios fiscales, o se recuperara un equivalente.</div><div class="after">Quedaría ${powerMoneyBillions(remainingAfterMeli)}.</div></article>
-      <article class="milei-return-other"><div class="actor">SIDE</div><div class="amount">+ ${mileiCostMoney(p.sideExtraCredit)}</div><div class="action">Si devolviera o no utilizara el refuerzo de crédito.</div><div class="after">Quedaría ${powerMoneyBillions(remainingAfterSide)}.</div></article>
-      <article class="milei-return-other"><div class="actor">Cúpula del PEN</div><div class="amount">+ ${mileiCostMoney(p.penCatchupAnnualized)}</div><div class="action">Si se revirtiera el extra nominal anualizado.</div><div class="after">Quedaría ${powerMoneyBillions(remainingAfterPen)}.</div></article>
-      <article class="milei-return-other"><div class="actor">Dietas del Senado</div><div class="amount">+ ${mileiCostMoney(p.senateNetAnnualFloor)}</div><div class="action">Si se revirtiera el piso anual relevado.</div><div class="after">Quedaría ${powerMoneyBillions(finalRemaining)}.</div></article>
+      <article class="milei-return-other"><div class="actor">Privilegios fiscales prudentes</div><div class="amount">${powerMoneyBillions(p.taxPrivilegesAnnual)}</div><div class="action">Recaudación potencial bajo otra regla.</div><div class="after">No es caja ya cobrada.</div></article>
+      <article class="milei-return-other"><div class="actor">Mercado Libre</div><div class="amount">${mileiCostMoney(meliArs)}</div><div class="action">Beneficios documentados durante el período.</div><div class="after">No equivale uno-a-uno a recaudación recuperable.</div></article>
+      <article class="milei-return-other"><div class="actor">SIDE</div><div class="amount">${mileiCostMoney(p.sideExtraCredit)}</div><div class="action">Crédito presupuestario adicional.</div><div class="after">Crédito autorizado ≠ gasto ejecutado.</div></article>
+      <article class="milei-return-other"><div class="actor">Cúpula del PEN</div><div class="amount">${mileiCostMoney(p.penCatchupAnnualized)}</div><div class="action">Extra nominal anualizado frente a congelar la escala.</div><div class="after">No demuestra enriquecimiento real.</div></article>
+      <article class="milei-return-other"><div class="actor">Dietas del Senado</div><div class="amount">${mileiCostMoney(p.senateNetAnnualFloor)}</div><div class="action">Piso anual derivado del salto relevado.</div><div class="after">Decisión del Senado, no del PEN.</div></article>
     </div>
     <div class="milei-return-total">
-      <p><b>Resultado del ejercicio completo:</b> primero volvieron ${powerMoneyBillions(salaryRecovered)} por recuperación salarial; después sumamos ${powerMoneyBillions(financialRelief)} de bancos + Fintech y ${powerMoneyBillions(broad)} de las otras partidas. Todo es alivio a favor del hogar.</p>
-      <div class="amount">Faltaría ${powerMoneyBillions(finalRemaining)}</div>
+      <p><b>Resultado central:</b> ${powerMoneyBillions(salaryRemaining)} siguen sin recuperarse en la cuenta salarial. <b>Sensibilidad fiscal:</b> ${powerMoneyBillions(remainingAfterEnvelope)} si la envolvente auditada se reasignara uno-a-uno. <b>Sensibilidad extrema:</b> ${powerMoneyBillions(fullCompensationRemaining)} si, además, se reembolsara íntegramente la pinza financiera.</p>
+      <div class="amount">Central: ${powerMoneyBillions(salaryRemaining)}</div>
     </div>
-    <div class="milei-return-caveat"><b>Lectura editorial contrafactual:</b> “devolver” agrupa mecanismos distintos —compensación financiera, reasignación presupuestaria o recuperación de beneficios— y no afirma una deuda judicial determinada. Las tarjetas de auditoría conservan la naturaleza y el período de cada dato.</div>`;
+    <div class="milei-return-caveat"><b>Regla de lectura:</b> costo para hogares, ganancia contable y capacidad para absorber ajuste se mantienen separados. Ninguna cifra de tasas se convierte automáticamente en una deuda del prestamista con el hogar.</div>`;
 
   const card=(cls,pill,title,money,body,scaleText,tab,id)=>`<article class="milei-cost-card ${cls}">
     <span class="pill">${pill}</span><h3>${title}</h3><div class="money">${money}</div><p>${body}</p>
     <div class="scale">${scaleText}</div><div class="jump"><button class="subbtn" type="button" onclick="activateTabAndScroll('${tab}','${id}')">Ver cálculo y fuentes →</button></div>
   </article>`;
   cards.innerHTML=
-    card('hot','Pérdida de ingresos','Saldo salarial después de la recuperación',powerMoneyBillions(loss.netCurrent),
-      'Es el saldo intermedio de la cuenta madre: al agujero bruto se le resta la recuperación salarial ya observada.',
-      `Representa ≈ ${mileiCostPct(loss.netCurrent,grossShock).toLocaleString('es-AR',{maximumFractionDigits:1})}% de los ${powerMoneyBillions(grossShock)} iniciales.`, 'tab-power','powerAggregateLossBox')+
+    card('hot','Pérdida de ingresos','Saldo salarial después de la recuperación',powerMoneyBillions(salaryRemaining),
+      'Es el saldo observado dentro del contrafactual salarial: agujero bruto menos recuperación posterior.',
+      `Representa ≈ ${mileiCostPct(salaryRemaining,grossShock).toLocaleString('es-AR',{maximumFractionDigits:1})}% de los ${powerMoneyBillions(grossShock)} iniciales.`, 'tab-power','powerAggregateLossBox')+
+    card('good','Capacidad de absorción · bancos','Bancos frente al ajuste fiscal',bankMoneyRange,
+      `En pesos de jul-2026, el rango conservador/central equivale a ${bankRange} del giro fiscal primario de 2024. No es ganancia observada ni una suma que se descuente automáticamente de la cuenta salarial.`,
+      `Escenario histórico agresivo: ${bankHistoricalMoneyLabel} (${bankHistorical}). Fintech: capacidad no estimada; su costo al usuario es ${powerMoneyBillions(fintechHouseholdCost)}.`, 'tab-rates','ratesBankCapacitySection')+
     card('warn','Política tributaria','Privilegios fiscales · recorte prudente',powerMoneyBillions(p.taxPrivilegesAnnual)+'/año',
-      'Cuenta trasladada acá: $0,882 billones por Ganancias de jueces/funcionarios judiciales + $0,350 billones por intereses de ON para personas físicas. Quedan deliberadamente afuera ≈ $3,67 billones de regímenes con impacto plausible sobre empleo, inversión, crédito o precios.',
-      `Si se corrigieran o reasignaran, descontarían ${powerMoneyBillions(p.taxPrivilegesAnnual)}: ≈ ${mileiCostPct(p.taxPrivilegesAnnual,grossShock).toLocaleString('es-AR',{maximumFractionDigits:1})}% de la cuenta madre.`, 'tab-meli-benefits','meliOtherBenefitsChart')+
+      'Cuenta trasladada acá: $0,882 billones por Ganancias de jueces/funcionarios judiciales + $0,350 billones por intereses de ON para personas físicas. Quedan deliberadamente afuera regímenes con impacto plausible sobre empleo, inversión, crédito o precios.',
+      `Como sensibilidad de reasignación representan ≈ ${mileiCostPct(p.taxPrivilegesAnnual,grossShock).toLocaleString('es-AR',{maximumFractionDigits:1})}% de la cuenta madre.`, 'tab-meli-benefits','meliOtherBenefitsChart')+
     card('warn','Régimen previo · beneficio durante el mandato','Mercado Libre · beneficios documentados',mileiCostMoney(meliArs),
-      `Piso de USD 134 M: 2024 USD 57 M (33 M de Ganancias + 24 M previsionales/laborales), 2025 ≥64 M y 1T26 ≥13 M. Se convierte con A3500 promedio por período y luego a pesos de jun-2026. El régimen es anterior a Milei: medimos lo documentado durante su gobierno, no una creación suya.`,
-      `Si se reorientara, descontaría ${mileiCostMoney(meliArs)}: ≈ ${mileiCostPct(meliArs,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre.`, 'tab-meli-benefits','meliArsChart')+
+      `Piso de USD 134 M documentado para 2024–1T26 y convertido a pesos de jun-2026. El régimen es anterior a Milei: medimos beneficios durante su gobierno, no una creación suya ni recaudación recuperable uno-a-uno.`,
+      `Equivale a ≈ ${mileiCostPct(meliArs,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre como referencia de escala.`, 'tab-meli-benefits','meliArsChart')+
     card('warn','PEN · presupuesto','SIDE · refuerzo de crédito 2026','+ '+mileiCostMoney(p.sideExtraCredit),
-      'Es el aumento de crédito presupuestario del DNU de julio de 2026. Crédito vigente no equivale a gasto ya ejecutado. En paralelo, Inteligencia pasó de 0,17% del gasto APN en 2023 a 0,23% en 2025.',
-      `Si ese refuerzo se reasignara, descontaría ${mileiCostMoney(p.sideExtraCredit)}: ≈ ${mileiCostPct(p.sideExtraCredit,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre.`, 'tab-casta','castaSideChart')+
+      'Es el aumento de crédito presupuestario del DNU de julio de 2026. Crédito vigente no equivale a gasto ya ejecutado.',
+      `Equivale a ≈ ${mileiCostPct(p.sideExtraCredit,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre como referencia de escala.`, 'tab-casta','castaSideChart')+
     card('warn','Senado · no PEN','Salto de dietas aprobado en 2024','≥ '+mileiCostMoney(p.senateNetAnnualFloor)+'/año',
-      'Piso derivado con 72 bancas a partir del salto publicado de ~1,7 M a >4 M netos y 13 dietas. El aumento ocurrió durante Milei, pero fue una decisión del Senado: atribuírselo al Poder Ejecutivo sería falso.',
-      `Si se corrigiera ese piso anual, descontaría ${mileiCostMoney(p.senateNetAnnualFloor)}: ≈ ${mileiCostPct(p.senateNetAnnualFloor,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre.`, 'tab-casta','castaMandateChart')+
+      'Piso derivado con 72 bancas. El aumento ocurrió durante Milei, pero fue una decisión del Senado: atribuírselo al Poder Ejecutivo sería falso.',
+      `Equivale a ≈ ${mileiCostPct(p.senateNetAnnualFloor,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre como referencia de escala.`, 'tab-casta','castaMandateChart')+
     card('good','Acá no','Autoridades superiores del PEN',`${penRealText} real`,
-      `Ministros, Secretarios y Subsecretarios recibieron catch-up nominal desde 2026, pero a julio siguen debajo de dic-2023 contra IPC. El extra anualizado vs mantener la escala nominal congelada es ${mileiCostMoney(p.penCatchupAnnualized)}, pero no prueba que “se enriquecieron” en términos reales.`,
-      `Si se revirtiera sólo el extra nominal anualizado, descontaría ${mileiCostMoney(p.penCatchupAnnualized)}: ≈ ${mileiCostPct(p.penCatchupAnnualized,grossShock).toLocaleString('es-AR',{maximumFractionDigits:2})}% de la cuenta madre.`, 'tab-casta','castaInflationChart');
+      `Ministros, Secretarios y Subsecretarios recibieron catch-up nominal desde 2026, pero a julio siguen debajo de dic-2023 contra IPC. El extra anualizado vs mantener la escala nominal congelada es ${mileiCostMoney(p.penCatchupAnnualized)}, pero no prueba enriquecimiento real.`,
+      `El monto sólo entra en la envolvente como sensibilidad nominal; no como daño observado.`, 'tab-casta','castaInflationChart');
 
   formula.innerHTML=`
     <div><div class="step">1 · Sólo las caídas</div><div class="formula">Σ meses debajo de nov-2023=100 = <b>−${gap.grossLoss.toLocaleString('es-AR',{minimumFractionDigits:4,maximumFractionDigits:4})} sueldos-base</b>.</div></div>
     <div><div class="step">2 · Cuenta madre</div><div class="formula">Caídas × masa salarial-base × IPC = <b>${powerMoneyBillions(grossShock)}</b>.</div></div>
-    <div><div class="step">3 · Recuperación observada</div><div class="formula">Los meses posteriores arriba de 100 recuperaron <b>${powerMoneyBillions(salaryRecovered)}</b>; saldo salarial: <b>${powerMoneyBillions(salaryRemaining)}</b>.</div></div>
-    <div><div class="step">4 · Alivios a favor del hogar</div><div class="formula"><b class="household-plus">+${powerMoneyBillions(financialRelief)}</b> volverían por bancos + Fintech y <b class="household-plus">+${powerMoneyBillions(broad)}</b> por otras partidas. Al restarlos del agujero, quedarían <b>${powerMoneyBillions(finalRemaining)}</b>.</div></div>
+    <div><div class="step">3 · Recuperación observada</div><div class="formula">Los meses posteriores arriba de 100 recuperaron <b>${powerMoneyBillions(salaryRecovered)}</b>; saldo salarial observado: <b>${powerMoneyBillions(salaryRemaining)}</b>.</div></div>
+    <div><div class="step">4 · Sensibilidad de reasignación fiscal</div><div class="formula">Si la envolvente auditada de <b>${powerMoneyBillions(auditedEnvelope)}</b> pudiera redirigirse uno-a-uno, el saldo sería <b>${powerMoneyBillions(remainingAfterEnvelope)}</b>. Esto es contrafactual, no recuperación observada.</div></div>
+    <div><div class="step">5 · La pinza queda separada</div><div class="formula">${powerMoneyBillions(financialHouseholdCost)} / ${powerMoneyBillions(grossShock)} = <b>${financialGrossPct.toLocaleString('es-AR',{maximumFractionDigits:1})}%</b>; ${powerMoneyBillions(financialHouseholdCost)} / ${powerMoneyBillions(salaryRemaining)} = <b>${financialRemainingPct.toLocaleString('es-AR',{maximumFractionDigits:1})}%</b>. Es costo equivalente del hogar, <b>no descuento central</b>.</div></div>
+    <div><div class="step">6 · Capacidad bancaria · otro denominador</div><div class="formula">Carga tributaria relativa de 2023 → <b>${Number.isFinite(bankTaxMoney)?powerMoneyBillions(bankTaxMoney):'$11,2 billones'}</b> de jul-2026 (≈${Number.isFinite(bankTaxPct)?bankTaxPct.toLocaleString('es-AR',{maximumFractionDigits:1}):'21,3'}% del giro fiscal); ahorro/PBI 2023 → <b>${Number.isFinite(bankSavingMoney)?powerMoneyBillions(bankSavingMoney):'$20,1 billones'}</b> (≈${Number.isFinite(bankSavingPct)?bankSavingPct.toLocaleString('es-AR',{maximumFractionDigits:1}):'38,3'}%). Se calculan con PIB nominal 2024 y actualización por IPC; no se suman automáticamente a la cuenta salarial.</div></div>
     <div class="inputs">
       <div class="step">Insumos auditables de la escala de 13,8 millones</div>
       <div class="milei-input-grid">
@@ -13784,30 +14191,32 @@ function renderMileiCost(){
       <div class="milei-input-note"><b>Cómo se infiere:</b> la EPH total urbano 3T-2023 aporta cantidades e ingresos medios; el Total índice de salarios lleva ese promedio hasta noviembre y el IPC lo reexpresa a junio de 2026. Es un supuesto de escala, no una nómina observada. La relación es lineal: si el salario-base supuesto cambiara 10%, la cuenta de ${powerMoneyBillions(grossShock)} cambiaría también 10%.</div>
     </div>`;
 
-  attribution.innerHTML=`<table class="milei-cost-table"><thead><tr><th>Componente</th><th>Monto visible</th><th>Cómo entra en los ${powerMoneyBillions(grossShock)}</th><th>Saldo después de aplicarlo</th></tr></thead><tbody>
-    <tr><td>Agujero salarial bruto</td><td><b>${powerMoneyBillions(grossShock)}</b></td><td class="attr-partial">Es la cuenta madre: 100% del punto de partida.</td><td>${powerMoneyBillions(grossShock)}</td></tr>
-    <tr><td>Recuperación salarial observada</td><td class="household-plus">+${powerMoneyBillions(salaryRecovered)} al hogar</td><td class="attr-yes">Como vuelve al hogar, se resta del agujero.</td><td><b>${powerMoneyBillions(salaryRemaining)}</b></td></tr>
-    <tr><td>Si bancos compensaran · crédito + PF</td><td class="household-plus">+${powerMoneyBillions(bankReturn)} al hogar</td><td class="attr-yes">Crédito ${powerMoneyBillions(bankCreditReturn)} + plazo fijo ${powerMoneyBillions(bankPfReturn)}.</td><td><b>${powerMoneyBillions(remainingAfterBank)}</b></td></tr>
-    <tr><td>Si Fintech compensaran</td><td class="household-plus">+${powerMoneyBillions(fintechReturn)} al hogar</td><td class="attr-yes">Pata Fintech pos-shock separada, sin doble conteo.</td><td><b>${powerMoneyBillions(remainingAfterFintech)}</b></td></tr>
-    <tr><td>Si se recuperara la envolvente auditada</td><td class="household-plus">+${powerMoneyBillions(broad)} al hogar</td><td class="attr-partial">Agrupa privilegios fiscales, Mercado Libre, SIDE, PEN y Senado.</td><td><b>${powerMoneyBillions(finalRemaining)}</b></td></tr>
-    <tr><td>Aporte voluntario de grandes fortunas</td><td class="household-plus">+${gfMoney(wealthScenarioTotal)} para compensar</td><td class="attr-no">No integra los ${powerMoneyBillions(grossShock)} de daño: es una vía hipotética y separada para financiar una meta específica de ${gfMoney(wealthContributionData.target)}.</td><td><b>${gfPct(wealthScenarioCoverage,1)} cubierto</b> · resta ${gfMoney(wealthScenarioRemaining)}</td></tr>
-    <tr><td>Fintech · cambio vs espejo</td><td>${mileiCostMoney(fintechWindowChange)}</td><td class="attr-partial">Es la variación entre ventanas, no el monto usado como devolución. Se conserva para responder si mejoró o empeoró.</td><td>${mileiCostPct(fintechWindowChange,grossShock).toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2})}% del total</td></tr>
-    <tr><td>Autoridades superiores del PEN</td><td>${penRealText} real</td><td class="attr-no">Funciona como control del relato; no agrega un monto ARS a la cuenta.</td><td>Sin modificación monetaria</td></tr>
+  attribution.innerHTML=`<table class="milei-cost-table"><thead><tr><th>Componente</th><th>Monto / métrica</th><th>Uso metodológico</th><th>Resultado / lectura</th></tr></thead><tbody>
+    <tr><td>Agujero salarial bruto</td><td><b>${powerMoneyBillions(grossShock)}</b></td><td class="attr-partial">Cuenta madre salarial.</td><td>${powerMoneyBillions(grossShock)}</td></tr>
+    <tr><td>Recuperación salarial observada</td><td class="household-plus">+${powerMoneyBillions(salaryRecovered)} al hogar</td><td class="attr-yes">Es recuperación observada: sí se descuenta.</td><td><b>${powerMoneyBillions(salaryRemaining)}</b> sin recuperar</td></tr>
+    <tr><td>Pinza financiera · bancos + PF + Fintech</td><td>${powerMoneyBillions(financialHouseholdCost)}</td><td class="attr-partial">Costo equivalente del lado hogar. Se muestra como escala, <b>no como ganancia ni devolución</b>.</td><td>${financialGrossPct.toLocaleString('es-AR',{maximumFractionDigits:1})}% del bruto · ${financialRemainingPct.toLocaleString('es-AR',{maximumFractionDigits:1})}% del saldo</td></tr>
+    <tr><td>Capacidad contrafactual bancaria</td><td><b>${bankMoneyRange}</b> · ${bankRange} del giro fiscal</td><td class="attr-no">Pesos de jul-2026. Otro denominador: consolidación fiscal 2024, no agujero salarial.</td><td>Histórico agresivo: <b>${bankHistoricalMoneyLabel}</b> · ${bankHistorical}</td></tr>
+    <tr><td>Capacidad contrafactual Fintech</td><td><b>No estimada</b></td><td class="attr-no">Falta P&amp;L consolidado comparable.</td><td>${powerMoneyBillions(fintechHouseholdCost)} = sensibilidad de compensación integral al usuario, <b>no capacidad</b></td></tr>
+    <tr><td>Envolvente auditada</td><td>${powerMoneyBillions(auditedEnvelope)}</td><td class="attr-partial">Sólo como sensibilidad de reasignación uno-a-uno.</td><td>Quedaría <b>${powerMoneyBillions(remainingAfterEnvelope)}</b></td></tr>
+    <tr><td>Compensación integral de la pinza</td><td>${powerMoneyBillions(financialHouseholdCost)}</td><td class="attr-no">Sensibilidad extrema, no estimación central.</td><td>Con envolvente + pinza quedaría <b>${powerMoneyBillions(fullCompensationRemaining)}</b></td></tr>
+    <tr><td>Aporte voluntario de grandes fortunas</td><td class="household-plus">+${gfMoney(wealthScenarioTotal)}</td><td class="attr-no">Financia una meta de sensibilidad de ${gfMoney(wealthContributionData.target)}; no el saldo central.</td><td><b>${gfPct(wealthScenarioCoverage,1)} de esa meta</b> · resta ${gfMoney(wealthScenarioRemaining)}</td></tr>
+    <tr><td>Fintech · cambio vs espejo</td><td>${mileiCostMoney(fintechWindowChange)}</td><td class="attr-partial">Variación entre ventanas; sirve para responder si empeoró o mejoró.</td><td>${mileiCostPct(fintechWindowChange,grossShock).toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2})}% del bruto sólo como escala</td></tr>
+    <tr><td>Autoridades superiores del PEN</td><td>${penRealText} real</td><td class="attr-no">Control del relato; no agrega daño monetario observado.</td><td>Sin modificación de la cuenta central</td></tr>
   </tbody></table>`;
 
   const scaleRows=[
     ['Recuperación salarial observada',salaryRecovered],
-    ['Balance financiero ampliado si se soluciona',financialRelief],
-    ['Envolvente auditada total',broad],
+    ['Pinza financiera · costo hogar (no se resta)',financialHouseholdCost],
+    ['Envolvente auditada · sensibilidad',auditedEnvelope],
     ['Privilegios fiscales · anual',p.taxPrivilegesAnnual],
     ['Mercado Libre · 2024–1T26 a jun-26',meliArs],
     ['SIDE · crédito adicional 2026',p.sideExtraCredit],
-    ['Fintech · saldo pos-shock si compensara',fintechReturn],
+    ['Fintech · costo hogar pos-shock',fintechHouseholdCost],
     ['Cúspide PEN · anualización nominal',p.penCatchupAnnualized],
     ['Senado · piso anual neto',p.senateNetAnnualFloor]
   ];
   scale.innerHTML=scaleRows.map(([name,v])=>{const pct=mileiCostPct(v,grossShock);return `<div class="milei-scale-row"><div class="milei-scale-head"><span>${name}</span><b>${pct.toLocaleString('es-AR',{minimumFractionDigits:pct<1?2:1,maximumFractionDigits:pct<1?2:1})}%</b></div><div class="milei-scale-track"><div class="milei-scale-fill" style="width:${Math.min(100,pct)}%"></div></div></div>`}).join('')+
-    `<div class="milei-cost-disclaimer"><b>Signo hogar:</b> salarios <span class="household-plus">+${powerMoneyBillions(salaryRecovered)}</span>, bancos + Fintech <span class="household-plus">+${powerMoneyBillions(financialRelief)}</span> y otras partidas <span class="household-plus">+${powerMoneyBillions(broad)}</span> son alivios. Se restan del agujero de ${powerMoneyBillions(grossShock)} y quedan <b>${powerMoneyBillions(finalRemaining)}</b> por amortiguar.</div>`;
+    `<div class="milei-cost-disclaimer"><b>Cómo leer esta escala:</b> todas las barras se expresan contra ${powerMoneyBillions(grossShock)} sólo para comparar tamaños. <b>No todas se restan.</b> El saldo observado es ${powerMoneyBillions(salaryRemaining)}; la reasignación de la envolvente dejaría ${powerMoneyBillions(remainingAfterEnvelope)} como sensibilidad; ${powerMoneyBillions(fullCompensationRemaining)} corresponde al escenario extremo que además supone compensar íntegramente la pinza financiera.</div>`;
 }
 
 // ---------------- Tabs ----------------
@@ -13889,7 +14298,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         requestAnimationFrame(() => { const el=document.getElementById('investmentChart'); if(el?.data) Plotly.Plots.resize(el); });
       } else if (target === 'tab-housing') {
         renderHousing();
-        requestAnimationFrame(() => ['housingTenureChart','housingHistoryChart','housingBuildChart'].forEach(id=>{ const el=document.getElementById(id); if(el?.data) Plotly.Plots.resize(el); }));
+        requestAnimationFrame(() => ['housingTenureChart','housingHistoryChart','housingMortgageRealChart','housingRentReformChart','housingBuildChart'].forEach(id=>{ const el=document.getElementById(id); if(el?.data) Plotly.Plots.resize(el); }));
       } else if (target === 'tab-growth') {
         renderGrowth();
         requestAnimationFrame(() => { const el=document.getElementById('growthChart'); if(el?.data) Plotly.Plots.resize(el); });
@@ -14532,7 +14941,7 @@ function renderConsumptionCategories(){
       legend:{...common.legend,orientation:mobile?'v':'h',y:mobile?1.04:1.10,font:{size:mobile?8.5:10.5},x:0},
       hovermode:mobile?'closest':'x unified',
       annotations:[
-        {xref:'paper',yref:'paper',x:.5,y:.985,text:'Barras = años cerrados · rombos 2026 = PM12 a mayo',showarrow:false,xanchor:'center',yanchor:'top',font:{size:mobile?8.5:9.5,color:'#806c89'}}
+        {xref:'paper',yref:'paper',x:.5,y:1.015,text:'Barras = años cerrados · rombos 2026 = PM12 a mayo',showarrow:false,xanchor:'center',yanchor:'bottom',font:{size:mobile?8.5:9.5,color:'#806c89'}}
       ]
     },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
   }
@@ -14735,7 +15144,7 @@ function resizeConsumptionCategoryCharts(mobile){
           'margin.t':mobile?120:90,'margin.b':mobile?40:48,
           'legend.orientation':mobile?'v':'h','legend.y':mobile?1.04:1.10,
           'legend.font.size':mobile?8.5:10.5,
-          'annotations':[{xref:'paper',yref:'paper',x:.5,y:.985,text:'Barras = años cerrados · rombos 2026 = PM12 a mayo',showarrow:false,xanchor:'center',yanchor:'top',font:{size:mobile?8.5:9.5,color:'#806c89'}}]
+          'annotations':[{xref:'paper',yref:'paper',x:.5,y:1.015,text:'Barras = años cerrados · rombos 2026 = PM12 a mayo',showarrow:false,xanchor:'center',yanchor:'bottom',font:{size:mobile?8.5:9.5,color:'#806c89'}}]
         });
       }
       if(id==='beefTradeoffChart'){
@@ -15107,6 +15516,79 @@ const housingBuild=[
   {name:'Mano de obra',value:3.3},{name:'Gastos generales',value:2.8}
 ];
 
+const housingMortgageAnnual=[{"period":"2000-12-31","year":2000,"raw_thousand_pesos":10376459,"real_jul2026_trillion":24.988772},{"period":"2001-12-31","year":2001,"raw_thousand_pesos":8022005,"real_jul2026_trillion":19.612929},{"period":"2002-12-31","year":2002,"raw_thousand_pesos":6478346,"real_jul2026_trillion":11.236983},{"period":"2003-12-31","year":2003,"raw_thousand_pesos":5225951,"real_jul2026_trillion":8.744906},{"period":"2004-12-31","year":2004,"raw_thousand_pesos":5094772,"real_jul2026_trillion":8.035172},{"period":"2005-12-31","year":2005,"raw_thousand_pesos":5197570,"real_jul2026_trillion":7.297742},{"period":"2006-12-31","year":2006,"raw_thousand_pesos":6318760,"real_jul2026_trillion":8.077308},{"period":"2007-12-31","year":2007,"raw_thousand_pesos":9062326,"real_jul2026_trillion":9.532892},{"period":"2008-12-31","year":2008,"raw_thousand_pesos":12422560,"real_jul2026_trillion":10.83563},{"period":"2009-12-31","year":2009,"raw_thousand_pesos":11570810,"real_jul2026_trillion":8.51893},{"period":"2010-12-31","year":2010,"raw_thousand_pesos":12411250,"real_jul2026_trillion":7.193403},{"period":"2011-12-31","year":2011,"raw_thousand_pesos":16489080,"real_jul2026_trillion":7.75244},{"period":"2012-12-31","year":2012,"raw_thousand_pesos":19564100,"real_jul2026_trillion":7.477828},{"period":"2013-12-31","year":2013,"raw_thousand_pesos":21509190,"real_jul2026_trillion":6.230897},{"period":"2014-12-31","year":2014,"raw_thousand_pesos":22928090,"real_jul2026_trillion":4.778085},{"period":"2015-12-31","year":2015,"raw_thousand_pesos":25346570,"real_jul2026_trillion":4.014689},{"period":"2016-12-31","year":2016,"raw_thousand_pesos":30703690,"real_jul2026_trillion":3.700274},{"period":"2017-12-31","year":2017,"raw_thousand_pesos":89496300,"real_jul2026_trillion":8.625855},{"period":"2018-12-31","year":2018,"raw_thousand_pesos":165913300,"real_jul2026_trillion":10.870582},{"period":"2019-12-31","year":2019,"raw_thousand_pesos":174853500,"real_jul2026_trillion":7.447287},{"period":"2020-12-31","year":2020,"raw_thousand_pesos":158899100,"real_jul2026_trillion":4.971158},{"period":"2021-12-31","year":2021,"raw_thousand_pesos":165851400,"real_jul2026_trillion":3.437528},{"period":"2022-12-31","year":2022,"raw_thousand_pesos":163589400,"real_jul2026_trillion":1.740638},{"period":"2023-12-31","year":2023,"raw_thousand_pesos":226262200,"real_jul2026_trillion":0.773101},{"period":"2024-12-31","year":2024,"raw_thousand_pesos":1030042000,"real_jul2026_trillion":1.615925},{"period":"2025-12-31","year":2025,"raw_thousand_pesos":4647301000,"real_jul2026_trillion":5.54423},{"period":"2026-06-30","year":2026,"raw_thousand_pesos":5650203189,"real_jul2026_trillion":5.768857}];
+const housingMortgageAudit={
+  housing2000:24.988772,
+  housing2023:0.773101,
+  housing2026:5.768857,
+  total2000:33.421306,
+  total2023:0.935044,
+  total2026:7.248897,
+  source:'BCRA perser_dest.xls · personas humanas · moneda nacional + extranjera · fin de mes'
+};
+const housingRentReform={
+  periods:['Dic-2023','Dic-2024','Jul-2025'],
+  dates:['2023-12-31','2024-12-31','2025-07-31'],
+  askingNominal:[100,164.4,199.746],
+  cpi:[100,217.8,255.334],
+  askingReal:[100,75.482,78.230],
+  offerAnnual2024:195.4,
+  offerIndex2024:295.4,
+  jan2024OfferMoM:62.1,
+  asking2024:64.4,
+  cpi2024:117.8,
+  asking2025Ytd:21.5,
+  cpi2025Ytd:17.2348,
+  demandClaim:null
+};
+const housingProgramSnapshots=[
+  {period:'2012–2015',indicator:'PROCREAR · créditos construcción + desarrollos',value:196000,source:'Argentina.gob.ar · cifra administrativa'},
+  {period:'2012–2015',indicator:'PROCREAR · lote propio + ampliación/refacción',value:110751,source:'Argentina.gob.ar · comparación administrativa'},
+  {period:'2019–sep-2023',indicator:'Casa Propia · familias que construyeron con crédito',value:70000,source:'Argentina.gob.ar · más de 70.000'},
+  {period:'2019–ago-2023',indicator:'Viviendas entregadas · gestión nacional',value:125000,source:'Argentina.gob.ar · cifra administrativa'}
+];
+
+
+// Vivienda · franjas y separadores presidenciales para series históricas.
+// Se agrega De la Rúa porque los gráficos largos comienzan en 2000.
+function housingMandateBandsDate(end='2026-12-31'){
+  return [
+    ['1999-12-10','2001-12-20','rgba(126,126,153,.055)'],
+    ['2002-01-02','2003-05-25','rgba(255,194,120,.060)'],
+    ['2003-05-25','2007-12-10','rgba(105,190,145,.055)'],
+    ['2007-12-10','2015-12-10','rgba(181,140,255,.050)'],
+    ['2015-12-10','2019-12-10','rgba(255,193,97,.055)'],
+    ['2019-12-10','2023-12-10','rgba(117,191,255,.055)'],
+    ['2023-12-10',end,'rgba(255,120,168,.055)']
+  ].map(d=>({type:'rect',xref:'x',yref:'paper',x0:d[0],x1:d[1],y0:0,y1:1,fillcolor:d[2],line:{width:0},layer:'below'}));
+}
+function housingMandateSeparatorsDate(){
+  return [
+    ['2002-01-02','#b69aae',2.0],
+    ['2003-05-25','#b69aae',2.0],
+    ['2007-12-10','#a994c9',2.0],
+    ['2015-12-10','#c5a16f',2.0],
+    ['2019-12-10','#8faec8',2.0],
+    ['2023-12-10','#c98ca4',2.4]
+  ].map(d=>({type:'line',xref:'x',yref:'paper',x0:d[0],x1:d[0],y0:0,y1:1,layer:'above',line:{color:d[1],width:d[2],dash:'dot'}}));
+}
+function housingMandateAnnotationsDate(mobile){
+  const labels=[
+    ['2000-09-01','De la Rúa',0],
+    ['2002-08-01','Duhalde',1],
+    ['2005-08-01','Néstor',0],
+    ['2011-08-01','CFK',1],
+    ['2017-10-01','Macri',0],
+    ['2021-11-01','Alberto',1],
+    ['2025-01-01','Milei',0]
+  ];
+  return labels.map(([x,name,row])=>({
+    x,y:mobile?(row?1.115:1.055):1.065,xref:'x',yref:'paper',text:name,showarrow:false,
+    font:{size:mobile?8.5:9.5,color:'#6d557b'},
+    bgcolor:'rgba(255,255,255,.88)',bordercolor:'rgba(226,210,235,.95)',borderwidth:1,borderpad:2
+  }));
+}
+
 function renderHousing(){
   const mobile=window.innerWidth<=720;
 
@@ -15179,11 +15661,87 @@ function renderHousing(){
       }
     ],{
       ...common,
-      margin:{l:mobile?52:66,r:mobile?12:24,t:mobile?150:100,b:mobile?34:42},
+      margin:{l:mobile?52:66,r:mobile?12:24,t:mobile?205:145,b:mobile?34:42},
       xaxis:{...common.xaxis,type:'date',range:['2000-07-01','2026-01-15'],dtick:mobile?'M60':'M36',tickformat:'%Y',fixedrange:true},
       yaxis:{...common.yaxis,title:'% de hogares',ticksuffix:'%',range:[7,81],fixedrange:true},
-      legend:{...common.legend,orientation:mobile?'v':'h',y:mobile?1.13:1.10,font:{size:mobile?8:10}},
-      hovermode:'closest'
+      legend:{...common.legend,orientation:mobile?'v':'h',y:mobile?1.24:1.18,font:{size:mobile?8:10}},
+      hovermode:'closest',
+      shapes:[...housingMandateBandsDate('2026-01-15'),...housingMandateSeparatorsDate()],
+      annotations:[
+        ...housingMandateAnnotationsDate(mobile),
+        {x:.01,y:1.145,xref:'paper',yref:'paper',text:'Franjas = presidencias · líneas punteadas = cambios de gobierno',showarrow:false,xanchor:'left',font:{size:mobile?8:9,color:'#8a748f'}}
+      ]
+    },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
+  }
+
+
+  const hm=document.getElementById('housingMortgageRealChart');
+  if(hm){
+    const x=housingMortgageAnnual.map(r=>r.period);
+    const y=housingMortgageAnnual.map(r=>r.real_jul2026_trillion);
+    const labels=housingMortgageAnnual.map(r=>r.year===2026?'Jun-2026':`Dic-${r.year}`);
+    const mortgageShapes=[
+      ...housingMandateBandsDate('2026-06-30'),
+      {type:'rect',xref:'x',yref:'paper',x0:'2001-01-01',x1:'2003-12-31',y0:0,y1:1,fillcolor:'rgba(223,88,140,.085)',line:{width:0},layer:'below'},
+      {type:'rect',xref:'x',yref:'paper',x0:'2016-04-01',x1:'2018-12-31',y0:0,y1:1,fillcolor:'rgba(96,71,191,.065)',line:{width:0},layer:'below'},
+      {type:'line',xref:'x',yref:'paper',x0:'2012-06-01',x1:'2012-06-01',y0:0,y1:1,line:{width:1.3,dash:'dash',color:'#af7c32'}},
+      ...housingMandateSeparatorsDate()
+    ];
+    Plotly.react(hm,[{
+      type:'scatter',mode:'lines+markers',
+      x,y,name:'Hipotecarios PH · destino vivienda',
+      line:{width:3},marker:{size:mobile?5:7},
+      customdata:housingMortgageAnnual.map((r,i)=>[labels[i],r.raw_thousand_pesos]),
+      hovertemplate:'<b>%{customdata[0]}</b><br>Stock real: <b>$%{y:.2f} billones</b><br><span style="font-size:10px">pesos de jul-2026 · cierre observado</span><extra></extra>'
+    }],{
+      ...common,
+      margin:{l:mobile?58:72,r:mobile?10:24,t:mobile?185:130,b:50},
+      xaxis:{...common.xaxis,type:'date',range:['1999-07-01','2026-10-01'],dtick:mobile?'M60':'M36',tickformat:'%Y',fixedrange:true},
+      yaxis:{...common.yaxis,title:'$ billones · jul-2026',rangemode:'tozero',fixedrange:true},
+      hovermode:'closest',
+      showlegend:false,
+      shapes:mortgageShapes,
+      annotations:[
+        ...housingMandateAnnotationsDate(mobile),
+        {x:.01,y:mobile?1.17:1.15,xref:'paper',yref:'paper',text:'Franjas = presidencias · líneas punteadas = cambios de gobierno',showarrow:false,xanchor:'left',font:{size:mobile?8:9,color:'#8a748f'}},
+        {x:'2002-07-01',y:.90,xref:'x',yref:'paper',text:'crisis 2001–02',showarrow:false,font:{size:mobile?8:9,color:'#8b6175'},bgcolor:'rgba(255,248,251,.86)',borderpad:2},
+        {x:'2012-06-01',y:.90,xref:'x',yref:'paper',text:'PROCREAR',showarrow:false,font:{size:mobile?8:9,color:'#8a6d3b'},bgcolor:'rgba(255,252,245,.86)',borderpad:2},
+        {x:'2017-06-01',y:.90,xref:'x',yref:'paper',text:'boom UVA',showarrow:false,font:{size:mobile?8:9,color:'#6650a6'},bgcolor:'rgba(250,248,255,.86)',borderpad:2},
+        {x:'2024-03-01',y:.90,xref:'x',yref:'paper',text:'reactivación',showarrow:false,font:{size:mobile?8:9,color:'#9a5274'},bgcolor:'rgba(255,247,250,.86)',borderpad:2}
+      ]
+    },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
+  }
+
+  const rr=document.getElementById('housingRentReformChart');
+  if(rr){
+    Plotly.react(rr,[
+      {
+        type:'scatter',mode:'lines+markers',
+        x:housingRentReform.dates,y:housingRentReform.askingNominal,
+        name:'Precio pedido nominal',line:{width:2.5},marker:{size:7},
+        hovertemplate:'<b>%{x|%b-%Y}</b><br>Precio pedido nominal: <b>%{y:.1f}</b><extra></extra>'
+      },
+      {
+        type:'scatter',mode:'lines+markers',
+        x:housingRentReform.dates,y:housingRentReform.cpi,
+        name:'IPC nacional',line:{width:2.5,dash:'dash'},marker:{size:7},
+        hovertemplate:'<b>%{x|%b-%Y}</b><br>IPC acumulado: <b>%{y:.1f}</b><extra></extra>'
+      },
+      {
+        type:'scatter',mode:'lines+markers',
+        x:housingRentReform.dates,y:housingRentReform.askingReal,
+        name:'Precio pedido real',line:{width:3},marker:{size:8},
+        hovertemplate:'<b>%{x|%b-%Y}</b><br>Precio pedido real: <b>%{y:.1f}</b><br>Dic-2023 = 100<extra></extra>'
+      }
+    ],{
+      ...common,
+      margin:{l:mobile?52:64,r:mobile?10:20,t:mobile?118:82,b:52},
+      xaxis:{...common.xaxis,type:'date',tickformat:'%b-%Y',fixedrange:true},
+      yaxis:{...common.yaxis,title:'Índice · dic-2023 = 100',rangemode:'tozero',fixedrange:true},
+      legend:{...common.legend,orientation:mobile?'v':'h',y:mobile?1.14:1.10,font:{size:mobile?9:10}},
+      hovermode:'x unified',
+      shapes:[{type:'line',xref:'x',yref:'paper',x0:'2023-12-29',x1:'2023-12-29',y0:0,y1:1,line:{dash:'dot',width:1.4,color:'#d84f85'}}],
+      annotations:[{x:'2023-12-29',y:1,xref:'x',yref:'paper',text:'DNU 70/23',showarrow:false,yshift:11,font:{size:9,color:'#9a5274'}}]
     },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
   }
 
@@ -15222,6 +15780,19 @@ function downloadHousingCsv(){
   rows.push(['mercado','2026-06','Escrituras CABA',5990,'Colegio de Escribanos CABA']);
   rows.push(['mercado','2026-06','Escrituras con hipoteca CABA',765,'Colegio de Escribanos CABA']);
   rows.push(['credito','2026-04','Altas hipotecarias personas humanas',1534,'BCRA']);
+  housingMortgageAnnual.forEach(r=>{
+    rows.push(['credito_hipotecario_real',r.period,'Hipotecarios PH destino vivienda · pesos jul-2026',r.real_jul2026_trillion,'BCRA perser_dest + IPC · $ billones']);
+    rows.push(['credito_hipotecario_raw',r.period,'Hipotecarios PH destino vivienda · saldo nominal',r.raw_thousand_pesos,'BCRA perser_dest · miles de pesos corrientes']);
+  });
+  rows.push(['auditoria_viral','2000-12','Todos los hipotecarios PH · pesos jul-2026',housingMortgageAudit.total2000,'BCRA perser_dest + IPC · $ billones']);
+  rows.push(['auditoria_viral','2023-12','Todos los hipotecarios PH · pesos jul-2026',housingMortgageAudit.total2023,'BCRA perser_dest + IPC · $ billones']);
+  rows.push(['alquiler_post_dnu','2024','Oferta publicada CABA · variación anual',housingRentReform.offerAnnual2024,'Zonaprop Index · %']);
+  rows.push(['alquiler_post_dnu','2024','Precio pedido · variación nominal',housingRentReform.asking2024,'Zonaprop Index · %']);
+  rows.push(['alquiler_post_dnu','2024','IPC nacional',housingRentReform.cpi2024,'INDEC · %']);
+  rows.push(['alquiler_post_dnu','ene-jul-2025','Precio pedido · variación nominal',housingRentReform.asking2025Ytd,'Zonaprop Index · %']);
+  rows.push(['alquiler_post_dnu','ene-jul-2025','IPC nacional acumulado',housingRentReform.cpi2025Ytd,'INDEC · %']);
+  rows.push(['alquiler_post_dnu','dic-2023-jul-2025','Demanda · claim imagen viral','','No auditado: definición/fuente no reproducible']);
+  housingProgramSnapshots.forEach(r=>rows.push(['politica_habitacional',r.period,r.indicator,r.value,r.source]));
   housingBuild.forEach(r=>rows.push(['construccion','2026-06','ICC '+r.name,r.value,'INDEC GBA']));
   const q=v=>String(v).includes(',')?`"${String(v).replaceAll('"','""')}"`:String(v);
   const csv='categoria,periodo,indicador,valor,universo_fuente\n'+rows.map(r=>r.map(q).join(',')).join('\n');
@@ -16826,10 +17397,10 @@ function renderHealthEducation() {
   Plotly.react('healthEducationExecutionChart',levelTraces,{
     paper_bgcolor:'rgba(255,255,255,0)',plot_bgcolor:'#fffdfd',font:{color:'#5e4670',family:'Inter,system-ui,sans-serif'},
     barmode:'stack',barnorm:'percent',
-    margin:{l:mobile?105:245,r:mobile?14:28,t:mobile?100:80,b:62},
+    margin:{l:mobile?105:245,r:mobile?14:28,t:mobile?90:72,b:52},
     xaxis:{title:'% de la función ejecutado por cada nivel',range:[0,100],ticksuffix:'%',gridcolor:'#efe4f4',fixedrange:true},
     yaxis:{autorange:'reversed',fixedrange:true,tickfont:{size:mobile?10:12},tickmode:'array',tickvals:heExecutionCategories,ticktext:mobile?heExecutionCategoriesMobile:heExecutionCategories},
-    legend:{orientation:'h',x:0,y:1.12,font:{size:mobile?10:12}},
+    legend:{orientation:'h',x:0,y:1.08,font:{size:mobile?10:12}},
     hovermode:'closest',hoverlabel:common.hoverlabel
   },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
 
@@ -16885,10 +17456,10 @@ function resizeHealthEducationCharts(mobile) {
   const exec=document.getElementById('healthEducationExecutionChart');
   if(exec && exec.data) {
     Plotly.relayout(exec,{
-      'margin.l':mobile?105:245,'margin.r':mobile?14:28,'margin.t':mobile?100:80,
+      'margin.l':mobile?105:245,'margin.r':mobile?14:28,'margin.t':mobile?90:72,'margin.b':52,
       'yaxis.tickfont.size':mobile?10:12,
       'yaxis.tickmode':'array','yaxis.tickvals':heExecutionCategories,'yaxis.ticktext':mobile?heExecutionCategoriesMobile:heExecutionCategories,
-      'legend.font.size':mobile?10:12
+      'legend.y':1.08,'legend.font.size':mobile?10:12
     }); Plotly.Plots.resize(exec);
   }
   const bridge=document.getElementById('healthEducationBridgeChart');
@@ -17938,22 +18509,27 @@ function renderRatesMoney(){
   const fintech=s.fintech;
   document.getElementById('ratesFintechAmount').textContent=ratesMoneyArs(d.impacto_hogar_fintech,2,true);
   document.getElementById('ratesFintechNote').innerHTML=`<b>Diferencial Fintech post-shock vs espejo</b>. Saldo espejo ${ratesMoneyArs(m.impacto_hogar_fintech,2,true)} · post-shock ${ratesMoneyArs(p.impacto_hogar_fintech,2,true)}. La estimación usa TNA ponderada por saldos y stock real interpolado; marzo–julio 2026 conserva el último dato oficial. Es una proxy de carga financiera extraordinaria, <b>no de ganancia neta efectivamente cobrada</b>.`;
-  const financialRelief=Math.max(0,-p.impacto_hogar_total_ampliado);
+  const financialHouseholdCost=Math.max(0,-p.impacto_hogar_total_ampliado);
   const milei=document.getElementById('mileiFinancialAuditContent');
-  if(milei)milei.innerHTML=`
+  if(milei){
+    const bm=typeof bankAdjustModel==='function'?bankAdjustModel():null;
+    const bankRange=bm?`≈ ${bm.taxPct.toLocaleString('es-AR',{maximumFractionDigits:0})}–${bm.savingPct.toLocaleString('es-AR',{maximumFractionDigits:0})}%`:'≈ 21–38%';
+    const bankMoneyRange=bm?`≈ $ ${(bm.taxMoneyCurrent/1e12).toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})}–${(bm.savingMoneyCurrent/1e12).toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})} billones`:'≈ $ 11,2–20,1 billones';
+    milei.innerHTML=`
     <div class="milei-financial-grid">
       <div class="milei-financial-item">
-        <div class="audit-tag">Si los bancos compensaran · crédito + plazo fijo</div>
-        <div class="audit-amount household-plus">+${ratesMoneyArs(Math.max(0,-p.impacto_hogar_banco-p.impacto_hogar_pf))} al hogar</div>
-        <p>Crédito bancario: <b>${ratesMoneyArs(Math.max(0,-p.impacto_hogar_banco))}</b> · plazo fijo: <b>${ratesMoneyArs(Math.max(0,-p.impacto_hogar_pf))}</b>. Son saldos pos-shock contra sus normas históricas.</p>
+        <div class="audit-tag">Costo estimado del lado hogar · banco + plazo fijo</div>
+        <div class="audit-amount">${ratesMoneyArs(Math.max(0,-p.impacto_hogar_banco-p.impacto_hogar_pf))}</div>
+        <p>Crédito bancario: <b>${ratesMoneyArs(Math.max(0,-p.impacto_hogar_banco))}</b> · plazo fijo: <b>${ratesMoneyArs(Math.max(0,-p.impacto_hogar_pf))}</b>. Son saldos pos-shock contra sus normas históricas; <b>no utilidad neta bancaria</b>.</p>
       </div>
       <div class="milei-financial-item fintech">
-        <div class="audit-tag">Si las Fintech compensaran · pata separada</div>
-        <div class="audit-amount household-plus">+${ratesMoneyArs(Math.max(0,-p.impacto_hogar_fintech))} al hogar</div>
-        <p>No está duplicada dentro de bancos. Incluye ${p.fintech_meses_tna_observada} meses con TNA oficial y ${p.fintech_meses_tna_conservada} meses estimados.</p>
+        <div class="audit-tag">Costo estimado del lado hogar · Fintech</div>
+        <div class="audit-amount">${ratesMoneyArs(Math.max(0,-p.impacto_hogar_fintech))}</div>
+        <p>No está duplicada dentro de bancos. Incluye ${p.fintech_meses_tna_observada} meses con TNA oficial y ${p.fintech_meses_tna_conservada} meses estimados. <b>Capacidad de pago Fintech todavía no estimada</b>.</p>
       </div>
     </div>
-    <p class="milei-financial-summary"><b>Cómo entra en la cuenta de $18,43 billones:</b> bancos + Fintech compensarían <b class="household-plus">+${ratesMoneyArs(financialRelief)} a favor del hogar</b>; por eso el mismo monto se resta del agujero. Para responder si mejoró o empeoró, usamos otro dato: diferencial post − espejo <b>${ratesMoneyArs(d.impacto_hogar_total_ampliado,2,true)}</b>.</p>`;
+    <p class="milei-financial-summary"><b>Lectura para “Lo que te robó Milei”:</b> los ${ratesMoneyArs(financialHouseholdCost)} representan <b>costo financiero equivalente soportado por hogares</b> y se mantienen fuera de la resta salarial central de $18,43 billones. La capacidad bancaria se estima por otra vía: <b>${bankMoneyRange} en pesos de jul-2026</b>, equivalentes a <b>${bankRange}</b> del giro fiscal primario de 2024. Fintech muestra <b>${ratesMoneyArs(Math.max(0,-p.impacto_hogar_fintech))}</b> de costo al usuario; su capacidad de pago es N/D. El diferencial post − espejo es <b>${ratesMoneyArs(d.impacto_hogar_total_ampliado,2,true)}</b>.</p>`;
+  }
   renderRatesMoneyCharts();
 }
 function renderRatesMoneyCharts(){
@@ -18570,15 +19146,15 @@ function renderGini() {
     {type:'rect',xref:'x',yref:'paper',x0:'2019-12-10',x1:'2023-12-10',y0:0,y1:1,fillcolor:'rgba(117,191,255,.05)',line:{width:0},layer:'below'},
     {type:'rect',xref:'x',yref:'paper',x0:'2023-12-10',x1:'2026-03-31',y0:0,y1:1,fillcolor:'rgba(255,120,168,.05)',line:{width:0},layer:'below'},
     // Separadores de mandato: exactamente en el día de asunción del entrante.
-    {type:'line',xref:'x',yref:'paper',x0:'2003-05-25',x1:'2003-05-25',y0:0,y1:1,layer:'above',line:{color:'#b69aae',width:2,dash:'dot'}},
-    {type:'line',xref:'x',yref:'paper',x0:'2007-12-10',x1:'2007-12-10',y0:0,y1:1,layer:'above',line:{color:'#a994c9',width:2,dash:'dot'}},
-    {type:'line',xref:'x',yref:'paper',x0:'2015-12-10',x1:'2015-12-10',y0:0,y1:1,layer:'above',line:{color:'#c5a16f',width:2,dash:'dot'}},
-    {type:'line',xref:'x',yref:'paper',x0:'2019-12-10',x1:'2019-12-10',y0:0,y1:1,layer:'above',line:{color:'#8faec8',width:2,dash:'dot'}},
-    {type:'line',xref:'x',yref:'paper',x0:'2023-12-10',x1:'2023-12-10',y0:0,y1:1,layer:'above',line:{color:'#c98ca4',width:2.4,dash:'dot'}},
+    {type:'line',xref:'x',yref:'paper',x0:'2003-05-25',x1:'2003-05-25',y0:0,y1:.985,layer:'above',line:{color:'#b69aae',width:2,dash:'dot'}},
+    {type:'line',xref:'x',yref:'paper',x0:'2007-12-10',x1:'2007-12-10',y0:0,y1:.985,layer:'above',line:{color:'#a994c9',width:2,dash:'dot'}},
+    {type:'line',xref:'x',yref:'paper',x0:'2015-12-10',x1:'2015-12-10',y0:0,y1:.985,layer:'above',line:{color:'#c5a16f',width:2,dash:'dot'}},
+    {type:'line',xref:'x',yref:'paper',x0:'2019-12-10',x1:'2019-12-10',y0:0,y1:.985,layer:'above',line:{color:'#8faec8',width:2,dash:'dot'}},
+    {type:'line',xref:'x',yref:'paper',x0:'2023-12-10',x1:'2023-12-10',y0:0,y1:.985,layer:'above',line:{color:'#c98ca4',width:2.4,dash:'dot'}},
     // Advertencia institucional: posterior a 1T2007 hasta 4T2015.
     {type:'rect',xref:'x',yref:'paper',x0:'2007-04-01',x1:'2015-12-31',y0:0,y1:1,fillcolor:'rgba(245,196,73,.105)',line:{color:'rgba(207,157,31,.45)',width:1,dash:'dot'},layer:'below'},
     // Cambio de cobertura EPH desde 1T2019.
-    {type:'line',xref:'x',yref:'paper',x0:'2019-01-01',x1:'2019-01-01',y0:0,y1:1,line:{color:'#b492c5',width:1.4,dash:'dot'}}
+    {type:'line',xref:'x',yref:'paper',x0:'2019-01-01',x1:'2019-01-01',y0:.13,y1:.91,line:{color:'#b492c5',width:1.4,dash:'dot'}}
   ];
 
   const giniPunctualHover = buildGiniHoverText(giniPunctualData.dates, giniPunctualData.labels, 'EPH puntual', giniPunctualData.values);
@@ -18650,7 +19226,11 @@ function renderGini() {
       pattern:{shape:sameQuarter.map(d=>d.status==='solid'?'':d.status==='reserve'?'/':d.status==='whole'?'x':'.'),solidity:sameQuarter.map(d=>d.status==='whole'?.16:.22)}
     },
     text:sameQuarter.map(d=>(d.delta>0?'+':'')+d.delta.toFixed(3).replace('.',',')),
-    textposition:'outside',cliponaxis:false,
+    textposition:sameQuarter.map(d=>d.delta<=-.02?'inside':'outside'),
+    insidetextanchor:'middle',
+    insidetextfont:{color:'#3f3150',size:mobile?10:11},
+    outsidetextfont:{color:'#4f3b61',size:mobile?10:11},
+    cliponaxis:false,
     hovertemplate:'<b>%{customdata[0]}</b><br>%{customdata[1]}<br>%{customdata[2]}<br>Δ Gini: <b>%{x:+.3f}</b><extra></extra>'
   }], {
     paper_bgcolor:'rgba(255,255,255,0)',plot_bgcolor:'#fffdfd',
@@ -18701,7 +19281,7 @@ function structureCabaAnnotations(mode){
   return [
     ...pandemicDateAnnotations(mobile),
     ...labels.map((d,index)=>({
-      x:d.x,y:mobile?(index%2?1.075:1.018):(compact?1.045:1.07),yref:'paper',
+      x:d.x,y:index%2?1.078:1.018,yref:'paper',
       text:compact?d.short:d.full,showarrow:false,xanchor:d.xanchor||'center',
       font:{size:mobile?8:(compact?9:10),color:d.color,family:'Inter,system-ui,sans-serif'},
       bgcolor:d.bg,bordercolor:d.border,borderwidth:1,borderpad:compact?2:4
@@ -18793,10 +19373,10 @@ function renderStructure() {
   ], {
     barmode:'group',paper_bgcolor:'rgba(255,255,255,0)',plot_bgcolor:'#fffdfd',
     font:{color:'#5e4670',family:'Inter,system-ui,sans-serif'},
-    margin:{l:mobile?52:68,r:mobile?10:25,t:mobile?75:60,b:mobile?105:80},
+    margin:{l:mobile?52:68,r:mobile?10:25,t:mobile?68:54,b:mobile?94:70},
     xaxis:{tickmode:'array',tickvals:structureFederalData.regions,ticktext:mobile?['GBA','Cuyo','NEA','NOA','Pamp.','Patag.']:structureFederalData.regions,tickangle:0,fixedrange:true,automargin:true},
     yaxis:{title:'Porcentaje de personas',range:[0,38],ticksuffix:'%',gridcolor:'#efe4f4',fixedrange:true},
-    legend:{orientation:'h',x:0,y:1.12,xanchor:'left',yanchor:'bottom',font:{size:mobile?10:12}},
+    legend:{orientation:'h',x:0,y:1.09,xanchor:'left',yanchor:'bottom',font:{size:mobile?10:12}},
     hoverlabel:{bgcolor:'#fff7fb',bordercolor:'#efb7d0',font:{color:'#4d365c',size:13}}
   }, {responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
 
@@ -18817,7 +19397,7 @@ function renderStructure() {
   ], {
     barmode:'group',paper_bgcolor:'rgba(255,255,255,0)',plot_bgcolor:'#fffdfd',
     font:{color:'#5e4670',family:'Inter,system-ui,sans-serif'},
-    margin:{l:mobile?52:68,r:mobile?10:25,t:mobile?75:60,b:75},
+    margin:{l:mobile?52:68,r:mobile?10:25,t:mobile?75:60,b:mobile?64:68},
     xaxis:{title:'Nivel socioeconómico del hogar (UCA)',fixedrange:true},
     yaxis:{title:'Porcentaje de población',range:[0,84],ticksuffix:'%',gridcolor:'#efe4f4',fixedrange:true},
     legend:{orientation:'h',x:0,y:1.12,xanchor:'left',yanchor:'bottom',font:{size:mobile?10:12}},
@@ -19222,17 +19802,21 @@ function responsiveRelayout() {
     Plotly.relayout('structureRegionChart', {
       'margin.l': mobile ? 52 : 68,
       'margin.r': mobile ? 10 : 25,
+      'margin.t': mobile ? 68 : 54,
+      'margin.b': mobile ? 94 : 70,
       'xaxis.tickmode':'array',
       'xaxis.tickvals':structureFederalData.regions,
       'xaxis.ticktext':mobile?['GBA','Cuyo','NEA','NOA','Pamp.','Patag.']:structureFederalData.regions,
-      'xaxis.tickangle':0
+      'xaxis.tickangle':0,
+      'legend.y':1.09
     });
     Plotly.Plots.resize(structureRegion);
   }
   if (structureNse && structureNse.data) {
     Plotly.relayout('structureNseChart', {
       'margin.l': mobile ? 52 : 68,
-      'margin.r': mobile ? 10 : 25
+      'margin.r': mobile ? 10 : 25,
+      'margin.b': mobile ? 64 : 68
     });
     Plotly.Plots.resize(structureNse);
   }
@@ -19365,7 +19949,7 @@ setTimeout(responsiveRelayout, 80);
 // 4) repetimos un par de veces porque Plotly puede volver a pintar
 //    el hover unos milisegundos después del touchend.
 
-const plotIds = ['powerChart', 'nominalChart', 'realChart', 'ratesAccumChart', 'presChart', 'povertyChart', 'povertyMandateChart', 'socialLongChart', 'socialChangeChart', 'socialRecentChart', 'giniChart', 'giniSameQuarterChart', 'structureCabaChart', 'structureMobilityChart', 'structureRegionChart', 'structureNseChart', 'familyRegionChart', 'familyGeoChart', 'familyThresholdChart', 'familyNonOwnerChart', 'housingChart', 'riskChart', 'bigMacChart', 'bigMacFxChart', 'wholesaleChart', 'wholesaleCurrentChart', 'healthEducationChart', 'healthEducationExecutionChart', 'healthEducationBridgeChart', 'growthChart', 'debtPublicChart', 'debtCreditorChart', 'debtCurrencyChart', 'tradeChart', 'bcraReserveChart', 'bcraDebtCompareChart', 'bcraInterventionChart', 'bcraFactorsChart', 'bcraFxChart', 'bcraRatesChart', 'debtSimChart', 'debtClassChart', 'sovereignSustainChart', 'sovereignReserveFlowChart'];
+const plotIds = ['powerChart', 'nominalChart', 'realChart', 'ratesAccumChart', 'presChart', 'povertyChart', 'povertyMandateChart', 'socialLongChart', 'socialChangeChart', 'socialRecentChart', 'giniChart', 'giniSameQuarterChart', 'structureCabaChart', 'structureMobilityChart', 'structureRegionChart', 'structureNseChart', 'familyRegionChart', 'familyGeoChart', 'familyThresholdChart', 'familyNonOwnerChart', 'housingChart', 'housingTenureChart', 'housingHistoryChart', 'housingMortgageRealChart', 'housingRentReformChart', 'housingBuildChart', 'riskChart', 'bigMacChart', 'bigMacFxChart', 'wholesaleChart', 'wholesaleCurrentChart', 'healthEducationChart', 'healthEducationExecutionChart', 'healthEducationBridgeChart', 'growthChart', 'debtPublicChart', 'debtCreditorChart', 'debtCurrencyChart', 'tradeChart', 'bcraReserveChart', 'bcraDebtCompareChart', 'bcraInterventionChart', 'bcraFactorsChart', 'bcraFxChart', 'bcraRatesChart', 'debtSimChart', 'debtClassChart', 'sovereignSustainChart', 'sovereignReserveFlowChart'];
 
 let touchStartedWithHover = false;
 let touchStartedInsideTooltip = false;
@@ -21232,6 +21816,7 @@ document.querySelector('[data-tab="tab-tourism"]')?.addEventListener('click',()=
 window.addEventListener('resize',()=>{if(!tourRendered)return;['tourFlowChart','tourSpendChart','tourSummerChart','tourFxChart','tourOriginChart','tourDestinationChart'].forEach(id=>{const el=document.getElementById(id);if(el&&window.Plotly)Plotly.Plots.resize(el)})});
 </script>
 
+<!-- MILEI_COST_LOGIC_VERSION:151 -->
 <!-- PENDULO_POWER_HORIZONTAL_CONTROLS_VERSION:147 -->
 <script id="pendulo-poder-finance-evidence-v146">
 const PEND_POWER_CFT_SNAPSHOT=[{"period":"2023-06","provider_group":"Entidades financieras","provider_code":"EEFF","sample_n":15,"measure":"promedio del CFT máximo ofrecido","cft_pct":321.0,"source_grade":"A"},{"period":"2023-06","provider_group":"Proveedores no financieros de crédito","provider_code":"PNFC","sample_n":15,"measure":"promedio del CFT máximo ofrecido","cft_pct":588.0,"source_grade":"A"}];
@@ -21253,6 +21838,99 @@ window.addEventListener('resize',()=>{if(!pendPowerFinanceEvidenceRendered||!win
 if(document.querySelector('[data-pend-layer-panel="finance"]:not([hidden])'))requestAnimationFrame(renderPendPowerFinanceEvidence);
 
 </script>
+
+<script id="bank-adjustment-2024-script-v150">
+const BANK_ADJUSTMENT_2024={
+  fiscal:{primary2023:-2.9,primary2024:1.8,imfConsolidation:5.0},
+  money:{gdp2024Ars:583909615e6,ipcAvg2024:6317.7413166667,ipcJul2026:12076.3937,priceLabel:'jul-2026'},
+  indec:{
+    years:[2016,2017,2018,2019,2020,2021,2022,2023,2024],
+    operatingSurplus:[1.1,.8,.8,.4,.9,.4,0,-.9,1.0],
+    propertyIncome:[.3,.3,.6,1.2,1.2,1.3,2.5,4.9,3.7],
+    primaryIncome:[1.4,1.1,1.4,1.6,2.1,1.7,2.5,4.0,4.7],
+    currentTaxes:[.4,.4,.4,.2,.4,.4,.5,1.6,.6],
+    grossSaving:[.9,.5,.8,1.2,1.6,1.2,1.9,2.2,4.0],
+    netLending:[.7,.4,.7,1.0,1.4,1.1,1.7,2.2,4.0]
+  },
+  profitability:{labels:['2023','2024','2025','jun-2026 · 12m'],roa:[5.3,4.1,1.0,1.2],roe:[26.9,15.8,4.4,null]},
+  capital:{labels:['dic-2023','dic-2024','jun-2026'],excessRequirement:[302.7,279,269],excessCredit:[60.2,45.1,35.4],tenYearCreditAvg:[21.4,26.7,null]}
+};
+let bankAdjustmentRendered=false;
+function bankAdjustMean(a){return a.reduce((s,v)=>s+v,0)/a.length}
+function bankAdjustPct(v,d=1){return v.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d})+'%'}
+function bankAdjustPp(v,d=1){return v.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d})+' pp'}
+function bankAdjustMoney(v){
+  if(typeof powerMoneyBillions==='function')return powerMoneyBillions(v);
+  return '$ '+(v/1e12).toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2})+' billones';
+}
+function bankAdjustModel(){
+  const d=BANK_ADJUSTMENT_2024, fiscalSwing=d.fiscal.primary2024-d.fiscal.primary2023;
+  const histAvg=bankAdjustMean(d.indec.grossSaving.slice(0,7));
+  const taxPp=d.indec.currentTaxes[7]-d.indec.currentTaxes[8];
+  const savingPp=d.indec.grossSaving[8]-d.indec.grossSaving[7];
+  const historicalPp=d.indec.grossSaving[8]-histAvg;
+  let grossShock=18.43e12,recovered=6.08e12,pinch=5.852938441375309e12,bankPinch=4.51e12,fintechPinch=1.34e12;
+  try{const loss=typeof powerAggregateLossEstimate==='function'?powerAggregateLossEstimate():null;if(loss){grossShock=loss.grossCurrent;recovered=loss.recoveredCurrent}}catch(e){}
+  try{if(typeof ratesMoneySummary!=='undefined'){pinch=Math.max(0,-ratesMoneySummary.post.impacto_hogar_total_ampliado);bankPinch=Math.max(0,-ratesMoneySummary.post.impacto_hogar_banco)+Math.max(0,-ratesMoneySummary.post.impacto_hogar_pf);fintechPinch=Math.max(0,-ratesMoneySummary.post.impacto_hogar_fintech)}}catch(e){}
+  const remaining=Math.max(0,grossShock-recovered);
+  const priceFactor=d.money.ipcJul2026/d.money.ipcAvg2024;
+  const ppToJul2026=pp=>d.money.gdp2024Ars*(pp/100)*priceFactor;
+  return {fiscalSwing,histAvg,taxPp,savingPp,historicalPp,grossShock,recovered,remaining,pinch,bankPinch,fintechPinch,priceFactor,
+    taxMoney2024:d.money.gdp2024Ars*(taxPp/100),savingMoney2024:d.money.gdp2024Ars*(savingPp/100),historicalMoney2024:d.money.gdp2024Ars*(historicalPp/100),
+    taxMoneyCurrent:ppToJul2026(taxPp),savingMoneyCurrent:ppToJul2026(savingPp),historicalMoneyCurrent:ppToJul2026(historicalPp),
+    taxPct:taxPp/fiscalSwing*100,savingPct:savingPp/fiscalSwing*100,historicalPct:historicalPp/fiscalSwing*100,
+    taxImf:taxPp/d.fiscal.imfConsolidation*100,savingImf:savingPp/d.fiscal.imfConsolidation*100,historicalImf:historicalPp/d.fiscal.imfConsolidation*100,
+    pinchGross:pinch/grossShock*100,pinchRemaining:remaining?pinch/remaining*100:0};
+}
+function bankAdjustLayout(titleY,mobile=false){return {paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(255,255,255,.72)',font:{family:'Nunito,Inter,Arial,sans-serif',size:mobile?9:10,color:'#66506d'},margin:{l:mobile?52:66,r:mobile?20:36,t:mobile?38:42,b:mobile?58:50},hoverlabel:{bgcolor:'#fff7fb',bordercolor:'#e6bfd0',font:{color:'#51385e'}},xaxis:{gridcolor:'#eee5f1',zeroline:false},yaxis:{title:titleY,gridcolor:'#eee5f1',zeroline:true,zerolinecolor:'#b9a8c1'},legend:{orientation:'h',y:1.12,x:0}}}
+function renderBankAdjustment2024(){
+  const root=document.getElementById('ratesBankCapacitySection');if(!root||!window.Plotly)return;
+  const d=BANK_ADJUSTMENT_2024,m=bankAdjustModel(),mobile=window.innerWidth<=720;
+  const set=(id,text)=>{const el=document.getElementById(id);if(el)el.textContent=text};
+  set('bankAdjustFiscalSwing',bankAdjustPp(m.fiscalSwing,1)+' PBI');
+  set('bankAdjustPinchMoney',bankAdjustMoney(m.pinch));set('bankAdjustPinchGross',bankAdjustPct(m.pinchGross,1));set('bankAdjustPinchRemaining',bankAdjustPct(m.pinchRemaining,1));
+  set('bankAdjustTaxMoney','≈ '+bankAdjustMoney(m.taxMoneyCurrent));set('bankAdjustTaxPct','≈ '+bankAdjustPct(m.taxPct,1));set('bankAdjustTaxImf','FMI: ≈ '+bankAdjustPct(m.taxImf,0));
+  set('bankAdjustSavingMoney','≈ '+bankAdjustMoney(m.savingMoneyCurrent));set('bankAdjustSavingPct','≈ '+bankAdjustPct(m.savingPct,1));set('bankAdjustSavingImf','FMI: ≈ '+bankAdjustPct(m.savingImf,0));
+  set('bankAdjustHistoricalMoney','≈ '+bankAdjustMoney(m.historicalMoneyCurrent));set('bankAdjustHistoricalPct','≈ '+bankAdjustPct(m.historicalPct,1));set('bankAdjustHistoricalImf','FMI: ≈ '+bankAdjustPct(m.historicalImf,1));
+  set('bankAdjustFintechPinch',bankAdjustMoney(m.fintechPinch));
+  const reading=document.getElementById('bankAdjustReading');if(reading)reading.innerHTML=`<strong>En pesos de ${d.money.priceLabel}, el rango bancario central es ≈ ${bankAdjustMoney(m.taxMoneyCurrent)}–${bankAdjustMoney(m.savingMoneyCurrent)}.</strong> Eso equivale a <span class="range">≈ ${bankAdjustPct(m.taxPct,0)}–${bankAdjustPct(m.savingPct,0)}</span> del giro primario observado de 2024. El escenario histórico agresivo sube a <b>≈ ${bankAdjustMoney(m.historicalMoneyCurrent)}</b>. Fintech: capacidad N/D; su costo al usuario (${bankAdjustMoney(m.fintechPinch)}) sólo puede tratarse como sensibilidad de compensación. Esto describe <b>capacidad contrafactual de reparto</b>, no una ganancia ni una transferencia probada.`;
+
+  const scenarioNames=['Mantener carga tributaria 2023','Mantener ahorro/PBI 2023','Volver al promedio 2016–22'];
+  const scenarioVals=[m.taxPct,m.savingPct,m.historicalPct],imfVals=[m.taxImf,m.savingImf,m.historicalImf],moneyVals=[m.taxMoneyCurrent,m.savingMoneyCurrent,m.historicalMoneyCurrent];
+  Plotly.react('bankAdjustScenarioChart',[{type:'bar',orientation:'h',y:scenarioNames,x:scenarioVals,marker:{color:['#6c86bd','#4c9a78','#c59645'],line:{color:'#fff',width:1}},text:scenarioVals.map((v,i)=>bankAdjustMoney(moneyVals[i])+' · '+bankAdjustPct(v,1)),textposition:'outside',cliponaxis:false,customdata:scenarioVals.map((v,i)=>[imfVals[i],moneyVals[i]/1e12]),hovertemplate:'<b>%{y}</b><br>Pesos jul-2026: $ %{customdata[1]:.2f} billones<br>Sobre giro observado 4,7 pp: %{x:.1f}%<br>Sobre FMI 5 pp: %{customdata[0]:.1f}%<extra></extra>'}],{...bankAdjustLayout('% del giro fiscal',mobile),margin:{l:mobile?145:210,r:mobile?50:65,t:28,b:45},xaxis:{title:'% del giro primario 2023→2024',range:[0,Math.max(68,Math.ceil(m.historicalPct+7))],gridcolor:'#eee5f1'},yaxis:{autorange:'reversed',automargin:true},showlegend:false},{responsive:true,displaylogo:false,displayModeBar:false});
+
+  const avgLine=d.indec.years.map(()=>m.histAvg);
+  Plotly.react('bankAdjustSavingChart',[{x:d.indec.years,y:d.indec.grossSaving,type:'scatter',mode:'lines+markers',name:'Ahorro bruto / PBI',line:{color:'#5e4ca8',width:3},marker:{size:7},hovertemplate:'<b>%{x}</b><br>Ahorro bruto: %{y:.1f}% del PBI<extra></extra>'},{x:d.indec.years,y:avgLine,type:'scatter',mode:'lines',name:'Promedio 2016–22 · '+bankAdjustPct(m.histAvg,2),line:{color:'#c08c39',dash:'dash',width:2},hoverinfo:'skip'}],{...bankAdjustLayout('% del PBI',mobile),margin:{l:55,r:20,t:38,b:45},xaxis:{dtick:1,fixedrange:true},yaxis:{title:'% del PBI',gridcolor:'#eee5f1',zeroline:true,zerolinecolor:'#b9a8c1'},shapes:[{type:'line',x0:2023.5,x1:2023.5,y0:0,y1:1,yref:'paper',line:{color:'#dc7395',width:1.5,dash:'dot'}}],annotations:[{x:2024,y:4.0,text:'4,0% · máximo de la serie',showarrow:true,ax:mobile?-54:-72,ay:34,bgcolor:'#fff7fb',bordercolor:'#e4bfd0',font:{size:9,color:'#6b4b76'}}]},{responsive:true,displaylogo:false,displayModeBar:false});
+
+  const prof=d.profitability;
+  Plotly.react('bankAdjustProfitChart',[{x:prof.labels,y:prof.roa,type:'bar',name:'ROA · % activo',marker:{color:'#657fc0'},text:prof.roa.map(v=>bankAdjustPct(v,1)),textposition:'outside',hovertemplate:'<b>%{x}</b><br>ROA: %{y:.1f}%<extra></extra>'},{x:prof.labels,y:prof.roe,type:'scatter',mode:'lines+markers+text',name:'ROE · % patrimonio',yaxis:'y2',line:{color:'#d45d87',width:3},marker:{size:7},text:prof.roe.map(v=>v==null?'':bankAdjustPct(v,1)),textposition:'top center',hovertemplate:'<b>%{x}</b><br>ROE: %{y:.1f}%<extra></extra>'}],{...bankAdjustLayout('ROA · % activo',mobile),margin:{l:55,r:mobile?42:58,t:46,b:62},xaxis:{type:'category',tickangle:mobile?-25:0},yaxis:{title:'ROA · % del activo',rangemode:'tozero',gridcolor:'#eee5f1'},yaxis2:{title:'ROE · % patrimonio',overlaying:'y',side:'right',rangemode:'tozero',showgrid:false},legend:{orientation:'h',y:1.14,x:0}},{responsive:true,displaylogo:false,displayModeBar:false});
+
+  const cap=d.capital;
+  Plotly.react('bankAdjustCapitalChart',[{x:cap.labels,y:cap.excessRequirement,type:'bar',name:'Exceso / exigencia regulatoria',marker:{color:'#6f59ad'},text:cap.excessRequirement.map(v=>bankAdjustPct(v,0)),textposition:'outside',hovertemplate:'<b>%{x}</b><br>Exceso / exigencia: %{y:.1f}%<extra></extra>'},{x:cap.labels,y:cap.excessCredit,type:'scatter',mode:'lines+markers+text',name:'Exceso / crédito privado neto',yaxis:'y2',line:{color:'#4e9b79',width:3},marker:{size:8},text:cap.excessCredit.map(v=>bankAdjustPct(v,1)),textposition:'top center',hovertemplate:'<b>%{x}</b><br>Exceso / crédito neto: %{y:.1f}%<extra></extra>'}],{...bankAdjustLayout('% exigencia',mobile),margin:{l:55,r:mobile?44:60,t:48,b:58},yaxis:{title:'% de la exigencia',rangemode:'tozero',gridcolor:'#eee5f1'},yaxis2:{title:'% del crédito neto',overlaying:'y',side:'right',range:[0,75],showgrid:false},legend:{orientation:'h',y:1.14,x:0}},{responsive:true,displaylogo:false,displayModeBar:false});
+
+  const rows=[
+    ['Excedente de explotación bruto',-.9,1.0,'pp PBI'],['Rentas de la propiedad netas',4.9,3.7,'pp PBI'],['Saldo de ingresos primarios bruto',4.0,4.7,'pp PBI'],['Impuestos corrientes sobre ingreso y riqueza',1.6,.6,'pp PBI'],['Ahorro bruto / ingreso disponible',2.2,4.0,'pp PBI'],['Préstamo neto / capacidad de financiamiento',2.2,4.0,'pp PBI']
+  ];
+  const readings={
+    'Excedente de explotación bruto':'revirtió de negativo a positivo','Rentas de la propiedad netas':'bajaron, aunque siguieron altas','Saldo de ingresos primarios bruto':'aumentó 0,7 pp','Impuestos corrientes sobre ingreso y riqueza':'bajaron 1,0 pp; no implica por sí solo rebaja discrecional','Ahorro bruto / ingreso disponible':'subió 1,8 pp','Préstamo neto / capacidad de financiamiento':'subió 1,8 pp'
+  };
+  const tbody=document.getElementById('bankAdjustTableBody');if(tbody)tbody.innerHTML=rows.map(([name,a,b])=>{const ch=b-a,cls=ch>0?'up':ch<0?'down':'';return `<tr><td><strong>${name}</strong></td><td>${bankAdjustPct(a,1)}</td><td>${bankAdjustPct(b,1)}</td><td class="${cls}">${ch>=0?'+':''}${bankAdjustPp(ch,1)}</td><td style="text-align:left">${readings[name]}</td></tr>`}).join('');
+  bankAdjustmentRendered=true;
+}
+function downloadBankAdjustmentCsv(){
+  const d=BANK_ADJUSTMENT_2024,m=bankAdjustModel(),lines=['tipo,periodo,indicador,valor,unidad,nota'];
+  d.indec.years.forEach((y,i)=>{[['ahorro_bruto_pbi',d.indec.grossSaving[i]],['ingreso_primario_bruto_pbi',d.indec.primaryIncome[i]],['impuestos_corrientes_pbi',d.indec.currentTaxes[i]],['excedente_explotacion_bruto_pbi',d.indec.operatingSurplus[i]],['rentas_propiedad_netas_pbi',d.indec.propertyIncome[i]],['prestamo_neto_pbi',d.indec.netLending[i]]].forEach(([k,v])=>lines.push(`INDEC,${y},${k},${v},% PBI,"Sociedades de depósito excepto BCRA"`))});
+  [['tributario',m.taxPct,m.taxImf,m.taxMoney2024,m.taxMoneyCurrent],['ahorro_2023',m.savingPct,m.savingImf,m.savingMoney2024,m.savingMoneyCurrent],['historico_2016_2022',m.historicalPct,m.historicalImf,m.historicalMoney2024,m.historicalMoneyCurrent]].forEach(([k,v,imf,ars2024,arsCurrent])=>{lines.push(`contrafactual,2024,${k},${v.toFixed(4)},% giro primario 4.7 pp,"escenario alternativo; no sumar"`);lines.push(`contrafactual_FMI,2024,${k},${imf.toFixed(4)},% consolidación 5 pp,"denominador alternativo FMI"`);lines.push(`contrafactual_monto,2024,${k},${ars2024.toFixed(0)},ARS 2024,"PIB nominal 2024 × pp del PBI"`);lines.push(`contrafactual_monto,2026-07,${k},${arsCurrent.toFixed(0)},ARS jul-2026,"actualizado por IPC promedio 2024 → jul-2026; factor ${m.priceFactor.toFixed(6)}"`)});
+  lines.push(`base,2024,pib_nominal,${d.money.gdp2024Ars.toFixed(0)},ARS,"INDEC"`);lines.push(`base,2024,ipc_promedio,${d.money.ipcAvg2024.toFixed(6)},indice,"promedio mensual IPC nacional"`);lines.push(`base,2026-07,ipc,${d.money.ipcJul2026.toFixed(6)},indice,"último IPC oficial disponible al 23-08-2026"`);
+  lines.push(`hogares,2023-12_2026-07,pinza_financiera_post,${m.pinch.toFixed(0)},ARS jul-2026,"costo del lado hogar; no ganancia bancaria"`);
+  lines.push(`hogares,2023-12_2026-07,pinza_sobre_agujero_bruto,${m.pinchGross.toFixed(4)},%,"derivado del dashboard"`);lines.push(`hogares,2023-12_2026-07,pinza_sobre_saldo_no_recuperado,${m.pinchRemaining.toFixed(4)},%,"derivado del dashboard"`);
+  const blob=new Blob(['\ufeff'+lines.join('\n')],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bancos_vs_ajuste_2024.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},0);
+}
+document.querySelector('.tab-btn[data-tab="tab-rates"]')?.addEventListener('click',()=>requestAnimationFrame(renderBankAdjustment2024));
+if(document.getElementById('tab-rates')?.classList.contains('active'))requestAnimationFrame(renderBankAdjustment2024);
+window.addEventListener('resize',()=>{if(!bankAdjustmentRendered||!window.Plotly)return;['bankAdjustScenarioChart','bankAdjustSavingChart','bankAdjustProfitChart','bankAdjustCapitalChart'].forEach(id=>{const el=document.getElementById(id);if(el)Plotly.Plots.resize(el)})});
+</script>
+
 <script id="source-register-v149-script">
 function sourceProjectAsset(path){
   const clean=String(path||'').replace(/^\.\//,'');
@@ -21312,5 +21990,6 @@ function normalizeSourceRegisters(){
 }
 normalizeSourceRegisters();
 </script>
+<!-- SELF_CONTAINED_EDITORIAL_PASS: 2026-08-23 -->
 </body>
 </html>
