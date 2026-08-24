@@ -1,16 +1,21 @@
+// Paletas categóricas validadas (dataviz: banda de luminosidad OKLCH, piso de
+// croma, separación CVD protan/deutan y visión normal) contra la superficie de
+// cada skin. Orden fijo de series: ámbar · cian · verde · índigo · magenta ·
+// violeta · naranja · teal. Los tonos favorable/desfavorable reusan los tokens
+// --mint/--negative de cada skin, reforzados con el signo +$/−$ en la lectura.
 export const plotlyThemePalettes = {
   'blue-dark': {
-    series: ['#38bdf8', '#818cf8', '#2dd4bf', '#fbbf24', '#f472b6', '#a78bfa', '#22c55e', '#fb7185'],
+    series: ['#b28d00', '#12a0cf', '#12a466', '#6a68ff', '#dd2f86', '#b552e6', '#cf7000', '#0f9795'],
     positive: '#34d399',
     negative: '#fb7185',
   },
   'rose-dark': {
-    series: ['#fb7185', '#fdba74', '#c4b5fd', '#5eead4', '#facc15', '#f472b6', '#67e8f9', '#a7f3d0'],
+    series: ['#9d7c00', '#008db7', '#00995c', '#6866ff', '#e50085', '#bb00fa', '#be6600', '#009391'],
     positive: '#5eead4',
     negative: '#f43f5e',
   },
   'rose-light': {
-    series: ['#be123c', '#6d28d9', '#0f766e', '#c2410c', '#1d4ed8', '#be185d', '#a16207', '#475569'],
+    series: ['#8b6d00', '#007399', '#a15500', '#008a7f', '#5122ff', '#b5005e', '#9500c0', '#007d4d'],
     positive: '#0f766e',
     negative: '#be123c',
   },

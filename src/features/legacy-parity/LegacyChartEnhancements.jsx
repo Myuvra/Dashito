@@ -55,10 +55,21 @@ function captureAxisState(axis = {}) {
   }
 }
 
+const nominalPresidents = [
+  'Eduardo Duhalde', 'Néstor Kirchner', 'Cristina Fernández',
+  'Mauricio Macri', 'Alberto Fernández', 'Javier Milei',
+]
+
 function reflowNominalAnnotations(annotations = [], chartWidth = 0) {
   const compact = chartWidth > 0 && chartWidth < 1200
   return annotations.map((annotation) => {
     const text = String(annotation?.text || '')
+    // La banda de mandatos baja hasta rozar el plot para liberar la franja
+    // superior a la leyenda y separarse del callout "Diciembre 2023", que
+    // apunta hacia arriba. Excluye la anotación in-plot "asume Milei".
+    if (nominalPresidents.some((president) => text.includes(president)) && !text.includes('asume Milei')) {
+      return { ...annotation, y: 1.05, yanchor: 'bottom' }
+    }
     if (text.includes('Diciembre 2023') || (text.includes('dic-23') && text.includes('+25,5%'))) {
       return {
         ...annotation,
@@ -118,9 +129,12 @@ function reflowPowerAnnotations(annotations = [], chartWidth = 0) {
     const text = String(annotation?.text || '')
     const presidentIndex = presidents.findIndex((president) => text.includes(president))
     if (presidentIndex >= 0) {
+      // Con leyenda interna (ancho) la banda de mandatos baja hasta rozar el
+      // plot para dejar la franja superior a la leyenda; sólo escalona cuando la
+      // leyenda es externa y el eje queda libre arriba.
       return {
         ...annotation,
-        y: staggerPresidents ? (presidentIndex % 2 ? 1.17 : 1.105) : compact ? 1.105 : 1.095,
+        y: staggerPresidents ? (presidentIndex % 2 ? 1.17 : 1.105) : 1.055,
         yanchor: 'bottom',
       }
     }
@@ -179,14 +193,47 @@ function annotationPositions(annotations = []) {
   }))
 }
 
+const mandateBandNames = ['Duhalde', 'Kirchner', 'Fernández', 'Macri', 'Milei']
+
+// Muchos gráficos sin leyenda heredan de Legacy un margen superior amplio (~135)
+// pensado para una leyenda que no existe: la banda de mandatos queda pegada al
+// plot y encima sobra una franja vacía. Cuando el único contenido de esa franja
+// es la banda de mandatos, ajustamos el margen para eliminar el espacio muerto.
+function tightenIdleTopMargin(chart) {
+  if (chart.id === 'powerChart' || chart.id === 'nominalChart') return
+  if (chart.dataset.dashitoTopMarginTightened === 'true') return
+  if (chart.layout?.showlegend !== false) return
+  const annotations = chart.layout?.annotations || []
+  const bandY = annotations
+    .filter((a) => a.y > 1 && a.y < 1.2 && mandateBandNames.some((name) => String(a.text || '').includes(name)))
+    .map((a) => a.y)
+  if (!bandY.length) return
+  const current = chart.layout?.margin?.t
+  const target = 78
+  if (!(current > target + 6)) return
+  chart.dataset.dashitoTopMarginTightened = 'true'
+  Promise.resolve(window.Plotly.relayout(chart, { 'margin.t': target }))
+    .finally(() => { delete chart.dataset.dashitoTopMarginTightened })
+}
+
 function syncNominalAnnotationLayout(chart) {
   if (chart.id !== 'nominalChart' || chart.clientWidth <= 720 || chart.dataset.dashitoAnnotationRelayout === 'true') return
   const current = chart.layout?.annotations || []
   const next = reflowNominalAnnotations(current, chart.clientWidth)
-  if (JSON.stringify(annotationPositions(current)) === JSON.stringify(annotationPositions(next))) return
+  // Leyenda al tope y margen ajustado: elimina el espacio muerto entre el borde
+  // superior y el glosario, y deja la leyenda pegada a la banda de mandatos.
+  const targetTopMargin = chart.clientWidth < 860 ? 185 : 150
+  const targetLegendY = 1.19
+  const positionsMatch = JSON.stringify(annotationPositions(current)) === JSON.stringify(annotationPositions(next))
+  const legendPlaced = chart.layout?.legend?.y === targetLegendY && chart.layout?.legend?.yanchor === 'bottom'
+  if (positionsMatch && chart.layout?.margin?.t === targetTopMargin && legendPlaced) return
   chart.dataset.dashitoAnnotationRelayout = 'true'
-  Promise.resolve(window.Plotly.relayout(chart, { annotations: next }))
-    .finally(() => { delete chart.dataset.dashitoAnnotationRelayout })
+  Promise.resolve(window.Plotly.relayout(chart, {
+    annotations: next,
+    'margin.t': targetTopMargin,
+    'legend.y': targetLegendY,
+    'legend.yanchor': 'bottom',
+  })).finally(() => { delete chart.dataset.dashitoAnnotationRelayout })
 }
 
 function syncPowerAnnotationLayout(chart, { externalLegend = false } = {}) {
@@ -195,13 +242,72 @@ function syncPowerAnnotationLayout(chart, { externalLegend = false } = {}) {
   const next = window.innerWidth <= 720 ? current : reflowPowerAnnotations(current, chart.clientWidth)
   const targetTopMargin = externalLegend
     ? (window.innerWidth <= 720 ? 96 : chart.clientWidth <= 960 ? 136 : 112)
-    : chart.clientWidth < 1200 ? 196 : 176
+    : chart.clientWidth < 1200 ? 220 : 210
   const positionsMatch = JSON.stringify(annotationPositions(current)) === JSON.stringify(annotationPositions(next))
   const showLegend = !externalLegend
-  if (positionsMatch && chart.layout?.margin?.t === targetTopMargin && chart.layout?.showlegend === showLegend) return
+  // Con la leyenda interna la subimos por encima de la banda de mandatos para
+  // que ninguna de las dos invada el plot; en modo externo queda oculta.
+  const targetLegendY = 1.2
+  const legendPlaced = externalLegend || (chart.layout?.legend?.y === targetLegendY && chart.layout?.legend?.yanchor === 'bottom')
+  if (positionsMatch && chart.layout?.margin?.t === targetTopMargin && chart.layout?.showlegend === showLegend && legendPlaced) return
+  const relayout = { annotations: next, 'margin.t': targetTopMargin, showlegend: showLegend }
+  if (!externalLegend) { relayout['legend.y'] = targetLegendY; relayout['legend.yanchor'] = 'bottom' }
   chart.dataset.dashitoPowerAnnotationRelayout = 'true'
-  Promise.resolve(window.Plotly.relayout(chart, { annotations: next, 'margin.t': targetTopMargin, showlegend: showLegend }))
+  Promise.resolve(window.Plotly.relayout(chart, relayout))
     .finally(() => { delete chart.dataset.dashitoPowerAnnotationRelayout })
+}
+
+const reserveFlowCaptionRe = /suma reservas|deuda que refuer|resta reservas/
+
+// El flujo de reservas trae una leyenda horizontal y tres captions de color en
+// el mismo nivel (~y 1.13): se pisan entre sí y dejan una franja vacía arriba.
+// Los apilamos —leyenda encima, captions debajo— y ajustamos el margen.
+function syncReserveFlowLayout(chart) {
+  if (chart.id !== 'sovereignReserveFlowChart' || chart.dataset.dashitoReserveFlowRelayout === 'true') return
+  if (window.innerWidth <= 720) return
+  const current = chart.layout?.annotations || []
+  const captionY = 1.14
+  const next = current.map((annotation) => reserveFlowCaptionRe.test(String(annotation?.text || ''))
+    ? { ...annotation, y: captionY }
+    : annotation)
+  const targetTopMargin = chart.clientWidth < 1000 ? 160 : 140
+  const targetLegendY = 1.28
+  const positionsMatch = JSON.stringify(annotationPositions(current)) === JSON.stringify(annotationPositions(next))
+  const legendPlaced = chart.layout?.legend?.y === targetLegendY && chart.layout?.legend?.yanchor === 'bottom'
+  if (positionsMatch && chart.layout?.margin?.t === targetTopMargin && legendPlaced) return
+  chart.dataset.dashitoReserveFlowRelayout = 'true'
+  Promise.resolve(window.Plotly.relayout(chart, {
+    annotations: next,
+    'margin.t': targetTopMargin,
+    'legend.y': targetLegendY,
+    'legend.yanchor': 'bottom',
+  })).finally(() => { delete chart.dataset.dashitoReserveFlowRelayout })
+}
+
+// Reubicaciones puntuales de anotaciones que en Legacy quedan encimadas al
+// reconstruir el gráfico (la etiqueta de banda "pandemia 2020–2021" choca con
+// un callout de dato o con la banda de mandatos). Cada regla mueve una sola
+// anotación identificada por su texto.
+const annotationNudges = {
+  socialLongChart: [{ match: /IFE \+ ATP/i, set: { ax: -46, ay: 104 } }],
+  structureCabaChart: [{ match: /pandemia 2020/i, set: { y: 0.92 } }],
+}
+
+function syncAnnotationNudges(chart) {
+  const rules = annotationNudges[chart.id]
+  if (!rules || chart.dataset.dashitoAnnotationNudges === 'true' || window.innerWidth <= 720) return
+  const current = chart.layout?.annotations || []
+  let changed = false
+  const next = current.map((annotation) => {
+    const rule = rules.find((candidate) => candidate.match.test(String(annotation?.text || '')))
+    if (!rule || Object.entries(rule.set).every(([key, value]) => annotation[key] === value)) return annotation
+    changed = true
+    return { ...annotation, ...rule.set }
+  })
+  if (!changed) return
+  chart.dataset.dashitoAnnotationNudges = 'true'
+  Promise.resolve(window.Plotly.relayout(chart, { annotations: next }))
+    .finally(() => { delete chart.dataset.dashitoAnnotationNudges })
 }
 
 function ScaleControl({ chart, axes, blockedAxes = [], axisCount = axes.length }) {
@@ -377,6 +483,7 @@ export default function LegacyChartEnhancements({ rootRef, activeId, ready, them
       for (const chart of root.querySelectorAll('.js-plotly-plot')) {
         if (!chart.id || !chart.data || !chart.layout) continue
         applyPlotlyTheme(chart, theme)
+        tightenIdleTopMargin(chart)
         let hosts = hostsRef.current.get(chart)
         if (!hosts?.before?.isConnected || !hosts?.after?.isConnected) {
           hosts?.before?.remove()
@@ -395,6 +502,8 @@ export default function LegacyChartEnhancements({ rootRef, activeId, ready, them
         const externalLegend = chart.id === 'powerChart' && (window.innerWidth <= 720 || chart.clientWidth <= 960)
         syncNominalAnnotationLayout(chart)
         syncPowerAnnotationLayout(chart, { externalLegend })
+        syncReserveFlowLayout(chart)
+        syncAnnotationNudges(chart)
         const legendItems = externalLegend ? externalLegendItems(chart) : []
         if (externalLegend) {
           chart.dataset.dashitoExternalLegend = 'true'
