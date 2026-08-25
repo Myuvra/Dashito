@@ -3586,3 +3586,2310 @@ html[data-dashito-theme] .legacy-theme-scope .taxmap-cell.na { color: var(--da-m
 
 /* ---- cm-divider ---- */
 html[data-dashito-theme] .legacy-theme-scope :where(.cm-divider) { background: var(--da-border) !important; }
+
+/* ============================================================================
+   Migración index(8) · pase 2 · tematizado auto-generado de familias con fondo
+   claro que el theme-audit no cubría (punto ciego: fondos translúcidos). Mapea
+   fondo->surface, texto->text/muted, semántica por hue. Generado desde base.css.
+   ========================================================================== */
+html[data-dashito-theme] .legacy-theme-scope .emae-hero,.emae-panel {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-hero {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-control {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-chart-controls {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-chart-controls-copy {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-chart-controls-copy b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-kpi {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-reading {
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-stat {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-stat.loss {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-stat.gain {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-stat small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-stat strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-table-wrap {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-btn {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-btn:hover {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-source-list {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .emae-badge {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-cost-audit {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-cost-audit h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-cost-disclaimer {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-cost-disclaimer b {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card .tag {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card .val {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card.recovered .val {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card.financial {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card.financial .val {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card.editorial .val {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card.remaining {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-bridge-card.remaining .val {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-item {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-item.fintech {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-item .audit-tag {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-item.fintech .audit-amount {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-summary {
+  border-left-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-audit {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-audit .audit-amount {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-financial-audit p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-cost-kpi .val.household-relief,.milei-bridge-card .val.household-relief {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-shell {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hero {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-head h2,.pend-head h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kicker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-quote {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-quote small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-control {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-control>span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-btn {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-btn:hover,.pend-btn:focus-visible {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-btn.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi.work {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi.capital {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi.index {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi.work strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi.capital strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-reading {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-reading b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-everyday {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-everyday::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-everyday-head h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-everyday-head p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-sticker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece:not(:last-child)::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece.rta {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece.imb {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece.eeb {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece.rta strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece.imb strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece.eeb strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-hundred-piece span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-everyday-bottom {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-everyday-bottom b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-chart-sticker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-chart-sticker.up {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-chart-sticker.down {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-chart-sticker.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-plain-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-plain-card b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-plain-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-plain-card.up {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-plain-card.down {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-plain-card.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-average-control {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-average-control b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-average-control span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-political {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-political-head h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-political-head p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-number {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-number h5 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-number h5 span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-metric {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-metric small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-metric strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gov-number .reading {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-political-summary {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-political-summary b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-component {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-component b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-component .who {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-component .who strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-legend-note {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-table-wrap {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-table-wrap th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-move-work {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-move-capital {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-no-data {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-verdict>div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-verdict h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-verdict ul {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-conclusion {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-conclusion b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contrast {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contrast h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contrast dt {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contrast dd {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contrast .coverage {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-link {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-link:hover {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-method details {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-method summary {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-method details>div {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-formula {
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-source-box {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-source-box a {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-hero::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-title {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-lede {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-circuit-step {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-circuit-step:not(:last-child)::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-circuit-step small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-circuit-step b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-circuit-step span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contract {
+  border-left-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-contract b {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-layer-nav-wrap {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-layer-btn {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-layer-btn.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-layer-question {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-layer-question small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.flow {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.stock {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.ratio {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.counter {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.scenario {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.evidence-a {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.evidence-b {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.evidence-c {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-meta.evidence-d {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric.neutral {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric.good strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric.bad strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-power-metric .perspective {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-actor {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-actor h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-actor p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-actor b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gate {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gate h4 {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-gate p {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-pending div {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-pending b {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-risk-table {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-risk-table th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-risk-high {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-risk-medium {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-evidence {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-evidence b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-evidence span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-disabled-lab {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-disabled-lab h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-disabled-lab p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-lab-status div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-lab-status b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-lab-status span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-lab-status .blocked {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-lab-status .ready {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-observed {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-term {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-term small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-term b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-term p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-term.missing {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-term.separate {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card.cost {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card.saving {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card.gap {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card.cost strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card.saving strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-now-card .date {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-plain {
+  border-left-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-plain b {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-source {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-observed {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi.owner {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi.renter {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi.other {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi.owner strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi.renter strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-kpi p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-change {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-change small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-change h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-change p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-change b.owner {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-change b.renter {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-plain {
+  border-left-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-housing-plain b {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-observed {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi.surplus {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi.deficit {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi.partial {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi.surplus strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi.deficit strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi.partial strong {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-kpi p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-plain {
+  border-left-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-plain b {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component.counter {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component.budget {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component.observed {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component.scenario {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-component .status {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-type {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-type b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fiscal-type span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-shell {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-hero {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-head h2,.road-head h3,.road-head h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kicker,.road-pill {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-pill.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-pill.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-pill.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-question {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-question small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-five div {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-five b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi.green {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi.green strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi.pink {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi.pink strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi.gold {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-kpi.gold strong {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-plain {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-plain b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-mini {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-mini h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-mini strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-legal {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-legal h4 {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-legal p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-type {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-type b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-type span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-flow-model {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-flow-model h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-step {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-down {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-vs {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-logistics {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-logistics b {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-funding article {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-funding h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-funding ul {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bice {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bice-grid div {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bice-grid small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bice-grid strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bar-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bar-card h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bar-track {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bar-fill {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-bar-fill.traffic {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-field {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-field label {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-field input {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-field output {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-result {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-result small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-result strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-sim-verdict {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-sim-verdict.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-sim-verdict.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-def {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-def b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-def span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-formula {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-formula h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-formula code {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-table-wrap {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-table th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-filter button {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-filter button.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-time {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-time b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-time span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-time:not(:last-child)::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-faq details,.road-method details {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-faq summary,.road-method summary {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-faq details div,.road-method details div {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-final {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-final h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-final>p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-link {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-source {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-source a {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-muted {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-sd {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .road-note b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-shell {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-hero {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-head h2,.tour-head h3,.tour-head h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kicker,.tour-pill {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-pill.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-pill.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-pill.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-question {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-question small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-dimensions div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-dimensions b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi.green {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi.green strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi.pink {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi.pink strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi.gold {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-kpi.gold strong {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-plain {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-plain b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-mini {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-mini h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-mini strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-controls button,.tour-link {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-controls button.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-check {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-callout {
+  border-left-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-callout.green {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-callout.gold {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-flow-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-flow-card h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-step {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-arrow {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-vs {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-source-tag {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-region {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-region small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-region strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-bar-track {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-bar-fill {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-bar-fill.good {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-bar-fill.bad {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-sticker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-formula {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-formula code {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-sd {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-faq details,.tour-method details {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-faq summary,.tour-method summary {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-faq details div,.tour-method details div {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-final {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-final h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-final>p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-summary div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-summary b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-summary span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-source {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-source a {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-table-wrap {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-table th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .tour-caveat {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-controls {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-controls label {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-controls select {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-controls p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-kpi.reference {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-kpi .asset-access {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-plain {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-plain b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card .access-verdict {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card .access-verdict.warn {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-access-card .access-verdict.no {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-sens-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-sens-card b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-sens-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-sens-card span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-sens-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-asset-warning {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-finance-evidence {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi.pink strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi.blue strong {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi.green strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-kpi p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-note {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-note b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-caveats span {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-caveats b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-evidence-caveats .warn {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card.good {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card.good strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card.warn {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-roa-card.warn strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-separation {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-separation h4 {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-fin-separation p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-controls-context {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-controls-context::before {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-controls.pend-controls-near-chart {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-controls-near-chart .pend-control>span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-controls-near-chart .pend-toggle-action {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-controls-near-chart .pend-toggle-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .bank-adjust-badge.central {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .bank-adjust-badge.aggressive {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer .layer-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer-card b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer-card.debtor b {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer-card.saver b,.milei-layer-card.balance b {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer.sensitivity {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer.references {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .milei-layer.capacity {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .ca-flow {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .ca-flow span {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .ca-flow i,.ca-flow b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .ca-flow .mora {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-taxmap-card {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-taxmap-kpis>div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-taxmap-kpis small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-taxmap-kpis strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .legacy-theme-scope .pend-taxmap-kpis span {
+  color: var(--da-muted) !important;
+}
+/* gap consumption: banners "Lectura" (.co-super-story>div) sin clase, fondo blanco */
+html[data-dashito-theme] .legacy-theme-scope .co-super-story>div {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+html[data-dashito-theme] .legacy-theme-scope .co-super-story>div b { color: var(--da-text) !important; }
