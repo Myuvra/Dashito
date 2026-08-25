@@ -108,7 +108,7 @@ html[data-dashito-theme] {
   scrollbar-color: var(--da-border-strong) transparent;
 }
 
-html[data-dashito-theme] body {
+html[data-dashito-theme] {
   margin: 0 !important;
   overflow-x: hidden !important;
   background:
@@ -125,7 +125,7 @@ html[data-dashito-theme] .tabs {
   display: none !important;
 }
 
-html[data-dashito-theme] body::after {
+html[data-dashito-theme]::after {
   content: none !important;
   display: none !important;
 }
@@ -349,12 +349,12 @@ html[data-dashito-theme] .structure-thesis { color: var(--da-text) !important; }
 html[data-dashito-theme] .structure-thesis .warn {
   border: 0 !important;
   background: transparent !important;
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 html[data-dashito-theme] .structure-thesis .good {
   border: 0 !important;
   background: transparent !important;
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 html[data-dashito-theme] .structure-head .small { color: var(--da-muted) !important; }
 
@@ -827,11 +827,21 @@ html[data-dashito-theme] #tab-rates :where(.rates-public-who .question, .rates-w
 }
 
 html[data-dashito-theme] #tab-rates .rates-public-who .winner {
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-rates .rates-public-who .loser {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
+}
+
+/* Números grandes de la trío antes/después: base.css los deja en hex del tema
+   claro; se les da override oscuro suavizado, coherente con las tarjetas de saldo. */
+html[data-dashito-theme] #tab-rates .rates-public-step.before .rates-public-step-amount {
+  color: color-mix(in srgb, var(--da-mint) 70%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] #tab-rates .rates-public-step.after .rates-public-step-amount {
+  color: color-mix(in srgb, var(--da-bad) 70%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-rates :where(.rates-public-who .nuance, .rates-public-conclusion b) {
@@ -910,7 +920,7 @@ html[data-dashito-theme] #tab-rates :where(.rates-fintech-panel .tag, .rates-fin
 }
 
 html[data-dashito-theme] #tab-rates :where(.rates-fintech-panel .big, .rates-fintech-metric .metric-value) {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-rates :where(.rates-fintech-panel .mini, .rates-fintech-metric .metric-note) {
@@ -964,7 +974,7 @@ html[data-dashito-theme] label { color: var(--da-muted) !important; }
 html[data-dashito-theme] :where(.note.good, .positive, .favorable, .success, .surplus, .up) {
   border-color: color-mix(in srgb, var(--da-mint) 38%, transparent) !important;
   background: color-mix(in srgb, var(--da-mint) 10%, var(--da-surface)) !important;
-  color: var(--da-mint) !important;
+  color: var(--da-text) !important;
 }
 
 html[data-dashito-theme] :where(.note.good, .positive, .favorable, .success, .surplus, .up, .winner) :where(strong, b, .big, .value, .amount) {
@@ -974,7 +984,7 @@ html[data-dashito-theme] :where(.note.good, .positive, .favorable, .success, .su
 html[data-dashito-theme] :where(.note.warn, .warning, .caution, .watch) {
   border-color: color-mix(in srgb, var(--da-amber) 38%, transparent) !important;
   background: color-mix(in srgb, var(--da-amber) 9%, var(--da-surface)) !important;
-  color: var(--da-amber) !important;
+  color: var(--da-text) !important;
 }
 
 html[data-dashito-theme] :where(.note.warn, .warning, .caution, .watch) :where(strong, b, .big, .value, .amount) {
@@ -984,11 +994,28 @@ html[data-dashito-theme] :where(.note.warn, .warning, .caution, .watch) :where(s
 html[data-dashito-theme] :where(.negative, .critical, .danger, .bad, .deficit, .down, .desfavorable) {
   border-color: color-mix(in srgb, var(--da-bad) 38%, transparent) !important;
   background: color-mix(in srgb, var(--da-bad) 9%, var(--da-surface)) !important;
-  color: var(--da-bad) !important;
+  color: var(--da-text) !important;
 }
 
 html[data-dashito-theme] :where(.negative, .critical, .danger, .bad, .deficit, .down, .desfavorable, .loser) :where(strong, b, .big, .value, .amount) {
   color: var(--da-bad) !important;
+}
+
+/* Suavizado de acento en tarjetas de saldo ("billones"): el número gigante y la
+   frase-guía "¿a quién le convino?" bajan a un tono menos vibrante para que no
+   griten; el borde, el fondo tintado y los rótulos inline siguen dando la señal. */
+html[data-dashito-theme] :where(.note.good, .positive, .favorable, .success, .surplus, .up) .big,
+html[data-dashito-theme] .winner {
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] :where(.note.warn, .warning, .caution, .watch) .big {
+  color: color-mix(in srgb, var(--da-amber) 72%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] :where(.negative, .critical, .danger, .bad, .deficit, .down, .desfavorable) .big,
+html[data-dashito-theme] .loser {
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] table {
@@ -1137,7 +1164,21 @@ html[data-dashito-theme] #tab-rates .formula-card .formula {
 
 html[data-dashito-theme] #tab-rates .formula-result {
   margin-top: 10px !important;
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
+}
+
+/* .formula-result se usa en ~10 tabs pero sólo tenía override oscuro en #tab-rates
+   y #tab-family; en el resto caía a los hex del tema claro (plum #773f65 y verde
+   #2d8061). Override global: resultado en texto neutro, variante favorable en mint
+   suave. Las reglas #tab-rates/#tab-family (con id) siguen ganando donde aplican. */
+html[data-dashito-theme] .formula-result {
+  color: var(--da-text) !important;
+}
+html[data-dashito-theme] .formula-card.favorable .formula-result {
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
+}
+html[data-dashito-theme] .formula-card.critical .formula-result {
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] footer {
@@ -1192,7 +1233,7 @@ html[data-dashito-theme] .hoverlayer .hovertext path { fill: var(--da-surface-2)
 html[data-dashito-theme] .hoverlayer .hovertext text { fill: var(--da-text) !important; }
 
 @media (max-width: 760px) {
-  html[data-dashito-theme] body { font-size: 13px !important; }
+  html[data-dashito-theme] { font-size: 13px !important; }
   html[data-dashito-theme] .wrap { padding: 14px 11px 82px !important; }
   html[data-dashito-theme] :where(.card, .sources-box, .formulas-box, .method-shield, .household-sign-key) { border-radius: 12px !important; }
   html[data-dashito-theme] :where(.grid, .power-info-grid, .formula-grid, .household-sign-key-grid) { gap: 11px !important; }
@@ -1766,7 +1807,30 @@ html[data-dashito-theme] :where(
 html[data-dashito-theme] :where(.mor-caution, .mor-rates-jump) {
   border-color: color-mix(in srgb, var(--da-amber) 38%, transparent) !important;
   background: color-mix(in srgb, var(--da-amber) 9%, var(--da-surface)) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] :where(.mor-caution, .mor-rates-jump) b {
   color: var(--da-amber) !important;
+}
+
+/* Banner "Pregunta distributiva": en Legacy queda blanco fijo y encandila en modo
+   oscuro. Se integra a una superficie tintada del tema; el botón ya está tematizado. */
+html[data-dashito-theme] .bank-adjust-jump {
+  border: 1px solid color-mix(in srgb, var(--da-primary) 30%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-primary) 8%, var(--da-surface-2)) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .bank-adjust-jump b {
+  color: var(--da-primary) !important;
+}
+
+/* rose-light: el muted (#725b64) sobre el banner claro daba ~3,4:1 (bajo WCAG AA
+   para texto chico). Se oscurece hacia el texto para superar 4,5:1 manteniendo el
+   tono suave. En las skins oscuras el muted ya rinde 10–11:1, así que no se toca. */
+html[data-dashito-theme='rose-light'] .bank-adjust-jump {
+  color: color-mix(in srgb, var(--da-muted) 38%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] :where(
@@ -1925,31 +1989,31 @@ html[data-dashito-theme] #tab-poverty .mandate-change .pct {
 html[data-dashito-theme] #tab-poverty .mandate-change.down {
   border-color: color-mix(in srgb, var(--da-mint) 48%, var(--da-border)) !important;
   background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-mint) 12%) !important;
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-poverty .mandate-change.down :where(.pct, strong, b) {
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-poverty .mandate-change.up {
   border-color: color-mix(in srgb, var(--da-bad) 48%, var(--da-border)) !important;
   background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-bad) 12%) !important;
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-poverty .mandate-change.up :where(.pct, strong, b) {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-poverty .mandate-cards > .mandate-card:first-child .mandate-change {
   border-color: color-mix(in srgb, var(--da-amber) 48%, var(--da-border)) !important;
   background: color-mix(in srgb, var(--da-surface-2) 90%, var(--da-amber) 10%) !important;
-  color: var(--da-amber) !important;
+  color: color-mix(in srgb, var(--da-amber) 72%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-poverty .mandate-cards > .mandate-card:first-child .mandate-change :where(.pct, strong, b) {
-  color: var(--da-amber) !important;
+  color: color-mix(in srgb, var(--da-amber) 72%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #povertyChart .legend {
@@ -2472,7 +2536,7 @@ html[data-dashito-theme] #tab-rates .rates-baseline-card .big {
 }
 
 html[data-dashito-theme] #tab-rates .rates-public-step.effect :where(.rates-public-step-amount, .rates-public-delta) {
-  color: var(--da-secondary) !important;
+  color: color-mix(in srgb, var(--da-secondary) 74%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-wealth-contribution :where(
@@ -2510,11 +2574,11 @@ html[data-dashito-theme] #tab-wealth-contribution :where(
 }
 
 html[data-dashito-theme] #tab-wealth-contribution :where(.good .val, .good b) {
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-wealth-contribution :where(.hot .val, .hot b) {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-milei-cost :where(
@@ -2559,11 +2623,11 @@ html[data-dashito-theme] #tab-milei-cost :where(
 }
 
 html[data-dashito-theme] #tab-milei-cost .milei-cost-amount {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-milei-cost .milei-return-total .amount {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-milei-cost .milei-shock-track {
@@ -2613,7 +2677,7 @@ html[data-dashito-theme] #tab-milei-cost :where(
   .household-plus, .milei-unified-components .household-plus,
   .milei-financial-item .household-plus
 ) {
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 /* Legacy v147+: Péndulo del poder económico */
@@ -2988,7 +3052,7 @@ html[data-dashito-theme] #tab-story .story-stat.good {
 }
 
 html[data-dashito-theme] #tab-story .story-stat.good b {
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-story .story-stat.warn {
@@ -2997,7 +3061,7 @@ html[data-dashito-theme] #tab-story .story-stat.warn {
 }
 
 html[data-dashito-theme] #tab-story .story-stat.warn b {
-  color: var(--da-bad) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] #tab-story .story-timeline::before {
@@ -3128,14 +3192,14 @@ html[data-dashito-theme] .source-register-status a:focus-visible {
 html[data-dashito-theme] .source-register-status .ok {
   border-color: color-mix(in srgb, var(--da-mint) 45%, var(--da-border)) !important;
   background: color-mix(in srgb, var(--da-surface-2) 88%, var(--da-mint) 12%) !important;
-  color: var(--da-mint) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] .source-register-status .warn,
 html[data-dashito-theme] .source-register-missing {
   border-color: color-mix(in srgb, var(--da-amber) 48%, var(--da-border)) !important;
   background: color-mix(in srgb, var(--da-surface) 91%, var(--da-amber) 9%) !important;
-  color: var(--da-amber) !important;
+  color: color-mix(in srgb, var(--da-amber) 72%, var(--da-text)) !important;
 }
 
 html[data-dashito-theme] .source-register-missing .source-register-standard {
@@ -3199,7 +3263,7 @@ html[data-dashito-theme] .chart-scale-btn {
 html[data-dashito-theme] .chart-scale-btn.active {
   border-color: color-mix(in srgb, var(--da-primary) 52%, var(--da-border)) !important;
   background: var(--da-primary) !important;
-  color: var(--da-primary-ink) !important;
+  color: var(--da-on-primary) !important;
 }
 
 html[data-dashito-theme] .chart-scale-control.filtered-log {
@@ -3296,3 +3360,229 @@ html[data-dashito-theme] .chart-scale-control.filtered-log {
     overflow-wrap: anywhere !important;
   }
 }
+
+/* ============================================================================
+   Migración index(8) · tematizado de los tabs/secciones nuevos para las 3 skins.
+   Todo con tokens --da-* (resuelven por skin). Semántica: good=mint · bad=bad ·
+   warn=amber · context=secondary · info=info. Contenedores=surface, texto
+   cuerpo=muted, títulos/strong=text.
+   ========================================================================== */
+
+/* ---- helpers de superficie/texto (familias credit-mora, mora-causal, taxmap,
+   consumo-super, handover, bank-adjust nuevos, rates nuevos) ---- */
+html[data-dashito-theme] :where(
+  .cm-hero, .cm-card, .cm-kpi, .cm-small-multiple, .cm-hypothesis, .cm-matrix>div,
+  .cm-flow .node, .cm-debtor-apb, .cm-controls label, .cm-controls select,
+  .ca-hero, .ca-card, .ca-kpis article, .ca-denoms article, .ca-timeline article,
+  .ca-lag-grid article, .ca-standards article, .ca-model-grid article, .ca-claims article,
+  .taxmap-hero, .taxmap-kpi, .taxmap-card, .taxmap-bridge article, .taxmap-sector-wrap, .taxmap-measure,
+  .co-super-kpi, .co-super-chart-panel, .co-super-mini,
+  .ho-kpi, .ho-mini-card, .ho-service, .ho-credit-kpi, .ho-rent-kpi, .ho-program, .ho-phase, .ho-faq details,
+  .bank-adjust-denom, .bank-adjust-bridge article, .bank-adjust-kpi, .bank-adjust-chart-card,
+  .bank-adjust-table-wrap, .bank-adjust-note,
+  .rates-compare-panel, .rates-equation .term, .rates-position-fallback
+) {
+  background: var(--da-surface) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+
+/* heroes/paneles con un tinte suave del acento primario */
+html[data-dashito-theme] :where(.cm-hero, .ca-hero, .taxmap-hero, .co-super-chart-panel, .co-super-kpi, .ho-kpi, .ho-mini-card, .ho-service, .ho-credit-kpi, .ho-rent-kpi, .ho-program, .ho-phase) {
+  background: color-mix(in srgb, var(--da-primary) 6%, var(--da-surface-2)) !important;
+}
+
+/* texto cuerpo / secundario -> muted */
+html[data-dashito-theme] :where(
+  .cm-shell, .cm-sub, .cm-note, .cm-kpi small, .cm-kpi span, .cm-hypothesis small, .cm-hypothesis p,
+  .cm-legend, .cm-source-note, .cm-bubble-note, .cm-missing, .cm-statline span, .cm-debtor-apb,
+  .ca-shell, .ca-sub, .ca-title p, .ca-kpis small, .ca-denoms small, .ca-standards time,
+  .ca-timeline time, .ca-missing, .ca-source-note, .ca-model-grid, .taxmap-head p, .taxmap-kpi small,
+  .taxmap-kpi p, .taxmap-card p, .taxmap-bridge small, .taxmap-bridge p, .taxmap-measure p, .taxmap-source-note,
+  .co-super-kpi .tag, .co-super-mini .tag, .co-super-kpi .mini, .co-super-mini small, .co-super-chart-panel p,
+  .ho-kpi .tag, .ho-mini-card .tag, .ho-service .tag, .ho-credit-kpi .tag, .ho-rent-kpi .tag, .ho-program .tag, .ho-phase .tag,
+  .ho-kpi .mini, .ho-mini-card .mini, .ho-service .mini, .ho-credit-kpi .mini, .ho-rent-kpi .mini, .ho-program .mini, .ho-phase .mini,
+  .ho-section-lead, .ho-separator-note, .ho-faq p,
+  .bank-adjust-lead, .bank-adjust-denom small, .bank-adjust-denom span, .bank-adjust-bridge .tag,
+  .bank-adjust-bridge p, .bank-adjust-kpi .tag, .bank-adjust-kpi p, .bank-adjust-kpi .subval,
+  .bank-adjust-chart-head span, .bank-adjust-note,
+  .rates-compare-head p, .rates-equation .term small, .rates-equation .op, .taxmap-legend, .cm-legend span
+) {
+  color: var(--da-muted) !important;
+}
+
+/* títulos / strong / b -> text */
+html[data-dashito-theme] :where(
+  .cm-head h2, .cm-head h3, .cm-small-multiple h4, .cm-hypothesis b, .cm-matrix b, .cm-flow .node b, .cm-debtor-apb strong,
+  .ca-head h2, .ca-title h3, .ca-kpis b, .ca-denoms b, .ca-timeline b, .ca-model-grid b, .ca-claims article>b,
+  .taxmap-head h2, .taxmap-head h3, .taxmap-card h3, .taxmap-card h4, .taxmap-kpi strong, .taxmap-bridge strong, .taxmap-measure h4, .taxmap-measure b, .taxmap-apb b,
+  .co-super-kpi .big, .co-super-mini strong, .co-super-chart-panel h4,
+  .ho-kpi .big, .ho-mini-card .big, .ho-service .big, .ho-credit-kpi .big, .ho-rent-kpi .big, .ho-program .big, .ho-phase .big,
+  .ho-audit strong, .ho-method-box strong, .ho-faq summary,
+  .bank-adjust-title, .bank-adjust-bridge b, .bank-adjust-kpi .val, .bank-adjust-chart-head h3, .bank-adjust-note h3, .bank-adjust-table td strong,
+  .rates-compare-head h3, .rates-equation .term strong, .rates-correction-banner b, .rates-correction-banner .headline
+) {
+  color: var(--da-text) !important;
+}
+
+/* ---- badges / pills / chips genéricos (neutro) ---- */
+html[data-dashito-theme] :where(.cm-badge, .cm-pill, .ca-badge, .ca-pill, .taxmap-badge, .cm-statline span, .cm-legend span, .taxmap-legend span, .ho-chip, .rates-equation .term) {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+/* ---- SEMÁNTICA (aplicada a variantes en todas las familias) ---- */
+/* good / verde */
+html[data-dashito-theme] :where(
+  .cm-kpi.good strong, .cm-evidence.a,
+  .ca-verdict strong, .ca-verdict small, .ca-pill.verdict, .ca-standards .loose b, .ca-kpis .good b, .grade.strong, .grade.strongest,
+  .taxmap-kpi.up strong, .taxmap-cell.good,
+  .bank-adjust-kpi.central .val, .bank-adjust-reading strong, .bank-adjust-reading .range, .bank-adjust-table .up,
+  #ratesMoneySection .rates-step-equation .chip.good, #ratesMoneySection .mini-equation .term.good
+) {
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
+}
+html[data-dashito-theme] :where(.ca-verdict, .ca-thesis, .ca-pill.verdict, .ca-standards .loose, .taxmap-cell.good, .grade.strong, .grade.strongest, .bank-adjust-kpi.central, .cm-evidence.a, #ratesMoneySection .rates-step-equation .chip.good, #ratesMoneySection .mini-equation .term.good, .ca-final blockquote) {
+  background: color-mix(in srgb, var(--da-mint) 12%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+/* bad / rosa-rojo */
+html[data-dashito-theme] :where(
+  .cm-kpi strong, .cm-critique b, .cm-strong-warning strong, .cm-critical-list b, .cm-inline-em, .cm-debtor-apb .formula,
+  .ca-kpis .bad b, .ca-lag-grid b, .ca-standards .restrict b, .ca-timeline time, .grade.no, .ca-flow .mora,
+  .taxmap-kpi.down strong, .taxmap-cell.bad,
+  .bank-adjust-kpi.household .val, .bank-adjust-table .down,
+  #ratesMoneySection .rates-step-equation .chip.bad, #ratesMoneySection .mini-equation .term.bad
+) {
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
+}
+html[data-dashito-theme] :where(.cm-critique, .cm-strong-warning, .cm-critical-list>div, .ca-standards .restrict, .ca-denoms article.accent, .taxmap-cell.bad, .grade.no, .ca-flow .mora, .bank-adjust-kpi.household, #ratesMoneySection .rates-step-equation .chip.bad, #ratesMoneySection .mini-equation .term.bad) {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 42%, var(--da-border)) !important;
+}
+/* warn / ámbar */
+html[data-dashito-theme] :where(
+  .cm-caution, .cm-evidence.c, .ca-kpis .warn b, .grade.weak,
+  .taxmap-cell.mixed, .taxmap-badge.estimate, .bank-adjust-kpi.aggressive .val, .bank-adjust-badge.aggressive
+) {
+  color: color-mix(in srgb, var(--da-amber) 72%, var(--da-text)) !important;
+}
+html[data-dashito-theme] :where(.cm-caution, .cm-evidence.c, .ca-caution, .grade.weak, .taxmap-cell.mixed, .taxmap-badge.estimate, .taxmap-method, .bank-adjust-kpi.aggressive, .bank-adjust-note.warn, .ho-audit.warn) {
+  background: color-mix(in srgb, var(--da-amber) 12%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 44%, var(--da-border)) !important;
+}
+/* context / púrpura */
+html[data-dashito-theme] :where(
+  .cm-kpi.context strong, .cm-quote-check .mark,
+  .ca-pill.derived, .grade.compat, .taxmap-kpi.projected strong, .taxmap-badge.projected,
+  .bank-adjust-kpi.balance .val, #ratesMoneySection .mini-equation .equals
+) {
+  color: color-mix(in srgb, var(--da-secondary) 74%, var(--da-text)) !important;
+}
+html[data-dashito-theme] :where(.grade.compat, .taxmap-badge.projected, .taxmap-kpi.projected, .cm-quote-check .mark, .cm-pill.derived) {
+  background: color-mix(in srgb, var(--da-secondary) 13%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+/* info / azul (official, conservative, exposure, cm-evidence.b) */
+html[data-dashito-theme] :where(
+  .ca-pill.official, .cm-evidence.b, .taxmap-cell.exposure, .bank-adjust-kpi.conservative .val, .bank-adjust-denom strong, .cm-pill.external
+) {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+html[data-dashito-theme] :where(.ca-pill.official, .cm-evidence.b, .taxmap-cell.exposure, .bank-adjust-kpi.conservative, .bank-adjust-denom, .cm-pill.external) {
+  background: color-mix(in srgb, var(--da-info) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-info) 38%, var(--da-border)) !important;
+}
+/* nd / neutro apagado */
+html[data-dashito-theme] :where(.cm-nd, .cm-evidence.nd, .ca-lag-grid .neutral b, .grade.nd, .taxmap-cell.na, .cm-flow i, .cm-flow .arrow, .ca-flow i, .ca-flow b) {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+/* ---- cajas con border-left de acento (readings / callouts / thesis) ---- */
+html[data-dashito-theme] :where(.cm-reading, .ca-thesis, .ca-callout, .rates-equation-note) {
+  background: color-mix(in srgb, var(--da-secondary) 8%, var(--da-surface-2)) !important;
+  border-left-color: color-mix(in srgb, var(--da-secondary) 55%, var(--da-border)) !important;
+  color: var(--da-text) !important;
+}
+html[data-dashito-theme] .ca-thesis { border-left-color: color-mix(in srgb, var(--da-mint) 55%, var(--da-border)) !important; background: color-mix(in srgb, var(--da-mint) 10%, var(--da-surface-2)) !important; }
+html[data-dashito-theme] .ca-caution { border-left-color: color-mix(in srgb, var(--da-amber) 55%, var(--da-border)) !important; color: var(--da-text) !important; }
+html[data-dashito-theme] .bank-adjust-reading { background: var(--da-surface) !important; border-left-color: color-mix(in srgb, var(--da-mint) 55%, var(--da-border)) !important; color: var(--da-text) !important; }
+
+/* ---- banners / heroes con gradiente claro ---- */
+html[data-dashito-theme] :where(.rates-correction-banner, #ratesMirrorTextSummary, .cm-hero, .ca-hero, .taxmap-hero, .bank-adjust-section) {
+  background: color-mix(in srgb, var(--da-primary) 6%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-primary) 26%, var(--da-border)) !important;
+  color: var(--da-text) !important;
+}
+html[data-dashito-theme] #ratesMirrorTextSummary { color: var(--da-muted) !important; }
+html[data-dashito-theme] .bank-adjust-eyebrow {
+  background: color-mix(in srgb, var(--da-bad) 12%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-bad) 66%, var(--da-text)) !important;
+}
+html[data-dashito-theme] .bank-adjust-badge.central {
+  background: color-mix(in srgb, var(--da-mint) 12%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 44%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-mint) 66%, var(--da-text)) !important;
+}
+
+/* ---- botones / links ---- */
+html[data-dashito-theme] :where(.cm-btn, .cm-link, .rates-compare-btn, .dash-topic-btn, .ca-source-links a, .cm-controls label) {
+  background: var(--da-surface) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+}
+html[data-dashito-theme] :where(.cm-btn:hover, .cm-link:hover, .dash-topic-btn:hover) {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border-strong) !important;
+}
+html[data-dashito-theme] :where(.rates-compare-btn.active, .dash-topic-btn.active, .dash-topic-btn[aria-pressed="true"]) {
+  background: var(--da-primary) !important;
+  border-color: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+}
+
+/* ---- tablas nuevas ---- */
+html[data-dashito-theme] :where(.cm-table th, .ca-evidence-table th, .taxmap-sector-table th, .bank-adjust-table th) {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+  border-color: var(--da-border) !important;
+}
+html[data-dashito-theme] :where(.cm-table td, .ca-evidence-table td, .taxmap-sector-table td, .bank-adjust-table td, .taxmap-sector-table td:first-child) {
+  color: var(--da-text) !important;
+  border-color: var(--da-border) !important;
+  background: transparent !important;
+}
+
+/* ---- badge repo-link ---- */
+html[data-dashito-theme] .badge.repo-link {
+  background: color-mix(in srgb, var(--da-secondary) 10%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 74%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+html[data-dashito-theme] :where(.badge.repo-link:hover, .badge.repo-link:focus-visible) {
+  background: color-mix(in srgb, var(--da-secondary) 16%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 55%, var(--da-border)) !important;
+  outline-color: color-mix(in srgb, var(--da-secondary) 40%, transparent) !important;
+}
+
+/* ---- ho- cajas de auditoría / formulas ---- */
+html[data-dashito-theme] :where(.ho-apb>div, .ho-history-notes>div, .ho-audit, .ho-method-box, .ho-formulas) {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+}
+html[data-dashito-theme] .ho-audit.ok { background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important; border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important; }
+html[data-dashito-theme] .ho-formulas code { color: color-mix(in srgb, var(--da-secondary) 70%, var(--da-text)) !important; }
+
+/* ---- taxmap método/measure meta ---- */
+html[data-dashito-theme] .taxmap-method { color: color-mix(in srgb, var(--da-amber) 72%, var(--da-text)) !important; }
+html[data-dashito-theme] .taxmap-measure .meta { background: var(--da-surface-2) !important; border-color: var(--da-border) !important; color: var(--da-muted) !important; }
+html[data-dashito-theme] .taxmap-cell.na { color: var(--da-muted) !important; }
+
+/* ---- cm-divider ---- */
+html[data-dashito-theme] :where(.cm-divider) { background: var(--da-border) !important; }

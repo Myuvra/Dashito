@@ -59,7 +59,9 @@ const expectedTabIds = [
   'tab-story', 'tab-power', 'tab-rates', 'tab-pres', 'tab-poverty', 'tab-social', 'tab-gini',
   'tab-structure', 'tab-family', 'tab-risk', 'tab-bigmac', 'tab-wholesale',
   'tab-health-education', 'tab-consumption', 'tab-work', 'tab-investment',
-  'tab-housing', 'tab-growth', 'tab-emae', 'tab-morosidad', 'tab-pendulo',
+  'tab-housing', 'tab-growth', 'tab-emae', 'tab-morosidad',
+  'tab-credit-mora', 'tab-mora-causal', 'tab-mora-anatomy', 'tab-youth-credit',
+  'tab-pendulo',
   'tab-roads', 'tab-tourism', 'tab-debt-public', 'tab-fiscal', 'tab-trade',
   'tab-bcra', 'tab-debt-spiral', 'tab-program', 'tab-wealth-contribution',
   'tab-milei-cost', 'tab-meli-benefits', 'tab-casta',
@@ -106,6 +108,8 @@ const scriptNames = [
   'runtime-pendulo-cft.js',
   'runtime-bank-adjustment.js',
   'runtime-source-register.js',
+  'runtime-consumption-supermarkets.js',
+  'runtime-credit-mora.js',
 ]
 if (scripts.length !== scriptNames.length) throw new Error(`Se esperaban ${scriptNames.length} scripts Legacy y se encontraron ${scripts.length}`)
 scripts.forEach((content, index) => writeFileSync(resolve(publicLegacy, scriptNames[index]), `${content}\n`, 'utf8'))

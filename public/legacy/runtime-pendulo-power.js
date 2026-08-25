@@ -12,14 +12,15 @@ function pendPowerAssetChange(value){const delta=value-100,sign=delta>0?'+':delt
 function pendPowerLast(rows,key){for(let i=rows.length-1;i>=0;i--)if(rows[i][key]!=null)return rows[i];return null}
 function renderPendPowerFinance(){
  const root=document.getElementById('pendPowerFinanceKpis');if(!root||typeof ratesMoneySummary==='undefined')return;
- const d=ratesMoneySummary.diferencial;
+ const d=ratesMoneySummary.diferencial,debtor=d.impacto_hogar_banco+d.impacto_hogar_fintech;
  const cards=[
-  ['Crédito bancario',d.impacto_hogar_banco,'Deudores','Empeoró respecto de la ventana espejo.','financial_bank_window_delta'],
-  ['Fintech / PNFC',d.impacto_hogar_fintech,'Deudores fintech','Empeoró; incluye cinco meses estimados.','financial_fintech_window_delta'],
-  ['Plazo fijo',d.impacto_hogar_pf,'Ahorristas','Mejoró y compensó las dos patas de crédito.','financial_pf_window_delta'],
-  ['Balance ampliado',d.impacto_hogar_total_ampliado,'Universos distintos','Mejoró en conjunto; no todos ganaron.','financial_expanded_balance_delta']
+  ['Lado deudor · banco + Fintech',debtor,'Deudores','Empeoró frente al espejo; comparación principal para mora.','financial_debtor_window_delta','PRINCIPAL'],
+  ['Plazo fijo',d.impacto_hogar_pf,'Ahorristas','Mejoró frente al espejo; otra posición financiera.','financial_pf_window_delta','PRINCIPAL'],
+  ['Balance ampliado',d.impacto_hogar_total_ampliado,'Universos distintos','Mejoró en conjunto porque PF dominó; no hogar promedio.','financial_expanded_balance_delta','PRINCIPAL'],
+  ['Crédito bancario',d.impacto_hogar_banco,'Deudores','Componente del deterioro deudor.','financial_bank_window_delta','COMPONENTE'],
+  ['Fintech / PNFC',d.impacto_hogar_fintech,'Deudores fintech','Componente; incluye cinco meses estimados.','financial_fintech_window_delta','COMPONENTE']
  ];
- root.innerHTML=cards.map(([title,value,who,reading,id])=>`<article class="pend-power-metric ${value>0?'good':value<0?'bad':'neutral'}" data-metric-id="${id}"><small>CONTRAFACTUAL · diferencial</small><strong>${pendPowerMoney(value)}</strong><p><b>${title}:</b> ${reading}</p><span class="perspective">Perspectiva: ${who} · + mejora / − empeora</span></article>`).join('');
+ root.innerHTML=cards.map(([title,value,who,reading,id,tier])=>`<article class="pend-power-metric ${value>0?'good':value<0?'bad':'neutral'}" data-metric-id="${id}"><small>${tier} · POST − ESPEJO</small><strong>${pendPowerMoney(value)}</strong><p><b>${title}:</b> ${reading}</p><span class="perspective">Perspectiva: ${who} · + mejora / − empeora</span></article>`).join('');
 }
 function pendPowerAssetRebased(baseDate){
  const start=Math.max(0,PEND_POWER_ASSETS.findIndex(r=>r.date===baseDate));
