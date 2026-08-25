@@ -3586,3 +3586,2310 @@ html[data-dashito-theme] .taxmap-cell.na { color: var(--da-muted) !important; }
 
 /* ---- cm-divider ---- */
 html[data-dashito-theme] :where(.cm-divider) { background: var(--da-border) !important; }
+
+/* ============================================================================
+   Migración index(8) · pase 2 · tematizado auto-generado de familias con fondo
+   claro que el theme-audit no cubría (punto ciego: fondos translúcidos). Mapea
+   fondo->surface, texto->text/muted, semántica por hue. Generado desde base.css.
+   ========================================================================== */
+html[data-dashito-theme] .emae-hero,.emae-panel {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .emae-hero {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .emae-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-control {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .emae-chart-controls {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .emae-chart-controls-copy {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-chart-controls-copy b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .emae-kpi {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .emae-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-reading {
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .emae-stat {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .emae-stat.loss {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .emae-stat.gain {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .emae-stat small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-stat strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .emae-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-table-wrap {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .emae-btn {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .emae-btn:hover {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .emae-source-list {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .emae-badge {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-cost-audit {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-cost-audit h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-cost-disclaimer {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-cost-disclaimer b {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card .tag {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card .val {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card.recovered .val {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card.financial {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card.financial .val {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card.editorial .val {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card.remaining {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-bridge-card.remaining .val {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-financial-item {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-financial-item.fintech {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-financial-item .audit-tag {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-financial-item.fintech .audit-amount {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-financial-summary {
+  border-left-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-financial-audit {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-financial-audit .audit-amount {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-financial-audit p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-cost-kpi .val.household-relief,.milei-bridge-card .val.household-relief {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-shell {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .pend-hero {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-head h2,.pend-head h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-kicker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-quote {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-quote small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-control {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-control>span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-btn {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-btn:hover,.pend-btn:focus-visible {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-btn.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .pend-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-kpi.work {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-kpi.capital {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-kpi.index {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-kpi.work strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-kpi.capital strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-reading {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-reading b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-everyday {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-everyday::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-everyday-head h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-everyday-head p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-sticker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece:not(:last-child)::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece.rta {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece.imb {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece.eeb {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece.rta strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece.imb strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece.eeb strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-hundred-piece span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-everyday-bottom {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-everyday-bottom b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-chart-sticker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .pend-chart-sticker.up {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-chart-sticker.down {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-chart-sticker.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-plain-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-plain-card b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-plain-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-plain-card.up {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-plain-card.down {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-plain-card.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-average-control {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-average-control b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-average-control span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-political {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-political-head h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-political-head p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-gov-number {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-gov-number h5 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-gov-number h5 span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-gov-metric {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-gov-metric small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-gov-metric strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-gov-number .reading {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-political-summary {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-political-summary b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-component {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-component b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-component .who {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-component .who strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-legend-note {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-table-wrap {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-table-wrap th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-move-work {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-move-capital {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-no-data {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-verdict>div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-verdict h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-verdict ul {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-conclusion {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-conclusion b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-contrast {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-contrast h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-contrast dt {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-contrast dd {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-contrast .coverage {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-link {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-link:hover {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-method details {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-method summary {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-method details>div {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-formula {
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-source-box {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-source-box a {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-hero::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-title {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-lede {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-circuit-step {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-circuit-step:not(:last-child)::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-circuit-step small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-circuit-step b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-circuit-step span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-contract {
+  border-left-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-contract b {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-layer-nav-wrap {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .pend-layer-btn {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-layer-btn.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .pend-layer-question {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-layer-question small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-meta {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-meta.flow {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.stock {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.ratio {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.counter {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.scenario {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.evidence-a {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.evidence-b {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.evidence-c {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-meta.evidence-d {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric.neutral {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric.good strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric.bad strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-power-metric .perspective {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-actor {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-actor h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-actor p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-actor b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-gate {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .pend-gate h4 {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-gate p {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-asset-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-pending div {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-pending b {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-risk-table {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-risk-table th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-risk-high {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-risk-medium {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-evidence {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-evidence b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-evidence span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-disabled-lab {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-disabled-lab h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-disabled-lab p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-lab-status div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-lab-status b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-lab-status span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-lab-status .blocked {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-lab-status .ready {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-finance-observed {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-finance-term {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-finance-term small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-finance-term b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-finance-term p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-finance-term.missing {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .pend-finance-term.separate {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card.cost {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card.saving {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card.gap {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card.cost strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card.saving strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fin-now-card .date {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-finance-plain {
+  border-left-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-finance-plain b {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-finance-source {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-housing-observed {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi.owner {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi.renter {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi.other {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi.owner strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi.renter strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-housing-kpi p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-housing-change {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-housing-change small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-housing-change h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-housing-change p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-housing-change b.owner {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-housing-change b.renter {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-housing-plain {
+  border-left-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-housing-plain b {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-observed {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi.surplus {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi.deficit {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi.partial {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi.surplus strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi.deficit strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi.partial strong {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-kpi p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-plain {
+  border-left-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-plain b {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component.counter {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component.budget {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component.observed {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component.scenario {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-component .status {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-type {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-type b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fiscal-type span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-shell {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .road-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .road-hero {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .road-head h2,.road-head h3,.road-head h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-kicker,.road-pill {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-pill.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-pill.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-pill.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-question {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-question small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-five div {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-five b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-kpi.green {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .road-kpi.green strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-kpi.pink {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .road-kpi.pink strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-kpi.gold {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .road-kpi.gold strong {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-plain {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-plain b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-mini {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-mini h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-mini strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-legal {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-legal h4 {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-legal p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-type {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-type b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-type span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-flow-model {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-flow-model h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-step {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-down {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-vs {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-logistics {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-logistics b {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-funding article {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-funding h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-funding ul {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-bice {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-bice-grid div {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+}
+
+html[data-dashito-theme] .road-bice-grid small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-bice-grid strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-bar-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-bar-card h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-bar-track {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-bar-fill {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-bar-fill.traffic {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .road-field {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-field label {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-field input {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .road-field output {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-result {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .road-result small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-result strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-sim-verdict {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-sim-verdict.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-sim-verdict.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-def {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .road-def b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-def span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-formula {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-formula h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-formula code {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-table-wrap {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-table th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-filter button {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-filter button.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .road-time {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-time b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-time span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-time:not(:last-child)::after {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-faq details,.road-method details {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-faq summary,.road-method summary {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-faq details div,.road-method details div {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-final {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .road-final h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-final>p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-link {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-source {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-source a {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-muted {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-sd {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .road-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .road-note b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-shell {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .tour-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  box-shadow: none !important;
+}
+
+html[data-dashito-theme] .tour-hero {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .tour-head h2,.tour-head h3,.tour-head h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-sub {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-kicker,.tour-pill {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-pill.good {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-pill.bad {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-pill.warn {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-question {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-question small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-dimensions div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-dimensions b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-kpi.green {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi.green strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi.pink {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi.pink strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi.gold {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .tour-kpi.gold strong {
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-plain {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-plain b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-mini {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-mini h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-mini strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-controls button,.tour-link {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-controls button.active {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .tour-check {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-callout {
+  border-left-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-callout.green {
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-callout.gold {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-flow-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-flow-card h4 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-step {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-arrow {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-vs {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-source-tag {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-region {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-region small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-region strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-bar-track {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-bar-fill {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .tour-bar-fill.good {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .tour-bar-fill.bad {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .tour-sticker {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-formula {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-formula code {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-sd {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-faq details,.tour-method details {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-faq summary,.tour-method summary {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-faq details div,.tour-method details div {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-final {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-final h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-final>p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-summary div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-summary b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-summary span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-source {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .tour-source a {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-table-wrap {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .tour-table th {
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .tour-caveat {
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: color-mix(in srgb, var(--da-amber) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-controls {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-asset-controls label {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-controls select {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-asset-controls p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-kpi.reference {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-asset-kpi .asset-access {
+  border-top-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-plain {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-plain b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card .access-verdict {
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card .access-verdict.warn {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-access-card .access-verdict.no {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-sens-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-asset-sens-card b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-sens-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-sens-card span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-asset-sens-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-asset-warning {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-finance-evidence {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi.pink strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi.blue strong {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi.green strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-kpi p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-note {
+  border-left-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-note b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-caveats span {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-caveats b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-evidence-caveats .warn {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card strong {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card.good {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card.good strong {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card.warn {
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-roa-card.warn strong {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-separation {
+  border-color: color-mix(in srgb, var(--da-info) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-fin-separation h4 {
+  color: color-mix(in srgb, var(--da-info) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-fin-separation p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-controls-context {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-controls-context::before {
+  background: color-mix(in srgb, var(--da-secondary) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-controls.pend-controls-near-chart {
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-controls-near-chart .pend-control>span {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-controls-near-chart .pend-toggle-action {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-controls-near-chart .pend-toggle-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .bank-adjust-badge.central {
+  background: color-mix(in srgb, var(--da-mint) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+  border-color: color-mix(in srgb, var(--da-mint) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .bank-adjust-badge.aggressive {
+  background: color-mix(in srgb, var(--da-amber) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+  border-color: color-mix(in srgb, var(--da-amber) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .milei-layer {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-layer h3 {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-layer .layer-note {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-layer-card {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-layer-card small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-layer-card b {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .milei-layer-card p {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .milei-layer-card.debtor b {
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-layer-card.saver b,.milei-layer-card.balance b {
+  color: color-mix(in srgb, var(--da-mint) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .milei-layer.sensitivity {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .milei-layer.references {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .milei-layer.capacity {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+}
+
+html[data-dashito-theme] .ca-flow {
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .ca-flow span {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .ca-flow i,.ca-flow b {
+  color: color-mix(in srgb, var(--da-secondary) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .ca-flow .mora {
+  border-color: color-mix(in srgb, var(--da-bad) 40%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-bad) 11%, var(--da-surface-2)) !important;
+  color: color-mix(in srgb, var(--da-bad) 68%, var(--da-text)) !important;
+}
+
+html[data-dashito-theme] .pend-taxmap-card {
+  background: var(--da-surface-2) !important;
+  border-color: color-mix(in srgb, var(--da-secondary) 40%, var(--da-border)) !important;
+}
+
+html[data-dashito-theme] .pend-taxmap-kpis>div {
+  border-color: var(--da-border) !important;
+  background: var(--da-surface-2) !important;
+}
+
+html[data-dashito-theme] .pend-taxmap-kpis small {
+  color: var(--da-muted) !important;
+}
+
+html[data-dashito-theme] .pend-taxmap-kpis strong {
+  color: var(--da-text) !important;
+}
+
+html[data-dashito-theme] .pend-taxmap-kpis span {
+  color: var(--da-muted) !important;
+}
+/* gap consumption: banners "Lectura" (.co-super-story>div) sin clase, fondo blanco */
+html[data-dashito-theme] .co-super-story>div {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+html[data-dashito-theme] .co-super-story>div b { color: var(--da-text) !important; }
