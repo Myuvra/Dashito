@@ -19,6 +19,8 @@ const runtimeFiles = [
   'runtime-pendulo-cft.js',
   'runtime-bank-adjustment.js',
   'runtime-source-register.js',
+  'runtime-consumption-supermarkets.js',
+  'runtime-credit-mora.js',
 ]
 const runtime = runtimeFiles.map((file) => readFileSync(resolve(root, 'public', 'legacy', file), 'utf8')).join('\n')
 
@@ -39,14 +41,14 @@ function sectionFor(documentHtml, id) {
 const results = []
 const check = (label, condition) => results.push({ label, condition: Boolean(condition) })
 
-check('33 tabs en el manifiesto', manifest.length === 33)
-check('33 ids únicos', new Set(manifest.map((tab) => tab.id)).size === 33)
+check('37 tabs en el manifiesto', manifest.length === 37)
+check('37 ids únicos', new Set(manifest.map((tab) => tab.id)).size === 37)
 check('Storytelling abre el manifiesto', manifest[0]?.id === 'tab-story')
-check('orden continuo 0–32', manifest.every((tab, index) => tab.order === index))
+check('orden continuo 0–36', manifest.every((tab, index) => tab.order === index))
 
 const story = sectionFor(imported, 'tab-story') || ''
-check('Storytelling conserva once capítulos', (story.match(/\bclass=["'][^"']*\bstory-chapter\b[^"']*["']/gi) || []).length === 11)
-check('Storytelling conserva cinco indicadores', (story.match(/\bclass=["'][^"']*\bstory-stat(?:\s|["'])/gi) || []).length === 5)
+check('Storytelling conserva doce capítulos', (story.match(/\bclass=["'][^"']*\bstory-chapter\b[^"']*["']/gi) || []).length === 12)
+check('Storytelling conserva seis indicadores', (story.match(/\bclass=["'][^"']*\bstory-stat(?:\s|["'])/gi) || []).length === 6)
 check('Storytelling conserva su bloque público de fuentes', /\bstory-source-note\b/.test(story) && !/>[^<]*handover[^<]*</i.test(story))
 check('V184 conserva el retiro móvil del cierre de Cuenta madre', /#tab-milei-cost>\.milei-cost-inset-start~\*/.test(readFileSync(resolve(root, 'public', 'legacy', 'base.css'), 'utf8')))
 check('V185 conserva la separación de leyenda social', /legend\.y['"]?:mobile\?1\.09:1\.10/.test(runtime))

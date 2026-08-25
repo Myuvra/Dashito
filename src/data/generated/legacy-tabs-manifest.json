@@ -7,8 +7,9 @@
       "La historia detrás de estos gráficos",
       "Todo empezó con una discusión",
       "El primer gráfico y la primera corrección",
-      "Después aparecieron las tasas",
-      "Cuando el número dejó de ser el argumento",
+      "Después aparecieron las tasas —y otra corrección",
+      "Cuando la “pinza” tuvo que dividirse en dos",
+      "Cuando otro análisis me obligó a hacer una pregunta mejor",
       "El dato que contradijo mis expectativas",
       "El péndulo hacia los hogares",
       "¿Cuánto costó el shock?",
@@ -43,8 +44,11 @@
       "Cómo leer los montos: todos los $ están puestos del lado del hogar",
       "¿El balance ampliado de crédito y ahorro mejoró o empeoró?",
       "Cómo leer el signo en este gráfico técnico",
-      "Pinza financiera actual",
+      "Foto actual de tasas reales",
       "Desviación técnica ≠ impacto hogar",
+      "¿A quién le fue mejor y a quién peor?",
+      "Desglose y contexto · componentes y saldo contra normas",
+      "Ventana espejo superpuesta · mes 1 → 32",
       "Dos preguntas, dos lecturas del signo",
       "Alcance del indicador",
       "¿Quién podía pagar el ajuste?",
@@ -63,6 +67,7 @@
       "nominalChart",
       "realChart",
       "ratesAccumChart",
+      "ratesMirrorCompareChart",
       "ratesMoneyChart",
       "ratesFintechChart",
       "bankAdjustScenarioChart",
@@ -70,7 +75,7 @@
       "bankAdjustProfitChart",
       "bankAdjustCapitalChart"
     ],
-    "noteCount": 40
+    "noteCount": 41
   },
   {
     "id": "tab-pres",
@@ -255,12 +260,16 @@
     "label": "Consumo",
     "order": 13,
     "headings": [
+      "2026 mes a mes: cuánto entra a la caja y qué pasa en términos reales",
+      "¿La debilidad es territorial?",
       "🍷 Vino · consumo per cápita",
       "🚗 Autos 0 km · anclas verificadas",
       "Fuentes y descargas"
     ],
     "chartIds": [
       "consumptionChart",
+      "supermarketPulseChart",
+      "supermarketHistoryDistrictChart",
       "meatConsumptionChart",
       "beefTradeoffChart",
       "physicalCategoryChangeChart",
@@ -381,9 +390,94 @@
     "noteCount": 10
   },
   {
+    "id": "tab-credit-mora",
+    "label": "Del shock a la mora",
+    "order": 20,
+    "headings": [
+      "Del shock a la mora · ¿el crédito fue un puente hasta que dejó de serlo? ♡",
+      "La película completa: ingreso → crédito → costo → mora",
+      "A · Poder adquisitivo · total salarios",
+      "B · Préstamos personales bancarios · flujo real operado",
+      "C · Precio real del crédito",
+      "D · Mora",
+      "¿Qué variable se mueve antes de la mora?",
+      "Cuatro explicaciones compiten al mismo tiempo",
+      "Qué aporta “Todo sobre la mora” —y dónde su framing se pasa de la evidencia",
+      "Fuentes, descargas y auditoría"
+    ],
+    "chartIds": [
+      "cmIncomeChart",
+      "cmCreditChart",
+      "cmRateChart",
+      "cmMoraChart",
+      "cmLagChart"
+    ],
+    "noteCount": 5
+  },
+  {
+    "id": "tab-mora-causal",
+    "label": "¿Qué explica la mora?",
+    "order": 21,
+    "headings": [
+      "¿Qué explica la mora? · pobreza, ingreso, crédito y originación bajo lupa ♡",
+      "La correlación agregada puede contestar la pregunta equivocada",
+      "Qué ocurrió primero · 2024 → 2026",
+      "Rezagos: qué variables anticipan mejor la mora bancaria de personales + tarjetas",
+      "Divergencia real, inferencia causal inválida",
+      "No hay evidencia de “relación cero”",
+      "La oferta se aflojó antes de que el riesgo materializado explotara —y luego se endureció",
+      "Matriz adversarial · qué sobrevive al intento de refutación",
+      "Un R² lindo también puede mentir",
+      "Qué podemos decir —y qué no",
+      "La afirmación original, después de intentar romperla",
+      "Fuentes primarias y alcance"
+    ],
+    "chartIds": [
+      "caLagChart",
+      "caPovertyChart",
+      "caUnempChart"
+    ],
+    "noteCount": 5
+  },
+  {
+    "id": "tab-mora-anatomy",
+    "label": "Anatomía de la mora",
+    "order": 22,
+    "headings": [
+      "Anatomía de la mora · mucha gente no siempre significa mucha plata ♡",
+      "Tasa de clientes en mora vs deuda morosa típica",
+      "Lo que los microdatos sí permiten decir —y lo que NO",
+      "Riesgo para el prestamista ≠ costo para el deudor",
+      "Cuatro notas incómodas sobre el análisis externo",
+      "Fuentes y descarga"
+    ],
+    "chartIds": [
+      "maBubbleChart"
+    ],
+    "noteCount": 4
+  },
+  {
+    "id": "tab-youth-credit",
+    "label": "Jóvenes y crédito",
+    "order": 23,
+    "headings": [
+      "Jóvenes y crédito · ¿inclusión financiera o fragilidad? ♡",
+      "Acceso al crédito",
+      "Mora entre deudores jóvenes",
+      "Lo que todavía falta para explicar la fragilidad juvenil",
+      "“Educación financiera” no puede ser la explicación por default",
+      "Fuentes y descarga"
+    ],
+    "chartIds": [
+      "ycAccessChart",
+      "ycMoraChart"
+    ],
+    "noteCount": 5
+  },
+  {
     "id": "tab-pendulo",
     "label": "Péndulo del poder económico",
-    "order": 20,
+    "order": 24,
     "headings": [
       "Péndulo del poder económico ♡",
       "A · Péndulo de producción / distribución primaria ♡",
@@ -412,6 +506,7 @@
       "Lo que la tenencia no responde",
       "Waterfall de $100 todavía deshabilitado",
       "¿Al Estado le sobró o le faltó plata?",
+      "¿El Estado cobró menos impuestos… a quiénes?",
       "Partidas auditadas: cada una es una clase de número distinta",
       "Posición fiscal neta por hogar todavía deshabilitada",
       "Si ya tenías $100 disponibles, ¿qué alternativas defendieron su poder de compra?",
@@ -435,12 +530,12 @@
       "pendPowerFiscalChart",
       "pendPowerAssetChart"
     ],
-    "noteCount": 28
+    "noteCount": 29
   },
   {
     "id": "tab-roads",
     "label": "Rutas · ¿Público o privado?",
-    "order": 21,
+    "order": 25,
     "headings": [
       "Rutas · ¿Público o privado? ♡",
       "3.900 km ≠ 3.900 km de rutas nuevas",
@@ -486,7 +581,7 @@
   {
     "id": "tab-tourism",
     "label": "Vacaciones · Turismo",
-    "order": 22,
+    "order": 26,
     "headings": [
       "Vacaciones · Turismo ♡",
       "¿Quién viaja más: nosotros o ellos?",
@@ -535,7 +630,7 @@
   {
     "id": "tab-debt-public",
     "label": "Deuda pública",
-    "order": 23,
+    "order": 27,
     "headings": [
       "Fuentes y descarga"
     ],
@@ -549,17 +644,31 @@
   {
     "id": "tab-fiscal",
     "label": "Resultado fiscal",
-    "order": 24,
+    "order": 28,
     "headings": [
+      "¿Cuánto bajaron realmente los impuestos, y a quién alcanzó cada cambio? ♡",
+      "Impacto anual de las reformas y suma acumulada",
+      "Presión tributaria efectiva: otra pregunta",
+      "¿Qué explica las bajas de recursos? · 2024–2026",
+      "¿Qué explica las subas de recursos? · 2024–2026",
+      "2025, medida por medida: el año en que cambió el signo",
+      "Mapa de actores y sectores alcanzados",
+      "Si se resignaron recursos, ¿cómo siguió habiendo superávit?",
+      "¿Entonces quién ganó y quién perdió?",
       "Fuentes y descarga"
     ],
-    "chartIds": [],
-    "noteCount": 6
+    "chartIds": [
+      "taxMapImpactChart",
+      "taxMapPressureChart",
+      "taxMapDropsChart",
+      "taxMapRaisesChart"
+    ],
+    "noteCount": 8
   },
   {
     "id": "tab-trade",
     "label": "Balanza comercial",
-    "order": 25,
+    "order": 29,
     "headings": [
       "Fuentes y descarga"
     ],
@@ -571,7 +680,7 @@
   {
     "id": "tab-bcra",
     "label": "BCRA · reservas y dólar",
-    "order": 26,
+    "order": 30,
     "headings": [
       "Fuentes y descargas"
     ],
@@ -588,7 +697,7 @@
   {
     "id": "tab-debt-spiral",
     "label": "Espiral de deuda",
-    "order": 27,
+    "order": 31,
     "headings": [
       "Fuentes y cálculos de los simuladores familiares"
     ],
@@ -601,7 +710,7 @@
   {
     "id": "tab-program",
     "label": "Programa y escenarios",
-    "order": 28,
+    "order": 32,
     "headings": [
       "Fuentes y supuestos",
       "Cálculos clave del simulador soberano"
@@ -615,7 +724,7 @@
   {
     "id": "tab-wealth-contribution",
     "label": "Grandes fortunas",
-    "order": 29,
+    "order": 33,
     "headings": [
       "Grandes fortunas y aporte voluntario progresivo",
       "1 · Carga individual por nivel de patrimonio",
@@ -636,10 +745,10 @@
   {
     "id": "tab-milei-cost",
     "label": "Lo que te robó Milei",
-    "order": 30,
+    "order": 34,
     "headings": [
       "Estrés financiero · morosidad",
-      "Pinza financiera · costo para hogares vs capacidad de absorción",
+      "Finanzas · deterioro deudor vs capacidad de absorción",
       "Cómo se arma la cuenta madre de $18,43 billones",
       "Cómo entra cada componente en la cuenta madre",
       "Todo medido contra el agujero bruto de $18,43 billones",
@@ -651,7 +760,7 @@
   {
     "id": "tab-meli-benefits",
     "label": "Privilegios fiscales",
-    "order": 31,
+    "order": 35,
     "headings": [
       "Fuentes y auditoría"
     ],
@@ -665,7 +774,7 @@
   {
     "id": "tab-casta",
     "label": "La casta",
-    "order": 32,
+    "order": 36,
     "headings": [
       "Fuentes y cálculos"
     ],

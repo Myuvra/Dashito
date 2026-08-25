@@ -216,24 +216,43 @@ function tightenIdleTopMargin(chart) {
     .finally(() => { delete chart.dataset.dashitoTopMarginTightened })
 }
 
-function syncNominalAnnotationLayout(chart) {
+function syncNominalAnnotationLayout(chart, { externalLegend = false } = {}) {
   if (chart.id !== 'nominalChart' || chart.clientWidth <= 720 || chart.dataset.dashitoAnnotationRelayout === 'true') return
   const current = chart.layout?.annotations || []
   const next = reflowNominalAnnotations(current, chart.clientWidth)
-  // Leyenda al tope y margen ajustado: elimina el espacio muerto entre el borde
-  // superior y el glosario, y deja la leyenda pegada a la banda de mandatos.
-  const targetTopMargin = chart.clientWidth < 860 ? 185 : 150
+  // Con el glosario de botones externos ocultamos la leyenda nativa y recuperamos
+  // el margen que la reservaba, dejando sólo el espacio para la banda de mandatos.
+  // Sin glosario externo, la leyenda va al tope pegada a la banda de mandatos.
+  const targetTopMargin = externalLegend
+    ? (chart.clientWidth < 860 ? 138 : 118)
+    : (chart.clientWidth < 860 ? 185 : 150)
   const targetLegendY = 1.19
   const positionsMatch = JSON.stringify(annotationPositions(current)) === JSON.stringify(annotationPositions(next))
-  const legendPlaced = chart.layout?.legend?.y === targetLegendY && chart.layout?.legend?.yanchor === 'bottom'
-  if (positionsMatch && chart.layout?.margin?.t === targetTopMargin && legendPlaced) return
+  const legendOk = externalLegend
+    ? chart.layout?.showlegend === false
+    : (chart.layout?.legend?.y === targetLegendY && chart.layout?.legend?.yanchor === 'bottom' && chart.layout?.showlegend !== false)
+  if (positionsMatch && chart.layout?.margin?.t === targetTopMargin && legendOk) return
   chart.dataset.dashitoAnnotationRelayout = 'true'
-  Promise.resolve(window.Plotly.relayout(chart, {
-    annotations: next,
-    'margin.t': targetTopMargin,
-    'legend.y': targetLegendY,
-    'legend.yanchor': 'bottom',
-  })).finally(() => { delete chart.dataset.dashitoAnnotationRelayout })
+  const relayout = { annotations: next, 'margin.t': targetTopMargin, showlegend: !externalLegend }
+  if (!externalLegend) {
+    relayout['legend.y'] = targetLegendY
+    relayout['legend.yanchor'] = 'bottom'
+  }
+  Promise.resolve(window.Plotly.relayout(chart, relayout))
+    .finally(() => { delete chart.dataset.dashitoAnnotationRelayout })
+}
+
+// Con el glosario de botones externos activo, ocultamos la leyenda nativa de
+// Plotly para no duplicarla. powerChart gestiona su showlegend en su propia sync;
+// el resto (incluido nominalChart, cuyo ajuste de margen es sólo de escritorio)
+// se oculta acá a cualquier ancho para no dejar leyenda nativa y botones a la vez.
+function syncExternalLegendVisibility(chart, externalLegend) {
+  if (chart.id === 'powerChart') return
+  if (!externalLegend || chart.layout?.showlegend === false) return
+  if (chart.dataset.dashitoLegendHideBusy === 'true') return
+  chart.dataset.dashitoLegendHideBusy = 'true'
+  Promise.resolve(window.Plotly.relayout(chart, { showlegend: false }))
+    .finally(() => { delete chart.dataset.dashitoLegendHideBusy })
 }
 
 function syncPowerAnnotationLayout(chart, { externalLegend = false } = {}) {
@@ -310,48 +329,73 @@ function syncAnnotationNudges(chart) {
     .finally(() => { delete chart.dataset.dashitoAnnotationNudges })
 }
 
+function buildAxisScaleUpdate(axes, originals, nextScale) {
+  const update = {}
+  for (const axisAudit of axes) {
+    const key = axisAudit.key
+    const original = originals?.[key] || {}
+    if (nextScale === 'log') {
+      const values = tickValues(axisAudit.min, axisAudit.max)
+      update[`${key}.type`] = 'log'
+      update[`${key}.autorange`] = true
+      update[`${key}.range`] = null
+      update[`${key}.tickmode`] = 'array'
+      update[`${key}.tickvals`] = values
+      update[`${key}.ticktext`] = values.map((value) => formatTick(value, original))
+    } else {
+      update[`${key}.type`] = original.type || 'linear'
+      update[`${key}.autorange`] = original.autorange ?? !original.range
+      update[`${key}.range`] = original.range || null
+      update[`${key}.tickmode`] = original.tickmode || 'auto'
+      update[`${key}.tickvals`] = original.tickvals || null
+      update[`${key}.ticktext`] = original.ticktext || null
+    }
+  }
+  return update
+}
+
 function ScaleControl({ chart, axes, blockedAxes = [], axisCount = axes.length }) {
   const [scale, setScale] = useState('linear')
   const [pending, setPending] = useState(false)
   const originalAxes = useRef(null)
-  const signature = axes.map((axis) => `${axis.key}:${axis.min}:${axis.max}`).join('|')
+  const scaleRef = useRef('linear')
+  // La identidad de los ejes (qué ejes existen) determina cuándo el control debe
+  // reiniciarse; el rango (min/max) cambia al togglear series del glosario y NO
+  // debe resetear la escala.
+  const axisKeysSignature = axes.map((axis) => axis.key).join('|')
+  const rangeSignature = axes.map((axis) => `${axis.key}:${axis.min}:${axis.max}`).join('|')
 
+  // Sólo se reinicia a lineal cuando cambia el conjunto de ejes (otro gráfico, o
+  // aparece/desaparece un eje). Mostrar menos líneas desde el glosario reescala
+  // min/max pero mantiene la escala elegida.
   useEffect(() => {
     setScale('linear')
+    scaleRef.current = 'linear'
     originalAxes.current = null
-  }, [signature])
+  }, [axisKeysSignature])
+
+  // Con escala log activa, al ocultar/mostrar series cambia el rango visible:
+  // recalculamos los ticks logarítmicos para el nuevo rango en lugar de degradarse
+  // (o de volver a lineal).
+  useEffect(() => {
+    if (scaleRef.current !== 'log' || pending || !window.Plotly || !chart?.data || !originalAxes.current) return
+    const update = buildAxisScaleUpdate(axes, originalAxes.current, 'log')
+    Promise.resolve(window.Plotly.relayout(chart, update)).catch(() => {})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rangeSignature])
 
   const apply = async (nextScale) => {
     if (!window.Plotly || !chart?.data || pending || nextScale === scale) return
     if (!originalAxes.current) {
       originalAxes.current = Object.fromEntries(axes.map(({ key }) => [key, captureAxisState(chart.layout?.[key])]))
     }
-    const update = {}
-    for (const axisAudit of axes) {
-      const key = axisAudit.key
-      const original = originalAxes.current[key] || {}
-      if (nextScale === 'log') {
-        const values = tickValues(axisAudit.min, axisAudit.max)
-        update[`${key}.type`] = 'log'
-        update[`${key}.autorange`] = true
-        update[`${key}.range`] = null
-        update[`${key}.tickmode`] = 'array'
-        update[`${key}.tickvals`] = values
-        update[`${key}.ticktext`] = values.map((value) => formatTick(value, original))
-      } else {
-        update[`${key}.type`] = original.type || 'linear'
-        update[`${key}.autorange`] = original.autorange ?? !original.range
-        update[`${key}.range`] = original.range || null
-        update[`${key}.tickmode`] = original.tickmode || 'auto'
-        update[`${key}.tickvals`] = original.tickvals || null
-        update[`${key}.ticktext`] = original.ticktext || null
-      }
-    }
+    const update = buildAxisScaleUpdate(axes, originalAxes.current, nextScale)
     setPending(true)
     chart.dataset.dashitoScaleBusy = 'true'
     try {
       await window.Plotly.relayout(chart, update)
       setScale(nextScale)
+      scaleRef.current = nextScale
     } finally {
       delete chart.dataset.dashitoScaleBusy
       setPending(false)
@@ -499,12 +543,16 @@ export default function LegacyChartEnhancements({ rootRef, activeId, ready, them
         }
         const audited = chartAudit(chart)
         const audit = chart.id === 'powerChart' ? allowPowerPrimaryLog(audited) : audited
-        const externalLegend = chart.id === 'powerChart' && (window.innerWidth <= 720 || chart.clientWidth <= 960)
-        syncNominalAnnotationLayout(chart)
+        // Glosario de botones externos como norma: todo gráfico con dos o más
+        // series toggleables usa el panel de botones en vez de la leyenda nativa.
+        const allLegendItems = externalLegendItems(chart)
+        const externalLegend = allLegendItems.length >= 2
+        syncNominalAnnotationLayout(chart, { externalLegend })
         syncPowerAnnotationLayout(chart, { externalLegend })
         syncReserveFlowLayout(chart)
         syncAnnotationNudges(chart)
-        const legendItems = externalLegend ? externalLegendItems(chart) : []
+        syncExternalLegendVisibility(chart, externalLegend)
+        const legendItems = externalLegend ? allLegendItems : []
         if (externalLegend) {
           chart.dataset.dashitoExternalLegend = 'true'
         } else if (chart.dataset.dashitoExternalLegend === 'true') {

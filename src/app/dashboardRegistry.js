@@ -27,6 +27,10 @@ const metadata = {
   'tab-growth': { slug: 'crecimiento', icon: ChartNoAxesCombined },
   'tab-emae': { slug: 'actividad-real', icon: Activity },
   'tab-morosidad': { slug: 'morosidad', icon: TrendingDown },
+  'tab-credit-mora': { slug: 'credito-mora', icon: WalletCards },
+  'tab-mora-causal': { slug: 'mora-causal', icon: Activity },
+  'tab-mora-anatomy': { slug: 'mora-anatomia', icon: BarChart3 },
+  'tab-youth-credit': { slug: 'credito-joven', icon: Users },
   'tab-pendulo': { slug: 'pendulo-poder-economico', aliases: ['pendulo-distributivo'], icon: Scale },
   'tab-roads': { slug: 'rutas-publico-privado', icon: Route },
   'tab-tourism': { slug: 'vacaciones-turismo', icon: Plane },
@@ -44,7 +48,7 @@ const metadata = {
 
 const categoryIds = [
   { id: 'featured', label: 'Destacados', ids: ['tab-story', 'tab-power', 'tab-rates', 'tab-poverty', 'tab-emae', 'tab-morosidad', 'tab-pendulo', 'tab-debt-public', 'tab-milei-cost'] },
-  { id: 'households', label: 'Hogares', ids: ['tab-power', 'tab-poverty', 'tab-social', 'tab-gini', 'tab-structure', 'tab-family', 'tab-health-education', 'tab-consumption', 'tab-work', 'tab-housing', 'tab-morosidad'] },
+  { id: 'households', label: 'Hogares', ids: ['tab-power', 'tab-poverty', 'tab-social', 'tab-gini', 'tab-structure', 'tab-family', 'tab-health-education', 'tab-consumption', 'tab-work', 'tab-housing', 'tab-morosidad', 'tab-credit-mora', 'tab-mora-causal', 'tab-mora-anatomy', 'tab-youth-credit'] },
   { id: 'prices', label: 'Precios y dólar', ids: ['tab-rates', 'tab-pres', 'tab-risk', 'tab-bigmac', 'tab-wholesale', 'tab-bcra'] },
   { id: 'activity', label: 'Actividad', ids: ['tab-consumption', 'tab-work', 'tab-investment', 'tab-housing', 'tab-growth', 'tab-emae', 'tab-roads', 'tab-tourism', 'tab-trade'] },
   { id: 'state', label: 'Estado y deuda', ids: ['tab-social', 'tab-health-education', 'tab-debt-public', 'tab-fiscal', 'tab-bcra', 'tab-debt-spiral', 'tab-program'] },

@@ -1,5 +1,5 @@
-@import url('/legacy/base.css?v=20260823b') layer(legacy);
-@import url('/dashito-legacy.css?v=20260823b') layer(legacy);
+@import url('/legacy/base.css?v=20260825-migracion') layer(legacy);
+@import url('/dashito-legacy.css?v=20260825-migracion') layer(legacy);
 
 @font-face {
   font-family: 'Inter Variable';

@@ -579,7 +579,7 @@ SECTION = r"""
   <section id="tab-morosidad" class="tab-panel">
     <div class="mor-shell">
       <section class="mor-hero">
-        <div class="mor-head"><div><span class="mor-badge">BCRA · saldos mensuales · personas sólo en snapshots oficiales</span><h2>Morosidad · ¿la gente puede pagar sus deudas? </h2><p class="mor-sub">Mide la parte del crédito que está en situación irregular. Separamos bancos, PNFC/Fintech y personas porque no usan exactamente el mismo universo ni denominador.</p></div></div>
+        <div class="mor-head"><div><span class="mor-badge">BCRA · saldos mensuales · personas sólo en snapshots oficiales</span><h2>Morosidad · ¿la gente puede pagar sus deudas? ♡</h2><p class="mor-sub">Mide la parte del crédito que está en situación irregular. Separamos bancos, PNFC/Fintech y personas porque no usan exactamente el mismo universo ni denominador.</p></div></div>
         <div class="mor-kpis">
           <div class="mor-kpi"><small>Morosidad hogares</small><strong>12,8%</strong><span>mayo de 2026 · % del saldo bancario</span></div>
           <div class="mor-kpi"><small>Vs promedio histórico</small><strong>+9,42 pp</strong><span>más mora que la norma pre-shock</span></div>

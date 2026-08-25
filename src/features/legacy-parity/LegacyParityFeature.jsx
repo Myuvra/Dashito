@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import LegacyMarkup from './LegacyMarkup'
 import LegacyChartEnhancements from './LegacyChartEnhancements'
 
-const legacyRuntimeVersion = '2026-08-23-v193-bank-adjustment'
+const legacyRuntimeVersion = '2026-08-25-v194-migracion-index8'
 
 const runtimeScripts = [
   '/legacy/plotly.js',
@@ -19,6 +19,8 @@ const runtimeScripts = [
   '/legacy/runtime-pendulo-cft.js',
   '/legacy/runtime-bank-adjustment.js',
   '/legacy/runtime-source-register.js',
+  '/legacy/runtime-consumption-supermarkets.js',
+  '/legacy/runtime-credit-mora.js',
 ].map((source) => `${source}?v=${legacyRuntimeVersion}`)
 
 let runtimePromise
@@ -48,6 +50,29 @@ function ensureRuntime() {
   }
   runtimePromise ||= runtimeScripts.reduce((promise, source) => promise.then(() => loadScript(source)), Promise.resolve())
   return runtimePromise
+}
+
+// Tabs migrados desde index(8) cuyos scripts enganchan el render a un click en el
+// botón al cargar (frágil con el montaje async de React). Dashito navega con
+// activateTab, así que invocamos su render explícitamente al activar el tab.
+const legacyTabRenderers = {
+  'tab-credit-mora': ['renderCreditMora', 'renderCmLag'],
+  'tab-mora-causal': ['renderMoraCausalAudit'],
+  'tab-mora-anatomy': ['renderMoraAnatomy'],
+  'tab-youth-credit': ['renderYouthCredit'],
+  'tab-consumption': ['renderSupermarketPulse'],
+  // Charts existentes con el mismo patrón (render enganchado a un click en el botón).
+  'tab-rates': ['renderBankAdjustment2024'],
+  'tab-fiscal': ['renderTaxMap'],
+}
+function renderLegacyTabExtras(tabId) {
+  const fns = legacyTabRenderers[tabId]
+  if (!fns) return
+  // setTimeout, no requestAnimationFrame: rAF se pausa cuando la pestaña no compone
+  // frames (segundo plano), y estos renders deben correr igual al activar el tab.
+  window.setTimeout(() => fns.forEach((name) => {
+    try { window[name]?.() } catch { /* el render valida sus propios contenedores */ }
+  }), 90)
 }
 
 export default function LegacyParityFeature({ activeId, onNavigate, theme }) {
@@ -83,6 +108,7 @@ export default function LegacyParityFeature({ activeId, onNavigate, theme }) {
       }
       document.dispatchEvent(new Event('DOMContentLoaded'))
       window.__dashitoLegacyActivateTab?.(activeRef.current)
+      renderLegacyTabExtras(activeRef.current)
       window.dispatchEvent(new Event('resize'))
       window.setTimeout(() => { if (!cancelled) setStatus('ready') }, 420)
     }).catch(() => { if (!cancelled) setStatus('error') })
@@ -92,6 +118,7 @@ export default function LegacyParityFeature({ activeId, onNavigate, theme }) {
   useEffect(() => {
     if (status !== 'ready') return
     window.__dashitoLegacyActivateTab?.(activeId)
+    renderLegacyTabExtras(activeId)
     window.dispatchEvent(new Event('resize'))
   }, [activeId, status])
 
