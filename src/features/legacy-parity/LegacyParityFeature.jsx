@@ -3,7 +3,7 @@ import LegacyMarkup from './LegacyMarkup'
 import LegacyChartEnhancements from './LegacyChartEnhancements'
 import runtimeManifest from '../../data/generated/legacy-runtime-manifest.json'
 
-const legacyRuntimeVersion = '2026-08-31-v195-migracion10'
+const legacyRuntimeVersion = '2026-08-31-v195-migracion11'
 
 // La lista de runtime-scripts se deriva del manifiesto que emite
 // import-legacy-parity.mjs (data-driven): así no hay que mantener nombres ni
