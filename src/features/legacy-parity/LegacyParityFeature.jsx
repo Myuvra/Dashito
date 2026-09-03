@@ -55,6 +55,13 @@ const legacyTabRenderers = {
   // (renderCreditReference orquesta creditReference/creditGap/creditBurden + KPIs).
   'tab-rates': ['renderBankAdjustment2024', 'renderCreditReference'],
   'tab-fiscal': ['renderTaxMap'],
+  // Tabs viejos cuyo render también se engancha a un click en el botón (no
+  // auto-render en Dashito porque navegamos por React, no clickeando el legacy).
+  'tab-emae': ['renderEmae'],
+  'tab-morosidad': ['renderMor'],
+  'tab-pendulo': ['renderPend'],
+  'tab-roads': ['renderRoad'],
+  'tab-tourism': ['renderTour'],
   // Super-tabs EPICA (materializados; render enganchado al click en el legacy).
   'tab-epica-households': ['renderEpicaHouseholds'],
   'tab-epica-dollars': ['renderEpicaDollars'],
