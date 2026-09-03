@@ -8424,7 +8424,7 @@ img, svg { max-width: 100%; }
 }
 </style>
 
-<style id="source-register-v149-style">
+<style id="source-register-v195-style">
 /* v149 · una misma ficha de trazabilidad para todas las pestañas */
 .source-register{position:relative;overflow:hidden;border-color:#d9cce4!important;background:linear-gradient(145deg,rgba(255,252,254,.98),rgba(248,246,255,.96))!important;box-shadow:0 8px 22px rgba(92,63,111,.07)}
 .source-register-standard{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin:-4px -4px 13px;padding:11px 12px;border:1px solid #e0d5e7;border-radius:15px;background:linear-gradient(90deg,#fbf7ff,#f6fffb)}
@@ -8604,7 +8604,7 @@ code,pre,.formula,.pend-formula{font-family:var(--font-mono)!important}
 </style>
 
 <style id="storytelling-v170-style">
-/* v170 · relato editorial navegable sobre el origen y los hallazgos del dashboard */
+/* v171 · relato editorial con hipótesis de partida y preguntas analíticas abiertas */
 #tab-story{padding:18px}
 #tab-story .story-shell{display:grid;gap:16px;max-width:1180px;margin:0 auto;color:#553e62}
 #tab-story .story-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:24px;padding:34px;border:1px solid #dfcce8;border-radius:28px;background:linear-gradient(135deg,rgba(255,246,251,.98),rgba(244,241,255,.96) 55%,rgba(240,255,248,.94));box-shadow:0 14px 35px rgba(101,67,126,.10)}
@@ -8656,6 +8656,20 @@ code,pre,.formula,.pend-formula{font-family:var(--font-mono)!important}
 #tab-story .story-principle{padding:15px;border:1px solid #d9cce3;border-radius:15px;background:#fcf9ff}
 #tab-story .story-principle b{display:block;margin-bottom:5px;color:#684275}
 #tab-story .story-source-note{margin-top:0!important}
+#tab-story .story-hypothesis-journal{padding:24px;border:1px solid #ddcfe7;border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(249,246,255,.94))}
+#tab-story .story-hypothesis-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;margin-bottom:14px}
+#tab-story .story-hypothesis-head h2{margin:8px 0 6px;color:#60376f}.story-hypothesis-head p{max-width:820px;margin:0;color:#705b78;line-height:1.55}
+#tab-story .story-hypothesis-rule{max-width:260px;padding:11px 13px;border:1px solid #d8c8e2;border-radius:14px;background:#fff;color:#735c7b;font-size:10px;line-height:1.5}
+#tab-story .story-hypothesis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#tab-story .story-hypothesis-card{min-width:0;padding:15px;border:1px solid #e2d6e8;border-radius:16px;background:#fff}
+#tab-story .story-hypothesis-card.caputo{grid-column:1/-1;border-color:#cfc2e8;background:linear-gradient(135deg,#fff,#f7f4ff)}
+#tab-story .story-hypothesis-card small{display:block;color:#94769a;font-size:8px;font-weight:950;letter-spacing:.045em;text-transform:uppercase}
+#tab-story .story-hypothesis-card h3{margin:5px 0 8px;color:#62416f;font-size:14px}
+#tab-story .story-hypothesis-card p{margin:0 0 8px;color:#715e78;font-size:10px;line-height:1.5}
+#tab-story .story-hypothesis-card .story-analysis-question{margin:0;padding:9px 10px;border-left:3px solid #9a73b4;border-radius:10px;background:#faf7fd;color:#604c68}
+#tab-story .story-hypothesis-card.caputo .story-analysis-question{border-left-color:#67559a;background:#f3f0ff}
+@media(max-width:900px){#tab-story .story-hypothesis-head{grid-template-columns:1fr}#tab-story .story-hypothesis-rule{max-width:none}}
+@media(max-width:720px){#tab-story .story-hypothesis-journal{padding:17px 14px}#tab-story .story-hypothesis-grid{grid-template-columns:1fr}#tab-story .story-hypothesis-card.caputo{grid-column:auto}}
 @media(max-width:900px){
  #tab-story .story-hero{grid-template-columns:1fr;padding:26px}
  #tab-story .story-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -8945,6 +8959,52 @@ html,body{overflow-x:clip}
 @media(max-width:720px){.ca-shell{padding:8px 0 28px}.ca-hero,.ca-card{padding:14px;border-radius:18px}.ca-head{display:block}.ca-verdict{margin-top:12px}.ca-head h2{font-size:22px}.ca-kpis,.ca-denoms,.ca-two,.ca-lag-grid,.ca-model-grid,.ca-claims{grid-template-columns:1fr}.ca-timeline,.ca-standards{grid-template-columns:1fr 1fr}.ca-chart{height:360px}.ca-chart.tall{height:430px}}
 @media(max-width:430px){.ca-timeline,.ca-standards{grid-template-columns:1fr}.ca-kpis article{padding:11px}.ca-final blockquote{padding:14px;font-size:11px}}
 </style>
+
+<style id="credit-reference-v1">
+#ratesCreditReferenceSection{margin-top:18px;overflow:hidden}
+.credit-ref-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.credit-ref-head h2{margin:4px 0 5px;color:#5d3d69;font-size:24px}.credit-ref-head p{margin:0;max-width:930px;color:#78647d;font-size:11px;line-height:1.55}.credit-ref-eyebrow{font-size:9px;font-weight:950;text-transform:uppercase;letter-spacing:.05em;color:#a14c70}.credit-ref-status{flex:0 0 auto;padding:9px 12px;border:1px solid #c9ded5;border-radius:14px;background:#f5fff9;color:#39725d;font-size:9px;font-weight:850;line-height:1.4;text-align:right}
+.credit-ref-warning{margin:13px 0;padding:12px 14px;border-left:4px solid #ba8ac8;border-radius:14px;background:#fbf7fd;color:#6e5875;font-size:10px;line-height:1.55}.credit-ref-warning b{color:#573b66}
+.credit-ref-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:10px;margin:14px 0;padding:13px;border:1px solid #e2d6e7;border-radius:18px;background:#fffafd}.credit-ref-control{display:grid;grid-template-columns:1fr 72px 72px;gap:7px;align-items:center}.credit-ref-control span{font-size:9px;font-weight:900;color:#725d78}.credit-ref-control input{width:100%;box-sizing:border-box;border:1px solid #dbcfe1;border-radius:10px;background:#fff;padding:7px 8px;font:inherit;color:#5b4663}.credit-ref-control small{grid-column:1/-1;color:#927e96;font-size:8px}.credit-ref-reset{align-self:center;border:1px solid #d9c8e1;border-radius:999px;background:#fff;padding:8px 11px;font:inherit;font-size:9px;font-weight:900;color:#684d75;cursor:pointer}
+.credit-ref-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0}.credit-ref-kpi{padding:13px 14px;border:1px solid #e5d9e8;border-radius:17px;background:#fff;min-width:0}.credit-ref-kpi small{display:block;font-size:8px;font-weight:950;text-transform:uppercase;color:#8d7692}.credit-ref-kpi b{display:block;margin:5px 0;font-size:22px;line-height:1.08;color:#5f466b}.credit-ref-kpi p{margin:0;font-size:9px;line-height:1.45;color:#78667c}.credit-ref-kpi.bad{border-color:#e7b9ca;background:#fff8fb}.credit-ref-kpi.bad b{color:#ad496c}.credit-ref-kpi.good{border-color:#bce0d0;background:#f7fffb}.credit-ref-kpi.good b{color:#367760}.credit-ref-kpi.neutral{border-color:#d6cdef;background:#fbfaff}.credit-ref-kpi.neutral b{color:#5c54a4}
+.credit-ref-panel{margin-top:14px;padding:14px;border:1px solid #e3d7e8;border-radius:20px;background:#fff}.credit-ref-panel-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.credit-ref-panel-head h3{margin:0;color:#5d4169;font-size:15px}.credit-ref-panel-head p{margin:4px 0 0;color:#7a687e;font-size:9.5px;line-height:1.45}.credit-ref-buttons{display:flex;gap:5px;flex-wrap:wrap}.credit-ref-btn{border:1px solid #dacde1;border-radius:999px;background:#fff;padding:6px 9px;font:inherit;font-size:8.5px;font-weight:900;color:#6b5375;cursor:pointer}.credit-ref-btn.active{background:#71589e;color:#fff;border-color:#71589e}.credit-ref-chart{height:430px;margin-top:8px}.credit-ref-chart.compact{height:350px}
+.credit-ref-method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:13px}.credit-ref-method-grid article{padding:12px;border:1px solid #e4dae6;border-radius:15px;background:#fff}.credit-ref-method-grid b{display:block;margin-bottom:4px;font-size:10px;color:#60456d}.credit-ref-method-grid p{margin:0;font-size:9px;line-height:1.5;color:#79677c}
+.credit-ref-sim{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(0,1.4fr);gap:12px;margin-top:14px}.credit-ref-sim-controls,.credit-ref-sim-result{padding:14px;border:1px solid #e2d6e7;border-radius:18px;background:#fff}.credit-ref-sim-controls h3,.credit-ref-sim-result h3{margin:0 0 9px;color:#5e426a;font-size:14px}.credit-ref-form{display:grid;grid-template-columns:1fr 1fr;gap:8px}.credit-ref-form label{font-size:8px;font-weight:900;text-transform:uppercase;color:#8b768f}.credit-ref-form input,.credit-ref-form select{margin-top:4px;width:100%;box-sizing:border-box;padding:8px;border:1px solid #dccfe1;border-radius:10px;background:#fff;font:inherit;color:#5d4965}.credit-ref-sim-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.credit-ref-sim-stat{padding:10px;border:1px solid #e7dce9;border-radius:14px;background:#fcfafc}.credit-ref-sim-stat small{display:block;color:#907b94;font-size:8px;font-weight:900}.credit-ref-sim-stat b{display:block;margin-top:4px;font-size:18px;color:#60486c}.credit-ref-sim-note{margin-top:9px;font-size:9px;line-height:1.5;color:#79687c}
+.credit-ref-audit{margin-top:12px;padding:11px 13px;border:1px dashed #dbcde1;border-radius:14px;background:#fcf9fd;color:#77637b;font-size:9px;line-height:1.5}.credit-ref-audit code{font-size:8px}.credit-ref-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.credit-ref-actions a,.credit-ref-actions button{display:inline-flex;align-items:center;padding:7px 9px;border:1px solid #ddd1e1;border-radius:999px;background:#fff;color:#634b6e;text-decoration:none;font:inherit;font-size:8.5px;font-weight:850;cursor:pointer}
+@media(max-width:1050px){.credit-ref-controls{grid-template-columns:1fr 1fr}.credit-ref-kpis{grid-template-columns:1fr 1fr}.credit-ref-method-grid{grid-template-columns:1fr}.credit-ref-sim{grid-template-columns:1fr}.credit-ref-sim-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.credit-ref-head{display:block}.credit-ref-status{margin-top:9px;text-align:left}.credit-ref-controls,.credit-ref-kpis{grid-template-columns:1fr}.credit-ref-control{grid-template-columns:1fr 64px 64px}.credit-ref-panel-head{display:block}.credit-ref-buttons{margin-top:8px}.credit-ref-chart{height:390px}.credit-ref-chart.compact{height:330px}.credit-ref-sim-grid{grid-template-columns:1fr}}
+</style>
+
+<style id="supermarket-history-v2-styles">
+.super-history-v2 .super-inner-nav{position:relative;top:auto;z-index:1;display:flex;gap:7px;overflow-x:auto;overflow-y:hidden;padding:8px;margin:12px 0 18px;border:1px solid #e1d4e7;border-radius:15px;background:rgba(255,252,254,.95);backdrop-filter:blur(7px);scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.super-history-v2 .super-inner-nav a{flex:0 0 auto;padding:7px 10px;border:1px solid #ddcfe5;border-radius:999px;background:#fff;color:#684675;text-decoration:none;font-size:10px;font-weight:900}
+.super-history-block{scroll-margin-top:78px;margin:18px 0 28px;padding-top:4px}.super-history-block+.super-history-block{border-top:1px dashed #e6d9e9;padding-top:22px}
+.super-history-title{display:flex;gap:10px;align-items:flex-start;margin:0 20px 12px}.super-history-title>span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#f3e8f7;color:#674475;font-weight:950}.super-history-title h3{margin:1px 0 3px;color:#5f3d70;font-size:18px}.super-history-title p{margin:0;color:#806b84;font-size:10.5px;line-height:1.45}
+.super-wide-panel{margin:10px 20px 14px;padding:14px;border:1px solid #e4d8e8;border-radius:18px;background:#fffdfd}.super-wide-panel h4{margin:0 0 4px;color:#60426f}.super-wide-panel>p{margin:0 0 8px;font-size:10px;color:#7a687f}.super-wide-panel>[id$="Chart"]{min-height:350px}
+.super-method-note{margin-top:9px;padding:10px 12px;border-left:4px solid #a879bd;border-radius:11px;background:#fbf7fd;color:#735f79;font-size:9.5px;line-height:1.5}
+.super-bridge-links{display:flex;gap:8px;flex-wrap:wrap;margin:10px 20px}.super-bridge-links button{border:1px solid #d9c9e2;border-radius:999px;background:#fff;padding:8px 11px;color:#654574;font:inherit;font-size:9px;font-weight:900;cursor:pointer}
+.super-era-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:10px 20px 14px}.super-era-grid article{padding:14px;border:1px solid #e3d7e7;border-radius:16px;background:#fff}.super-era-grid article.active{border-color:#b9decf;background:#f7fffb}.super-era-grid small{display:block;font-weight:950;color:#907391}.super-era-grid b{display:block;margin:5px 0;color:#60426f;font-size:17px}.super-era-grid p{margin:0;color:#76637a;font-size:10px;line-height:1.5}
+.super-nd-panel{display:flex;flex-direction:column}.super-nd{min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;border:1px dashed #d9cce0;border-radius:14px;background:#fbf9fc;color:#77647d}.super-nd b{font-size:24px;color:#6b5574}.super-nd span{max-width:440px;margin-top:8px;font-size:10px;line-height:1.5}
+#supermarketModernHistoryChart{height:430px}#supermarketH1HistoryChart,#supermarketOperationsChart,#supermarketPaymentChart,#supermarketBasketCompositionChart,#supermarketStructureChart{height:380px}
+@media(max-width:900px){.super-era-grid{grid-template-columns:1fr}.super-history-v2 .co-super-chart-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.super-history-title,.super-wide-panel,.super-era-grid,.super-bridge-links{margin-left:12px;margin-right:12px}.super-history-title h3{font-size:16px}#supermarketModernHistoryChart{height:500px}#supermarketH1HistoryChart,#supermarketOperationsChart,#supermarketPaymentChart,#supermarketBasketCompositionChart,#supermarketStructureChart{height:430px}.super-history-v2 .super-inner-nav{top:auto}}
+</style>
+
+<style id="dashboard-menu-repair-v1">
+/* Reparación de navegación: el menú principal manda; los índices internos no compiten con él. */
+.dash-topic-nav,.tabs{box-sizing:border-box;max-width:100%;}
+.dash-topic-nav{isolation:isolate;z-index:50;}
+#dash-main-tabs{position:relative;z-index:40;}
+#dash-main-tabs .tab-btn[hidden]{display:none!important;}
+#dash-main-tabs .tab-btn{box-sizing:border-box;}
+.super-history-v2 .super-inner-nav{position:relative!important;top:auto!important;z-index:1!important;}
+@media (max-width:720px){
+  .dash-topic-nav{position:sticky;top:0;z-index:100;}
+  .dash-topic-buttons{position:relative;z-index:101;}
+  #dash-main-tabs{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;-webkit-overflow-scrolling:touch;}
+  #dash-main-tabs .tab-btn,#dash-main-tabs .tab-btn:nth-child(n){flex:0 0 auto!important;width:auto!important;max-width:none!important;min-width:max-content!important;grid-column:auto!important;scroll-snap-align:start;}
+  .super-history-v2 .super-inner-nav{position:relative!important;top:auto!important;}
+}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -8952,64 +9012,64 @@ html,body{overflow-x:clip}
     <div class="mascot left">☁️</div>
     <div class="mascot right">🐱💗</div>
     <h1>Gráficos exactos kawaii ✨</h1>
-    <div class="sub">Argentina · poder adquisitivo, tasas, inflación, pobreza, asistencia social, desigualdad, vulnerabilidad, canastas, salud, educación, consumo, balanza comercial, BCRA y deuda familiar · todo en un solo HTML</div><br>
+    <div class="sub">Argentina · poder adquisitivo, tasas, inflación, pobreza, asistencia social, desigualdad, vulnerabilidad, canastas, salud, educación, consumo, balanza comercial, BCRA y deuda familiar · todo en un dashboard auditable</div><br>
     <span class="badge">♡ datos, fuentes y metodología a la vista ♡</span>
-    <span class="badge" style="margin-left:6px;background:#fff7df;border-color:#ead39b;color:#7a6131">📌 cierre editorial · 21 ago 2026 · sin actualización automática</span>
+    <span class="badge" style="margin-left:6px;background:#fff7df;border-color:#ead39b;color:#7a6131">📌 base histórica · 25 ago 2026 · super-tabs auditados al 31 ago</span>
     <a class="badge repo-link" href="https://github.com/korikoranyah22/inflacion" target="_blank" rel="noopener noreferrer" aria-label="Abrir el repositorio del Dashito Argento en GitHub">↗ GitHub · código, datos y auditorías</a>
   </div>
 
   <nav class="dash-topic-nav" aria-label="Agrupar pestañas por tema">
     <div class="topic-label">Explorar por tema</div>
     <div class="dash-topic-buttons">
-      <button class="dash-topic-btn active" data-dash-group="featured" aria-pressed="true">Destacados</button>
-      <button class="dash-topic-btn" data-dash-group="households" aria-pressed="false">Hogares</button>
-      <button class="dash-topic-btn" data-dash-group="prices" aria-pressed="false">Precios y dólar</button>
-      <button class="dash-topic-btn" data-dash-group="activity" aria-pressed="false">Actividad</button>
-      <button class="dash-topic-btn" data-dash-group="state" aria-pressed="false">Estado y deuda</button>
-      <button class="dash-topic-btn" data-dash-group="power" aria-pressed="false">Poder económico</button>
-      <button class="dash-topic-btn" data-dash-group="all" aria-pressed="false">Ver todo</button>
+      <button class="dash-topic-btn" type="button" data-dash-group="featured" aria-pressed="false">Destacados</button>
+      <button class="dash-topic-btn" type="button" data-dash-group="households" aria-pressed="false">Hogares</button>
+      <button class="dash-topic-btn" type="button" data-dash-group="prices" aria-pressed="false">Precios y dólar</button>
+      <button class="dash-topic-btn" type="button" data-dash-group="activity" aria-pressed="false">Actividad</button>
+      <button class="dash-topic-btn" type="button" data-dash-group="state" aria-pressed="false">Estado y deuda</button>
+      <button class="dash-topic-btn" type="button" data-dash-group="power" aria-pressed="false">Poder económico</button>
+      <button class="dash-topic-btn active" type="button" data-dash-group="all" aria-pressed="true">Ver todo</button>
     </div>
-    <div class="dash-topic-caption">Mostramos menos accesos a la vez para que la portada respire. La pestaña que ya abriste queda siempre visible.</div>
+    <div class="dash-topic-caption">Todos los tabs aparecen al abrir el dashboard. Los filtros temáticos permiten reducir el menú cuando lo necesites.</div>
   </nav>
 
-  <div class="tabs" aria-label="Pestañas del dashboard">
-    <button class="tab-btn active" data-tab="tab-story">La historia del dashboard</button>
-    <button class="tab-btn" data-tab="tab-power">Poder adquisitivo</button>
-    <button class="tab-btn" data-tab="tab-rates">Tasas e inflación</button>
-    <button class="tab-btn" data-tab="tab-pres">Inflación por presidencia</button>
-    <button class="tab-btn" data-tab="tab-poverty">Pobreza: nivel absoluto</button>
-    <button class="tab-btn" data-tab="tab-social">Asistencia social / transferencias</button>
-    <button class="tab-btn" data-tab="tab-gini">Desigualdad (Gini)</button>
-    <button class="tab-btn" data-tab="tab-structure">Más allá de la pobreza</button>
-    <button class="tab-btn" data-tab="tab-family">¿Cuánto necesita una familia?</button>
-    <button class="tab-btn" data-tab="tab-risk">Riesgo país</button>
-    <button class="tab-btn" data-tab="tab-bigmac">Índice Big Mac</button>
-    <button class="tab-btn" data-tab="tab-wholesale">Precios mayoristas</button>
-    <button class="tab-btn" data-tab="tab-health-education">Salud y educación</button>
-    <button class="tab-btn" data-tab="tab-consumption">Consumo</button>
-    <button class="tab-btn" data-tab="tab-work">Trabajo</button>
-    <button class="tab-btn" data-tab="tab-investment">Inversión</button>
-    <button class="tab-btn" data-tab="tab-housing">Vivienda</button>
-    <button class="tab-btn" data-tab="tab-growth">Crecimiento</button>
-    <button class="tab-btn" data-tab="tab-emae">Actividad real · ¿crecimiento o rebote?</button>
-    <button class="tab-btn" data-tab="tab-morosidad">Morosidad · ¿la gente puede pagar sus deudas?</button>
-    <button class="tab-btn" data-tab="tab-credit-mora">Del shock a la mora</button>
-    <button class="tab-btn" data-tab="tab-mora-causal">¿Qué explica la mora?</button>
-    <button class="tab-btn" data-tab="tab-mora-anatomy">Anatomía de la mora</button>
-    <button class="tab-btn" data-tab="tab-youth-credit">Jóvenes y crédito</button>
-    <button class="tab-btn" data-tab="tab-pendulo">Péndulo del poder económico</button>
-    <button class="tab-btn" data-tab="tab-roads">Rutas · ¿Público o privado?</button>
-    <button class="tab-btn" data-tab="tab-tourism">Vacaciones · Turismo</button>
-    <button class="tab-btn" data-tab="tab-debt-public">Deuda pública</button>
-    <button class="tab-btn" data-tab="tab-fiscal">Resultado fiscal</button>
-    <button class="tab-btn" data-tab="tab-trade">Balanza comercial</button>
-    <button class="tab-btn" data-tab="tab-bcra">BCRA · reservas y dólar</button>
-    <button class="tab-btn" data-tab="tab-debt-spiral">Espiral de deuda</button>
-    <button class="tab-btn" data-tab="tab-program">Programa y escenarios</button>
-    <button class="tab-btn" data-tab="tab-wealth-contribution">Grandes fortunas</button>
-    <button class="tab-btn" data-tab="tab-milei-cost">Lo que te robó Milei</button>
-    <button class="tab-btn" data-tab="tab-meli-benefits">Privilegios fiscales</button>
-    <button class="tab-btn" data-tab="tab-casta">La casta</button>
+  <div class="tabs" id="dash-main-tabs" aria-label="Pestañas del dashboard">
+    <button class="tab-btn active" type="button" data-tab="tab-story">La historia del dashboard</button>
+    <button class="tab-btn" type="button" data-tab="tab-power">Poder adquisitivo</button>
+    <button class="tab-btn" type="button" data-tab="tab-rates">Tasas e inflación</button>
+    <button class="tab-btn" type="button" data-tab="tab-pres">Inflación por presidencia</button>
+    <button class="tab-btn" type="button" data-tab="tab-poverty">Pobreza: nivel absoluto</button>
+    <button class="tab-btn" type="button" data-tab="tab-social">Asistencia social / transferencias</button>
+    <button class="tab-btn" type="button" data-tab="tab-gini">Desigualdad (Gini)</button>
+    <button class="tab-btn" type="button" data-tab="tab-structure">Más allá de la pobreza</button>
+    <button class="tab-btn" type="button" data-tab="tab-family">¿Cuánto necesita una familia?</button>
+    <button class="tab-btn" type="button" data-tab="tab-risk">Riesgo país</button>
+    <button class="tab-btn" type="button" data-tab="tab-bigmac">Índice Big Mac</button>
+    <button class="tab-btn" type="button" data-tab="tab-wholesale">Precios mayoristas</button>
+    <button class="tab-btn" type="button" data-tab="tab-health-education">Salud y educación</button>
+    <button class="tab-btn" type="button" data-tab="tab-consumption">Consumo</button>
+    <button class="tab-btn" type="button" data-tab="tab-work">Trabajo</button>
+    <button class="tab-btn" type="button" data-tab="tab-investment">Inversión</button>
+    <button class="tab-btn" type="button" data-tab="tab-housing">Vivienda</button>
+    <button class="tab-btn" type="button" data-tab="tab-growth">Crecimiento</button>
+    <button class="tab-btn" type="button" data-tab="tab-emae">Actividad real · ¿crecimiento o rebote?</button>
+    <button class="tab-btn" type="button" data-tab="tab-morosidad">Morosidad · ¿la gente puede pagar sus deudas?</button>
+    <button class="tab-btn" type="button" data-tab="tab-credit-mora">Del shock a la mora</button>
+    <button class="tab-btn" type="button" data-tab="tab-mora-causal">¿Qué explica la mora?</button>
+    <button class="tab-btn" type="button" data-tab="tab-mora-anatomy">Anatomía de la mora</button>
+    <button class="tab-btn" type="button" data-tab="tab-youth-credit">Jóvenes y crédito</button>
+    <button class="tab-btn" type="button" data-tab="tab-pendulo">Péndulo del poder económico</button>
+    <button class="tab-btn" type="button" data-tab="tab-roads">Rutas · ¿Público o privado?</button>
+    <button class="tab-btn" type="button" data-tab="tab-tourism">Vacaciones · Turismo</button>
+    <button class="tab-btn" type="button" data-tab="tab-debt-public">Deuda pública</button>
+    <button class="tab-btn" type="button" data-tab="tab-fiscal">Resultado fiscal</button>
+    <button class="tab-btn" type="button" data-tab="tab-trade">Balanza comercial</button>
+    <button class="tab-btn" type="button" data-tab="tab-bcra">BCRA · reservas y dólar</button>
+    <button class="tab-btn" type="button" data-tab="tab-debt-spiral">Espiral de deuda</button>
+    <button class="tab-btn" type="button" data-tab="tab-program">Programa y escenarios</button>
+    <button class="tab-btn" type="button" data-tab="tab-wealth-contribution">Grandes fortunas</button>
+    <button class="tab-btn" type="button" data-tab="tab-milei-cost">Lo que te robó Milei</button>
+    <button class="tab-btn" type="button" data-tab="tab-meli-benefits">Privilegios fiscales</button>
+    <button class="tab-btn" type="button" data-tab="tab-casta">La casta</button>
   </div>
 
   <section id="tab-story" class="tab-panel active">
@@ -9032,14 +9092,17 @@ html,body{overflow-x:clip}
 
       <nav class="story-nav" aria-label="Capítulos de la historia">
         <a href="#story-origin">El origen</a>
+        <a href="#story-hypotheses">Hipótesis de partida</a>
         <a href="#story-first-chart">El primer gráfico</a>
         <a href="#story-rates">Las tasas</a>
         <a href="#story-correction">La corrección</a>
         <a href="#story-intervention">La intervención</a>
+        <a href="#story-credit-cost">Costo ≠ ganancia</a>
         <a href="#story-poverty">La contradicción</a>
         <a href="#story-pendulum">El péndulo</a>
         <a href="#story-shock">El costo</a>
         <a href="#story-growth">Cómo creció</a>
+        <a href="#story-supermarket">El changuito</a>
         <a href="#story-housing">La vivienda</a>
         <a href="#story-alternatives">Las alternativas</a>
         <a href="#story-conclusion">La conclusión</a>
@@ -9052,6 +9115,20 @@ html,body{overflow-x:clip}
         <article class="story-stat debtor"><small>Deudores vs espejo</small><b id="storyDebtorDiff">−$2,89 B</b><span>Banco + Fintech: deterioro incremental frente a 32 meses comparables.</span></article>
         <article class="story-stat saver"><small>Ahorristas PF vs espejo</small><b>+$4,96 B</b><span>Mejora relativa del plazo fijo frente a la ventana anterior.</span></article>
         <article class="story-stat balance"><small>Balance ampliado</small><b id="storyBalanceDiff">+$2,07 B</b><span>Neto banco + Fintech + PF: mejora agregada, no hogar promedio.</span></article>
+      </section>
+
+
+      <section id="story-hypotheses" class="story-hypothesis-journal" aria-labelledby="story-hypotheses-title">
+        <header class="story-hypothesis-head"><div><span class="story-eyebrow">Cuaderno de origen · no son resultados</span><h2 id="story-hypotheses-title">Las hipótesis e intuiciones que pusieron en marcha la épica</h2><p>Las dejamos registradas porque forman parte de la historia intelectual del dashboard. En los tabs analíticos se traducen a preguntas más amplias: la evidencia puede matizar una intuición, hacerla compatible con varias explicaciones o dejarla abierta.</p></div><aside class="story-hypothesis-rule"><b>Regla editorial</b><br>Storytelling = punto de partida de la autora.<br>Análisis = preguntas, mediciones, alternativas y límites.</aside></header>
+        <div class="story-hypothesis-grid">
+          <article class="story-hypothesis-card"><small>Intuición de partida · bienestar</small><h3>La estabilización podía convivir con fragilidad cotidiana</h3><p>La baja de inflación o pobreza no necesariamente implicaba que los hogares hubieran dejado de usar ahorro, deuda, cuotas o venta de patrimonio.</p><p class="story-analysis-question"><b>Pregunta analítica:</b> ¿cómo evolucionan ingreso, estrategias de sostenimiento, deuda, mora y pobreza para distintos hogares?</p></article>
+          <article class="story-hypothesis-card"><small>Intuición de partida · distribución</small><h3>El costo del ajuste podía estar repartido de manera desigual</h3><p>El equilibrio fiscal agregado podía coexistir con transferencias de costo entre trabajadores, jubilados, usuarios, empresas, bancos y distintos niveles del Estado.</p><p class="story-analysis-question"><b>Pregunta analítica:</b> ¿qué flujos, stocks y servicios cambiaron, y sobre qué grupos incidió cada movimiento?</p></article>
+          <article class="story-hypothesis-card"><small>Intuición de partida · frente externo</small><h3>Los dólares visibles podían no equivaler a liquidez utilizable</h3><p>Reservas brutas, reservas propias, superávit de bienes, cuenta corriente y vencimientos podían contar partes distintas de la misma restricción.</p><p class="story-analysis-question"><b>Pregunta analítica:</b> ¿qué stocks y flujos componen la posición externa y bajo qué condiciones están disponibles?</p></article>
+          <article class="story-hypothesis-card"><small>Intuición de partida · desarrollo</small><h3>Anuncios, inversión ejecutada y empleo podían no avanzar juntos</h3><p>Una reforma o aprobación podía ser un input relevante sin constituir todavía producción, infraestructura o trabajo permanente.</p><p class="story-analysis-question"><b>Pregunta analítica:</b> ¿qué etapa alcanzó cada proyecto y qué resultados observables aparecen después?</p></article>
+          <article class="story-hypothesis-card"><small>Intuición de partida · fiscalidad</small><h3>Bajar impuestos podía cambiar quién financia al Estado sin autofinanciarse por completo</h3><p>La expansión de la base, la formalización y la recaudación podían responder de manera distinta según impuesto, sujeto y ciclo económico.</p><p class="story-analysis-question"><b>Pregunta analítica:</b> ¿qué tributos cambian, quiénes quedan alcanzados y cómo evolucionan base, alícuota y recaudación real?</p></article>
+          <article class="story-hypothesis-card"><small>Intuición de partida · crédito</small><h3>Más crédito podía ser inclusión y también una fuente de estrés</h3><p>La experiencia dependía de ingreso, tasa, plazo, selección, destino y posición financiera; ahorristas y deudores no eran intercambiables.</p><p class="story-analysis-question"><b>Pregunta analítica:</b> ¿cómo se relacionan acceso, precio, capacidad de pago, exposición y mora sin confundir costo con utilidad?</p></article>
+          <article class="story-hypothesis-card caputo"><small>Hipótesis de Miyu · Caputo y los dólares del colchón</small><h3>La insistencia oficial podía no coincidir con el incentivo privado del ahorrista</h3><p>Mi intuición inicial fue que no todos “los argentinos” tienen dólares invertibles; que una cuenta comitente y activos externos seguros podían resultar más atractivos que el banco local; y que la insistencia del Gobierno podía responder a necesidades macroeconómicas más urgentes que la frase pública dejaba ver.</p><p class="story-analysis-question"><b>Traducción neutral en el análisis:</b> ¿cómo se distribuye la capacidad de ahorro?, ¿qué atributos y costos tiene cada canal?, ¿qué objetivos declara la política?, ¿qué mecanismos, beneficiarios y restricciones aparecen?</p><div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-epica-caputo-colchon')">Explorar dólares del colchón →</button></div></article>
+        </div>
       </section>
 
       <div class="story-timeline">
@@ -9096,7 +9173,7 @@ html,body{overflow-x:clip}
             <div class="answer"><small>Escenario central · pesos de jul-2026</small><b>≈ $20,1 billones</b><p>Dejar al sector con la misma capacidad de ahorro/PBI que tenía en 2023.</p></div>
           </div>
           <p>Estas tres magnitudes no se suman: <b>−$2,89 B</b> describe el cambio del lado deudor frente al espejo; <b>−$5,85 B</b> describe el saldo ampliado post-shock contra normas históricas; y <b>$11,2–20,1 B</b> es una capacidad bancaria contrafactual calculada por otra vía.</p>
-          <div class="story-quote">Un dato que contradice una frase anterior no se esconde: cambia la frase.</div>
+          <div class="story-quote">Un dato que cambia una lectura anterior no se esconde: obliga a reformularla.</div>
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-rates')">Ver Tasas e inflación →</button><button class="story-link" type="button" onclick="activateTab('tab-milei-cost')">Ver Lo que te robó Milei →</button></div>
         </article>
 
@@ -9111,20 +9188,31 @@ html,body{overflow-x:clip}
           <div class="story-question">La pregunta del match-up pasó a ser: <b>¿qué ocurre cuando cruzamos dónde terminó la mora con lo que estaba pasando antes con ingresos y costo del crédito?</b></div>
           <p>La intervención tuvo un efecto inesperado: al exigirle al análisis externo que no confundiera <b>riesgo del prestamista</b> con <b>costo para el deudor</b>, tuvimos que aplicarnos exactamente el mismo estándar. Ahí apareció un problema en nuestro propio agregado: estábamos dejando que la mejora de los ahorristas con plazo fijo compensara estadísticamente el deterioro de quienes necesitaban crédito.</p>
           <p>La ventana espejo hizo visible la diferencia. El balance ampliado mejoró aproximadamente <b>$2,07 billones</b> frente al período anterior, porque el plazo fijo mejoró cerca de <b>$4,96 billones</b>. Pero el lado estrictamente deudor —banco + Fintech— <b>empeoró aproximadamente $2,89 billones</b>. Para estudiar mora, por lo tanto, el agregado no alcanzaba.</p>
-          <div class="story-quote">Cruzar dos trabajos no sirve si el otro sólo confirma lo que ya pensábamos. Sirve cuando también nos obliga a corregirnos.</div>
+          <div class="story-quote">Cruzar dos trabajos no sirve si uno sólo repite la lectura inicial. Sirve cuando amplía las preguntas y vuelve visibles los límites de ambos.</div>
           <p>La conclusión fue más incómoda y, por eso mismo, más útil: el análisis externo no alcanza para cerrar la discusión sobre precio o sostenibilidad del crédito; nuestro agregado anterior tampoco alcanzaba para describir la experiencia de los deudores. El match-up mejoró cuando dejamos que <b>ambas limitaciones quedaran visibles</b>.</p>
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-credit-mora')">Ver Del shock a la mora →</button><button class="story-link" type="button" onclick="activateTab('tab-mora-anatomy')">Ver Anatomía de la mora →</button><button class="story-link" type="button" onclick="activateTab('tab-youth-credit')">Ver Jóvenes y crédito →</button></div>
         </article>
 
-        <article id="story-poverty" class="story-chapter" data-step="06">
-          <h2>El dato que contradijo mis expectativas</h2>
-          <p>La caída inicial del poder adquisitivo era difícil de reconciliar con el hecho de que el impacto social no hubiera producido el desenlace que muchas personas pronosticaron. Empecé a agregar gráficos y apareció un dato que realmente contradecía mis expectativas: <b>la pobreza había bajado con mucha fuerza después del pico inicial.</b></p>
+
+        <article id="story-credit-cost" class="story-chapter" data-step="06">
+          <h2>Cuando “beneficio bancario” resultó ser una pregunta demasiado grande</h2>
+          <p>Después de separar deudores de ahorristas apareció otra tentación: tomar el costo extra del crédito y llamarlo directamente <b>ganancia de bancos o Fintech</b>. Pero el mismo criterio que había corregido el agregado anterior obligó a frenar otra vez. El costo que enfrenta el deudor y la utilidad neta del prestamista no son la misma variable.</p>
+          <p>La solución fue construir una referencia explícita y discutible: <b>inflación móvil de 12 meses + riesgo + administración/capital/liquidez + margen real</b>. La convertimos a una CFTEA estandarizada y la comparamos mes a mes con la tasa observada. Así podemos medir cuánto se aleja el precio del crédito de una zona teórica sin fingir que existe una “tasa justa” revelada por los datos.</p>
+          <div class="story-question">La pregunta cambió de <b>“¿cuánto ganaron de más?”</b> a <b>“¿cuánto costo adicional soportó el deudor frente a una referencia explícita?”</b>.</div>
+          <p>Para los bancos, además, el dashboard aplica la diferencia mensual al flujo efectivamente operado de préstamos personales y lo lleva a pesos constantes. Eso produce una estimación de <b>carga financiera adicional</b>. Convertirla en beneficio exige todavía descontar fondeo, incobrabilidad, previsiones, impuestos, encajes, capital y gastos. Lo que no podemos medir con rigor queda como N/D.</p>
+          <div class="story-quote">Una tasa puede ser extraordinariamente cara para el deudor sin que toda la diferencia sea utilidad del banco. Si mezclamos esas dos cosas, volvemos a fabricar una conclusión más fuerte que nuestros datos.</div>
+          <div class="story-links"><button class="story-link" type="button" onclick="activateTabAndScroll('tab-rates','ratesCreditReferenceSection')">Ver costo del crédito vs referencia →</button></div>
+        </article>
+
+        <article id="story-poverty" class="story-chapter" data-step="07">
+          <h2>El dato que cambió mi lectura inicial</h2>
+          <p>La caída inicial del poder adquisitivo era difícil de reconciliar con el hecho de que el impacto social no hubiera producido el desenlace que muchas personas pronosticaron. Empecé a agregar gráficos y apareció un dato que no coincidía con mi lectura inicial: <b>la pobreza había bajado con mucha fuerza después del pico inicial.</b></p>
           <p>Había que reconocerlo. Fue uno de esos momentos en los que pensé: “bueno, quizá estoy entendiendo esto completamente al revés”. Pero seguí agregando información.</p>
-          <div class="story-quote">Si un dato favorecía al Gobierno, tenía que aparecer. Si contradecía mi hipótesis, también.</div>
+          <div class="story-quote">Si un dato favorecía al Gobierno, tenía que aparecer. Si no coincidía con mi expectativa, también.</div>
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-poverty')">Ver Pobreza →</button><button class="story-link" type="button" onclick="activateTab('tab-social')">Ver Asistencia social →</button></div>
         </article>
 
-        <article id="story-pendulum" class="story-chapter" data-step="07">
+        <article id="story-pendulum" class="story-chapter" data-step="08">
           <h2>El péndulo hacia los hogares</h2>
           <p>Al observar cómo había cambiado la distribución primaria y secundaria del ingreso encontré una posible explicación. Mientras una parte importante de los ingresos laborales absorbía el shock, <b>otras transferencias y mecanismos redistributivos desplazaban recursos hacia los hogares</b>, especialmente hacia los sectores más vulnerables.</p>
           <p>Eso ayudaba a reconciliar dos historias que, vistas por separado, parecían incompatibles: podía existir una gran pérdida acumulada de poder adquisitivo y, al mismo tiempo, una reducción importante de la pobreza.</p>
@@ -9133,7 +9221,7 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-pendulo')">Ver Péndulo del poder económico →</button><button class="story-link" type="button" onclick="activateTab('tab-gini')">Ver Gini →</button></div>
         </article>
 
-        <article id="story-shock" class="story-chapter" data-step="08">
+        <article id="story-shock" class="story-chapter" data-step="09">
           <h2>¿Cuánto costó el shock?</h2>
           <p>Después intenté responder una pregunta distinta. En lugar de preguntar cuánto habían caído los salarios en un mes, pregunté qué ocurría al acumular esa pérdida a través del tiempo.</p>
           <p>El cálculo actual estima un deterioro salarial bruto acumulado equivalente a <b>$18,43 billones</b>, expresado en pesos constantes. Con la recuperación posterior, aproximadamente <b>$6,08 billones</b> fueron recuperados. Queda un saldo acumulado estimado de <b>$12,35 billones</b>.</p>
@@ -9142,18 +9230,27 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-milei-cost')">Abrir la auditoría “Lo que te robó Milei” →</button></div>
         </article>
 
-        <article id="story-growth" class="story-chapter" data-step="09">
+        <article id="story-growth" class="story-chapter" data-step="10">
           <h2>Y el dashboard empezó a crecer</h2>
           <p>A partir de ahí la investigación se volvió difícil de detener. Aparecieron educación y salud, obra pública, rutas presupuestadas pero no ejecutadas, reservas y deuda, actividad económica, inversión, empleo, consumo, morosidad, distribución del ingreso, gasto público, privilegios empresariales y salarios de la alta administración del Estado.</p>
-          <p>Cada gráfico agregaba una pieza y, en algunos casos, obligaba a corregir conclusiones anteriores. El pequeño gráfico con el que había empezado terminó convirtiéndose en este dashboard.</p>
+          <p>Cada gráfico agregaba una pieza y, en algunos casos, obligaba a afinar lecturas anteriores. El pequeño gráfico con el que había empezado terminó convirtiéndose en este dashboard.</p>
           <div class="story-principles">
-            <div class="story-principle"><b>Mostrar la contradicción</b>No borrar el dato que complica la propia interpretación.</div>
+            <div class="story-principle"><b>Mostrar la complejidad</b>No borrar el dato que amplía o complica la interpretación inicial.</div>
             <div class="story-principle"><b>Separar magnitudes</b>No sumar flujos, stocks, ratios y contrafactuales como si fueran lo mismo.</div>
             <div class="story-principle"><b>Dejar huecos visibles</b>No inventar continuidad cuando las fuentes no permiten empalmar.</div>
           </div>
         </article>
 
-        <article id="story-housing" class="story-chapter" data-step="10">
+        <article id="story-supermarket" class="story-chapter" data-step="11">
+          <h2>Cuando descubrimos que “consumo” tampoco era una sola cosa</h2>
+          <p>El consumo agregado podía recuperarse y, al mismo tiempo, la caja del supermercado podía contar otra historia. En junio de 2026 entraban muchos más pesos que un año antes, pero las ventas a precios constantes caían. La contradicción era sólo aparente: <b>precio y cantidad/composición viven dentro de la misma facturación nominal</b>.</p>
+          <p>Extender la encuesta hacia atrás mostró otra capa. Desde 2017 podemos comparar el volumen real, las operaciones, los medios de pago, la estructura del panel y algunos cambios en la composición del gasto. Entonces “cayó el consumo” dejó de ser una sola frase: podía significar <b>menos operaciones, compras reales más chicas, una mezcla distinta de productos o mayor uso de tarjeta como canal de pago</b>.</p>
+          <p>La historia larga volvió a poner un límite. INDEC documenta una discontinuidad en 2014: la serie vieja y la moderna no se pueden empalmar limpiamente. Así que el dashboard hizo algo que ya se había vuelto regla: <b>mostrar el corte en vez de inventar continuidad</b>.</p>
+          <div class="story-quote">Una caja registradora puede subir mientras el changuito se achica. La unidad de medida también cuenta una historia.</div>
+          <div class="story-links"><button class="story-link" type="button" onclick="activateTabAndScroll('tab-consumption','consumptionSupermarketPulse')">Ver historia de supermercados →</button></div>
+        </article>
+
+        <article id="story-housing" class="story-chapter" data-step="12">
           <h2>La casa que desapareció del gráfico</h2>
           <p>Después apareció otro gráfico que parecía contar una historia completa con apenas dos números: el crédito hipotecario argentino en 2000 contra el de 2023. La conclusión era tentadora: entre un punto y el otro, “el kirchnerismo había destruido el acceso a la vivienda”.</p>
           <p>Pero entre esos dos puntos estaba <b>2001–2002</b>. Cuando reconstruí la serie oficial del BCRA apareció el quiebre que el recorte escondía: crisis bancaria, devaluación, pesificación, congelamiento de líneas largas y una caída brutal del crédito antes de que Néstor Kirchner asumiera.</p>
@@ -9165,7 +9262,7 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-housing')">Ver Vivienda y crédito →</button></div>
         </article>
 
-        <article id="story-alternatives" class="story-chapter" data-step="11">
+        <article id="story-alternatives" class="story-chapter" data-step="13">
           <h2>La pregunta por “la casta” y por las alternativas</h2>
           <p>Si el argumento era que el ajuste resultaba inevitable porque el Estado necesitaba cerrar sus cuentas, ¿qué ocurría si buscábamos recursos en otros lugares? Calculé incrementos destinados a capas mejor remuneradas del Estado, beneficios y tratamientos favorables a grandes empresas —incluido Mercado Libre— y otros rubros donde era razonable preguntar: <b>¿era necesario gastar esto acá?</b></p>
           <p>La primera versión de este ejercicio trataba los <b>$5,85 billones</b> del saldo financiero post-shock como si fueran deterioro adicional frente al período anterior. La ventana espejo corrigió esa lectura: el balance ampliado total en realidad <b>mejoró ≈ $2,07 billones</b>, mientras el <b>lado deudor banco + Fintech empeoró ≈ $2,89 billones</b>.</p>
@@ -9176,7 +9273,7 @@ html,body{overflow-x:clip}
           <div class="story-links"><button class="story-link" type="button" onclick="activateTab('tab-casta')">Ver La casta →</button><button class="story-link" type="button" onclick="activateTab('tab-meli-benefits')">Ver Privilegios fiscales →</button><button class="story-link" type="button" onclick="activateTab('tab-wealth-contribution')">Ver Grandes fortunas →</button></div>
         </article>
 
-        <article id="story-conclusion" class="story-chapter" data-step="12">
+        <article id="story-conclusion" class="story-chapter" data-step="14">
           <h2>Ordenar las cuentas y decidir quién paga son preguntas distintas</h2>
           <p>Los datos no demuestran que ordenar las cuentas públicas fuera innecesario. Tampoco demuestran que cualquier alternativa hubiera sido gratuita, sencilla o políticamente viable.</p>
           <p>Pero sí muestran algo más interesante: la política fiscal no consiste solamente en decidir cuánto recaudar y cuánto gastar. También consiste en decidir <b>de quién obtener los recursos, qué gastos preservar, cuáles reducir y sobre qué sectores distribuir el costo de una crisis.</b></p>
@@ -9192,7 +9289,7 @@ html,body{overflow-x:clip}
         <h3>Fuentes, metodología y código de este relato</h3>
         <div class="source-links">
           <a class="source-link" href="https://github.com/korikoranyah22/inflacion" target="_blank" rel="noopener">💻 Repositorio público · código, datos y auditorías</a>
-          <a class="source-link" href="#" data-source-path="data/derivados/AUDITORIA_COBERTURA_FUENTES_V149.md">🧾 Auditoría global de fuentes</a>
+          <a class="source-link" href="#" data-source-path="data/derivados/AUDITORIA_COBERTURA_FUENTES_V195.md">🧾 Auditoría global de fuentes</a>
           <a class="source-link" href="#" data-source-path="data/derivados/AUDITORIA_ESCALAS_LOG_Y_JERARQUIA_VISUAL_V148.md">📐 Auditoría visual y metodológica</a>
         </div>
         <div class="sources-note"><b>Cómo leer esta pestaña:</b> es un relato editorial en primera persona. Los números citados no nacen aquí: enlazan con los tabs temáticos, sus fuentes y sus auditorías. Las expresiones políticas se presentan como preguntas e interpretación de la autora, no como nuevas series estadísticas.</div>
@@ -9644,6 +9741,64 @@ html,body{overflow-x:clip}
 
 
 
+
+<section class="card" id="ratesCreditReferenceSection" style="margin-top:18px">
+  <div class="credit-ref-head">
+    <div>
+      <span class="credit-ref-eyebrow">♡ costo del crédito · referencia económica explícita · dic-2019 → jul-2026</span>
+      <h2>¿Cuánto se alejó el costo del crédito de una referencia razonable?</h2>
+      <p>Construimos una banda pedagógica desde la inflación móvil de 12 meses + riesgo + administración/capital/liquidez + margen real. Luego estandarizamos TNA→CFTEA con capitalización mensual e IVA sobre intereses. <b>La brecha mide sobrecosto del lado del deudor; no ganancia bancaria.</b></p>
+    </div>
+    <div class="credit-ref-status" id="creditRefAuditStatus">auditando…</div>
+  </div>
+  <div class="credit-ref-warning"><b>Qué intentamos resolver:</b> primero preguntábamos “¿cuánto ganaron de más los bancos?”. Los datos públicos no permiten responder eso directamente. Sí permiten aproximar una pregunta anterior y más limpia: <b>¿cuánto costo adicional enfrentó el deudor respecto de una referencia explícita?</b> Recién después puede investigarse qué parte pudo transformarse en utilidad del prestamista.</div>
+
+  <div class="credit-ref-controls" aria-label="Sensibilidad de la referencia">
+    <label class="credit-ref-control"><span>Riesgo · pp sobre inflación</span><input id="creditRiskLow" type="number" step="0.5" value="5"><input id="creditRiskHigh" type="number" step="0.5" value="10"><small>piso / techo</small></label>
+    <label class="credit-ref-control"><span>Administración / capital / liquidez</span><input id="creditAdminLow" type="number" step="0.5" value="3"><input id="creditAdminHigh" type="number" step="0.5" value="6"><small>piso / techo</small></label>
+    <label class="credit-ref-control"><span>Margen real</span><input id="creditMarginLow" type="number" step="0.5" value="2"><input id="creditMarginHigh" type="number" step="0.5" value="5"><small>piso / techo</small></label>
+    <button class="credit-ref-reset" id="creditRefReset" type="button">Restaurar 5–10 · 3–6 · 2–5</button>
+  </div>
+
+  <div id="creditRefKpis" class="credit-ref-kpis"></div>
+
+  <div class="credit-ref-panel">
+    <div class="credit-ref-panel-head"><div><h3>Costo estandarizado vs zona de referencia</h3><p>CFTEA estandarizado = proxy TNA + IVA + capitalización mensual. La línea punteada usa el eje derecho y muestra la <b>TNA equivalente de la inflación móvil 12m</b>.</p></div><div class="credit-ref-buttons"><button class="credit-ref-btn active" data-credit-ref-segment="bank">Banco</button><button class="credit-ref-btn" data-credit-ref-segment="fintech">Fintech</button><button class="credit-ref-btn" data-credit-ref-segment="both">Ambos</button></div></div>
+    <div id="creditReferenceChart" class="credit-ref-chart"></div>
+  </div>
+
+  <div class="credit-ref-panel">
+    <div class="credit-ref-panel-head"><div><h3>Brecha de costo del crédito vs techo de referencia</h3><p>Arriba de cero = el CFTEA estandarizado supera incluso el techo; debajo = queda dentro o por debajo. No es un umbral legal.</p></div></div>
+    <div id="creditGapChart" class="credit-ref-chart compact"></div>
+  </div>
+
+  <div class="credit-ref-panel">
+    <div class="credit-ref-panel-head"><div><h3>Exceso de carga financiera estimada · pesos constantes de jul-2026</h3><p>Banco usa <b>flujo mensual efectivamente operado/desembolsado</b>. Fintech usa <b>proxy sobre stock</b> sólo hasta feb-2026: no se suman como si fueran la misma metodología.</p></div><div class="credit-ref-buttons"><button class="credit-ref-btn active" data-credit-burden-segment="bank">Banco · flujo</button><button class="credit-ref-btn" data-credit-burden-segment="fintech">Fintech · proxy stock</button><button class="credit-ref-btn active" data-credit-burden-mode="signed">Saldo neto</button><button class="credit-ref-btn" data-credit-burden-mode="gross">Exceso bruto</button><button class="credit-ref-btn" data-credit-burden-mode="window">Post vs espejo</button></div></div>
+    <div id="creditBurdenChart" class="credit-ref-chart"></div>
+    <div id="creditBurdenReadout" class="credit-ref-audit"></div>
+  </div>
+
+  <div class="credit-ref-sim">
+    <div class="credit-ref-sim-controls"><h3>Simulador de un préstamo comparable</h3><div class="credit-ref-form">
+      <label>Segmento<select id="creditSimSegment"><option value="bank">Banco</option><option value="fintech">Fintech / PNFC</option></select></label>
+      <label>Mes<select id="creditSimDate"></select></label>
+      <label>Capital<input id="creditSimPrincipal" type="number" min="1000" step="10000" value="1000000"></label>
+      <label>Plazo<select id="creditSimTerm"><option value="12">12 meses</option><option value="24">24 meses</option><option value="36">36 meses</option></select></label>
+    </div><div class="credit-ref-sim-note">Cuota francesa teórica con tasa fija del mes, IVA sobre intereses y sin cargos/seguros. Sirve para comparar órdenes de magnitud; no reconstruye un contrato real.</div></div>
+    <div class="credit-ref-sim-result"><h3>¿Qué diferencia produce la tasa?</h3><div id="creditSimResult" class="credit-ref-sim-grid"></div></div>
+  </div>
+
+  <div class="credit-ref-method-grid">
+    <article><b>1 · Inflación dinámica</b><p>IPC mensual oficial → inflación móvil 12m → tasa mensual equivalente → <b>TNA de inflación</b>. No se congela el 30,6% actual ni se reinicia cada enero.</p></article>
+    <article><b>2 · Referencia, no “tasa justa”</b><p>Default: inflación + 10 pp para el piso y + 21 pp para el techo. Es un modelo económico de sensibilidad, no una frontera jurídica ni un costo observado exacto de intermediación.</p></article>
+    <article><b>3 · Sobrecosto ≠ beneficio</b><p>Para hablar de utilidad extraordinaria todavía habría que descontar fondeo, mora, previsiones, encajes, impuestos, capital, gastos operativos y recuperos. Si faltan, el dashboard deja <b>N/D</b>.</p></article>
+  </div>
+
+  <div class="credit-ref-actions"><button type="button" onclick="downloadCreditReferenceCsv()">⬇ CSV · brecha CFTEA y carga estimada</button><a href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/tas2_ser.txt" target="_blank" rel="noopener">🏦 BCRA · personales</a><a href="https://www.bcra.gob.ar/publicaciones/informe-de-proveedores-no-financieros-de-credito-junio-de-2026/" target="_blank" rel="noopener">📱 BCRA · PNFC</a><a href="https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv" target="_blank" rel="noopener">📊 INDEC · IPC</a></div>
+  <div class="credit-ref-audit"><b>Clasificación:</b> TNA e IPC = observados; TNA inflación, CFTEA estandarizado y brechas = derivados; banda ideal = escenario/sensibilidad; banco en pesos = proxy sobre flujo operado; Fintech en pesos = proxy sobre stock y sólo con tasa observada. <b>No hay serie pública suficiente en este bloque para convertir el sobrecosto en ganancia neta del prestamista.</b></div>
+</section>
+
+
     <section class="bank-adjust-section" id="ratesBankCapacitySection" aria-labelledby="ratesBankCapacityTitle">
       <div class="bank-adjust-head">
         <div>
@@ -9751,6 +9906,8 @@ html,body{overflow-x:clip}
         <button class="download-link" type="button" onclick="downloadBankAdjustmentCsv()">⬇ CSV · bancos vs ajuste</button>
         <a class="source-link" href="https://www.indec.gob.ar/uploads/informesdeprensa/cuentas_sociedades_financieras_12_254091CDBBA3.pdf" target="_blank" rel="noopener">📊 INDEC · sociedades financieras 2024</a>
         <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-diciembre-de-2023/" target="_blank" rel="noopener">🏦 BCRA · bancos dic-2023</a>
+        <a class="source-link" href="#" data-source-path="data/fuentes/ciclo_ajuste/REFERENCIAS_CICLO_AJUSTE_V70.md">🧭 Ciclo del ajuste · mapa documental V70</a>
+        <a class="source-link" href="#" data-source-path="data/fuentes/ciclo_ajuste/VEREDICTO_CICLO_AJUSTE_V70.md">⚖️ Ciclo del ajuste · síntesis V70</a>
         <a class="source-link" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/InfBanc1224.pdf" target="_blank" rel="noopener">🏦 BCRA · bancos dic-2024</a>
         <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-diciembre-de-2025/" target="_blank" rel="noopener">🏦 BCRA · bancos dic-2025</a>
         <a class="source-link" href="https://www.bcra.gob.ar/publicaciones/informe-sobre-bancos-junio-de-2026/" target="_blank" rel="noopener">🏦 BCRA · bancos jun-2026</a>
@@ -11390,74 +11547,77 @@ html,body{overflow-x:clip}
       </div>
     </section>
 
-    <section class="card co-super-deep" id="consumptionSupermarketPulse" style="margin-top:16px">
+    <section class="card co-super-deep super-history-v2" id="consumptionSupermarketPulse" style="margin-top:16px">
       <div class="card-head">
         <div class="card-title">La caja del súper: muchos más pesos, menos ventas reales <span>♡</span></div>
-        <div class="kicker">INDEC · ene–jun 2026 · nominal ≠ real</div>
+        <div class="kicker">INDEC · núcleo comparable 2017–2026 · historia larga por eras</div>
       </div>
 
       <div class="co-super-kpi-grid">
-        <article class="co-super-kpi">
-          <span class="tag">Junio 2026 · facturación nominal</span>
-          <div class="big">$ 2,485 B</div>
-          <div class="mini">$2.484.975,5 millones · <b>+23,7% ia</b> en pesos corrientes.</div>
-        </article>
-        <article class="co-super-kpi">
-          <span class="tag">Primer semestre · suma nominal</span>
-          <div class="big">$ 14,41 B</div>
-          <div class="mini">Suma derivada de las ventas corrientes oficiales de enero a junio de 2026.</div>
-        </article>
-        <article class="co-super-kpi warn">
-          <span class="tag">Junio 2026 · ventas reales</span>
-          <div class="big">−3,1%</div>
-          <div class="mini">Interanual a precios constantes; <b>−1,0%</b> mensual desestacionalizado.</div>
-        </article>
-        <article class="co-super-kpi warn">
-          <span class="tag">1S-2026 · profundidad histórica</span>
-          <div class="big">−9,2%</div>
-          <div class="mini">Contra el promedio de los primeros semestres 2017–2025 · Politikon sobre INDEC.</div>
-        </article>
+        <article class="co-super-kpi"><span class="tag">Junio 2026 · facturación nominal</span><div class="big">$ 2,485 B</div><div class="mini">$2.484.975,5 millones · <b>+23,7% ia</b> en pesos corrientes.</div></article>
+        <article class="co-super-kpi"><span class="tag">Primer semestre · suma nominal</span><div class="big">$ 14,41 B</div><div class="mini">Suma derivada de ventas corrientes enero–junio 2026.</div></article>
+        <article class="co-super-kpi warn"><span class="tag">Junio 2026 · ventas reales</span><div class="big">−3,1%</div><div class="mini">Interanual a precios constantes; <b>−1,0%</b> mensual desestacionalizado.</div></article>
+        <article class="co-super-kpi warn"><span class="tag">1S-2026 · profundidad histórica</span><div class="big">−9,2%</div><div class="mini">Contra promedio 1S 2017–2025; contra 1S-2025: <b>−2,8%</b>.</div></article>
       </div>
 
       <div class="co-super-story">
-        <div><b>La aparente paradoja:</b> en junio la facturación nominal creció <b>23,7%</b>, pero las ventas reales cayeron <b>3,1%</b>. Que entren más pesos a la caja no significa que se hayan vendido más bienes en términos reales.</div>
-        <div><b>El semestre:</b> contra 1S-2025 la caída real fue <b>2,8%</b>; contra el promedio de los primeros semestres de 2017–2025, la brecha llega a <b>9,2%</b>. Son comparadores distintos y no deben mezclarse.</div>
+        <div><b>La aparente paradoja:</b> más pesos en caja no significan más bienes vendidos. Desde 2017 podemos mirar el índice real y el nominal con la misma base sin confundir unidades.</div>
+        <div><b>La regla histórica:</b> 2017–2026 es el núcleo comparable. La historia anterior se muestra por eras porque INDEC documenta una discontinuidad en 2014 y no permite empalmarla como una sola serie homogénea.</div>
       </div>
 
-      <div class="co-super-chart-grid">
-        <div class="co-super-chart-panel">
-          <h4>2026 mes a mes: cuánto entra a la caja y qué pasa en términos reales</h4>
-          <p>Barras: facturación a precios corrientes. Línea: variación real interanual. Dos unidades distintas, dos lecturas complementarias.</p>
-          <div id="supermarketPulseChart"></div>
-        </div>
-        <div class="co-super-chart-panel">
-          <h4>¿La debilidad es territorial?</h4>
-          <p>Referencias explícitamente publicadas del informe de Politikon. No completamos provincias faltantes a ojo: el titular agregado sí informa <b>22 de 24</b> distritos por debajo.</p>
-          <div id="supermarketHistoryDistrictChart"></div>
-        </div>
-      </div>
+      <nav class="super-inner-nav" aria-label="Capítulos de supermercados">
+        <a href="#super-history-a">A · Caja vs changuito</a><a href="#super-history-b">B · Cómo pagamos</a><a href="#super-history-c">C · Qué compramos</a><a href="#super-history-d">D · Territorio</a><a href="#super-history-e">E · 30 años</a>
+      </nav>
 
-      <div class="co-super-mini-grid">
-        <div class="co-super-mini"><span class="tag">Operaciones · junio</span><strong>65,55 M</strong><small>ticket promedio: <b>$37.910</b></small></div>
-        <div class="co-super-mini"><span class="tag">Tarjeta de crédito</span><strong>42,8%</strong><small>$1,062 B de las ventas de junio</small></div>
-        <div class="co-super-mini"><span class="tag">Empresas / bocas</span><strong>93 / 3.128</strong><small>panel relevado por INDEC en junio</small></div>
-        <div class="co-super-mini"><span class="tag">Empleo del panel</span><strong>95.816</strong><small><b>−4,1% ia</b> asalariados en junio</small></div>
-      </div>
+      <section id="super-history-a" class="super-history-block">
+        <div class="super-history-title"><span>A</span><div><h3>La caja vs el changuito · 2017 → 2026</h3><p>Índices base 2017=100. Nominal y real comparten fecha, pero no significado: el real descuenta precios.</p></div></div>
+        <div class="super-wide-panel"><div id="supermarketModernHistoryChart"></div><div class="super-method-note"><b>Lectura:</b> el eje real pregunta cuánto se vendió en términos constantes; el nominal muestra cuánto crecieron los pesos facturados. El salto nominal no es recuperación del volumen.</div></div>
+        <div class="co-super-chart-grid">
+          <div class="co-super-chart-panel"><h4>¿Qué tan malo fue cada primer semestre?</h4><p>Nivel real medio de enero–junio. La línea punteada es el promedio 2017–2025.</p><div id="supermarketH1HistoryChart"></div></div>
+          <div class="co-super-chart-panel"><h4>2026 mes a mes: caja nominal vs ventas reales</h4><p>Barras: facturación corriente. Línea: variación real interanual.</p><div id="supermarketPulseChart"></div></div>
+        </div>
+        <div class="super-wide-panel"><h4>¿Compramos menos veces o menos en cada compra?</h4><p>Snapshots comparables de operaciones y ticket real aproximado. <b>Operaciones no son personas únicas.</b></p><div id="supermarketOperationsChart"></div><div class="super-method-note"><b>Ticket real aproximado:</b> ticket nominal dividido por el índice de precios implícito de la propia encuesta (nominal/real), normalizado a dic-2020=100. Es un proxy de valor real por operación, no cantidad física de productos.</div></div>
+      </section>
+
+      <section id="super-history-b" class="super-history-block">
+        <div class="super-history-title"><span>B</span><div><h3>¿Con qué pagamos el súper?</h3><p>Snapshots de cierre anual desde 2020 y junio de 2026. La tarjeta es medio de pago; no prueba saldo revolvente.</p></div></div>
+        <div class="super-wide-panel"><div id="supermarketPaymentChart"></div><div class="super-method-note"><b>Precaución:</b> “tarjeta de crédito” significa compras canalizadas por crédito. Una compra puede cancelarse íntegramente al vencimiento; esta serie no mide deuda ni mora.</div></div>
+        <div class="super-bridge-links"><button onclick="activateTab('tab-power')">Ver Poder adquisitivo →</button><button onclick="activateTab('tab-rates')">Ver Tasas y crédito →</button><button onclick="activateTab('tab-morosidad')">Ver Mora →</button><button onclick="activateTab('tab-mora-causal')">Ver ¿Qué explica la mora? →</button></div>
+      </section>
+
+      <section id="super-history-c" class="super-history-block">
+        <div class="super-history-title"><span>C</span><div><h3>¿Qué parte de la caja ocupa cada rubro?</h3><p>Composición nominal oficial en snapshots seleccionados. No confundir participación del gasto con cantidad física consumida.</p></div></div>
+        <div class="super-wide-panel"><div id="supermarketBasketCompositionChart"></div><div class="super-method-note"><b>N/D visible:</b> no construimos una serie real larga por rubro sin un deflactor compatible por categoría. Esta vista es composición nominal; la historia real por rubro queda pendiente.</div></div>
+      </section>
+
+      <section id="super-history-d" class="super-history-block">
+        <div class="super-history-title"><span>D</span><div><h3>¿Dónde cayó más?</h3><p>Foto de 1S-2026 contra el promedio histórico comparable. El ranking es parcial porque sólo usamos referencias con valor explícitamente publicado.</p></div></div>
+        <div class="co-super-chart-grid"><div class="co-super-chart-panel"><h4>Profundidad territorial · 1S-2026</h4><div id="supermarketHistoryDistrictChart"></div></div><div class="co-super-chart-panel super-nd-panel"><h4>Heatmap provincial 2017–2026</h4><div class="super-nd"><b>N/D con rigor</b><span>No integramos todavía una serie anual real homogénea por provincia. No deflactamos silenciosamente con IPC nacional ni completamos provincias faltantes.</span></div></div></div>
+      </section>
+
+      <section id="super-history-e" class="super-history-block">
+        <div class="super-history-title"><span>E</span><div><h3>30 años haciendo las compras · contexto por eras</h3><p>La encuesta existe desde los 90, pero la comparación larga exige mostrar las rupturas en lugar de esconderlas.</p></div></div>
+        <div class="super-era-grid"><article><small>ERA A · 1996–2013</small><b>Archivo histórico</b><p>Serie oficial antigua. INDEC documenta deflactores/ponderadores previos y advierte que no puede empalmarse con 2014.</p></article><article><small>ERA B · 2014–2016</small><b>Transición</b><p>Cambio a IPCNU y período metodológicamente distinto. Se conserva como contexto, no como puente artificial.</p></article><article class="active"><small>ERA C · 2017–2026</small><b>Núcleo comparable</b><p>Base 2017=100, panel/cobertura ampliados y variables modernas. Éste es el período usado para comparaciones cuantitativas principales.</p></article></div>
+        <div class="super-wide-panel"><h4>Detrás de la caja: operaciones, bocas y empleo</h4><div id="supermarketStructureChart"></div><div class="super-method-note">Snapshots de diciembre 2020–2025 y junio 2026. Sirven para ver estructura y dirección; no se interpretan como promedio anual.</div></div>
+      </section>
 
       <div class="co-apb co-super-apb">
-        <div><b>APB · “facturación” puede engañar:</b> a precios corrientes mezcla precio × cantidad/composición. Para comparar consumo a través del tiempo usamos la serie a precios constantes.</div>
-        <div><b>APB · $14,41 B no es consumo real:</b> es la suma nominal enero–junio. Sirve para dimensionar caja; no se compara directamente entre años sin deflactar.</div>
-        <div><b>APB · promedio histórico:</b> el −9,2% compara 1S-2026 con el promedio de los primeros semestres 2017–2025; el −2,8% compara sólo contra 1S-2025.</div>
-        <div><b>APB · provincias:</b> Politikon desagrega Gran Buenos Aires y resto de Buenos Aires. Al unificar la provincia, la lectura publicada queda en 22 de 24 distritos bajo su promedio.</div>
+        <div><b>APB · nominal ≠ real:</b> facturación corriente mezcla precio × cantidad/composición. Para comparar consumo usamos ventas a precios constantes.</div>
+        <div><b>APB · operaciones ≠ personas:</b> una misma persona puede generar muchas operaciones.</div>
+        <div><b>APB · tarjeta ≠ deuda:</b> medio de pago no informa saldo financiado ni revolving.</div>
+        <div><b>APB · 1996–2026:</b> no hay una única línea homogénea. INDEC documenta discontinuidad en 2014; la mostramos como corte.</div>
       </div>
 
       <div class="co-super-actions">
-        <button class="download-link" type="button" onclick="downloadSupermarketPulseCsv()">⬇ CSV · supermercados 2026</button>
+        <button class="download-link" type="button" onclick="downloadSupermarketHistoryCsv('modern')">⬇ CSV · moderno 2017–2026</button>
+        <button class="download-link" type="button" onclick="downloadSupermarketHistoryCsv('payments')">⬇ CSV · medios de pago</button>
+        <button class="download-link" type="button" onclick="downloadSupermarketHistoryCsv('structure')">⬇ CSV · operaciones y estructura</button>
+        <button class="download-link" type="button" onclick="downloadSupermarketHistoryCsv('basket')">⬇ CSV · rubros</button>
+        <button class="download-link" type="button" onclick="downloadSupermarketHistoryCsv('territory')">⬇ CSV · territorio</button>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-34">🛒 INDEC · Encuesta de supermercados</a>
-        <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/uploads/informesdeprensa/super_06_26AE8B8D5076.pdf">📄 INDEC · abril 2026 · detalle nominal</a>
-        <a class="source-link" target="_blank" rel="noopener" href="https://www.infobae.com/economia/2026/08/21/cayeron-las-ventas-en-supermercados-mayoristas-y-shoppings-en-junio-segun-el-indec/">🧾 Junio 2026 · reproducción de datos INDEC</a>
-        <a class="source-link" target="_blank" rel="noopener" href="https://www.infobae.com/economia/2026/08/24/en-22-de-24-distritos-de-argentina-los-supermercados-estan-facturando-por-debajo-del-promedio-de-los-ultimos-8-anos/">🗺️ Politikon / INDEC · comparación territorial histórica</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.indec.gob.ar/indec/web/Institucional-Indec-InformacionDeArchivo-1">🗃️ INDEC · archivo histórico y discontinuidad</a>
       </div>
+      <div class="rates-files-audit"><b>Estado de integración:</b> historia mensual real/nominal 2017–abr-2026 observada/reconstruida desde publicaciones INDEC; may–jun 2026 incluyen derivaciones identificadas desde variaciones/montos oficiales. Medios de pago y estructura usan snapshots. Historia 1996–2016 y heatmap provincial largo quedan como contexto/N/D hasta integrar las tablas completas sin empalmes artificiales.</div>
     </section>
 
     <section class="card" style="margin-top:16px">
@@ -12418,8 +12578,8 @@ html,body{overflow-x:clip}
     <div class="ca-shell">
       <section class="ca-hero">
         <div class="ca-head">
-          <div><span class="ca-badge">auditoría empírica · causal · adversarial</span><h2>¿Qué explica la mora? · pobreza, ingreso, crédito y originación bajo lupa ♡</h2><p class="ca-sub">La pregunta no es elegir una narrativa cómoda. Intentamos refutar y defender por igual tres familias de explicación: <b>capacidad de pago</b>, <b>expansión/originación del crédito</b> e <b>interacción entre ambas</b>.</p></div>
-          <div class="ca-verdict"><small>VEREDICTO MÁS DEFENDIBLE</small><strong>Interacción</strong><span>ingreso/capacidad + crédito + precio + selección</span></div>
+          <div><span class="ca-badge">análisis empírico · causal · comparativo</span><h2>¿Qué explica la mora? · pobreza, ingreso, crédito y originación bajo lupa ♡</h2><p class="ca-sub">La pregunta es qué información aporta y qué límites tiene cada una de tres familias de explicación: <b>capacidad de pago</b>, <b>expansión/originación del crédito</b> e <b>interacción entre ambas</b>.</p></div>
+          <div class="ca-verdict"><small>LECTURA INTEGRADA MÁS COMPATIBLE</small><strong>Interacción</strong><span>ingreso/capacidad + crédito + precio + selección</span></div>
         </div>
         <div class="ca-kpis">
           <article><small>Pobreza · 2S-2025</small><b>28,2%</b><span>bajó mientras la mora subió · eso solo NO identifica causalidad</span></article>
@@ -12491,7 +12651,7 @@ html,body{overflow-x:clip}
       </section>
 
       <section class="ca-card">
-        <div class="ca-title"><span class="ca-pill derived">H1 → H6</span><h3>Matriz adversarial · qué sobrevive al intento de refutación</h3></div>
+        <div class="ca-title"><span class="ca-pill derived">H1 → H6</span><h3>Matriz comparativa · evidencia y límites de cada explicación</h3></div>
         <div class="ca-evidence-table-wrap"><table class="ca-evidence-table"><thead><tr><th>Hipótesis</th><th>Evidencia a favor</th><th>Qué la debilita</th><th>Grado</th></tr></thead><tbody>
           <tr><td><b>H1 · pobreza</b></td><td>El shock 1S-2024 coincide con el inicio de la secuencia de fragilidad.</td><td>Luego pobreza cae fuerte mientras mora sube; denominadores distintos y frecuencia semestral.</td><td><span class="grade weak">Débil como explicación directa</span></td></tr>
           <tr><td><b>H2 · desempleo</b></td><td>Correlación trimestral modesta positiva; empleo no captura intensidad de ingreso.</td><td>No hay salto de desempleo proporcional al salto de mora.</td><td><span class="grade weak">Débil / parcial</span></td></tr>
@@ -12513,7 +12673,7 @@ html,body{overflow-x:clip}
       </section>
 
       <section class="ca-card">
-        <div class="ca-title"><span class="ca-pill verdict">veredictos sobre frases fuertes</span><h3>Qué podemos decir —y qué no</h3></div>
+        <div class="ca-title"><span class="ca-pill verdict">alcance de afirmaciones fuertes</span><h3>Qué podemos decir —y qué no</h3></div>
         <div class="ca-claims">
           <article><b>“La pobreza no explica la mora.”</b><span class="grade no">No respaldada como descarte causal</span><p>La divergencia agregada existe; no alcanza para excluir capacidad de pago.</p></article>
           <article><b>“El desempleo no explica la mora.”</b><span class="grade weak">Débil / no respaldada</span><p>La relación agregada no es cero y el desempleo tampoco mide ingreso de deudores.</p></article>
@@ -13272,6 +13432,24 @@ html,body{overflow-x:clip}
       <div class="bcra-head-note"><b>APB:</b> estas seis cifras no se suman. Reservas = <b>stock</b>; compra de divisas = <b>flujo</b>; dólar = <b>precio</b>; TAMAR/BADLAR = <b>tasas</b>. Son unidades y preguntas distintas.</div>
     </section>
 
+    <section id="bcraReserveDefinitions" class="card" style="margin-top:16px">
+      <div class="card-head">
+        <div class="card-title">Antes de graficar · Brutas, netas y residual <span>♡</span></div>
+        <div class="kicker">corte complementario · fórmulas y fechas explícitas</div>
+      </div>
+      <div class="dp-kpi-grid bcra-debt-kpis">
+        <div class="dp-kpi"><div class="tag">Reservas brutas · último dato público</div><div class="big">USD 50.861 M</div><div class="mini">27/08/2026 · stock oficial diario. No equivale a dólares libres.</div></div>
+        <div class="dp-kpi"><div class="tag">Reservas netas FMI · última estimación pública</div><div class="big">≈−USD 6.500 M</div><div class="mini">Informe de mayo de 2026. No está sincronizada con la foto bruta de agosto.</div></div>
+        <div class="dp-kpi"><div class="tag">Reservas netas FMI · corte diario</div><div class="big">N/D público</div><div class="mini">El BCRA reporta NIR al Fondo semanalmente; no localizamos una serie pública equivalente.</div></div>
+        <div class="dp-kpi"><div class="tag">Residual estático · 31/07</div><div class="big">10.471 / 5.820</div><div class="mini">USD M hasta 1 mes / 1 año. Es una sensibilidad mecánica, no reservas netas.</div></div>
+      </div>
+      <div class="bcra-apb">
+        <div><b>Definición del programa:</b> NIR = reservas oficiales brutas menos pasivos oficiales de reserva, valuados a tipos de cambio del programa. Entre los pasivos incluye swaps, encajes bancarios en moneda extranjera, SEDESA y otros depósitos definidos por el FMI.</div>
+        <div><b>Por qué no actualizamos por resta simple:</b> el stock bruto diario no publica en esa misma fecha todo el perímetro necesario. Una cifra cercana a USD 10.000 M necesita fórmula, fecha y fuente antes de llamarse “reservas netas”.</div>
+      </div>
+      <div class="bcra-controls controls"><button class="subbtn" type="button" onclick="activateTab('tab-epica-dollars')">Abrir puente de liquidez →</button></div>
+    </section>
+
     <section class="card" style="margin-top:16px">
       <div class="card-head">
         <div class="card-title">① Reservas internacionales brutas <span>♡</span></div>
@@ -13380,16 +13558,20 @@ html,body{overflow-x:clip}
     <section class="sources-box" style="margin-top:16px">
       <h3>Fuentes y descargas</h3>
       <div class="source-links">
+        <a class="download-link" download href="research/epica_dashito_2026/deep_dive_2026-08-31/derived/reserve_measure_definitions_2026-09-01.csv">⬇ CSV · brutas, netas y residual</a>
         <button class="download-link" onclick="downloadBcraCsv('monthly')">⬇ CSV · mensual consolidado</button>
         <button class="download-link" onclick="downloadBcraCsv('factors')">⬇ CSV · factores anuales</button>
         <button class="download-link" onclick="downloadBcraCsv('snapshot')">⬇ CSV · foto actual</button>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/reservas1.pdf">🏦 BCRA · reservas brutas diarias</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/normas-especiales-para-la-divulgacion-de-datos-fmi/">🏦 BCRA · planilla SDDS</a>
+        <a class="source-link" target="_blank" rel="noopener" href="https://www.imf.org/-/media/files/publications/cr/2026/english/1argea2026001.pdf">📄 FMI · definición y estimación NIR</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/reservas-internacionales-y-base-monetaria/">🏦 BCRA · reservas internacionales y base monetaria</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/informe-monetario-diario/">📘 BCRA · Informe Monetario Diario + factores de variación</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/tipo-cambio-referencia-comunicacion-a-3500-tcnpm/">💱 BCRA · A3500 y TCNPM</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/tasas-de-interes/">📈 BCRA · tasas de interés</a>
         <a class="source-link" target="_blank" rel="noopener" href="https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/Metodologia_Series.pdf">🧪 BCRA · metodología de las series</a>
       </div>
-      <div class="sources-note"><b>Corte estático:</b> los archivos oficiales fueron descargados para esta edición y quedaron embebidos en el HTML. El último dato no coincide necesariamente entre variables: reservas/compra diaria llegan al 13/08/2026 en el libro descargado; tasas al 18/08/2026; A3500 al 19/08/2026. Los gráficos históricos usan sólo meses cerrados hasta julio de 2026, salvo la foto superior.</div>
+      <div class="sources-note"><b>Cortes estáticos:</b> el snapshot superior conserva el libro descargado hasta el 13/08/2026; el comparador de medidas agrega reservas brutas al 27/08 y la última estimación pública de netas FMI de mayo. Tasas llegan al 18/08 y A3500 al 19/08. Los gráficos históricos usan sólo meses cerrados hasta julio de 2026.</div>
     </section>
   </section>
 
@@ -14538,9 +14720,16 @@ html,body{overflow-x:clip}
     </section>
   </section>
 
-<div class="family-mini-note" style="margin:18px 0 8px;text-align:center"><b>📌 Snapshot editorial:</b> esta versión queda cerrada al <b>21/08/2026</b>. Las fuentes remotas que el archivo consulta para dibujar algunas series están limitadas por fecha y <b>no incorporarán publicaciones posteriores a este corte</b>.</div>
+<div class="family-mini-note" style="margin:18px 0 8px;text-align:center"><b>📌 Cortes visibles:</b> núcleo histórico al <b>21/08/2026</b> y super-tabs auditados al <b>31/08/2026</b>. Las fuentes remotas del núcleo histórico están limitadas por fecha y <b>no incorporarán publicaciones posteriores al 21/08/2026</b>; los super-tabs usan copias locales cerradas al 31/08/2026.</div>
 <div class="dashboard-credit">♡ ✦ hecho por <a href="https://x.com/miyurory" target="_blank" rel="noopener">@MiyuRory</a> y <span class="naira">Naira</span> 🐾 ✦ 🐾 ♡</div>
 </div>
+
+<script src="assets/epica-super-tabs.js?v=20260902-1"></script>
+<script src="assets/epica-stage2-tabs.js?v=20260902-1"></script>
+<script src="assets/political-wealth-data.js?v=20260903-38"></script>
+<script src="assets/political-wealth-tab.js?v=20260903-38"></script>
+<script src="assets/mora-ley-tab.js?v=20260903-1"></script>
+<script src="assets/reclamo-credito-tab.js?v=20260903-1"></script>
 
 <script>
 const DASHBOARD_SNAPSHOT_CUTOFF = '2026-08-21';
@@ -14688,8 +14877,11 @@ const structureFederalData = {
 };
 
 function activateTab(tabId){
-  const btn=[...document.querySelectorAll('.tab-btn')].find(b=>b.dataset.tab===tabId);
-  if(btn) btn.click();
+  const btn=[...document.querySelectorAll('#dash-main-tabs .tab-btn, .tabs .tab-btn')].find(b=>b.dataset.tab===tabId);
+  if(!btn)return;
+  btn.hidden=false;
+  btn.click();
+  requestAnimationFrame(()=>{syncDashNavigation();keepActiveDashTabInView();});
 }
 
 function activateTabAndScroll(tabId, elementId){
@@ -14940,6 +15132,71 @@ function renderMileiCost(){
     `<div class="milei-cost-disclaimer"><b>Cómo leer esta escala:</b> todas las barras se expresan contra ${powerMoneyBillions(grossShock)} sólo para comparar tamaños. <b>No todas se restan.</b> El saldo observado es ${powerMoneyBillions(salaryRemaining)}; la reasignación de la envolvente dejaría ${powerMoneyBillions(remainingAfterEnvelope)} como sensibilidad; ${powerMoneyBillions(fullCompensationRemaining)} corresponde al escenario extremo que además supone compensar el deterioro deudor vs espejo.</div>`;
 }
 
+
+// -------- CFTEA de referencia / sobrecosto deudor · 25-08-2026 --------
+const CREDIT_REF_INPUT = [{"date":"2019-01","inflationMonthly":2.906241,"bankTna":64.137273,"fintechTna":null,"note":""},{"date":"2019-02","inflationMonthly":3.765622,"bankTna":62.1365,"fintechTna":null,"note":""},{"date":"2019-03","inflationMonthly":4.67954,"bankTna":60.761053,"fintechTna":null,"note":""},{"date":"2019-04","inflationMonthly":3.4,"bankTna":63.383158,"fintechTna":136.182964,"note":""},{"date":"2019-05","inflationMonthly":3.10362,"bankTna":67.019091,"fintechTna":137.606352,"note":""},{"date":"2019-06","inflationMonthly":2.718005,"bankTna":67.019444,"fintechTna":138.935468,"note":""},{"date":"2019-07","inflationMonthly":2.197866,"bankTna":65.800476,"fintechTna":137.481542,"note":""},{"date":"2019-08","inflationMonthly":3.953986,"bankTna":69.474286,"fintechTna":145.566499,"note":""},{"date":"2019-09","inflationMonthly":5.885662,"bankTna":76.258095,"fintechTna":154.024621,"note":""},{"date":"2019-10","inflationMonthly":3.293482,"bankTna":75.482727,"fintechTna":153.601558,"note":""},{"date":"2019-11","inflationMonthly":4.254537,"bankTna":74.192105,"fintechTna":128.507584,"note":""},{"date":"2019-12","inflationMonthly":3.743707,"bankTna":71.557895,"fintechTna":156.405996,"note":""},{"date":"2020-01","inflationMonthly":2.252895,"bankTna":69.046818,"fintechTna":160.806879,"note":""},{"date":"2020-02","inflationMonthly":2.013629,"bankTna":63.99,"fintechTna":149.901032,"note":""},{"date":"2020-03","inflationMonthly":3.343469,"bankTna":58.644737,"fintechTna":141.445489,"note":""},{"date":"2020-04","inflationMonthly":1.496573,"bankTna":53.0935,"fintechTna":143.144955,"note":""},{"date":"2020-05","inflationMonthly":1.542736,"bankTna":51.382105,"fintechTna":149.726508,"note":""},{"date":"2020-06","inflationMonthly":2.243539,"bankTna":50.31619,"fintechTna":149.717476,"note":""},{"date":"2020-07","inflationMonthly":1.934195,"bankTna":50.58,"fintechTna":138.95399,"note":""},{"date":"2020-08","inflationMonthly":2.70011,"bankTna":51.1485,"fintechTna":137.242296,"note":""},{"date":"2020-09","inflationMonthly":2.835522,"bankTna":51.6,"fintechTna":131.518656,"note":""},{"date":"2020-10","inflationMonthly":3.76097,"bankTna":50.715714,"fintechTna":130.961335,"note":""},{"date":"2020-11","inflationMonthly":3.159705,"bankTna":52.888421,"fintechTna":130.961687,"note":""},{"date":"2020-12","inflationMonthly":4.005567,"bankTna":55.409444,"fintechTna":134.032708,"note":""},{"date":"2021-01","inflationMonthly":4.049029,"bankTna":56.4185,"fintechTna":137.228417,"note":""},{"date":"2021-02","inflationMonthly":3.574632,"bankTna":55.97,"fintechTna":143.718526,"note":""},{"date":"2021-03","inflationMonthly":4.810807,"bankTna":56.044545,"fintechTna":133.323545,"note":""},{"date":"2021-04","inflationMonthly":4.080294,"bankTna":55.3555,"fintechTna":136.288201,"note":""},{"date":"2021-05","inflationMonthly":3.322978,"bankTna":54.620526,"fintechTna":137.87189,"note":""},{"date":"2021-06","inflationMonthly":3.174548,"bankTna":52.631429,"fintechTna":132.609337,"note":""},{"date":"2021-07","inflationMonthly":2.997033,"bankTna":53.839048,"fintechTna":133.288471,"note":""},{"date":"2021-08","inflationMonthly":2.468487,"bankTna":53.147143,"fintechTna":134.166261,"note":""},{"date":"2021-09","inflationMonthly":3.546788,"bankTna":53.634091,"fintechTna":135.026619,"note":""},{"date":"2021-10","inflationMonthly":3.516275,"bankTna":52.815263,"fintechTna":130.969451,"note":""},{"date":"2021-11","inflationMonthly":2.529465,"bankTna":51.804762,"fintechTna":127.91929,"note":""},{"date":"2021-12","inflationMonthly":3.83997,"bankTna":52.921,"fintechTna":127.833174,"note":""},{"date":"2022-01","inflationMonthly":3.875682,"bankTna":54.954286,"fintechTna":127.273227,"note":""},{"date":"2022-02","inflationMonthly":4.694366,"bankTna":55.854737,"fintechTna":124.208287,"note":""},{"date":"2022-03","inflationMonthly":6.728798,"bankTna":55.979048,"fintechTna":121.373472,"note":""},{"date":"2022-04","inflationMonthly":6.047319,"bankTna":57.907368,"fintechTna":123.39069,"note":""},{"date":"2022-05","inflationMonthly":5.050228,"bankTna":58.933,"fintechTna":123.758963,"note":""},{"date":"2022-06","inflationMonthly":5.295221,"bankTna":60.251,"fintechTna":125.424986,"note":""},{"date":"2022-07","inflationMonthly":7.406197,"bankTna":65.664286,"fintechTna":128.829581,"note":""},{"date":"2022-08","inflationMonthly":6.970336,"bankTna":75.271818,"fintechTna":136.686649,"note":""},{"date":"2022-09","inflationMonthly":6.16552,"bankTna":78.156667,"fintechTna":146.249747,"note":""},{"date":"2022-10","inflationMonthly":6.34735,"bankTna":82.715789,"fintechTna":153.283919,"note":""},{"date":"2022-11","inflationMonthly":4.916147,"bankTna":78.935238,"fintechTna":153.096551,"note":""},{"date":"2022-12","inflationMonthly":5.124608,"bankTna":81.0205,"fintechTna":157.244873,"note":""},{"date":"2023-01","inflationMonthly":6.027874,"bankTna":80.292727,"fintechTna":157.563095,"note":""},{"date":"2023-02","inflationMonthly":6.627722,"bankTna":80.508889,"fintechTna":156.741419,"note":""},{"date":"2023-03","inflationMonthly":7.67524,"bankTna":80.691364,"fintechTna":152.589882,"note":""},{"date":"2023-04","inflationMonthly":8.40269,"bankTna":81.749444,"fintechTna":151.190368,"note":""},{"date":"2023-05","inflationMonthly":7.772753,"bankTna":95.0265,"fintechTna":159.698028,"note":""},{"date":"2023-06","inflationMonthly":5.950832,"bankTna":104.193,"fintechTna":170.185529,"note":""},{"date":"2023-07","inflationMonthly":6.344851,"bankTna":102.57619,"fintechTna":171.489299,"note":""},{"date":"2023-08","inflationMonthly":12.441638,"bankTna":110.407727,"fintechTna":177.943517,"note":""},{"date":"2023-09","inflationMonthly":12.74975,"bankTna":102.667619,"fintechTna":198.936449,"note":""},{"date":"2023-10","inflationMonthly":8.301739,"bankTna":116.3915,"fintechTna":201.535628,"note":""},{"date":"2023-11","inflationMonthly":12.81069,"bankTna":134.772,"fintechTna":210.840206,"note":""},{"date":"2023-12","inflationMonthly":25.465675,"bankTna":138.748947,"fintechTna":211.370008,"note":""},{"date":"2024-01","inflationMonthly":20.614225,"bankTna":136.365455,"fintechTna":209.025235,"note":""},{"date":"2024-02","inflationMonthly":13.240676,"bankTna":126.616842,"fintechTna":197.778658,"note":""},{"date":"2024-03","inflationMonthly":11.0097,"bankTna":125.281053,"fintechTna":190.935469,"note":""},{"date":"2024-04","inflationMonthly":8.831921,"bankTna":99.945,"fintechTna":173.991442,"note":""},{"date":"2024-05","inflationMonthly":4.176045,"bankTna":69.257727,"fintechTna":157.005111,"note":""},{"date":"2024-06","inflationMonthly":4.57735,"bankTna":63.59,"fintechTna":146.007567,"note":""},{"date":"2024-07","inflationMonthly":4.030934,"bankTna":63.070455,"fintechTna":140.610332,"note":""},{"date":"2024-08","inflationMonthly":4.172273,"bankTna":67.652273,"fintechTna":139.560699,"note":""},{"date":"2024-09","inflationMonthly":3.469208,"bankTna":68.25619,"fintechTna":138.968231,"note":""},{"date":"2024-10","inflationMonthly":2.691738,"bankTna":70.257727,"fintechTna":130.313754,"note":""},{"date":"2024-11","inflationMonthly":2.426556,"bankTna":70.502632,"fintechTna":126.995117,"note":""},{"date":"2024-12","inflationMonthly":2.704104,"bankTna":70.182632,"fintechTna":130.036596,"note":""},{"date":"2025-01","inflationMonthly":2.211048,"bankTna":70.965909,"fintechTna":129.933219,"note":""},{"date":"2025-02","inflationMonthly":2.401627,"bankTna":68.996,"fintechTna":129.565626,"note":""},{"date":"2025-03","inflationMonthly":3.729335,"bankTna":68.522222,"fintechTna":129.607755,"note":""},{"date":"2025-04","inflationMonthly":2.780836,"bankTna":70.922632,"fintechTna":129.71231,"note":""},{"date":"2025-05","inflationMonthly":1.501109,"bankTna":72.209,"fintechTna":132.003388,"note":""},{"date":"2025-06","inflationMonthly":1.618925,"bankTna":73.033158,"fintechTna":131.398027,"note":""},{"date":"2025-07","inflationMonthly":1.901684,"bankTna":69.824091,"fintechTna":130.418011,"note":""},{"date":"2025-08","inflationMonthly":1.875794,"bankTna":74.1765,"fintechTna":137.112858,"note":""},{"date":"2025-09","inflationMonthly":2.07596,"bankTna":81.679091,"fintechTna":155.936335,"note":""},{"date":"2025-10","inflationMonthly":2.341943,"bankTna":83.229545,"fintechTna":157.211412,"note":""},{"date":"2025-11","inflationMonthly":2.47292,"bankTna":77.423529,"fintechTna":158.531034,"note":""},{"date":"2025-12","inflationMonthly":2.845272,"bankTna":70.501053,"fintechTna":151.601562,"note":""},{"date":"2026-01","inflationMonthly":2.881619,"bankTna":68.66,"fintechTna":146.867137,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."},{"date":"2026-02","inflationMonthly":2.896319,"bankTna":69.68,"fintechTna":144.242604,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."},{"date":"2026-03","inflationMonthly":3.382622,"bankTna":69.41,"fintechTna":null,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."},{"date":"2026-04","inflationMonthly":2.58218,"bankTna":67.89,"fintechTna":null,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."},{"date":"2026-05","inflationMonthly":2.149972,"bankTna":67.25,"fintechTna":null,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."},{"date":"2026-06","inflationMonthly":1.886871,"bankTna":66.68,"fintechTna":null,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."},{"date":"2026-07","inflationMonthly":2.113772,"bankTna":65.71,"fintechTna":null,"note":"Banco/PF reconciliados con Boletín Estadístico BCRA ago-2026."}];
+const CREDIT_REF_VOLUME = [{"date":"2021-04","window":"espejo","bankFlowNominal":32983971000.0,"ipcFactorJul26":26.620491,"fintechStockRealJul26":755219327149.02,"fintechObserved":true},{"date":"2021-05","window":"espejo","bankFlowNominal":29569598000.0,"ipcFactorJul26":25.764347,"fintechStockRealJul26":832347989192.8226,"fintechObserved":true},{"date":"2021-06","window":"espejo","bankFlowNominal":30353853000.0,"ipcFactorJul26":24.971612,"fintechStockRealJul26":909476651236.6251,"fintechObserved":true},{"date":"2021-07","window":"espejo","bankFlowNominal":32409240000.0,"ipcFactorJul26":24.244981,"fintechStockRealJul26":986605313280.4277,"fintechObserved":true},{"date":"2021-08","window":"espejo","bankFlowNominal":42769452000.0,"ipcFactorJul26":23.660915,"fintechStockRealJul26":1063733975324.23,"fintechObserved":true},{"date":"2021-09","window":"espejo","bankFlowNominal":48273216000.0,"ipcFactorJul26":22.850458,"fintechStockRealJul26":1140862637368.0325,"fintechObserved":true},{"date":"2021-10","window":"espejo","bankFlowNominal":51897666000.0,"ipcFactorJul26":22.074266,"fintechStockRealJul26":1217991299411.8352,"fintechObserved":true},{"date":"2021-11","window":"espejo","bankFlowNominal":58062667000.0,"ipcFactorJul26":21.52968,"fintechStockRealJul26":1295119961455.6375,"fintechObserved":true},{"date":"2021-12","window":"espejo","bankFlowNominal":48080523000.0,"ipcFactorJul26":20.733519,"fintechStockRealJul26":1372248623499.44,"fintechObserved":true},{"date":"2022-01","window":"espejo","bankFlowNominal":45268321000.0,"ipcFactorJul26":19.959935,"fintechStockRealJul26":1400145523227.8518,"fintechObserved":true},{"date":"2022-02","window":"espejo","bankFlowNominal":50259631000.0,"ipcFactorJul26":19.064957,"fintechStockRealJul26":1428042422956.2634,"fintechObserved":true},{"date":"2022-03","window":"espejo","bankFlowNominal":66742627000.0,"ipcFactorJul26":17.862992,"fintechStockRealJul26":1455939322684.6753,"fintechObserved":true},{"date":"2022-04","window":"espejo","bankFlowNominal":59656946000.0,"ipcFactorJul26":16.84436,"fintechStockRealJul26":1483836222413.087,"fintechObserved":true},{"date":"2022-05","window":"espejo","bankFlowNominal":60792637000.0,"ipcFactorJul26":16.034577,"fintechStockRealJul26":1511733122141.4985,"fintechObserved":true},{"date":"2022-06","window":"espejo","bankFlowNominal":58960424000.0,"ipcFactorJul26":15.22821,"fintechStockRealJul26":1539630021869.9104,"fintechObserved":true},{"date":"2022-07","window":"espejo","bankFlowNominal":62427935000.0,"ipcFactorJul26":14.178148,"fintechStockRealJul26":1567526921598.3223,"fintechObserved":true},{"date":"2022-08","window":"espejo","bankFlowNominal":69443116000.0,"ipcFactorJul26":13.25428,"fintechStockRealJul26":1595423821326.7336,"fintechObserved":true},{"date":"2022-09","window":"espejo","bankFlowNominal":71603192000.0,"ipcFactorJul26":12.484543,"fintechStockRealJul26":1623320721055.1455,"fintechObserved":true},{"date":"2022-10","window":"espejo","bankFlowNominal":69660521000.0,"ipcFactorJul26":11.739402,"fintechStockRealJul26":1651217620783.5574,"fintechObserved":true},{"date":"2022-11","window":"espejo","bankFlowNominal":82032044000.0,"ipcFactorJul26":11.189319,"fintechStockRealJul26":1679114520511.969,"fintechObserved":true},{"date":"2022-12","window":"espejo","bankFlowNominal":75419080000.0,"ipcFactorJul26":10.643863,"fintechStockRealJul26":1707011420240.3806,"fintechObserved":true},{"date":"2023-01","window":"espejo","bankFlowNominal":98747210000.0,"ipcFactorJul26":10.03874,"fintechStockRealJul26":1651008826558.0452,"fintechObserved":true},{"date":"2023-02","window":"espejo","bankFlowNominal":96255308000.0,"ipcFactorJul26":9.414756,"fintechStockRealJul26":1595006232875.7095,"fintechObserved":true},{"date":"2023-03","window":"espejo","bankFlowNominal":128384836000.0,"ipcFactorJul26":8.74366,"fintechStockRealJul26":1539003639193.374,"fintechObserved":true},{"date":"2023-04","window":"espejo","bankFlowNominal":121669331000.0,"ipcFactorJul26":8.065906,"fintechStockRealJul26":1483001045511.0386,"fintechObserved":true},{"date":"2023-05","window":"espejo","bankFlowNominal":110109463000.0,"ipcFactorJul26":7.48418,"fintechStockRealJul26":1426998451828.703,"fintechObserved":true},{"date":"2023-06","window":"espejo","bankFlowNominal":90920761000.0,"ipcFactorJul26":7.063823,"fintechStockRealJul26":1370995858146.3672,"fintechObserved":true},{"date":"2023-07","window":"espejo","bankFlowNominal":108227919000.0,"ipcFactorJul26":6.642375,"fintechStockRealJul26":1314993264464.0315,"fintechObserved":true},{"date":"2023-08","window":"espejo","bankFlowNominal":141025634000.0,"ipcFactorJul26":5.907398,"fintechStockRealJul26":1258990670781.6963,"fintechObserved":true},{"date":"2023-09","window":"espejo","bankFlowNominal":221200907000.0,"ipcFactorJul26":5.239389,"fintechStockRealJul26":1202988077099.3606,"fintechObserved":true},{"date":"2023-10","window":"espejo","bankFlowNominal":200472222000.0,"ipcFactorJul26":4.83777,"fintechStockRealJul26":1146985483417.025,"fintechObserved":true},{"date":"2023-11","window":"espejo","bankFlowNominal":171540325000.0,"ipcFactorJul26":4.288396,"fintechStockRealJul26":1090982889734.6895,"fintechObserved":true},{"date":"2023-12","window":"post_shock","bankFlowNominal":162761320000.0,"ipcFactorJul26":3.417984,"fintechStockRealJul26":1034980296052.3539,"fintechObserved":true},{"date":"2024-01","window":"post_shock","bankFlowNominal":233660768000.0,"ipcFactorJul26":2.833815,"fintechStockRealJul26":1150049771139.622,"fintechObserved":true},{"date":"2024-02","window":"post_shock","bankFlowNominal":303967648000.0,"ipcFactorJul26":2.502471,"fintechStockRealJul26":1265119246226.8901,"fintechObserved":true},{"date":"2024-03","window":"post_shock","bankFlowNominal":312343159000.0,"ipcFactorJul26":2.254281,"fintechStockRealJul26":1380188721314.1584,"fintechObserved":true},{"date":"2024-04","window":"post_shock","bankFlowNominal":497766178000.0,"ipcFactorJul26":2.071342,"fintechStockRealJul26":1495258196401.4263,"fintechObserved":true},{"date":"2024-05","window":"post_shock","bankFlowNominal":827370607000.0,"ipcFactorJul26":1.988304,"fintechStockRealJul26":1610327671488.6948,"fintechObserved":true},{"date":"2024-06","window":"post_shock","bankFlowNominal":780949138000.0,"ipcFactorJul26":1.901281,"fintechStockRealJul26":1725397146575.963,"fintechObserved":true},{"date":"2024-07","window":"post_shock","bankFlowNominal":1151928993000.0,"ipcFactorJul26":1.827611,"fintechStockRealJul26":1840466621663.2312,"fintechObserved":true},{"date":"2024-08","window":"post_shock","bankFlowNominal":1243078338000.0,"ipcFactorJul26":1.754412,"fintechStockRealJul26":1955536096750.499,"fintechObserved":true},{"date":"2024-09","window":"post_shock","bankFlowNominal":1308210433000.0,"ipcFactorJul26":1.695589,"fintechStockRealJul26":2070605571837.7673,"fintechObserved":true},{"date":"2024-10","window":"post_shock","bankFlowNominal":1354893407000.0,"ipcFactorJul26":1.651144,"fintechStockRealJul26":2185675046925.0356,"fintechObserved":true},{"date":"2024-11","window":"post_shock","bankFlowNominal":1309430480000.0,"ipcFactorJul26":1.612028,"fintechStockRealJul26":2300744522012.3037,"fintechObserved":true},{"date":"2024-12","window":"post_shock","bankFlowNominal":1319575672000.0,"ipcFactorJul26":1.569584,"fintechStockRealJul26":2415813997099.572,"fintechObserved":true},{"date":"2025-01","window":"post_shock","bankFlowNominal":1620345017000.0,"ipcFactorJul26":1.535631,"fintechStockRealJul26":2624170910009.818,"fintechObserved":true},{"date":"2025-02","window":"post_shock","bankFlowNominal":1535508212000.0,"ipcFactorJul26":1.499616,"fintechStockRealJul26":2832527822920.0635,"fintechObserved":true},{"date":"2025-03","window":"post_shock","bankFlowNominal":1610179834000.0,"ipcFactorJul26":1.445701,"fintechStockRealJul26":2984768963091.86,"fintechObserved":true},{"date":"2025-04","window":"post_shock","bankFlowNominal":1621004043000.0,"ipcFactorJul26":1.406586,"fintechStockRealJul26":3137010103263.656,"fintechObserved":true},{"date":"2025-05","window":"post_shock","bankFlowNominal":1429665953000.0,"ipcFactorJul26":1.385784,"fintechStockRealJul26":3289251243435.4517,"fintechObserved":true},{"date":"2025-06","window":"post_shock","bankFlowNominal":1228763226000.0,"ipcFactorJul26":1.363706,"fintechStockRealJul26":3441492383607.2476,"fintechObserved":true},{"date":"2025-07","window":"post_shock","bankFlowNominal":1396174031000.0,"ipcFactorJul26":1.338257,"fintechStockRealJul26":3593733523779.044,"fintechObserved":true},{"date":"2025-08","window":"post_shock","bankFlowNominal":1392514188000.0,"ipcFactorJul26":1.313616,"fintechStockRealJul26":3745974663950.84,"fintechObserved":true},{"date":"2025-09","window":"post_shock","bankFlowNominal":1211270634000.0,"ipcFactorJul26":1.286901,"fintechStockRealJul26":3816604218286.8994,"fintechObserved":true},{"date":"2025-10","window":"post_shock","bankFlowNominal":1174875096000.0,"ipcFactorJul26":1.257452,"fintechStockRealJul26":3887233772622.96,"fintechObserved":true},{"date":"2025-11","window":"post_shock","bankFlowNominal":1017799027000.0,"ipcFactorJul26":1.227106,"fintechStockRealJul26":3957863326959.0195,"fintechObserved":true},{"date":"2025-12","window":"post_shock","bankFlowNominal":1157268458000.0,"ipcFactorJul26":1.193158,"fintechStockRealJul26":4028492881295.0796,"fintechObserved":true},{"date":"2026-01","window":"post_shock","bankFlowNominal":1389006969000.0,"ipcFactorJul26":1.159739,"fintechStockRealJul26":4099122435631.1396,"fintechObserved":true},{"date":"2026-02","window":"post_shock","bankFlowNominal":1316441842000.0,"ipcFactorJul26":1.127094,"fintechStockRealJul26":4169751989967.199,"fintechObserved":true},{"date":"2026-03","window":"post_shock","bankFlowNominal":1416557341000.0,"ipcFactorJul26":1.090216,"fintechStockRealJul26":4169751989967.199,"fintechObserved":false},{"date":"2026-04","window":"post_shock","bankFlowNominal":1359139094000.0,"ipcFactorJul26":1.062774,"fintechStockRealJul26":4169751989967.199,"fintechObserved":false},{"date":"2026-05","window":"post_shock","bankFlowNominal":1161093829000.0,"ipcFactorJul26":1.040405,"fintechStockRealJul26":4169751989967.199,"fintechObserved":false},{"date":"2026-06","window":"post_shock","bankFlowNominal":1138749779000.0,"ipcFactorJul26":1.021138,"fintechStockRealJul26":4169751989967.199,"fintechObserved":false},{"date":"2026-07","window":"post_shock","bankFlowNominal":1127394352000.0,"ipcFactorJul26":1.0,"fintechStockRealJul26":4169751989967.199,"fintechObserved":false}];
+const CREDIT_REF_DEFAULTS={riskLow:5,riskHigh:10,adminLow:3,adminHigh:6,marginLow:2,marginHigh:5,iva:21};
+let creditRefSegment='bank',creditBurdenSegment='bank',creditBurdenMode='signed',creditRefRows=[];
+const creditVolMap=new Map(CREDIT_REF_VOLUME.map(r=>[r.date,r]));
+function crN(id,def){const e=document.getElementById(id),v=e?Number(e.value):def;return Number.isFinite(v)?v:def}
+function crParams(){return{riskLow:crN('creditRiskLow',5),riskHigh:crN('creditRiskHigh',10),adminLow:crN('creditAdminLow',3),adminHigh:crN('creditAdminHigh',6),marginLow:crN('creditMarginLow',2),marginHigh:crN('creditMarginHigh',5),iva:21}}
+function crCftea(tna,iva=21){if(!Number.isFinite(tna))return null;const r=(tna/100)/12*(1+iva/100);return (Math.pow(1+r,12)-1)*100}
+function crMoney(v,d=2){if(!Number.isFinite(v))return 'N/D';const a=Math.abs(v),sign=v<0?'−':v>0?'+':'';if(a>=1e12)return `${sign}$ ${(a/1e12).toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d})} B`;if(a>=1e9)return `${sign}$ ${(a/1e9).toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})} mil M`;return `${sign}$ ${Math.round(a).toLocaleString('es-AR')}`}
+function crPct(v,d=1){return Number.isFinite(v)?`${v.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d})}%`:'N/D'}
+function crBuildRows(){
+  const p=crParams(),out=[];
+  for(let i=0;i<CREDIT_REF_INPUT.length;i++){
+    const src=CREDIT_REF_INPUT[i];if(i<11)continue;const win=CREDIT_REF_INPUT.slice(i-11,i+1).map(x=>x.inflationMonthly);if(win.some(x=>!Number.isFinite(x)))continue;
+    const infl12=(win.reduce((a,x)=>a*(1+x/100),1)-1);const infTna=(Math.pow(1+infl12,1/12)-1)*12*100;
+    const floorTna=infTna+p.riskLow+p.adminLow+p.marginLow,topTna=infTna+p.riskHigh+p.adminHigh+p.marginHigh,midTna=(floorTna+topTna)/2;
+    const floorCf=crCftea(floorTna,p.iva),topCf=crCftea(topTna,p.iva),midCf=crCftea(midTna,p.iva),bankCf=crCftea(src.bankTna,p.iva),ftCf=crCftea(src.fintechTna,p.iva),v=creditVolMap.get(src.date)||{};
+    let bankSigned=null,bankGross=null,ftSigned=null,ftGross=null;
+    if(Number.isFinite(src.bankTna)&&Number.isFinite(v.bankFlowNominal)&&Number.isFinite(v.ipcFactorJul26)){const diff=((src.bankTna-topTna)/100)/12*(1+p.iva/100);bankSigned=diff*v.bankFlowNominal*v.ipcFactorJul26;bankGross=Math.max(0,diff)*v.bankFlowNominal*v.ipcFactorJul26;}
+    if(Number.isFinite(src.fintechTna)&&v.fintechObserved&&Number.isFinite(v.fintechStockRealJul26)){const diff=((src.fintechTna-topTna)/100)/12*(1+p.iva/100);ftSigned=diff*v.fintechStockRealJul26;ftGross=Math.max(0,diff)*v.fintechStockRealJul26;}
+    out.push({date:src.date,infl12:infl12*100,inflTna:infTna,floorTna,topTna,midTna,floorCf,topCf,midCf,bankTna:src.bankTna,fintechTna:src.fintechTna,bankCf,fintechCf:ftCf,bankGap:Number.isFinite(bankCf)?bankCf-topCf:null,fintechGap:Number.isFinite(ftCf)?ftCf-topCf:null,bankFloorGap:Number.isFinite(bankCf)?bankCf-floorCf:null,fintechFloorGap:Number.isFinite(ftCf)?ftCf-floorCf:null,bankMidGap:Number.isFinite(bankCf)?bankCf-midCf:null,fintechMidGap:Number.isFinite(ftCf)?ftCf-midCf:null,bankRatio:Number.isFinite(bankCf)?bankCf/topCf:null,fintechRatio:Number.isFinite(ftCf)?ftCf/topCf:null,bankFlowNominal:v.bankFlowNominal??null,ipcFactorJul26:v.ipcFactorJul26??null,fintechStockRealJul26:v.fintechStockRealJul26??null,fintechObserved:!!v.fintechObserved,window:v.window||null,bankSigned,bankGross,ftSigned,ftGross});
+  }
+  creditRefRows=out.filter(r=>r.date>='2019-12');return creditRefRows;
+}
+function crSum(rows,key){return rows.reduce((a,r)=>a+(Number.isFinite(r[key])?r[key]:0),0)}
+function crSummary(){const rows=creditRefRows.length?creditRefRows:crBuildRows(),bank=rows.filter(r=>Number.isFinite(r.bankCf)),ft=rows.filter(r=>Number.isFinite(r.fintechCf)),post=rows.filter(r=>r.window==='post_shock'),mirror=rows.filter(r=>r.window==='espejo'),latestBank=bank.at(-1),latestFt=ft.at(-1);return{rows,latestBank,latestFt,post,mirror,bankPostGross:crSum(post,'bankGross'),bankMirrorGross:crSum(mirror,'bankGross'),bankPostSigned:crSum(post,'bankSigned'),bankMirrorSigned:crSum(mirror,'bankSigned'),ftPostGross:crSum(post,'ftGross'),ftMirrorGross:crSum(mirror,'ftGross'),ftPostSigned:crSum(post,'ftSigned'),ftMirrorSigned:crSum(mirror,'ftSigned'),ftPostObserved:post.filter(r=>Number.isFinite(r.ftSigned)).length}}
+function crRenderKpis(){const s=crSummary(),b=s.latestBank,f=s.latestFt,el=document.getElementById('creditRefKpis');if(!el||!b)return;const diff=s.bankPostSigned-s.bankMirrorSigned;el.innerHTML=`
+ <article class="credit-ref-kpi neutral"><small>Jul-2026 · TNA inflación equivalente</small><b>${crPct(b.inflTna)}</b><p>Inflación móvil 12m transformada a tasa mensual equivalente × 12.</p></article>
+ <article class="credit-ref-kpi ${b.bankGap>0?'bad':'good'}"><small>Banco · CFTEA estandarizado</small><b>${crPct(b.bankCf)}</b><p>Techo de referencia: <b>${crPct(b.topCf)}</b> · brecha ${b.bankGap>=0?'+':''}${b.bankGap.toLocaleString('es-AR',{maximumFractionDigits:1})} pp.</p></article>
+ <article class="credit-ref-kpi ${s.bankPostGross>0?'bad':'neutral'}"><small>Banco · exceso bruto post-shock</small><b>${crMoney(s.bankPostGross)}</b><p>Suma sólo meses por encima del techo. Flujo de personales × diferencia mensual, a jul-2026.</p></article>
+ <article class="credit-ref-kpi ${s.bankPostSigned>0?'bad':'good'}"><small>Banco · saldo neto post-shock</small><b>${crMoney(s.bankPostSigned)}</b><p>Conserva meses debajo del techo. Espejo: ${crMoney(s.bankMirrorSigned)} · post−espejo: <b>${crMoney(diff)}</b>.</p></article>
+ <article class="credit-ref-kpi neutral"><small>Fintech · último observado</small><b>${f?crPct(f.fintechCf):'N/D'}</b><p>${f?f.date:'—'} · techo ${f?crPct(f.topCf):'—'} · brecha ${f?(f.fintechGap>=0?'+':'')+f.fintechGap.toLocaleString('es-AR',{maximumFractionDigits:1})+' pp':'—'}.</p></article>
+ <article class="credit-ref-kpi bad"><small>Fintech · proxy exceso post-shock</small><b>${crMoney(s.ftPostGross)}</b><p>${s.ftPostObserved} meses con TNA observada; proxy sobre stock, <b>no comparable uno-a-uno con banco</b>.</p></article>`;}
+function crBandTraces(rows){return[
+ {x:rows.map(r=>r.date+'-01'),y:rows.map(r=>r.floorCf),name:'CFTEA ref · piso',mode:'lines',line:{color:'#89bea8',width:1.4},hovertemplate:'<b>%{x|%b %Y}</b><br>piso: %{y:.1f}%<extra></extra>'},
+ {x:rows.map(r=>r.date+'-01'),y:rows.map(r=>r.topCf),name:'CFTEA ref · techo',mode:'lines',fill:'tonexty',fillcolor:'rgba(103,177,143,.12)',line:{color:'#5a9e83',width:1.6},hovertemplate:'<b>%{x|%b %Y}</b><br>techo: %{y:.1f}%<extra></extra>'}
+]}
+function renderCreditReferenceChart(){if(typeof Plotly==='undefined')return;const rows=creditRefRows.length?creditRefRows:crBuildRows(),tr=crBandTraces(rows),x=rows.map(r=>r.date+'-01');if(creditRefSegment==='bank'||creditRefSegment==='both')tr.push({x,y:rows.map(r=>r.bankCf),name:'Banco · CFTEA estandarizado',mode:'lines',line:{color:'#bf5278',width:3},customdata:rows.map(r=>[r.bankTna,r.bankGap,r.bankRatio,r.inflTna,r.topCf]),hovertemplate:'<b>%{x|%b %Y}</b><br>CFTEA banco: <b>%{y:.1f}%</b><br>TNA: %{customdata[0]:.1f}%<br>brecha vs techo: %{customdata[1]:+.1f} pp<br>ratio: %{customdata[2]:.2f}×<br>TNA inflación: %{customdata[3]:.1f}%<extra></extra>'});if(creditRefSegment==='fintech'||creditRefSegment==='both')tr.push({x,y:rows.map(r=>r.fintechCf),name:'Fintech · CFTEA estandarizado',mode:'lines',connectgaps:false,line:{color:'#7d5bc5',width:3},customdata:rows.map(r=>[r.fintechTna,r.fintechGap,r.fintechRatio,r.inflTna,r.topCf]),hovertemplate:'<b>%{x|%b %Y}</b><br>CFTEA Fintech: <b>%{y:.1f}%</b><br>TNA: %{customdata[0]:.1f}%<br>brecha vs techo: %{customdata[1]:+.1f} pp<br>ratio: %{customdata[2]:.2f}×<extra></extra>'});tr.push({x,y:rows.map(r=>r.inflTna),name:'TNA inflación equivalente · 12m móvil',mode:'lines',yaxis:'y2',line:{color:'#d59b30',width:2,dash:'dot'},hovertemplate:'<b>%{x|%b %Y}</b><br>TNA inflación equivalente: <b>%{y:.1f}%</b><extra></extra>'});const mobile=window.innerWidth<=720;Plotly.react('creditReferenceChart',tr,{paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'#fff',font:{family:'Inter,system-ui,sans-serif',size:9,color:'#65516d'},margin:{l:mobile?55:68,r:mobile?58:74,t:45,b:55},xaxis:{type:'date',range:['2019-11-15','2026-08-15'],dtick:mobile?'M12':'M6',tickformat:'%b\n%Y',gridcolor:'#eee6f1',fixedrange:true},yaxis:{title:'CFTEA estandarizado (%)',rangemode:'tozero',gridcolor:'#eee6f1',fixedrange:true},yaxis2:{title:'TNA inflación eq. (%)',overlaying:'y',side:'right',showgrid:false,rangemode:'tozero',fixedrange:true},legend:{orientation:mobile?'v':'h',y:1.13,x:0},hovermode:mobile?'closest':'x unified',shapes:[{type:'line',xref:'x',yref:'paper',x0:'2023-12-10',x1:'2023-12-10',y0:0,y1:1,line:{color:'#c986a3',width:2,dash:'dot'}}]},{responsive:true,displaylogo:false,displayModeBar:false});}
+function renderCreditGapChart(){if(typeof Plotly==='undefined')return;const rows=creditRefRows.length?creditRefRows:crBuildRows(),x=rows.map(r=>r.date+'-01'),tr=[];if(creditRefSegment==='bank'||creditRefSegment==='both')tr.push({x,y:rows.map(r=>r.bankGap),name:'Banco · observado − techo',mode:'lines',line:{color:'#bf5278',width:3},hovertemplate:'<b>%{x|%b %Y}</b><br>brecha banco: <b>%{y:+.1f} pp</b><extra></extra>'});if(creditRefSegment==='fintech'||creditRefSegment==='both')tr.push({x,y:rows.map(r=>r.fintechGap),name:'Fintech · observado − techo',mode:'lines',connectgaps:false,line:{color:'#7d5bc5',width:3},hovertemplate:'<b>%{x|%b %Y}</b><br>brecha Fintech: <b>%{y:+.1f} pp</b><extra></extra>'});const mobile=window.innerWidth<=720;Plotly.react('creditGapChart',tr,{paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'#fff',font:{family:'Inter,system-ui,sans-serif',size:9,color:'#65516d'},margin:{l:mobile?52:64,r:20,t:35,b:52},xaxis:{type:'date',range:['2019-11-15','2026-08-15'],dtick:mobile?'M12':'M6',tickformat:'%b\n%Y',gridcolor:'#eee6f1',fixedrange:true},yaxis:{title:'pp CFTEA vs techo',gridcolor:'#eee6f1',zeroline:true,zerolinecolor:'#75697b',zerolinewidth:2,fixedrange:true},legend:{orientation:'h',y:1.12},shapes:[{type:'line',xref:'x',yref:'paper',x0:'2023-12-10',x1:'2023-12-10',y0:0,y1:1,line:{color:'#c986a3',width:2,dash:'dot'}}]},{responsive:true,displaylogo:false,displayModeBar:false});}
+function crCumulative(rows,key){let a=0;return rows.map(r=>{if(Number.isFinite(r[key]))a+=r[key];return a/1e12})}
+function renderCreditBurdenChart(){if(typeof Plotly==='undefined')return;const rows=creditRefRows.length?creditRefRows:crBuildRows(),el=document.getElementById('creditBurdenChart'),read=document.getElementById('creditBurdenReadout');if(!el)return;const key=creditBurdenSegment==='bank'?(creditBurdenMode==='gross'?'bankGross':'bankSigned'):(creditBurdenMode==='gross'?'ftGross':'ftSigned'),mobile=window.innerWidth<=720;let traces=[],layout={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'#fff',font:{family:'Inter,system-ui,sans-serif',size:9,color:'#65516d'},margin:{l:mobile?55:68,r:25,t:40,b:55},yaxis:{title:'$ billones constantes de jul-2026',gridcolor:'#eee6f1',zeroline:true,zerolinecolor:'#75697b',fixedrange:true},legend:{orientation:mobile?'v':'h',y:1.12},hovermode:mobile?'closest':'x unified'};
+ if(creditBurdenMode==='window'){
+   if(creditBurdenSegment==='fintech'){traces=[];layout.xaxis={visible:false};layout.yaxis.visible=false;layout.annotations=[{xref:'paper',yref:'paper',x:.5,y:.5,text:'<b>N/D para 32 vs 32</b><br>Fintech tiene TNA oficial observada sólo hasta feb-2026;<br>faltan 5 meses del post para completar la ventana.',showarrow:false,align:'center',font:{size:12,color:'#6e5875'}}];if(read)read.innerHTML='<b>Regla:</b> no prolongamos la TNA de feb-2026 para fabricar una ventana espejo completa. La comparación Fintech queda pendiente.';}
+   else{const mir=rows.filter(r=>r.window==='espejo'),post=rows.filter(r=>r.window==='post_shock'),mc=crCumulative(mir,'bankSigned'),pc=crCumulative(post,'bankSigned'),diff=pc.map((v,i)=>v-(mc[i]??0)),x=post.map((_,i)=>i+1);traces=[{x,y:mc,name:'Espejo · saldo banco',mode:'lines',line:{color:'#a896b9',width:2,dash:'dot'}},{x,y:pc,name:'Post · saldo banco',mode:'lines',line:{color:'#c75b7d',width:2.8}},{x,y:diff,name:'Post − espejo',mode:'lines+markers',line:{color:'#6953a0',width:3.5},marker:{size:x.map(v=>v===32?8:3)}}];layout.xaxis={title:'Mes relativo · 1 a 32',dtick:mobile?4:2,range:[1,32.8],gridcolor:'#eee6f1',fixedrange:true};if(read)read.innerHTML=`<b>Banco · 32 vs 32:</b> espejo ${crMoney(crSum(mir,'bankSigned'))} · post ${crMoney(crSum(post,'bankSigned'))} · <b>post − espejo ${crMoney(crSum(post,'bankSigned')-crSum(mir,'bankSigned'))}</b>. Negativo significa que, neteando meses, el post quedó más por debajo del techo de referencia.`;}
+ }else{
+   const avail=rows.filter(r=>Number.isFinite(r[key]));const x=avail.map(r=>r.date+'-01'),y=crCumulative(avail,key);traces=[{x,y,name:creditBurdenSegment==='bank'?'Banco · flujo':'Fintech · proxy stock',mode:'lines',line:{color:creditBurdenSegment==='bank'?'#bd5277':'#7559ba',width:3},hovertemplate:'<b>%{x|%b %Y}</b><br>acumulado: <b>$ %{y:.2f} B</b><extra></extra>'}];layout.xaxis={type:'date',dtick:mobile?'M12':'M6',tickformat:'%b\n%Y',gridcolor:'#eee6f1',fixedrange:true};layout.shapes=[{type:'line',xref:'x',yref:'paper',x0:'2023-12-10',x1:'2023-12-10',y0:0,y1:1,line:{color:'#c986a3',width:2,dash:'dot'}}];const post=avail.filter(r=>r.date>='2023-12');if(read)read.innerHTML=`<b>${creditBurdenMode==='gross'?'Exceso bruto':'Saldo neto'} post-shock:</b> ${crMoney(crSum(post,key))}. ${creditBurdenSegment==='bank'?'Banco usa flujo de personales efectivamente operado.':'Fintech repite exposición sobre stock y sólo usa meses con TNA observada; es proxy de cartera, no originación.'}`;
+ }
+ Plotly.react(el,traces,layout,{responsive:true,displaylogo:false,displayModeBar:false});}
+function crPopulateSimDates(){const seg=document.getElementById('creditSimSegment'),sel=document.getElementById('creditSimDate');if(!seg||!sel)return;const key=seg.value==='bank'?'bankTna':'fintechTna',valid=creditRefRows.filter(r=>Number.isFinite(r[key]));sel.innerHTML=valid.slice().reverse().map(r=>`<option value="${r.date}">${r.date}</option>`).join('');renderCreditSimulator();}
+function crAnnuity(P,tna,n,iva=21){const r=(tna/100)/12*(1+iva/100);const pay=r?P*r/(1-Math.pow(1+r,-n)):P/n;return{pay,total:pay*n}}
+function renderCreditSimulator(){const seg=document.getElementById('creditSimSegment'),date=document.getElementById('creditSimDate'),P=document.getElementById('creditSimPrincipal'),term=document.getElementById('creditSimTerm'),out=document.getElementById('creditSimResult');if(!seg||!date||!P||!term||!out)return;const r=creditRefRows.find(x=>x.date===date.value);if(!r)return;const tna=seg.value==='bank'?r.bankTna:r.fintechTna;if(!Number.isFinite(tna)){out.innerHTML='<div class="credit-ref-sim-stat"><b>N/D</b></div>';return}const pr=Math.max(0,Number(P.value)||0),n=Number(term.value)||12,obs=crAnnuity(pr,tna,n),ref=crAnnuity(pr,r.topTna,n),delta=obs.total-ref.total;out.innerHTML=`<div class="credit-ref-sim-stat"><small>Total observado estandarizado</small><b>${crMoney(obs.total,1)}</b></div><div class="credit-ref-sim-stat"><small>Total al techo de referencia</small><b>${crMoney(ref.total,1)}</b></div><div class="credit-ref-sim-stat"><small>Diferencia del préstamo</small><b>${crMoney(delta,1)}</b></div><div class="credit-ref-sim-stat"><small>Cuota observada</small><b>${crMoney(obs.pay,1)}</b></div><div class="credit-ref-sim-stat"><small>CFTEA observado</small><b>${crPct(crCftea(tna))}</b></div><div class="credit-ref-sim-stat"><small>CFTEA techo</small><b>${crPct(r.topCf)}</b></div>`;}
+function crAudit(){const rows=creditRefRows.length?creditRefRows:crBuildRows(),p=crParams(),checks=[];checks.push(['banda',rows.every(r=>r.topCf>r.floorCf)]);checks.push(['cftea banco',rows.filter(r=>Number.isFinite(r.bankTna)&&r.bankTna>0).every(r=>r.bankCf>r.bankTna)]);checks.push(['brecha',rows.filter(r=>Number.isFinite(r.bankCf)).every(r=>Math.abs(r.bankGap-(r.bankCf-r.topCf))<1e-8)]);const post=rows.filter(r=>r.window==='post_shock'),mir=rows.filter(r=>r.window==='espejo');checks.push(['ventana banco 32/32',post.filter(r=>Number.isFinite(r.bankSigned)).length===32&&mir.filter(r=>Number.isFinite(r.bankSigned)).length===32]);const ok=checks.every(x=>x[1]),el=document.getElementById('creditRefAuditStatus');if(el)el.innerHTML=`${ok?'✓':'⚠'} QA: ${checks.filter(x=>x[1]).length}/${checks.length}<br>piso +${p.riskLow+p.adminLow+p.marginLow} pp · techo +${p.riskHigh+p.adminHigh+p.marginHigh} pp`;if(!ok)console.error('Credit reference assertions',checks);return checks;}
+function renderCreditReference(){crBuildRows();crRenderKpis();renderCreditReferenceChart();renderCreditGapChart();renderCreditBurdenChart();crAudit();if(document.getElementById('creditSimDate')&&!document.getElementById('creditSimDate').options.length)crPopulateSimDates();else renderCreditSimulator();document.querySelectorAll('[data-credit-ref-segment]').forEach(b=>b.classList.toggle('active',b.dataset.creditRefSegment===creditRefSegment));document.querySelectorAll('[data-credit-burden-segment]').forEach(b=>b.classList.toggle('active',b.dataset.creditBurdenSegment===creditBurdenSegment));document.querySelectorAll('[data-credit-burden-mode]').forEach(b=>b.classList.toggle('active',b.dataset.creditBurdenMode===creditBurdenMode));}
+function downloadCreditReferenceCsv(){const h=['fecha','inflacion_12m_pct','tna_inflacion_equivalente_pct','tna_ref_piso_pct','tna_ref_techo_pct','cftea_ref_piso_pct','cftea_ref_techo_pct','banco_tna_pct','banco_cftea_estandarizado_pct','banco_brecha_vs_techo_pp','fintech_tna_pct','fintech_cftea_estandarizado_pct','fintech_brecha_vs_techo_pp','banco_flujo_nominal','banco_exceso_real_jul26','banco_saldo_real_jul26','stock_fintech_real_jul26','fintech_tasa_observada','fintech_exceso_proxy_real_jul26','fintech_saldo_proxy_real_jul26','ventana'];const lines=[h.join(',')];creditRefRows.forEach(r=>lines.push([r.date,r.infl12,r.inflTna,r.floorTna,r.topTna,r.floorCf,r.topCf,r.bankTna??'',r.bankCf??'',r.bankGap??'',r.fintechTna??'',r.fintechCf??'',r.fintechGap??'',r.bankFlowNominal??'',r.bankGross??'',r.bankSigned??'',r.fintechStockRealJul26??'',r.fintechObserved,r.ftGross??'',r.ftSigned??'',r.window??''].join(',')));const blob=new Blob(['\ufeff'+lines.join('\n')],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='brecha_costo_credito_vs_cftea_referencia.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500);}
+document.querySelectorAll('[data-credit-ref-segment]').forEach(b=>b.addEventListener('click',()=>{creditRefSegment=b.dataset.creditRefSegment;renderCreditReferenceChart();renderCreditGapChart();document.querySelectorAll('[data-credit-ref-segment]').forEach(x=>x.classList.toggle('active',x===b));}));
+document.querySelectorAll('[data-credit-burden-segment]').forEach(b=>b.addEventListener('click',()=>{creditBurdenSegment=b.dataset.creditBurdenSegment;renderCreditBurdenChart();document.querySelectorAll('[data-credit-burden-segment]').forEach(x=>x.classList.toggle('active',x===b));}));
+document.querySelectorAll('[data-credit-burden-mode]').forEach(b=>b.addEventListener('click',()=>{creditBurdenMode=b.dataset.creditBurdenMode;renderCreditBurdenChart();document.querySelectorAll('[data-credit-burden-mode]').forEach(x=>x.classList.toggle('active',x===b));}));
+['creditRiskLow','creditRiskHigh','creditAdminLow','creditAdminHigh','creditMarginLow','creditMarginHigh'].forEach(id=>document.getElementById(id)?.addEventListener('change',renderCreditReference));
+document.getElementById('creditRefReset')?.addEventListener('click',()=>{[['creditRiskLow',5],['creditRiskHigh',10],['creditAdminLow',3],['creditAdminHigh',6],['creditMarginLow',2],['creditMarginHigh',5]].forEach(([id,v])=>{const e=document.getElementById(id);if(e)e.value=v});renderCreditReference();});
+document.getElementById('creditSimSegment')?.addEventListener('change',crPopulateSimDates);['creditSimDate','creditSimPrincipal','creditSimTerm'].forEach(id=>document.getElementById(id)?.addEventListener('change',renderCreditSimulator));
+renderCreditReference();
+
+
 // ---------------- Tabs ----------------
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -14947,6 +15204,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     btn.classList.add('active');
     syncDashNavigation();
+    requestAnimationFrame(keepActiveDashTabInView);
     document.getElementById(btn.dataset.tab).classList.add('active');
     window.dispatchEvent(new Event('resize'));
     setTimeout(() => {
@@ -14954,6 +15212,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
       if (target === 'tab-rates') {
         renderRatesVisible();
+        if(typeof renderCreditReference==='function') renderCreditReference();
+        requestAnimationFrame(()=>['creditReferenceChart','creditGapChart','creditBurdenChart'].forEach(id=>{const el=document.getElementById(id);if(el&&typeof Plotly!=='undefined')Plotly.Plots.resize(el)}));
         setTimeout(setupNativeRanges, 120);
       } else if (target === 'tab-pres') {
         const monthlyActive = document.getElementById('presMonthly').classList.contains('active');
@@ -15084,32 +15344,47 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
 // ---------------- Navegación temática + escalas Y auditadas ----------------
 const DASH_TAB_GROUPS={
-  featured:['tab-story','tab-power','tab-rates','tab-poverty','tab-emae','tab-morosidad','tab-credit-mora','tab-mora-causal','tab-mora-anatomy','tab-pendulo','tab-debt-public','tab-milei-cost'],
-  households:['tab-power','tab-poverty','tab-social','tab-gini','tab-structure','tab-family','tab-health-education','tab-consumption','tab-work','tab-housing','tab-morosidad','tab-credit-mora','tab-mora-causal','tab-mora-anatomy','tab-youth-credit'],
-  prices:['tab-rates','tab-pres','tab-risk','tab-bigmac','tab-wholesale','tab-bcra'],
-  activity:['tab-consumption','tab-work','tab-investment','tab-housing','tab-growth','tab-emae','tab-roads','tab-tourism','tab-trade'],
-  state:['tab-social','tab-health-education','tab-debt-public','tab-fiscal','tab-bcra','tab-debt-spiral','tab-program'],
-  power:['tab-pendulo','tab-rates','tab-morosidad','tab-credit-mora','tab-mora-causal','tab-mora-anatomy','tab-wealth-contribution','tab-milei-cost','tab-meli-benefits','tab-casta']
+  featured:['tab-story','tab-epica-households','tab-epica-dollars','tab-epica-incidence','tab-epica-development','tab-epica-narratives','tab-epica-caputo-colchon','tab-power','tab-rates','tab-poverty','tab-emae','tab-morosidad','tab-credit-mora','tab-mora-causal','tab-mora-anatomy','tab-pendulo','tab-debt-public','tab-milei-cost'],
+  households:['tab-epica-households','tab-epica-incidence','tab-epica-narratives','tab-epica-caputo-colchon','tab-power','tab-poverty','tab-social','tab-gini','tab-structure','tab-family','tab-health-education','tab-consumption','tab-work','tab-housing','tab-morosidad','tab-credit-mora','tab-mora-causal','tab-mora-anatomy','tab-youth-credit'],
+  prices:['tab-epica-dollars','tab-epica-narratives','tab-epica-caputo-colchon','tab-rates','tab-pres','tab-risk','tab-bigmac','tab-wholesale','tab-bcra'],
+  activity:['tab-epica-development','tab-epica-narratives','tab-consumption','tab-work','tab-investment','tab-housing','tab-growth','tab-emae','tab-roads','tab-tourism','tab-trade'],
+  state:['tab-epica-dollars','tab-epica-incidence','tab-epica-development','tab-epica-narratives','tab-epica-caputo-colchon','tab-social','tab-health-education','tab-debt-public','tab-fiscal','tab-bcra','tab-debt-spiral','tab-program'],
+  power:['tab-epica-incidence','tab-epica-narratives','tab-pendulo','tab-rates','tab-morosidad','tab-credit-mora','tab-mora-causal','tab-mora-anatomy','tab-wealth-contribution','tab-milei-cost','tab-meli-benefits','tab-political-wealth','tab-casta']
 };
-let dashNavGroup='featured';
+let dashNavGroup='all';
+function dashVisibleButtons(){return [...document.querySelectorAll('#dash-main-tabs .tab-btn:not([hidden])')];}
 function syncDashNavigation(){
+  const tabs=document.getElementById('dash-main-tabs')||document.querySelector('.tabs');
+  if(!tabs)return;
   const allowed=DASH_TAB_GROUPS[dashNavGroup]||[];
-  document.querySelectorAll('.tabs .tab-btn').forEach(btn=>{
+  const buttons=[...tabs.querySelectorAll('.tab-btn')];
+  buttons.forEach(btn=>{
     const active=btn.classList.contains('active');
     const inGroup=dashNavGroup==='all'||allowed.includes(btn.dataset.tab);
     btn.hidden=!(inGroup||active);
     btn.classList.toggle('outside-group',active&&!inGroup&&dashNavGroup!=='all');
   });
+  // Fallback defensivo: una categoría nunca puede dejar el menú vacío.
+  if(!buttons.some(btn=>!btn.hidden))buttons.forEach(btn=>{btn.hidden=false;btn.classList.remove('outside-group');});
   document.querySelectorAll('.dash-topic-btn').forEach(btn=>{
     const active=btn.dataset.dashGroup===dashNavGroup;
     btn.classList.toggle('active',active);
     btn.setAttribute('aria-pressed',String(active));
   });
 }
+function keepActiveDashTabInView(){
+  const tabs=document.getElementById('dash-main-tabs');
+  const active=tabs?.querySelector('.tab-btn.active:not([hidden])');
+  if(!tabs||!active)return;
+  const left=active.offsetLeft-tabs.offsetLeft;
+  const right=left+active.offsetWidth;
+  if(left<tabs.scrollLeft)tabs.scrollTo({left:Math.max(0,left-12),behavior:'smooth'});
+  else if(right>tabs.scrollLeft+tabs.clientWidth)tabs.scrollTo({left:Math.max(0,right-tabs.clientWidth+12),behavior:'smooth'});
+}
 document.querySelectorAll('.dash-topic-btn').forEach(btn=>btn.addEventListener('click',()=>{
-  dashNavGroup=btn.dataset.dashGroup;
+  dashNavGroup=btn.dataset.dashGroup||'all';
   syncDashNavigation();
-  document.querySelector('.tabs .tab-btn:not([hidden])')?.scrollIntoView({behavior:'smooth',block:'nearest',inline:'nearest'});
+  keepActiveDashTabInView();
 }));
 
 function moveHorizontalMenuWithWheel(menu,event){
@@ -15136,7 +15411,7 @@ function moveHorizontalMenuWithWheel(menu,event){
   menu._horizontalWheelSnapTimer=setTimeout(()=>menu.style.removeProperty('scroll-snap-type'),170);
   return true;
 }
-const HORIZONTAL_WHEEL_MENU_SELECTOR='.dash-topic-buttons, .tabs, .story-nav, .pend-layer-nav, .pend-controls-near-chart .pend-control, .milei-cost-table-wrap';
+const HORIZONTAL_WHEEL_MENU_SELECTOR='.dash-topic-buttons, .tabs, .story-nav, .pend-layer-nav, .pend-controls-near-chart .pend-control, .milei-cost-table-wrap, .epica-toolbar';
 function bindHorizontalWheelMenus(){
   const root=document.documentElement;
   if(root.dataset.horizontalWheelMenusBound)return;
@@ -19610,18 +19885,16 @@ function socialChangeAnnotations(mode){
   ];
 }
 
-const socialRecent = {
-  labels:['AUH','PNC*','Otros programas','Volver / Potenciar','Políticas alimentarias','Progresar'],
-  y2025:[18.9,-2.5,-19.8,-37.8,-18.2,-41.5],
-  y2026:[4.6,-6.4,-23.0,-36.7,-7.5,-32.0]
-};
-
 function renderSocial() {
   const socialMode=socialResponsiveMode();
   const mobile=socialMode==='mobile',compact=socialMode!=='desktop';
   const S = [{"anio": 2002, "inversion": 3.133723, "variacion": null, "presidente": "Eduardo Duhalde"}, {"anio": 2003, "inversion": 4.899976, "variacion": 56.362776, "presidente": "Néstor Kirchner"}, {"anio": 2004, "inversion": 5.049997, "variacion": 3.061668, "presidente": "Néstor Kirchner"}, {"anio": 2005, "inversion": 4.505264, "variacion": -10.786801, "presidente": "Néstor Kirchner"}, {"anio": 2006, "inversion": 4.646016, "variacion": 3.124182, "presidente": "Néstor Kirchner"}, {"anio": 2007, "inversion": 13.580787, "variacion": 192.310359, "presidente": "Néstor Kirchner"}, {"anio": 2008, "inversion": 14.929785, "variacion": 9.933137, "presidente": "Cristina Fernández"}, {"anio": 2009, "inversion": 17.157172, "variacion": 14.919083, "presidente": "Cristina Fernández"}, {"anio": 2010, "inversion": 20.708541, "variacion": 20.699033, "presidente": "Cristina Fernández"}, {"anio": 2011, "inversion": 23.62101, "variacion": 14.064095, "presidente": "Cristina Fernández"}, {"anio": 2012, "inversion": 25.938144, "variacion": 9.80963, "presidente": "Cristina Fernández"}, {"anio": 2013, "inversion": 27.340335, "variacion": 5.405906, "presidente": "Cristina Fernández"}, {"anio": 2014, "inversion": 27.077417, "variacion": -0.961649, "presidente": "Cristina Fernández"}, {"anio": 2015, "inversion": 33.269028, "variacion": 22.866328, "presidente": "Cristina Fernández"}, {"anio": 2016, "inversion": 32.577831, "variacion": -2.077599, "presidente": "Mauricio Macri"}, {"anio": 2017, "inversion": 34.535055, "variacion": 6.00784, "presidente": "Mauricio Macri"}, {"anio": 2018, "inversion": 32.615095, "variacion": -5.559452, "presidente": "Mauricio Macri"}, {"anio": 2019, "inversion": 31.327117, "variacion": -3.949027, "presidente": "Mauricio Macri"}, {"anio": 2020, "inversion": 45.390977, "variacion": 44.893567, "presidente": "Alberto Fernández"}, {"anio": 2021, "inversion": 34.426278, "variacion": -24.15612, "presidente": "Alberto Fernández"}, {"anio": 2022, "inversion": 37.159942, "variacion": 7.940631, "presidente": "Alberto Fernández"}, {"anio": 2023, "inversion": 36.275878, "variacion": -2.379076, "presidente": "Alberto Fernández"}, {"anio": 2024, "inversion": 31.126906, "variacion": -14.193927, "presidente": "Javier Milei"}];
 
-  // socialRecent izado a scope de módulo (fix "socialRecent is not defined" en resize)
+  const socialRecent = {
+    labels:['AUH','PNC*','Otros programas','Volver / Potenciar','Políticas alimentarias','Progresar'],
+    y2025:[18.9,-2.5,-19.8,-37.8,-18.2,-41.5],
+    y2026:[4.6,-6.4,-23.0,-36.7,-7.5,-32.0]
+  };
 
 
   const mandateShapes = [
@@ -22823,7 +23096,7 @@ if(document.getElementById('tab-rates')?.classList.contains('active'))requestAni
 window.addEventListener('resize',()=>{if(!bankAdjustmentRendered||!window.Plotly)return;['bankAdjustScenarioChart','bankAdjustSavingChart','bankAdjustProfitChart','bankAdjustCapitalChart'].forEach(id=>{const el=document.getElementById(id);if(el)Plotly.Plots.resize(el)})});
 </script>
 
-<script id="source-register-v149-script">
+<script id="source-register-v195-script">
 function sourceProjectAsset(path){
   const clean=String(path||'').replace(/^\.\//,'');
   const inVersion=/\/data\/dashboard_/i.test(location.pathname);
@@ -22868,7 +23141,7 @@ function normalizeSourceRegisters(){
       const header=document.createElement('div');
       header.className='source-register-standard';
       const ok=links.length>0;
-      header.innerHTML=`<div class="source-register-copy"><span class="source-register-kicker">Fuentes y trazabilidad</span><strong>Respaldo visible de esta pestaña</strong><small>Separamos publicación de origen, archivos de datos y auditorías/cálculos propios.</small></div><div class="source-register-status"><span class="${ok?'ok':'warn'}">${ok?'✓':'!'} ${links.length} referencia${links.length===1?'':'s'} visible${links.length===1?'':'s'}</span><span>corte · 22 ago 2026</span><a href="${sourceProjectAsset('data/derivados/AUDITORIA_COBERTURA_FUENTES_V149.md')}" target="_blank" rel="noopener">auditoría global ↗</a></div>`;
+      header.innerHTML=`<div class="source-register-copy"><span class="source-register-kicker">Fuentes y trazabilidad</span><strong>Respaldo visible de esta pestaña</strong><small>Separamos publicación de origen, archivos de datos y auditorías/cálculos propios.</small></div><div class="source-register-status"><span class="${ok?'ok':'warn'}">${ok?'✓':'!'} ${links.length} referencia${links.length===1?'':'s'} visible${links.length===1?'':'s'}</span><span>corte · 27 ago 2026 · ciclo V70</span><a href="${sourceProjectAsset('data/derivados/AUDITORIA_COBERTURA_FUENTES_V195.md')}" target="_blank" rel="noopener">auditoría global ↗</a><a href="${sourceProjectAsset('data/fuentes/README.md')}" target="_blank" rel="noopener">catálogo ↗</a></div>`;
       panel.prepend(header);
       const legend=document.createElement('div');
       legend.className='source-register-legend';
@@ -22878,83 +23151,45 @@ function normalizeSourceRegisters(){
     panel.dataset.sourceCoverage=links.length?'ok':'missing';
     audit.push({tab:tab.id,label:tabLabel,references:links.length,...counts,status:links.length?'ok':'missing'});
   });
-  window.SOURCE_COVERAGE_AUDIT_V149=audit;
+  window.SOURCE_COVERAGE_AUDIT_V195=audit;
 }
 normalizeSourceRegisters();
 </script>
 <!-- SELF_CONTAINED_EDITORIAL_PASS: 2026-08-23 -->
 
-<script id="consumo-supermercados-v1-script">
-// ---------------- Consumo · supermercados 2026 ----------------
-const SUPERMARKET_PULSE_2026={
-  months:['Ene','Feb','Mar','Abr','May','Jun'],
-  nominal_millions:[2339233.3,2214141.6,2464000.0,2399923.1,2502789.7,2484975.5],
-  nominal_yoy:[25.1,23.5,20.5,21.5,25.9,23.7],
-  real_yoy:[-1.2,-3.1,-5.1,-3.7,-0.7,-3.1],
-  real_accum:[-1.2,-2.1,-3.1,-3.3,-2.8,-2.8],
-  june:{sa_mom:-1.0,operations:65548779,ticket:37910,companies:93,stores:3128,workers:95816,workers_yoy:-4.1,credit_share:42.8,credit_millions:1062498.318},
-  historical:{national:-9.2,below:22,total:24,period:'1S-2026 vs promedio 1S 2017–2025'},
-  district_refs:[
-    ['Neuquén',12.8],['Río Negro',5.1],['Santa Fe',-0.4],['Córdoba',-3.2],['CABA',-3.8],['Tierra del Fuego',-4.2],['Resto PBA',-6.3],['La Pampa',-8.8],['San Luis',-12.9],['Chaco',-21.1],['Jujuy',-22.1],['San Juan',-22.1],['La Rioja',-25.0],['Santiago del Estero',-25.1],['Misiones',-29.0],['Corrientes',-32.8],['Tucumán',-33.0],['Formosa',-35.9]
-  ]
-};
-SUPERMARKET_PULSE_2026.h1_nominal_millions=SUPERMARKET_PULSE_2026.nominal_millions.reduce((a,b)=>a+b,0);
-
-function renderSupermarketPulse(){
-  if(!window.Plotly)return;
-  const mobile=window.innerWidth<=720,d=SUPERMARKET_PULSE_2026;
-  const pulse=document.getElementById('supermarketPulseChart');
-  if(pulse){
-    const nominalB=d.nominal_millions.map(v=>v/1e6);
-    Plotly.react(pulse,[
-      {type:'bar',x:d.months,y:nominalB,name:'Facturación nominal',marker:{color:'#9c78c6'},text:nominalB.map(v=>'$ '+v.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2})+' B'),textposition:'outside',cliponaxis:false,customdata:d.months.map((m,i)=>[d.nominal_yoy[i],d.real_yoy[i],d.real_accum[i]]),hovertemplate:'<b>%{x} 2026</b><br>Facturación: <b>$ %{y:.3f} billones</b><br>Nominal ia: <b>+%{customdata[0]:.1f}%</b><br>Real ia: <b>%{customdata[1]:.1f}%</b><br>Real acumulado: <b>%{customdata[2]:.1f}%</b><extra></extra>'},
-      {type:'scatter',mode:'lines+markers',x:d.months,y:d.real_yoy,name:'Ventas reales · ia',yaxis:'y2',line:{color:'#c45778',width:3},marker:{size:mobile?7:8,color:'#c45778'},hovertemplate:'<b>%{x} 2026</b><br>Ventas reales: <b>%{y:.1f}% ia</b><extra></extra>'}
-    ],{
-      ...common,
-      margin:{l:mobile?48:62,r:mobile?48:62,t:mobile?72:58,b:44},
-      barmode:'group',
-      xaxis:{...common.xaxis,fixedrange:true},
-      yaxis:{...common.yaxis,title:'$ billones corrientes',rangemode:'tozero',fixedrange:true},
-      yaxis2:{title:'variación real ia',overlaying:'y',side:'right',ticksuffix:'%',range:[-7,2],showgrid:false,zeroline:true,zerolinecolor:'#bfaec8',fixedrange:true},
-      legend:{...common.legend,orientation:'h',y:mobile?1.13:1.10,x:0,font:{size:mobile?8.5:10.5}},
-      annotations:[{xref:'paper',yref:'paper',x:.01,y:-.16,text:'Barras y línea usan escalas distintas · nominal ≠ real',showarrow:false,xanchor:'left',font:{size:mobile?8:9,color:'#806c89'}}]
-    },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
-  }
-
-  const district=document.getElementById('supermarketHistoryDistrictChart');
-  if(district){
-    const rows=[...d.district_refs].sort((a,b)=>a[1]-b[1]);
-    Plotly.react(district,[{
-      type:'bar',orientation:'h',y:rows.map(r=>r[0]),x:rows.map(r=>r[1]),
-      marker:{color:rows.map(r=>r[1]>=0?'#5ba27e':'#ce6686')},
-      text:rows.map(r=>(r[1]>=0?'+':'')+r[1].toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'),textposition:'outside',cliponaxis:false,
-      customdata:rows.map(()=>[d.historical.period]),
-      hovertemplate:'<b>%{y}</b><br>Vs promedio histórico: <b>%{x:.1f}%</b><br><span style="font-size:10px">%{customdata[0]}</span><extra></extra>'
-    }],{
-      ...common,
-      margin:{l:mobile?125:135,r:mobile?34:42,t:32,b:44},
-      xaxis:{title:'% vs promedio del mismo semestre 2017–2025',range:[-40,16],ticksuffix:'%',gridcolor:'#eee5f2',zeroline:true,zerolinecolor:'#9c879f',fixedrange:true},
-      yaxis:{autorange:'reversed',automargin:true,fixedrange:true},
-      showlegend:false,
-      annotations:[{xref:'paper',yref:'paper',x:0,y:-.13,text:'Sólo referencias con valor explícito publicado · no es el ranking completo',showarrow:false,xanchor:'left',font:{size:mobile?7.5:9,color:'#806c89'}}]
-    },{responsive:true,displaylogo:false,displayModeBar:false,scrollZoom:false,doubleClick:false});
-  }
+<script id="consumo-supermercados-historico-v2-script">
+const SUPER_HISTORY={"modern":[{"date":"2017-01","year":2017,"month":1,"real_index":99.9,"nominal_index":90.9507,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-02","year":2017,"month":2,"real_index":91.7,"nominal_index":84.8631,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-03","year":2017,"month":3,"real_index":95.8,"nominal_index":90.6932,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-04","year":2017,"month":4,"real_index":98.4,"nominal_index":95.1145,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-05","year":2017,"month":5,"real_index":93.2,"nominal_index":91.3102,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-06","year":2017,"month":6,"real_index":95.9,"nominal_index":95.1093,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-07","year":2017,"month":7,"real_index":101.2,"nominal_index":101.8006,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-08","year":2017,"month":8,"real_index":99.6,"nominal_index":101.7112,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-09","year":2017,"month":9,"real_index":96.0,"nominal_index":99.6433,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-10","year":2017,"month":10,"real_index":101.0,"nominal_index":105.9262,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-11","year":2017,"month":11,"real_index":103.4,"nominal_index":109.7883,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2017-12","year":2017,"month":12,"real_index":124.0,"nominal_index":133.0894,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-01","year":2018,"month":1,"real_index":97.2,"nominal_index":106.0346,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-02","year":2018,"month":2,"real_index":93.3,"nominal_index":103.6109,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-03","year":2018,"month":3,"real_index":104.9,"nominal_index":119.2635,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-04","year":2018,"month":4,"real_index":96.1,"nominal_index":111.3707,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-05","year":2018,"month":5,"real_index":96.1,"nominal_index":114.6988,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-06","year":2018,"month":6,"real_index":99.9,"nominal_index":125.1624,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-07","year":2018,"month":7,"real_index":98.3,"nominal_index":128.2319,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-08","year":2018,"month":8,"real_index":95.5,"nominal_index":128.9289,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-09","year":2018,"month":9,"real_index":88.4,"nominal_index":130.3445,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-10","year":2018,"month":10,"real_index":90.9,"nominal_index":141.7539,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-11","year":2018,"month":11,"real_index":90.5,"nominal_index":146.4195,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2018-12","year":2018,"month":12,"real_index":113.2,"nominal_index":186.7535,"status":"derivado desde ventas oficiales; base promedio 2017=100"},{"date":"2019-01","year":2019,"month":1,"real_index":86.9,"nominal_index":148.3,"status":"observado INDEC"},{"date":"2019-02","year":2019,"month":2,"real_index":82.0,"nominal_index":145.6,"status":"observado INDEC"},{"date":"2019-03","year":2019,"month":3,"real_index":89.7,"nominal_index":166.9,"status":"observado INDEC"},{"date":"2019-04","year":2019,"month":4,"real_index":84.0,"nominal_index":162.2,"status":"observado INDEC"},{"date":"2019-05","year":2019,"month":5,"real_index":83.2,"nominal_index":165.9,"status":"observado INDEC"},{"date":"2019-06","year":2019,"month":6,"real_index":86.7,"nominal_index":177.8,"status":"observado INDEC"},{"date":"2019-07","year":2019,"month":7,"real_index":85.8,"nominal_index":179.8,"status":"observado INDEC"},{"date":"2019-08","year":2019,"month":8,"real_index":88.6,"nominal_index":195.0,"status":"observado INDEC"},{"date":"2019-09","year":2019,"month":9,"real_index":80.6,"nominal_index":189.2,"status":"observado INDEC"},{"date":"2019-10","year":2019,"month":10,"real_index":89.7,"nominal_index":216.7,"status":"observado INDEC"},{"date":"2019-11","year":2019,"month":11,"real_index":88.3,"nominal_index":222.0,"status":"observado INDEC"},{"date":"2019-12","year":2019,"month":12,"real_index":106.1,"nominal_index":272.9,"status":"observado INDEC"},{"date":"2020-01","year":2020,"month":1,"real_index":85.4,"nominal_index":229.0,"status":"observado INDEC"},{"date":"2020-02","year":2020,"month":2,"real_index":86.2,"nominal_index":236.7,"status":"observado INDEC"},{"date":"2020-03","year":2020,"month":3,"real_index":98.2,"nominal_index":280.0,"status":"observado INDEC"},{"date":"2020-04","year":2020,"month":4,"real_index":84.2,"nominal_index":244.9,"status":"observado INDEC"},{"date":"2020-05","year":2020,"month":5,"real_index":87.3,"nominal_index":256.6,"status":"observado INDEC"},{"date":"2020-06","year":2020,"month":6,"real_index":85.3,"nominal_index":255.4,"status":"observado INDEC"},{"date":"2020-07","year":2020,"month":7,"real_index":86.5,"nominal_index":264.9,"status":"observado INDEC"},{"date":"2020-08","year":2020,"month":8,"real_index":83.5,"nominal_index":262.5,"status":"observado INDEC"},{"date":"2020-09","year":2020,"month":9,"real_index":78.7,"nominal_index":251.6,"status":"observado INDEC"},{"date":"2020-10","year":2020,"month":10,"real_index":87.7,"nominal_index":291.3,"status":"observado INDEC"},{"date":"2020-11","year":2020,"month":11,"real_index":87.3,"nominal_index":297.4,"status":"observado INDEC"},{"date":"2020-12","year":2020,"month":12,"real_index":108.8,"nominal_index":378.1,"status":"observado INDEC"},{"date":"2021-01","year":2021,"month":1,"real_index":88.8,"nominal_index":320.0,"status":"observado INDEC"},{"date":"2021-02","year":2021,"month":2,"real_index":81.2,"nominal_index":303.5,"status":"observado INDEC"},{"date":"2021-03","year":2021,"month":3,"real_index":89.6,"nominal_index":350.1,"status":"observado INDEC"},{"date":"2021-04","year":2021,"month":4,"real_index":85.1,"nominal_index":348.9,"status":"observado INDEC"},{"date":"2021-05","year":2021,"month":5,"real_index":85.0,"nominal_index":361.1,"status":"observado INDEC"},{"date":"2021-06","year":2021,"month":6,"real_index":86.1,"nominal_index":379.6,"status":"observado INDEC"},{"date":"2021-07","year":2021,"month":7,"real_index":90.1,"nominal_index":410.2,"status":"observado INDEC"},{"date":"2021-08","year":2021,"month":8,"real_index":87.2,"nominal_index":407.6,"status":"observado INDEC"},{"date":"2021-09","year":2021,"month":9,"real_index":83.5,"nominal_index":401.5,"status":"observado INDEC"},{"date":"2021-10","year":2021,"month":10,"real_index":92.3,"nominal_index":458.7,"status":"observado INDEC"},{"date":"2021-11","year":2021,"month":11,"real_index":91.0,"nominal_index":462.6,"status":"observado INDEC"},{"date":"2021-12","year":2021,"month":12,"real_index":114.7,"nominal_index":599.4,"status":"observado INDEC"},{"date":"2022-01","year":2022,"month":1,"real_index":92.6,"nominal_index":504.5,"status":"observado INDEC"},{"date":"2022-02","year":2022,"month":2,"real_index":86.6,"nominal_index":496.9,"status":"observado INDEC"},{"date":"2022-03","year":2022,"month":3,"real_index":89.5,"nominal_index":551.7,"status":"observado INDEC"},{"date":"2022-04","year":2022,"month":4,"real_index":87.8,"nominal_index":578.5,"status":"observado INDEC"},{"date":"2022-05","year":2022,"month":5,"real_index":84.5,"nominal_index":586.5,"status":"observado INDEC"},{"date":"2022-06","year":2022,"month":6,"real_index":87.8,"nominal_index":640.3,"status":"observado INDEC"},{"date":"2022-07","year":2022,"month":7,"real_index":94.9,"nominal_index":745.1,"status":"observado INDEC"},{"date":"2022-08","year":2022,"month":8,"real_index":87.0,"nominal_index":736.2,"status":"observado INDEC"},{"date":"2022-09","year":2022,"month":9,"real_index":84.1,"nominal_index":757.9,"status":"observado INDEC"},{"date":"2022-10","year":2022,"month":10,"real_index":90.9,"nominal_index":867.3,"status":"observado INDEC"},{"date":"2022-11","year":2022,"month":11,"real_index":93.2,"nominal_index":929.7,"status":"observado INDEC"},{"date":"2022-12","year":2022,"month":12,"real_index":112.6,"nominal_index":1174.2,"status":"observado INDEC"},{"date":"2023-01","year":2023,"month":1,"real_index":93.3,"nominal_index":1033.5,"status":"observado INDEC"},{"date":"2023-02","year":2023,"month":2,"real_index":87.4,"nominal_index":1039.5,"status":"observado INDEC"},{"date":"2023-03","year":2023,"month":3,"real_index":92.9,"nominal_index":1185.6,"status":"observado INDEC"},{"date":"2023-04","year":2023,"month":4,"real_index":90.8,"nominal_index":1259.6,"status":"observado INDEC"},{"date":"2023-05","year":2023,"month":5,"real_index":84.7,"nominal_index":1269.6,"status":"observado INDEC"},{"date":"2023-06","year":2023,"month":6,"real_index":87.0,"nominal_index":1390.1,"status":"observado INDEC"},{"date":"2023-07","year":2023,"month":7,"real_index":92.5,"nominal_index":1575.8,"status":"observado INDEC"},{"date":"2023-08","year":2023,"month":8,"real_index":91.5,"nominal_index":1754.5,"status":"observado INDEC"},{"date":"2023-09","year":2023,"month":9,"real_index":87.3,"nominal_index":1893.9,"status":"observado INDEC"},{"date":"2023-10","year":2023,"month":10,"real_index":97.4,"nominal_index":2312.7,"status":"observado INDEC"},{"date":"2023-11","year":2023,"month":11,"real_index":91.7,"nominal_index":2495.2,"status":"observado INDEC"},{"date":"2023-12","year":2023,"month":12,"real_index":105.2,"nominal_index":3744.8,"status":"observado INDEC"},{"date":"2024-01","year":2024,"month":1,"real_index":80.4,"nominal_index":3596.8,"status":"observado INDEC"},{"date":"2024-02","year":2024,"month":2,"real_index":77.5,"nominal_index":3894.8,"status":"observado INDEC"},{"date":"2024-03","year":2024,"month":3,"real_index":84.3,"nominal_index":4645.4,"status":"observado INDEC"},{"date":"2024-04","year":2024,"month":4,"real_index":74.9,"nominal_index":4358.8,"status":"observado INDEC"},{"date":"2024-05","year":2024,"month":5,"real_index":76.4,"nominal_index":4612.6,"status":"observado INDEC"},{"date":"2024-06","year":2024,"month":6,"real_index":80.6,"nominal_index":5004.5,"status":"observado INDEC"},{"date":"2024-07","year":2024,"month":7,"real_index":81.2,"nominal_index":5185.6,"status":"observado INDEC"},{"date":"2024-08","year":2024,"month":8,"real_index":82.3,"nominal_index":5447.0,"status":"observado INDEC"},{"date":"2024-09","year":2024,"month":9,"real_index":76.1,"nominal_index":5174.9,"status":"observado INDEC"},{"date":"2024-10","year":2024,"month":10,"real_index":80.0,"nominal_index":5544.7,"status":"observado INDEC"},{"date":"2024-11","year":2024,"month":11,"real_index":84.7,"nominal_index":5957.0,"status":"observado INDEC"},{"date":"2024-12","year":2024,"month":12,"real_index":101.8,"nominal_index":7274.2,"status":"observado INDEC"},{"date":"2025-01","year":2025,"month":1,"real_index":83.8,"nominal_index":6105.1,"status":"observado INDEC"},{"date":"2025-02","year":2025,"month":2,"real_index":78.5,"nominal_index":5851.5,"status":"observado INDEC"},{"date":"2025-03","year":2025,"month":3,"real_index":86.8,"nominal_index":6677.6,"status":"observado INDEC"},{"date":"2025-04","year":2025,"month":4,"real_index":81.5,"nominal_index":6449.0,"status":"observado INDEC"},{"date":"2025-05","year":2025,"month":5,"real_index":81.1,"nominal_index":6488.3,"status":"observado INDEC"},{"date":"2025-06","year":2025,"month":6,"real_index":81.2,"nominal_index":6560.4,"status":"observado INDEC"},{"date":"2025-07","year":2025,"month":7,"real_index":82.0,"nominal_index":6722.1,"status":"observado INDEC"},{"date":"2025-08","year":2025,"month":8,"real_index":82.6,"nominal_index":6878.4,"status":"observado INDEC"},{"date":"2025-09","year":2025,"month":9,"real_index":75.5,"nominal_index":6406.5,"status":"observado INDEC"},{"date":"2025-10","year":2025,"month":10,"real_index":82.2,"nominal_index":7087.5,"status":"observado INDEC"},{"date":"2025-11","year":2025,"month":11,"real_index":82.3,"nominal_index":7219.3,"status":"observado INDEC"},{"date":"2025-12","year":2025,"month":12,"real_index":102.3,"nominal_index":9128.4,"status":"observado INDEC"},{"date":"2026-01","year":2026,"month":1,"real_index":82.8,"nominal_index":7636.9,"status":"observado INDEC"},{"date":"2026-02","year":2026,"month":2,"real_index":76.1,"nominal_index":7228.5,"status":"observado INDEC"},{"date":"2026-03","year":2026,"month":3,"real_index":82.4,"nominal_index":8044.1,"status":"observado INDEC"},{"date":"2026-04","year":2026,"month":4,"real_index":78.5,"nominal_index":7835.0,"status":"observado INDEC"},{"date":"2026-05","year":2026,"month":5,"real_index":80.5323,"nominal_index":8170.8382,"status":"derivado desde variación ia oficial y/o monto corriente oficial"},{"date":"2026-06","year":2026,"month":6,"real_index":78.6828,"nominal_index":8112.6803,"status":"derivado desde variación ia oficial y/o monto corriente oficial"}],"h1":[{"year":2017,"h1_real_index":95.81666666666666,"vs_avg_2017_2025_pct":8.946769982312809,"yoy_pct":null},{"year":2018,"h1_real_index":97.91666666666667,"vs_avg_2017_2025_pct":11.334540554198602,"yoy_pct":2.1916855105235777},{"year":2019,"h1_real_index":85.41666666666667,"vs_avg_2017_2025_pct":-2.878379516550156,"yoy_pct":-12.765957446808507},{"year":2020,"h1_real_index":87.76666666666667,"vs_avg_2017_2025_pct":-0.2063505432493895,"yoy_pct":2.7512195121951244},{"year":2021,"h1_real_index":85.96666666666667,"vs_avg_2017_2025_pct":-2.2530110334372133,"yoy_pct":-2.0508925180402593},{"year":2022,"h1_real_index":88.13333333333333,"vs_avg_2017_2025_pct":0.21056177882590177,"yoy_pct":2.5203567274137084},{"year":2023,"h1_real_index":89.35,"vs_avg_2017_2025_pct":1.5939526657121172,"yoy_pct":1.3804841149773095},{"year":2024,"h1_real_index":79.01666666666667,"vs_avg_2017_2025_pct":-10.155394592773526,"yoy_pct":-11.565006528632715},{"year":2025,"h1_real_index":82.15,"vs_avg_2017_2025_pct":-6.592689295039156,"yoy_pct":3.965408141742266},{"year":2026,"h1_real_index":79.83585,"vs_avg_2017_2025_pct":-9.22395561357703,"yoy_pct":-2.816981132075491}],"payments":[{"period":"2020-12","cash":31.3,"debit":26.8,"credit":36.4,"other":5.5,"status":"observado INDEC"},{"period":"2021-12","cash":30.8,"debit":30.2,"credit":34.0,"other":5.0,"status":"observado INDEC"},{"period":"2022-12","cash":27.9,"debit":32.0,"credit":36.5,"other":3.6,"status":"observado INDEC"},{"period":"2023-12","cash":19.9,"debit":34.3,"credit":39.3,"other":6.5,"status":"observado INDEC"},{"period":"2024-12","cash":15.5,"debit":29.7,"credit":43.8,"other":11.0,"status":"observado INDEC"},{"period":"2025-12","cash":16.3,"debit":26.1,"credit":43.6,"other":14.0,"status":"observado INDEC"},{"period":"2026-06","cash":16.9,"debit":24.9,"credit":42.8,"other":15.4,"status":"observado/reproducido desde informe INDEC junio 2026"}],"structure":[{"period":"2020-12","operations":67713571,"ticket_nominal":1710,"stores":2926,"workers":94736,"real_index":108.8,"nominal_index":378.1,"ticket_real_proxy":492.06030150753764,"ticket_real_index_2020dec_100":100.0,"operations_index_2020dec_100":100.0},{"period":"2021-12","operations":72092370,"ticket_nominal":2547,"stores":2948,"workers":92460,"real_index":114.7,"nominal_index":599.4,"ticket_real_proxy":487.3888888888889,"ticket_real_index_2020dec_100":99.05064224763981,"operations_index_2020dec_100":106.46664905621357},{"period":"2022-12","operations":78669364,"ticket_nominal":4573,"stores":2998,"workers":94588,"real_index":112.6,"nominal_index":1174.2,"ticket_real_proxy":438.52818940555267,"ticket_real_index_2020dec_100":89.12082280607127,"operations_index_2020dec_100":116.17961191265485},{"period":"2023-12","operations":88923262,"ticket_nominal":12900,"stores":3130,"workers":100303,"real_index":105.2,"nominal_index":3744.8,"ticket_real_proxy":362.3905148472549,"ticket_real_index_2020dec_100":73.64758216360676,"operations_index_2020dec_100":131.3226590870536},{"period":"2024-12","operations":77529153,"ticket_nominal":28739,"stores":3175,"workers":100707,"real_index":101.8,"nominal_index":7274.2,"ticket_real_proxy":402.1927084765335,"ticket_real_index_2020dec_100":81.73646751106021,"operations_index_2020dec_100":114.49573823244383},{"period":"2025-12","operations":75074970,"ticket_nominal":37244,"stores":3151,"workers":99324,"real_index":102.3,"nominal_index":9128.4,"ticket_real_proxy":417.3854344682529,"ticket_real_index_2020dec_100":84.82404152285778,"operations_index_2020dec_100":110.87137909179239},{"period":"2026-06","operations":65548779,"ticket_nominal":37910,"stores":3128,"workers":95816,"real_index":78.6828,"nominal_index":8112.6803096342965,"ticket_real_proxy":367.6793407547033,"ticket_real_index_2020dec_100":74.72241504308207,"operations_index_2020dec_100":96.80301604533602}],"basket":[{"period":"2023-12","Bebidas":17.5,"Almacen":26.8,"Panaderia":3.7,"Lacteos":8.7,"Carnes":12.2,"Verduleria":3.9,"Preparados":1.0,"Limpieza":12.3,"Indumentaria":2.0,"Electronicos":4.3,"Otros":7.7},{"period":"2024-12","Bebidas":16.6,"Almacen":25.7,"Panaderia":4.0,"Lacteos":9.8,"Carnes":11.0,"Verduleria":4.1,"Preparados":1.1,"Limpieza":12.7,"Indumentaria":2.3,"Electronicos":4.4,"Otros":8.2},{"period":"2026-04","Bebidas":10.2,"Almacen":27.6,"Panaderia":4.3,"Lacteos":11.3,"Carnes":15.2,"Verduleria":4.4,"Preparados":1.2,"Limpieza":13.2,"Indumentaria":2.0,"Electronicos":4.0,"Otros":6.5}],"district":[["Neuquén",12.8],["Río Negro",5.1],["Santa Fe",-0.4],["Córdoba",-3.2],["CABA",-3.8],["Tierra del Fuego",-4.2],["Resto PBA",-6.3],["La Pampa",-8.8],["San Luis",-12.9],["Chaco",-21.1],["Jujuy",-22.1],["San Juan",-22.1],["La Rioja",-25.0],["Santiago del Estero",-25.1],["Misiones",-29.0],["Corrientes",-32.8],["Tucumán",-33.0],["Formosa",-35.9]]};
+const SUPERMARKET_PULSE_2026={months:['Ene','Feb','Mar','Abr','May','Jun'],nominal_millions:[2339233.3,2214141.6,2464000.0,2399923.1,2502789.7,2484975.5],nominal_yoy:[25.1,23.5,20.5,21.5,25.9,23.7],real_yoy:[-1.2,-3.1,-5.1,-3.7,-0.7,-3.1],real_accum:[-1.2,-2.1,-3.1,-3.3,-2.8,-2.8],june:{sa_mom:-1.0,operations:65548779,ticket:37910,companies:93,stores:3128,workers:95816,workers_yoy:-4.1,credit_share:42.8},historical:{national:-9.2,period:'1S-2026 vs promedio 1S 2017–2025'}};
+function superLayout(title){const mobile=innerWidth<=720;const out={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'#fff',font:{family:'Inter,system-ui,sans-serif',size:mobile?8:9,color:'#67536f'},margin:{l:mobile?52:65,r:mobile?48:70,t:mobile?82:72,b:55},xaxis:{gridcolor:'#f0e8f2',automargin:true,fixedrange:true},yaxis:{gridcolor:'#f0e8f2',automargin:true,fixedrange:true},legend:{orientation:mobile?'v':'h',y:mobile?1.04:1.09,x:0,xanchor:'left',bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?9:10}},hovermode:'x unified'};if(title){out.title={text:title,x:.02,xanchor:'left',font:{size:mobile?11:13,color:'#5d3f6c'}};out.margin.t=mobile?92:96;}return out;}
+function renderSupermarketHistory(){if(!window.Plotly)return;const d=SUPER_HISTORY,mobile=innerWidth<=720;
+ const modern=document.getElementById('supermarketModernHistoryChart');if(modern){const mandateBands=[
+  {name:'Mauricio Macri',x0:'2017-01',x1:'2019-11',fill:'rgba(240,190,78,0.10)',labelX:'2018-06'},
+  {name:'Alberto Fernández',x0:'2019-12',x1:'2023-11',fill:'rgba(116,182,173,0.10)',labelX:'2021-12'},
+  {name:'Javier Milei',x0:'2023-12',x1:d.modern[d.modern.length-1].date,fill:'rgba(164,136,223,0.10)',labelX:'2025-01'}
+ ];const modernShapes=[
+  ...mandateBands.map(m=>({type:'rect',xref:'x',yref:'paper',x0:m.x0,x1:m.x1,y0:0,y1:1,fillcolor:m.fill,line:{width:0},layer:'below'})),
+  {type:'line',xref:'paper',x0:0,x1:1,y0:100,y1:100,line:{color:'#b9aabd',dash:'dash'}},
+  {type:'line',xref:'x',yref:'paper',x0:'2019-12',x1:'2019-12',y0:0,y1:1,line:{color:'#bda9c6',dash:'dot',width:1}},
+  {type:'line',xref:'x',yref:'paper',x0:'2023-12',x1:'2023-12',y0:0,y1:1,line:{color:'#bda9c6',dash:'dot',width:1}}
+ ];const modernAnnotations=[
+  ...mandateBands.map(m=>({xref:'x',yref:'paper',x:m.labelX,y:1.065,text:m.name,showarrow:false,yanchor:'bottom',font:{size:mobile?8:9,color:'#6f5a78'},bgcolor:'rgba(255,255,255,0.78)',bordercolor:'#dacbe2',borderwidth:1,borderpad:3})),
+  {xref:'paper',yref:'paper',x:.01,y:-.16,text:'Nominal en eje derecho logarítmico · real en eje izquierdo lineal · franjas de fondo = mandatos',showarrow:false,xanchor:'left',font:{size:8,color:'#806c89'}}
+ ];Plotly.react(modern,[
+  {x:d.modern.map(r=>r.date),y:d.modern.map(r=>r.real_index),name:'Ventas reales · índice 2017=100',mode:'lines',line:{color:'#bd5578',width:3},customdata:d.modern.map(r=>r.status),hovertemplate:'<b>%{x}</b><br>Real: <b>%{y:.1f}</b><br>%{customdata}<extra></extra>'},
+  {x:d.modern.map(r=>r.date),y:d.modern.map(r=>r.nominal_index),name:'Facturación nominal · índice 2017=100',mode:'lines',yaxis:'y2',line:{color:'#8064b0',width:2.3,dash:'dot'},customdata:d.modern.map(r=>r.status),hovertemplate:'<b>%{x}</b><br>Nominal: <b>%{y:.1f}</b><br>%{customdata}<extra></extra>'}
+ ],{...superLayout(''),margin:{l:mobile?55:68,r:mobile?52:72,t:mobile?70:64,b:55},legend:{orientation:'h',y:1.08,x:0,bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?8:9}},yaxis:{title:'ventas reales · 2017=100',gridcolor:'#f0e8f2',range:[65,135],fixedrange:true},yaxis2:{title:'facturación nominal · índice 2017=100',overlaying:'y',side:'right',type:'log',showgrid:false,fixedrange:true},shapes:modernShapes,annotations:modernAnnotations},{responsive:true,displaylogo:false,displayModeBar:false});}
+ const h1=document.getElementById('supermarketH1HistoryChart');if(h1){const avg=d.h1.filter(r=>r.year<=2025).reduce((a,r)=>a+r.h1_real_index,0)/9;Plotly.react(h1,[{type:'bar',x:d.h1.map(r=>String(r.year)),y:d.h1.map(r=>r.h1_real_index),marker:{color:d.h1.map(r=>r.year===2026?'#c95578':'#9876c2')},text:d.h1.map(r=>r.h1_real_index.toFixed(1)),textposition:'outside',customdata:d.h1.map(r=>[r.yoy_pct,r.vs_avg_2017_2025_pct]),hovertemplate:'<b>1S-%{x}</b><br>Nivel real medio: <b>%{y:.1f}</b><br>vs 1S previo: %{customdata[0]:.1f}%<br>vs prom. 2017–2025: %{customdata[1]:.1f}%<extra></extra>'}],{...superLayout(''),yaxis:{title:'índice real · 2017=100',range:[70,105],gridcolor:'#f0e8f2'},shapes:[{type:'line',xref:'paper',x0:0,x1:1,y0:avg,y1:avg,line:{color:'#6f987f',dash:'dash',width:2}}],annotations:[{xref:'paper',x:.98,yref:'y',y:avg,text:'prom. 2017–2025',showarrow:false,xanchor:'right',font:{size:8,color:'#567765'}}]},{responsive:true,displaylogo:false,displayModeBar:false});}
+ const pulse=document.getElementById('supermarketPulseChart');if(pulse){const p=SUPERMARKET_PULSE_2026,nom=p.nominal_millions.map(v=>v/1e6);Plotly.react(pulse,[{type:'bar',x:p.months,y:nom,name:'Facturación nominal',marker:{color:'#9c78c6'},text:nom.map(v=>'$ '+v.toFixed(2)+' B'),textposition:'outside',customdata:p.real_yoy,hovertemplate:'%{x} 2026<br>Facturación: <b>$%{y:.2f} B</b><br>Real ia: <b>%{customdata:.1f}%</b><extra></extra>'},{x:p.months,y:p.real_yoy,name:'Ventas reales · ia',type:'scatter',mode:'lines+markers',yaxis:'y2',line:{color:'#c45778',width:3}}],{...superLayout(''),margin:{l:mobile?55:68,r:mobile?48:64,t:mobile?68:60,b:55},legend:{orientation:'h',y:1.08,x:0,bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?8:9}},yaxis:{title:'$ billones corrientes'},yaxis2:{title:'real ia',ticksuffix:'%',overlaying:'y',side:'right',range:[-7,2],showgrid:false}},{responsive:true,displaylogo:false,displayModeBar:false});}
+ const ops=document.getElementById('supermarketOperationsChart');if(ops)Plotly.react(ops,[{x:d.structure.map(r=>r.period),y:d.structure.map(r=>r.operations_index_2020dec_100),name:'Operaciones · dic-2020=100',mode:'lines+markers',line:{color:'#6d5aa5',width:3},hovertemplate:'%{x}<br>Operaciones índice: <b>%{y:.1f}</b><extra></extra>'},{x:d.structure.map(r=>r.period),y:d.structure.map(r=>r.ticket_real_index_2020dec_100),name:'Ticket real proxy · dic-2020=100',mode:'lines+markers',line:{color:'#c25a7b',width:3},hovertemplate:'%{x}<br>Ticket real proxy: <b>%{y:.1f}</b><extra></extra>'}],{...superLayout(''),margin:{l:mobile?55:68,r:mobile?20:24,t:mobile?68:60,b:55},legend:{orientation:'h',y:1.08,x:0,bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?8:9}},yaxis:{title:'índice · dic-2020=100',gridcolor:'#f0e8f2'},shapes:[{type:'line',xref:'paper',x0:0,x1:1,y0:100,y1:100,line:{color:'#aaa',dash:'dash'}}]},{responsive:true,displaylogo:false,displayModeBar:false});
+ const pay=document.getElementById('supermarketPaymentChart');if(pay){const cats=[['cash','Efectivo'],['debit','Débito'],['credit','Crédito'],['other','Otros']];Plotly.react(pay,cats.map(([k,n])=>({type:'bar',x:d.payments.map(r=>r.period),y:d.payments.map(r=>r[k]),name:n,hovertemplate:'%{x}<br>'+n+': <b>%{y:.1f}%</b><extra></extra>'})),{...superLayout(''),margin:{l:mobile?55:68,r:mobile?20:22,t:mobile?70:62,b:55},barmode:'stack',legend:{orientation:'h',y:1.08,x:0,bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?8:9}},yaxis:{title:'% de ventas',range:[0,100],ticksuffix:'%',gridcolor:'#f0e8f2'}},{responsive:true,displaylogo:false,displayModeBar:false});}
+ const basket=document.getElementById('supermarketBasketCompositionChart');if(basket){const keys=['Bebidas','Almacen','Panaderia','Lacteos','Carnes','Verduleria','Preparados','Limpieza','Indumentaria','Electronicos','Otros'];Plotly.react(basket,keys.map(k=>({type:'bar',x:d.basket.map(r=>r.period),y:d.basket.map(r=>r[k]),name:k.replace('Almacen','Almacén').replace('Panaderia','Panadería').replace('Lacteos','Lácteos').replace('Verduleria','Verdulería').replace('Electronicos','Electrónicos'),hovertemplate:'%{x}<br>'+k+': <b>%{y:.1f}%</b><extra></extra>'})),{...superLayout(''),margin:{l:mobile?55:68,r:mobile?130:170,t:mobile?35:22,b:55},barmode:'stack',legend:{orientation:'v',x:1.02,y:1,xanchor:'left',yanchor:'top',bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?8:9}},yaxis:{title:'% de facturación',range:[0,100],ticksuffix:'%',gridcolor:'#f0e8f2'}},{responsive:true,displaylogo:false,displayModeBar:false});}
+ const district=document.getElementById('supermarketHistoryDistrictChart');if(district){const rows=[...d.district].sort((a,b)=>a[1]-b[1]);Plotly.react(district,[{type:'bar',orientation:'h',y:rows.map(r=>r[0]),x:rows.map(r=>r[1]),marker:{color:rows.map(r=>r[1]>=0?'#5ba27e':'#ce6686')},text:rows.map(r=>(r[1]>=0?'+':'')+r[1].toFixed(1)+'%'),textposition:'outside',cliponaxis:false}],{...superLayout(''),margin:{l:mobile?125:145,r:42,t:50,b:45},xaxis:{title:'% vs promedio',range:[-40,16],ticksuffix:'%',gridcolor:'#eee5f2',zeroline:true},yaxis:{autorange:'reversed',automargin:true},showlegend:false},{responsive:true,displaylogo:false,displayModeBar:false});}
+ const structure=document.getElementById('supermarketStructureChart');if(structure)Plotly.react(structure,[{type:'bar',x:d.structure.map(r=>r.period),y:d.structure.map(r=>r.stores),name:'Bocas',marker:{color:'#9a78c2'},yaxis:'y2',hovertemplate:'%{x}<br>Bocas: <b>%{y:,.0f}</b><extra></extra>'},{x:d.structure.map(r=>r.period),y:d.structure.map(r=>r.workers),name:'Empleo',mode:'lines+markers',line:{color:'#c95779',width:3},hovertemplate:'%{x}<br>Empleo: <b>%{y:,.0f}</b><extra></extra>'}],{...superLayout(''),margin:{l:mobile?55:68,r:mobile?55:75,t:mobile?68:60,b:55},legend:{orientation:'h',y:1.08,x:0,bgcolor:'rgba(255,255,255,0.82)',font:{size:mobile?8:9}},yaxis:{title:'asalariados',gridcolor:'#f0e8f2'},yaxis2:{title:'bocas',overlaying:'y',side:'right',showgrid:false}},{responsive:true,displaylogo:false,displayModeBar:false});
 }
-
-function downloadSupermarketPulseCsv(){
-  const d=SUPERMARKET_PULSE_2026,lines=['tipo,periodo_o_jurisdiccion,ventas_nominales_millones_ars,variacion_nominal_ia_pct,variacion_real_ia_pct,variacion_real_acum_pct,vs_promedio_historico_pct,nota'];
-  d.months.forEach((m,i)=>lines.push(`mensual,${m}-2026,${d.nominal_millions[i].toFixed(1)},${d.nominal_yoy[i].toFixed(1)},${d.real_yoy[i].toFixed(1)},${d.real_accum[i].toFixed(1)},,"INDEC · precios corrientes y constantes"`));
-  lines.push(`semestre,1S-2026,${d.h1_nominal_millions.toFixed(1)},,,${d.real_accum[5].toFixed(1)},${d.historical.national.toFixed(1)},"Nominal = suma mensual; histórico = Politikon sobre INDEC"`);
-  d.district_refs.forEach(([name,v])=>lines.push(`jurisdiccion,"${name}",,,,,${v.toFixed(1)},"Referencia explícitamente publicada; ranking parcial"`));
-  const blob=new Blob(['\uFEFF'+lines.join('\n')],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-  a.href=url;a.download='supermercados_2026_nominal_real_historico.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),800);
-}
-
-document.querySelector('.tab-btn[data-tab="tab-consumption"]')?.addEventListener('click',()=>setTimeout(renderSupermarketPulse,160));
-if(document.getElementById('tab-consumption')?.classList.contains('active'))setTimeout(renderSupermarketPulse,120);
-window.addEventListener('resize',()=>{
-  ['supermarketPulseChart','supermarketHistoryDistrictChart'].forEach(id=>{const el=document.getElementById(id);if(el?.data)Plotly.Plots.resize(el)});
-});
+function superCsvEscape(v){if(v==null)return '';const s=String(v);return (s.includes(',')||s.includes('\n')||s.includes('\"'))?'\"'+s.replace(/\"/g,'\"\"')+'\"':s;}
+function superDownload(name,lines){const blob=new Blob(['\uFEFF'+lines.join('\n')],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),600);}
+function downloadSupermarketHistoryCsv(kind){const d=SUPER_HISTORY;let rows=[],headers=[];if(kind==='modern'){headers=['date','real_index','nominal_index','status'];rows=d.modern.map(r=>headers.map(h=>r[h]));}else if(kind==='payments'){headers=['period','cash','debit','credit','other','status'];rows=d.payments.map(r=>headers.map(h=>r[h]));}else if(kind==='structure'){headers=['period','operations','ticket_nominal','stores','workers','ticket_real_index_2020dec_100','operations_index_2020dec_100'];rows=d.structure.map(r=>headers.map(h=>r[h]));}else if(kind==='basket'){headers=['period','Bebidas','Almacen','Panaderia','Lacteos','Carnes','Verduleria','Preparados','Limpieza','Indumentaria','Electronicos','Otros'];rows=d.basket.map(r=>headers.map(h=>r[h]));}else{headers=['jurisdiccion','vs_promedio_1S_2017_2025_pct'];rows=d.district;}superDownload('supermercados_'+kind+'.csv',[headers.join(','),...rows.map(r=>r.map(superCsvEscape).join(','))]);}
+document.querySelector('.tab-btn[data-tab="tab-consumption"]')?.addEventListener('click',()=>setTimeout(renderSupermarketHistory,150));if(document.getElementById('tab-consumption')?.classList.contains('active'))setTimeout(renderSupermarketHistory,120);window.addEventListener('resize',()=>['supermarketModernHistoryChart','supermarketH1HistoryChart','supermarketPulseChart','supermarketOperationsChart','supermarketPaymentChart','supermarketBasketCompositionChart','supermarketHistoryDistrictChart','supermarketStructureChart'].forEach(id=>{const el=document.getElementById(id);if(el?.data)Plotly.Plots.resize(el)}));
 </script>
 
 <script id="credit-mora-matchup-script-v1">

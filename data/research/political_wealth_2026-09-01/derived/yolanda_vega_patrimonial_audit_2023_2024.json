@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "persona_id": "dip-vega-yolanda",
+    "persona": "Yolanda Vega",
+    "corte": "2026-09-03",
+    "pregunta": "¿El salto 2023–2024 representa un enriquecimiento comparable o combina períodos, escalas y deuda de manera que exige otra lectura?",
+    "alcance": "El control coteja resumen y detalle del consolidado OA, distingue la DDJJ Inicial 2023 del ejercicio Anual 2024 y reconstruye bienes, ingresos y deuda sin atribuir causalidad donde falta desglose.",
+    "etiqueta": "serie suspendida · apalancamiento sin desglose",
+    "serie_estado": "suspendida_por_perimetro_y_apertura_2024_inconsistente",
+    "benchmark_estado": "suspendido_por_periodos_no_comparables_y_quiebre_escala",
+    "benchmark_suspension_note": "La trayectoria enfrenta una DDJJ Inicial 2023 con un cierre Anual 2024 y atraviesa una apertura 2024 cuyo total resumen está a escala 10× respecto del detalle."
+  },
+  "metricas_destacadas": [
+    {
+      "label": "Salto aparente real",
+      "valor": "+1409.6%",
+      "nota": "Inicial 2023 → cierre 2024"
+    },
+    {
+      "label": "Cambio anual real",
+      "valor": "+159.2%",
+      "nota": "detalle 2024, descontando IPC"
+    },
+    {
+      "label": "Ingreso / Δ bienes",
+      "valor": "83.9%",
+      "nota": "compatibilidad agregada"
+    },
+    {
+      "label": "Nueva deuda / Δ bienes",
+      "valor": "248.2%",
+      "nota": "resumen; detalle ausente"
+    },
+    {
+      "label": "Patrimonio neto cierre",
+      "valor": "-$ 76.16 M",
+      "nota": "bienes menos deuda informada"
+    }
+  ],
+  "columnas_puente": [
+    {
+      "label": "Δ bienes detalle",
+      "field": "aumento_bienes_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingreso neto",
+      "field": "ingresos_neto_gastos_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingreso / Δ",
+      "field": "ingreso_sobre_aumento_pct",
+      "format": "pct"
+    },
+    {
+      "label": "Δ deuda resumen",
+      "field": "aumento_deuda_ars",
+      "format": "money"
+    },
+    {
+      "label": "Δ patrimonio neto",
+      "field": "aumento_patrimonio_neto_ars",
+      "format": "money"
+    }
+  ],
+  "periodos": [
+    {
+      "persona_id": "dip-vega-yolanda",
+      "persona": "Yolanda Vega",
+      "periodo": "2024",
+      "estado_fuente": "oficial_consolidado_oa_inconsistente",
+      "bienes_inicio_ars": 12940674.0,
+      "bienes_cierre_ars": 73054692.09,
+      "aumento_bienes_ars": 60114018.09,
+      "aumento_bienes_pct": 464.54,
+      "ingresos_neto_gastos_ars": 50462173.32,
+      "ingreso_sobre_aumento_pct": 83.94,
+      "aumento_deuda_ars": 149210000.0,
+      "deuda_sobre_aumento_bienes_pct": 248.21,
+      "aumento_patrimonio_neto_ars": -89095981.91,
+      "ipc_periodo_pct": 117.76,
+      "cambio_real_detalle_pct": 159.24,
+      "lectura": "El detalle de bienes aumenta $60,11 M y concilia al cierre. El resumen agrega $149,21 M de deuda sin ningún renglón de detalle: el patrimonio neto pasa de $12,94 M a -$76,16 M. Es un crecimiento de activos apalancado en el agregado, no un aumento del patrimonio neto.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "detalle_inicial_2023_ars": 2222259.09,
+    "resumen_inicial_2023_ars": 2222259.09,
+    "detalle_inicio_2024_ars": 12940674.0,
+    "resumen_inicio_2024_ars": 129406740.0,
+    "detalle_cierre_2024_ars": 73054692.09,
+    "resumen_cierre_2024_ars": 73054692.09,
+    "factor_resumen_sobre_detalle_inicio_2024": 10.0,
+    "factor_resumen_sobre_detalle_cierre_2024": 1.0,
+    "deuda_inicio_resumen_2024_ars": 0.0,
+    "deuda_cierre_resumen_2024_ars": 149210000.0,
+    "deuda_cierre_detalle_2024_ars": 0.0,
+    "aumento_bienes_detalle_2024_ars": 60114018.09,
+    "aumento_patrimonio_neto_2024_ars": -89095981.91,
+    "cambio_nominal_aparente_2023_2024_pct": 3187.41,
+    "cambio_real_aparente_2023_2024_pct": 1409.62,
+    "cambio_nominal_detalle_2024_pct": 464.54,
+    "cambio_real_detalle_2024_pct": 159.24
+  },
+  "composition": [
+    {
+      "persona_id": "dip-vega-yolanda",
+      "persona": "Yolanda Vega",
+      "anio": 2024,
+      "categoria": "Vehículos",
+      "importe_ars": "62566258.00",
+      "dj_id": "809852",
+      "metodo": "Suma del detalle de cierre oficial; se separa del total de apertura defectuoso y de la deuda sin desglose.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vega-yolanda",
+      "persona": "Yolanda Vega",
+      "anio": 2024,
+      "categoria": "Depósitos",
+      "importe_ars": "5542215.00",
+      "dj_id": "809852",
+      "metodo": "Suma del detalle de cierre oficial; se separa del total de apertura defectuoso y de la deuda sin desglose.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vega-yolanda",
+      "persona": "Yolanda Vega",
+      "anio": 2024,
+      "categoria": "Efectivo",
+      "importe_ars": "3900000.00",
+      "dj_id": "809852",
+      "metodo": "Suma del detalle de cierre oficial; se separa del total de apertura defectuoso y de la deuda sin desglose.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vega-yolanda",
+      "persona": "Yolanda Vega",
+      "anio": 2024,
+      "categoria": "Bienes del hogar",
+      "importe_ars": "538660.00",
+      "dj_id": "809852",
+      "metodo": "Suma del detalle de cierre oficial; se separa del total de apertura defectuoso y de la deuda sin desglose.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vega-yolanda",
+      "persona": "Yolanda Vega",
+      "anio": 2024,
+      "categoria": "Participación societaria",
+      "importe_ars": "507559.09",
+      "dj_id": "809852",
+      "metodo": "Suma del detalle de cierre oficial; se separa del total de apertura defectuoso y de la deuda sin desglose.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "La DDJJ Inicial rectificativa 2023 informa $2,22 M de bienes y deuda cero; su resumen concilia exactamente con cuatro renglones de detalle.",
+      "La DDJJ Anual 2024 informa $129,41 M de bienes al inicio, pero los siete renglones iniciales suman $12,94 M: el resumen está exactamente a escala 10×. Al cierre, resumen y detalle sí concilian en $73,05 M.",
+      "Dentro de 2024 el detalle aumenta $60,11 M: vehículos +$51,79 M, depósitos +$4,28 M, efectivo +$3,90 M y participación societaria +$0,15 M; bienes del hogar no varían.",
+      "Al cierre aparece una Toyota SW4 2024 por $62,02 M. El ingreso neto agregado informado es $50,46 M.",
+      "La deuda del resumen pasa de cero a $149,21 M, pero el archivo oficial de deudas no contiene renglones para esa declaración."
+    ],
+    "compatible_pero_no_probado": [
+      "El ingreso declarado cubre 83,9% del aumento de bienes; la nueva deuda agregada es 248,2% de ese aumento. En conjunto hay capacidad aritmética suficiente, pero no trazabilidad de cada compra ni prueba de que el crédito haya financiado la SW4.",
+      "Al computar la deuda publicada, el patrimonio neto cae $89,10 M durante 2024 y cierra en -$76,16 M. Por eso el salto de bienes brutos no equivale a enriquecimiento neto.",
+      "El factor diez exacto del total de apertura es compatible con un corrimiento decimal en la exportación, aunque sólo el formulario individual u OA pueden confirmar cuál cifra reproduce la presentación original."
+    ],
+    "no_documentado": [
+      "No se publican acreedor, moneda, finalidad, plazo ni saldo por obligación de los $149,21 M de deuda final.",
+      "El consolidado no aporta contrato, precio de transacción, medio de pago ni vinculación bancaria de la SW4.",
+      "Tampoco explica por sí solo la sustitución de los automotores declarados ni permite homologar sin reservas la DDJJ Inicial 2023 con el cierre Anual 2024.",
+      "Estos archivos no permiten concluir corrupción ni licitud: permiten medir consistencia, compatibilidad contable y vacíos documentales."
+    ],
+    "conclusion": "El +1.409,6% real visible entre 2023 y 2024 no es un indicador comparable: enfrenta una DDJJ Inicial con un cierre Anual y atraviesa una apertura 2024 cuyo resumen está multiplicado por diez. El detalle 2024 sí muestra un aumento fuerte de activos, +464,5% nominal (+159,2% real), concentrado en vehículos; pero simultáneamente aparece una deuda de $149,21 M y el patrimonio neto cae. La explicación financiera es plausible en el agregado, no verificable en su destino porque falta todo el detalle de deuda. Corresponde suspender benchmark y residual, y pedir documentación antes de interpretar el salto como inversión, enriquecimiento o irregularidad.",
+    "evidencia_para_cerrar": [
+      "Formulario individual OA de los dj_id 687371 y 809852, incluidas rectificativas y anexos reservados permitidos.",
+      "Confirmación de OA sobre el factor diez del total de bienes al inicio de 2024.",
+      "Desglose de los $149,21 M de deuda final: acreedor, moneda, finalidad, plazo y saldo.",
+      "Documentación de compra y medio de pago de la SW4, y constancias de venta o baja de los vehículos que dejan de aparecer."
+    ]
+  },
+  "reconciliation_suspended": {
+    "periodo": "2024",
+    "lectura": "Puede calcularse que los activos detallados suben $60,11 M y el patrimonio neto agregado cae $89,10 M, pero no un residual explicativo robusto: la apertura de bienes tiene una escala 10× en el resumen y la deuda final de $149,21 M carece por completo de detalle."
+  },
+  "alerta_fuente": "El total de cierre 2024 concilia con el detalle; el problema está en la comparación. La trayectoria mezcla una DDJJ Inicial 2023 con un cierre Anual 2024, el total de apertura 2024 está a escala 10× y la deuda final no tiene desglose. El caso conserva cada capa y evita presentar bienes brutos como patrimonio neto.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Cámara de Diputados · nómina vigente",
+      "url": "https://www.hcdn.gob.ar/diputados/",
+      "respaldo": "sources/active_roster/hcdn_diputados_vigentes_2026-09-01.html"
+    }
+  ]
+}

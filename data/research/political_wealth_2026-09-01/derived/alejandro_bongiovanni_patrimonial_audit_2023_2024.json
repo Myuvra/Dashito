@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "persona_id": "dip-bongiovanni-alejandro",
+    "persona": "Alejandro Bongiovanni",
+    "corte": "2026-09-03",
+    "pregunta": "¿El fuerte aumento real de 2024 es consistente con el detalle y se parece más a rendimiento de una cartera o a acumulación de flujos declarados?",
+    "alcance": "El control compara dos DDJJ Anuales rectificativas, verifica continuidad cierre–apertura, reconstruye la composición monetaria y contrasta el aumento con ingresos sin presumir una causalidad individual.",
+    "etiqueta": "bienes conciliados · flujos compatibles",
+    "serie_estado": "auditada_bienes_conciliados_y_continuidad_exacta",
+    "benchmark_estado": "comparable_solo_como_contrafactual_no_rendimiento",
+    "benchmark_nota": "La comparación matemática es válida porque los bienes concilian y hay continuidad exacta; no debe leerse como rendimiento de una cartera, ya que durante el período aparecen ingresos y créditos nuevos."
+  },
+  "metricas_destacadas": [
+    {
+      "label": "Aumento nominal",
+      "valor": "+1367.3%",
+      "nota": "bienes detalle 2024"
+    },
+    {
+      "label": "Aumento real",
+      "valor": "+573.8%",
+      "nota": "descontando IPC 117.8%"
+    },
+    {
+      "label": "Ingreso neto / Δ",
+      "valor": "229.5%",
+      "nota": "compatibilidad agregada"
+    },
+    {
+      "label": "No alcanzados / Δ",
+      "valor": "681.3%",
+      "nota": "campo separado del resumen"
+    },
+    {
+      "label": "Activos monetarios",
+      "valor": "100,0%",
+      "nota": "efectivo, depósitos y créditos"
+    }
+  ],
+  "columnas_puente": [
+    {
+      "label": "Δ bienes",
+      "field": "aumento_bienes_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingreso neto",
+      "field": "ingresos_neto_gastos_ars",
+      "format": "money"
+    },
+    {
+      "label": "No alcanzados",
+      "field": "ingresos_no_alcanzados_ars",
+      "format": "money"
+    },
+    {
+      "label": "Δ créditos",
+      "field": "aumento_creditos_ars",
+      "format": "money"
+    },
+    {
+      "label": "Δ efectivo+depósitos",
+      "field": "aumento_efectivo_depositos_ars",
+      "format": "money"
+    }
+  ],
+  "periodos": [
+    {
+      "persona_id": "dip-bongiovanni-alejandro",
+      "persona": "Alejandro Bongiovanni",
+      "periodo": "2024",
+      "estado_fuente": "oficial_consolidado_oa",
+      "bienes_inicio_ars": 1628606.59,
+      "bienes_cierre_ars": 23895873.88,
+      "aumento_bienes_ars": 22267267.29,
+      "aumento_bienes_pct": 1367.26,
+      "ingresos_neto_gastos_ars": 51101540.44,
+      "ingresos_no_alcanzados_ars": 151698950.0,
+      "ingreso_neto_sobre_aumento_pct": 229.49,
+      "aumento_creditos_ars": 9710164.86,
+      "aumento_depositos_ars": 4432102.43,
+      "aumento_efectivo_ars": 8125000.0,
+      "aumento_efectivo_depositos_ars": 12557102.43,
+      "aumento_deuda_ars": 240031.48,
+      "aumento_patrimonio_neto_ars": 22027235.81,
+      "ipc_periodo_pct": 117.76,
+      "cambio_real_pct": 573.79,
+      "lectura": "El aumento de $22,27 M se recompone exactamente con créditos +$9,71 M, efectivo +$8,13 M y depósitos +$4,43 M. El ingreso neto declarado equivale a 229,5% del aumento; además figura otro campo de ingresos no alcanzados por $151,70 M. Hay compatibilidad holgada, no trazabilidad peso por peso.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "bienes_cierre_2023_ars": 1628606.59,
+    "bienes_inicio_2024_ars": 1628606.59,
+    "continuidad_cierre_inicio_brecha_ars": 0.0,
+    "bienes_cierre_2024_ars": 23895873.88,
+    "aumento_bienes_2024_ars": 22267267.29,
+    "cambio_nominal_2024_pct": 1367.26,
+    "cambio_real_2024_pct": 573.79,
+    "ingresos_neto_gastos_2024_ars": 51101540.44,
+    "ingresos_no_alcanzados_2024_ars": 151698950.0,
+    "gastos_personales_2024_ars": 44087959.4,
+    "deuda_cierre_resumen_2024_ars": 240031.48,
+    "deuda_cierre_detalle_2024_ars": 0.0
+  },
+  "composition": [
+    {
+      "persona_id": "dip-bongiovanni-alejandro",
+      "persona": "Alejandro Bongiovanni",
+      "anio": 2024,
+      "categoria": "Créditos",
+      "importe_ars": "9710164.86",
+      "dj_id": "802146",
+      "metodo": "Suma del detalle de cierre oficial; el total de bienes concilia exactamente con los tres componentes.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-bongiovanni-alejandro",
+      "persona": "Alejandro Bongiovanni",
+      "anio": 2024,
+      "categoria": "Depósitos",
+      "importe_ars": "6060709.02",
+      "dj_id": "802146",
+      "metodo": "Suma del detalle de cierre oficial; el total de bienes concilia exactamente con los tres componentes.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-bongiovanni-alejandro",
+      "persona": "Alejandro Bongiovanni",
+      "anio": 2024,
+      "categoria": "Efectivo",
+      "importe_ars": "8125000.00",
+      "dj_id": "802146",
+      "metodo": "Suma del detalle de cierre oficial; el total de bienes concilia exactamente con los tres componentes.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "Las DDJJ Anuales rectificativas 2023 y 2024 usan el mismo identificador nominal; el cierre 2023 y la apertura 2024 coinciden exactamente en $1,63 M y en sus tres depósitos.",
+      "El total de cierre 2024, $23,90 M, concilia centavo por centavo con el detalle: $9,71 M en créditos, $8,13 M en efectivo y $6,06 M en depósitos.",
+      "El puente del detalle es completo: créditos +$9,71 M, efectivo +$8,13 M y depósitos +$4,43 M explican los $22,27 M de aumento.",
+      "El resumen informa $51,10 M de ingreso neto de gastos, $151,70 M de ingresos no alcanzados y $44,09 M de gastos personales.",
+      "La deuda final publicada es $0,24 M, pero no existe ningún renglón correspondiente en el archivo consolidado de deudas."
+    ],
+    "compatible_pero_no_probado": [
+      "El ingreso neto por sí solo equivale a 229,5% del aumento de bienes, por lo que el crecimiento es aritméticamente compatible con los flujos declarados sin recurrir a una rentabilidad extraordinaria.",
+      "Que el patrimonio cierre enteramente en efectivo, depósitos y créditos es compatible con ahorro y saldos de corto plazo; no demuestra el recorrido bancario ni el origen concreto de cada saldo.",
+      "El benchmark de mercado puede conservarse como contrafactual matemático, pero no mide desempeño de cartera: el supuesto de cero aportes se contradice con la existencia de flujos anuales declarados."
+    ],
+    "no_documentado": [
+      "El consolidado no desagrega la naturaleza de los $151,70 M de ingresos no alcanzados ni permite verificar si existen solapamientos conceptuales con otros campos.",
+      "No se aportan extractos para enlazar ingresos, gastos, efectivo, depósitos, billetera virtual y saldo a favor por retenciones.",
+      "Falta el detalle de acreedor y concepto de la deuda final, aunque su monto equivale a sólo 1,1% del aumento de bienes.",
+      "La compatibilidad contable no prueba licitud, rendimiento financiero ni ausencia de omisiones; tampoco sustenta por sí sola una imputación de irregularidad."
+    ],
+    "conclusion": "A diferencia de los casos con escala rota, este +573,8% real sí parte de totales de bienes conciliados y de una continuidad anual exacta. El salto no se parece a una cartera que rindió esa tasa: aparece como acumulación de activos monetarios y créditos en un año con flujos declarados muy superiores al aumento. La explicación es holgadamente compatible en el agregado, pero no trazable sin formulario individual y extractos; además, la deuda final carece de desglose. Se conserva el benchmark sólo como contrafactual y se suspende el residual explicativo.",
+    "evidencia_para_cerrar": [
+      "Formulario individual OA de los dj_id 800114 y 802146, incluidas sus rectificativas.",
+      "Desglose conceptual y documental de los $151,70 M informados como ingresos no alcanzados.",
+      "Extractos de las cuentas, billetera virtual y constancia del saldo a favor por retenciones al cierre.",
+      "Detalle de la deuda final de $240.031,48 y confirmación de que no existen rectificativas posteriores."
+    ]
+  },
+  "reconciliation_suspended": {
+    "periodo": "2024",
+    "lectura": "Los bienes y sus componentes concilian y los flujos declarados superan el aumento, pero el residual automático no puede presentarse como explicación causal: falta el desglose de la deuda y el campo de ingresos no alcanzados no trae composición ni trazabilidad en el consolidado."
+  },
+  "alerta_fuente": "Los bienes superan todos los controles: cierre 2023, apertura 2024, continuidad y cierre 2024 concilian. La observación se limita a una deuda final pequeña sin renglones de detalle y a la falta de desagregación de los ingresos no alcanzados; no invalida el aumento de activos, pero sí una conciliación causal completa.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Cámara de Diputados · nómina vigente",
+      "url": "https://www.hcdn.gob.ar/diputados/",
+      "respaldo": "sources/active_roster/hcdn_diputados_vigentes_2026-09-01.html"
+    }
+  ]
+}

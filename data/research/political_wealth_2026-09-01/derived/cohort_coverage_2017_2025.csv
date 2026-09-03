@@ -1,0 +1,9 @@
+persona_id,persona,primer_anio_con_dato,ultimo_anio_con_dato,anios_oficiales_2017_2024,cobertura_oficial_pct,anios_faltantes_2017_2024,dato_2025,cambio_nominal_primero_ultimo_pct,cambio_real_primero_ultimo_pct,cambio_usd_primero_ultimo_pct,cagr_real_anual_pct,cagr_usd_anual_pct,nota
+maximo,Máximo Kirchner,2017,2025,8,100.0,ninguno,provisional_publicado,9108.75,13.54,18.46,1.60,2.14,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+cristina,Cristina Fernández de Kirchner,2017,2023,7,87.5,2024,no_disponible,4968.81,79.03,17.71,10.19,2.75,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+massa,Sergio Massa,2017,2023,7,87.5,2024,no_disponible,2050.55,-24.04,-50.06,-4.48,-10.93,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+macri,Mauricio Macri,2017,2019,3,37.5,2020|2021|2022|2023|2024,no_disponible,173.62,20.47,-14.23,9.76,-7.39,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+caputo,Luis Caputo,2017,2024,4,50.0,2019|2020|2021|2022,no_disponible,9236.31,51.43,69.76,6.11,7.85,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+javier,Javier Milei,2020,2025,5,62.5,2017|2018|2019,provisional_publicado,6257.17,142.37,266.53,19.37,29.66,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+martin,Martín Menem,2022,2024,3,37.5,2017|2018|2019|2020|2021,no_disponible,415.62,-23.96,-11.54,-12.80,-5.95,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.
+karina,Karina Milei,2023,2025,2,25.0,2017|2018|2019|2020|2021|2022,provisional_publicado,895.21,247.41,451.32,86.39,134.80,La ausencia de dato no se interpola ni se interpreta como patrimonio cero.

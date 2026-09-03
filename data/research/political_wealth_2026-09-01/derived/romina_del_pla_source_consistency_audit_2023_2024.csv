@@ -1,0 +1,6 @@
+persona_id,persona,anio,control,valor_resumen_ars,valor_control_ars,brecha_ars,ratio_resumen_sobre_detalle,resultado,dj_id,fuente_url
+dip-del-pla-romina,Romina Del Plá,2023,total_bienes_inicio_vs_suma_detalle,1865939.79,1865939.79,0.0,1.0,concilia,700411,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-del-pla-romina,Romina Del Plá,2023,total_bienes_cierre_vs_suma_detalle,6434480.92,6434480.92,0.0,1.0,concilia,700411,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-del-pla-romina,Romina Del Plá,2024,total_bienes_inicio_vs_suma_detalle,288100000.0,28810000.0,259290000.0,10.0,no_concilia,820747,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-del-pla-romina,Romina Del Plá,2024,total_bienes_cierre_vs_suma_detalle,599620000.0,59962000.0,539658000.0,10.0,no_concilia,820747,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-del-pla-romina,Romina Del Plá,2024,cierre_detalle_2023_vs_inicio_detalle_2024,6434480.92,28810000.0,22375519.08,4.48,no_arrastra_cierre_previo,820747,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales

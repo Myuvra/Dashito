@@ -1,0 +1,46 @@
+{
+  "period": "2026-06",
+  "source_file": "bcra_cuentas_saldos_estrato.xlsm",
+  "population": "Accounts of resident private-sector individuals in foreign-currency savings and time deposits",
+  "method": "For each instrument, account counts and reported balance values were summed across BCRA strata. Balance concentration uses shares, so the workbook's peso valuation of balances cancels out.",
+  "threshold_interpretation": "Foreign-currency deposit strata are used as a proxy for dollar-account size; the statistical table aggregates foreign currencies and does not identify unique people.",
+  "results": [
+    {
+      "instrument": "Savings accounts",
+      "accounts_total": 43397014,
+      "accounts_ge_10000": 395450,
+      "accounts_ge_10000_pct": 0.9112,
+      "balance_share_ge_10000_pct": 75.5722,
+      "accounts_ge_100000": 21752,
+      "accounts_ge_100000_pct": 0.0501,
+      "balance_share_ge_100000_pct": 27.7719
+    },
+    {
+      "instrument": "Time deposits",
+      "accounts_total": 323304,
+      "accounts_ge_10000": 101597,
+      "accounts_ge_10000_pct": 31.4246,
+      "balance_share_ge_10000_pct": 87.8574,
+      "accounts_ge_100000": 7703,
+      "accounts_ge_100000_pct": 2.3826,
+      "balance_share_ge_100000_pct": 34.9231
+    },
+    {
+      "instrument": "Combined account-instruments",
+      "accounts_total": 43720318,
+      "accounts_ge_10000": 497047,
+      "accounts_ge_10000_pct": 1.1369,
+      "balance_share_ge_10000_pct": 77.8873,
+      "accounts_ge_100000": 29455,
+      "accounts_ge_100000_pct": 0.0674,
+      "balance_share_ge_100000_pct": 29.1195
+    }
+  ],
+  "caveats": [
+    "An account is not a person; the same person can own multiple accounts or both instruments.",
+    "The table only covers deposits inside financial institutions and cannot measure cash outside the system.",
+    "The very large base includes zero and low-balance savings accounts, so the account share is not a household prevalence rate.",
+    "The combined row adds account-instruments and must not be read as a count of unique savers.",
+    "Published time-deposit buckets differ from the reported total by 0.061%, matching the workbook's statistical-discrepancy field. Shares use the reported total as denominator."
+  ]
+}

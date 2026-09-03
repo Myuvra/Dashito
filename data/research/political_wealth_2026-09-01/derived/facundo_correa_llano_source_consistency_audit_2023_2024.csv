@@ -1,0 +1,7 @@
+persona_id,persona,anio,control,valor_resumen_ars,valor_control_ars,brecha_ars,ratio_resumen_sobre_detalle,resultado,dj_id,fuente_url
+dip-correa-llano-facundo,Facundo Correa Llano,2023,total_bienes_cierre_vs_suma_detalle,12959378.41,12959378.41,0.0,1.0,concilia,734662,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-correa-llano-facundo,Facundo Correa Llano,2023,deudas_cierre_resumen_vs_detalle,14191545.26,14191545.26,0.0,1.0,concilia,734662,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-correa-llano-facundo,Facundo Correa Llano,2024,total_bienes_inicio_vs_suma_detalle,42603734.3,42603734.3,0.0,1.0,concilia,789410,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-correa-llano-facundo,Facundo Correa Llano,2024,continuidad_cierre_2023_vs_inicio_2024,12959378.41,42603734.3,29644355.89,3.29,no_concilia_reexpresion_apertura,789410,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-correa-llano-facundo,Facundo Correa Llano,2024,total_bienes_cierre_vs_suma_detalle,166580777.68,166580777.68,0.0,1.0,concilia,789410,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-correa-llano-facundo,Facundo Correa Llano,2024,deudas_cierre_resumen_vs_detalle,5628503.3,0.0,5628503.3,,detalle_ausente,789410,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales

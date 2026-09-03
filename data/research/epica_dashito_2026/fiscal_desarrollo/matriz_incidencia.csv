@@ -1,0 +1,8 @@
+grupo,shock_inicial,recuperacion,saldo,medida,confianza_dato,confianza_causal,advertencia
+asalariados privados registrados,-12.13% al mínimo de 2024-03,9.76% desde el mínimo hasta 2026-06,-3.55%,índice salarial INDEC deflactado por IPC nacional,alta,baja,promedio sectorial; no distribución
+asalariados públicos,-21.86% al mínimo de 2024-01,6.84% desde el mínimo hasta 2026-06,-16.52%,índice salarial INDEC deflactado por IPC nacional,alta,baja,promedio nacional; heterogeneidad Nación/provincias
+asalariados privados no registrados,-27.69% al mínimo de 2024-04,155.63% desde el mínimo hasta 2026-06,84.85%,índice salarial INDEC deflactado por IPC nacional,baja para nivel intertemporal,muy baja,salto atípico; auditar metodología/muestra antes de interpretar
+hogares que usaron ahorros,"+12,5 pp en 1S-2024 vs 1S-2018","2S-2024 baja 1,2 pp vs 1S-2024","+8,7 pp en 2S-2024 vs 2S-2018",incidencia declarada de estrategia,alta,baja,"no mide pesos, stock ni mismo hogar longitudinal"
+Estado nacional / SPN,-4.398% PIB en 2023,0.302% PIB en 2024,+4.700 pp PIB,resultado financiero SPN,alta según auditoría local,no aplica a identidad; baja para bienestar,flujo fiscal no mide patrimonio ni incidencia distributiva
+capital público,"-75,1% real en 2024","-27,0% real adicional en 2025",-81.82% vs 2023,flujo de inversión pública ejecutada,alta,baja para deterioro físico,no hay depreciación/mantenimiento físico comparable
+"empresas, provincias, bancos, fintech, ahorristas, subsidios y transferencias",N/D comparable,N/D comparable,N/D,universos heterogéneos,insuficiente,no identificada,"no sumar rentabilidad, gasto, crédito y personas; requiere microdatos/perímetros homogéneos"

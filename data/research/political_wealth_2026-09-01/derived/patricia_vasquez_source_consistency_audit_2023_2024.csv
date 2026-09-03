@@ -1,0 +1,6 @@
+persona_id,persona,anio,control,valor_resumen_ars,valor_control_ars,brecha_ars,ratio_resumen_sobre_detalle,resultado,dj_id,fuente_url
+dip-vasquez-patricia,Patricia Vásquez,2023,total_bienes_cierre_vs_suma_detalle,33786521.76,33786521.76,0.0,1.0,concilia,732253,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vasquez-patricia,Patricia Vásquez,2024,total_bienes_inicio_vs_suma_detalle,33786521.76,33786521.76,0.0,1.0,concilia,793321,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vasquez-patricia,Patricia Vásquez,2024,continuidad_cierre_2023_vs_inicio_2024,33786521.76,33786521.76,0.0,1.0,concilia,793321,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vasquez-patricia,Patricia Vásquez,2024,total_bienes_cierre_vs_suma_detalle,312586191.47,312586191.47,0.0,1.0,concilia,793321,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vasquez-patricia,Patricia Vásquez,2024,deudas_resumen_vs_detalle,0.0,0.0,0.0,,concilia_cero,793321,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales

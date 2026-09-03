@@ -1,0 +1,11 @@
+﻿fecha,metrica,valor,unidad,naturaleza,formula_o_definicion,fuente,advertencia
+2023-12,depósitos privados en USD,14100,USD millones,dato oficial comunicado,stock,Economía 2026-08-13,punto inicial redondeado
+2023-12,préstamos privados en USD,3700,USD millones,dato oficial comunicado,stock,Economía 2026-08-13,punto inicial redondeado
+2023-12,préstamos / depósitos,26,%,ratio oficial comunicado,préstamos ÷ depósitos,Economía 2026-08-13,ratio redondeado
+2026-08-13,depósitos privados en USD,40300,USD millones,dato oficial comunicado,stock,Economía 2026-08-13,stock redondeado
+2026-08-13,préstamos privados en USD,24600,USD millones,dato oficial comunicado,stock,Economía 2026-08-13,stock redondeado; la exposición oral también usa USD 24.700 M
+2026-08-13,préstamos / depósitos,61,%,ratio oficial comunicado,préstamos ÷ depósitos,Economía 2026-08-13,ratio redondeado
+2026-08-13,referencia prudente histórica,65,% de depósitos,referencia declarada,25% de encaje + aproximadamente 10 p.p. de liquidez adicional,Economía 2026-08-13,no es un máximo legal
+2026-08-13,máximo regulatorio teórico,75,% de depósitos,límite regulatorio,100% − 25% de efectivo mínimo,Economía 2026-08-13,no implica utilización plena
+2026-08-13,margen hasta referencia prudente,1595,USD millones,cálculo derivado,40.300 × 65% − 24.600,cálculo propio sobre Economía 2026-08-13,aproximación con stocks redondeados
+2026-08-13,capacidad adicional hasta máximo regulatorio,5800,USD millones,estimación oficial aproximada,capacidad total aproximada USD 30.500 M − préstamos aproximados USD 24.700 M,Economía 2026-08-13,capacidad contable; no demanda ni aprobación

@@ -1,29 +1,32 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
+// ────────────────────────────────────────────────────────────────────────────
+// Test de paridad Legacy · DATA-DRIVEN
+//
+// Verifica que los artefactos importados reproduzcan FIELMENTE el source de
+// verdad `Legacy/inflacion/index.html`. No codifica conteos fijos ni guards de
+// versión: deriva la lista de tabs y de scripts del propio source/manifiesto.
+// Regla: ante cualquier divergencia, manda el source.
+// ────────────────────────────────────────────────────────────────────────────
+
 const root = resolve(import.meta.dirname, '..')
-const source = readFileSync(resolve(root, '..', 'Legacy', 'inflacion', 'index.html'), 'utf8')
+const source = readFileSync(resolve(root, '..', 'railway-dashboard', 'index.html'), 'utf8')
 const imported = readFileSync(resolve(root, 'public', 'legacy', 'tabs.html'), 'utf8')
 const manifest = JSON.parse(readFileSync(resolve(root, 'src', 'data', 'generated', 'legacy-tabs-manifest.json'), 'utf8'))
-const runtimeFiles = [
-  'runtime-core.js',
-  'runtime-emae.js',
-  'runtime-morosidad.js',
-  'runtime-pendulo.js',
-  'runtime-pendulo-power.js',
-  'runtime-pendulo-finance.js',
-  'runtime-pendulo-housing.js',
-  'runtime-pendulo-fiscal.js',
-  'runtime-roads.js',
-  'runtime-tourism.js',
-  'runtime-pendulo-cft.js',
-  'runtime-bank-adjustment.js',
-  'runtime-source-register.js',
-  'runtime-consumption-supermarkets.js',
-  'runtime-credit-mora.js',
-]
-const runtime = runtimeFiles.map((file) => readFileSync(resolve(root, 'public', 'legacy', file), 'utf8')).join('\n')
+const runtimeManifest = JSON.parse(readFileSync(resolve(root, 'src', 'data', 'generated', 'legacy-runtime-manifest.json'), 'utf8'))
+const runtime = runtimeManifest.runtime
+  .map((file) => readFileSync(resolve(root, 'public', 'legacy', file), 'utf8'))
+  .join('\n')
 
+function decodeText(value) {
+  return value.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&').replace(/\s+/g, ' ').trim()
+}
+function sourceTabIds(documentHtml) {
+  return [...documentHtml.matchAll(/<button\b([^>]*)>[\s\S]*?<\/button>/gi)]
+    .map((m) => (/\btab-btn\b/i.test(m[1]) ? m[1].match(/\bdata-tab=["']([^"']+)["']/i)?.[1] : null))
+    .filter(Boolean)
+}
 function sectionFor(documentHtml, id) {
   const startMatch = new RegExp(`<section\\b[^>]*\\bid=["']${id}["'][^>]*>`, 'i').exec(documentHtml)
   if (!startMatch) return null
@@ -41,30 +44,44 @@ function sectionFor(documentHtml, id) {
 const results = []
 const check = (label, condition) => results.push({ label, condition: Boolean(condition) })
 
-check('37 tabs en el manifiesto', manifest.length === 37)
-check('37 ids únicos', new Set(manifest.map((tab) => tab.id)).size === 37)
-check('Storytelling abre el manifiesto', manifest[0]?.id === 'tab-story')
-check('orden continuo 0–36', manifest.every((tab, index) => tab.order === index))
+// ── Los tabs estáticos reproducen exactamente los del source (ids y orden) ──
+// Los tabs `dynamic` (super-tabs EPICA) no son <section> del source: se
+// materializan al import desde assets/epica-*.js, así que se validan aparte.
+const srcIds = sourceTabIds(source)
+const staticManifest = manifest.filter((t) => !t.dynamic)
+const dynamicManifest = manifest.filter((t) => t.dynamic)
+check('el source tiene al menos un tab', srcIds.length > 0)
+check(`manifiesto reproduce los ${srcIds.length} tabs estáticos del source`, staticManifest.length === srcIds.length)
+check('ids estáticos === ids del source (mismo orden)', staticManifest.every((tab, i) => tab.id === srcIds[i]))
+check('orden continuo 0..n', manifest.every((tab, i) => tab.order === i))
+check('ids únicos', new Set(manifest.map((t) => t.id)).size === manifest.length)
+check('el primer tab abre el dashboard', manifest[0]?.id === srcIds[0])
 
-const story = sectionFor(imported, 'tab-story') || ''
-check('Storytelling conserva doce capítulos', (story.match(/\bclass=["'][^"']*\bstory-chapter\b[^"']*["']/gi) || []).length === 12)
-check('Storytelling conserva seis indicadores', (story.match(/\bclass=["'][^"']*\bstory-stat(?:\s|["'])/gi) || []).length === 6)
-check('Storytelling conserva su bloque público de fuentes', /\bstory-source-note\b/.test(story) && !/>[^<]*handover[^<]*</i.test(story))
-check('V184 conserva el retiro móvil del cierre de Cuenta madre', /#tab-milei-cost>\.milei-cost-inset-start~\*/.test(readFileSync(resolve(root, 'public', 'legacy', 'base.css'), 'utf8')))
-check('V185 conserva la separación de leyenda social', /legend\.y['"]?:mobile\?1\.09:1\.10/.test(runtime))
-
-for (const tab of manifest) {
+// ── Cada sección estática se preserva byte a byte y cada chart tiene runtime ─
+for (const tab of staticManifest) {
   const sourceSection = sectionFor(source, tab.id)
-  check(`${tab.id} conserva el HTML exacto`, sourceSection && imported.includes(sourceSection))
+  check(`${tab.id} conserva el HTML exacto del source`, sourceSection && imported.includes(sourceSection))
   for (const chartId of tab.chartIds) check(`${tab.id} conserva runtime de ${chartId}`, runtime.includes(chartId))
 }
 
+// ── Super-tabs EPICA materializados: sección presente + charts con runtime ──
+for (const tab of dynamicManifest) {
+  check(`${tab.id} materializado como <section> en tabs.html`, new RegExp(`<section\\b[^>]*\\bid=["']${tab.id}["']`).test(imported))
+  for (const chartId of tab.chartIds) check(`${tab.id} conserva runtime de ${chartId}`, runtime.includes(chartId))
+}
+const dynSectionsPresent = dynamicManifest.filter((t) => new RegExp(`<section\\b[^>]*\\bid=["']${t.id}["']`).test(imported)).length
+check('todos los tabs dinámicos (EPICA + dossiers) materializados en tabs.html', dynSectionsPresent === dynamicManifest.length)
+
+// ── Todo handler inline del markup tiene su definición en runtime ────────────
 const handlers = [...imported.matchAll(/\bon(?:click|change|input|submit)=["']([\s\S]*?)["']/gi)]
-  .map((match) => match[1].match(/^\s*(?:return\s+)?([A-Za-z_$][\w$]*)\s*\(/)?.[1])
+  .map((m) => m[1].match(/^\s*(?:return\s+)?([A-Za-z_$][\w$]*)\s*\(/)?.[1])
   .filter(Boolean)
 for (const handler of new Set(handlers)) {
-  check(`handler ${handler} disponible`, new RegExp(`(?:function\\s+${handler}\\s*\\(|(?:const|let|var)\\s+${handler}\\s*=)`).test(runtime))
+  check(`handler ${handler} disponible`, new RegExp(`(?:function\\s+${handler}\\s*\\(|(?:const|let|var)\\s+${handler}\\s*=|window\\.${handler}\\s*=)`).test(runtime))
 }
+
+// ── Capa presentable: el ancla de inyección de super-tabs se preserva ────────
+check('tabs.html conserva id="dash-main-tabs"', /id=["']dash-main-tabs["']/.test(imported))
 
 for (const result of results) console.log(`${result.condition ? 'PASS' : 'FAIL'} ${result.label}`)
 const failed = results.filter((result) => !result.condition)

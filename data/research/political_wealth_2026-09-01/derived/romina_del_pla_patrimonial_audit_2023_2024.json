@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "persona_id": "dip-del-pla-romina",
+    "persona": "Romina Del Plá",
+    "corte": "2026-09-03",
+    "pregunta": "¿El salto 2024 refleja una variación patrimonial comparable o una inconsistencia entre capas de la fuente?",
+    "alcance": "El control compara el resumen y las filas de bienes del mismo consolidado oficial OA, y contrasta el tipo de presentación con la nómina oficial de Diputados.",
+    "etiqueta": "serie suspendida · inconsistencia de fuente",
+    "serie_estado": "suspendida_hasta_conciliar_resumen_y_detalle",
+    "benchmark_estado": "suspendido_por_inconsistencia_fuente"
+  },
+  "periodos": [
+    {
+      "persona_id": "dip-del-pla-romina",
+      "persona": "Romina Del Plá",
+      "periodo": "2023-2024",
+      "estado_fuente": "oficial_consolidado_oa_inconsistente",
+      "bienes_inicio_ars": 6434480.92,
+      "bienes_cierre_ars": 599620000.0,
+      "aumento_bienes_ars": 593185519.08,
+      "aumento_bienes_pct": 9218.86,
+      "diferencia_valuacion_total_ars": 0.0,
+      "valuacion_sobre_aumento_bienes_pct": 0.0,
+      "inmueble_inicio_ars": 4097684.85,
+      "inmueble_cierre_ars": 50462000.0,
+      "aumento_inmueble_ars": 46364315.15,
+      "aumento_inmueble_pct": 1131.48,
+      "ipc_periodo_pct": 117.76,
+      "inmueble_si_solo_ipc_ars": 8923267.17,
+      "aumento_inmueble_explicado_por_ipc_simple_pct": 10.41,
+      "brecha_inmueble_vs_ipc_simple_ars": 41538732.83,
+      "lectura": "El salto de la serie usa el resumen bruto, pero ese resumen es 10 veces la suma de sus propios bienes detallados. No es una tasa interpretable hasta conciliar ambas capas.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "detalle_inicio_2024_ars": 28810000.0,
+    "resumen_inicio_2024_ars": 288100000.0,
+    "detalle_cierre_2024_ars": 59962000.0,
+    "resumen_cierre_2024_ars": 599620000.0,
+    "factor_resumen_sobre_detalle_2024": 10.0,
+    "brecha_cierre_2023_inicio_2024_detalle_ars": 22375519.08,
+    "tipo_presentacion_oa": "Anual",
+    "tipo_presentacion_hcdn": "Baja 2024"
+  },
+  "composition": [
+    {
+      "persona_id": "dip-del-pla-romina",
+      "persona": "Romina Del Plá",
+      "anio": 2024,
+      "categoria": "Inmuebles",
+      "importe_ars": "50462000.00",
+      "dj_id": "820747",
+      "metodo": "Suma de bienes de cierre del detalle oficial; no reemplaza el total resumen inconsistente.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-del-pla-romina",
+      "persona": "Romina Del Plá",
+      "anio": 2024,
+      "categoria": "Vehículos",
+      "importe_ars": "9500000.00",
+      "dj_id": "820747",
+      "metodo": "Suma de bienes de cierre del detalle oficial; no reemplaza el total resumen inconsistente.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "En 2023, los totales de inicio y cierre del resumen concilian con la suma del detalle.",
+      "En 2024, el resumen informa $288,10 M al inicio y $599,62 M al cierre; el detalle suma $28,81 M y $59,962 M: una diferencia exacta de factor 10 en ambos extremos.",
+      "El detalle 2024 contiene el mismo departamento de Morón y el mismo automóvil adquiridos en 2016; Diputados registra una presentación Baja 2024, mientras el consolidado OA etiqueta la fila como Anual."
+    ],
+    "compatible_pero_no_probado": [
+      "Un corrimiento decimal en la exportación del resumen o una capa de agregación defectuosa podría producir el factor 10 sin que exista un salto económico de esa magnitud.",
+      "La diferencia entre cierre 2023 e inicio 2024 puede contener actualización de valuaciones, pero la fuente no la identifica como tal y tampoco arrastra el cierre previo."
+    ],
+    "no_documentado": [
+      "No está respaldado el formulario individual asociado al dj_id 820747 para decidir cuál capa reproduce lo efectivamente presentado.",
+      "No hay una aclaración pública de OA que explique el factor 10 ni la diferencia de tipo de presentación entre OA y Diputados."
+    ],
+    "conclusion": "El aumento bruto de 2024 no debe presentarse como enriquecimiento ni como rendimiento: nace de una capa resumen que no concilia con el detalle del mismo archivo. Tampoco corresponde atribuir el error a la persona. La lectura responsable es suspender la tasa y conservar ambos valores hasta obtener el formulario individual o una corrección oficial.",
+    "evidencia_para_cerrar": [
+      "Formulario público individual OA correspondiente al dj_id 820747 y sus eventuales rectificativas.",
+      "Confirmación de OA sobre cuál total —resumen o suma del detalle— representa la presentación original.",
+      "Conciliación entre la etiqueta Anual del consolidado y la presentación Baja 2024 publicada por Diputados.",
+      "Datos completos 2025 para verificar qué importe reaparece como saldo inicial."
+    ]
+  },
+  "reconciliation_suspended": {
+    "periodo": "2024",
+    "lectura": "Resumen y detalle difieren por factor 10; cualquier residual hereda esa inconsistencia y queda suspendido."
+  },
+  "alerta_fuente": "En 2024, los totales de inicio y cierre del resumen son exactamente 10 veces las sumas del detalle. Además, el tipo de presentación difiere entre el consolidado OA (Anual) y Diputados (Baja). Se preserva el dato crudo, pero se suspenden la tasa y el benchmark.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Diputados · presentaciones ejercicio 2024",
+      "url": "https://www.hcdn.gob.ar/institucional/transparencia/declaraciones_juradas/listado/4407dd25-ea1a-11ef-b33c-00505689ffd4",
+      "respaldo": "sources/active_roster/hcdn_ddjj_ejercicio_2024_2026-09-03.html"
+    }
+  ]
+}

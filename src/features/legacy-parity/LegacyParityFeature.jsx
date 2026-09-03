@@ -1,27 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import LegacyMarkup from './LegacyMarkup'
 import LegacyChartEnhancements from './LegacyChartEnhancements'
+import runtimeManifest from '../../data/generated/legacy-runtime-manifest.json'
 
-const legacyRuntimeVersion = '2026-08-25-v194-migracion-index8'
+const legacyRuntimeVersion = '2026-08-31-v195-migracion9'
 
-const runtimeScripts = [
-  '/legacy/plotly.js',
-  '/legacy/runtime-core.js',
-  '/legacy/runtime-emae.js',
-  '/legacy/runtime-morosidad.js',
-  '/legacy/runtime-pendulo.js',
-  '/legacy/runtime-pendulo-power.js',
-  '/legacy/runtime-pendulo-finance.js',
-  '/legacy/runtime-pendulo-housing.js',
-  '/legacy/runtime-pendulo-fiscal.js',
-  '/legacy/runtime-roads.js',
-  '/legacy/runtime-tourism.js',
-  '/legacy/runtime-pendulo-cft.js',
-  '/legacy/runtime-bank-adjustment.js',
-  '/legacy/runtime-source-register.js',
-  '/legacy/runtime-consumption-supermarkets.js',
-  '/legacy/runtime-credit-mora.js',
-].map((source) => `${source}?v=${legacyRuntimeVersion}`)
+// La lista de runtime-scripts se deriva del manifiesto que emite
+// import-legacy-parity.mjs (data-driven): así no hay que mantener nombres ni
+// conteos a mano cuando el source Legacy suma o reordena scripts. Los `assets`
+// externos (super-tabs EPICA) se activarán en una etapa aparte.
+const runtimeScripts = runtimeManifest.runtime
+  .map((file) => `/legacy/${file}?v=${legacyRuntimeVersion}`)
 
 let runtimePromise
 
@@ -60,19 +49,37 @@ const legacyTabRenderers = {
   'tab-mora-causal': ['renderMoraCausalAudit'],
   'tab-mora-anatomy': ['renderMoraAnatomy'],
   'tab-youth-credit': ['renderYouthCredit'],
-  'tab-consumption': ['renderSupermarketPulse'],
-  // Charts existentes con el mismo patrón (render enganchado a un click en el botón).
-  'tab-rates': ['renderBankAdjustment2024'],
+  // Consumo: pulse + historia core + historia de supermercados v2 (8 charts nuevos).
+  'tab-consumption': ['renderSupermarketPulse', 'renderConsumptionHistory', 'renderSupermarketHistory'],
+  // Rates: ajuste bancario 2024 + sección nueva "referencia de crédito"
+  // (renderCreditReference orquesta creditReference/creditGap/creditBurden + KPIs).
+  'tab-rates': ['renderBankAdjustment2024', 'renderCreditReference'],
   'tab-fiscal': ['renderTaxMap'],
+  // Super-tabs EPICA (materializados; render enganchado al click en el legacy).
+  'tab-epica-households': ['renderEpicaHouseholds'],
+  'tab-epica-dollars': ['renderEpicaDollars'],
+  'tab-epica-caputo-colchon': ['renderEpicaCaputo'],
+  'tab-epica-development': ['renderEpicaDevelopment'],
+  'tab-epica-narratives': ['renderEpicaNarratives'],
+  // Dossiers Frente B
+  'tab-mora-ley': ['renderMoraLey'],
+  'tab-reclamo-credito': ['renderReclamoCredito'],
+  'tab-political-wealth': ['renderPoliticalWealth'],
 }
 function renderLegacyTabExtras(tabId) {
   const fns = legacyTabRenderers[tabId]
   if (!fns) return
   // setTimeout, no requestAnimationFrame: rAF se pausa cuando la pestaña no compone
   // frames (segundo plano), y estos renders deben correr igual al activar el tab.
-  window.setTimeout(() => fns.forEach((name) => {
+  // Doble disparo: los tabs materializados (EPICA/dossiers) no auto-renderizan al
+  // cargar, así que en un deep-link en frío el primer intento puede perder la
+  // carrera con el layout (Plotly: "container is not an object"). El segundo
+  // reintento es idempotente (Plotly.react) y asegura el render.
+  const run = () => fns.forEach((name) => {
     try { window[name]?.() } catch { /* el render valida sus propios contenedores */ }
-  }), 90)
+  })
+  window.setTimeout(run, 90)
+  window.setTimeout(run, 420)
 }
 
 export default function LegacyParityFeature({ activeId, onNavigate, theme }) {

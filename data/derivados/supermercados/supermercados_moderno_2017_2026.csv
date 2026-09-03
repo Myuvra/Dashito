@@ -1,0 +1,115 @@
+﻿date,year,month,real_index,nominal_index,status
+2017-01,2017,1,99.9,90.9507,derivado desde ventas oficiales; base promedio 2017=100
+2017-02,2017,2,91.7,84.8631,derivado desde ventas oficiales; base promedio 2017=100
+2017-03,2017,3,95.8,90.6932,derivado desde ventas oficiales; base promedio 2017=100
+2017-04,2017,4,98.4,95.1145,derivado desde ventas oficiales; base promedio 2017=100
+2017-05,2017,5,93.2,91.3102,derivado desde ventas oficiales; base promedio 2017=100
+2017-06,2017,6,95.9,95.1093,derivado desde ventas oficiales; base promedio 2017=100
+2017-07,2017,7,101.2,101.8006,derivado desde ventas oficiales; base promedio 2017=100
+2017-08,2017,8,99.6,101.7112,derivado desde ventas oficiales; base promedio 2017=100
+2017-09,2017,9,96.0,99.6433,derivado desde ventas oficiales; base promedio 2017=100
+2017-10,2017,10,101.0,105.9262,derivado desde ventas oficiales; base promedio 2017=100
+2017-11,2017,11,103.4,109.7883,derivado desde ventas oficiales; base promedio 2017=100
+2017-12,2017,12,124.0,133.0894,derivado desde ventas oficiales; base promedio 2017=100
+2018-01,2018,1,97.2,106.0346,derivado desde ventas oficiales; base promedio 2017=100
+2018-02,2018,2,93.3,103.6109,derivado desde ventas oficiales; base promedio 2017=100
+2018-03,2018,3,104.9,119.2635,derivado desde ventas oficiales; base promedio 2017=100
+2018-04,2018,4,96.1,111.3707,derivado desde ventas oficiales; base promedio 2017=100
+2018-05,2018,5,96.1,114.6988,derivado desde ventas oficiales; base promedio 2017=100
+2018-06,2018,6,99.9,125.1624,derivado desde ventas oficiales; base promedio 2017=100
+2018-07,2018,7,98.3,128.2319,derivado desde ventas oficiales; base promedio 2017=100
+2018-08,2018,8,95.5,128.9289,derivado desde ventas oficiales; base promedio 2017=100
+2018-09,2018,9,88.4,130.3445,derivado desde ventas oficiales; base promedio 2017=100
+2018-10,2018,10,90.9,141.7539,derivado desde ventas oficiales; base promedio 2017=100
+2018-11,2018,11,90.5,146.4195,derivado desde ventas oficiales; base promedio 2017=100
+2018-12,2018,12,113.2,186.7535,derivado desde ventas oficiales; base promedio 2017=100
+2019-01,2019,1,86.9,148.3,observado INDEC
+2019-02,2019,2,82.0,145.6,observado INDEC
+2019-03,2019,3,89.7,166.9,observado INDEC
+2019-04,2019,4,84.0,162.2,observado INDEC
+2019-05,2019,5,83.2,165.9,observado INDEC
+2019-06,2019,6,86.7,177.8,observado INDEC
+2019-07,2019,7,85.8,179.8,observado INDEC
+2019-08,2019,8,88.6,195.0,observado INDEC
+2019-09,2019,9,80.6,189.2,observado INDEC
+2019-10,2019,10,89.7,216.7,observado INDEC
+2019-11,2019,11,88.3,222.0,observado INDEC
+2019-12,2019,12,106.1,272.9,observado INDEC
+2020-01,2020,1,85.4,229.0,observado INDEC
+2020-02,2020,2,86.2,236.7,observado INDEC
+2020-03,2020,3,98.2,280.0,observado INDEC
+2020-04,2020,4,84.2,244.9,observado INDEC
+2020-05,2020,5,87.3,256.6,observado INDEC
+2020-06,2020,6,85.3,255.4,observado INDEC
+2020-07,2020,7,86.5,264.9,observado INDEC
+2020-08,2020,8,83.5,262.5,observado INDEC
+2020-09,2020,9,78.7,251.6,observado INDEC
+2020-10,2020,10,87.7,291.3,observado INDEC
+2020-11,2020,11,87.3,297.4,observado INDEC
+2020-12,2020,12,108.8,378.1,observado INDEC
+2021-01,2021,1,88.8,320.0,observado INDEC
+2021-02,2021,2,81.2,303.5,observado INDEC
+2021-03,2021,3,89.6,350.1,observado INDEC
+2021-04,2021,4,85.1,348.9,observado INDEC
+2021-05,2021,5,85.0,361.1,observado INDEC
+2021-06,2021,6,86.1,379.6,observado INDEC
+2021-07,2021,7,90.1,410.2,observado INDEC
+2021-08,2021,8,87.2,407.6,observado INDEC
+2021-09,2021,9,83.5,401.5,observado INDEC
+2021-10,2021,10,92.3,458.7,observado INDEC
+2021-11,2021,11,91.0,462.6,observado INDEC
+2021-12,2021,12,114.7,599.4,observado INDEC
+2022-01,2022,1,92.6,504.5,observado INDEC
+2022-02,2022,2,86.6,496.9,observado INDEC
+2022-03,2022,3,89.5,551.7,observado INDEC
+2022-04,2022,4,87.8,578.5,observado INDEC
+2022-05,2022,5,84.5,586.5,observado INDEC
+2022-06,2022,6,87.8,640.3,observado INDEC
+2022-07,2022,7,94.9,745.1,observado INDEC
+2022-08,2022,8,87.0,736.2,observado INDEC
+2022-09,2022,9,84.1,757.9,observado INDEC
+2022-10,2022,10,90.9,867.3,observado INDEC
+2022-11,2022,11,93.2,929.7,observado INDEC
+2022-12,2022,12,112.6,1174.2,observado INDEC
+2023-01,2023,1,93.3,1033.5,observado INDEC
+2023-02,2023,2,87.4,1039.5,observado INDEC
+2023-03,2023,3,92.9,1185.6,observado INDEC
+2023-04,2023,4,90.8,1259.6,observado INDEC
+2023-05,2023,5,84.7,1269.6,observado INDEC
+2023-06,2023,6,87.0,1390.1,observado INDEC
+2023-07,2023,7,92.5,1575.8,observado INDEC
+2023-08,2023,8,91.5,1754.5,observado INDEC
+2023-09,2023,9,87.3,1893.9,observado INDEC
+2023-10,2023,10,97.4,2312.7,observado INDEC
+2023-11,2023,11,91.7,2495.2,observado INDEC
+2023-12,2023,12,105.2,3744.8,observado INDEC
+2024-01,2024,1,80.4,3596.8,observado INDEC
+2024-02,2024,2,77.5,3894.8,observado INDEC
+2024-03,2024,3,84.3,4645.4,observado INDEC
+2024-04,2024,4,74.9,4358.8,observado INDEC
+2024-05,2024,5,76.4,4612.6,observado INDEC
+2024-06,2024,6,80.6,5004.5,observado INDEC
+2024-07,2024,7,81.2,5185.6,observado INDEC
+2024-08,2024,8,82.3,5447.0,observado INDEC
+2024-09,2024,9,76.1,5174.9,observado INDEC
+2024-10,2024,10,80.0,5544.7,observado INDEC
+2024-11,2024,11,84.7,5957.0,observado INDEC
+2024-12,2024,12,101.8,7274.2,observado INDEC
+2025-01,2025,1,83.8,6105.1,observado INDEC
+2025-02,2025,2,78.5,5851.5,observado INDEC
+2025-03,2025,3,86.8,6677.6,observado INDEC
+2025-04,2025,4,81.5,6449.0,observado INDEC
+2025-05,2025,5,81.1,6488.3,observado INDEC
+2025-06,2025,6,81.2,6560.4,observado INDEC
+2025-07,2025,7,82.0,6722.1,observado INDEC
+2025-08,2025,8,82.6,6878.4,observado INDEC
+2025-09,2025,9,75.5,6406.5,observado INDEC
+2025-10,2025,10,82.2,7087.5,observado INDEC
+2025-11,2025,11,82.3,7219.3,observado INDEC
+2025-12,2025,12,102.3,9128.4,observado INDEC
+2026-01,2026,1,82.8,7636.9,observado INDEC
+2026-02,2026,2,76.1,7228.5,observado INDEC
+2026-03,2026,3,82.4,8044.1,observado INDEC
+2026-04,2026,4,78.5,7835.0,observado INDEC
+2026-05,2026,5,80.5323,8170.8382,derivado desde variación ia oficial y/o monto corriente oficial
+2026-06,2026,6,78.6828,8112.6803,derivado desde variación ia oficial y/o monto corriente oficial

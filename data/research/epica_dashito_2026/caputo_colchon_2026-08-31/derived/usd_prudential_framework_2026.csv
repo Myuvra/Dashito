@@ -1,0 +1,5 @@
+﻿regla,valor,unidad,funcion,fuente
+cupo agregado para nuevos deudores antes no admitidos,15,% de depósitos en USD por entidad,limitar concentración del nuevo universo,BCRA 2026-08-13
+exigencia de capital relativa,125,% de una financiación comparable,absorber riesgo adicional,BCRA 2026-08-13
+factor para límites de exposición,1.25,veces,computar mayor exposición regulatoria,BCRA 2026-08-13
+evaluación bajo escenarios cambiarios,obligatoria,condición cualitativa,evaluar repago ante movimientos del tipo de cambio,BCRA 2026-08-13

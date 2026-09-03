@@ -17,6 +17,7 @@ const attributeMap = {
   frameborder: 'frameBorder',
   crossorigin: 'crossOrigin',
   autofocus: 'autoFocus',
+  autocomplete: 'autoComplete',
   contenteditable: 'contentEditable',
   spellcheck: 'spellCheck',
   srcset: 'srcSet',

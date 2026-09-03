@@ -1,0 +1,52 @@
+{
+  "runtime": [
+    "runtime-00.js",
+    "runtime-01.js",
+    "runtime-02.js",
+    "runtime-03.js",
+    "runtime-04.js",
+    "runtime-05.js",
+    "runtime-06.js",
+    "runtime-07.js",
+    "runtime-08.js",
+    "runtime-09.js",
+    "runtime-10.js",
+    "runtime-11.js",
+    "runtime-12.js",
+    "runtime-13.js",
+    "runtime-14.js",
+    "runtime-15.js",
+    "runtime-epica-00.js",
+    "runtime-epica-01.js",
+    "runtime-epica-02.js",
+    "runtime-epica-03.js",
+    "runtime-epica-04.js",
+    "runtime-epica-05.js"
+  ],
+  "inlineRuntime": [
+    "runtime-00.js",
+    "runtime-01.js",
+    "runtime-02.js",
+    "runtime-03.js",
+    "runtime-04.js",
+    "runtime-05.js",
+    "runtime-06.js",
+    "runtime-07.js",
+    "runtime-08.js",
+    "runtime-09.js",
+    "runtime-10.js",
+    "runtime-11.js",
+    "runtime-12.js",
+    "runtime-13.js",
+    "runtime-14.js",
+    "runtime-15.js"
+  ],
+  "epicaRuntime": [
+    "runtime-epica-00.js",
+    "runtime-epica-01.js",
+    "runtime-epica-02.js",
+    "runtime-epica-03.js",
+    "runtime-epica-04.js",
+    "runtime-epica-05.js"
+  ]
+}

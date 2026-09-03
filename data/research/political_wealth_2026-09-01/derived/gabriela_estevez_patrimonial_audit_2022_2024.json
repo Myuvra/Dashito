@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "persona_id": "dip-estevez-gabriela-beatriz",
+    "persona": "Gabriela Estévez",
+    "corte": "2026-09-03",
+    "pregunta": "¿El salto 2023 refleja una variación patrimonial comparable o un cambio de escala entre capas de la fuente?",
+    "alcance": "El control compara resumen, bienes y deudas del mismo consolidado oficial OA para 2022–2024; la identidad y la actividad legislativa se cotejan con fuentes oficiales ya respaldadas.",
+    "etiqueta": "serie suspendida · quiebre de escala",
+    "serie_estado": "suspendida_desde_2023_hasta_conciliar_resumen_y_detalle",
+    "benchmark_estado": "suspendido_por_quiebre_escala_fuente"
+  },
+  "periodos": [
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "periodo": "2022-2023",
+      "estado_fuente": "oficial_consolidado_oa_inconsistente",
+      "bienes_inicio_ars": 4207867.65,
+      "bienes_cierre_ars": 31426230.0,
+      "aumento_bienes_ars": 27218362.35,
+      "aumento_bienes_pct": 646.84,
+      "bienes_cierre_resumen_bruto_ars": 314262300.0,
+      "aumento_bienes_resumen_bruto_ars": 310054432.35,
+      "aumento_bienes_resumen_bruto_pct": 7368.45,
+      "diferencia_valuacion_total_ars": 4509724.38,
+      "valuacion_sobre_aumento_bienes_pct": 16.57,
+      "inmueble_inicio_ars": 1475431.65,
+      "inmueble_cierre_ars": 17397394.0,
+      "aumento_inmueble_ars": 15921962.35,
+      "aumento_inmueble_pct": 1079.14,
+      "ipc_periodo_pct": 211.41,
+      "inmueble_si_solo_ipc_ars": 4594606.94,
+      "aumento_inmueble_explicado_por_ipc_simple_pct": 19.59,
+      "brecha_inmueble_vs_ipc_simple_ars": 12802787.06,
+      "lectura": "El +7.368,4% bruto nace de mezclar el cierre 2022 conciliado con un cierre 2023 diez veces mayor que sus propios bienes detallados. Con el detalle, el cambio es +646,8% nominal y +139,8% real: sigue siendo alto, pero es otra pregunta y no un rendimiento atribuible.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "detalle_cierre_2022_ars": 4207867.65,
+    "resumen_cierre_2022_ars": 4207867.65,
+    "detalle_cierre_2023_ars": 31426230.0,
+    "resumen_cierre_2023_ars": 314262300.0,
+    "factor_resumen_sobre_detalle_cierre_2023": 10.0,
+    "detalle_inicio_2024_ars": 31426230.0,
+    "resumen_inicio_2024_ars": 314262300.0,
+    "detalle_cierre_2024_ars": 39842310.0,
+    "resumen_cierre_2024_ars": 398423100.0,
+    "factor_resumen_sobre_detalle_2024": 10.0,
+    "cambio_nominal_crudo_2022_2023_pct": 7368.45,
+    "cambio_nominal_detalle_2022_2023_pct": 646.84,
+    "cambio_real_detalle_2022_2023_pct": 139.83,
+    "deuda_detalle_2024": "ausente_en_consolidado"
+  },
+  "composition": [
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2023,
+      "categoria": "Inmuebles",
+      "importe_ars": "17397394.00",
+      "dj_id": "718182",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2023,
+      "categoria": "Vehículos",
+      "importe_ars": "9319250.00",
+      "dj_id": "718182",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2023,
+      "categoria": "Depósitos",
+      "importe_ars": "2191910.00",
+      "dj_id": "718182",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2023,
+      "categoria": "Bienes del hogar",
+      "importe_ars": "2517676.00",
+      "dj_id": "718182",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2024,
+      "categoria": "Inmuebles",
+      "importe_ars": "17019646.00",
+      "dj_id": "805974",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2024,
+      "categoria": "Vehículos",
+      "importe_ars": "15870000.00",
+      "dj_id": "805974",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2024,
+      "categoria": "Depósitos",
+      "importe_ars": "4434988.00",
+      "dj_id": "805974",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-estevez-gabriela-beatriz",
+      "persona": "Gabriela Estévez",
+      "anio": 2024,
+      "categoria": "Bienes del hogar",
+      "importe_ars": "2517676.00",
+      "dj_id": "805974",
+      "metodo": "Suma de bienes de cierre del detalle oficial; el total resumen queda separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "El cierre 2022 del resumen ($4,21 M) coincide con la suma de sus bienes detallados; el cierre 2023 del resumen ($314,26 M) es exactamente diez veces el detalle ($31,43 M).",
+      "El detalle conserva continuidad exacta: cierre 2022 = inicio 2023 y cierre 2023 = inicio 2024. La capa resumen cambia de escala en el cierre 2023 y mantiene ese factor diez durante 2024.",
+      "En 2022 y 2023, los totales de deuda del resumen son diez veces las filas de deuda; para 2024 el consolidado informa totales pero no publica filas de deuda asociadas a esta declaración.",
+      "Dentro del detalle 2023, el inmueble explica $15,92 M del aumento; el Jeep persistente suma $5,53 M, los bienes del hogar $2,19 M, los depósitos $1,48 M y aparece un Volkswagen por $2,09 M."
+    ],
+    "compatible_pero_no_probado": [
+      "El patrón exacto y persistente de factor diez es compatible con un corrimiento decimal o un error de exportación en la capa resumen, no con una multiplicación económica de esos mismos bienes.",
+      "Los mayores importes de inmueble, vehículo y bienes del hogar pueden reflejar actualización de valuaciones fiscales o criterios de exposición, pero el consolidado no identifica cuánto aporta cada mecanismo."
+    ],
+    "no_documentado": [
+      "El campo agregado de diferencia de valuación 2023 ($4,51 M) sólo cubre 16,6% del aumento de bienes detallados y no concilia el puente por sí solo.",
+      "Sin el formulario individual y sus eventuales rectificativas no puede determinarse qué escala reproduce lo efectivamente presentado ni completar de forma robusta el patrimonio neto 2024.",
+      "La anomalía de publicación no demuestra enriquecimiento ilícito, corrupción ni una conducta atribuible a la persona declarada."
+    ],
+    "conclusion": "La tasa bruta de +7.368,4% debe retirarse de la comparación: combina dos escalas incompatibles del mismo dataset. El detalle reduce el cambio a +646,8% nominal (+139,8% real), todavía elevado y concentrado en aumentos de importes de bienes persistentes, pero la fuente no permite separar con precisión revaluación, adquisición, ahorro u otras causas. Corresponde mostrar la composición y mantener suspendidos el benchmark y la conciliación, sin trasladar el error de OA a la persona.",
+    "evidencia_para_cerrar": [
+      "Formulario individual OA de los dj_id 718182 y 805974, incluidas rectificativas si existieran.",
+      "Confirmación de OA sobre la escala correcta de bienes y deudas en los resúmenes 2023–2024.",
+      "Detalle de deudas 2024 o una aclaración oficial sobre su ausencia.",
+      "Conciliación explícita entre diferencia de valuación, ingresos, gastos, altas y bajas de bienes."
+    ]
+  },
+  "reconciliation_suspended": {
+    "periodo": "2023–2024",
+    "lectura": "La escala de bienes cambia dentro de 2023, las deudas del resumen ya venían multiplicadas por diez y el detalle de deuda 2024 está ausente; cualquier residual automático mezclaría capas incompatibles."
+  },
+  "alerta_fuente": "El salto bruto 2023 está inflado por un quiebre exacto de escala: el resumen de cierre es 10× la suma de sus bienes detallados. En 2024 el factor continúa; las deudas también difieren por 10× en 2022–2023 y carecen de detalle en 2024. Se preservan los valores crudos, pero se suspenden tasa, benchmark y residual.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Diputados · presentaciones ejercicio 2025",
+      "url": "https://www.hcdn.gob.ar/institucional/transparencia/declaraciones_juradas/listado/c4f0658a-4249-11f0-87b7-00505689ffd4",
+      "respaldo": "sources/active_roster/hcdn_ddjj_ejercicio_2025_2026-09-01.html"
+    }
+  ]
+}

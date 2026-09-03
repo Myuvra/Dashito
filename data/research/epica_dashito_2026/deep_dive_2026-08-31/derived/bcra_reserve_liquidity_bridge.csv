@@ -1,0 +1,5 @@
+﻿horizonte,reservas_oficiales_usd_m,flujo_predeterminado_adicional_usd_m,flujo_predeterminado_acumulado_usd_m,residual_bruto_menos_flujos_usd_m,interpretacion
+reservas_oficiales_2026-07-31,47599.19,0,0,47599.19,activo_oficial_bruto_no_reservas_netas
+hasta_1_mes,47599.19,-37127.82,-37127.82,10471.37,estres_estatico_sin_nuevos_flujos_ni_rollover
+hasta_3_meses,47599.19,-243.49,-37371.31,10227.88,estres_estatico_sin_nuevos_flujos_ni_rollover
+hasta_1_anio,47599.19,-4408.13,-41779.44,5819.75,estres_estatico_sin_nuevos_flujos_ni_rollover

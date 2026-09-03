@@ -5893,3 +5893,159 @@ html[data-dashito-theme] .co-super-story>div {
   color: var(--da-muted) !important;
 }
 html[data-dashito-theme] .co-super-story>div b { color: var(--da-text) !important; }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Migración migracion4 (source 31-ago) · elementos nuevos:
+   tab-rates "referencia de crédito" (.credit-ref-*) y tab-consumption
+   historia de supermercados v2 (.super-*). Tokens --da-* → cubre los 3 skins.
+   ───────────────────────────────────────────────────────────────────────── */
+/* superficies (fondos claros -> surface) */
+html[data-dashito-theme] :where(
+  .credit-ref-panel, .credit-ref-sim-controls, .credit-ref-sim-result, .super-wide-panel
+) {
+  background: var(--da-surface) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+/* controles / chrome (fondos casi-blancos -> surface-2) */
+html[data-dashito-theme] :where(.credit-ref-controls, .credit-ref-reset, .credit-ref-btn) {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+  box-shadow: none !important;
+}
+/* zona "sin dato" (dashed) */
+html[data-dashito-theme] .super-nd {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+/* títulos / valores -> text */
+html[data-dashito-theme] :where(
+  .credit-ref-panel-head h3, .credit-ref-sim-controls h3, .credit-ref-sim-result h3,
+  .super-wide-panel h4, .super-nd b
+) {
+  color: var(--da-text) !important;
+}
+/* texto secundario -> muted */
+html[data-dashito-theme] :where(
+  .credit-ref-panel-head p, .super-wide-panel>p, .super-nd span
+) {
+  color: var(--da-muted) !important;
+}
+/* estado activo (segmento/botón) -> primary */
+html[data-dashito-theme] :where(.credit-ref-btn.active, .credit-ref-controls .active) {
+  background: var(--da-primary) !important;
+  border-color: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Super-tabs EPICA (materializados desde assets/epica-*.js). Los tokens
+   propios --epica-* vienen hardcodeados a paleta clara por variante; los
+   remapeamos a --da-* y cubrimos las superficies/estados/texto de .epica-*
+   para los 3 skins. Se unifica el acento por-tema al --da-primary del skin
+   (consistencia + contraste sobre la variedad cromática original).
+   ───────────────────────────────────────────────────────────────────────── */
+html[data-dashito-theme] .epica-shell {
+  --epica-accent: var(--da-primary);
+  --epica-accent-soft: color-mix(in srgb, var(--da-primary) 12%, var(--da-surface));
+  --epica-ink: var(--da-text);
+  --epica-muted: var(--da-muted);
+}
+/* superficies (fondos claros -> surface) */
+html[data-dashito-theme] :where(
+  .epica-hero, .epica-panel, .epica-toolbar, .epica-rate-row, .epica-verdict,
+  .epica-narrative-origin, .epica-status-card, .epica-kpi, .epica-amount-control,
+  .epica-formula, .epica-flow > div, .epica-strata-read > div, .epica-narrative-card
+) {
+  background: var(--da-surface) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+/* chrome / chips / toggles / answers (fondos casi-blancos -> surface-2) */
+html[data-dashito-theme] :where(.epica-chip, .epica-toggle, .epica-eyebrow, .epica-answer) {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+/* estados semánticos */
+html[data-dashito-theme] :where(.epica-answer.good, .epica-flow .result) {
+  border-color: color-mix(in srgb, var(--da-mint) 45%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-mint) 12%, var(--da-surface)) !important;
+}
+html[data-dashito-theme] :where(.epica-answer.caution, .epica-answer.open) {
+  border-color: color-mix(in srgb, var(--da-amber) 45%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-amber) 12%, var(--da-surface)) !important;
+}
+/* toggle/segmento activo -> primary */
+html[data-dashito-theme] :where(.epica-toggle.active, .epica-toggle[aria-pressed="true"]) {
+  background: var(--da-primary) !important;
+  border-color: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+}
+html[data-dashito-theme] .epica-eyebrow { color: var(--da-primary) !important; }
+/* títulos / valores -> text */
+html[data-dashito-theme] :where(
+  .epica-hero h2, .epica-panel h3, .epica-panel h4, .epica-kpi b, .epica-verdict b,
+  .epica-answer b, .epica-rate-row b, .epica-rate-row strong, .epica-status-card strong
+) { color: var(--da-text) !important; }
+/* texto secundario -> muted */
+html[data-dashito-theme] :where(
+  .epica-hero p, .epica-panel p, .epica-kpi small, .epica-kpi span, .epica-sub,
+  .epica-answer p, .epica-path-note, .epica-rate-row small, .epica-formula,
+  .epica-status-card small, .epica-strata-read
+) { color: var(--da-muted) !important; }
+
+/* ── Dossier Frente B · tab Mora-ley (simulador CMP) ── */
+html[data-dashito-theme] .mora-ley-out .row {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+}
+html[data-dashito-theme] .mora-ley-out .row b { color: var(--da-text) !important; }
+html[data-dashito-theme] .mora-ley-out .row.cmp {
+  border-color: color-mix(in srgb, var(--da-mint) 45%, var(--da-border)) !important;
+  background: color-mix(in srgb, var(--da-mint) 12%, var(--da-surface)) !important;
+}
+html[data-dashito-theme] .mora-ley-out .row.cmp strong { color: var(--da-mint) !important; }
+
+/* ── Dossier Frente B · tab Reclamo-crédito (caso MasVentas) ── */
+html[data-dashito-theme] .reclamo-case {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+html[data-dashito-theme] .reclamo-case .big { color: var(--da-text) !important; }
+html[data-dashito-theme] .reclamo-case small { color: var(--da-muted) !important; }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   tab-political-wealth (Patrimonio político · DDJJ, asset political-wealth-tab.js)
+   Familia .pw-* con hex claros hardcodeados → tokens --da-* para los 3 skins.
+   ───────────────────────────────────────────────────────────────────────── */
+html[data-dashito-theme] :where(
+  .pw-person-directory, .pw-table-wrap, .pw-case-source, .pw-callout,
+  .pw-benchmark-card, .pw-kpi, .pw-surface, .pw-case-audit, .pw-controls,
+  .pw-roster-wrap, .pw-person-picker, .pw-flow > div, .pw-quality-grid > div
+) {
+  background: var(--da-surface) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-text) !important;
+  box-shadow: none !important;
+}
+html[data-dashito-theme] :where(.pw-person-button, .pw-open-series, .pw-roster-tools, .pw-controls select, .pw-controls button) {
+  background: var(--da-surface-2) !important;
+  border-color: var(--da-border) !important;
+  color: var(--da-muted) !important;
+}
+html[data-dashito-theme] :where(.pw-person-button.active, .pw-open-series.active, .pw-controls .active) {
+  background: var(--da-primary) !important;
+  border-color: var(--da-primary) !important;
+  color: var(--da-on-primary) !important;
+}
+html[data-dashito-theme] .pw-table th { background: var(--da-surface-2) !important; color: var(--da-muted) !important; border-color: var(--da-border) !important; }
+html[data-dashito-theme] .pw-table td { border-color: var(--da-border) !important; color: var(--da-text) !important; }
+html[data-dashito-theme] :where(.pw-kpi .big, .pw-benchmark-card b, .pw-case-verdict, .pw-person-button b) { color: var(--da-text) !important; }
+html[data-dashito-theme] :where(.pw-data-note, .pw-scope-line, .pw-case-lead, .pw-status, .pw-person-search-status, .pw-kpi small, .pw-benchmark-card small) { color: var(--da-muted) !important; }

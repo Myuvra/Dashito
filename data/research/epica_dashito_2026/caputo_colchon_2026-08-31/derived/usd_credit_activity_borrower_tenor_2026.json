@@ -1,0 +1,106 @@
+{
+  "cutoff": "2026-08-31",
+  "source_files": [
+    "bcra_credito_actividad_saldos_2026.xls",
+    "bcra_credito_actividad_grupo_entidad_2026.xls",
+    "bcra_prestamos_montos.xls",
+    "bcra_prestamos_plazos.xls",
+    "bcra_prestamos_tramo_monto.xls",
+    "bcra_ecc_2026_q2.pdf"
+  ],
+  "activity_stock": {
+    "date": "2026-06-30",
+    "currency": "foreign currency, converted back from reported thousand-peso balances using the workbook reference exchange rate",
+    "reference_exchange_rate_ars_per_usd": 1483.0198,
+    "total_usd_millions": 24145.64,
+    "top_level_activities": [
+      {"activity":"Primary production","usd_millions":10232.112,"share_pct":42.3766},
+      {"activity":"Manufacturing","usd_millions":7568.392,"share_pct":31.3448},
+      {"activity":"Wholesale and retail trade","usd_millions":2570.056,"share_pct":10.6440},
+      {"activity":"Services","usd_millions":1660.791,"share_pct":6.8782},
+      {"activity":"Electricity, gas and water","usd_millions":1392.727,"share_pct":5.7680},
+      {"activity":"Employed individuals","usd_millions":485.492,"share_pct":2.0107},
+      {"activity":"Construction","usd_millions":145.285,"share_pct":0.6017},
+      {"activity":"Unidentified","usd_millions":90.785,"share_pct":0.3760}
+    ],
+    "combined_primary_and_manufacturing_share_pct": 73.7214,
+    "selected_second_level_activities": [
+      {"activity":"Agriculture, livestock, hunting and forestry","usd_millions":6520.986,"share_pct":27.0069},
+      {"activity":"Food and beverage manufacturing","usd_millions":3646.093,"share_pct":15.1004},
+      {"activity":"Mining and quarrying","usd_millions":3630.866,"share_pct":15.0374},
+      {"activity":"Wholesale trade and commission trade excluding vehicles","usd_millions":2272.716,"share_pct":9.4125},
+      {"activity":"Electricity, gas, steam and hot water","usd_millions":1392.620,"share_pct":5.7676}
+    ],
+    "quarter_change_2026_q1_to_q2": {
+      "total_usd_millions": 2377.683,
+      "contributions": [
+        {"activity":"Primary production","change_usd_millions":1134.295,"contribution_pct":47.7059},
+        {"activity":"Manufacturing","change_usd_millions":675.032,"contribution_pct":28.3903},
+        {"activity":"Wholesale and retail trade","change_usd_millions":379.016,"contribution_pct":15.9406},
+        {"activity":"Services","change_usd_millions":112.836,"contribution_pct":4.7456},
+        {"activity":"Employed individuals","change_usd_millions":80.638,"contribution_pct":3.3915},
+        {"activity":"Construction","change_usd_millions":30.234,"contribution_pct":1.2716},
+        {"activity":"Electricity, gas and water","change_usd_millions":-1.984,"contribution_pct":-0.0834},
+        {"activity":"Unidentified","change_usd_millions":-32.384,"contribution_pct":-1.3620}
+      ]
+    },
+    "policy_timing_note": "The activity stock ends on 2026-06-30, before the 2026-08-13 prudential-policy announcement. It describes the inherited portfolio and cannot evaluate use of the new regulatory bucket."
+  },
+  "lender_group_stock": {
+    "date": "2026-06-30",
+    "groups": [
+      {"group":"Domestic private banks","usd_millions":9369.312,"share_pct":38.8033},
+      {"group":"Foreign banks","usd_millions":8907.728,"share_pct":36.8917},
+      {"group":"Public banks","usd_millions":5424.351,"share_pct":22.4651},
+      {"group":"Non-bank financial institutions","usd_millions":444.249,"share_pct":1.8399}
+    ]
+  },
+  "new_operations_by_borrower_type": {
+    "period": "2026-07",
+    "currency": "USD millions of monthly gross operations",
+    "all_cash_loan_lines": {
+      "total_usd_millions": 3175.125,
+      "borrowers": [
+        {"borrower_type":"Other legal persons","usd_millions":2368.189,"share_pct":74.5857},
+        {"borrower_type":"SME legal persons","usd_millions":661.235,"share_pct":20.8255},
+        {"borrower_type":"Individuals","usd_millions":145.700,"share_pct":4.5888}
+      ]
+    },
+    "single_name_notes": {
+      "total_usd_millions": 2574.841,
+      "borrowers": [
+        {"borrower_type":"Other legal persons","usd_millions":2001.096,"share_pct":77.7173,"weighted_amount_band_code":29,"weighted_amount_band_usd":"5,000,000 to 9,999,999","average_term_days":150,"share_below_90_days_pct":53.486},
+        {"borrower_type":"SME legal persons","usd_millions":469.255,"share_pct":18.2246,"weighted_amount_band_code":24,"weighted_amount_band_usd":"500,000 to 749,999","average_term_days":422,"share_below_90_days_pct":7.671},
+        {"borrower_type":"Individuals","usd_millions":104.490,"share_pct":4.0581,"weighted_amount_band_code":21,"weighted_amount_band_usd":"100,000 to 249,999","average_term_days":452,"share_below_90_days_pct":3.036}
+      ],
+      "total_weighted_amount_band_code": 28,
+      "total_weighted_amount_band_usd": "2,500,000 to 4,999,999",
+      "total_average_term_days": 212,
+      "total_share_below_90_days_pct": 43.089
+    }
+  },
+  "credit_conditions_survey_context": {
+    "period": "2026-Q2",
+    "scope": "bank survey covering business credit generally, not a dollar-credit accounting table",
+    "observed_demand_diffusion_index_pct": {"all_companies":-9.4,"large_companies":-16.4,"smes":-29.7},
+    "expected_2026_q3_demand_diffusion_index_pct": {"all_companies":5.7,"large_companies":11.7,"smes":-9.4},
+    "expected_2026_q3_credit_standards_diffusion_index_pct": {"all_companies":-6.7,"large_companies":-6.5,"smes":-24.9},
+    "terms_and_conditions_summary": "Banks reported significantly narrower spreads over funding costs, while maturities and collateral requirements tightened to different degrees. Maximum amounts and fees were broadly unchanged for companies overall."
+  },
+  "interpretation": [
+    "The inherited dollar-loan stock was concentrated in primary production and manufacturing; those two broad activities held 73.72% at 2026-Q2.",
+    "July gross dollar-credit operations were concentrated in legal persons outside the SME category used by the workbook. They received 74.59% of all cash-loan flows and 77.72% of single-name-note flows.",
+    "For other legal persons, the single-name-note flow combined a high weighted amount band with a short average term: USD 5-10 million, 150 days, and 53.49% below 90 days. This pattern is compatible with large, short-term corporate financing, but it does not identify the final use.",
+    "Funding is not the only observable bottleneck: the Q2 survey reported weak SME credit demand and expected tighter SME standards, although that survey is not specific to dollar credit.",
+    "The data clarify who and which sectors received credit before the new measure; they do not yet show who uses the new regulatory bucket or whether the proceeds become fixed investment, working capital, refinancing or another use."
+  ],
+  "caveats": [
+    "Economic activity is the borrower's principal activity, not the destination of the loan.",
+    "The activity table does not cross activity, borrower size, loan line and final use in one observation.",
+    "Monthly operated amounts are gross flows, not outstanding stocks, unique borrowers or net credit creation.",
+    "'Other legal persons' is the workbook category complementary to SME legal persons; it must not be treated as perfectly identical to the survey's 'large companies' category.",
+    "The weighted amount band is an amount-weighted ordinal band code, not an average loan amount or a distribution of operations.",
+    "The credit-conditions survey records banks' perceptions and expectations across business credit; it is contextual evidence and not a measure of dollar-loan use.",
+    "All activity and survey observations precede the 2026-08-13 policy announcement, so post-policy outcomes remain unobserved."
+  ]
+}

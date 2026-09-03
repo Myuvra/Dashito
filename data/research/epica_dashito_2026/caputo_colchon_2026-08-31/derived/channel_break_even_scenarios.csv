@@ -1,0 +1,9 @@
+﻿costo_incremental_anual_comitente_pct_escenario,tasa_tbill_bruta_pct,tasa_plazo_fijo_usd_pct,tasa_externa_neta_de_costo_escenario_pct,brecha_vs_plazo_fijo_pct,lectura,alcance
+0,4.14,2.05,4.14,2.09,referencia externa mayor,escenario de costo incremental; no estima comisión ni impuesto individual
+0.5,4.14,2.05,3.64,1.59,referencia externa mayor,escenario de costo incremental; no estima comisión ni impuesto individual
+1,4.14,2.05,3.14,1.09,referencia externa mayor,escenario de costo incremental; no estima comisión ni impuesto individual
+1.5,4.14,2.05,2.64,0.59,referencia externa mayor,escenario de costo incremental; no estima comisión ni impuesto individual
+2,4.14,2.05,2.14,0.09,referencia externa mayor,escenario de costo incremental; no estima comisión ni impuesto individual
+2.09,4.14,2.05,2.05,0.0,punto de equilibrio,escenario de costo incremental; no estima comisión ni impuesto individual
+2.5,4.14,2.05,1.64,-0.41,plazo fijo mayor,escenario de costo incremental; no estima comisión ni impuesto individual
+3,4.14,2.05,1.14,-0.91,plazo fijo mayor,escenario de costo incremental; no estima comisión ni impuesto individual
