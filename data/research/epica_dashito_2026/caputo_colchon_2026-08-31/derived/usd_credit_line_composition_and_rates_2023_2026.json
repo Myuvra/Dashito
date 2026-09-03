@@ -1,0 +1,49 @@
+{
+  "source_files": [
+    "bcra_api_monetarias_catalog_2026-08-31.json",
+    "bcra_api_usd_private_loans_total_1355.json",
+    "bcra_api_usd_private_loans_other_advances_1358.json",
+    "bcra_api_usd_private_loans_notes_1359.json",
+    "bcra_api_usd_private_loans_mortgages_1362.json",
+    "bcra_api_usd_private_loans_pledged_1363.json",
+    "bcra_api_usd_private_loans_cards_1365.json",
+    "bcra_api_usd_private_loans_other_1367.json",
+    "bcra_informe_monetario_indicadores_julio_2026.xlsx"
+  ],
+  "currency": "USD millions for loan stocks; nominal annual percent for rates",
+  "loan_stock_bridge": {
+    "start_date": "2023-12-29",
+    "start_total_usd_millions": 3412,
+    "end_date": "2026-08-27",
+    "end_total_usd_millions": 25367,
+    "change_usd_millions": 21955,
+    "lines": [
+      {"line":"Single-name notes","start_usd_millions":2187,"end_usd_millions":18790,"end_share_pct":74.0726,"change_usd_millions":16603,"contribution_to_change_pct":75.6229},
+      {"line":"Other loans","start_usd_millions":475,"end_usd_millions":3352,"end_share_pct":13.2140,"change_usd_millions":2877,"contribution_to_change_pct":13.1041},
+      {"line":"Pledged loans","start_usd_millions":235,"end_usd_millions":1395,"end_share_pct":5.4993,"change_usd_millions":1160,"contribution_to_change_pct":5.2835},
+      {"line":"Mortgages","start_usd_millions":143,"end_usd_millions":743,"end_share_pct":2.9290,"change_usd_millions":600,"contribution_to_change_pct":2.7329},
+      {"line":"Credit cards","start_usd_millions":263,"end_usd_millions":708,"end_share_pct":2.7910,"change_usd_millions":445,"contribution_to_change_pct":2.0269},
+      {"line":"Other advances","start_usd_millions":14,"end_usd_millions":259,"end_share_pct":1.0210,"change_usd_millions":245,"contribution_to_change_pct":1.1159},
+      {"line":"Residual lines","start_usd_millions":95,"end_usd_millions":120,"end_share_pct":0.4731,"change_usd_millions":25,"contribution_to_change_pct":0.1139}
+    ]
+  },
+  "rate_history": [
+    {"period":"2025-07","usd_time_deposit_30_44d_tna_pct":1.7636,"usd_single_name_notes_tna_pct":7.1540,"gross_rate_gap_pp":5.3904},
+    {"period":"2025-12","usd_time_deposit_30_44d_tna_pct":1.8480,"usd_single_name_notes_tna_pct":6.6280,"gross_rate_gap_pp":4.7800},
+    {"period":"2026-05","usd_time_deposit_30_44d_tna_pct":1.0361,"usd_single_name_notes_tna_pct":4.3930,"gross_rate_gap_pp":3.3569},
+    {"period":"2026-06","usd_time_deposit_30_44d_tna_pct":1.1198,"usd_single_name_notes_tna_pct":4.2100,"gross_rate_gap_pp":3.0902},
+    {"period":"2026-07","usd_time_deposit_30_44d_tna_pct":1.1239,"usd_single_name_notes_tna_pct":3.8240,"gross_rate_gap_pp":2.7001}
+  ],
+  "illustrative_july_2026_carry_per_deposit": [
+    {"loanable_share_pct":61,"gross_carry_before_costs_and_losses_pp":1.2088},
+    {"loanable_share_pct":65,"gross_carry_before_costs_and_losses_pp":1.3617},
+    {"loanable_share_pct":75,"gross_carry_before_costs_and_losses_pp":1.7441}
+  ],
+  "interpretation": "Three quarters of the observed USD loan-stock increase came from single-name notes. The quoted gross rate gap on that line narrowed by 2.69 percentage points between July 2025 and July 2026. Once only a fraction of each deposited dollar is assumed to be loaned, the illustrative carry is smaller than the headline loan-minus-deposit gap.",
+  "caveats": [
+    "Loan line is not debtor industry: single-name notes can finance different sectors and uses.",
+    "The rate comparison uses newly agreed operations, while the stock bridge includes outstanding balances.",
+    "The illustrative carry is not an observed bank margin or profitability measure; it excludes maturity mismatch, fees, operating costs, capital, liquidity, defaults and portfolio mix.",
+    "Rates and stocks have different dates and must not be merged into one accounting identity."
+  ]
+}

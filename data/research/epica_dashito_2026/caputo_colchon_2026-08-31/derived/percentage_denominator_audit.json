@@ -1,0 +1,84 @@
+{
+  "cutoff_date": "2026-08-31",
+  "purpose": "Prevent percentages with different numerators, denominators, dates and scopes from being treated as one balance-sheet identity.",
+  "indicators": [
+    {
+      "value_pct": 75,
+      "label": "Post-election onshore retention",
+      "period": "post-election average through 2026-06",
+      "numerator": "dollars bought for hoarding and deposited in the local financial system",
+      "denominator": "dollars bought in the FX market for hoarding",
+      "nature": "BCRA average; approximately USD 1.1 billion per month",
+      "source_file": "bcra_ipom_2026_q2.pdf",
+      "source_location": "pp. 24 and 39",
+      "warning": "Not the same 75% as the regulatory lending ceiling."
+    },
+    {
+      "value_pct": 80,
+      "label": "Approximate current onshore retention",
+      "period": "statement dated 2026-08-06, after data through July",
+      "numerator": "dollars bought for hoarding and saved within the local financial system",
+      "denominator": "dollars bought for hoarding",
+      "nature": "approximate figure in the BCRA president's opening remarks",
+      "source_file": "bcra_ipom_conferencia_q2_2026.html",
+      "source_location": "opening remarks, monetary policy section",
+      "warning": "The speech does not disclose a bridge or exact calculation from the 75% post-election average."
+    },
+    {
+      "value_pct": 61,
+      "label": "Private USD loans / private USD deposits",
+      "period": "2026-08-13",
+      "numerator": "approximately USD 24.6 billion in private-sector USD loans",
+      "denominator": "approximately USD 40.3 billion in private-sector USD deposits",
+      "nature": "official communicated stock ratio",
+      "source_file": "caputo_credito_dolares_2026-08-13.html",
+      "source_location": "paragraphs describing stocks and lending ratio",
+      "warning": "Rounded stocks yield approximately the published ratio."
+    },
+    {
+      "value_pct": 65,
+      "label": "Historical prudent lending reference",
+      "period": "reference stated on 2026-08-13",
+      "numerator": "USD loans under the stated historical banking practice",
+      "denominator": "USD deposits",
+      "nature": "behavioural/prudential reference",
+      "source_file": "caputo_credito_dolares_2026-08-13.html",
+      "source_location": "25% reserve plus about 10 percentage points of additional liquidity",
+      "warning": "It is not a legal maximum."
+    },
+    {
+      "value_pct": 75,
+      "label": "Theoretical regulatory lending ceiling",
+      "period": "reference stated on 2026-08-13",
+      "numerator": "maximum theoretical lending capacity",
+      "denominator": "USD deposits",
+      "nature": "100% minus the stated 25% reserve requirement",
+      "source_file": "caputo_credito_dolares_2026-08-13.html",
+      "source_location": "official estimate of USD 30.5 billion capacity and USD 5.8 billion additional room",
+      "warning": "Capacity is not demand, approval or disbursement."
+    },
+    {
+      "value_pct": 17,
+      "label": "Idle USD lending capacity",
+      "period": "2026-06 IPOM snapshot",
+      "numerator": "USD funding that could not be applied plus excess cash over regulatory reserves",
+      "denominator": "USD deposits",
+      "nature": "BCRA estimate, almost USD 7 billion",
+      "source_file": "bcra_ipom_2026_q2.pdf",
+      "source_location": "pp. 39 and 42",
+      "warning": "This is excess/idle capacity, not the full liquidity ratio."
+    },
+    {
+      "value_pct": 48.6,
+      "label": "Aggregate foreign-currency liquidity",
+      "period": "2026-06",
+      "numerator": "aggregate foreign-currency liquidity under the banking-report definition",
+      "denominator": "foreign-currency deposits",
+      "nature": "banking-system liquidity indicator",
+      "source_file": "bcra_informe_bancos_junio_2026.pdf",
+      "source_location": "executive summary and liquidity section",
+      "warning": "It is broader than the 17% excess and uses a different perimeter from the 61% private loan/deposit ratio."
+    }
+  ],
+  "conclusion": "The figures describe different flows, stocks and regulatory layers. They should be displayed side by side, not added or subtracted mechanically."
+}

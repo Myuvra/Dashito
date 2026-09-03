@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "persona_id": "javier",
+    "persona": "Javier Milei",
+    "corte": "2026-09-02",
+    "pregunta": "¿El crecimiento declarado es rendimiento, ingreso nuevo o actualización contable, y la evolución reconcilia?",
+    "alcance": "2022–2024 combina el consolidado oficial con los PDF individuales 2023 y 2024 respaldados; 2025 usa transcripciones coincidentes en totales, todavía sin PDF OA individual local.",
+    "estado_2025": "provisional_hasta_respaldar_pdf_oa_individual",
+    "etiqueta": "puente reconciliado · insumos de valuación pendientes"
+  },
+  "periodos": [
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2022-2023",
+      "estado_fuente": "oficial_consolidado_oa",
+      "bienes_inicio_ars": 21101634.54,
+      "bienes_cierre_ars": 125640891.45,
+      "aumento_bienes_ars": 104539256.91,
+      "aumento_bienes_pct": 495.41,
+      "aumento_bienes_real_ipc_pct": 91.2,
+      "deuda_cierre_ars": 0.0,
+      "delta_patrimonio_neto_ars": 104539256.91,
+      "diferencia_valuacion_total_ars": 71886098.96,
+      "valuacion_sobre_aumento_bienes_pct": 68.76,
+      "inmueble_inicio_ars": 6657569.52,
+      "inmueble_cierre_ars": 13657100.16,
+      "aumento_inmueble_ars": 6999530.64,
+      "aumento_inmueble_pct": 105.14,
+      "inmueble_sobre_valuacion_total_pct": 9.74,
+      "ipc_periodo_pct": 211.41,
+      "inmueble_si_solo_ipc_ars": 20732180.37,
+      "aumento_inmueble_explicado_por_ipc_simple_pct": 201.08,
+      "brecha_inmueble_vs_ipc_simple_ars": -7075080.21,
+      "ingresos_netos_ars": 22021827.07,
+      "ingresos_no_alcanzados_controlados_ars": 35434617.0,
+      "gastos_no_deducibles_ars": 12296927.01,
+      "gastos_personales_ars": 12506359.11,
+      "gastos_vinculados_exentos_ars": 0.0,
+      "residual_csv_sin_control_ars": -318911553.0,
+      "residual_ajustado_fuente_ars": 0.0,
+      "lectura": "El PDF individual corrige un cero extra del CSV; con $35,43 M de ingresos no alcanzados, el puente cierra exactamente.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2023-2024",
+      "estado_fuente": "oficial_consolidado_oa",
+      "bienes_inicio_ars": 125640891.45,
+      "bienes_cierre_ars": 206046375.48,
+      "aumento_bienes_ars": 80405484.03,
+      "aumento_bienes_pct": 64.0,
+      "aumento_bienes_real_ipc_pct": -24.69,
+      "deuda_cierre_ars": 0.0,
+      "delta_patrimonio_neto_ars": 80405484.03,
+      "diferencia_valuacion_total_ars": 54546101.49,
+      "valuacion_sobre_aumento_bienes_pct": 67.84,
+      "inmueble_inicio_ars": 13657100.16,
+      "inmueble_cierre_ars": 38419071.2,
+      "aumento_inmueble_ars": 24761971.04,
+      "aumento_inmueble_pct": 181.31,
+      "inmueble_sobre_valuacion_total_pct": 45.4,
+      "ipc_periodo_pct": 117.76,
+      "inmueble_si_solo_ipc_ars": 29740196.71,
+      "aumento_inmueble_explicado_por_ipc_simple_pct": 64.95,
+      "brecha_inmueble_vs_ipc_simple_ars": 8678874.49,
+      "ingresos_netos_ars": 92157396.22,
+      "ingresos_no_alcanzados_controlados_ars": 0.0,
+      "gastos_no_deducibles_ars": 0.0,
+      "gastos_personales_ars": 43391712.88,
+      "gastos_vinculados_exentos_ars": 22906300.8,
+      "residual_csv_sin_control_ars": -22906300.8,
+      "residual_ajustado_fuente_ars": 0.0,
+      "lectura": "El anexo del PDF contiene $22,91 M de gastos que el consolidado no exporta; incorporarlos elimina el residual.",
+      "fuente_url": "https://ikona.telesurtv.net/content/uploads/2025/07/declaracion-jurada-14-dac2f10c7a.pdf"
+    },
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2024-2025",
+      "estado_fuente": "transcripcion_periodistica_pdf_oa_pendiente",
+      "bienes_inicio_ars": 206046375.48,
+      "bienes_cierre_ars": 295182652.87,
+      "aumento_bienes_ars": 89136277.39,
+      "aumento_bienes_pct": 43.26,
+      "aumento_bienes_real_ipc_pct": 8.9,
+      "deuda_cierre_ars": 586357.0,
+      "delta_patrimonio_neto_ars": 88549920.39,
+      "diferencia_valuacion_total_ars": 73005241.07,
+      "valuacion_sobre_aumento_bienes_pct": 81.9,
+      "inmueble_inicio_ars": 38419071.2,
+      "inmueble_cierre_ars": 73573546.13,
+      "aumento_inmueble_ars": 35154474.93,
+      "aumento_inmueble_pct": 91.5,
+      "inmueble_sobre_valuacion_total_pct": 48.15,
+      "ipc_periodo_pct": 31.55,
+      "inmueble_si_solo_ipc_ars": 50539811.96,
+      "aumento_inmueble_explicado_por_ipc_simple_pct": 34.48,
+      "brecha_inmueble_vs_ipc_simple_ars": 23033734.17,
+      "ingresos_netos_ars": 81806723.92,
+      "ingresos_no_alcanzados_controlados_ars": 0.0,
+      "gastos_no_deducibles_ars": 0.0,
+      "gastos_personales_ars": 66262044.6,
+      "gastos_vinculados_exentos_ars": 0.0,
+      "residual_csv_sin_control_ars": "",
+      "residual_ajustado_fuente_ars": 0.0,
+      "lectura": "El puente publicado cierra al centavo: 81,9% del aumento bruto es valuación y, descontado IPC, los bienes crecen 8,9%.",
+      "fuente_url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/"
+    }
+  ],
+  "componentes_valuacion_2025": [
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2024-2025",
+      "componente": "Inmueble",
+      "importe_ars": 35154474.93,
+      "porcentaje_valuacion_total": 48.15,
+      "lectura": "Mismo inmueble; cambio de valuación fiscal informado.",
+      "estado_fuente": "transcripcion_periodistica_pdf_oa_pendiente",
+      "fuente_url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/"
+    },
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2024-2025",
+      "componente": "FX sobre depósito USD preexistente",
+      "importe_ars": 27331218.33,
+      "porcentaje_valuacion_total": 37.44,
+      "lectura": "Saldo inicial en USD por diferencia de cotización declarada.",
+      "estado_fuente": "transcripcion_periodistica_pdf_oa_pendiente",
+      "fuente_url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/"
+    },
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2024-2025",
+      "componente": "FX sobre USD efectivo",
+      "importe_ars": 8340000.0,
+      "porcentaje_valuacion_total": 11.42,
+      "lectura": "Los USD 20.000 físicos no cambian; cambia su equivalente en pesos.",
+      "estado_fuente": "transcripcion_periodistica_pdf_oa_pendiente",
+      "fuente_url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/"
+    },
+    {
+      "persona_id": "javier",
+      "persona": "Javier Milei",
+      "periodo": "2024-2025",
+      "componente": "Otros componentes / redondeos",
+      "importe_ars": 2179547.81,
+      "porcentaje_valuacion_total": 2.99,
+      "lectura": "Resto no desagregado por las transcripciones periodísticas.",
+      "estado_fuente": "transcripcion_periodistica_pdf_oa_pendiente",
+      "fuente_url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/"
+    }
+  ],
+  "hallazgos": {
+    "aumento_bienes_2025_pct": 43.26,
+    "aumento_bienes_real_2025_pct": 8.9,
+    "valuacion_sobre_aumento_bienes_2025_pct": 81.9,
+    "inmueble_sobre_valuacion_total_2025_pct": 48.15,
+    "fx_conocido_sobre_valuacion_total_2025_pct": 48.86,
+    "componentes_inmueble_fx_sobre_valuacion_2025_pct": 97.01,
+    "aumento_inmueble_2025_pct": 91.5,
+    "ipc_2025_pct": 31.55,
+    "aumento_inmueble_explicado_por_ipc_simple_pct": 34.48,
+    "brecha_inmueble_vs_ipc_simple_ars": 23033734.17,
+    "residual_ajustado_2025_ars": 0.0
+  },
+  "lectura_epistemica": {
+    "documentado": [
+      "En 2025 los bienes brutos aumentan 43,3%, pero sólo 8,9% después de descontar el IPC del año.",
+      "La diferencia de valuación explica 81,9% del aumento bruto; inmueble y efecto cambiario conocido explican 97,0% de esa partida.",
+      "El puente 2025 reconcilia al centavo: valuación + ingresos netos − gastos personales − nueva deuda = cambio del patrimonio neto."
+    ],
+    "compatible_pero_no_probado": [
+      "La casa, los vehículos y casi todos los dólares ya existían: una gran parte del salto nominal es actualización de valores, no compra de activos.",
+      "El ingreso neto y los gastos declarados explican el componente no atribuible a valuación, bajo el perímetro público del formulario."
+    ],
+    "no_documentado": [
+      "La copia primaria individual 2025 y su eventual rectificativa todavía no están disponibles en el repositorio.",
+      "Faltan la base fiscal y la hoja de cálculo que expliquen por qué el inmueble sube 91,5% frente a 31,5% de IPC.",
+      "Dos transcripciones periodísticas discrepan sobre el valor 2025 del inmueble; sólo una de ellas reconcilia con la valuación total publicada."
+    ],
+    "conclusion": "El aumento declarado no debe presentarse como rendimiento de una cartera: en 2025 está dominado por valuaciones y, en términos reales, es 8,9%. Los flujos públicos reconciliados vuelven coherente la aritmética, pero no auditan por sí solos las bases fiscales ni prueban el origen lícito de cada ingreso. Tampoco hay en estos números, por sí solos, prueba de corrupción.",
+    "evidencia_para_cerrar": [
+      "PDF OA 2025 individual y cualquier rectificativa posterior.",
+      "Valuación fiscal/base imponible y cálculo del inmueble al cierre 2024 y 2025.",
+      "Desagregación primaria de los $2,18 M restantes de la diferencia de valuación 2025.",
+      "Confirmación del tratamiento fiscal de los ingresos y gastos que componen el puente público."
+    ]
+  },
+  "reconciliation_override": {
+    "periodo": "2025 · provisional",
+    "delta_patrimonio_neto_ars": 88549920.39,
+    "componentes_disponibles_ars": 88549920.39,
+    "residual_ajustado_ars": 0.0,
+    "lectura": "La igualdad cierra con la deuda final de $586.357; la verificación sigue siendo documental, no penal."
+  },
+  "alertas_calidad_fuente": [
+    {
+      "periodo_campo": "2023 · ingresos no alcanzados",
+      "valor_consolidado_ars": "354346170.00",
+      "valor_control_ars": "35434617.00",
+      "origen_control": "PDF individual OA 2023 localizado y aritmética del puente",
+      "resultado": "no_concilia_factor_10",
+      "impacto": "El CSV agrega un cero; corregirlo elimina exactamente el residual de -$318.911.553.",
+      "fuente_url": "https://portada.com.ar/tools/redirect.php?i=40417&s=784dc69555d5fdc5e3363e3e2adaae1f&t=3"
+    },
+    {
+      "periodo_campo": "2024 · total ingreso neto de 4 categorías",
+      "valor_consolidado_ars": "996965100.00",
+      "valor_control_ars": "99696510.00",
+      "origen_control": "suma de categorías y PDF individual OA 2024",
+      "resultado": "no_concilia_factor_10",
+      "impacto": "El total auxiliar del CSV agrega un cero; el campo neto usado en el puente sí es correcto.",
+      "fuente_url": "https://ikona.telesurtv.net/content/uploads/2025/07/declaracion-jurada-14-dac2f10c7a.pdf"
+    },
+    {
+      "periodo_campo": "2024 · gastos vinculados a ingresos exentos / monotributo",
+      "valor_consolidado_ars": "",
+      "valor_control_ars": "22906300.80",
+      "origen_control": "página 5 del PDF individual OA 2024",
+      "resultado": "campo_omitido_en_consolidado",
+      "impacto": "Es idéntico al residual crudo; incorporarlo hace que la evolución patrimonial cierre al centavo.",
+      "fuente_url": "https://ikona.telesurtv.net/content/uploads/2025/07/declaracion-jurada-14-dac2f10c7a.pdf"
+    },
+    {
+      "periodo_campo": "2025 · valuación del inmueble",
+      "valor_consolidado_ars": "",
+      "valor_control_ars": "73573546.13",
+      "origen_control": "El Cronista; La Nación conserva por error aparente el valor 2024 de $38.419.071,20",
+      "resultado": "transcripciones_secundarias_no_coinciden",
+      "impacto": "Se usa el detalle que reconcilia, pero 2025 sigue provisional hasta obtener el PDF OA individual.",
+      "fuente_url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/"
+    }
+  ],
+  "alerta_fuente": "El residual que mostraba el dashboard para 2024 no era una anomalía patrimonial: el PDF contiene $22,91 M de gastos que el CSV abierto omitió. También se corrigieron dos campos multiplicados por diez. Se preservan ambos valores y la corrección queda auditable.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria · copia espejo",
+      "titulo": "PDF OA individual 2023",
+      "url": "https://portada.com.ar/tools/redirect.php?i=40417&s=784dc69555d5fdc5e3363e3e2adaae1f&t=3",
+      "respaldo": "sources/oa/javier_milei_ddjj_anual_2023_copia_espejo_2026-09-02.pdf"
+    },
+    {
+      "tipo": "primaria · copia espejo",
+      "titulo": "PDF OA individual 2024",
+      "url": "https://ikona.telesurtv.net/content/uploads/2025/07/declaracion-jurada-14-dac2f10c7a.pdf",
+      "respaldo": "sources/oa/javier_milei_ddjj_anual_2024_copia_espejo_2026-09-02.pdf"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Ley 23.966, artículo 22",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23966-365/actualizacion",
+      "respaldo": "sources/normativa/ley_23966_actualizada.html"
+    },
+    {
+      "tipo": "secundaria",
+      "titulo": "El Cronista · puente 2025",
+      "url": "https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/",
+      "respaldo": "sources/descubrimiento/cronista_karina_revaluacion_2025_2026-09-02.html"
+    },
+    {
+      "tipo": "secundaria",
+      "titulo": "La Nación · control 2025",
+      "url": "https://www.lanacion.com.ar/politica/javier-milei-declaro-bienes-y-depositos-por-295-millones-y-registro-una-suba-con-respecto-a-2024-nid31082026/",
+      "respaldo": "sources/descubrimiento/lanacion_milei_karina_2025_2026-09-02.html"
+    }
+  ]
+}

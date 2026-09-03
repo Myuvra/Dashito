@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "persona_id": "dip-correa-llano-facundo",
+    "persona": "Facundo Correa Llano",
+    "corte": "2026-09-03",
+    "pregunta": "¿Cuánto del salto 2024 corresponde a valuación, cuánto a flujos y qué parte nace de una reexpresión entre el cierre anterior y la nueva apertura?",
+    "alcance": "El control separa continuidad interanual, movimiento dentro de la DDJJ Anual 2024 y patrimonio neto; recompone valuación, ingresos, gastos, activos monetarios y deuda con los campos del consolidado OA.",
+    "etiqueta": "puente exacto · valuación dominante",
+    "serie_estado": "auditada_con_reexpresion_de_apertura_documentada",
+    "benchmark_estado": "comparable_solo_como_contrafactual_no_rendimiento",
+    "benchmark_nota": "Los totales de cierre concilian, pero el salto combina una reexpresión de apertura y una diferencia de valuación que explica la mayor parte del cambio; no representa el rendimiento observado de una cartera."
+  },
+  "metricas_destacadas": [
+    {
+      "label": "Salto real de la serie",
+      "valor": "+490.3%",
+      "nota": "cierre 2023 → cierre 2024"
+    },
+    {
+      "label": "Cambio real 2024",
+      "valor": "+79.5%",
+      "nota": "apertura reexpresada → cierre"
+    },
+    {
+      "label": "Valuación / Δ bienes",
+      "valor": "84.9%",
+      "nota": "coincide con activos no monetarios"
+    },
+    {
+      "label": "Reexpresión de apertura",
+      "valor": "$ 29.64 M",
+      "nota": "vs. cierre 2023"
+    },
+    {
+      "label": "Residual del puente",
+      "valor": "$ 0,00",
+      "nota": "identidad agregada exacta"
+    }
+  ],
+  "columnas_puente": [
+    {
+      "label": "Δ patrimonio neto",
+      "field": "aumento_patrimonio_neto_ars",
+      "format": "money"
+    },
+    {
+      "label": "Valuación",
+      "field": "diferencia_valuacion_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingresos totales",
+      "field": "recursos_declarados_ars",
+      "format": "money"
+    },
+    {
+      "label": "Gastos declarados",
+      "field": "gastos_declarados_ars",
+      "format": "money"
+    },
+    {
+      "label": "Residual",
+      "field": "residual_puente_ars",
+      "format": "money"
+    }
+  ],
+  "periodos": [
+    {
+      "persona_id": "dip-correa-llano-facundo",
+      "persona": "Facundo Correa Llano",
+      "periodo": "2024",
+      "estado_fuente": "oficial_consolidado_oa_control_agregado",
+      "bienes_inicio_ars": 42603734.3,
+      "bienes_cierre_ars": 166580777.68,
+      "aumento_bienes_ars": 123977043.38,
+      "aumento_bienes_pct": 291.0,
+      "aumento_patrimonio_neto_ars": 132540085.34,
+      "diferencia_valuacion_ars": 105247432.93,
+      "recursos_declarados_ars": 49266574.5,
+      "gastos_declarados_ars": 21973922.09,
+      "ahorro_financiero_ars": 27292652.41,
+      "aumento_activos_monetarios_ars": 18729610.45,
+      "reduccion_deuda_ars": 8563041.96,
+      "residual_puente_ars": 0.0,
+      "ipc_periodo_pct": 117.76,
+      "cambio_real_pct": 79.55,
+      "lectura": "La valuación de $105,25 M más el ahorro financiero neto de $27,29 M explican exactamente el aumento de patrimonio neto de $132,54 M. Ese ahorro se usa exactamente en $18,73 M de activos monetarios y $8,56 M de reducción de deuda.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "bienes_cierre_2023_ars": 12959378.41,
+    "bienes_inicio_2024_ars": 42603734.3,
+    "reexpresion_apertura_ars": 29644355.89,
+    "reexpresion_componentes_no_monetarios_ars": 29644355.89,
+    "bienes_cierre_2024_ars": 166580777.68,
+    "aumento_bienes_2024_ars": 123977043.38,
+    "diferencia_valuacion_2024_ars": 105247432.93,
+    "valuacion_componentes_no_monetarios_ars": 105247432.93,
+    "valuacion_sobre_aumento_bienes_pct": 84.89,
+    "aumento_activos_monetarios_ars": 18729610.45,
+    "reduccion_deuda_ars": 8563041.96,
+    "recursos_declarados_ars": 49266574.5,
+    "gastos_declarados_ars": 21973922.09,
+    "usos_financieros_mas_gastos_ars": 49266574.5,
+    "residual_recursos_usos_ars": 0.0,
+    "aumento_patrimonio_neto_ars": 132540085.34,
+    "residual_puente_patrimonio_ars": 0.0,
+    "cambio_real_serie_2023_2024_pct": 490.28,
+    "cambio_real_intra_2024_pct": 79.55,
+    "deuda_cierre_resumen_2024_ars": 5628503.3,
+    "deuda_cierre_detalle_2024_ars": 0.0
+  },
+  "composition": [
+    {
+      "persona_id": "dip-correa-llano-facundo",
+      "persona": "Facundo Correa Llano",
+      "anio": 2024,
+      "categoria": "Participaciones societarias",
+      "importe_ars": "120422397.95",
+      "dj_id": "789410",
+      "metodo": "Suma del detalle de cierre oficial; el total concilia exactamente y la valuación se controla por separado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-correa-llano-facundo",
+      "persona": "Facundo Correa Llano",
+      "anio": 2024,
+      "categoria": "Vehículos",
+      "importe_ars": "24300000.00",
+      "dj_id": "789410",
+      "metodo": "Suma del detalle de cierre oficial; el total concilia exactamente y la valuación se controla por separado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-correa-llano-facundo",
+      "persona": "Facundo Correa Llano",
+      "anio": 2024,
+      "categoria": "Depósitos",
+      "importe_ars": "14944023.98",
+      "dj_id": "789410",
+      "metodo": "Suma del detalle de cierre oficial; el total concilia exactamente y la valuación se controla por separado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-correa-llano-facundo",
+      "persona": "Facundo Correa Llano",
+      "anio": 2024,
+      "categoria": "Créditos",
+      "importe_ars": "5649789.88",
+      "dj_id": "789410",
+      "metodo": "Suma del detalle de cierre oficial; el total concilia exactamente y la valuación se controla por separado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-correa-llano-facundo",
+      "persona": "Facundo Correa Llano",
+      "anio": 2024,
+      "categoria": "Bienes del hogar",
+      "importe_ars": "1264565.87",
+      "dj_id": "789410",
+      "metodo": "Suma del detalle de cierre oficial; el total concilia exactamente y la valuación se controla por separado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "Los totales de bienes concilian con el detalle tanto al cierre 2023 como al inicio y cierre 2024. La deuda 2023 también concilia y la apertura 2024 repite exactamente su cierre.",
+      "El inicio 2024 conserva las mismas sociedades, el mismo modelo y fecha de compra del vehículo y los bienes del hogar, y eleva su valuación agregada en $29,64 M; depósitos y créditos mantienen exactamente sus saldos. El año de fabricación del Corolla cambia de 2022 a 2023 entre archivos.",
+      "Dentro de 2024, las participaciones societarias aumentan $98,57 M, el vehículo $6,32 M y los bienes del hogar $0,37 M. La suma, $105,25 M, coincide centavo por centavo con la diferencia de valuación informada.",
+      "Los créditos y depósitos aumentan $18,73 M y la deuda cae $8,56 M. Ambos usos suman $27,29 M.",
+      "Ingreso neto de gastos más ingresos no alcanzados suman $49,27 M; al restar gastos personales y no deducibles por $21,97 M quedan exactamente los mismos $27,29 M."
+    ],
+    "compatible_pero_no_probado": [
+      "El puente agregado cierra con residual cero: valuación de $105,25 M más ahorro financiero de $27,29 M explican el aumento de patrimonio neto de $132,54 M.",
+      "La diferencia de valuación es compatible con la actualización de las participaciones en Boedo Center y Sankalpa, del Corolla Cross y de los bienes del hogar porque sus cambios suman exactamente el campo informado.",
+      "La conciliación demuestra coherencia interna del consolidado; no verifica los criterios contables, balances societarios, valor fiscal del vehículo ni movimientos bancarios subyacentes."
+    ],
+    "no_documentado": [
+      "No se publican balances ni método de valuación de Boedo Center S.A. y Sankalpa S.A., responsables del 93,7% de la diferencia de valuación.",
+      "La deuda final de $5,63 M no tiene renglones en el archivo 2024, por lo que no pueden identificarse acreedores ni comprobarse qué obligaciones fueron canceladas.",
+      "El consolidado no explica por qué la apertura 2024 reexpresa en $29,64 M esos activos respecto del cierre 2023, ni si el cambio de año del vehículo es una corrección descriptiva o una sustitución.",
+      "Un residual cero prueba una identidad aritmética con los campos publicados; no certifica licitud, valor económico ni ausencia de omisiones."
+    ],
+    "conclusion": "El +490,3% real de cierre a cierre está correctamente sumado, pero mezcla una reexpresión de apertura de $29,64 M con el movimiento del ejercicio. Usando la apertura 2024, el aumento real es +79,5% y la diferencia de valuación explica 84,9% de los bienes incorporados. El resto forma un puente financiero exacto con ingresos, gastos, créditos, depósitos y reducción de deuda. Es el caso más conciliado hasta ahora: la explicación agregada cierra, mientras quedan abiertas la justificación económica de las valuaciones societarias, la reexpresión inicial y el detalle de acreedores; ninguna de esas preguntas equivale por sí sola a una imputación de irregularidad.",
+    "evidencia_para_cerrar": [
+      "Formulario individual OA de los dj_id 734662 y 789410 para confirmar la base de apertura y sus anexos.",
+      "Balances y método de valuación aplicados a Boedo Center S.A. y Sankalpa S.A. en ambos extremos de 2024.",
+      "Tabla fiscal o documentación usada para valuar el Corolla Cross y los bienes del hogar.",
+      "Desglose de la deuda final 2024 y constancias agregadas de cancelación de las obligaciones existentes al inicio."
+    ]
+  },
+  "reconciliation_override": {
+    "periodo": "2024",
+    "subtitulo": "puente agregado exacto con campos del consolidado OA",
+    "delta_patrimonio_neto_ars": 132540085.34,
+    "componentes_disponibles_ars": 132540085.34,
+    "residual_ajustado_ars": 0.0,
+    "lectura": "Valuación ($105,25 M) + ingresos netos y no alcanzados − gastos personales y no deducibles ($27,29 M netos) = aumento de patrimonio neto ($132,54 M). El componente financiero coincide con activos monetarios nuevos más reducción de deuda. La identidad es exacta, aunque la deuda final carece de desglose por acreedor."
+  },
+  "alerta_fuente": "Resumen y detalle de bienes concilian en ambos extremos, y el puente agregado cierra con residual cero. Se conservan dos reservas documentales: la apertura 2024 reexpresa los mismos activos $29,64 M por encima del cierre 2023 y la deuda final de $5,63 M no tiene desglose en el archivo correspondiente.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Cámara de Diputados · nómina vigente",
+      "url": "https://www.hcdn.gob.ar/diputados/",
+      "respaldo": "sources/active_roster/hcdn_diputados_vigentes_2026-09-01.html"
+    }
+  ]
+}

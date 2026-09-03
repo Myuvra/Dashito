@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "persona_id": "dip-vasquez-patricia",
+    "persona": "Patricia Vásquez",
+    "corte": "2026-09-03",
+    "pregunta": "¿El salto 2024 se explica aritméticamente por valuación e ingresos, y qué documentación exigiría considerar justificado el cambio del inmueble?",
+    "alcance": "El control compara DDJJ Anuales 2023–2024, verifica continuidad y composición, reconstruye el puente exacto y contrasta el cambio de nuda propiedad a herencia con la reglamentación oficial de Bienes Personales.",
+    "etiqueta": "puente exacto · inmueble a documentar",
+    "serie_estado": "auditada_con_cambio_juridico_inmueble_pendiente",
+    "benchmark_estado": "comparable_solo_como_contrafactual_no_rendimiento",
+    "benchmark_nota": "Los totales y la continuidad concilian, pero el salto está dominado por un inmueble que pasa de $0,01 a $245,17 M y cambia de nuda propiedad a herencia; el benchmark no representa rendimiento de cartera."
+  },
+  "metricas_destacadas": [
+    {
+      "label": "Aumento real 2024",
+      "valor": "+324.9%",
+      "nota": "bienes y continuidad conciliados"
+    },
+    {
+      "label": "Valuación / Δ bienes",
+      "valor": "81.4%",
+      "nota": "campo agregado oficial"
+    },
+    {
+      "label": "Inmueble / Δ bienes",
+      "valor": "87.9%",
+      "nota": "$0,01 → $245,17 M"
+    },
+    {
+      "label": "Ingreso / Δ bienes",
+      "valor": "18.6%",
+      "nota": "complemento exacto del puente"
+    },
+    {
+      "label": "Residual del puente",
+      "valor": "$ 0,00",
+      "nota": "valuación + ingreso = Δ bienes"
+    }
+  ],
+  "columnas_puente": [
+    {
+      "label": "Δ bienes",
+      "field": "aumento_bienes_ars",
+      "format": "money"
+    },
+    {
+      "label": "Valuación",
+      "field": "diferencia_valuacion_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingreso neto",
+      "field": "ingresos_neto_gastos_ars",
+      "format": "money"
+    },
+    {
+      "label": "Δ inmueble",
+      "field": "aumento_inmueble_ars",
+      "format": "money"
+    },
+    {
+      "label": "Residual",
+      "field": "residual_puente_ars",
+      "format": "money"
+    }
+  ],
+  "periodos": [
+    {
+      "persona_id": "dip-vasquez-patricia",
+      "persona": "Patricia Vásquez",
+      "periodo": "2024",
+      "estado_fuente": "oficial_consolidado_oa",
+      "bienes_inicio_ars": 33786521.76,
+      "bienes_cierre_ars": 312586191.47,
+      "aumento_bienes_ars": 278799669.71,
+      "aumento_bienes_pct": 825.18,
+      "diferencia_valuacion_ars": 227055373.37,
+      "ingresos_neto_gastos_ars": 51744296.34,
+      "aumento_inmueble_ars": 245167638.98,
+      "aumento_vehiculos_ars": 16462700.0,
+      "aumento_bienes_hogar_ars": 12765772.45,
+      "aumento_depositos_ars": 4358848.28,
+      "aumento_efectivo_ars": 44710.0,
+      "residual_puente_ars": 0.0,
+      "ipc_periodo_pct": 117.76,
+      "cambio_real_pct": 324.86,
+      "lectura": "El aumento de $278,80 M se descompone exactamente en $227,06 M de diferencia de valuación y $51,74 M de ingreso neto. El inmueble aporta $245,17 M del cambio bruto y pasa de nuda propiedad valuada en $0,01 a herencia valuada en $245,17 M.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "bienes_cierre_2023_ars": 33786521.76,
+    "bienes_inicio_2024_ars": 33786521.76,
+    "continuidad_cierre_inicio_brecha_ars": 0.0,
+    "bienes_cierre_2024_ars": 312586191.47,
+    "aumento_bienes_2024_ars": 278799669.71,
+    "diferencia_valuacion_2024_ars": 227055373.37,
+    "ingresos_neto_gastos_2024_ars": 51744296.34,
+    "residual_valuacion_ingreso_ars": 0.0,
+    "inmueble_inicio_2024_ars": 0.01,
+    "inmueble_cierre_2024_ars": 245167638.99,
+    "aumento_inmueble_2024_ars": 245167638.98,
+    "inmueble_sobre_aumento_bienes_pct": 87.94,
+    "valuacion_sobre_aumento_bienes_pct": 81.44,
+    "ingreso_sobre_aumento_bienes_pct": 18.56,
+    "cambio_real_2024_pct": 324.86,
+    "deuda_cierre_2023_ars": 0.0,
+    "deuda_inicio_2024_ars": 0.0,
+    "deuda_cierre_2024_ars": 0.0
+  },
+  "composition": [
+    {
+      "persona_id": "dip-vasquez-patricia",
+      "persona": "Patricia Vásquez",
+      "anio": 2024,
+      "categoria": "Inmueble",
+      "importe_ars": "245167638.99",
+      "dj_id": "793321",
+      "metodo": "Suma del detalle de cierre oficial; resumen y detalle concilian, y el inmueble se mantiene separado por el cambio de condición declarado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vasquez-patricia",
+      "persona": "Patricia Vásquez",
+      "anio": 2024,
+      "categoria": "Vehículos",
+      "importe_ars": "47792600.00",
+      "dj_id": "793321",
+      "metodo": "Suma del detalle de cierre oficial; resumen y detalle concilian, y el inmueble se mantiene separado por el cambio de condición declarado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vasquez-patricia",
+      "persona": "Patricia Vásquez",
+      "anio": 2024,
+      "categoria": "Bienes del hogar",
+      "importe_ars": "13786171.95",
+      "dj_id": "793321",
+      "metodo": "Suma del detalle de cierre oficial; resumen y detalle concilian, y el inmueble se mantiene separado por el cambio de condición declarado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vasquez-patricia",
+      "persona": "Patricia Vásquez",
+      "anio": 2024,
+      "categoria": "Depósitos",
+      "importe_ars": "5533980.53",
+      "dj_id": "793321",
+      "metodo": "Suma del detalle de cierre oficial; resumen y detalle concilian, y el inmueble se mantiene separado por el cambio de condición declarado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "dip-vasquez-patricia",
+      "persona": "Patricia Vásquez",
+      "anio": 2024,
+      "categoria": "Efectivo",
+      "importe_ars": "305800.00",
+      "dj_id": "793321",
+      "metodo": "Suma del detalle de cierre oficial; resumen y detalle concilian, y el inmueble se mantiene separado por el cambio de condición declarado.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "Resumen y detalle de bienes concilian en el cierre 2023, la apertura 2024 y el cierre 2024; además, cierre y apertura coinciden exactamente en $33,79 M. No se informan deudas.",
+      "El inmueble es el mismo departamento de Capital Federal, con ingreso al patrimonio el 23/12/2013 y titularidad 100%. En la apertura figura como nuda propiedad a $0,01 y al cierre como herencia a $245,17 M.",
+      "El aumento total de $278,80 M coincide exactamente con $227,06 M de diferencia de valuación más $51,74 M de ingreso neto.",
+      "Además del inmueble, aumentan los vehículos en $16,46 M, bienes del hogar en $12,77 M, depósitos en $4,36 M y la valuación del efectivo en dólares en $44.710.",
+      "El artículo 16 del Decreto 127/1996 establece tratamientos diferentes para el usufructo gratuito y para la cesión onerosa de nuda propiedad con reserva de usufructo; el rótulo por sí solo no determina cuál supuesto corresponde."
+    ],
+    "compatible_pero_no_probado": [
+      "Un cambio efectivo en la situación sucesoria o en el usufructo podría alterar quién debe computar el inmueble y con qué proporción. El cambio de nuda propiedad a herencia es compatible con esa clase de evento, pero el consolidado no demuestra que haya ocurrido.",
+      "La diferencia de valuación explica 81,4% del aumento total y el ingreso declarado el 18,6% restante, de modo que el puente agregado es internamente exacto.",
+      "El residual cero prueba que los campos agregados cierran; no demuestra que $245,17 M sea la base fiscal correcta ni que la clasificación jurídica se haya aplicado correctamente."
+    ],
+    "no_documentado": [
+      "No se publica escritura, declaratoria de herederos, extinción de usufructo, fecha del cambio jurídico ni identificación del causante o usufructuario.",
+      "Tampoco se informa la valuación fiscal homogénea 2024, base imponible inmobiliaria, costo actualizado o cálculo que lleva el inmueble de $0,01 a $245,17 M.",
+      "La diferencia de valuación agregada es $18,11 M menor que el aumento del inmueble, por lo que no puede atribuirse todo el campo exclusivamente a esa propiedad sin el formulario de trabajo.",
+      "Que la palabra “herencia” y la revaluación hagan plausible una explicación no permite concluir licitud, corrupción ni error: esas conclusiones requieren la documentación sucesoria y fiscal."
+    ],
+    "conclusion": "El +324,9% real de 2024 es una variación auténtica del archivo: bienes, continuidad y deudas concilian. El puente agregado también cierra exactamente, con 81,4% explicado por diferencia de valuación y 18,6% por ingreso. Sin embargo, la justificación sustantiva depende casi por completo de un departamento que pasa de nuda propiedad a herencia y de $0,01 a $245,17 M. Esa transición puede tener una explicación jurídica y tributaria legítima, pero decir “fue sólo una revaluación” no basta: hacen falta el instrumento sucesorio o de usufructo y la base fiscal aplicada. Hasta entonces corresponde marcar explicación compatible, no licitud probada ni irregularidad demostrada.",
+    "evidencia_para_cerrar": [
+      "Formulario individual OA de los dj_id 732253 y 793321, incluidas hojas de trabajo y rectificativas.",
+      "Escritura de donación o nuda propiedad, constitución y eventual extinción del usufructo, y declaratoria o adjudicación hereditaria.",
+      "Valuación fiscal homogénea y base imponible inmobiliaria de CABA al 31/12/2024, con el cálculo usado en Bienes Personales.",
+      "Extractos que permitan vincular el ingreso neto con el aumento de depósitos y los demás movimientos monetarios."
+    ]
+  },
+  "reconciliation_override": {
+    "periodo": "2024",
+    "subtitulo": "puente agregado exacto; justificación jurídica pendiente",
+    "delta_patrimonio_neto_ars": 278799669.71,
+    "componentes_disponibles_ars": 278799669.71,
+    "residual_ajustado_ars": 0.0,
+    "lectura": "Diferencia de valuación ($227,06 M) + ingreso neto ($51,74 M) = aumento de patrimonio neto ($278,80 M). La identidad es exacta y no hay deuda; la pregunta pendiente no es aritmética, sino documental: por qué el inmueble cambia de nuda propiedad a herencia y cuál es la base fiscal de $245,17 M."
+  },
+  "alerta_fuente": "No se detectan quiebres de escala ni faltantes de deuda: los totales y el puente agregado concilian. La reserva es sustantiva, no aritmética: el consolidado cambia la condición del inmueble y lo lleva de $0,01 a $245,17 M sin publicar el instrumento sucesorio ni el cálculo fiscal.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Cámara de Diputados · nómina vigente",
+      "url": "https://www.hcdn.gob.ar/diputados/",
+      "respaldo": "sources/active_roster/hcdn_diputados_vigentes_2026-09-01.html"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Decreto 127/1996 · Bienes Personales, nuda propiedad",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/decreto-127-1996-33500/actualizacion",
+      "respaldo": "sources/legal/decreto_127_1996_bienes_personales_usufructo_2026-09-03.html"
+    }
+  ]
+}

@@ -43,7 +43,7 @@ function normalizeSourceRegisters(){
       const header=document.createElement('div');
       header.className='source-register-standard';
       const ok=links.length>0;
-      header.innerHTML=`<div class="source-register-copy"><span class="source-register-kicker">Fuentes y trazabilidad</span><strong>Respaldo visible de esta pestaña</strong><small>Separamos publicación de origen, archivos de datos y auditorías/cálculos propios.</small></div><div class="source-register-status"><span class="${ok?'ok':'warn'}">${ok?'✓':'!'} ${links.length} referencia${links.length===1?'':'s'} visible${links.length===1?'':'s'}</span><span>corte · 22 ago 2026</span><a href="${sourceProjectAsset('data/derivados/AUDITORIA_COBERTURA_FUENTES_V149.md')}" target="_blank" rel="noopener">auditoría global ↗</a></div>`;
+      header.innerHTML=`<div class="source-register-copy"><span class="source-register-kicker">Fuentes y trazabilidad</span><strong>Respaldo visible de esta pestaña</strong><small>Separamos publicación de origen, archivos de datos y auditorías/cálculos propios.</small></div><div class="source-register-status"><span class="${ok?'ok':'warn'}">${ok?'✓':'!'} ${links.length} referencia${links.length===1?'':'s'} visible${links.length===1?'':'s'}</span><span>corte · 27 ago 2026 · ciclo V70</span><a href="${sourceProjectAsset('data/derivados/AUDITORIA_COBERTURA_FUENTES_V195.md')}" target="_blank" rel="noopener">auditoría global ↗</a><a href="${sourceProjectAsset('data/fuentes/README.md')}" target="_blank" rel="noopener">catálogo ↗</a></div>`;
       panel.prepend(header);
       const legend=document.createElement('div');
       legend.className='source-register-legend';
@@ -53,7 +53,7 @@ function normalizeSourceRegisters(){
     panel.dataset.sourceCoverage=links.length?'ok':'missing';
     audit.push({tab:tab.id,label:tabLabel,references:links.length,...counts,status:links.length?'ok':'missing'});
   });
-  window.SOURCE_COVERAGE_AUDIT_V149=audit;
+  window.SOURCE_COVERAGE_AUDIT_V195=audit;
 }
 normalizeSourceRegisters();
 

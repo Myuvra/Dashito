@@ -1,0 +1,8 @@
+﻿periodo,universo,concepto,valor_usd_millones,naturaleza,fuente,advertencia
+2026-07,personas humanas · mercado de cambios,compras netas de moneda extranjera,4124,flujo observado,BCRA Balance Cambiario 2026-07,incluye conceptos con distinta finalidad
+2026-07,personas humanas · mercado de cambios,compras netas de billetes,2916,flujo observado,BCRA Balance Cambiario 2026-07,no equivale a retiro físico final
+2026-07,personas humanas · mercado de cambios,servicios y otros gastos corrientes,786,flujo observado,BCRA Balance Cambiario 2026-07,rubro de uso corriente
+2026-07,personas humanas · mercado de cambios,giros sin fines específicos,546,flujo observado,BCRA Balance Cambiario 2026-07,transferencias al exterior
+2026-07,compras netas de billetes y divisas sin fin específico,quedó depositado en bancos locales,1000,estimación oficial,BCRA Balance Cambiario 2026-07,aproximación sobre un subconjunto; no sumar al total general
+2026-07,compras netas de billetes y divisas sin fin específico,aumento de activos externos,1000,estimación oficial,BCRA Balance Cambiario 2026-07,aproximación sobre un subconjunto; no identifica instrumento
+2026-07,compras netas de billetes y divisas sin fin específico,entregado a entidades para cubrir consumos con tarjeta,900,estimación oficial,BCRA Balance Cambiario 2026-07,aproximación sobre un subconjunto

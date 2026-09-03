@@ -1,0 +1,4 @@
+anio_campo,campo_consolidado_ars,control_independiente_ars,origen_control,resultado,lectura,fuente_url
+2023 cierre,10908660.00,1090866.00,suma de 5 filas del archivo oficial de deudas 2023,no_concilia_factor_10,El total resumen es diez veces la suma de su propio detalle.,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+2024 inicio,0.00,1090866.00,cierre detallado oficial 2023,no_arrastra_cierre_previo,El inicio 2024 no conserva la deuda detallada al cierre 2023.,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+2024 cierre,8419610.00,841961.00,inicio 2025 transcripto del PDF OA por dos medios,no_concilia_factor_10,El total resumen es diez veces el importe que reaparece como apertura 2025.,https://www.cronista.com/economia-politica/cuanto-crecieron-los-patrimonios-de-javier-y-karina-milei-en-el-ultimo-ano-bienes-dolares-y-deudas/

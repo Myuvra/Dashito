@@ -44,6 +44,17 @@ const metadata = {
   'tab-milei-cost': { slug: 'lo-que-te-robo-milei', icon: TrendingDown },
   'tab-meli-benefits': { slug: 'privilegios-fiscales', icon: Building2 },
   'tab-casta': { slug: 'la-casta', icon: ShieldCheck },
+  // Dossiers Frente B (tabs analíticos nuevos, assets/*-tab.js)
+  'tab-mora-ley': { slug: 'mora-propuesta', icon: Scale, group: 'Dossiers' },
+  'tab-reclamo-credito': { slug: 'reclamo-credito', icon: WalletCards, group: 'Dossiers' },
+  'tab-political-wealth': { slug: 'patrimonio-politico', icon: Landmark, group: 'Dossiers' },
+  // Super-tabs EPICA (materializados desde assets/epica-*.js)
+  'tab-epica-households': { slug: 'epica-hogares', icon: Users, group: 'Épica' },
+  'tab-epica-dollars': { slug: 'epica-dolares', icon: CircleDollarSign, group: 'Épica' },
+  'tab-epica-caputo-colchon': { slug: 'epica-dolares-colchon', icon: PiggyBank, group: 'Épica' },
+  'tab-epica-incidence': { slug: 'epica-quien-paga', icon: Scale, group: 'Épica' },
+  'tab-epica-development': { slug: 'epica-desarrollo', icon: Factory, group: 'Épica' },
+  'tab-epica-narratives': { slug: 'epica-relatos', icon: BookOpenText, group: 'Épica' },
 }
 
 const categoryIds = [
@@ -53,6 +64,8 @@ const categoryIds = [
   { id: 'activity', label: 'Actividad', ids: ['tab-consumption', 'tab-work', 'tab-investment', 'tab-housing', 'tab-growth', 'tab-emae', 'tab-roads', 'tab-tourism', 'tab-trade'] },
   { id: 'state', label: 'Estado y deuda', ids: ['tab-social', 'tab-health-education', 'tab-debt-public', 'tab-fiscal', 'tab-bcra', 'tab-debt-spiral', 'tab-program'] },
   { id: 'power', label: 'Poder económico', ids: ['tab-pendulo', 'tab-wealth-contribution', 'tab-milei-cost', 'tab-meli-benefits', 'tab-casta'] },
+  { id: 'epica', label: 'Épica', ids: ['tab-epica-households', 'tab-epica-dollars', 'tab-epica-caputo-colchon', 'tab-epica-incidence', 'tab-epica-development', 'tab-epica-narratives'] },
+  { id: 'dossiers', label: 'Dossiers', ids: ['tab-mora-ley', 'tab-reclamo-credito', 'tab-political-wealth'] },
 ]
 
 export const dashboards = legacyTabs.map((tab) => ({

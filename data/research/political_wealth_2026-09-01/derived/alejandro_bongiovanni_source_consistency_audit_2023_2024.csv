@@ -1,0 +1,6 @@
+persona_id,persona,anio,control,valor_resumen_ars,valor_control_ars,brecha_ars,ratio_resumen_sobre_detalle,resultado,dj_id,fuente_url
+dip-bongiovanni-alejandro,Alejandro Bongiovanni,2023,total_bienes_cierre_vs_suma_detalle,1628606.59,1628606.59,0.0,1.0,concilia,800114,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-bongiovanni-alejandro,Alejandro Bongiovanni,2024,total_bienes_inicio_vs_suma_detalle,1628606.59,1628606.59,0.0,1.0,concilia,802146,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-bongiovanni-alejandro,Alejandro Bongiovanni,2024,continuidad_cierre_2023_vs_inicio_2024,1628606.59,1628606.59,0.0,1.0,concilia,802146,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-bongiovanni-alejandro,Alejandro Bongiovanni,2024,total_bienes_cierre_vs_suma_detalle,23895873.88,23895873.88,0.0,1.0,concilia,802146,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-bongiovanni-alejandro,Alejandro Bongiovanni,2024,deudas_cierre_resumen_vs_detalle,240031.48,0.0,240031.48,,detalle_ausente,802146,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales

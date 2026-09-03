@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "persona_id": "sen-gadano-natalia-elena",
+    "persona": "Natalia Elena Gadano",
+    "corte": "2026-09-03",
+    "pregunta": "¿El salto 2024 persiste al corregir la escala y qué movimientos del detalle resultan compatibles con los ingresos declarados?",
+    "alcance": "El control compara resumen y detalle del consolidado OA 2023–2024, separa el recambio de activos y coteja identidad, cargo actual y presentación 2025 con las copias oficiales del Senado.",
+    "etiqueta": "serie suspendida · detalle compatible",
+    "serie_estado": "suspendida_desde_2024_hasta_conciliar_escala_resumen",
+    "benchmark_estado": "suspendido_por_quiebre_escala_fuente"
+  },
+  "metricas_destacadas": [
+    {
+      "label": "Aumento bienes · 2024",
+      "valor": "+713.2%",
+      "nota": "detalle inicio→cierre, no resumen 10×"
+    },
+    {
+      "label": "Ingreso neto / aumento",
+      "valor": "116.7%",
+      "nota": "compatibilidad agregada, no trazabilidad"
+    },
+    {
+      "label": "Vehículos / aumento",
+      "valor": "88.4%",
+      "nota": "EcoSport sale y entra una Rampage"
+    },
+    {
+      "label": "Depósitos / aumento",
+      "valor": "11.6%",
+      "nota": "variación del saldo declarado"
+    },
+    {
+      "label": "Cambio real · 2024",
+      "valor": "+273.4%",
+      "nota": "descontando IPC 117.8%"
+    }
+  ],
+  "columnas_puente": [
+    {
+      "label": "Δ bienes detalle",
+      "field": "aumento_bienes_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingreso neto",
+      "field": "ingresos_neto_gastos_ars",
+      "format": "money"
+    },
+    {
+      "label": "Ingreso / Δ",
+      "field": "ingreso_sobre_aumento_pct",
+      "format": "pct"
+    },
+    {
+      "label": "Δ vehículos",
+      "field": "aumento_vehiculos_ars",
+      "format": "money"
+    },
+    {
+      "label": "Δ depósitos",
+      "field": "aumento_depositos_ars",
+      "format": "money"
+    }
+  ],
+  "periodos": [
+    {
+      "persona_id": "sen-gadano-natalia-elena",
+      "persona": "Natalia Elena Gadano",
+      "periodo": "2024",
+      "estado_fuente": "oficial_consolidado_oa_inconsistente",
+      "bienes_inicio_ars": 8214245.0,
+      "bienes_cierre_ars": 66799316.0,
+      "aumento_bienes_ars": 58585071.0,
+      "aumento_bienes_pct": 713.21,
+      "ingresos_neto_gastos_ars": 68390022.69,
+      "ingreso_sobre_aumento_pct": 116.74,
+      "aumento_vehiculos_ars": 51780800.0,
+      "vehiculos_sobre_aumento_pct": 88.39,
+      "aumento_depositos_ars": 6804271.0,
+      "depositos_sobre_aumento_pct": 11.61,
+      "ipc_periodo_pct": 117.76,
+      "cambio_real_detalle_pct": 273.44,
+      "lectura": "El detalle aumenta $58,59 M: $51,78 M netos en vehículos y $6,80 M en depósitos. El ingreso neto agregado de $68,39 M es mayor que ese aumento, por lo que el puente es aritméticamente compatible; no prueba por sí solo cómo se pagó cada activo.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "controles": {
+    "detalle_inicial_2023_ars": 6701845.01,
+    "resumen_inicial_2023_ars": 6701845.01,
+    "detalle_inicio_2024_ars": 8214245.0,
+    "resumen_inicio_2024_ars": 82142450.0,
+    "detalle_cierre_2024_ars": 66799316.0,
+    "resumen_cierre_2024_ars": 667993160.0,
+    "factor_resumen_sobre_detalle_inicio_2024": 10.0,
+    "factor_resumen_sobre_detalle_cierre_2024": 10.0,
+    "cambio_nominal_crudo_2023_2024_pct": 9867.3,
+    "cambio_nominal_detalle_2023_2024_pct": 896.73,
+    "cambio_real_detalle_2023_2024_pct": 357.71,
+    "deuda_resumen_2024_ars": 0.0,
+    "deuda_detalle_2024_ars": 0.0
+  },
+  "composition": [
+    {
+      "persona_id": "sen-gadano-natalia-elena",
+      "persona": "Natalia Elena Gadano",
+      "anio": 2024,
+      "categoria": "Vehículos",
+      "importe_ars": "59000000.00",
+      "dj_id": "793922",
+      "metodo": "Suma del detalle de cierre oficial; el total resumen se mantiene separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    },
+    {
+      "persona_id": "sen-gadano-natalia-elena",
+      "persona": "Natalia Elena Gadano",
+      "anio": 2024,
+      "categoria": "Depósitos",
+      "importe_ars": "7799316.00",
+      "dj_id": "793922",
+      "metodo": "Suma del detalle de cierre oficial; el total resumen se mantiene separado por inconsistencia de escala.",
+      "fuente_url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales"
+    }
+  ],
+  "lectura_epistemica": {
+    "documentado": [
+      "La declaración Inicial rectificativa 2023 concilia: el resumen y sus dos bienes detallados suman $6,70 M.",
+      "En 2024, el resumen publica $82,14 M al inicio y $667,99 M al cierre, exactamente diez veces los detalles de $8,21 M y $66,80 M.",
+      "El detalle 2024 reemplaza una EcoSport valuada en $7,22 M al inicio por una Rampage 2024 valuada en $59,00 M al cierre; los depósitos pasan de $1,00 M a $7,80 M.",
+      "Los dos renglones de cierre consignan ingresos propios; el ingreso neto agregado informado es $68,39 M y no aparecen deudas en el resumen ni en el detalle."
+    ],
+    "compatible_pero_no_probado": [
+      "El ingreso neto declarado equivale a 116,7% del aumento de bienes detallados, de modo que la adquisición y el mayor saldo son aritméticamente compatibles con el flujo anual aun antes de conocer el calendario de cobros y pagos.",
+      "El factor diez exacto en ambos extremos de 2024 es compatible con un corrimiento decimal en la exportación del resumen; el detalle conserva una composición internamente exacta."
+    ],
+    "no_documentado": [
+      "El consolidado no aporta comprobantes de compra, precio de transacción, medios de pago ni extractos que vinculen cada peso del ingreso con la pick-up o los depósitos.",
+      "La compatibilidad agregada no demuestra el origen lícito de los fondos, pero tampoco respalda una imputación de irregularidad.",
+      "Sin el formulario individual no puede decidirse cuál escala reproduce lo efectivamente presentado ni si existieron rectificativas posteriores."
+    ],
+    "conclusion": "El +4.477,1% real que dispara la serie no es comparable: hereda un resumen 2024 multiplicado por diez. El detalle deja un aumento anual todavía alto, +713,2% nominal (+273,4% real), explicado exactamente por el recambio neto de vehículos y el aumento de depósitos. Como el ingreso neto declarado supera el incremento patrimonial detallado, el puente es contablemente compatible, aunque no constituye trazabilidad bancaria ni una certificación de licitud. Se suspende el benchmark sobre la serie cruda y se conservan por separado resumen, detalle e hipótesis documental.",
+    "evidencia_para_cerrar": [
+      "Formulario individual OA de los dj_id 757003 y 793922, incluidas rectificativas.",
+      "Confirmación de OA sobre el corrimiento decimal del resumen 2024.",
+      "Documentación de compra y medio de pago de la Rampage, junto con la baja o destino de la EcoSport.",
+      "Desagregación temporal de ingresos, gastos y depósitos para conciliar el flujo anual."
+    ]
+  },
+  "reconciliation_suspended": {
+    "periodo": "2024",
+    "lectura": "El detalle permite un puente descriptivo compatible con ingresos, pero el resumen de bienes está multiplicado por diez; el residual automático de la serie permanece suspendido hasta confirmar la escala oficial."
+  },
+  "alerta_fuente": "El resumen 2024 informa tanto el inicio como el cierre a una escala 10× respecto de la suma exacta del detalle. El salto real extremo de la trayectoria usa esa capa defectuosa; el caso profundo muestra el puente de detalle y suspende benchmark y residual sobre el total crudo.",
+  "fuentes": [
+    {
+      "tipo": "primaria",
+      "titulo": "Consolidado OA 2012–2024",
+      "url": "https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales",
+      "respaldo": "sources/datos_justicia/declaraciones-juradas-2012-2024.zip"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Senado · nómina vigente",
+      "url": "https://www.senado.gob.ar/senadores/listados/listaSenadoRes",
+      "respaldo": "sources/active_roster/senado_listado_vigente_2026-09-01.html"
+    },
+    {
+      "tipo": "primaria",
+      "titulo": "Senado · presentaciones ejercicio 2025",
+      "url": "https://www.senado.gob.ar/administrativo/ddjj/",
+      "respaldo": "sources/active_roster/senado_ddjj_2025_2026-09-01.html"
+    }
+  ]
+}

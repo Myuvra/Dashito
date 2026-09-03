@@ -1,0 +1,101 @@
+{
+  "cutoff_date": "2026-08-31",
+  "regulation": {
+    "announcement_date": "2026-08-13",
+    "communication": "A 8467",
+    "issuance_date": "2026-08-18",
+    "eligible_borrowers": "Other legal persons outside the previously eligible destinations",
+    "households_eligible_under_new_bucket": false,
+    "public_bucket_identifier_in_communication": false,
+    "explicit_separate_effective_date_in_document": false,
+    "scope_note": "The communication defines eligibility and prudential safeguards but does not identify individual borrowers or create a public reporting series for the bucket."
+  },
+  "observed_window": {
+    "start_date": "2026-08-18",
+    "end_date": "2026-08-27",
+    "calendar_days": 9,
+    "stocks_usd_millions": {
+      "private_loans_total": {
+        "start_usd_millions": 25217.0,
+        "end_usd_millions": 25367.0,
+        "change_usd_millions": 150.0,
+        "change_pct": 0.5948
+      },
+      "private_deposits_total": {
+        "start_usd_millions": 40655.0,
+        "end_usd_millions": 40843.0,
+        "change_usd_millions": 188.0,
+        "change_pct": 0.4624
+      },
+      "private_deposits_savings": {
+        "start_usd_millions": 28892.0,
+        "end_usd_millions": 28887.0,
+        "change_usd_millions": -5.0,
+        "change_pct": -0.0173
+      },
+      "private_deposits_term": {
+        "start_usd_millions": 11248.0,
+        "end_usd_millions": 11435.0,
+        "change_usd_millions": 187.0,
+        "change_pct": 1.6625
+      }
+    },
+    "loan_deposit_ratio_pct": {
+      "start": 62.0268,
+      "end": 62.1086,
+      "change_percentage_points": 0.0818
+    },
+    "selected_loan_lines_change_usd_millions": {
+      "other_advances": 0.0,
+      "single_name_notes": -86.0,
+      "mortgages": 3.0,
+      "pledged": 0.0,
+      "cards": 149.0,
+      "other_loans": 134.0
+    },
+    "month_to_date_context": {
+      "from_date": "2026-07-31",
+      "loan_change_to_end_usd_millions": 833.0,
+      "loan_change_accumulated_by_issuance_usd_millions": 683.0,
+      "share_accumulated_by_issuance_pct": 81.9928
+    }
+  },
+  "availability_calendar": [
+    {
+      "date": "2026-09-09",
+      "publication": "Monetary Report",
+      "possible_use": "First August aggregate monetary snapshot",
+      "limitation": "Does not isolate the A 8467 bucket."
+    },
+    {
+      "date": "2026-09-14",
+      "publication": "Statistical Bulletin",
+      "possible_use": "Additional August aggregate series",
+      "limitation": "Crosses remain limited."
+    },
+    {
+      "date": "2026-09-18",
+      "publication": "Bank Report",
+      "possible_use": "Likely July banking period if the recent lag holds",
+      "limitation": "Would still precede the communication; period mapping is an inference."
+    },
+    {
+      "date": "2026-10-16",
+      "publication": "Bank Report",
+      "possible_use": "Likely first general August delinquency snapshot if the recent lag holds",
+      "limitation": "General bank delinquency, not the A 8467 bucket; period mapping is an inference."
+    }
+  ],
+  "interpretation": [
+    "The observed window shows deposits and loans growing by similar orders of magnitude, leaving the aggregate loan-deposit ratio nearly stable.",
+    "The rise in deposits was concentrated in term deposits while savings balances were roughly flat.",
+    "Most of the August-to-date loan increase through August 27 had already accumulated by the communication issuance date.",
+    "None of these aggregate movements identifies mattress cash, a unique depositor, a borrower under A 8467, the final use of credit, or a causal policy effect.",
+    "Delinquency is not yet meaningfully observable: only nine calendar days separate issuance and the latest daily stock, while Situation 2 begins after more than 31 days past due."
+  ],
+  "sources": [
+    "BCRA Communication A 8467, 2026-08-18",
+    "BCRA Monetary Statistics API, series 1355, 1358, 1359, 1362, 1363, 1365, 1367, 1564, 1569 and 1571",
+    "BCRA publication calendar and Central de Deudores methodology, retrieved 2026-08-31"
+  ]
+}

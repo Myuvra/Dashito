@@ -7,3 +7,13 @@ dist/
 # BCRA source files demasiado grandes para GitHub
 /data/fuentes/tasas/bcra/tas1_ser.txt
 /data/fuentes/tasas/bcra/tas2_ser.txt
+
+# Anti-bloat: research crudo pesado. Los tabs sólo usan `derived/*.csv|json`;
+# las fuentes crudas (xls/txt/zip/pdf) y la microdata EPH no van al repo ni al
+# deploy. El importer ya las filtra; esto es la red de seguridad.
+data/**/sources/
+data/**/eph_raw/
+data/research/**/*.xls
+data/research/**/*.xlsx
+data/research/**/*.zip
+data/research/**/*.pdf

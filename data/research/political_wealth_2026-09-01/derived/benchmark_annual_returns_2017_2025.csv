@@ -1,0 +1,28 @@
+benchmark_id,benchmark,riesgo,anio,retorno_total_usd_pct,metodo,fuente_url
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2017,0.9508,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2017,13.89,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2017,23.97,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2018,1.9912,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2018,-2.86,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2018,-9.41,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2019,2.1245,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2019,21.79,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2019,26.60,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2020,0.3705,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2020,16.40,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2020,16.25,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2021,0.0442,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2021,14.22,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2021,18.54,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2022,2.1015,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2022,-16.90,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2022,-18.36,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2023,5.4053,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2023,17.58,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2023,22.20,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2024,5.3038,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2024,14.59,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2024,17.49,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5
+tbill_3m_proxy,T-bill EE.UU. 3 meses · rollover proxy,poco,2025,4.2896,"Producto mensual de 1 + GS3M/1200; proxy mecánico, no retorno exacto de un fondo.",https://fred.stlouisfed.org/series/GS3M
+vbiax_60_40,Vanguard Balanced Index · 60/40,medio,2025,13.58,Retorno total antes de impuestos; distribuciones reinvertidas; neto de gastos del fondo.,https://personal1.vanguard.com/pub/Pdf/p502.pdf
+msci_acwi_net,MSCI ACWI · net return USD,mucho,2025,22.34,Índice de acciones globales; retorno neto en USD publicado por MSCI.,https://www.msci.com/documents/10199/a71b65b5-d0ea-4b5c-a709-24b1213bc3c5

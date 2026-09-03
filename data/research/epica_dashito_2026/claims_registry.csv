@@ -1,0 +1,28 @@
+claim_id,statement,logical_reading,evidence_status,linked_analysis_ids,reason
+1,Más base monetaria = más inflación,relation_not_mechanical,under_review,9;34,La transmisión depende de demanda de dinero crédito actividad régimen y rezagos
+2,Si sube el dólar necesariamente sube la inflación,relation_not_necessary,under_review,9;34,El pass-through no es uno a uno y cambia por episodio horizonte y rubro
+3,Superávit comercial = superávit de cuenta corriente,accounting_scope_mismatch,ready,11,La cuenta corriente también contiene servicios rentas y transferencias
+4,Si hay superávit comercial no puede haber atraso cambiario,inference_not_identified,under_review,10;11,El saldo comercial no identifica por sí solo el tipo de cambio de equilibrio
+5,Reservas brutas = dólares libres,definition_scope_mismatch,under_review,6,Las reservas brutas incluyen componentes con contrapartidas e iliquidez
+6,Comprar dólares suma reservas uno a uno,relation_not_necessary,under_review,7,Pagos depósitos valuación e intervención también mueven el stock
+7,Tomar deuda significa necesariamente que el stock de deuda sube,relation_not_necessary,ready,31,El stock final también depende de amortizaciones valuación tipo de cambio y neteo
+8,Si baja deuda sobre PIB bajó la deuda,inference_not_identified,ready,30;31,El cociente puede caer por crecimiento o valuación aun con mayor numerador
+9,Superávit fiscal implica que las familias tienen déficit,accounting_scope_mismatch,under_review,3,La identidad incluye empresas y sector externo y no asigna por sí sola causalidad
+10,Bajar impuestos siempre aumenta la recaudación,depends_on_conditions,scenario_ready,20,La neutralidad depende del tamaño del recorte y de elasticidades observables
+11,Acceso al crédito = inclusión financiera,concepts_not_equivalent,under_review,14,Costo destino refinanciación y mora posterior determinan el resultado
+12,Más inversión = más empleo,depends_on_conditions,under_review,17;18;19,La intensidad laboral importaciones productividad y fase del proyecto importan
+13,RIGI repone el empleo perdido,not_yet_identified,under_review,17,Anuncios y empleo proyectado no son empleo ejecutado y los universos difieren
+14,Bajar pobreza = recuperación completa del bienestar,concepts_not_equivalent,under_review,5,Pobreza corriente no mide ahorro deuda mora patrimonio ni vulnerabilidad
+15,Si el IPC baja el costo de vida baja igual para todos,concepts_not_equivalent,under_review,28;29,Desinflación no implica caída del nivel de precios y las canastas son heterogéneas
+16,Tener tránsito o restaurantes llenos demuestra que sobra dinero,proxy_not_supported,ready,1;5;28,Una escena no identifica ingreso ahorro deuda distribución ni población de referencia
+17,Más planes sociales = más dependencia sin controlar universos,not_identified,under_review,26;27,Personas beneficios hogares y gasto son unidades distintas
+18,El mercado asigna correctamente todos los costos sociales,normative_or_not_identified,not_testable_as_written,37,Debe traducirse a externalidades precios cobertura y outcomes medibles
+19,Cerrar desregular o privatizar es un logro por definición,concepts_not_equivalent,ready,37,La acción es un input y requiere output outcome e incidencia
+20,2018 estaba peor que 2026 sin definir variable,not_identified,under_review,35,Macro bienestar distribución y sostenibilidad pueden ordenar los años de modo distinto
+21,La mora es sólo un problema entre privados,depends_on_conditions,under_review,12;13;14;15,Puede tener efectos sistémicos regulatorios fiscales y distributivos
+22,Los bancos sólo prestan el dinero de los ahorristas,mechanism_more_complex,ready,15,La intermediación bancaria crea depósitos y está limitada por capital liquidez riesgo regulación y demanda
+23,Los bancos crean dinero por lo tanto crean inflación,inference_not_identified,under_review,9;15,Creación de crédito no identifica por sí sola demanda agregada neta ni inflación
+24,No tener cien por ciento de depósitos líquidos = insolvencia,definition_scope_mismatch,ready,15,Liquidez solvencia y transformación de plazos son conceptos distintos
+25,Riesgo país dividido por otro riesgo país = probabilidad electoral,mapping_not_supported,under_review,34;37,Un cociente de spreads no es una probabilidad sin modelo identificación y calibración
+26,Turismo emisivo y energía pueden evaluarse sólo con balanza comercial,scope_incomplete,under_review,11,También afectan servicios rentas financiamiento impuestos empleo y encadenamientos
+27,Dividendos liberados prueban que no quedan restricciones cambiarias,inference_not_identified,under_review,11;33,Una habilitación de pagos no caracteriza por sí sola todo el régimen cambiario

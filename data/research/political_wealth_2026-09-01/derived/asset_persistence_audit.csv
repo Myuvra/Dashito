@@ -1,0 +1,6 @@
+persona,activo,periodo,valor_inicial_ars_m,valor_final_ars_m,variacion_pct,ipc_pct,exceso_vs_ipc_pp,estado,interpretacion
+Karina Milei,Departamento y cochera Vicente López,2024-2025,3.992825,28.162493,605.33,31.5,573.83,requiere_explicacion,El IPC por sí solo es insuficiente; no prueba irregularidad
+Máximo Kirchner,Lote El Calafate,2024-2025,606.5,797.8,31.54,31.5,0.04,esperado,Variación aproximadamente igual al IPC
+Máximo Kirchner,Local,2024-2025,618.2,813.3,31.56,31.5,0.06,esperado,Variación aproximadamente igual al IPC
+Máximo Kirchner,Hotesur,2024-2025,1086.1,1428.7,31.54,31.5,0.04,esperado,Variación aproximadamente igual al IPC
+Máximo Kirchner,Los Sauces,2024-2025,1507.4,1853.7,22.97,31.5,-8.53,diferencia_visible,No requiere explicación adversa; cambió menos que el IPC

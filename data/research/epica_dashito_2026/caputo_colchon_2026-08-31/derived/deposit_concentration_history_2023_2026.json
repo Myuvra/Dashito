@@ -1,0 +1,33 @@
+{
+  "period_range": "2023-12 to 2026-06",
+  "source_file": "bcra_cuentas_saldos_estrato.xlsm",
+  "population": "Account-instruments of resident private-sector individuals in foreign-currency savings and time deposits",
+  "results": [
+    {"period":"2023-12","accounts_total":15413418,"accounts_ge_10000":160531,"accounts_ge_10000_pct":1.0415,"balance_share_ge_10000_pct":70.1146,"accounts_ge_100000":8663,"accounts_ge_100000_pct":0.0562,"balance_share_ge_100000_pct":24.6058},
+    {"period":"2024-03","accounts_total":15340573,"accounts_ge_10000":171125,"accounts_ge_10000_pct":1.1155,"balance_share_ge_10000_pct":69.0631,"accounts_ge_100000":9926,"accounts_ge_100000_pct":0.0647,"balance_share_ge_100000_pct":27.0112},
+    {"period":"2024-06","accounts_total":23728757,"accounts_ge_10000":188207,"accounts_ge_10000_pct":0.7932,"balance_share_ge_10000_pct":68.8016,"accounts_ge_100000":10620,"accounts_ge_100000_pct":0.0448,"balance_share_ge_100000_pct":26.1599},
+    {"period":"2024-09","accounts_total":26181956,"accounts_ge_10000":302144,"accounts_ge_10000_pct":1.1540,"balance_share_ge_10000_pct":75.5385,"accounts_ge_100000":16978,"accounts_ge_100000_pct":0.0648,"balance_share_ge_100000_pct":27.8746},
+    {"period":"2024-12","accounts_total":28429513,"accounts_ge_10000":366097,"accounts_ge_10000_pct":1.2877,"balance_share_ge_10000_pct":76.3581,"accounts_ge_100000":25866,"accounts_ge_100000_pct":0.0910,"balance_share_ge_100000_pct":29.9449},
+    {"period":"2025-03","accounts_total":32142548,"accounts_ge_10000":388475,"accounts_ge_10000_pct":1.2086,"balance_share_ge_10000_pct":80.5926,"accounts_ge_100000":27701,"accounts_ge_100000_pct":0.0862,"balance_share_ge_100000_pct":30.5610},
+    {"period":"2025-06","accounts_total":35817268,"accounts_ge_10000":395537,"accounts_ge_10000_pct":1.1043,"balance_share_ge_10000_pct":78.0097,"accounts_ge_100000":25582,"accounts_ge_100000_pct":0.0714,"balance_share_ge_100000_pct":28.0904},
+    {"period":"2025-09","accounts_total":38302465,"accounts_ge_10000":424200,"accounts_ge_10000_pct":1.1075,"balance_share_ge_10000_pct":77.3796,"accounts_ge_100000":25960,"accounts_ge_100000_pct":0.0678,"balance_share_ge_100000_pct":28.1979},
+    {"period":"2025-12","accounts_total":39835248,"accounts_ge_10000":456036,"accounts_ge_10000_pct":1.1448,"balance_share_ge_10000_pct":77.6216,"accounts_ge_100000":28725,"accounts_ge_100000_pct":0.0721,"balance_share_ge_100000_pct":29.0443},
+    {"period":"2026-03","accounts_total":41969302,"accounts_ge_10000":480182,"accounts_ge_10000_pct":1.1441,"balance_share_ge_10000_pct":77.4579,"accounts_ge_100000":29018,"accounts_ge_100000_pct":0.0691,"balance_share_ge_100000_pct":29.0348},
+    {"period":"2026-06","accounts_total":43720318,"accounts_ge_10000":497047,"accounts_ge_10000_pct":1.1369,"balance_share_ge_10000_pct":77.8873,"accounts_ge_100000":29455,"accounts_ge_100000_pct":0.0674,"balance_share_ge_100000_pct":29.1195}
+  ],
+  "change_2023_12_to_2026_06": {
+    "net_new_account_instruments": 28306900,
+    "net_change_accounts_ge_10000": 336516,
+    "net_change_accounts_below_10000": 27970384,
+    "share_of_net_account_change_below_10000_pct": 98.8112,
+    "change_balance_share_ge_10000_pp": 7.7727,
+    "change_balance_share_ge_100000_pp": 4.5137
+  },
+  "interpretation": "The account base expanded mostly below the 10,000 threshold while the share of balances held in higher strata rose. This is consistent with broad low-balance account proliferation plus persistent balance concentration, not with a simple story in which account growth equals growth in people with investable dollars.",
+  "caveats": [
+    "Stocks of accounts are not cohorts: net changes combine openings, closures and reporting changes.",
+    "One person can own several accounts and both instruments.",
+    "The table excludes cash, broker accounts and external assets.",
+    "Balance shares are dimensionless; peso valuation levels are not compared through time."
+  ]
+}

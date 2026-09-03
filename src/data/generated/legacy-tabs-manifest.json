@@ -5,22 +5,33 @@
     "order": 0,
     "headings": [
       "La historia detrás de estos gráficos",
+      "Las hipótesis e intuiciones que pusieron en marcha la épica",
+      "La estabilización podía convivir con fragilidad cotidiana",
+      "El costo del ajuste podía estar repartido de manera desigual",
+      "Los dólares visibles podían no equivaler a liquidez utilizable",
+      "Anuncios, inversión ejecutada y empleo podían no avanzar juntos",
+      "Bajar impuestos podía cambiar quién financia al Estado sin autofinanciarse por completo",
+      "Más crédito podía ser inclusión y también una fuente de estrés",
+      "La insistencia oficial podía no coincidir con el incentivo privado del ahorrista",
       "Todo empezó con una discusión",
       "El primer gráfico y la primera corrección",
       "Después aparecieron las tasas —y otra corrección",
       "Cuando la “pinza” tuvo que dividirse en dos",
       "Cuando otro análisis me obligó a hacer una pregunta mejor",
-      "El dato que contradijo mis expectativas",
+      "Cuando “beneficio bancario” resultó ser una pregunta demasiado grande",
+      "El dato que cambió mi lectura inicial",
       "El péndulo hacia los hogares",
       "¿Cuánto costó el shock?",
       "Y el dashboard empezó a crecer",
+      "Cuando descubrimos que “consumo” tampoco era una sola cosa",
       "La casa que desapareció del gráfico",
       "La pregunta por “la casta” y por las alternativas",
       "Ordenar las cuentas y decidir quién paga son preguntas distintas",
       "Fuentes, metodología y código de este relato"
     ],
     "chartIds": [],
-    "noteCount": 2
+    "noteCount": 2,
+    "dynamic": false
   },
   {
     "id": "tab-power",
@@ -34,7 +45,8 @@
     "chartIds": [
       "powerChart"
     ],
-    "noteCount": 22
+    "noteCount": 22,
+    "dynamic": false
   },
   {
     "id": "tab-rates",
@@ -51,6 +63,12 @@
       "Ventana espejo superpuesta · mes 1 → 32",
       "Dos preguntas, dos lecturas del signo",
       "Alcance del indicador",
+      "¿Cuánto se alejó el costo del crédito de una referencia razonable?",
+      "Costo estandarizado vs zona de referencia",
+      "Brecha de costo del crédito vs techo de referencia",
+      "Exceso de carga financiera estimada · pesos constantes de jul-2026",
+      "Simulador de un préstamo comparable",
+      "¿Qué diferencia produce la tasa?",
       "¿Quién podía pagar el ajuste?",
       "¿Qué parte del giro fiscal representa cada escenario?",
       "Ahorro bruto de sociedades de depósito",
@@ -70,12 +88,16 @@
       "ratesMirrorCompareChart",
       "ratesMoneyChart",
       "ratesFintechChart",
+      "creditReferenceChart",
+      "creditGapChart",
+      "creditBurdenChart",
       "bankAdjustScenarioChart",
       "bankAdjustSavingChart",
       "bankAdjustProfitChart",
       "bankAdjustCapitalChart"
     ],
-    "noteCount": 41
+    "noteCount": 45,
+    "dynamic": false
   },
   {
     "id": "tab-pres",
@@ -88,7 +110,8 @@
     "chartIds": [
       "presChart"
     ],
-    "noteCount": 27
+    "noteCount": 27,
+    "dynamic": false
   },
   {
     "id": "tab-poverty",
@@ -104,7 +127,8 @@
       "povertyChart",
       "povertyMandateChart"
     ],
-    "noteCount": 16
+    "noteCount": 16,
+    "dynamic": false
   },
   {
     "id": "tab-social",
@@ -127,7 +151,8 @@
       "socialChangeChart",
       "socialRecentChart"
     ],
-    "noteCount": 12
+    "noteCount": 12,
+    "dynamic": false
   },
   {
     "id": "tab-gini",
@@ -149,7 +174,8 @@
       "giniChart",
       "giniSameQuarterChart"
     ],
-    "noteCount": 28
+    "noteCount": 28,
+    "dynamic": false
   },
   {
     "id": "tab-structure",
@@ -168,7 +194,8 @@
       "structureRegionChart",
       "structureNseChart"
     ],
-    "noteCount": 10
+    "noteCount": 10,
+    "dynamic": false
   },
   {
     "id": "tab-family",
@@ -186,7 +213,8 @@
       "housingChart",
       "familyNonOwnerChart"
     ],
-    "noteCount": 16
+    "noteCount": 16,
+    "dynamic": false
   },
   {
     "id": "tab-risk",
@@ -200,7 +228,8 @@
     "chartIds": [
       "riskChart"
     ],
-    "noteCount": 7
+    "noteCount": 7,
+    "dynamic": false
   },
   {
     "id": "tab-bigmac",
@@ -221,7 +250,8 @@
       "bigMacChart",
       "bigMacFxChart"
     ],
-    "noteCount": 17
+    "noteCount": 17,
+    "dynamic": false
   },
   {
     "id": "tab-wholesale",
@@ -236,7 +266,8 @@
       "wholesaleChart",
       "wholesaleCurrentChart"
     ],
-    "noteCount": 17
+    "noteCount": 17,
+    "dynamic": false
   },
   {
     "id": "tab-health-education",
@@ -253,23 +284,39 @@
       "healthEducationExecutionChart",
       "healthEducationBridgeChart"
     ],
-    "noteCount": 12
+    "noteCount": 12,
+    "dynamic": false
   },
   {
     "id": "tab-consumption",
     "label": "Consumo",
     "order": 13,
     "headings": [
-      "2026 mes a mes: cuánto entra a la caja y qué pasa en términos reales",
-      "¿La debilidad es territorial?",
+      "La caja vs el changuito · 2017 → 2026",
+      "¿Qué tan malo fue cada primer semestre?",
+      "2026 mes a mes: caja nominal vs ventas reales",
+      "¿Compramos menos veces o menos en cada compra?",
+      "¿Con qué pagamos el súper?",
+      "¿Qué parte de la caja ocupa cada rubro?",
+      "¿Dónde cayó más?",
+      "Profundidad territorial · 1S-2026",
+      "Heatmap provincial 2017–2026",
+      "30 años haciendo las compras · contexto por eras",
+      "Detrás de la caja: operaciones, bocas y empleo",
       "🍷 Vino · consumo per cápita",
       "🚗 Autos 0 km · anclas verificadas",
       "Fuentes y descargas"
     ],
     "chartIds": [
       "consumptionChart",
+      "supermarketModernHistoryChart",
+      "supermarketH1HistoryChart",
       "supermarketPulseChart",
+      "supermarketOperationsChart",
+      "supermarketPaymentChart",
+      "supermarketBasketCompositionChart",
       "supermarketHistoryDistrictChart",
+      "supermarketStructureChart",
       "meatConsumptionChart",
       "beefTradeoffChart",
       "physicalCategoryChangeChart",
@@ -280,7 +327,8 @@
       "wineHistoryChart",
       "vehicleHistoryChart"
     ],
-    "noteCount": 8
+    "noteCount": 19,
+    "dynamic": false
   },
   {
     "id": "tab-work",
@@ -293,7 +341,8 @@
       "workChart",
       "workSectorChart"
     ],
-    "noteCount": 12
+    "noteCount": 12,
+    "dynamic": false
   },
   {
     "id": "tab-investment",
@@ -305,7 +354,8 @@
     "chartIds": [
       "investmentChart"
     ],
-    "noteCount": 9
+    "noteCount": 9,
+    "dynamic": false
   },
   {
     "id": "tab-housing",
@@ -321,7 +371,8 @@
       "housingRentReformChart",
       "housingBuildChart"
     ],
-    "noteCount": 20
+    "noteCount": 20,
+    "dynamic": false
   },
   {
     "id": "tab-growth",
@@ -333,7 +384,8 @@
     "chartIds": [
       "growthChart"
     ],
-    "noteCount": 8
+    "noteCount": 8,
+    "dynamic": false
   },
   {
     "id": "tab-emae",
@@ -359,7 +411,8 @@
       "emaeReboundChart",
       "emaeDrawdownChart"
     ],
-    "noteCount": 10
+    "noteCount": 10,
+    "dynamic": false
   },
   {
     "id": "tab-morosidad",
@@ -387,7 +440,8 @@
       "morPersonsChart",
       "morCorrelationChart"
     ],
-    "noteCount": 10
+    "noteCount": 10,
+    "dynamic": false
   },
   {
     "id": "tab-credit-mora",
@@ -412,7 +466,8 @@
       "cmMoraChart",
       "cmLagChart"
     ],
-    "noteCount": 5
+    "noteCount": 5,
+    "dynamic": false
   },
   {
     "id": "tab-mora-causal",
@@ -426,7 +481,7 @@
       "Divergencia real, inferencia causal inválida",
       "No hay evidencia de “relación cero”",
       "La oferta se aflojó antes de que el riesgo materializado explotara —y luego se endureció",
-      "Matriz adversarial · qué sobrevive al intento de refutación",
+      "Matriz comparativa · evidencia y límites de cada explicación",
       "Un R² lindo también puede mentir",
       "Qué podemos decir —y qué no",
       "La afirmación original, después de intentar romperla",
@@ -437,7 +492,8 @@
       "caPovertyChart",
       "caUnempChart"
     ],
-    "noteCount": 5
+    "noteCount": 5,
+    "dynamic": false
   },
   {
     "id": "tab-mora-anatomy",
@@ -454,7 +510,8 @@
     "chartIds": [
       "maBubbleChart"
     ],
-    "noteCount": 4
+    "noteCount": 4,
+    "dynamic": false
   },
   {
     "id": "tab-youth-credit",
@@ -472,7 +529,8 @@
       "ycAccessChart",
       "ycMoraChart"
     ],
-    "noteCount": 5
+    "noteCount": 5,
+    "dynamic": false
   },
   {
     "id": "tab-pendulo",
@@ -530,7 +588,8 @@
       "pendPowerFiscalChart",
       "pendPowerAssetChart"
     ],
-    "noteCount": 29
+    "noteCount": 29,
+    "dynamic": false
   },
   {
     "id": "tab-roads",
@@ -576,7 +635,8 @@
       "roadCorridorChart",
       "roadInvestmentChart"
     ],
-    "noteCount": 5
+    "noteCount": 5,
+    "dynamic": false
   },
   {
     "id": "tab-tourism",
@@ -625,7 +685,8 @@
       "tourOriginChart",
       "tourDestinationChart"
     ],
-    "noteCount": 15
+    "noteCount": 15,
+    "dynamic": false
   },
   {
     "id": "tab-debt-public",
@@ -639,7 +700,8 @@
       "debtCreditorChart",
       "debtCurrencyChart"
     ],
-    "noteCount": 8
+    "noteCount": 8,
+    "dynamic": false
   },
   {
     "id": "tab-fiscal",
@@ -663,7 +725,8 @@
       "taxMapDropsChart",
       "taxMapRaisesChart"
     ],
-    "noteCount": 8
+    "noteCount": 8,
+    "dynamic": false
   },
   {
     "id": "tab-trade",
@@ -675,7 +738,8 @@
     "chartIds": [
       "tradeChart"
     ],
-    "noteCount": 8
+    "noteCount": 8,
+    "dynamic": false
   },
   {
     "id": "tab-bcra",
@@ -692,7 +756,8 @@
       "bcraFxChart",
       "bcraRatesChart"
     ],
-    "noteCount": 8
+    "noteCount": 8,
+    "dynamic": false
   },
   {
     "id": "tab-debt-spiral",
@@ -705,7 +770,8 @@
       "debtSimChart",
       "debtClassChart"
     ],
-    "noteCount": 9
+    "noteCount": 9,
+    "dynamic": false
   },
   {
     "id": "tab-program",
@@ -719,7 +785,8 @@
       "sovereignSustainChart",
       "sovereignReserveFlowChart"
     ],
-    "noteCount": 20
+    "noteCount": 20,
+    "dynamic": false
   },
   {
     "id": "tab-wealth-contribution",
@@ -740,7 +807,8 @@
       "wealthFinanceChart",
       "wealthParticipationChart"
     ],
-    "noteCount": 13
+    "noteCount": 13,
+    "dynamic": false
   },
   {
     "id": "tab-milei-cost",
@@ -755,7 +823,8 @@
       "Mapa de fuentes de la cuenta y sus componentes"
     ],
     "chartIds": [],
-    "noteCount": 10
+    "noteCount": 10,
+    "dynamic": false
   },
   {
     "id": "tab-meli-benefits",
@@ -769,7 +838,8 @@
       "meliArsChart",
       "meliOtherBenefitsChart"
     ],
-    "noteCount": 11
+    "noteCount": 11,
+    "dynamic": false
   },
   {
     "id": "tab-casta",
@@ -784,6 +854,204 @@
       "castaMandateChart",
       "castaSideChart"
     ],
-    "noteCount": 8
+    "noteCount": 8,
+    "dynamic": false
+  },
+  {
+    "id": "tab-epica-households",
+    "label": "Hogares · supervivencia",
+    "order": 37,
+    "headings": [
+      "¿Quién llega sin comerse el futuro?",
+      "Perfiles mutuamente excluyentes",
+      "Alcance de la lectura",
+      "La estrategia cambia con el estrato",
+      "Del indicador a las preguntas siguientes",
+      "Fuentes, fórmula y descarga"
+    ],
+    "chartIds": [
+      "epicaHouseholdProfileChart",
+      "epicaHouseholdStrataChart"
+    ],
+    "noteCount": 1,
+    "dynamic": true
+  },
+  {
+    "id": "tab-epica-dollars",
+    "label": "Dólares · qué hay realmente",
+    "order": 38,
+    "headings": [
+      "¿Cuántos dólares hay realmente?",
+      "Stock bruto y residual por horizonte",
+      "Gate metodológico",
+      "Brutas, netas y residual: tres preguntas distintas",
+      "Por qué superávit de bienes no significa superávit externo completo",
+      "Qué ya puede afirmarse",
+      "Seguir la evidencia",
+      "Fuentes, perímetros y descarga"
+    ],
+    "chartIds": [
+      "epicaDollarMainChart"
+    ],
+    "noteCount": 1,
+    "dynamic": true
+  },
+  {
+    "id": "tab-epica-caputo-colchon",
+    "label": "Dólares del colchón · incentivos",
+    "order": 39,
+    "headings": [
+      "Los dólares del colchón: ¿qué decisiones intervienen?",
+      "¿Quiénes tienen margen para invertir?",
+      "Qué aporta y qué no resuelve",
+      "Más cuentas no significa automáticamente más ahorristas con dólares invertibles",
+      "¿Qué rendimiento de referencia ofrece cada alternativa?",
+      "Banco local y cuenta comitente",
+      "¿Cómo cambia la transmisión según el canal?",
+      "Dos techos, dos lecturas de la capacidad",
+      "Julio: banco local y activos externos coexistieron",
+      "Porcentajes parecidos, preguntas distintas",
+      "La comitente también aparece en el diagnóstico oficial",
+      "¿A qué tipo de crédito fueron los dólares?",
+      "¿Qué margen bruto aparece entre prestar y captar?",
+      "¿Qué actividades ya concentraban el crédito en dólares?",
+      "¿Quiénes tomaron las operaciones nuevas?",
+      "¿Sólo faltaban depósitos?",
+      "El crédito nuevo no queda sin barandas",
+      "Primer corte posterior: qué vemos y qué no",
+      "Calendario de prueba",
+      "¿Qué objetivos y mecanismos presenta la política?",
+      "¿Qué preguntas permanecen abiertas?",
+      "Síntesis de la exploración",
+      "Fuentes, respaldo y descarga"
+    ],
+    "chartIds": [
+      "epicaCaputoIncomeChart",
+      "epicaCaputoReturnChart"
+    ],
+    "noteCount": 7,
+    "dynamic": true
+  },
+  {
+    "id": "tab-epica-incidence",
+    "label": "Quién paga · incidencia",
+    "order": 40,
+    "headings": [
+      "¿Qué cambió para cada actor?",
+      "Mapa de incidencia observable",
+      "Qué puede leerse en conjunto",
+      "Seguir cada dimensión",
+      "Datos y respaldo"
+    ],
+    "chartIds": [],
+    "noteCount": 1,
+    "dynamic": true
+  },
+  {
+    "id": "tab-epica-development",
+    "label": "Desarrollo · inversión y trabajo",
+    "order": 41,
+    "headings": [
+      "¿Cuándo la inversión se convierte en trabajo y capacidad?",
+      "Actividad y empleo registrado desde noviembre de 2023",
+      "Cómo leer la divergencia",
+      "La cadena que debe completarse",
+      "Datos y respaldo"
+    ],
+    "chartIds": [
+      "epicaDevelopmentChart"
+    ],
+    "noteCount": 1,
+    "dynamic": true
+  },
+  {
+    "id": "tab-epica-narratives",
+    "label": "Relatos · preguntas y alcance",
+    "order": 42,
+    "headings": [
+      "¿Qué pregunta abre cada frase?",
+      "Cómo se lee una tarjeta",
+      "Volver al recorrido",
+      "Matrices y trazabilidad"
+    ],
+    "chartIds": [],
+    "noteCount": 1,
+    "dynamic": true
+  },
+  {
+    "id": "tab-political-wealth",
+    "label": "Patrimonio político · DDJJ",
+    "order": 43,
+    "headings": [
+      "Patrimonio político: la película desde 2017",
+      "Elegí una trayectoria auditada",
+      "Bienes declarados: tres lentes",
+      "Qué permite decir",
+      "Lectura profunda",
+      "¿Qué habría pasado si el capital inicial se invertía?",
+      "Composición del último año detallado",
+      "Conciliación anual exploratoria",
+      "¿Cuánto de los saltos puede ser un problema de fuente?",
+      "¿Quiénes están en actividad?",
+      "Mapa de avance subnacional",
+      "Trayectorias ya auditadas",
+      "¿Se puede comparar por partido?",
+      "Qué significa “cubrir a quienes están en actividad”",
+      "Cómo se construyó la serie",
+      "Base 2017: qué dice y qué no",
+      "Conciliación neutral",
+      "Controles de calidad aplicados",
+      "Fuentes, respaldo y descargas"
+    ],
+    "chartIds": [
+      "politicalWealthTrendChart",
+      "politicalWealthBenchmarkChart",
+      "politicalWealthCompositionChart"
+    ],
+    "noteCount": 16,
+    "dynamic": true
+  },
+  {
+    "id": "tab-mora-ley",
+    "label": "Hogares en mora · propuesta",
+    "order": 44,
+    "headings": [
+      "Hogares en mora: del diagnóstico a la propuesta",
+      "Trayectoria de la mora bancaria de hogares",
+      "Cómo leerlo",
+      "Proveedores no financieros y fintech",
+      "Costo real del crédito personal",
+      "Capacidad Máxima de Pago (CMP) — simulador del método",
+      "De la evidencia al diseño legal",
+      "Fuentes y descarga"
+    ],
+    "chartIds": [
+      "moraLeyBancariaChart",
+      "moraLeyPnfcChart",
+      "moraLeyCostoChart"
+    ],
+    "noteCount": 2,
+    "dynamic": true
+  },
+  {
+    "id": "tab-reclamo-credito",
+    "label": "Costo del crédito · reclamo",
+    "order": 45,
+    "headings": [
+      "Costo del crédito: qué muestran los datos públicos",
+      "Costo Financiero Total máximo ofrecido",
+      "Contrato de lectura · anti-doble conteo",
+      "Rentabilidad contable por grupo",
+      "Peso del interés de préstamos personales",
+      "Alcance del reclamo",
+      "Fuentes y descarga"
+    ],
+    "chartIds": [
+      "reclamoCftChart",
+      "reclamoRoaChart",
+      "reclamoPesoChart"
+    ],
+    "noteCount": 1,
+    "dynamic": true
   }
 ]

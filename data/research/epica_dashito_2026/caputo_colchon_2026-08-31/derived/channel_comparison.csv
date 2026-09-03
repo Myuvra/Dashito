@@ -1,0 +1,5 @@
+﻿canal,tasa_anual_referencia_pct,fecha_tasa,ganancia_bruta_usd_sobre_10000,ventaja_privada,costo_o_riesgo,efecto_local_directo
+Efectivo físico,0.0,no aplica,0,Liquidez física y fuera de intermediarios,"Robo, pérdida, sin rendimiento",Ninguno mientras permanezca inmóvil
+Caja de ahorro bancaria en USD,0.22,2026-08-27,22.0,"Pagos locales, simplicidad y garantía hasta el límite aplicable",Rendimiento bajo; cobertura limitada en pesos equivalentes,Fondea al banco; el crédito posterior no es automático
+Plazo fijo bancario USD · 60 días o más,2.05,2026-08-27,205.0,Mayor tasa bancaria y operatoria local,Inmovilización; tasa nominal simple de referencia,Fondea al banco; puede ampliar crédito en USD
+Letra del Tesoro de EE.UU. a 52 semanas,4.14,2026-08-28,414.0,Activo soberano externo de alta liquidez y bajo riesgo crediticio,"Comisiones, impuestos, custodia, acceso y riesgo de precio si se vende antes",No fondea crédito bancario argentino

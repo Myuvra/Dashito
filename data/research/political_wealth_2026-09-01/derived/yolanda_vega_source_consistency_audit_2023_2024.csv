@@ -1,0 +1,6 @@
+persona_id,persona,anio,control,valor_resumen_ars,valor_control_ars,brecha_ars,ratio_resumen_sobre_detalle,resultado,dj_id,fuente_url
+dip-vega-yolanda,Yolanda Vega,2023,total_bienes_inicio_vs_suma_detalle,2222259.09,2222259.09,0.0,1.0,concilia,687371,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vega-yolanda,Yolanda Vega,2024,total_bienes_inicio_vs_suma_detalle,129406740.0,12940674.0,116466066.0,10.0,no_concilia,809852,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vega-yolanda,Yolanda Vega,2024,total_bienes_cierre_vs_suma_detalle,73054692.09,73054692.09,0.0,1.0,concilia,809852,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vega-yolanda,Yolanda Vega,2024,deudas_inicio_resumen_vs_detalle,0.0,0.0,0.0,,concilia_cero,809852,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+dip-vega-yolanda,Yolanda Vega,2024,deudas_cierre_resumen_vs_detalle,149210000.0,0.0,149210000.0,,detalle_ausente,809852,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales

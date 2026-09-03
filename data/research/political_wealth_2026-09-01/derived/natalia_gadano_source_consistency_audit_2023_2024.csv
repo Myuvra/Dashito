@@ -1,0 +1,5 @@
+persona_id,persona,anio,control,valor_resumen_ars,valor_control_ars,brecha_ars,ratio_resumen_sobre_detalle,resultado,dj_id,fuente_url
+sen-gadano-natalia-elena,Natalia Elena Gadano,2023,total_bienes_inicio_vs_suma_detalle,6701845.01,6701845.01,0.0,1.0,concilia,757003,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+sen-gadano-natalia-elena,Natalia Elena Gadano,2024,total_bienes_inicio_vs_suma_detalle,82142450.0,8214245.0,73928205.0,10.0,no_concilia,793922,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+sen-gadano-natalia-elena,Natalia Elena Gadano,2024,total_bienes_cierre_vs_suma_detalle,667993160.0,66799316.0,601193844.0,10.0,no_concilia,793922,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
+sen-gadano-natalia-elena,Natalia Elena Gadano,2024,deudas_resumen_vs_detalle,0.0,0.0,0.0,,sin_deuda_en_resumen_ni_detalle,793922,https://datos.jus.gob.ar/dataset/declaraciones-juradas-patrimoniales-integrales
