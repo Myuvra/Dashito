@@ -522,10 +522,37 @@ export default function LegacyChartEnhancements({ rootRef, activeId, ready, them
     const root = rootRef.current
     if (!root) return undefined
 
+    // Plotly `responsive:true` sólo redimensiona en window.resize. Cuando el
+    // contenedor cambia de ancho SIN un resize de ventana (reflow por breakpoint,
+    // colapso de la grilla, toggle del sidebar, cambio de sub-vista), el SVG queda
+    // con el ancho viejo y `.epica-chart{overflow:hidden}` lo corta. Un
+    // ResizeObserver por chart lo redimensiona apenas cambia su caja.
+    const chartResizeObserver = typeof ResizeObserver !== 'undefined'
+      ? new ResizeObserver((observed) => {
+          if (!window.Plotly?.Plots?.resize) return
+          for (const { target } of observed) {
+            if (target._fullLayout) { try { window.Plotly.Plots.resize(target) } catch { /* container transitorio */ } }
+          }
+        })
+      : null
+
     const scan = () => {
       const next = []
       for (const chart of root.querySelectorAll('.js-plotly-plot')) {
         if (!chart.id || !chart.data || !chart.layout) continue
+        if (chartResizeObserver && chart.dataset.roObserved !== 'true') {
+          chart.dataset.roObserved = 'true'
+          chartResizeObserver.observe(chart)
+        }
+        // Auto-heal de ancho: si el plot quedó más angosto/ancho que su caja
+        // (render en un ancho stale — típico al cambiar de sub-vista, que no
+        // dispara window.resize), `.epica-chart{overflow:hidden}` lo cortaría.
+        // Al detectar la divergencia lo redimensionamos a su contenedor.
+        const boxWidth = chart.clientWidth
+        const plotWidth = chart._fullLayout?.width
+        if (window.Plotly?.Plots?.resize && boxWidth > 0 && plotWidth && Math.abs(plotWidth - boxWidth) > 4) {
+          try { window.Plotly.Plots.resize(chart) } catch { /* container transitorio */ }
+        }
         applyPlotlyTheme(chart, theme)
         tightenIdleTopMargin(chart)
         let hosts = hostsRef.current.get(chart)
@@ -590,6 +617,7 @@ export default function LegacyChartEnhancements({ rootRef, activeId, ready, them
     return () => {
       window.clearInterval(timer)
       window.removeEventListener('resize', scan)
+      chartResizeObserver?.disconnect()
     }
   }, [activeKey, ready, rootRef, theme])
 
